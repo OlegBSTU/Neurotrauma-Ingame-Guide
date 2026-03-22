@@ -10,16 +10,15 @@ NTGuide.Path = table.pack(...)[1]
 Timer.Wait(function()
     if NTC ~= nil then
         NTC.RegisterExpansion(NTGuide)
-    else
-        print("\n /// Neurotrauma In-game Guide ///\nNeurotrauma is not currently loaded!\n")
-	end
+    end
 end, 1)
 
 -- Clientside init
-if Client then
+if CLIENT then
     Timer.Wait(function()
         dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePages.lua") -- Content pages
         dofile(NTGuide.Path .. "/Lua/Scripts/Client/Neuroguide.lua") -- Construction code
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguideChatLink.lua") -- Chat stuff
     end, 1)
 end
 

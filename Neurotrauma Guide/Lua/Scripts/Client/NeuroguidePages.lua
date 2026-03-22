@@ -4,6 +4,7 @@ LuaUserData.RegisterType("NTGuide.NTGuideLocalize")
 -- Tell Lua where to find our Class containing the Localize function
 local CSMod = ModStore.GetCsStore("NTGuide.NTGuideLocalize")
 local CSide = CSMod.Get("Instance")
+
 -- Put Localization function on speeddial
 NTGuide.Localize = CSide.Localize
 

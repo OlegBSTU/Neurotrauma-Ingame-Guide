@@ -5,8 +5,10 @@ using MoonSharp.Interpreter;
 
 // Half of this is the clickable in-game chat text by Ydrec, the other half is spliced for Localization from the Analyze Items Mod. Credit where it is due.
 
-namespace NTGuide {
-    partial class AppendLuaClrConverters : IAssemblyPlugin {
+namespace NTGuide 
+{
+    partial class AppendLuaClrConverters : IAssemblyPlugin 
+    {
         public void Initialize()
         {
             RegisterHandler<GUITextBlock.ClickableArea.OnClickDelegate>((Closure f) => delegate(GUITextBlock a1, GUITextBlock.ClickableArea a2)
