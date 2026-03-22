@@ -1,0 +1,387 @@
+<Infotexts language="English" nowhitespace="false">
+    <!-- Additional pages + overrides for Cybernetics -->
+    <!-- See the main XML file for formatting -->
+
+    <!-- As of the addons, I remembered you can just give the XML file new lines and this is transferred in-game. 1 new line is a new paragraph, 2 new lines is a 'gap' between text. -->
+
+    <!-- Cybernetic Arm -->
+    <ntg.title.cybernetic_arm>Cybernetic Arm</ntg.title.cybernetic_arm>
+    <ntg.description.cybernetic_arm>A cybernetic arm that can be attached to any surgically amputated arm socket. It can be removed with a crowbar if the cyberlimb has les than 20% damage.
+        \nAdvantages of Cyberarms:
+        - Improved Melee attack speed as well as swim speed;
+        - Great at taking sustained gunfire without malfunctioning;
+        - Excellent at tanking attacks from creatures without malfunctioning or breaking.
+        - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
+        - When well maintained, is much less likely to be forcefully amputated when attacked.
+        - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
+        \nDisadvantages of Cyberarm:
+        - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
+            -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
+        - Requires maintenance if damaged.
+        - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
+        - Costly/expensive to make/buy.
+        - Violently detach if critically damaged through material loss.
+        \nHow to add a CyberLimb to a patient:
+        First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
+        \nThe following things may happen:
+    </ntg.description.cybernetic_arm>
+    <ntg.applicationsuccess.cybernetic_arm>
+       [internal_wounds] Applies the Cyberlimb on the selected limb and heals any Internal Damage caused by previous attempts
+    </ntg.applicationsuccess.cybernetic_arm>
+    <ntg.applicationfailed.cybernetic_arm>
+        [internal_wounds] +20% Internal Damage on the selected limb. Does not delete the Cyberlimb.
+    </ntg.applicationfailed.cybernetic_arm>
+    <ntg.seealso.cybernetic_arm>
+        [amputation_surgery] Amputation Surgery |
+        [crowbar] Crowbar
+    </ntg.seealso.cybernetic_arm>
+
+    <!-- Cybernetic Leg -->
+    <ntg.title.cybernetic_leg>Cybernetic Leg</ntg.title.cybernetic_leg>
+    <ntg.description.cybernetic_leg>A cybernetic leg that can be attached to any surgically amputated leg socket. It can be removed with a crowbar if the cyberlimb has les than 20% damage.
+        \nAdvantages of Cyberlegs:
+        - Improved running speed;
+        - Great at taking sustained gunfire without malfunctioning;
+        - Excellent at tanking attacks from creatures without malfunctioning or breaking.
+        - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
+        - When well maintained, is much less likely to be forcefully amputated when attacked.
+        - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
+        \nDisadvantages of Cyberlegs:
+        - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
+            -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
+        - Requires maintenance if damaged.
+        - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
+        - Costly/expensive to make/buy.
+        - Violently detach if critically damaged through material loss.
+        \nHow to add a CyberLimb to a patient:
+        First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
+        \nThe following things may happen:
+    </ntg.description.cybernetic_leg>
+    <ntg.applicationsuccess.cybernetic_leg>
+       [internal_wounds] Applies the Cyberlimb on the selected limb and heals any Internal Damage caused by previous attempts
+    </ntg.applicationsuccess.cybernetic_leg>
+    <ntg.applicationfailed.cybernetic_leg>
+        [internal_wounds] +20% Internal Damage on the selected limb. Does not delete the Cyberlimb.
+    </ntg.applicationfailed.cybernetic_leg>
+    <ntg.seealso.cybernetic_leg>
+        [amputation_surgery] Amputation Surgery |
+        [crowbar] Crowbar
+    </ntg.seealso.cybernetic_leg>
+
+    <!-- Damaged Electronics -->
+    <ntg.title.damaged_electronics>Damaged Electronics</ntg.title.damaged_electronics>
+    <ntg.description.damaged_electronics>The primary detriment of using cyberlimbs, as their electronics are damaged when exposed to water.
+        \nWhen taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.
+        \nThe amount of Damaged Electronics gained scales with the amount of Material Loss on the limb, up to a maximum of a 3x increase at 100% Material Loss.
+    </ntg.description.damaged_electronics>
+    <ntg.causes.damaged_electronics>
+        Being in water without a diving suit on |
+        [burns] 75% chance for Burns to cause 200% of their damage as Damaged Electronics |
+        [open_wounds] 85% chance for Gunshot Wounds to cause 75% of their damage as Damaged Electronics |
+        [open_wounds] 50% chance for Bite Wounds to cause 25% of their damage as Damaged Electronics |
+        [open_wounds] 50% chance for Deep Tissue Injury to cause 50% of its damage as Damaged Electronics |
+        [internal_wounds] 50% chance for Blunt Force Trauma to cause 100% of its damage as Damaged Electronics |
+        [internal_damage] 75% chance for Internal Damage to cause 100% of its damage as Damaged Electronics |
+        [foreign_bodies] 75% chance for Foreign Bodies to cause  75% of its damage as Damaged Electronics
+    </ntg.causes.damaged_electronics>
+    <ntg.effects.damaged_electronics>
+        Limb occasionally stops working temporarily, the frequency of which scaled with the amount of Damaged Electronics |
+        Limb becomes completely unusable at 99% or more Damaged Electronics
+    </ntg.effects.damaged_electronics>
+    <ntg.treatments.damaged_electronics>
+        [fpga_circuit] Apply an FPGA Circuit
+    </ntg.treatments.damaged_electronics>
+    <ntg.seealso.damaged_electronics>
+        [material_loss] Material Loss |
+        [loose_screws] Loose Screws |
+        [bent_metal] Bent Metal
+    </ntg.seealso.damaged_electronics>
+
+    <!-- Bent Metal -->
+    <ntg.title.bent_metal>Bent Metal</ntg.title.bent_metal>
+    <ntg.description.bent_metal>When taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.</ntg.description.bent_metal>
+    <ntg.causes.bent_metal>
+        [burns] 85% chance for Burns to cause 25% of their damage as Bent Metal |
+        [open_wounds] 50% chance for Lacerations to cause 25% of their damage as Bent Metal |
+        [open_wounds] 50% chance for Bite Wounds to cause 50% of their damage as Bent Metal |
+        [open_wounds] 85% chance for Deep Tissue Injury to cause 100% of its damage as Bent Metal |
+        [internal_wounds] 75% chance for Blunt Force Trauma to cause 200% of its damage as Bent Metal
+    </ntg.causes.bent_metal>
+    <ntg.effects.bent_metal>
+        Slows you down (if on a Cyberleg), scaling with strength of Bent Metal |
+        Limb becomes completely unusable at 99% or more Bent Metal
+    </ntg.effects.bent_metal>
+    <ntg.treatments.bent_metal>
+        [welding_tool] Apply a Welding Tool (containing Welding Fuel)
+    </ntg.treatments.bent_metal>
+    <ntg.seealso.bent_metal>
+        [material_loss] Material Loss |
+        [loose_screws] Loose Screws |
+        [damaged_electronics] Damaged Electronics
+    </ntg.seealso.bent_metal>
+
+    <!-- Loose Screws -->
+    <ntg.title.loose_screws>Loose Screws</ntg.title.loose_screws>
+    <ntg.description.loose_screws>When taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.</ntg.description.loose_screws>
+    <ntg.causes.loose_screws>
+        Loose Screws while moving (at 30% or more)
+        [open_wounds] 75% chance for Lacerations to cause 25% of their damage as Loose Screws |
+        [open_wounds] 50% chance for Bite Wounds to cause 50% of their damage as Loose Screws |
+        [open_wounds] 80% chance for Deep Tissue Injury to cause 100% of its damage as Loose Screws |
+        [internal_wounds] 50% chance for Blunt Force Trauma to cause 50% of its damage as Loose Screws |
+        [internal_damage] 75% chance for Internal Damage to cause 100% of its damage as Loose Screws |
+        [foreign_bodies] 75% chance for Foreign Bodies to cause 75% of its damage as Loose Screws
+    </ntg.causes.loose_screws>
+    <ntg.effects.loose_screws>
+        [material_loss] May cause Material Loss and even more Loose Screws if more than 30% Loose Screws are present while moving
+    </ntg.effects.loose_screws>
+    <ntg.treatments.loose_screws>
+        [screwdriver] Apply a Screwdriver
+    </ntg.treatments.loose_screws>
+    <ntg.seealso.loose_screws>
+        [material_loss] Material Loss |
+        [bent_metal] Bent Metal |
+        [damaged_electronics] Damaged Electronics
+    </ntg.seealso.loose_screws>
+
+    <!-- Material Loss -->
+    <ntg.title.material_loss>Material Loss</ntg.title.material_loss>
+    <ntg.description.material_loss>When taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.
+        \nThe amount of material loss gained scaled with the amount of Loose Screws present, to a maximum of 3x at 100% Loose Screws.</ntg.description.material_loss>
+    <ntg.causes.material_loss>
+        Loose Screws while moving (at 30% or more)
+        [open_wounds] 75% chance for Lacerations to cause 25% of their damage as Material Loss |
+        [open_wounds] 80% chance for Gunshot Wounds to cause 80% of their damage as Material Loss |
+        [open_wounds] 75% chance for Bite Wounds to cause 60% of their damage as Material Loss |
+        [open_wounds] 100% chance for Deep Tissue Injury to cause 100% of its damage as Material Loss |
+        [foreign_bodies] 80% chance for Foreign Bodies to cause 50% of its damage as Loose Screws
+    </ntg.causes.material_loss>
+    <ntg.effects.material_loss>
+        [traumatic_amputation] Loss of the Cyberlimb and Traumatic Amputation (at 99% or more)
+    </ntg.effects.material_loss>
+    <ntg.treatments.material_loss>
+        [steel_bar] Apply a Steel Bar
+    </ntg.treatments.material_loss>
+    <ntg.seealso.material_loss>
+        [loose_screws] Loose Screws |
+        [bent_metal] Bent Metal |
+        [damaged_electronics] Damaged Electronics
+    </ntg.seealso.material_loss>
+
+    <!-- FPGA Circuit -->
+    <ntg.title.fpga_circuit>FPGA Circuit</ntg.title.fpga_circuit>
+    <ntg.description.fpga_circuit>Electrical Skill Check: 40.
+        \nUsed to repair Damaged Electronics on Cyberlimbs. FPGA Circuits can be merged together to restore condition.
+    </ntg.description.fpga_circuit>
+    <ntg.applicationsuccess.fpga_circuit>
+        [damaged_electronics] -50% Damaged Electronics
+    </ntg.applicationsuccess.fpga_circuit>
+    <ntg.applicationfailed.fpga_circuit>
+        [damaged_electronics] -20% Damaged Electronics
+    </ntg.applicationfailed.fpga_circuit>
+
+    <!-- Welding Tool -->
+    <ntg.title.welding_tool>Welding Tool</ntg.title.welding_tool>
+    <ntg.description.welding_tool>Mechanical Skill Check: 50.
+        \nUsed to repair Bent Metal on Cyberlimbs.
+    </ntg.description.welding_tool>
+    <ntg.applicationsuccess.welding_tool>
+        [bent_metal] -20% Bent Metal
+    </ntg.applicationsuccess.welding_tool>
+    <ntg.applicationfailed.welding_tool>
+        [bent_metal] -5% Bent Metal
+    </ntg.applicationfailed.welding_tool>
+
+    <!-- Screwdriver -->
+    <ntg.title.screwdriver>Screwdriver</ntg.title.screwdriver>
+    <ntg.description.screwdriver>Mechanical Skill Check: 40.
+        \nUsed to repair Loose Screws on Cyberlimbs as well as repair Cyberorgans during Open / Close Surgery.
+    </ntg.description.screwdriver>
+    <ntg.applicationsuccess.screwdriver>
+        [loose_screws] -20% Bent Metal
+    </ntg.applicationsuccess.screwdriver>
+    <ntg.applicationfailed.screwdriver>
+        [loose_screws] -5% Bent Metal
+    </ntg.applicationfailed.screwdriver>
+    <ntg.seealso.screwdriver>
+        [open_close_surgery] Open / Close Surgery
+    </ntg.seealso.screwdriver>
+
+    <!-- Steel Bar -->
+    <ntg.title.steel_bar>Steel Bar</ntg.title.steel_bar>
+    <ntg.description.steel_bar>Mechanical Skill Check: 40.
+        \nUsed to repair Material Loss on Cyberlimbs.
+    </ntg.description.steel_bar>
+    <ntg.applicationsuccess.steel_bar>
+        [material_loss] -50% Material Loss
+    </ntg.applicationsuccess.steel_bar>
+    <ntg.applicationfailed.steel_bar>
+        [material_loss] -20% Material Loss
+    </ntg.applicationfailed.steel_bar>
+
+    <!-- Crowbar -->
+    <ntg.title.crowbar>Crowbar</ntg.title.crowbar>
+    <ntg.description.crowbar>Used to remove a cyberlimb. Only works if the cyberlimb is less than 20% damaged, so it may need to be repaired first.
+        \nReturns the Cyberlimb.
+    </ntg.description.crowbar>
+
+    <!-- Cyberbrain Implant -->
+    <ntg.title.cyberbrain_implant>Cyberbrain Implant</ntg.title.cyberbrain_implant>
+    <ntg.description.cyberbrain_implant>A cybernetic brain booster. Embrace the certainty of steel!
+    \nAvailable as a more affordable Cyber-augmented Brain Implant, or the twice as effective top-of-the-line 'Cyberbrain' Positronic Implant.
+    \nAdvantages of Cyberbrain Implants:
+    - Boosts all skills by 5 (10 for Positronic);
+    - Grants permanent, yet mild, Analgesia for easier surgeries;
+    - Improves Neurotrauma recovery rate;
+        -! Doubles the effects of Mannitol
+        -! Doubles the natural healing rate once causes are addressed
+    - Mild resistance to Neurotrauma
+    \nDisadvantages of Cyberbrain Implants:
+    - Can periodically experience fits of Cyberpsychosis (regular psychosis), which can be avoided by reducing your Immunity in any way; such as the very affordable Immunosuppressant Inhaler;
+    - Vulnerable to EMPs
+    \nHow to add to a patient:
+    First, open up the head as a typical surgery with retracted skin but do NOT remove the brain. Instead, place the implant on top and end the surgery. The Electrical skill requirement is 60, while the Medical is 80.
+    \nHow to remove from a patient:
+    Re-open the head and apply the Multipurpose Scalpel set to Adaptive Organ Extraction mode once; doing so a second time would remove the brain.
+    \nThe following things may happen during installation:
+    </ntg.description.cyberbrain_implant>
+    <ntg.applicationsuccess.cyberbrain_implant>
+        [neurotrauma] Installs the implant, healing some Neurotrauma and Vanilla Organ Damage
+    </ntg.applicationsuccess.cyberbrain_implant>
+    <ntg.applicationfailed.cyberbrain_implant>
+        [neurotrauma] Same as success but casues 20% Neurotrauma instead (Mechanical Fail) |
+        [internal_bleeding] Same as success but causes Internal Bleeding (Medical Fail)
+    </ntg.applicationfailed.cyberbrain_implant>
+    <ntg.seealso.cyberbrain_implant>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [mannitol] Mannitol |
+        [screwdriver] Screwdriver |
+        [open_close_surgery] Open / Close Surgery
+    </ntg.seealso.cyberbrain_implant>
+
+    <!-- Cyberlung -->
+    <ntg.title.cyberlung>Cyberlung</ntg.title.cyberlung>
+    <ntg.description.cyberlung>A cybernetic lung replacement. Embrace the certainty of steel!
+    \nAvailable as a more affordable Cyber-augmented Lung (half meat, half silicon) crafted from an extracted Lung, or the twice as effective fully-synthetic Cyberlung. Can be repaired during surgery with a screwdriver.
+    \nAdvantages of Cyberlungs:
+    - Partial Pressure Protection: briefly grants protection every 30 seconds, functionally doubling the non-lethal time spent in pressure without a suit;
+    - Improves melee attack speed and movement speed;
+    - Improves resistance to Lung Damage and Pneumothorax
+    \nDisadvantages of Cyberlungs:
+    - Can periodically experience fits of Cyberpsychosis (regular psychosis), which can be avoided by reducing your Immunity in any way; such as the very affordable Immunosuppressant Inhaler;
+    - Vulnerable to EMPs
+    \nHow to add to a patient:
+    First, open up the torso as a typical surgery with retracted skin and remove the current lungs. Then, place the Cyberlung in instead and end the surgery. The Mechanical skill requirement is 60, while the Medical is 70.
+    \nHow to remove from a patient:
+    Re-open the torso and apply the Multipurpose Scalpel set to Adaptive Organ Extraction mode twice, removing the organ. Be sure to replace it!
+    \nThe following things may happen during installation:
+    </ntg.description.cyberlung>
+    <ntg.applicationsuccess.cyberlung>
+        [lung_damage] Installs the Cyberorgan, healing some Lung Damage and Vanilla Organ Damage
+    </ntg.applicationsuccess.cyberlung>
+    <ntg.applicationfailed.cyberlung>
+        [lung_damage] Same as success but casues 20% Lung Damage instead (Mechanical Fail) |
+        [internal_bleeding] Same as success but causes Internal Bleeding (Medical Fail)
+    </ntg.applicationfailed.cyberlung>
+    <ntg.seealso.cyberlung>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [pneumothorax] Pneumothorax |
+        [screwdriver] Screwdriver |
+        [organ_transplant_surgery] Organ Transplant Surgery
+    </ntg.seealso.cyberlung>
+
+    <!-- Cyberheart -->
+    <ntg.title.cyberheart>Cyberheart</ntg.title.cyberheart>
+    <ntg.description.cyberheart>A cybernetic heart replacement. Embrace the certainty of steel!
+    \nAvailable as a more affordable Cyber-augmented Heart (half meat, half silicon) crafted from an extracted Heart, or the twice as effective fully-synthetic Cyberheart. Can be repaired during surgery with a screwdriver.
+    \nAdvantages of a Cyberheart:
+    - Increases max health by 20%;
+    - Improves melee attack speed and movement speed;
+    - Doubles rate at which Blood Pressure normalizes;
+    - Improves resistance to Heart Damage
+    \nDisadvantages of a Cyberheart:
+    - Can periodically experience fits of Cyberpsychosis (regular psychosis), which can be avoided by reducing your Immunity in any way; such as the very affordable Immunosuppressant Inhaler;
+    - Vulnerable to EMPs
+    \nHow to add to a patient:
+    First, open up the torso as a typical surgery with retracted skin and remove the current heart. Then, place the Cyberheart in instead and end the surgery. The Mechanical skill requirement is 60, while the Medical is 70.
+    \nHow to remove from a patient:
+    Re-open the torso and apply the Multipurpose Scalpel set to Adaptive Organ Extraction mode twice, removing the organ. Be sure to replace it!
+    \nThe following things may happen during installation:
+    </ntg.description.cyberheart>
+    <ntg.applicationsuccess.cyberheart>
+        [heart_damage] Installs the Cyberorgan, healing some Heart Damage and Vanilla Organ Damage
+    </ntg.applicationsuccess.cyberheart>
+    <ntg.applicationfailed.cyberheart>
+        [heart_damage] Same as success but casues 20% Heart Damage instead (Mechanical Fail) |
+        [internal_bleeding] Same as success but causes Internal Bleeding (Medical Fail)
+    </ntg.applicationfailed.cyberheart>
+    <ntg.seealso.cyberheart>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [screwdriver] Screwdriver |
+        [organ_transplant_surgery] Organ Transplant Surgery
+    </ntg.seealso.cyberheart>
+
+    <!-- Cyberkidney -->
+    <ntg.title.cyberkidney>Cyberkidney</ntg.title.cyberkidney>
+    <ntg.description.cyberkidney>A cybernetic kidney replacement. Embrace the certainty of steel!
+    \nAvailable as a more affordable Cyber-augmented Kidney (half meat, half silicon) crafted from an extracted Kidney, or the twice as effective fully-synthetic Cyberkidney. Can be repaired during surgery with a screwdriver.
+    \nAdvantages of Cyberkidneys:
+    - You only need one;
+    - Improves resistance to Blood Loss and Bleeding;
+    - Switches blood type to C+, which can accept every single blood type;
+    - Improves resistance to Kidney Damage
+    \nDisadvantages of Cyberkidneys:
+    - Can periodically experience fits of Cyberpsychosis (regular psychosis), which can be avoided by reducing your Immunity in any way; such as the very affordable Immunosuppressant Inhaler;
+    - C+ Blood cannot be given to people without C+ blood as well;
+    - Vulnerable to EMPs
+    \nHow to add to a patient:
+    First, open up the torso as a typical surgery with retracted skin and remove the current kidneys. Then, place the Cyberkidney in instead and end the surgery; you only need one!. The Mechanical skill requirement is 60, while the Medical is 70.
+    \nHow to remove from a patient:
+    Re-open the torso and apply the Multipurpose Scalpel set to Adaptive Organ Extraction mode twice, removing the organ. Be sure to replace it!
+    \nThe following things may happen during installation:
+    </ntg.description.cyberkidney>
+    <ntg.applicationsuccess.cyberkidney>
+        [kidney_damage] Installs the Cyberorgan, healing some Kidney Damage and Vanilla Organ Damage
+    </ntg.applicationsuccess.cyberkidney>
+    <ntg.applicationfailed.cyberkidney>
+        [kidney_damage] Same as success but casues 20% Kidney Damage instead (Mechanical Fail) |
+        [internal_bleeding] Same as success but causes Internal Bleeding (Medical Fail)
+    </ntg.applicationfailed.cyberkidney>
+    <ntg.seealso.cyberkidney>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [bleeding] Bleeding |
+        [blood_loss] Blood Loss |
+        [screwdriver] Screwdriver |
+        [organ_transplant_surgery] Organ Transplant Surgery
+    </ntg.seealso.cyberkidney>
+
+    <!-- Cyberliver -->
+    <ntg.title.cyberliver>Cyberliver</ntg.title.cyberliver>
+    <ntg.description.cyberliver>A cybernetic liver replacement. Embrace the certainty of steel!
+    \nAvailable as a more affordable Cyber-augmented Liver (half meat, half silicon) crafted from an extracted Liver, or the twice as effective fully-synthetic Cyberliver. Can be repaired during surgery with a screwdriver.
+    \nAdvantages of a Cyberliver:
+    - Improves resistance to poisons, toxins and Nausea;
+    - Improves resistance to Liver Damage
+    \nDisadvantages of a Cyberliver:
+    - Can periodically experience fits of Cyberpsychosis (regular psychosis), which can be avoided by reducing your Immunity in any way; such as the very affordable Immunosuppressant Inhaler;
+    - Vulnerable to EMPs
+    \nHow to add to a patient:
+    First, open up the torso as a typical surgery with retracted skin and remove the current liver. Then, place the Cyberliver in instead and end the surgery; you only need one!. The Mechanical skill requirement is 60, while the Medical is 70.
+    \nHow to remove from a patient:
+    Re-open the torso and apply the Multipurpose Scalpel set to Adaptive Organ Extraction mode twice, removing the organ. Be sure to replace it!
+    \nThe following things may happen during installation:
+    </ntg.description.cyberliver>
+    <ntg.applicationsuccess.cyberliver>
+        [liver_damage] Installs the Cyberorgan, healing some Liver Damage and Vanilla Organ Damage
+    </ntg.applicationsuccess.cyberliver>
+    <ntg.applicationfailed.cyberliver>
+        [liver_damage] Same as success but casues 20% Liver Damage instead (Mechanical Fail) |
+        [internal_bleeding] Same as success but causes Internal Bleeding (Medical Fail)
+    </ntg.applicationfailed.cyberliver>
+    <ntg.seealso.cyberliver>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [nausea] Nausea |
+        [screwdriver] Screwdriver |
+        [organ_transplant_surgery] Organ Transplant Surgery
+    </ntg.seealso.cyberliver>
+</Infotexts>

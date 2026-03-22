@@ -14,7 +14,9 @@ NTGuide.ContentPages = {
     MainPage = {
         id = "main_page", 
         title = NTGuide.Localize("ntg.title.main_page"), 
-        description = NTGuide.Localize("ntg.description.main_page"), 
+        description = NTGuide.Localize("ntg.description.main_page"),
+        features = {NTGuide.Localize("ntg.features.main_page")},
+        availableaddons = {NTGuide.Localize("ntg.availableaddons.main_page")},
     },
 
     -- Symptom Afflictions

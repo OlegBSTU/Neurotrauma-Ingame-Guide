@@ -1,47 +1,13 @@
 -- Translation table. For any given affliction ID, the page they should link to.
--- Symptom need not be scannable / analyzeable; we store them just to be safe
 -- Order doesnt matter, I just like them to be sorted
 -- Format: Identifier, pageID
 NTGuide.IdentifierToPage = {
-    -- Symptoms
-    {"sym_hematemesis", "vomiting_blood"},
-    {"sym_paleskin", "pale_skin"},
-    {"dyspnea", "shortness_of_breath"},
-    {"sym_cough", "cough"},
-    {"sym_nausea", "nausea"},
-    {"tachycardia", "increased_heartrate"},
-    {"sym_confusion", "confusion"},
-    {"sym_lightheadedness", "lightheadedness"},
-    {"sym_blurredvision", "blurred_vision"},
-    {"sym_legswelling", "leg_swelling"},
-    {"sym_wheezing", "wheezing"},
-    {"sym_weakness", "weakness"},
-    {"fever", "fever"},
-    {"sym_sweating", "sweating"},
-    {"sym_bloating", "bloating"},
-    {"inflammation", "inflammation"},
-    {"sym_jaundice", "jaundice"},
-    {"sym_abdomdiscomfort", "abdominal_discomfort"},
-    {"sym_headache", "headache"},
-    {"sym_craving", "craving"},
-    {"sym_palpitations", "palpitations"},
-    {"spasm", "spasms"},
-    {"pain_abdominal", "abdominal_pain"},
-    {"pain_chest", "chest_pain"},
-    {"pain_extremity", "intense_pain"},
-    {"sym_vomiting", "vomiting"},
-
     -- Head or Brain
     {"cerebralhypoxia", "neurotrauma"},
     {"stroke", "stroke"},
-    {"alcoholwithdrawal", "withdrawal"},
-    {"opiatewithdrawal", "withdrawal"},
-    {"chemwithdrawal", "withdrawal"},
     {"opiateoverdose", "opiate_overdose"},
     {"seizure", "seizure"},
-    {"sym_unconsciousness", "unconsciousness"},
     {"coma", "coma"},
-    {"t_paralysis", "spinal_cord_injury"}, -- Not sure tbh
     {"concussion", "concussion"},
     {"drunk", "drunk"},
 
@@ -115,6 +81,10 @@ NTGuide.IdentifierToPage = {
     {"burn_deg1", "burns"},
     {"burn_deg2", "burns"},
     {"burn_deg3", "burns"},
+	{"lacerations", "open_wounds"},
+	{"gunshotwound", "open_wounds"},
+	{"bitewounds", "open_wounds"},
+	{"explosiondamage", "open_wounds"},
     {"internaldamage", "internal_wounds"},
     {"blunttrauma", "internal_wounds"},
     {"infectedwound", "infected_wounds"},
@@ -159,7 +129,7 @@ NTGuide.IdentifierToPage = {
 -- Check the translation table above:
 -- If we find an identifier we know, pass the page ID we want to open
 -- Otherwise, pass none
-local function IdentifierToLink(tbl, identifier, strength)
+local function IdentifierToLink(IDTranslation, identifier, strength)
     -- Use strength to determine which page multifaceted afflictions link to
     if identifier == "bloodpressure" then
         if strength > 130 then
@@ -170,7 +140,7 @@ local function IdentifierToLink(tbl, identifier, strength)
         end
     end
 
-    for _, entry in ipairs(tbl) do
+    for _, entry in ipairs(IDTranslation) do
         if entry[1] == identifier then
             return entry[2]
         end
@@ -199,7 +169,7 @@ end
 -- Improved readout formatting
 local function formatLine(readoutColor, IdentifierToLink, afflictionName, afflictionStrength)
 	local readoutString = afflictionName .. ": " .. afflictionStrength .. "%"
-	if IdentifierToLink then
+	if IdentifierToLink ~= nil then
 		readoutColor = fixColor(readoutColor)
 		return "‖color:" .. readoutColor .. ";metadata:link@" .. IdentifierToLink .. "‖" .. readoutString .. "‖color:end‖"
 	else
