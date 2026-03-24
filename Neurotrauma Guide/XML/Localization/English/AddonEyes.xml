@@ -1,0 +1,765 @@
+<Infotexts language="English" nowhitespace="false">
+<!-- Neurotrauma Eyes Addon -->
+<!-- Damage Afflictions -->
+    <!-- Human Eye Damage -->
+    <ntg.title.human_eye_damage>Human Eye Damage</ntg.title.human_eye_damage>
+    <ntg.description.human_eye_damage>Damage sustained to a Human Eye. Everyone starts with these!</ntg.description.human_eye_damage>
+    <ntg.causes.human_eye_damage>
+        [hypoxemia] Hypoxemia (Current strength times 0.05 per second) |
+        [stroke] Stroke (Current strength times 0.1 per second) |
+        [sepsis] Sepsis (Current strength times 0.4 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.1 per second) |
+        Being in Pressurized Water without protection (3% per tick) |
+        Physically being damaged
+    </ntg.causes.human_eye_damage>
+    <ntg.effects.human_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.human_eye_damage>
+    <ntg.treatments.human_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.human_eye_damage>
+    <ntg.seealso.human_eye_damage>
+        [human_eye] Human Eye (Item)
+    </ntg.seealso.human_eye_damage>
+
+    <!-- Enhanced Eye Damage -->
+    <ntg.title.enhanced_eye_damage>Enhanced Eye Damage</ntg.title.enhanced_eye_damage>
+    <ntg.description.enhanced_eye_damage>Damage sustained to an Enhanced Human Eye.</ntg.description.enhanced_eye_damage>
+    <ntg.causes.enhanced_eye_damage>
+        [hypoxemia] Hypoxemia (Current strength times 0.004 per second) |
+        [stroke] Stroke (Current strength times 0.08 per second) |
+        [sepsis] Sepsis (Current strength times 0.3 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.82 per second) |
+        Being in Pressurized Water without protection (2.5% per tick) |
+        Physically being damaged
+    </ntg.causes.enhanced_eye_damage>
+    <ntg.effects.enhanced_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.enhanced_eye_damage>
+    <ntg.treatments.enhanced_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.enhanced_eye_damage>
+    <ntg.seealso.enhanced_eye_damage>
+        [enhanced_eye] Enhanced Eye (Item)
+    </ntg.seealso.enhanced_eye_damage>
+
+    <!-- Cyber Eye Damage -->
+    <ntg.title.cyber_eye_damage>Cyber Eye Damage</ntg.title.cyber_eye_damage>
+    <ntg.description.cyber_eye_damage>Damage sustained to a Cybereye. These are immune to pressure and take no damage from afflictions on the body; though this also means they will not regenerate like a biological eye would.</ntg.description.cyber_eye_damage>
+    <ntg.causes.cyber_eye_damage>
+        Physically being damaged
+    </ntg.causes.cyber_eye_damage>
+    <ntg.effects.cyber_eye_damage>
+        Vision impairment relative to the amount of damage sustained
+    </ntg.effects.cyber_eye_damage>
+    <ntg.treatments.cyber_eye_damage>
+        [eye_removal_surgery] Eye Removal Surgery |
+        [cyber_eye_repair_surgery] Cyber Eye Repair Surgery
+    </ntg.treatments.cyber_eye_damage>
+    <ntg.seealso.cyber_eye_damage>
+        [cyber_eye] Cyber Eye (Item)
+    </ntg.seealso.cyber_eye_damage>
+
+    <!-- Plastic Eye Damage -->
+    <ntg.title.plastic_eye_damage>Plastic Eye Damage</ntg.title.plastic_eye_damage>
+    <ntg.description.plastic_eye_damage>The cheap and awful brother of the Cyber Eye.
+    \nDamaged sustained to a Plastic Eye. These are immune to pressure and take no damage from afflictions on the body; though this also means they will not regenerate like a biological eye would.</ntg.description.plastic_eye_damage>
+    <ntg.causes.plastic_eye_damage>
+        Physically being damaged
+    </ntg.causes.plastic_eye_damage>
+    <ntg.effects.plastic_eye_damage>
+        Vision impairment relative to the amount of damage sustained
+    </ntg.effects.plastic_eye_damage>
+    <ntg.treatments.plastic_eye_damage>
+        [eye_removal_surgery] Eye Removal Surgery
+    </ntg.treatments.plastic_eye_damage>
+    <ntg.seealso.plastic_eye_damage>
+        [plastic_eye]
+    </ntg.seealso.plastic_eye_damage>
+
+    <!-- Husk Eye Damage -->
+    <ntg.title.husk_eye_damage>Husk Eye Damage</ntg.title.husk_eye_damage>
+    <ntg.description.husk_eye_damage>Damage sustained to a Husk Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged. Regenerates mildly faster.</ntg.description.husk_eye_damage>
+    <ntg.causes.husk_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.husk_eye_damage>
+    <ntg.effects.husk_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.husk_eye_damage>
+    <ntg.treatments.husk_eye_damage>
+        Passive Regeneration (-0.2 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.husk_eye_damage>
+    <ntg.seealso.husk_eye_damage>
+        [husk_eye] Husk Eye (Item)
+    </ntg.seealso.husk_eye_damage>
+
+    <!-- Crawler Eye Damage -->
+    <ntg.title.crawler_eye_damage>Crawler Eye Damage</ntg.title.crawler_eye_damage>
+    <ntg.description.crawler_eye_damage>Damage sustained to a Crawler Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged.</ntg.description.crawler_eye_damage>
+    <ntg.causes.crawler_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.crawler_eye_damage>
+    <ntg.effects.crawler_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.crawler_eye_damage>
+    <ntg.treatments.crawler_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.crawler_eye_damage>
+    <ntg.seealso.crawler_eye_damage>
+        [crawler_eye] Crawler Eye (Item)
+    </ntg.seealso.crawler_eye_damage>
+
+    <!-- Mudraptor Eye Damage -->
+    <ntg.title.mudraptor_eye_damage>Mudraptor Eye Damage</ntg.title.mudraptor_eye_damage>
+    <ntg.description.mudraptor_eye_damage>Damage sustained to a Mudraptor Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged.</ntg.description.mudraptor_eye_damage>
+    <ntg.causes.mudraptor_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.mudraptor_eye_damage>
+    <ntg.effects.mudraptor_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.mudraptor_eye_damage>
+    <ntg.treatments.mudraptor_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.mudraptor_eye_damage>
+    <ntg.seealso.mudraptor_eye_damage>
+        [mudraptor_eye] Mudraptor Eye (Item)
+    </ntg.seealso.mudraptor_eye_damage>
+
+    <!-- Hammerhead Eye Damage -->
+    <ntg.title.hammerhead_eye_damage>Hammerhead Eye Damage</ntg.title.hammerhead_eye_damage>
+    <ntg.description.hammerhead_eye_damage>Damage sustained to a Hammerhead Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged.</ntg.description.hammerhead_eye_damage>
+    <ntg.causes.hammerhead_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.hammerhead_eye_damage>
+    <ntg.effects.hammerhead_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.hammerhead_eye_damage>
+    <ntg.treatments.hammerhead_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.hammerhead_eye_damage>
+    <ntg.seealso.hammerhead_eye_damage>
+        [hammerhead_eye] Hammerhead Eye (Item)
+    </ntg.seealso.hammerhead_eye_damage>
+
+    <!-- Watcher Eye Damage -->
+    <ntg.title.watcher_eye_damage>Watcher Eye Damage</ntg.title.watcher_eye_damage>
+    <ntg.description.watcher_eye_damage>Damage sustained to a Watcher Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged.</ntg.description.watcher_eye_damage>
+    <ntg.causes.watcher_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.watcher_eye_damage>
+    <ntg.effects.watcher_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.watcher_eye_damage>
+    <ntg.treatments.watcher_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.watcher_eye_damage>
+    <ntg.seealso.watcher_eye_damage>
+        [watcher_eye] Watcher Eye (Item)
+    </ntg.seealso.watcher_eye_damage>
+
+    <!-- Latcher Eye Damage -->
+    <ntg.title.latcher_eye_damage>Latcher Eye Damage</ntg.title.latcher_eye_damage>
+    <ntg.description.latcher_eye_damage>Damage sustained to a Latcher Eye. Though it is immune to pressure and lack of oxygen, it can still be damaged.</ntg.description.latcher_eye_damage>
+    <ntg.causes.latcher_eye_damage>
+        [stroke] Stroke (Current strength times 0.03 per second) |
+        [sepsis] Sepsis (Current strength times 0.03 per second) |
+        [retinopathy] Retinopathy (Current strength times 0.25 per second) |
+        Physically being damaged
+    </ntg.causes.latcher_eye_damage>
+    <ntg.effects.latcher_eye_damage>
+        [cataract] May cause Cataracts (if over 60% eye damage) |
+        [dead_eyes] Dead Eyes (If both eyes recieve too much damage) |
+        [dead_eye] Dead Eye (If only one eye recieves too much damage)
+    </ntg.effects.latcher_eye_damage>
+    <ntg.treatments.latcher_eye_damage>
+        Passive Regeneration (-0.1 damage per tick) |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [laser_eye_surgery] Laser Eye Surgery |
+        [eye_drop_application] Eye Drop Application
+    </ntg.treatments.latcher_eye_damage>
+    <ntg.seealso.latcher_eye_damage>
+        [latcher_eye] Latcher Eye (Item)
+    </ntg.seealso.latcher_eye_damage>
+    
+<!-- Mechanic Afflictions -->
+    <!-- Dead Eyes -->
+    <ntg.title.dead_eyes>Dead Eyes</ntg.title.dead_eyes>
+    <ntg.description.dead_eyes>The result of recieving too much eye damage to both eyes. At this point, the eyes cannot be salvaged anymore and will not regenerate.</ntg.description.dead_eyes>
+    <ntg.causes.dead_eyes>
+        Eye damage, no matter your eye type (unless they are mechanical)
+    </ntg.causes.dead_eyes>
+    <ntg.effects.dead_eyes>
+        Total blindness
+    </ntg.effects.dead_eyes>
+    <ntg.treatments.dead_eyes>
+        [eye_removal_surgery] Eye Removal Surgery
+    </ntg.treatments.dead_eyes>
+
+    <!-- Dead Eye -->
+    <ntg.title.dead_eye>Dead Eye</ntg.title.dead_eye>
+    <ntg.description.dead_eye>The result of recieving too much eye damage to a singular eye. At this point, the eye cannot be salvaged anymore and will not regenerate.</ntg.description.dead_eye>
+    <ntg.causes.dead_eye>
+        Eye damage, no matter your eye type (unless they are synthetic)
+    </ntg.causes.dead_eye>
+    <ntg.effects.dead_eye>
+        Partial blindness |
+        [retinopathy] May cause Retinopathy in the remaining eye
+    </ntg.effects.dead_eye>
+    <ntg.treatments.dead_eye>
+        [eye_removal_surgery] Eye Removal Surgery
+    </ntg.treatments.dead_eye>
+
+    <!-- Retinopathy -->
+    <!-- 5+ -->
+    <ntg.title.retinopathy>Retinopathy</ntg.title.retinopathy>
+    <ntg.description.retinopathy>Autoimmune Retinopathy, or damage to the retina, may be caused by having a singular dead eye if your immunity is above 10%. The other eye (if biological!) will rapidly sustain damage as the body overreacts.
+    \nWill not be visible on the Health Scanner until it is above 5% strength; though symptoms will appear before then.
+    \nThe possibility of this happening can be disabled in the config.
+    </ntg.description.retinopathy>
+    <ntg.causes.retinopathy>
+        [dead_eye] Having a Dead Eye
+    </ntg.causes.retinopathy>
+    <ntg.effects.retinopathy>
+        Large amounts of eye damage, no matter your eye type (unless they are non-biological!)
+    </ntg.effects.retinopathy>
+    <ntg.treatments.retinopathy>
+        [eye_removal_surgery] Eye Removal Surgery to remove the dead eye |
+        [azathioprine] Azathioprine (or other medication similar to it) that reduces your Immunity
+    </ntg.treatments.retinopathy>
+    <ntg.seealso.retinopathy>
+        [immunity] Immunity
+    </ntg.seealso.retinopathy>
+    
+    <!-- Cataract -->
+    <!-- 15+ -->
+    <ntg.title.cataract>Cataract</ntg.title.cataract>
+    <ntg.description.cataract>Cataracts, or clouding of the lens of an eye, are the result of high levels of Eye Damage, though not enough to completely kill the eye. It can only happen in biological eyes.
+    \nWill not be visible on the Health Scanner until it is above 15% strength; though symptoms will appear before then.
+    </ntg.description.cataract>
+    <ntg.causes.cataract>
+        Eye Damage, no matter your eye type (unless synthetic)
+    </ntg.causes.cataract>
+    <ntg.effects.cataract>
+        [blurred_vision] Blurred Vision
+    </ntg.effects.cataract>
+    <ntg.treatments.cataract>
+        [cataract_surgery] Cataract Surgery
+    </ntg.treatments.cataract>
+    
+    <!-- Vision Sickness -->
+    <ntg.title.vision_sickness>Vision Sickness</ntg.title.vision_sickness>
+    <ntg.description.vision_sickness>Vision Sickness will occur after recieving new eyes, as the body (and your mind!) needs to adapt to them.</ntg.description.vision_sickness>
+    <ntg.causes.vision_sickness>
+        [eye_transplant_surgery] Eye Transplant Surgery
+    </ntg.causes.vision_sickness>
+    <ntg.effects.vision_sickness>
+        [blurred_vision] Blurred Vision |
+        [headache] Headache |
+        [confusion] Confusion
+    </ntg.effects.vision_sickness>
+    <ntg.treatments.vision_sickness>
+        Time
+    </ntg.treatments.vision_sickness>
+    
+    <!-- Mismatch -->
+    <ntg.title.mismatch>Mismatch</ntg.title.mismatch>
+    <ntg.description.mismatch>A mismatch will occur if there are two different types of eye implanted; the brain has trouble keeping up and will have troubles with other tasks due to this.</ntg.description.mismatch>
+    <ntg.causes.mismatch>
+        Having a set of different eyes (For example, a Human Eye and a Cyber Eye at the same time)
+    </ntg.causes.mismatch>
+    <ntg.effects.mismatch>
+        [headache] Headache |
+        Skill reduction
+    </ntg.effects.mismatch>
+    <ntg.treatments.mismatch>
+        [corrective_glasses] Corrective Glasses will counteract the symptoms
+    </ntg.treatments.mismatch>
+
+<!-- Surgery Afflictions -->
+    <!-- Removed Eyes -->
+    <ntg.title.removed_eyes>Removed Eyes</ntg.title.removed_eyes>
+    <ntg.description.removed_eyes>Either the result of surgical removal of the eyes, or the destruction of synthetic eyes.</ntg.description.removed_eyes>
+    <ntg.causes.removed_eyes>
+        [eye_removal_surgery] Eye Removal Surgery |
+        Too much Synthetic Eye damage
+    </ntg.causes.removed_eyes>
+    <ntg.effects.removed_eyes>
+        Total Blindness
+    </ntg.effects.removed_eyes>
+    <ntg.treatments.removed_eyes>
+        [eye_transplant_surgery] Eye Transplant Surgery
+    </ntg.treatments.removed_eyes>
+    
+    <!-- Removed Eye -->
+    <ntg.title.removed_eye>Removed Eye</ntg.title.removed_eye>
+    <ntg.description.removed_eye>Either the result of surgical removal of an eye, or the destruction of a synthetic eye.</ntg.description.removed_eye>
+    <ntg.causes.removed_eye>
+        [eye_removal_surgery] Eye Removal Surgery |
+        Too much Synthetic Eye damage
+    </ntg.causes.removed_eye>
+    <ntg.effects.removed_eye>
+        Partial Blindness
+    </ntg.effects.removed_eye>
+    <ntg.treatments.removed_eye>
+        [eye_transplant_surgery] Eye Transplant Surgery
+    </ntg.treatments.removed_eye>
+
+    <!-- Held Eyelids -->
+    <ntg.title.held_eyelids>Held Eyelids</ntg.title.held_eyelids>
+    <ntg.description.held_eyelids>The second step of all eye surgeries, where the eyelids are forced open to access the eye properly.</ntg.description.held_eyelids>
+    <ntg.causes.held_eyelids>
+        [skin_retractors] Using Skin Retractors on the head (Medical Skill Required: 25. Will cause between 0% to 7% Bleeding and 0% to 3% Eye Damage if failed)
+    </ntg.causes.held_eyelids>
+    <ntg.effects.held_eyelids>
+        [skin_retractors] Re-applying the Skin Retractors
+    </ntg.effects.held_eyelids>
+    <ntg.seealso.held_eyelids>
+        [bleeding] Bleeding
+    </ntg.seealso.held_eyelids>
+    
+    <!-- Popped Eyes -->
+    <ntg.title.popped_eyes>Popped Eyes</ntg.title.popped_eyes>
+    <ntg.description.popped_eyes>The third step of Eye Removal Surgery or Lens Application Surgery. The eyes are popped out to allow better access, though at the cost of patient visibility.</ntg.description.popped_eyes>
+    <ntg.causes.popped_eyes>
+        [tweezers] Using Tweezers on the head after Skin Retractors (Medical Skill Required: 30. Will cause between 0% to 10% Bleeding and 0% to 5% Eye Damage if failed)
+    </ntg.causes.popped_eyes>
+    <ntg.effects.popped_eyes>
+        Blurry vision and skill loss, scaling with affliction strength |
+        [traumatic_shock] Traumatic Shock if not near a Surgery Table
+    </ntg.effects.popped_eyes>
+    <ntg.seealso.popped_eyes>
+        [held_eyelids] Held Eyelids |
+        [surgery_table] Surgery Table |
+        [eye_removal_surgery] Eye Removal Surgery |
+        [lens_application_surgery] Lens Application Surgery |
+        [bleeding] Bleeding
+    </ntg.seealso.popped_eyes>
+    
+    <!-- Eye Connector -->
+    <ntg.title.eye_connector>Eye Connector</ntg.title.eye_connector>
+    <ntg.description.eye_connector>The third step of Eye Transplant Surgery. Specialised eye connectors are applied to the eye socket in preparation for a new eye.</ntg.description.eye_connector>
+    <ntg.causes.eye_connector>
+        [eye_connector_item] Using an Eye Connector on the head after Skin Retractors
+    </ntg.causes.eye_connector>
+    <ntg.seealso.eye_connector>
+        [eye_transplant_surgery] Eye Transplant Surgery
+    </ntg.seealso.eye_connector>
+    
+    <!-- Cornea Incision -->
+    <ntg.title.cornea_incision>Cornea Incision</ntg.title.cornea_incision>
+    <ntg.description.cornea_incision>The third step of Cataract Surgery; capable of healing on its own if left alone. An incision is made into the cornea, allowing for replacement of the lens within the biological eye.</ntg.description.cornea_incision>
+    <ntg.causes.cornea_incision>
+        [scalpel] Using a Scalpel on the head after Skin Retractors |
+        [multipurpose_scalpel] Using a Multipurpose Scalpel in Surgical Incision Mode on the head after Skin Retractors (Medical Skill Required: 45. Will cause between 0% to 25% Bleeding and 0% to 15 Eye% Damage if failed)
+    </ntg.causes.cornea_incision>
+    <ntg.effects.cornea_incision>
+        Blurry vision and skill loss, scaling with affliction strength |
+        [traumatic_shock] Traumatic Shock if done without sedation
+    </ntg.effects.cornea_incision>
+    <ntg.seealso.cornea_incision>
+        [cataract_surgery] Cataract Surgery |
+        [organic_eye_lens] Organic Eye Lens |
+        [analgesia] Analgesia
+    </ntg.seealso.cornea_incision>
+    
+    <!-- Emulsification -->
+    <ntg.title.emulsification>Emulsification</ntg.title.emulsification>
+    <ntg.description.emulsification>The fourth step of Cataract Surgery. Will never heal on its own, requires the application of a new lens. The original cloudy lens is broken up into pieces and sucked out of the eye in order to be replaced with a new one.</ntg.description.emulsification>
+    <ntg.causes.emulsification>
+        [needle] Using a needle on the head after a Cornea Incision (Medical Skill Required: 50. Will cause between 0% to 7% Eye Damage if failed)
+    </ntg.causes.emulsification>
+    <ntg.effects.emulsification>
+        Blurry vision and skill loss, scaling with affliction strength |
+        [traumatic_shock] Traumatic Shock if not near a Surgery Table
+    </ntg.effects.emulsification>
+    <ntg.seealso.emulsification>
+        [cataract_surgery] Cataract Surgery |
+        [cornea_incision] Cornea Incision |
+        [surgery_table] Surgery Table
+    </ntg.seealso.emulsification>
+    
+    <!-- Eye Drops -->
+    <ntg.title.eye_drops>Eye Drops</ntg.title.eye_drops>
+    <ntg.description.eye_drops>The result of application of specialised eye drops to the eyes, enhancing natural regeneration.</ntg.description.eye_drops>
+    <ntg.causes.eye_drops>
+        [eye_drop_application] Applying Eye Drops
+    </ntg.causes.eye_drops>
+    <ntg.effects.eye_drops>
+        Increases natural eye healing speed by 4x for the duration of the affliction (though only on biological eyes!)
+    </ntg.effects.eye_drops>
+    
+    <!-- Laser Surgery -->
+    <ntg.title.laser_surgery>Laser Surgery</ntg.title.laser_surgery>
+    <ntg.description.laser_surgery>The result of skill application of a Laser Surgery Tool, supercharging natural regeneration of the eyes.</ntg.description.laser_surgery>
+    <ntg.causes.laser_surgery>
+        [laser_eye_surgery] Laser Eye Surgery
+    </ntg.causes.laser_surgery>
+    <ntg.effects.laser_surgery>
+        Increases natural eye healing speed by 16x for the duration of the affliction (though only on biological eyes!)
+    </ntg.effects.laser_surgery>
+
+<!-- Eye Surgeries -->
+    <!-- Eye Removal Surgery -->
+    <ntg.title.eye_removal_surgery>Eye Removal Surgery</ntg.title.eye_removal_surgery>
+    <ntg.description.eye_removal_surgery>Medical Skill Check: 45.
+    \nSurgery to remove one or both eyes - alive, dead or synthetic - in order to replace them, prevent extra damage or to use them in an Eye Regeneration Jar. If the eye(s) is/are still alive, they will be put into the inventory of the one performing the surgery; in case their inventory is full, they will be dropped on the ground!
+    \nShould be done near a Surgery Table.</ntg.description.eye_removal_surgery>
+    <ntg.steps.eye_removal_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [tweezers] 3. Apply Tweezers to cause Popped Eyes |
+        [multipurpose_scalpel] 4a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
+        [scalpel] 4b. Apply a Scalpel
+    </ntg.steps.eye_removal_surgery>
+    <ntg.seealso.eye_removal_surgery>
+        [dead_eye] Dead Eye |
+        [dead_eyes] Dead Eyes |
+        [eye_transplant_surgery] Eye Transplant Surgery |
+        [popped_eyes] Popped Eyes |
+        [held_eyelids] Held Eyelids |
+    </ntg.seealso.eye_removal_surgery>
+
+    <!-- Eye Transplant Surgery -->
+    <ntg.title.eye_transplant_surgery>Eye Transplant Surgery</ntg.title.eye_transplant_surgery>
+    <ntg.description.eye_transplant_surgery>Medical Skill Check: 45.
+    \nSurgery to grant the patient a new eye. Only works if there is not already an eye - alive, dead or synthetic - in the eye socket. Remove them first!
+    </ntg.description.eye_transplant_surgery>
+    <ntg.steps.eye_transplant_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [eye_connector_item] 3. Apply Eye Connector |
+        4. Insert an eye of your choice
+    </ntg.steps.eye_transplant_surgery>
+    <ntg.seealso.eye_transplant_surgery>
+        [held_eyelids] Held Eyelids |
+        [eye_removal_surgery] Eye Removal Surgery
+    </ntg.seealso.eye_transplant_surgery>
+
+    <!-- Cataract Surgery -->
+    <ntg.title.cataract_surgery>Cataract Surgery</ntg.title.cataract_surgery>
+    <ntg.description.cataract_surgery>Medical Skill Check: 50.
+    \nSurgery to remove a Cataract; ensure you have an Organic Eye Lens ready to go!</ntg.description.cataract_surgery>
+    <ntg.steps.cataract_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [multipurpose_scalpel] 3a. Apply a Multipurpose Scalpel in the Surgical Incision mode to cause a Cornea Incision |
+        [scalpel] 3b. Apply a Scalpel to cause a Cornea Incision |
+        [needle] 4. Apply a Needle to cause Emulsification |
+        [organic_eye_lens] 5. Apply an Organic Eye Lens to remove the Cataract
+    </ntg.steps.cataract_surgery>
+    <ntg.seealso.cataract_surgery>
+        [held_eyelids] Held Eyelids |
+        [cornea_incision] Cornea Incision |
+        [emulsification] Emulsification |
+        [eye_removal_surgery] Eye Removal Surgery
+    </ntg.seealso.cataract_surgery>
+
+    <!-- Cyber Eye Repair Surgery -->
+    <ntg.title.cyber_eye_repair_surgery>Cyber Eye Repair Surgery</ntg.title.cyber_eye_repair_surgery>
+    <ntg.description.cyber_eye_repair_surgery>Medical Skill Check: 30.
+    \nSurgery to repair Cyber Eyes.
+    </ntg.description.cyber_eye_repair_surgery>
+    <ntg.steps.cyber_eye_repair_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [tweezers] 3. Apply Tweezers to cause Popped Eyes |
+        4. Apply an FPGA Circuit (repairs 20% Damage per application)
+    </ntg.steps.cyber_eye_repair_surgery>
+
+    <!-- Lens Application Surgery -->
+    <ntg.title.lens_application_surgery>Lens Application Surgery</ntg.title.lens_application_surgery>
+    <ntg.description.lens_application_surgery>Medical Skill Check: 30.
+    \nA surgery to apply a specialised lens into an eye capable of holding it, allowing for a brand new perspective.
+    </ntg.description.lens_application_surgery>
+    <ntg.steps.lens_application_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [tweezers] 3. Apply Tweezers to cause Popped Eyes |
+        4. Apply a lens of your choice
+    </ntg.steps.lens_application_surgery>
+    <ntg.seealso.lens_application_surgery>
+        [medical_lens] Medical Lens |
+        [electrical_lens] Electrical Lens |
+        [night_vision_lens] Night Vision Lens |
+        [thermal_lens] Thermal Lens |
+        [enhanced_eye] Enhanced Eye |
+        [cyber_eye] Cyber Eye
+    </ntg.seealso.lens_application_surgery>
+    
+    <!-- Lens Removal Surgery -->
+    <ntg.title.lens_removal_surgery>Lens Removal Surgery</ntg.title.lens_removal_surgery>
+    <ntg.description.lens_removal_surgery>Medical Skill Check: 40.
+    \nA surgery to remove a specialised lens from within the eye. You could also just remove the entire eye.</ntg.description.lens_removal_surgery>
+    <ntg.steps.lens_removal_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [tweezers] 3. Apply Tweezers to cause Popped Eyes |
+        4. Apply a screwdriver
+    </ntg.steps.lens_removal_surgery>
+
+    <!-- Laser Eye Surgery -->
+    <ntg.title.laser_eye_surgery>Laser Eye Surgery</ntg.title.laser_eye_surgery>
+    <ntg.description.laser_eye_surgery>Medical Skill Check: 80.
+    \nAn advanced surgery to supercharge natural eye healing. Only works on biological eyes.</ntg.description.laser_eye_surgery>
+    <ntg.steps.laser_eye_surgery>
+        [analgesia] 1a. Apply Analgesia |
+        [anesthesia] 1b. Apply Anesthesia |
+        [skin_retractors] 2. Apply Skin Retractors to cause Held Eyelids |
+        [laser_surgery_tool] 3. Apply a Laser Surgery Tool
+    </ntg.steps.laser_eye_surgery>
+
+    <!-- Eye Drop Application-->
+    <ntg.title.eye_drop_application>Eye Drop Application</ntg.title.eye_drop_application>
+    <ntg.description.eye_drop_application>A procedure to enhance natural eye healing. Only works on biological eyes.</ntg.description.eye_drop_application>
+    <ntg.steps.eye_drop_application>
+        [eye_drops_item] 1. Apply Eye Drops
+    </ntg.steps.eye_drop_application>
+
+<!-- Eye Types -->
+    <!-- Human Eye -->
+    <ntg.title.human_eye>Human Eye</ntg.title.human_eye>
+    <ntg.description.human_eye>Just a regular human eye - everyone has a couple. Probably.</ntg.description.human_eye>
+    <ntg.effects.human_eye>
+        Allows you to see
+    </ntg.effects.human_eye>
+
+    <!-- Enhanced Eye -->
+    <ntg.title.enhanced_eye>Enhanced Eye</ntg.title.enhanced_eye>
+    <ntg.description.enhanced_eye>A regular human eye, enhanced with electrical circuits and plastic.</ntg.description.enhanced_eye>
+    <ntg.effects.enhanced_eye>
+        Allows you to see |
+        [lens_application_surgery] Allows cyber lenses to be installed using Lens Application Surgery |
+        Better damage resistance
+    </ntg.effects.enhanced_eye>
+
+    <!-- Cyber Eye -->
+    <ntg.title.cyber_eye>Cyber Eye</ntg.title.cyber_eye>
+    <ntg.description.cyber_eye>Costly synthetic eyes. Can't be damaged by bodily afflictions, can't be naturally healed. Resistant to watter pressure and does not need to be refrigerated.</ntg.description.cyber_eye>
+    <ntg.effects.cyber_eye>
+        Allows you to see better |
+        [lens_application_surgery] Allows cyber lenses to be installed using Lens Application Surgery |
+        [cyber_repair_surgery] Must be repaired using Cyber Repair Surgery |
+        High damage resistance
+    </ntg.effects.cyber_eye>
+
+    <!-- Plastic Eye -->
+    <ntg.title.plastic_eye>Plastic Eye</ntg.title.plastic_eye>
+    <ntg.description.plastic_eye>Pseudo eyes for those too poor to afford real ones; though they are resistant to water pressure and do not need to be refrigerated. Will melt if exposed to fire, though. Will not heal naturally nor be damaged by bodily afflictions; cannot be repaired!</ntg.description.plastic_eye>
+    <ntg.effects.plastic_eye>
+        Plastic Vision (applies a unique overlay on your screen)
+    </ntg.effects.plastic_eye>
+
+    <!-- Husk Eye -->
+    <ntg.title.husk_eye>Husk Eye</ntg.title.husk_eye>
+    <ntg.description.husk_eye>Pressure-resistant eyes extracted from a Husk; will distort your vision - but at least they will not infect you!</ntg.description.husk_eye>
+    <ntg.effects.husk_eye>
+        Distorted and blurry vision
+    </ntg.effects.husk_eye>
+
+    <!-- Crawler Eye -->
+    <ntg.title.crawler_eye>Crawler Eye</ntg.title.crawler_eye>
+    <ntg.description.crawler_eye>Pressure-resistant eyes extracted from a Crawler; better suited for low-light environments, though at a mild cost.</ntg.description.crawler_eye>
+    <ntg.effects.crawler_eye>
+        Reduced skills |
+        Better vision in the dark
+    </ntg.effects.crawler_eye>
+
+    <!-- Mudraptor Eye -->
+    <ntg.title.mudraptor_eye>Mudraptor Eye</ntg.title.mudraptor_eye>
+    <ntg.description.mudraptor_eye>Pressure-resistant eyes extracted from a Mudraptor; better suited for low-light environments, though at a mild cost. Looks like Europa herself.</ntg.description.mudraptor_eye>
+    <ntg.effects.mudraptor_eye>
+        Reduced skills |
+        Better vision in the dark
+    </ntg.effects.mudraptor_eye>
+
+    <!-- Hammerhead Eye -->
+    <ntg.title.hammerhead_eye>Hammerhead Eye</ntg.title.hammerhead_eye>
+    <ntg.description.hammerhead_eye>Pressure- and damage resistant eyes extracted from a Hammerhead; better suited for low-light environments, though at a mild cost.</ntg.description.hammerhead_eye>
+    <ntg.effects.hammerhead_eye>
+        Reduced skills |
+        Better vision in the dark |
+        Better damage resistance
+    </ntg.effects.hammerhead_eye>
+
+    <!-- Watcher Eye -->
+    <ntg.title.watcher_eye>Watcher Eye</ntg.title.watcher_eye>
+    <ntg.description.watcher_eye>Pressure-resistant eyes extracted from a Watcher; better suited for low-light environments and with its excellent vision increases your aptitude for tasks. May cause the mind of yourself and your crew to struggle, however.</ntg.description.watcher_eye>
+    <ntg.effects.watcher_eye>
+        Increased skills (25% more) |
+        Better vision in the dark |
+        May cause Psychosis
+    </ntg.effects.watcher_eye>
+
+    <!-- Latcher Eye -->
+    <ntg.title.latcher_eye>Latcher Eye</ntg.title.latcher_eye>
+    <ntg.description.latcher_eye>Pressure-resistant eyes extracted from a Latcher; better suited for low-light environments and allow you to 'sense' life-forms through walls.</ntg.description.latcher_eye>
+    <ntg.effects.latcher_eye>
+        Better vision in the dark |
+        Better damage resistance |
+        See life-forms through walls, vaguely 
+    </ntg.effects.latcher_eye>
+
+<!-- Lens Types -->
+    <!-- Medical Lens -->
+    <ntg.title.medical_lens>Medical Lens</ntg.title.medical_lens>
+    <ntg.description.medical_lens>An advanced cyberlens that's used during Lens Application Surgery to upgrade Enhanced / Cyber Eyes.
+    \nGives 10 Medical Skill and enables Health Scanner functionality when installed:
+    \n- Press F to scan the selected limb while in the health UI;
+    \n- Press F outside of the health UI to turn the ranged version on/off, allowing you to see afflictions from a distance.
+    </ntg.description.medical_lens>
+    <ntg.seealso.medical_lens>
+        [lens_application_surgery] Lens Application Surgery |
+        [cyber_eye] Cyber Eye |
+        [enhanced_eye] Enhanced Eye
+    </ntg.seealso.medical_lens>
+
+    <!-- Electrical Lens -->
+    <ntg.title.electrical_lens>Electrical Lens</ntg.title.electrical_lens>
+    <ntg.description.electrical_lens>An advanced cyberlens that's used during Lens Application Surgery to upgrade Enhanced / Cyber Eyes.
+    \nGives 15 Electrical Skill and enables Electrical Vision. Press F to turn it on/off.
+    </ntg.description.electrical_lens>
+    <ntg.seealso.electrical_lens>
+       [lens_application_surgery] Lens Application Surgery |
+        [cyber_eye] Cyber Eye |
+        [enhanced_eye] Enhanced Eye
+    </ntg.seealso.electrical_lens>
+
+    <!-- Night Vision Lens -->
+    <ntg.title.night_vision_lens>Night Vision Lens</ntg.title.night_vision_lens>
+    <ntg.description.night_vision_lens>An advanced cyberlens that's used during Lens Application Surgery to upgrade Enhanced / Cyber Eyes.
+    \nEnables Night Vision. Press F to turn it on/off.
+    </ntg.description.night_vision_lens>
+    <ntg.seealso.night_vision_lens>
+        [lens_application_surgery] Lens Application Surgery |
+        [cyber_eye] Cyber Eye |
+        [enhanced_eye] Enhanced Eye
+    </ntg.seealso.night_vision_lens>
+
+    <!-- Thermal Lens -->
+    <ntg.title.thermal_lens>Thermal Lens</ntg.title.thermal_lens>
+    <ntg.description.thermal_lens>An advanced cyberlens that's used during Lens Application Surgery to upgrade Enhanced / Cyber Eyes.
+    \nGives 15 Weapons Skill and enables Thermal Vision. Press F to turn it on/off.
+    </ntg.description.thermal_lens>
+    <ntg.seealso.thermal_lens>
+        [lens_application_surgery] Lens Application Surgery |
+        [cyber_eye] Cyber Eye |
+        [enhanced_eye] Enhanced Eye
+    </ntg.seealso.thermal_lens>
+
+<!-- Surgery Items -->
+    <!-- Eye Connector -->
+    <ntg.title.eye_connector_item>Eye Connector (Item)</ntg.title.eye_connector_item>
+    <ntg.description.eye_connector_item>Used in Eye Transplant Surgery. Each application can be used to transplant 1 eye, and it holds 4 applications.</ntg.description.eye_connector_item>
+    <ntg.seealso.eye_connector_item>
+        [eye_transplant_surgery] Eye Transplant Surgery
+    </ntg.seealso.eye_connector_item>
+
+    <!-- Organic Eye Lens -->
+    <ntg.title.organic_eye_lens>Organic Eye Lens</ntg.title.organic_eye_lens>
+    <ntg.description.organic_eye_lens>A replacement lens to use in in Cataract Surgery.</ntg.description.organic_eye_lens>
+    <ntg.seealso.organic_eye_lens>
+        [cataract_surgery] Cataract Surgery
+    </ntg.seealso.organic_eye_lens>
+
+    <!-- Laser Surgery Tool -->
+    <ntg.title.laser_surgery_tool>Laser Surgery Tool</ntg.title.laser_surgery_tool>
+    <ntg.description.laser_surgery_tool>Medical Skill Check: 80.
+    \nAn advanced handheld surgery tool to enhance the healing process. Will cause major eye damage if not applied properly, and consumes a lot of power.</ntg.description.laser_surgery_tool>
+    <ntg.seealso.laser_surgery_tool>
+        [laser_eye_surgery] Laser Eye Surgery
+    </ntg.seealso.laser_surgery_tool>
+
+    <!-- Advanced Eyeball Extraction Device -->
+    <ntg.title.the_spoon>Advanced Eyeball Extraction Device</ntg.title.the_spoon>
+    <ntg.description.the_spoon>A highly advanced tool to allow for eyeball extraction on dead creatures; though this may damage them.
+    \nIf you're trying to craft this, it's called 'The Spoon' in the fabricator.
+    </ntg.description.the_spoon>
+
+    <!-- Eye Drops -->
+    <ntg.title.eye_drops_item>Eye Drops</ntg.title.eye_drops_item>
+    <ntg.description.eye_drops_item>Medical Skill Check: None.
+    \nUsed to make eyes heal faster by applying to the eyes. Does not work on Synthetic eyes.
+    </ntg.description.eye_drops_item>
+    <ntg.seealso.eye_drops_item>
+        [eye_drop_application] Eye Drop Application
+    </ntg.seealso.eye_drops_item>
+
+<!-- Other Items -->
+    <!-- Corrective Glasses-->
+    <ntg.title.corrective_glasses>Corrective Glasses</ntg.title.corrective_glasses>
+    <ntg.description.corrective_glasses>A set of corrective glasses that help remedy the downsides of eye damage, cataracts or mismatching eyes. They do not cure the affliction, only counter the effects.</ntg.description.corrective_glasses>
+    <ntg.effects.corrective_glasses>
+        [blurred_vision] Prevents the effects of Blurred Vision |
+        [mismatch] Prevents the effects of Mismatch
+    </ntg.effects.corrective_glasses>
+
+    <!-- Night Vision Goggles -->
+    <ntg.title.night_vision_goggles>Night Vision Goggles</ntg.title.night_vision_goggles>
+    <ntg.description.night_vision_goggles>A battery powered set of goggles that enhance vision in the dark.</ntg.description.night_vision_goggles>
+    <ntg.effects.night_vision_goggles>
+        Allows you to see in the dark
+    </ntg.effects.night_vision_goggles>
+
+    <!-- Eye Regeneration Jar -->
+    <ntg.title.eye_regeneration_jar>Eye Regeneration Jar</ntg.title.eye_regeneration_jar>
+    <ntg.description.eye_regeneration_jar>A jar filled with a special liquid that helps regenerate biological eyes. This does not work on synthetic eyes. It can be placed down and holds two eyes.</ntg.description.eye_regeneration_jar>
+    <ntg.effects.eye_regeneration_jar>
+        Heals the stored eye(s) slowly over time
+    </ntg.effects.eye_regeneration_jar>
+</Infotexts>

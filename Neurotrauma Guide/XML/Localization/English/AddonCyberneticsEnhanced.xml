@@ -7,23 +7,23 @@
     <!-- Cybernetic Arm -->
     <ntg.title.cybernetic_arm>Cybernetic Arm</ntg.title.cybernetic_arm>
     <ntg.description.cybernetic_arm>A cybernetic arm that can be attached to any surgically amputated arm socket. It can be removed with a crowbar if the cyberlimb has les than 20% damage.
-        \nAdvantages of Cyberarms:
-        - Improved Melee attack speed as well as swim speed;
-        - Great at taking sustained gunfire without malfunctioning;
-        - Excellent at tanking attacks from creatures without malfunctioning or breaking.
-        - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
-        - When well maintained, is much less likely to be forcefully amputated when attacked.
-        - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
-        \nDisadvantages of Cyberarm:
-        - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
-            -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
-        - Requires maintenance if damaged.
-        - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
-        - Costly/expensive to make/buy.
-        - Violently detach if critically damaged through material loss.
-        \nHow to add a CyberLimb to a patient:
-        First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
-        \nThe following things may happen:
+    \nAdvantages of Cyberarms:
+    - Improved Melee attack speed as well as swim speed;
+    - Great at taking sustained gunfire without malfunctioning;
+    - Excellent at tanking attacks from creatures without malfunctioning or breaking.
+    - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
+    - When well maintained, is much less likely to be forcefully amputated when attacked.
+    - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
+    \nDisadvantages of Cyberarms:
+    - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
+        -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
+    - Requires maintenance if damaged.
+    - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
+    - Costly/expensive to make/buy.
+    - Violently detach if critically damaged through material loss.
+    \nHow to add a CyberLimb to a patient:
+    First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
+    \nThe following things may happen:
     </ntg.description.cybernetic_arm>
     <ntg.applicationsuccess.cybernetic_arm>
        [internal_wounds] Applies the Cyberlimb on the selected limb and heals any Internal Damage caused by previous attempts
@@ -39,23 +39,23 @@
     <!-- Cybernetic Leg -->
     <ntg.title.cybernetic_leg>Cybernetic Leg</ntg.title.cybernetic_leg>
     <ntg.description.cybernetic_leg>A cybernetic leg that can be attached to any surgically amputated leg socket. It can be removed with a crowbar if the cyberlimb has les than 20% damage.
-        \nAdvantages of Cyberlegs:
-        - Improved running speed;
-        - Great at taking sustained gunfire without malfunctioning;
-        - Excellent at tanking attacks from creatures without malfunctioning or breaking.
-        - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
-        - When well maintained, is much less likely to be forcefully amputated when attacked.
-        - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
-        \nDisadvantages of Cyberlegs:
-        - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
-            -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
-        - Requires maintenance if damaged.
-        - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
-        - Costly/expensive to make/buy.
-        - Violently detach if critically damaged through material loss.
-        \nHow to add a CyberLimb to a patient:
-        First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
-        \nThe following things may happen:
+    \nAdvantages of Cyberlegs:
+    - Improved running speed;
+    - Great at taking sustained gunfire without malfunctioning;
+    - Excellent at tanking attacks from creatures without malfunctioning or breaking.
+    - Ideal at sustaining attacks that would otherwise cause life-threatening bleeding.
+    - When well maintained, is much less likely to be forcefully amputated when attacked.
+    - Does not fracture or dislocate. Make sure you fix any dislocations or fractures BEFORE you add a cyber limb or else it will be permanent until you take off the limb.
+    \nDisadvantages of Cyberlegs:
+    - They do not mix well with water. Won't shock you, but will break over-time if you don't wear a suit.
+        -! The expensive Waterproof Cyberarm upgraded item prevents this, and otherwise has identical characteristics.
+    - Requires maintenance if damaged.
+    - Costly in maintenance, especially if your sub doesn't have an ample source of steel and FPGA circuits.
+    - Costly/expensive to make/buy.
+    - Violently detach if critically damaged through material loss.
+    \nHow to add a CyberLimb to a patient:
+    First, perform Amputation Surgery on the selected limb; then use the cyberlimb on it once finished. The mechanical skill requirement is 70.
+    \nThe following things may happen:
     </ntg.description.cybernetic_leg>
     <ntg.applicationsuccess.cybernetic_leg>
        [internal_wounds] Applies the Cyberlimb on the selected limb and heals any Internal Damage caused by previous attempts
@@ -71,8 +71,8 @@
     <!-- Damaged Electronics -->
     <ntg.title.damaged_electronics>Damaged Electronics</ntg.title.damaged_electronics>
     <ntg.description.damaged_electronics>The primary detriment of using cyberlimbs, as their electronics are damaged when exposed to water.
-        \nWhen taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.
-        \nThe amount of Damaged Electronics gained scales with the amount of Material Loss on the limb, up to a maximum of a 3x increase at 100% Material Loss.
+    \nWhen taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.
+    \nThe amount of Damaged Electronics gained scales with the amount of Material Loss on the limb, up to a maximum of a 3x increase at 100% Material Loss.
     </ntg.description.damaged_electronics>
     <ntg.causes.damaged_electronics>
         Being in water without a diving suit on |
@@ -147,7 +147,8 @@
     <!-- Material Loss -->
     <ntg.title.material_loss>Material Loss</ntg.title.material_loss>
     <ntg.description.material_loss>When taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.
-        \nThe amount of material loss gained scaled with the amount of Loose Screws present, to a maximum of 3x at 100% Loose Screws.</ntg.description.material_loss>
+    \nThe amount of material loss gained scaled with the amount of Loose Screws present, to a maximum of 3x at 100% Loose Screws.
+    </ntg.description.material_loss>
     <ntg.causes.material_loss>
         Loose Screws while moving (at 30% or more)
         [open_wounds] 75% chance for Lacerations to cause 25% of their damage as Material Loss |
@@ -171,7 +172,7 @@
     <!-- FPGA Circuit -->
     <ntg.title.fpga_circuit>FPGA Circuit</ntg.title.fpga_circuit>
     <ntg.description.fpga_circuit>Electrical Skill Check: 40.
-        \nUsed to repair Damaged Electronics on Cyberlimbs. FPGA Circuits can be merged together to restore condition.
+    \nUsed to repair Damaged Electronics on Cyberlimbs. FPGA Circuits can be merged together to restore condition.
     </ntg.description.fpga_circuit>
     <ntg.applicationsuccess.fpga_circuit>
         [damaged_electronics] -50% Damaged Electronics
@@ -195,7 +196,7 @@
     <!-- Screwdriver -->
     <ntg.title.screwdriver>Screwdriver</ntg.title.screwdriver>
     <ntg.description.screwdriver>Mechanical Skill Check: 40.
-        \nUsed to repair Loose Screws on Cyberlimbs as well as repair Cyberorgans during Open / Close Surgery.
+    \nUsed to repair Loose Screws on Cyberlimbs as well as repair Cyberorgans during Open / Close Surgery.
     </ntg.description.screwdriver>
     <ntg.applicationsuccess.screwdriver>
         [loose_screws] -20% Bent Metal

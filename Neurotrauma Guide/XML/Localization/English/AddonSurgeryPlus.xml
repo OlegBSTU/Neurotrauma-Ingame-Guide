@@ -1,0 +1,143 @@
+<Infotexts language="English" nowhitespace="false">
+    <!-- Additional pages + overrides for Surgery Plus -->
+    <!-- See the main XML file for formatting -->
+
+    <!-- Surgical Infection -->
+    <ntg.title.surgical_infection>Surgical Infection</ntg.title.surgical_infection>
+    <ntg.description.surgical_infection>Surgical Infection is a mechanic that causes Sepsis based on how sterile the patient's environment is during surgery.
+    \nThe following things will increase Sterility:
+    - The patient is wearing Surgical Drapes (+100 base Sterility);
+    - Nearby characters that are wearing a Surgical Mask and Surgeon Clothes (scales with distance to the patient);
+    - Having Surgery Skill (sterility gained based off this equation: 10 + surgery skill / 5);
+    - Having Ointmented (from Antibiotic Ointment / Antiseptic) on the Surgery Incision (+50 sterility).
+    \nThe following things will increase Sterility:
+    - The patient having no Surgical Drapes (Sterility set to minimum)
+    - Nearby characters that are not wearing a Surgical Mask and Surgeon Clothes (scales with distance to the patient).
+    </ntg.description.surgical_infection>
+    <ntg.effects.surgical_infection>
+        [sepsis] Sepsis, if a patient is operated on while unsterile (10% chance every 2 seconds at minimum sterility)
+    </ntg.effects.surgical_infection>
+    <ntg.seealso.surgical_infection>
+        [surgery_incision] Surgery Incision |
+        [surgical_drapes] Surgical Drapes |
+        [surgical_mask] Surgical Mask |
+        [surgeon_clothes] Surgeon Clothes |
+        [ointmented] Ointmented (Affliction)
+    </ntg.seealso.surgical_infection>
+
+    <!-- Surgical Drapes -->
+    <ntg.title.surgical_drapes>Surgical Drapes</ntg.title.surgical_drapes>
+    <ntg.description.surgical_drapes>Surgical Drapes are a clothing item used to increase the wearer's sterility and thus decreasing the risk of Surgical Infection.</ntg.description.surgical_drapes>
+    <ntg.effects.surgical_drapes>
+        +100 Base Sterility |
+        [traumatic_shock] -50% Traumatic Shock gain while worn
+    </ntg.effects.surgical_drapes>
+    <ntg.seealso.surgical_drapes>
+        [surgical_mask] Surgical Mask |
+        [surgeon_clothes] Surgeon Clothes |
+        [surgical_infection] Surgical Infection
+    </ntg.seealso.surgical_drapes>
+
+    <!-- Surgical Mask -->
+    <ntg.title.surgical_mask>Surgical Mask</ntg.title.surgical_mask>
+    <ntg.description.surgical_mask>The Surgical Mask is a wearable item that increases sterility when worn, decreasing risk of of Surgical Infection.</ntg.description.surgical_mask>
+    <ntg.effects.surgical_mask>
+        [open_wounds] -10% Lacerations while worn |
+        [bleeding] -20% Bleeding while worn
+    </ntg.effects.surgical_mask>
+    <ntg.seealso.surgical_mask>
+        [surgical_drapes] Surgical Drapes |
+        [surgeon_clothes] Surgeon Clothes |
+        [surgical_infection] Surgical Infection
+    </ntg.seealso.surgical_mask>
+
+    <!-- Surgeon Clothes -->
+    <ntg.title.surgeon_clothes>Surgeon Clothes</ntg.title.surgeon_clothes>
+    <ntg.description.surgeon_clothes>The Surgeon Clothes are a wearable item that increases sterility when worn, decreasing risk of of Surgical Infection.</ntg.description.surgeon_clothes>
+    <ntg.effects.surgeon_clothes>
+        [internal_wounds] -10% Blunt Force Trauma while worn |
+        [open_wounds] -10% Lacerations while worn |
+        [open_wounds] -10% Bite Wounds while worn
+    </ntg.effects.surgeon_clothes>
+    <ntg.seealso.surgeon_clothes>
+        [surgical_drapes] Surgical Drapes |
+        [surgical_mask] Surgical Mask |
+        [surgical_infection] Surgical Infection
+    </ntg.seealso.surgeon_clothes>
+
+    <!-- Mannitol Plus -->
+    <ntg.title.mannitol_plus>Mannitol Plus</ntg.title.mannitol_plus>
+    <ntg.description.mannitol_plus>Mannitol Plus is a talent item, meaning it requires a talent craft. The Surgeon class has access to the talent.
+        \nUpon being adminstered, it will treat 30% Neurotrauma over the course of 10 seconds; even if the patient is unstable (Blood Pressure not within acceptable values) and apply the Mannitol affliction without causing organ damage.
+    </ntg.description.mannitol_plus>
+    <ntg.effects.mannitol_plus>
+        [neurotrauma] Treats 30% Neurotrauma in 10 seconds
+    </ntg.effects.mannitol_plus>
+    <ntg.seealso.mannitol_plus>
+        [mannitol] Mannitol
+    </ntg.seealso.mannitol_plus>
+
+    <!-- Experimental Treatment -->
+    <ntg.section.positiveeffects>Positive Effects may include</ntg.section.positiveeffects>
+    <ntg.section.negativeeffects>Negative Effects may include</ntg.section.negativeeffects>
+
+    <ntg.title.experimental_treatment>Experimental Treatment</ntg.title.experimental_treatment>
+    <ntg.description.experimental_treatment>Experimental Treatment is a talent item, meaning it requires a talent craft. The Surgeon class has access to the talent.
+        \nIt can randomly give effects; both positive and negative (though it tends to give more positive ones than negative). Theoretically, if you're lucky enough, you can get an infinite amount of effects from this item; imagine flipping a coin, and only stopping when you get tails. Every time you get heads, you get an additional effect from this item.
+    </ntg.description.experimental_treatment>
+    <ntg.positiveeffects.experimental_treatment>
+        Vigor (random, between 200% to 400% strength) |
+        Hyperactivity (random, between 200% to 400% strength) |
+        Psychosis Resistance (random, between 200% to 400% strength) |
+        Husk Infection Resistance (random, between 200% to 400% strength) |
+        Paralysis Resistance (random, between 300% to 600% strength) |
+        [analgesia] Analgesia (random, between 20% to 100% strength) |
+        [anesthesia] Anesthesia (random, between 1% to 100% strength) |
+        [ointmented] Ointmented (random, between 20% to 100% strength) |
+        [combat_stimulant] Combat Stimulant (random, between 30% to 100% strength) |
+        Pressure Stabilized (random, between 30% to 100% strength) |
+        A "full heal", treating between 20% to 100% Internal / Open Wounds, Vanilla Organ Damage, Neurotrauma, Blood Loss and fully cures Sepsis
+    </ntg.positiveeffects.experimental_treatment>
+    <ntg.negativeeffects.experimental_treatment>
+        [open_wounds] Open Wounds (between 5% to 20%) |
+        [internal_wounds] Internal Wounds (between 5% to 20%) |
+        [bleeding] Bleeding (between 30% to 80%) |
+        Stun (between 2 to 15 seconds)
+    </ntg.negativeeffects.experimental_treatment>
+    <ntg.seealso.experimental_treatment>
+        [vanilla_organ_damage] Vanilla Organ Damage |
+        [neurotrauma] Neurotrauma |
+        [blood_loss] Blood Loss |
+        [sepsis] Sepsis
+    </ntg.seealso.experimental_treatment>
+
+    <!-- Triage Card -->
+    <ntg.title.triage_card>Triage Card</ntg.title.triage_card>
+    <ntg.description.triage_card>Triage Cards are used to mark patients based on severity of injury. There are two types of triage cards, those being manual and automatic. The manual triage card works as follows:
+        \n- Attaching the triage card to the legs will mark it as green, meaning that the patient is minimally injured and will most likely survive.
+        \n- Attaching the triage card to the arms will mark it as yellow, meaning that the patient is injured, and will most likely die if treatment is delayed for a long period of time.
+        \n- Attaching the triage card to the torso will mark it as red, meaning that the patient is critically injured and needs immediate assistance.
+        \n- Attaching the triage card to the head will mark it as black, meaning that the patient is either dead or extremely close to death.
+        \n The automatic triage cards will rate your victim's health based off of their afflictions and vitality, and will give a rating of green, yellow, red or black.
+    </ntg.description.triage_card>
+
+    <!-- Brain Jar -->
+    <ntg.title.brain_jar>Brain Jar</ntg.title.brain_jar>
+    <ntg.description.brain_jar>The Brain Jar is a talent item unlockable by the Surgeon.
+        \nUnlike refrigerated containers, which can only delay the decay of a brain and not entirely stop it, the Brain Jar can not only hold a brain indefinitely, but will slowly repair the brain at a rate of 1% per 10 seconds.
+    </ntg.description.brain_jar>
+
+    <!-- Artificial Brain -->
+    <ntg.title.artificial_brain>Artificial Brain</ntg.title.artificial_brain>
+    <ntg.description.artificial_brain>Replaces a patients brain when used after removing it. Protects against gaining neurotrauma from not having a brain. Does nothing else.</ntg.description.artificial_brain>
+
+    <!-- Medical Misconduct -->
+    <ntg.title.medical_misconduct>Medical Misconduct</ntg.title.medical_misconduct>
+    <ntg.description.medical_misconduct>A skill book that will give Surgical and/or Medical skill when read.
+        \nWith Surgical Skill enabled in the config:
+        - +8 Surgical Skill
+        - +2 Medical Skill
+        \nWith Surgical Skill disabled in the config:
+        - +8 Medical Skill
+    </ntg.description.medical_misconduct>
+</Infotexts>

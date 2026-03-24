@@ -44,9 +44,6 @@ local function IndexKnownPages(ContentPageTable)
     return NTGuide.SearchablePages
 end
 
--- Run the indexing code on initialization
-local IndexedContentPages = IndexKnownPages(NTGuide.ContentPages)
-
 -- Function to find a page if we kinow the ID
 local function GetPageByID(id)
     return NTGuide.PagesByID[id]
@@ -65,7 +62,7 @@ local function UpdateSearchResults()
 
     -- Add what we're looking for to table to use later
     local filteredResults = {}
-    for _, page in ipairs(IndexedContentPages) do
+    for _, page in ipairs(NTGuide.IndexedContentPages) do
         if page.name:lower():find(searchText) then
             table.insert(filteredResults, page)
         end
@@ -263,7 +260,13 @@ end
 
 -- Make it actually appear on initialization
 -- This HAS to be able to be done better :wilted_flower:
+local Indexed = "false"
+
 local function ConstructUI()
+    if Indexed == "false" then
+        NTGuide.IndexedContentPages = IndexKnownPages(NTGuide.ContentPages)
+        Indexed = "true"
+    end
     NTGuide.Menu.BasicList()
 end
 
