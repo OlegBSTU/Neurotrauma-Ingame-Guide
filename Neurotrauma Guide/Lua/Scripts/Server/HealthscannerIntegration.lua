@@ -471,7 +471,7 @@ Timer.Wait(function()
 			local afflictionIdentifier = value.Identifier
 
 			-- Only list the afflictions above
-			if strength >= prefab.ShowInHealthScannerThreshold and HF.TableContains(NT.HematologyDetectable, afflictionIdentifier) then
+			if strength > 2 and HF.TableContains(NT.HematologyDetectable, afflictionIdentifier) then
 				
 				-- NT Guide Linker
 				local IdentifierToLink = IdentifierToLink(NTGuide.IdentifierToPage, afflictionIdentifier, strength)
