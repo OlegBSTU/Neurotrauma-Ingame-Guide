@@ -1555,4 +1555,8 @@ NTGuide.ContentPages = {
             steps = {NTGuide.Localize("ntg.steps.organ_transplant_surgery")},  
         },
     },
+
+    -- Information category
+    Information = {
+    },
 }

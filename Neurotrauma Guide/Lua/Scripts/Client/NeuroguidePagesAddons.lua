@@ -2,11 +2,34 @@
 -- By only showing information that 'matters' people won't have to worry about Surgical Infection when they don't even have NT Surgery Plus.
 -- This saves space on pages with less text / links unless needed
 
--- Check over all Neurotrauma Expansions
+local NTSP_enabled = "false"
+local NTCyb_enabled = "false"
+local NTEyes_enabled = "false"
+local NTInfections_enabled = "false"
+
+-- We go over all addons and check if they're enabled. If they are, we swap their variable to use later.
+-- This makes page overrides that require two addons together to be done easier
 if NTC ~= nil then
     for val in NTC.RegisteredExpansions do
-        -- If NT Surgery Plus is enabled, we want to add new pages for their additions
+
         if val.Name == "NT Surgery Plus" then
+            NTSP_enabled = "true"
+
+        elseif val.Name == "Cybernetics" then
+            NTCyb_enabled = "true"
+
+        elseif val.Name == "Infections" then
+            NTInfections_enabled = "true"
+
+        elseif val.Name == "Eyes" then
+            NTEyes_enabled = "true"
+        end
+    end
+end
+
+--===================================================================================================================================================================================================
+        -- Neurotrauma: Surgery Plus Additions
+if NTSP_enabled == "true" then
             -- Surgical Infection
             NTGuide.ContentPages.Afflictions_Blood.SurgicalInfection = {
                 id = "surgical_infection", 
@@ -90,10 +113,10 @@ if NTC ~= nil then
                 title = NTGuide.Localize("ntg.title.medical_misconduct"), 
                 description = NTGuide.Localize("ntg.description.medical_misconduct"), 
             }
-
-        
-        -- Is Cybernetics Enhanced enabled? If so, enable their content
-        elseif val.Name == "Cybernetics" then
+end
+-- ===========================================================================================================================================================================================================
+        -- Neurotrauma: Cybernetics Enhanced Additions
+if NTCyb_enabled == "true" then
             -- Cybernetic Arm
             NTGuide.ContentPages.Items.CyberneticArm = {
                 id = "cybernetic_arm",
@@ -259,9 +282,10 @@ if NTC ~= nil then
             table.insert(NTGuide.IdentifierToPage, {"ntc_cyberheart", "cyberbrain_implant"})
             table.insert(NTGuide.IdentifierToPage, {"ntc_cyberbrain", "cyberheart"})
             table.insert(NTGuide.IdentifierToPage, {"ntc_cyberkidney", "cyberkidney"})
-
-            -- Is Neurotrauma Eyes active?
-        elseif val.Name == "Eyes" then
+end
+--==============================================================================================================================================================================================================
+        -- Neurotrauma: Eyes Additions
+if NTEyes_enabled == "true" then
         -- Damage Afflictions
             -- Human Eye Damage
             NTGuide.ContentPages.Afflictions_HeadORBrain.HumanEyeDamage = {
@@ -858,6 +882,459 @@ if NTC ~= nil then
             -- Surgery
             table.insert(NTGuide.IdentifierToPage, {"sr_removedeyes", "removed_eyes"})
             table.insert(NTGuide.IdentifierToPage, {"sr_removedeye", "removed_eye"}) 
-        end
-    end
+end
+-- =========================================================================================================================================================================================================
+        -- Neurotrauma: Infections Additions 
+if NTInfections_enabled == "true" then
+        -- Information Pages
+            -- How the new infections work
+            NTGuide.ContentPages.Information.InfectionChanges = {
+                id = "information_infection_changes",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.information_infection_changes"), 
+                description = NTGuide.Localize("ntg.description.information_infection_changes"),
+                seealso = {NTGuide.Localize("ntg.seealso.information_infection_changes")},
+            }
+
+            -- Fighting off infections
+            NTGuide.ContentPages.Information.FightingInfections = {
+                id = "information_fighting_infections",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.information_fighting_infections"), 
+                description = NTGuide.Localize("ntg.description.information_fighting_infections"),
+                seealso = {NTGuide.Localize("ntg.seealso.information_fighting_infections")},
+            }
+
+            -- Using Antibiotics
+            NTGuide.ContentPages.Information.UsingAntibiotics = {
+                id = "information_using_antibiotics",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.information_using_antibiotics"), 
+                description = NTGuide.Localize("ntg.description.information_using_antibiotics"),
+                seealso = {NTGuide.Localize("ntg.seealso.information_using_antibiotics")},
+            }
+
+            -- Diagnosing Bacterial Infections
+            NTGuide.ContentPages.Information.DiagnosingBacterialInfections = {
+                id = "information_diagnosing_bacteria",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.information_diagnosing_bacteria"), 
+                description = NTGuide.Localize("ntg.description.information_diagnosing_bacteria"),
+                seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_bacteria")},
+            }
+
+            if NTSP_enabled == "false" then
+                -- Communicable diseases (No NTSP)
+                NTGuide.ContentPages.Information.DiagnosingViralInfections = {
+                    id = "information_diagnosing_viruses",
+                    category = "information",
+                    title = NTGuide.Localize("ntg.title.information_diagnosing_viruses"), 
+                    description = NTGuide.Localize("ntg.description.information_diagnosing_viruses"),
+                    seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_viruses")},
+                }
+            else
+                -- Communicable diseases (NTSP)
+                NTGuide.ContentPages.Information.DiagnosingViralInfections = {
+                    id = "information_diagnosing_viruses",
+                    category = "information",
+                    title = NTGuide.Localize("ntg.title.information_diagnosing_viruses_ntsp"), 
+                    description = NTGuide.Localize("ntg.description.information_diagnosing_viruses_ntsp"),
+                    seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_viruses_ntsp")},
+                }
+            end 
+
+            -- Vaccines
+            NTGuide.ContentPages.Information.VaccinesInformation = {
+                id = "information_vaccines",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.information_vaccines"), 
+                description = NTGuide.Localize("ntg.description.information_vaccines"),
+                seealso = {NTGuide.Localize("ntg.seealso.information_vaccines")},
+            }
+
+            -- UPDATE ABX
+
+        -- Bacterial Infections
+            -- Streptococcal Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.StreptococcalInfection = {
+                id = "streptococcal_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.streptococcal_infection"), 
+                description = NTGuide.Localize("ntg.description.streptococcal_infection"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.streptococcal_infection")},
+                effects = {NTGuide.Localize("ntg.effects.streptococcal_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.streptococcal_infection")},
+            }
+
+            -- Staphylococcal Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.StaphylococcalInfection = {
+                id = "staphylococcal_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.staphylococcal_infection"), 
+                description = NTGuide.Localize("ntg.description.staphylococcal_infection"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.staphylococcal_infection")},
+                effects = {NTGuide.Localize("ntg.effects.staphylococcal_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.staphylococcal_infection")},
+            }
+
+            -- MRSA Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.MRSAInfection = {
+                id = "mrsa_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.mrsa_infection"), 
+                description = NTGuide.Localize("ntg.description.mrsa_infection"),
+                requirements = {NTGuide.Localize("ntg.requirements.mrsa_infection")},
+                susceptible = {NTGuide.Localize("ntg.susceptible.mrsa_infection")},
+                effects = {NTGuide.Localize("ntg.effects.mrsa_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.mrsa_infection")},
+            }
+
+            -- Pseudomonas Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.PseudomonasInfection = {
+                id = "pseudomonas_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.pseudomonas_infection"), 
+                description = NTGuide.Localize("ntg.description.pseudomonas_infection"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.pseudomonas_infection")},
+                effects = {NTGuide.Localize("ntg.effects.pseudomonas_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.pseudomonas_infection")},
+            }
+
+            -- Provobacter Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.ProvobacterInfection = {
+                id = "provobacter_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.provobacter_infection"), 
+                description = NTGuide.Localize("ntg.description.provobacter_infection"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.provobacter_infection")},
+                effects = {NTGuide.Localize("ntg.effects.provobacter_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.provobacter_infection")},
+            }
+
+            -- Aeroganella Infection
+            NTGuide.ContentPages.Afflictions_AnyBodypart.AeroganellaInfection = {
+                id = "aeroganella_infection",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.aeroganella_infection"), 
+                description = NTGuide.Localize("ntg.description.aeroganella_infection"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.aeroganella_infection")},
+                effects = {NTGuide.Localize("ntg.effects.aeroganella_infection")},
+                seealso = {NTGuide.Localize("ntg.seealso.aeroganella_infection")},
+            }
+
+        -- Antibiotics
+            -- Unasyn
+            NTGuide.ContentPages.Items.Unasyn = {
+                id = "unasyn",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.unasyn"), 
+                description = NTGuide.Localize("ntg.description.unasyn"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.unasyn")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.unasyn")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.unasyn")},
+                seealso = {NTGuide.Localize("ntg.seealso.unasyn")},
+            }
+
+            -- Augmentin
+            NTGuide.ContentPages.Items.Augmentin = {
+                id = "augmentin",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.augmentin"), 
+                description = NTGuide.Localize("ntg.description.augmentin"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.augmentin")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.augmentin")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.augmentin")},
+                seealso = {NTGuide.Localize("ntg.seealso.augmentin")},
+            }
+
+            -- Vancomycin
+            NTGuide.ContentPages.Items.Vancomycin = {
+                id = "vancomycin",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.vancomycin"), 
+                description = NTGuide.Localize("ntg.description.vancomycin"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.vancomycin")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.vancomycin")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.vancomycin")},
+                seealso = {NTGuide.Localize("ntg.seealso.vancomycin")},
+            }
+
+            -- Gentamicin
+            NTGuide.ContentPages.Items.Gentamicin = {
+                id = "gentamicin",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.vancomycin"), 
+                description = NTGuide.Localize("ntg.description.vancomycin"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.vancomycin")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.vancomycin")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.vancomycin")},
+                seealso = {NTGuide.Localize("ntg.seealso.vancomycin")},
+            }
+
+            -- Co-trimoxazole
+            NTGuide.ContentPages.Items.Cotrimoxazole = {
+                id = "cotrimoxazole",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.cotrimoxazole"), 
+                description = NTGuide.Localize("ntg.description.cotrimoxazole"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.cotrimoxazole")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.cotrimoxazole")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.cotrimoxazole")},
+                seealso = {NTGuide.Localize("ntg.seealso.cotrimoxazole")},
+            }
+
+            -- Primaxin
+            NTGuide.ContentPages.Items.Primaxin = {
+                id = "primaxin",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.primaxin"), 
+                description = NTGuide.Localize("ntg.description.primaxin"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.primaxin")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.primaxin")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.primaxin")},
+                seealso = {NTGuide.Localize("ntg.seealso.primaxin")},
+            }
+
+            -- Ceftazidime
+            NTGuide.ContentPages.Items.Ceftazidime = {
+                id = "ceftazidime",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.ceftazidime"), 
+                description = NTGuide.Localize("ntg.description.ceftazidime"),
+                effectiveness = {NTGuide.Localize("ntg.effectiveness.ceftazidime")},
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.ceftazidime")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.ceftazidime")},
+                seealso = {NTGuide.Localize("ntg.seealso.ceftazidime")},
+            }
+
+        -- Tools 
+            -- Sampler Tool
+            NTGuide.ContentPages.Items.SamplerTool = {
+                id = "sampler_tool",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.sampler_tool"), 
+                description = NTGuide.Localize("ntg.description.sampler_tool"),
+                seealso = {NTGuide.Localize("ntg.effects.sampler_tool")},
+            }
+
+            -- Culture Tube
+            NTGuide.ContentPages.Items.CultureTube = {
+                id = "culture_tube",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.culture_tube"), 
+                description = NTGuide.Localize("ntg.description.culture_tube"),
+                seealso = {NTGuide.Localize("ntg.effects.culture_tube")},
+            }
+
+            -- Viral Transport Medium
+            NTGuide.ContentPages.Items.ViralTransportMedium = {
+                id = "viral_transport_medium",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.viral_transport_medium"), 
+                description = NTGuide.Localize("ntg.description.viral_transport_medium"),
+                seealso = {NTGuide.Localize("ntg.effects.viral_transport_medium")},
+            }
+
+            -- Sample Analyzer
+            NTGuide.ContentPages.Items.SampleAnalyzer = {
+                id = "sample_analyzer",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.sample_analyzer"), 
+                description = NTGuide.Localize("ntg.description.sample_analyzer"),
+                seealso = {NTGuide.Localize("ntg.effects.sample_analyzer")},
+            }
+
+        -- Symptoms
+            -- Purulent Drainage
+            NTGuide.ContentPages.Afflictions_AnyBodypart.PurulentDrainage = {
+                id = "purulent_drainage",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.purulent_drainage"), 
+                description = NTGuide.Localize("ntg.description.purulent_drainage"),
+                requirements = {NTGuide.Localize("ntg.requirements.purulent_drainage")},
+                possiblecauses = {NTGuide.Localize("ntg.causes.purulent_drainage")},
+                seealso = {NTGuide.Localize("ntg.seealso.purulent_drainage")},
+            }
+
+            -- Abscess
+            NTGuide.ContentPages.Afflictions_AnyBodypart.Abscess = {
+                id = "abscess",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.abscess"), 
+                description = NTGuide.Localize("ntg.description.abscess"),
+                requirements = {NTGuide.Localize("ntg.requirements.abscess")},
+                possiblecauses = {NTGuide.Localize("ntg.causes.abscess")},
+                seealso = {NTGuide.Localize("ntg.seealso.abscess")},
+            }
+
+            -- Inflammation [BASE OVERRIDE, ADDENDUM: NT Infections]
+            NTGuide.ContentPages.Symptoms.Inflammation = {
+                id = "inflammation", 
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.inflammation_infc"), 
+                description = NTGuide.Localize("ntg.description.inflammation_infc"), 
+                causes = {NTGuide.Localize("ntg.causes.inflammation_infc")},
+                treatments = {NTGuide.Localize("ntg.treatments.inflammation_infc")},
+                seealso = {NTGuide.Localize("ntg.seealso.inflammation_infc")},
+            }
+
+        -- Diseases
+            -- Necrotizing Fasciitis
+            NTGuide.ContentPages.Afflictions_AnyBodypart.NectrotizingFasciitis = {
+                id = "necrotizing_fasciitis",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.necrotizing_fasciitis"), 
+                description = NTGuide.Localize("ntg.description.necrotizing_fasciitis"),
+                requirements = {NTGuide.Localize("ntg.requirements.necrotizing_fasciitis")},
+                treatments = {NTGuide.Localize("ntg.treatments.necrotizing_fasciitis")},
+                effects = {NTGuide.Localize("ntg.effects.necrotizing_fasciitis")},
+            }
+
+            -- Pneumonia
+            NTGuide.ContentPages.Afflictions_Lungs.Pneumonia = {
+                id = "pneumonia",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.pneumonia"), 
+                description = NTGuide.Localize("ntg.description.pneumonia"),
+                requirements = {NTGuide.Localize("ntg.requirements.pneumonia")},
+                treatments = {NTGuide.Localize("ntg.treatments.pneumonia")},
+                effects = {NTGuide.Localize("ntg.effects.pneumonia")},
+            }
+
+        -- Viral Infections
+            -- Europan Cough
+            NTGuide.ContentPages.Afflictions_HeadORBrain.EuropanCough = {
+                id = "europan_cough",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.europan_cough"), 
+                description = NTGuide.Localize("ntg.description.europan_cough"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.europan_cough")},
+                treatments = {NTGuide.Localize("ntg.treatments.europan_cough")},
+                effects = {NTGuide.Localize("ntg.effects.europan_cough")},
+                seealso = {NTGuide.Localize("ntg.seealso.europan_cough")},
+            }
+
+            -- Influenza
+            NTGuide.ContentPages.Afflictions_HeadORBrain.Influenza = {
+                id = "influenza",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.influenza"), 
+                description = NTGuide.Localize("ntg.description.influenza"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.influenza")},
+                treatments = {NTGuide.Localize("ntg.treatments.influenza")},
+                effects = {NTGuide.Localize("ntg.effects.influenza")},
+                seealso = {NTGuide.Localize("ntg.seealso.influenza")},
+            }
+
+            -- Common Cold
+            NTGuide.ContentPages.Afflictions_HeadORBrain.CommonCold = {
+                id = "common_cold",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.common_cold"), 
+                description = NTGuide.Localize("ntg.description.common_cold"),
+                susceptible = {NTGuide.Localize("ntg.susceptible.common_cold")},
+                effects = {NTGuide.Localize("ntg.effects.common_cold")},
+                treatments = {NTGuide.Localize("ntg.treatments.common_cold")},
+                seealso = {NTGuide.Localize("ntg.seealso.common_cold")},
+            }
+
+        -- Effects
+            -- Methicillin-resistance risk
+            NTGuide.ContentPages.Afflictions_Torso.MethicillinResistanceRisk = {
+                id = "methicillin_resistance_risk",
+                category = "afflictions",
+                title = NTGuide.Localize("ntg.title.methicillin_resistance_risk"), 
+                description = NTGuide.Localize("ntg.description.methicillin_resistance_risk"),
+                causes = {NTGuide.Localize("ntg.causes.methicillin_resistance_risk")},
+                effects = {NTGuide.Localize("ntg.effects.methicillin_resistance_risk")},
+                treatments = {NTGuide.Localize("ntg.treatments.methicillin_resistance_risk")},
+            }
+
+        -- Procedures
+            -- Debridement
+            NTGuide.ContentPages.SurgicalProcedures.Debridement = {
+                id = "debridement",
+                category = "procedures",
+                title = NTGuide.Localize("ntg.title.debridement"), 
+                description = NTGuide.Localize("ntg.description.debridement"),
+                steps = {NTGuide.Localize("ntg.steps.debridement")},
+                seealso = {NTGuide.Localize("ntg.seealso.debridement")},
+            }
+
+            -- Sample Collection
+            NTGuide.ContentPages.SurgicalProcedures.SampleCollection = {
+                id = "sample_collection",
+                category = "procedures",
+                title = NTGuide.Localize("ntg.title.sample_collection"), 
+                description = NTGuide.Localize("ntg.description.sample_collection"),
+                stepsbacterial = {NTGuide.Localize("ntg.stepsbacterial.sample_collection")},
+                stepsviral = {NTGuide.Localize("ntg.stepsviral.sample_collection")},
+                seealso = {NTGuide.Localize("ntg.seealso.sample_collection")},
+            }
+
+        -- Other Items
+            -- Vaccines (Items)
+            NTGuide.ContentPages.Items.Vaccines = {
+                id = "vaccines",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.vaccines"), 
+                description = NTGuide.Localize("ntg.description.vaccines"),
+                seealso = {NTGuide.Localize("ntg.seealso.vaccines")},
+            }
+
+            -- Weaponized Bacteria
+            NTGuide.ContentPages.Items.WeaponizedBacteria = {
+                id = "weaponized_bacteria",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.weaponized_bacteria"), 
+                description = NTGuide.Localize("ntg.description.weaponized_bacteria"),
+                applicationsuccess = NTGuide.Localize("ntg.applicationsuccess.weaponized_bacteria"),
+                applicationfailed = NTGuide.Localize("ntg.applicationfailed.weaponized_bacteria"),
+                seealso = {NTGuide.Localize("ntg.seealso.weaponized_bacteria")},
+            }
+
+            -- Remdesivir
+            NTGuide.ContentPages.Items.Remdesivir = {
+                id = "remdesivir",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.remdesivir"), 
+                description = NTGuide.Localize("ntg.description.remdesivir"),
+                effectiveness = NTGuide.Localize("ntg.effectiveness.remdesivir"),
+                applicationsuccess = NTGuide.Localize("ntg.applicationsuccess.remdesivir"),
+                applicationfailed = NTGuide.Localize("ntg.applicationfailed.remdesivir"),
+            }
+            
+            -- Dextromethorphan
+            NTGuide.ContentPages.Items.Dextromethorphan = {
+                id = "dextromethorphan",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.dextromethorphan"), 
+                description = NTGuide.Localize("ntg.description.dextromethorphan"),
+                applicationsuccess = NTGuide.Localize("ntg.applicationsuccess.dextromethorphan"),
+                applicationfailed = NTGuide.Localize("ntg.applicationfailed.dextromethorphan"),
+                effects = NTGuide.Localize("ntg.effects.dextromethorphan"),
+            }
+            
+            -- Zinc Supplements
+            NTGuide.ContentPages.Items.ZincSupplements = {
+                id = "zinc_supplements",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.zinc_supplements"), 
+                description = NTGuide.Localize("ntg.description.zinc_supplements"),
+                effectiveness = NTGuide.Localize("ntg.effectiveness.zinc_supplements"),
+                applicationsuccess = NTGuide.Localize("ntg.applicationsuccess.zinc_supplements"),
+                applicationfailed = NTGuide.Localize("ntg.applicationfailed.zinc_supplements"),
+                effects = NTGuide.Localize("ntg.effects.zinc_supplements"),
+            }
+
+            -- Hydrocortisone
+            NTGuide.ContentPages.Items.Hydrocortisone = {
+                id = "hydrocortisone",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.hydrocortisone"), 
+                description = NTGuide.Localize("ntg.description.hydrocortisone"),
+                applicationsuccess = NTGuide.Localize("ntg.applicationsuccess.hydrocortisone"),
+                applicationfailed = NTGuide.Localize("ntg.applicationfailed.hydrocortisone"),
+                effects = NTGuide.Localize("ntg.effects.hydrocortisone"),
+            }
 end
