@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Neurotrauma In-Game Guide" modversion="1.0.10" corepackage="False" steamworkshopid="3689560523" gameversion="1.11.5.0">
+<contentpackage name="Neurotrauma In-Game Guide" modversion="1.0.11" corepackage="False" steamworkshopid="3689560523" gameversion="1.11.5.0">
   <Text file="%ModDir%/XML/Localization/English/BaseNeurotraumaPages.xml" />
   <Text file="%ModDir%/XML/Localization/English/AddonCyberneticsEnhanced.xml" />
   <Text file="%ModDir%/XML/Localization/English/AddonSurgeryPlus.xml" />
   <Text file="%ModDir%/XML/Localization/English/AddonEyes.xml" />
   <Text file="%ModDir%/XML/Localization/English/AddonInfections.xml" />
+  <Text file="%ModDir%/XML/Localization/English/AddonGrafting.xml" />
 </contentpackage>

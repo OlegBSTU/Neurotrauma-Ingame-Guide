@@ -1,0 +1,602 @@
+<Infotexts language="English" nowhitespace="false">
+<!-- Neurotrauma Grafting Addon -->
+<ntg.category.grafting>Grafting Procedures</ntg.category.grafting>
+
+<!-- Tools -->
+
+<!-- DNA Litigation Enhancer -->
+<ntg.title.dna_litigation_enhancer>DNA Litigation Enhancer</ntg.title.dna_litigation_enhancer>
+<ntg.description.dna_litigation_enhancer>Medical Skill Check: 50.
+\nThe DNA Litigation Enhancer is one of the several grafting tools developed on Europa to advance the science, and can be considered to be the most vital.
+It can only be crafted by a medic with the Grafting tree unlocked - where 4 cost a Fulgurium Chunk and 2 Stabilozine as well as a Medical Skill of 40. They are used before and during the Grafting process to ease the transplant and allow the Human DNA to fuse with the Alien DNA.
+They need to be used while the patient is experiencing rejection from Cross-Species Grafting; but be warned, as injecting too much at once will be lethal to the patient - causing extreme organ damage!
+\nGrafting a human without using DNA Ligation Enhancer before attaching the alien transplant is possible. This method however causes the organ to be less eased in, and creates a higher amount of rejection. 
+The organ also creates sepsis within the body, as it should not be there and was not supported with the medication.
+\nAdditionally, some transplants have hidden functionality. As one example, a human with a mudraptor lung
+may experience lung failure when exposed to raptor bane extract, just as a normal mudraptor would.
+</ntg.description.dna_litigation_enhancer>
+<ntg.applicationsuccess.dna_litigation_enhancer>
+    [cross_species_rejection] -25% Cross Species Rejection |
+    +70% DNA Litigation Enhancer (if successful application with more than 50 medical) |
+    +75% DNA Litigation Enhancer (if successful application with less than 50 medical) 
+</ntg.applicationsuccess.dna_litigation_enhancer>
+<ntg.applicationfailed.dna_litigation_enhancer>
+    [cross_species_rejection] -25% Cross Species Rejection |
+    +85% DNA Litigation Enhancer
+</ntg.applicationfailed.dna_litigation_enhancer>
+<ntg.effects.dna_litigation_enhancer>
+    Applies DNA Litigation Enhancer Overdose if above 90%, giving severe Lung / Kidney / Liver / Heart damage capable of killing the organ in seconds. |
+    Vitality proportional to the strength of the affliction if above 80%
+</ntg.effects.dna_litigation_enhancer>
+
+<!-- DNA Splicer -->
+<ntg.title.dna_splicer>DNA Splicer</ntg.title.dna_splicer>
+<ntg.description.dna_splicer>Medical Skill Check: 50.
+\nThe DNA Splicer is one of the several grafting tools developed on Europa to advance the science, and is used to seperate DNA that is too integrated into a human host; being the only way to remove skin related grafts such as those for the Jaw, Torso or Eyes.
+It can be crafted using Broad-Spectrum Antibiotics and Stabilozine, and must be injected into the right limb to remove the affliction it harbors. It will only remove and destroy the graft, meaning it will not return any of the resources invested into said graft.
+\nThe DNA Deterioration affliction decays by 1% and remove 5% of a Graft per second. Meaning, a graft at 100% needs at least 20% worth of DNA Deterioration to be removed.
+</ntg.description.dna_splicer>
+<ntg.applicationsuccess.dna_splicer>
+    +66% DNA Deterioration (If on Hammerhead Skin) |
+    +33% DNA Deterioration (If on Endworm Skin) |
+    +100% DNA Deterioration 
+</ntg.applicationsuccess.dna_splicer>
+<ntg.applicationfailed.dna_splicer>
+    +33% DNA Deterioration (If on Hammerhead Skin) |
+    +16.5% DNA Deterioration (If on Endworm Skin) |
+    +50% DNA Deterioration 
+</ntg.applicationfailed.dna_splicer>
+<ntg.effects.dna_splicer>
+    Removes 5% of a graft per second while active
+</ntg.effects.dna_splicer>
+
+<!-- Alien Scalpel -->
+<ntg.title.alien_scalpel>Alien Scalpel</ntg.title.alien_scalpel>
+<ntg.description.alien_scalpel>Medical Skill Check: 50.
+\nA tool to remove appendages that a normal scalpel is not fit to touch. These include Crawler Tails, Husk Arms, Tiger Thresher Tails, Hammerhead Limbs, Latcher Tongues and Orange Boy Tails.
+\nTo use, simply apply analgesia / anesthesia and use Skin Retractors on the torso; then apply the Alien Scalpel and Sutures to finish the surgery.
+\nWill return the graft once removed.
+</ntg.description.alien_scalpel>
+<ntg.applicationsuccess.alien_scalpel>
+    Will remove the limb currently grafted.
+</ntg.applicationsuccess.alien_scalpel>
+<ntg.applicationfailed.alien_scalpel>
+    [bleeding] +15% Bleeding
+</ntg.applicationfailed.alien_scalpel>
+
+<!-- Alien Incubator -->
+<ntg.title.alien_incubator>Alien Incubator</ntg.title.alien_incubator>
+<ntg.description.alien_incubator>An advanced, placeable machine which is used to give alien cells the chance to take over a human organ; causing the artificial development of an alien organ.
+\nIt can only be crafted by a medic with the Grafting tree unlocked; costing an FPGA Circuit, DNA Litigation Enhancer, Plastic, Steel and an Alien Power cell. It must be hooked up to power.
+\nDuplicating Alien Cells:
+Simply put the Alien Cells you wish to duplicate in one of the two slots, and Stem Cells in the other. After 2 minutes the cells will duplicate themselves.
+NOTE: Putting in only Stem Cells will do nothing, and instead just delete the stem cells when it's done processing.
+\nInfecting Organs:
+Just like before, we put the organ we want to turn into an Alien variant in one slot, and the respective Alien Cells in the other.
+NOTE: Putting in only an organ without any Alien Cells will delete the organ when the machine is done processing.
+NOTE: Putting in the wrong organ / Alien Cell combination will delete the organ and leave only the cells.
+NOTE: Putting in Alien Cells on their own with either no Stem Cells or a valid Organ to bind to will do nothing after 120 seconds.
+\nThe following combinations are valid and will not result in a lost organ:
+\nHeart Transplant:
+- Latcher Cells
+- Husk Cells
+\nLiver Transplant:
+- Mantis Cells
+- Viperling Cells
+- Broodmother Cells
+\nLung Transplant:
+- Despite 'Crawler Lungs' and 'Mudraptor Lungs' existing, these cannot be crafted.
+\nKidney Transplant:
+- There are no kidney variants of alien organs and thus there is nothing to craft.
+</ntg.description.alien_incubator>
+<ntg.seealso.alien_incubator>
+    [stem_cells] Stem Cells
+</ntg.seealso.alien_incubator>
+
+<!-- Stem Cells -->
+<ntg.title.stem_cells>Stem Cells</ntg.title.stem_cells>
+<ntg.description.stem_cells>Crafted using blood packs, plastic and some pomegrenade extract for nutrients, these can be developed in the Alien Incubator into any kind of alien cell.
+\nMust be stored in a refrigerated crate or container.
+</ntg.description.stem_cells>
+<ntg.seealso.stem_cells>
+    [alien_incubator] Alien Incubator |
+    [refrigerated_crate] Refrigerated Crate |
+    [refrigerated_container] Refrigerated Container
+</ntg.seealso.stem_cells>
+
+<!-- Surgical Procedures -->
+<!-- Crawler Tail Grafting -->
+<ntg.title.crawler_tail_grafting>Crawler Tail Grafting</ntg.title.crawler_tail_grafting>
+<ntg.description.crawler_tail_grafting>The crawler tail can be grafted onto the torso to increase the speed at which a human can swim.
+\nIt can be found on dead crawlers and is removed using the Alien Scalpel.
+\nShould be done near a Surgery Table.
+</ntg.description.crawler_tail_grafting>
+<ntg.steps.crawler_tail_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Crawler Tail |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.crawler_tail_grafting>
+<ntg.seealso.crawler_tail_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.crawler_tail_grafting>
+
+<!-- Crawler Lungs Grafting -->
+<ntg.title.crawler_lung_grafting>Crawler Lungs Grafting</ntg.title.crawler_lung_grafting>
+<ntg.description.crawler_lung_grafting>The crawler lungs can be grafted into the torso to slightly increase the lung capacity of a human.
+\nShould be done near a Surgery Table.
+</ntg.description.crawler_lung_grafting>
+<ntg.steps.crawler_lung_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the lungs |
+    5. Apply the Crawler Lungs |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.crawler_lung_grafting>
+<ntg.seealso.crawler_lung_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table
+</ntg.seealso.crawler_lung_grafting>
+
+<!-- Fractal Guardian Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.fractal_eye_grafting>Fractal Guardian Eye Grafting</ntg.title.fractal_eye_grafting>
+<ntg.description.fractal_eye_grafting>The fractal guardian eye can be grafted onto the head to allow a human to see living creatures through walls as well as see through psychosis. 
+\nThis experimental graft leaves the human vulnerable to blindness from EMPs, however.
+\nShould be done near a Surgery Table.
+</ntg.description.fractal_eye_grafting>
+<ntg.steps.fractal_eye_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Fractal Guardian Sample to the eyes.
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.fractal_eye_grafting>
+<ntg.seealso.fractal_eye_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table
+</ntg.seealso.fractal_eye_grafting>
+
+<!-- Fractal Guardian Eye Grafting // ENABLED NT: EYES -->
+<ntg.title.fractal_eye_grafting_nte>Fractal Guardian Eye Grafting (Mod Incompatibility)</ntg.title.fractal_eye_grafting_nte>
+<ntg.description.fractal_eye_grafting_nte>This grafting procedure is incompatible with NT: Eyes.</ntg.description.fractal_eye_grafting_nte>
+
+<!-- Husk Arm Grafting -->
+<ntg.title.husk_arm_grafting>Husk Arm Grafting</ntg.title.husk_arm_grafting>
+<ntg.description.husk_arm_grafting>A husk arm can be grafted onto the torso of a human. This gives them a deadly appendage which can violently slice hostile creatures.
+\nShould be done near a Surgery Table.
+</ntg.description.husk_arm_grafting>
+<ntg.steps.husk_arm_grafting>
+    1. Ensure the patient has high quality husk genes
+    [analgesia] 2a. Apply Analgesia |
+    [anesthesia] 2b. Apply Anesthesia |
+    [skin_retractors] 3. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 4. Apply DNA Litigation Enhancer |
+    5. Apply the Husk Arm |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.husk_arm_grafting>
+<ntg.seealso.husk_arm_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.husk_arm_grafting>
+
+<!-- Husk Heart Grafting -->
+<ntg.title.husk_heart_grafting>Husk Heart Grafting</ntg.title.husk_heart_grafting>
+<ntg.description.husk_heart_grafting>A husk heart can be grafted into the torso of a human. This Symbiotic being keeps their host alive by allowing them to stand and use both arms even in the case of broken arms and legs.
+\nShould be done near a Surgery Table.
+</ntg.description.husk_heart_grafting>
+<ntg.steps.husk_heart_grafting>
+    1. Ensure the patient has high quality husk genes
+    [analgesia] 2a. Apply Analgesia |
+    [anesthesia] 2b. Apply Anesthesia |
+    [skin_retractors] 3. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 4. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 5. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the heart |
+    6. Apply the Husk Heart |
+    [sutures] 7. Apply Sutures |
+    [dna_litigation_enhancer] 8. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.husk_heart_grafting>
+<ntg.seealso.husk_heart_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Craftable in the Alien Incubator 
+</ntg.seealso.husk_heart_grafting>
+
+<!-- Mantis Liver Grafting -->
+<ntg.title.mantis_liver_grafting>Mantis Liver Grafting</ntg.title.mantis_liver_grafting>
+<ntg.description.mantis_liver_grafting>Mantis livers can be grafted into the torso of a human. These livers produce large amounts ofparalyzants. While the mantis is able to use this to paralyze their foes, a human can use it to swiftly recover from paralysis themselves. However, their blood becomes full of paralyzants and even the mere spatter can cause any nearby creature to be paralyzed.
+\nThis surgery will cause blood packs taken from the patient to be able to cause paralysis.
+\nShould be done near a Surgery Table.
+</ntg.description.mantis_liver_grafting>
+<ntg.steps.mantis_liver_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the liver |
+    5. Apply the Mantis Liver |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.mantis_liver_grafting>
+<ntg.seealso.mantis_liver_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Craftable in the Alien Incubator 
+</ntg.seealso.mantis_liver_grafting>
+
+<!-- Mudraptor Lungs Grafting -->
+<ntg.title.mudraptor_lungs_grafting>Mudraptor Lungs Grafting</ntg.title.mudraptor_lungs_grafting>
+<ntg.description.mudraptor_lungs_grafting>The lungs of a mudraptor are much larger than a human's, and can be grafted into the torso of a human. These can provide a noticeably larger lung capacity.
+\nShould be done near a Surgery Table.
+</ntg.description.mudraptor_lungs_grafting>
+<ntg.steps.mudraptor_lungs_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the lungs |
+    5. Apply the Mudraptor Lungs |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.mudraptor_lungs_grafting>
+<ntg.seealso.mudraptor_lungs_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table
+</ntg.seealso.mudraptor_lungs_grafting>
+
+<!-- Mudraptor Head Grafting -->
+<ntg.title.mudraptor_head_grafting>Mudraptor Head Grafting</ntg.title.mudraptor_head_grafting>
+<ntg.description.mudraptor_head_grafting>The head of a mudraptor is a tough shell which can be applied to a human's skull. This helps protect the head of a human, however grafting to a human's head is very dangerous, and causes slight brain issues; lowering a human's ability to do tasks.
+\nShould be done near a Surgery Table.
+</ntg.description.mudraptor_head_grafting>
+<ntg.steps.mudraptor_head_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Mudraptor Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.mudraptor_head_grafting>
+<ntg.seealso.mudraptor_head_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.mudraptor_head_grafting>
+
+<!-- Broodmother Liver Grafting -->
+<ntg.title.broodmother_liver_grafting>Broodmother Liver Grafting</ntg.title.broodmother_liver_grafting>
+<ntg.description.broodmother_liver_grafting>The broodmother liver can be grafted into a human torso. A crawler broodmother is far more acidic than her children, and her liver is no different. In a human, this causes their blood to be incredibly acidic. The human becomes more resistant to acid burns. Humans with this liver have been noted to develop defensive abilities that allow them to spew their blood to burn nearby creatures.
+\nThis surgery will cause blood packs taken from the patient to be able to cause acid burns.
+\nShould be done near a Surgery Table.
+</ntg.description.broodmother_liver_grafting>
+<ntg.steps.broodmother_liver_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the liver |
+    5. Apply the Broodmother Liver |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.broodmother_liver_grafting>
+<ntg.seealso.broodmother_liver_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Craftable in the Alien Incubator 
+</ntg.seealso.broodmother_liver_grafting>
+
+<!-- Tiger Thresher Jaw Grafting -->
+<ntg.title.tthresher_jaw_grafting>Tiger Thresher Jaw Grafting</ntg.title.tthresher_jaw_grafting>
+<ntg.description.tthresher_jaw_grafting>A tiger thresher's jaw can be grafted onto a patient's head. This jaw is powerful and allows a human to have a bite strong enough to defend themselves from armored creatures.
+\nShould be done near a Surgery Table.
+</ntg.description.tthresher_jaw_grafting>
+<ntg.steps.tthresher_jaw_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Tiger Thresher Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.tthresher_jaw_grafting>
+<ntg.seealso.broodmother_liver_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.broodmother_liver_grafting>
+
+<!-- Tiger Thresher Tail Grafting -->
+<ntg.title.tthresher_tail_grafting>Tiger Thresher Tail Grafting</ntg.title.tthresher_tail_grafting>
+<ntg.description.tthresher_tail_grafting>A tiger thresher's tail can be grafted onto a patient's torso. This strong tail can greatly increasethe speed at which a regular human can swim.
+\nShould be done near a Surgery Table.
+</ntg.description.tthresher_tail_grafting>
+<ntg.steps.tthresher_tail_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Tiger Thresher Tail |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.tthresher_tail_grafting>
+<ntg.seealso.tthresher_tail_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.tthresher_tail_grafting>
+
+<!-- Bone Thresher Jaw Grafting -->
+<ntg.title.bthresher_tail_grafting>Bone Thresher Jaw Grafting</ntg.title.bthresher_tail_grafting>
+<ntg.description.bthresher_tail_grafting>The bone thresher jaw can be grafted onto a patient's head. Similarly to the tiger thresher, this jaw provides a human a powerful bite; however it's even stronger than the tiger thresher jaw.
+\nShould be done near a Surgery Table.
+</ntg.description.bthresher_tail_grafting>
+<ntg.steps.bthresher_tail_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Bone Thresher Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.bthresher_tail_grafting>
+<ntg.seealso.bthresher_tail_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.bthresher_tail_grafting>
+
+<!-- Hammerhead Skin Grafting -->
+<ntg.title.hammerhead_skin_grafting>Hammerhead Skin Grafting</ntg.title.hammerhead_skin_grafting>
+<ntg.description.hammerhead_skin_grafting>Hammerhead skin can be grafted to the torso. The hammerhead has a calloused head, allowing it to ram into submarines while sustaining no injuries. A human can apply this to their torso for a similar effect, however it resists all puncutres, violent or friendly.
+\nPatient will recieve 33% less affliction strength from medicines applied to them.
+\nShould be done near a Surgery Table.
+</ntg.description.hammerhead_skin_grafting>
+<ntg.steps.hammerhead_skin_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Hammerhead Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.hammerhead_skin_grafting>
+<ntg.seealso.hammerhead_skin_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.hammerhead_skin_grafting>
+
+<!-- Hammerhead Limb Grafting -->
+<ntg.title.hammerhead_limb_grafting>Hammerhead Limb Grafting</ntg.title.hammerhead_limb_grafting>
+<ntg.description.hammerhead_limb_grafting>Hammerhead limbs can be grafted to the torso. The hammerhead uses limbs to swim, but also stabilize itself within the water. A human can apply this to their torso to withstand flowing water better.
+\nShould be done near a Surgery Table.
+</ntg.description.hammerhead_limb_grafting>
+<ntg.steps.hammerhead_limb_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Hammerhead Limbs |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.hammerhead_limb_grafting>
+<ntg.seealso.hammerhead_limb_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.hammerhead_limb_grafting>
+
+<!-- Moloch Shell Grafting -->
+<ntg.title.moloch_shell_grafting>Moloch Shell Grafting</ntg.title.moloch_shell_grafting>
+<ntg.description.moloch_shell_grafting>A moloch shell can be grafted on a human's head. The moloch has a very tough outer shell to protect the soft body it has. A human can develop a tough shell upon their head in a similar fashion. However similarly to a moloch, a cracked shell spells their doom.
+\nShould be done near a Surgery Table.
+</ntg.description.moloch_shell_grafting>
+<ntg.steps.moloch_shell_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Moloch Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.moloch_shell_grafting>
+<ntg.seealso.moloch_shell_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.moloch_shell_grafting>
+
+<!-- Viperling Liver Grafting -->
+<ntg.title.viperling_liver_grafting>Viperling Liver Grafting</ntg.title.viperling_liver_grafting>
+<ntg.description.viperling_liver_grafting>A viperling liver can be grafted in to a human's torso. Viperlings are able to develop morbusine, which stick on to the tips of their spines. A viperling liver within a human is able to filter this especially well, making the human immune to morbusine poisoning.
+\nShould be done near a Surgery Table.
+</ntg.description.viperling_liver_grafting>
+<ntg.steps.viperling_liver_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the liver |
+    5. Apply the Viperling Liver |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.viperling_liver_grafting>
+<ntg.seealso.viperling_liver_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Craftable in the Alien Incubator 
+</ntg.seealso.viperling_liver_grafting>
+
+<!-- Watcher Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.watcher_eye_grafting>Watcher Eye Grafting</ntg.title.watcher_eye_grafting>
+<ntg.description.watcher_eye_grafting>The watcher eyes can be grafted on a human's head. Watchers are generally passive creatures, yet they cause psychosis to their prey, and boost the speed of their prey's predators. A human can control a fraction of this power, causing psychosis and slowness upon a single target they look at.
+\nShould be done near a Surgery Table.
+</ntg.description.watcher_eye_grafting>
+<ntg.steps.watcher_eye_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Watcher Eyes to the Head. |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.watcher_eye_grafting>
+<ntg.seealso.watcher_eye_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table
+</ntg.seealso.watcher_eye_grafting>
+
+<!-- Watcher Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.watcher_eye_grafting_nte>Watcher Eye Grafting (Mod Incompatibility)</ntg.title.watcher_eye_grafting_nte>
+<ntg.description.watcher_eye_grafting_nte>This grafting procedure is incompatible with NT: Eyes.</ntg.description.watcher_eye_grafting_nte>
+
+<!-- Charybdis Jaw Grafting -->
+<ntg.title.charybdis_jaw_grafting>Charybdis Jaw Grafting</ntg.title.charybdis_jaw_grafting>
+<ntg.description.charybdis_jaw_grafting>Charybdis' mighty jaw can be grafted onto a human's head. The Charybdis' jaw strength is unmatched. Applying it to a human provides a devestating attack, however the psychological effects this has have not yet been studied.
+\nShould be done near a Surgery Table.
+</ntg.description.charybdis_jaw_grafting>
+<ntg.steps.charybdis_jaw_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Charybdis Cells |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.charybdis_jaw_grafting>
+<ntg.seealso.charybdis_jaw_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.charybdis_jaw_grafting>
+
+<!-- Latcher Heart Grafting -->
+<ntg.title.latcher_heart_grafting>Latcher Heart Grafting</ntg.title.latcher_heart_grafting>
+<ntg.description.latcher_heart_grafting>The latcher's heart can be grafted into a human's torso. The latcher uses affective hit and run strategies to wear down its prey until they fall deep into its territory. When their heart is put into a human, the human becomes far faster, yet more frail, requiring the human to use similar strategies.
+\nShould be done near a Surgery Table.
+</ntg.description.latcher_heart_grafting>
+<ntg.steps.latcher_heart_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    [multipurpose_scalpel] 4. Apply a Multipurpose Scalpel in the Adaptive Organ Harvesting mode and remove the liver |
+    5. Apply the Latcher Heart |
+    [sutures] 6. Apply Sutures |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.latcher_heart_grafting>
+<ntg.seealso.latcher_heart_grafting>
+    [organ_transplant_surgery] Can be removed with Organ Transplant Surgery |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Craftable in the Alien Incubator 
+</ntg.seealso.latcher_heart_grafting>
+
+<!-- Latcher Tongue Grafting -->
+<ntg.title.latcher_tongue_grafting>Latcher Tongue Grafting</ntg.title.latcher_tongue_grafting>
+<ntg.description.latcher_tongue_grafting>The latcher's tongue can be grafted into a patient's mouth. The latcher uses his tongue to grab prey and drag them down to the abyss, as we see it grabs submarines until they crush. In a human, this is too small to drag submarines, however it can drag prey similar to their size.
+\nShould be done near a Surgery Table.
+</ntg.description.latcher_tongue_grafting>
+<ntg.steps.latcher_tongue_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Head |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Latcher Tongue to the Head. |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.latcher_tongue_grafting>
+<ntg.seealso.latcher_tongue_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.latcher_tongue_grafting>
+
+<!-- Endworm Skin Graft -->
+<ntg.title.endworm_skin_grafting>Endworm Skin Graft</ntg.title.endworm_skin_grafting>
+<ntg.description.endworm_skin_grafting>The endworm's skin can be grafted onto a human's torso. The endworm's skin is nearly impenetrable. When placed onto a human's torso, it manages to take over all the limbs but the head. This skin makes the human nearly unbreakable, to both friend and foe.
+\nPatient will recieve 33% less affliction strength from medicines applied to them.
+\nShould be done near a Surgery Table.
+</ntg.description.endworm_skin_grafting>
+<ntg.steps.endworm_skin_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Endworm Cells |
+    [sutures] 5. Apply Sutures |
+    6. Allow the Endworm Skin to spread across all limbs but the Head |
+    [dna_litigation_enhancer] 7. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.endworm_skin_grafting>
+<ntg.seealso.endworm_skin_grafting>
+    [dna_splicer] Can be removed with DNA Splicer |
+    [surgery_table] Surgery Table |
+    [alien_incubator] Cells may be duplicated in the Alien Incubator 
+</ntg.seealso.endworm_skin_grafting>
+
+<!-- Orangeboy Tail Grafting -->
+<ntg.title.orangeboy_tail_grafting>Orangeboy Tail Grafting</ntg.title.orangeboy_tail_grafting>
+<ntg.description.orangeboy_tail_grafting>The orangeboy tail can be grafted onto a human's torso. This tail is too small to be useful in any capacity, and the chitin shell sheds frequently.
+\nShould be done near a Surgery Table.
+</ntg.description.orangeboy_tail_grafting>
+<ntg.steps.orangeboy_tail_grafting>
+    [analgesia] 1a. Apply Analgesia |
+    [anesthesia] 1b. Apply Anesthesia |
+    [skin_retractors] 2. Apply Skin Retractors to the Torso |
+    [dna_litigation_enhancer] 3. Apply DNA Litigation Enhancer |
+    4. Apply the Orange Boy Tail to the Torso. |
+    [sutures] 5. Apply Sutures |
+    [dna_litigation_enhancer] 6. Monitor the patient and ensure their Cross-Species rejection stays as low as possible while not overdosing on DNA Litigation Enhancer (caused by being above 90%)
+</ntg.steps.orangeboy_tail_grafting>
+<ntg.seealso.hammerhead_limb_grafting>
+    [alien_scalpel] Can be removed with the Alien Scalpel |
+    [surgery_table] Surgery Table
+</ntg.seealso.hammerhead_limb_grafting>
+
+<!-- General Information -->
+
+<!-- Obtaining Graft Transplants -->
+<ntg.title.information_obtaining_grafting_transplants>Obtaining Graft Transplants</ntg.title.information_obtaining_grafting_transplants>
+<ntg.description.information_obtaining_grafting_transplants>The majority of grafting transplants can be found on the corpses of the creatures they come from. However, they will deteriorate over time, and therefore must be collected and refrigerated once they are found. These can be limbs, organs, or sometimes directly skin samples.
+\nSome grafting transplants can only be obtained from allowing skin cells to overtake a human organ, as the creature's organs are far too big for a human. An example of this would be needing to create a latcher heart - not just find it.
+\nMost organs use cell fusing as an alternative method of obtainment. For example, while a husk heart can be found on the body of a chimera, a human heart could be fused with husk cells to make the same heart.
+\nCells and transplants will deteriorate, but won't be damaged by fire, explosives and will deteriorate far slower than a regular human organ. Alien transplants will also heal in a refrigerated container from a far lower durability than a human organ. This makes obtaining the grafting transplants more forgiving and possible for a scientist.
+\nIMPORTANT NOTE: If you are running Barotraumatic, Vanilla Creatures Expanded or any other mod that overrides basegame creatures, NT: Grafting's items will not drop. Ensure NT: Grafting is above those mods in your mod list.</ntg.description.information_obtaining_grafting_transplants>
+<ntg.seealso.information_obtaining_grafting_transplants>
+    [alien_incubator] Cells can be duplicated and organs may be transmuted in the Alien Incubator
+</ntg.seealso.information_obtaining_grafting_transplants>
+
+<!-- Repairing Cracked Moloch Shell -->
+<ntg.title.information_repairing_moloch_shell>Repairing Cracked Moloch Shell</ntg.title.information_repairing_moloch_shell>
+<ntg.description.information_repairing_moloch_shell>If a moloch shell is cracked, it can be fixed by either retracting the skin on the head, adding another moloch skin cell chunk and suturing it back up or by applying DNA Splicer to the head, removing the crack and the shell entirely.
+\nEither way, the action must happen quickly or else the human will die.</ntg.description.information_repairing_moloch_shell>
+<ntg.seealso.information_repairing_moloch_shell>
+    [moloch_shell_grafting] Moloch Shell Grafting |
+    [dna_splicer] DNA Splicer 
+</ntg.seealso.information_repairing_moloch_shell>
+
+<!-- Aiming Latcher Tongue -->
+<ntg.title.information_aim_latcher_tongue>Aiming Latcher Tongue</ntg.title.information_aim_latcher_tongue>
+<ntg.description.information_aim_latcher_tongue>A latcher's tongue will always shoot directly forward from your mouth. This means to hit acreature who isn't submerged, they have to be your height to hit them. There are a few tips and tricks to help you aim the tongue on land, however:
+- If a creature if half your height, you can crouch to lower your head, allowing you to hit lower targets;
+- When you run your head aims down, meaning you shoot at a downward angle as well Crouching and walking backwards slightly raises your head, allowing you to shoot upwards;
+- If you are in the water, simply swimming in a way to make your face point your target will let you shoot in any given direction.
+</ntg.description.information_aim_latcher_tongue>
+<ntg.seealso.information_aim_latcher_tongue>
+    [latcher_tongue_grafting]
+</ntg.seealso.information_aim_latcher_tongue>
+
+<!-- Removing Grafting Limit -->
+<ntg.title.information_remove_grafting_limit>Removing Grafting Limit</ntg.title.information_remove_grafting_limit>
+<ntg.description.information_remove_grafting_limit>To remove the graft limit, permissions to console commands are required.
+\nTo give yourself unlimited grafts, hit F3 to open the console, and type “givetalent hackeddna” to provide yourself a talent that will remove the grafting limit.
+Similarly, to give someone else unlimited grafts, hit F3 to open the console, and type “givetalenthackeddna [character name]” to give that character the talent.
+\nIMPORTANT NOTE: This can not be undone.</ntg.description.information_remove_grafting_limit>
+
+</Infotexts>
