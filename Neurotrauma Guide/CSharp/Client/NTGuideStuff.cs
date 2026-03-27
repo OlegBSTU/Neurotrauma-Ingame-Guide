@@ -34,26 +34,4 @@ namespace NTGuide
             Script.GlobalOptions.CustomConverters.SetScriptToClrCustomConversion(DataType.Function, typeof(T), (DynValue v) => converter(v.Function));
         }
     }
-    
-    class NTGuideLocalize : ACsMod
-    {
-        public LuaCsSetup.LuaCsModStore.CsModStore ModStore { get; private set; }
-
-        public NTGuideLocalize()
-        {
-            ModStore = GameMain.LuaCs.ModStore.Register(this);
-            ModStore.Mod = this;
-            ModStore.Set("Instance", this);
-        }
-
-        public override void Stop()
-        {
-        }
-
-        public string Localize(string tag, params string[][] kvs)
-        {
-            if (kvs == null) { return TextManager.Get(tag).ToString(); }
-            return TextManager.GetWithVariables(tag, (from kv in kvs select (kv[0], kv[1])).ToArray()).ToString();
-        }
-    }
 }

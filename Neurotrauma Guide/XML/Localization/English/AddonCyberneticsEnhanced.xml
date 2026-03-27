@@ -124,7 +124,7 @@ First, perform Amputation Surgery on the selected limb; then use the cyberlimb o
 <ntg.title.loose_screws>Loose Screws</ntg.title.loose_screws>
 <ntg.description.loose_screws>When taking damage to a cyberlimb, each type of damage has a chance to cause various types and amounts of cyberlimb specific damage instead of the normal damage type.</ntg.description.loose_screws>
 <ntg.causes.loose_screws>
-    Loose Screws while moving (at 30% or more)
+    Loose Screws while moving (at 30% or more) |
     [open_wounds] 75% chance for Lacerations to cause 25% of their damage as Loose Screws |
     [open_wounds] 50% chance for Bite Wounds to cause 50% of their damage as Loose Screws |
     [open_wounds] 80% chance for Deep Tissue Injury to cause 100% of its damage as Loose Screws |

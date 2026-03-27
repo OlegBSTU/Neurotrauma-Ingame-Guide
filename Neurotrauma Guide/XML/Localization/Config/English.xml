@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<infotexts language="English" nowhitespace="false" translatedname="English">
+	<Override>
+		<rawconfig.enforcedtooltip>This setting is enforced by server</rawconfig.enforcedtooltip>
+		<rawconfig.notenforcedtooltip>This setting is not enforced by server</rawconfig.notenforcedtooltip>
+		<ntguide.modname>NT Guide</ntguide.modname>
+		<ntguide.cfg.enabled>Enable NT Guide (CURRENTLY NOT ABLE TO BE TURNED OFF)</ntguide.cfg.enabled>
+		<ntguide.cfg.enableddescription>Enables all guide functionality.</ntguide.cfg.enableddescription>
+		<ntguide.cfg.shared>Share mod with clients</ntguide.cfg.shared>
+		<ntguide.cfg.shareddescription>When enabled mod would appear in server modlist and would be downloaded by clients when joining. (Serverside/Host CSharp Scripting must be enabled for this to work)</ntguide.cfg.shareddescription>
+	</Override>
+</infotexts>

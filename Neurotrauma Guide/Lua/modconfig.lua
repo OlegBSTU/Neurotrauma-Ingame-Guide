@@ -1,0 +1,85 @@
+-- Config to enable language files based on enabled mods.
+
+local config = {
+	{
+		-- Neurotrauma Continued
+		supportedlanguages = {"English"}, -- which languages patch supports for this specific mod {"English","German","Russian"} etc
+		IgnoreTargetModState = true, -- doesnt check for target mod being enabled. Still respects supported languages.
+		workshopId = "3190189044", -- id of the mod being patched and which language files we disable, "" means nothing gets disabled
+		loadpriority = 0, -- patches with higher priotiry would override ones with lower when enabled. works similiar to game modlist
+		files = {	-- path to language files we want to use instead of originals, %Language% is automatically replaced with client language
+				"%ModDir%/XML/Localization/%Language%/BaseNeurotraumaPages.xml", -- if files is empty (files = {}) then it would just disable mod language files
+				}
+
+	},
+
+	{
+		-- Cybernetics
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3324062208",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonCyberneticsEnhanced.xml"
+				}
+	},
+
+	{
+		-- Surgery Plus
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3478084070",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonSurgeryPlus.xml"
+				} 
+	},
+
+	{
+		-- Eyes
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3294574390",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonEyes.xml"
+				} 
+	},
+
+	{
+		-- Infections
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3286567141",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonInfections.xml"
+				} 
+	},
+
+	{
+		-- Grafting
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3534702008",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonGrafting.xml"
+				} 
+	},
+
+}
+
+return config
+
+
+	-- Example blank, you dont need to add localization for this
+	-- {
+	-- 	supportedlanguages = {"English"},
+	-- 	IgnoreTargetModState = false,
+	-- 	workshopId = "",
+	-- 	loadpriority = 1,
+	-- 	files = {
+	-- 		"%ModDir%/XML/Localization/%Language%/dummy.xml"
+	-- 		} 
+	-- },

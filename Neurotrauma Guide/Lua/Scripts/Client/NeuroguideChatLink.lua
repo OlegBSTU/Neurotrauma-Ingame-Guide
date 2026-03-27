@@ -19,7 +19,7 @@ LuaUserData.RegisterType('System.Collections.Immutable.ImmutableArray`1[[Barotra
 -- Hooks to allow linking are at the bottom
 
 -- Go over the clickable areas and determine if they should exist
-function stripUselessAreas(ClickableAreas)
+function NTGuide.stripUselessAreas(ClickableAreas)
     if ClickableAreas.Count == 0 then return end
     for i = ClickableAreas.Count-1, 0, -1 do
         if not ClickableAreas[i].Data.Metadata then
@@ -29,7 +29,7 @@ function stripUselessAreas(ClickableAreas)
 end
 
 -- Do something with a clickable area :smirk_cat: 
-function printlink(textBlock, area)
+function NTGuide.printlink(textBlock, area)
 	-- Ensure there is text
     if not area.Data.Metadata then return end
 	-- Pull metadata
@@ -52,14 +52,14 @@ function printlink(textBlock, area)
 end
 
 -- Dynamically create clickable text areas
-function generateClickableAreas(textBlock)
+function NTGuide.generateClickableAreas(textBlock)
     for data in textBlock.RichTextData do
 		-- If there is text and it has metadata, check if the metadata has link@
         if data ~= nil and data.Metadata ~= nil and string.find(data.Metadata,"link@") then
 			local area = ClickableArea.__new()
 			area.Data = data
-			area.OnClick = printlink
-			area.OnSecondaryClick = printlink
+			area.OnClick = NTGuide.printlink
+			area.OnSecondaryClick = NTGuide.printlink
 			textBlock.ClickableAreas.Add(area)
         end
     end
@@ -70,15 +70,15 @@ end
 Hook.Patch('Barotrauma.NetLobbyScreen', 'NewChatMessage', function(instance, ptable)
     local TextBlock = instance.chatBox.Content.Children.Last()
     
-    stripUselessAreas(TextBlock.ClickableAreas)
+    NTGuide.stripUselessAreas(TextBlock.ClickableAreas)
     if TextBlock.ClickableAreas.Count == 0 then return end
     for i = 0, TextBlock.ClickableAreas.Count-1, 1 do
         local area = TextBlock.ClickableAreas[i]
         if area.Data.Metadata then
             local _, index = string.find(area.Data.Metadata,"link@")
             if index then
-                area.OnClick = printlink
-                area.OnSecondaryClick = printlink
+                area.OnClick = NTGuide.printlink
+                area.OnSecondaryClick = NTGuide.printlink
                 TextBlock.ClickableAreas[i] = area
             end
         end
@@ -91,7 +91,7 @@ Hook.Patch('Barotrauma.ChatBox', 'AddMessage', function(instance, ptable)
     msgHolder.CanBeFocused = false
 
     local TextBlock = msgHolder.GetChild(Int32(1))
-    stripUselessAreas(TextBlock.ClickableAreas)
+    NTGuide.stripUselessAreas(TextBlock.ClickableAreas)
     
     if TextBlock.ClickableAreas.Count == 0 then return end
     for i = 0, TextBlock.ClickableAreas.Count-1, 1 do
@@ -99,8 +99,8 @@ Hook.Patch('Barotrauma.ChatBox', 'AddMessage', function(instance, ptable)
         if area.Data.Metadata then
             local _, index = string.find(area.Data.Metadata,"link@")
             if index then
-                area.OnClick = printlink
-                area.OnSecondaryClick = printlink
+                area.OnClick = NTGuide.printlink
+                area.OnSecondaryClick = NTGuide.printlink
                 TextBlock.ClickableAreas[i] = area
             end
         end

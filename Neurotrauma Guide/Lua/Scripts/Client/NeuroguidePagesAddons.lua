@@ -1,41 +1,10 @@
 -- Expansion / overriding of Guide Pages
--- By only showing information that 'matters' people won't have to worry about things Surgical Infection when they don't even have NT Surgery Plus.
--- This saves space on pages with less text / links unless needed
-
-local NTSP_enabled = false
-local NTCyb_enabled = false
-local NTEyes_enabled = false
-local NTInfections_enabled = false
-local NTGrafting_enabled = false
-
--- We go over all addons and check if they're enabled. If they are, we swap their variable to use later.
--- This makes page overrides that require two addons together to be done easier
-if NTC ~= nil then
-    for val in NTC.RegisteredExpansions do
-
-        if val.Name == "NT Surgery Plus" then
-            NTSP_enabled = true
-
-        elseif val.Name == "Cybernetics" then
-            NTCyb_enabled = true
-
-        elseif val.Name == "Infections" then
-            NTInfections_enabled = true
-
-        elseif val.Name == "Eyes" then
-            NTEyes_enabled = true
-
-        elseif val.Name == "Grafting" then
-            NTGrafting_enabled = true
-        end
-    end
-end
 
 --===================================================================================================================================================================================================
         -- Neurotrauma: Surgery Plus Additions
-if NTSP_enabled == true then
             -- Surgical Infection
             NTGuide.ContentPages.Afflictions_Blood.SurgicalInfection = {
+                mod = "NT: Surgery Plus",
                 id = "surgical_infection", 
                 category = "mechanics",
                 title = NTGuide.Localize("ntg.title.surgical_infection"), 
@@ -45,6 +14,7 @@ if NTSP_enabled == true then
             }
             -- Surgical Drapes
             NTGuide.ContentPages.Items.SurgicalDrapes = {
+                mod = "NT: Surgery Plus",
                 id = "surgical_drapes", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.surgical_drapes"), 
@@ -54,6 +24,7 @@ if NTSP_enabled == true then
             }
             -- Surgical Mask
             NTGuide.ContentPages.Items.SurgicalMask = {
+                mod = "NT: Surgery Plus",
                 id = "surgical_mask", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.surgical_mask"), 
@@ -63,6 +34,7 @@ if NTSP_enabled == true then
             }
             -- Surgeon Clothes
             NTGuide.ContentPages.Items.SurgeonClothes = {
+                mod = "NT: Surgery Plus",
                 id = "surgeon_clothes", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.surgeon_clothes"), 
@@ -72,6 +44,7 @@ if NTSP_enabled == true then
             }
             -- Mannitol Plus
             NTGuide.ContentPages.Items.MannitolPlus = {
+                mod = "NT: Surgery Plus",
                 id = "mannitol_plus", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.mannitol_plus"), 
@@ -81,6 +54,7 @@ if NTSP_enabled == true then
             }
             -- Experimental Treatment
             NTGuide.ContentPages.Items.ExperimentalTreatment = {
+                mod = "NT: Surgery Plus",
                 id = "experimental_treatment", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.experimental_treatment"), 
@@ -91,6 +65,7 @@ if NTSP_enabled == true then
             }
             -- Triage Card(s)
             NTGuide.ContentPages.Items.TriageCard = {
+                mod = "NT: Surgery Plus",
                 id = "triage_card", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.triage_card"), 
@@ -98,6 +73,7 @@ if NTSP_enabled == true then
             }
             -- Brain Jar
             NTGuide.ContentPages.Items.BrainJar = {
+                mod = "NT: Surgery Plus",
                 id = "brain_jar", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.brain_jar"), 
@@ -105,6 +81,7 @@ if NTSP_enabled == true then
             }
             -- Artificial Brain
             NTGuide.ContentPages.Items.ArtificialBrain = {
+                mod = "NT: Surgery Plus",
                 id = "artificial_brain", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.artificial_brain"), 
@@ -112,17 +89,17 @@ if NTSP_enabled == true then
             }
             -- Medical Misconduct
             NTGuide.ContentPages.Items.MedicalMisconduct = {
+                mod = "NT: Surgery Plus",
                 id = "medical_misconduct", 
                 category = "items",
                 title = NTGuide.Localize("ntg.title.medical_misconduct"), 
                 description = NTGuide.Localize("ntg.description.medical_misconduct"), 
             }
-end
 -- ===========================================================================================================================================================================================================
         -- Neurotrauma: Cybernetics Enhanced Additions
-if NTCyb_enabled == true then
-            -- Cybernetic Arm
+        -- Cybernetic Arm
             NTGuide.ContentPages.Items.CyberneticArm = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cybernetic_arm",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cybernetic_arm"), 
@@ -133,6 +110,7 @@ if NTCyb_enabled == true then
             }
             -- Cybernetic Leg
             NTGuide.ContentPages.Items.CyberneticLeg = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cybernetic_leg",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cybernetic_leg"), 
@@ -143,6 +121,7 @@ if NTCyb_enabled == true then
             }
             -- Damaged Electronics
             NTGuide.ContentPages.Afflictions_Extremities.DamagedElectronics = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "damaged_electronics",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.damaged_electronics"), 
@@ -154,6 +133,7 @@ if NTCyb_enabled == true then
             }
             -- Bent Metal
             NTGuide.ContentPages.Afflictions_Extremities.BentMetal = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "bent_metal",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.bent_metal"), 
@@ -165,6 +145,7 @@ if NTCyb_enabled == true then
             }
             -- Loose Screws
             NTGuide.ContentPages.Afflictions_Extremities.LooseScrews = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "loose_screws",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.loose_screws"), 
@@ -176,17 +157,19 @@ if NTCyb_enabled == true then
             }
             -- Material Loss
             NTGuide.ContentPages.Afflictions_Extremities.MaterialLoss = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "material_loss",
                 category = "afflictions",
-                title = NTGuide.Localize("ntg.title.loose_screws"), 
-                description = NTGuide.Localize("ntg.description.loose_screws"),
-                causes = {NTGuide.Localize("ntg.causes.loose_screws")},
-                effects = {NTGuide.Localize("ntg.effects.loose_screws")}, 
-                treatments = {NTGuide.Localize("ntg.treatments.loose_screws")},
-                seealso = {NTGuide.Localize("ntg.seealso.loose_screws")},
+                title = NTGuide.Localize("ntg.title.material_loss"), 
+                description = NTGuide.Localize("ntg.description.material_loss"),
+                causes = {NTGuide.Localize("ntg.causes.material_loss")},
+                effects = {NTGuide.Localize("ntg.effects.material_loss")}, 
+                treatments = {NTGuide.Localize("ntg.treatments.material_loss")},
+                seealso = {NTGuide.Localize("ntg.seealso.material_loss")},
             }
             -- FPGA Circuit
             NTGuide.ContentPages.Items.FPGACircuit = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "fpga_circuit",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.fpga_circuit"), 
@@ -196,6 +179,7 @@ if NTCyb_enabled == true then
             }
             -- Welding Tool
             NTGuide.ContentPages.Items.WeldingTool = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "welding_tool",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.welding_tool"), 
@@ -205,6 +189,7 @@ if NTCyb_enabled == true then
             }
             -- Screwdriver
             NTGuide.ContentPages.Items.Screwdriver = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "screwdriver",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.screwdriver"), 
@@ -215,6 +200,7 @@ if NTCyb_enabled == true then
             }
             -- Steel Bar
             NTGuide.ContentPages.Items.SteelBar = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "steel_bar",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.steel_bar"), 
@@ -224,6 +210,7 @@ if NTCyb_enabled == true then
             }
             -- Crowbar
             NTGuide.ContentPages.Items.Crowbar = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "crowbar",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.crowbar"), 
@@ -231,6 +218,7 @@ if NTCyb_enabled == true then
             }
             -- Cyberbrain(s)
             NTGuide.ContentPages.Items.CyberBrainImplant = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cyberbrain_implant",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyberbrain_implant"), 
@@ -241,6 +229,7 @@ if NTCyb_enabled == true then
             }
             -- Cyberlung(s)
             NTGuide.ContentPages.Items.CyberLung = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cyberlung",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyberlung"), 
@@ -251,6 +240,7 @@ if NTCyb_enabled == true then
             }
             -- Cyberheart(s)
             NTGuide.ContentPages.Items.CyberHeart = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cyberheart",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyberheart"), 
@@ -261,6 +251,7 @@ if NTCyb_enabled == true then
             }
             -- Cyberkidney(s)
             NTGuide.ContentPages.Items.CyberKidney = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cyberkidney",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyberkidney"), 
@@ -271,6 +262,7 @@ if NTCyb_enabled == true then
             }
             -- Cyberliver(s)
             NTGuide.ContentPages.Items.CyberLiver = {
+                mod = "NT: Cybernetics Enhanced",
                 id = "cyberliver",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyberliver"), 
@@ -279,20 +271,12 @@ if NTCyb_enabled == true then
                 applicationfailed = {NTGuide.Localize("ntg.applicationfailed.cyberliver")},
                 seealso = {NTGuide.Localize("ntg.seealso.cyberliver")},
             }
-
-            -- Add relevant scannable afflictions to the Health Scanner / Hematology Analyzer translation table
-            table.insert(NTGuide.IdentifierToPage, {"ntc_cyberliver", "cyberliver"})
-            table.insert(NTGuide.IdentifierToPage, {"ntc_cyberlung", "cyberlung"})
-            table.insert(NTGuide.IdentifierToPage, {"ntc_cyberheart", "cyberbrain_implant"})
-            table.insert(NTGuide.IdentifierToPage, {"ntc_cyberbrain", "cyberheart"})
-            table.insert(NTGuide.IdentifierToPage, {"ntc_cyberkidney", "cyberkidney"})
-end
 --==============================================================================================================================================================================================================
         -- Neurotrauma: Eyes Additions
-if NTEyes_enabled == true then
         -- Damage Afflictions
             -- Human Eye Damage
             NTGuide.ContentPages.Afflictions_HeadORBrain.HumanEyeDamage = {
+                mod = "NT: Eyes",
                 id = "human_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.human_eye_damage"), 
@@ -304,6 +288,7 @@ if NTEyes_enabled == true then
             }
             -- Enhanced Eye Damage
             NTGuide.ContentPages.Afflictions_HeadORBrain.EnhancedEyeDamage = {
+                mod = "NT: Eyes",
                 id = "enhanced_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.enhanced_eye_damage"), 
@@ -316,6 +301,7 @@ if NTEyes_enabled == true then
             
             -- Cyber Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.CyberEyeDamage = {
+                mod = "NT: Eyes",
                 id = "cyber_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.cyber_eye_damage"), 
@@ -328,6 +314,7 @@ if NTEyes_enabled == true then
             
             -- Plastic Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.PlasticEyeDamage = {
+                mod = "NT: Eyes",
                 id = "plastic_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.plastic_eye_damage"), 
@@ -340,6 +327,7 @@ if NTEyes_enabled == true then
             
             -- Husk Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.HuskEyeDamage = {
+                mod = "NT: Eyes",
                 id = "husk_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.husk_eye_damage"), 
@@ -352,6 +340,7 @@ if NTEyes_enabled == true then
             
             -- Crawler Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.CrawlerEyeDamage = {
+                mod = "NT: Eyes",
                 id = "crawler_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.crawler_eye_damage"), 
@@ -364,6 +353,7 @@ if NTEyes_enabled == true then
             
             -- Mudraptor Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.MudraptorEyeDamage = {
+                mod = "NT: Eyes",
                 id = "mudraptor_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.mudraptor_eye_damage"), 
@@ -376,6 +366,7 @@ if NTEyes_enabled == true then
             
             -- Hammerhead Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.HammerheadEyeDamage = {
+                mod = "NT: Eyes",
                 id = "hammerhead_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.hammerhead_eye_damage"), 
@@ -388,6 +379,7 @@ if NTEyes_enabled == true then
             
             -- Watcher Eye Damage 
             NTGuide.ContentPages.Afflictions_HeadORBrain.WatcherEyeDamage = {
+                mod = "NT: Eyes",
                 id = "watcher_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.watcher_eye_damage"), 
@@ -400,6 +392,7 @@ if NTEyes_enabled == true then
             
             -- Latcher Eye Damage
             NTGuide.ContentPages.Afflictions_HeadORBrain.LatcherEyeDamage = {
+                mod = "NT: Eyes",
                 id = "latcher_eye_damage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.latcher_eye_damage"), 
@@ -414,6 +407,7 @@ if NTEyes_enabled == true then
 
             -- Dead Eyes
             NTGuide.ContentPages.Afflictions_HeadORBrain.DeadEyes = {
+                mod = "NT: Eyes",
                 id = "dead_eyes",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.dead_eyes"), 
@@ -425,6 +419,7 @@ if NTEyes_enabled == true then
             
             -- Dead Eye
             NTGuide.ContentPages.Afflictions_HeadORBrain.DeadEye = {
+                mod = "NT: Eyes",
                 id = "dead_eye",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.dead_eye"), 
@@ -436,6 +431,7 @@ if NTEyes_enabled == true then
             
             -- Retinopathy 
             NTGuide.ContentPages.Afflictions_HeadORBrain.Retinopathy = {
+                mod = "NT: Eyes",
                 id = "retinopathy",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.retinopathy"), 
@@ -448,6 +444,7 @@ if NTEyes_enabled == true then
             
             -- Cataract 
             NTGuide.ContentPages.Afflictions_HeadORBrain.Cataract = {
+                mod = "NT: Eyes",
                 id = "cataract",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.cataract"), 
@@ -459,6 +456,7 @@ if NTEyes_enabled == true then
 
             -- Vision Sickness 
             NTGuide.ContentPages.Afflictions_HeadORBrain.VisionSickness = {
+                mod = "NT: Eyes",
                 id = "vision_sickness",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.vision_sickness"), 
@@ -470,6 +468,7 @@ if NTEyes_enabled == true then
 
             -- Mismatch 
             NTGuide.ContentPages.Afflictions_HeadORBrain.Mismatch = {
+                mod = "NT: Eyes",
                 id = "mismatch",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.mismatch"), 
@@ -483,6 +482,7 @@ if NTEyes_enabled == true then
 
             -- Removed Eyes
             NTGuide.ContentPages.Afflictions_Surgery.RemovedEyes = {
+                mod = "NT: Eyes",
                 id = "removed_eyes",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.removed_eyes"), 
@@ -494,6 +494,7 @@ if NTEyes_enabled == true then
 
             -- Removed Eye
             NTGuide.ContentPages.Afflictions_Surgery.RemovedEye = {
+                mod = "NT: Eyes",
                 id = "removed_eye",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.removed_eye"), 
@@ -505,6 +506,7 @@ if NTEyes_enabled == true then
             
             -- Held Eyelids
             NTGuide.ContentPages.Afflictions_Surgery.HeldEyelids = {
+                mod = "NT: Eyes",
                 id = "held_eyelids",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.held_eyelids"), 
@@ -516,6 +518,7 @@ if NTEyes_enabled == true then
 
             -- Popped Eyes
             NTGuide.ContentPages.Afflictions_Surgery.PoppedEyes = {
+                mod = "NT: Eyes",
                 id = "popped_eyes",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.popped_eyes"), 
@@ -527,6 +530,7 @@ if NTEyes_enabled == true then
 
             -- Eye Connector
             NTGuide.ContentPages.Afflictions_Surgery.EyeConnector = {
+                mod = "NT: Eyes",
                 id = "eye_connector",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.eye_connector"), 
@@ -537,6 +541,7 @@ if NTEyes_enabled == true then
 
             -- Cornea Incision
             NTGuide.ContentPages.Afflictions_Surgery.CorneaIncision = {
+                mod = "NT: Eyes",
                 id = "cornea_incision",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.cornea_incision"), 
@@ -548,6 +553,7 @@ if NTEyes_enabled == true then
 
             -- Emulsification
             NTGuide.ContentPages.Afflictions_Surgery.Emulsification = {
+                mod = "NT: Eyes",
                 id = "emulsification",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.emulsification"), 
@@ -559,6 +565,7 @@ if NTEyes_enabled == true then
 
             -- Eye Drops
             NTGuide.ContentPages.Afflictions_Surgery.EyeDrops = {
+                mod = "NT: Eyes",
                 id = "eye_drops",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.eye_drops"), 
@@ -569,6 +576,7 @@ if NTEyes_enabled == true then
 
             -- Laser Surgery
             NTGuide.ContentPages.Afflictions_Surgery.LaserSurgery = {
+                mod = "NT: Eyes",
                 id = "laser_surgery",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.laser_surgery"), 
@@ -581,6 +589,7 @@ if NTEyes_enabled == true then
 
             -- Eye Removal Surgery
             NTGuide.ContentPages.SurgicalProcedures.EyeRemovalSurgery = {
+                mod = "NT: Eyes",
                 id = "eye_removal_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.eye_removal_surgery"), 
@@ -591,6 +600,7 @@ if NTEyes_enabled == true then
 
             -- Eye Transplant Surgery
             NTGuide.ContentPages.SurgicalProcedures.EyeTransplantSurgery = {
+                mod = "NT: Eyes",
                 id = "eye_transplant_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.eye_transplant_surgery"), 
@@ -601,6 +611,7 @@ if NTEyes_enabled == true then
 
             -- Cataract Surgery
             NTGuide.ContentPages.SurgicalProcedures.CataractSurgery = {
+                mod = "NT: Eyes",
                 id = "cataract_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.cataract_surgery"), 
@@ -611,6 +622,7 @@ if NTEyes_enabled == true then
 
             -- Cyber Eye Repair Surgery
             NTGuide.ContentPages.SurgicalProcedures.CyberEyeRepairSurgery = {
+                mod = "NT: Eyes",
                 id = "cyber_eye_repair_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.cyber_eye_repair_surgery"), 
@@ -620,6 +632,7 @@ if NTEyes_enabled == true then
 
             -- Lens Application Surgery 
             NTGuide.ContentPages.SurgicalProcedures.LensApplicationSurgery = {
+                mod = "NT: Eyes",
                 id = "lens_application_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.lens_application_surgery"), 
@@ -630,6 +643,7 @@ if NTEyes_enabled == true then
 
             -- Lens Removal Surgery
             NTGuide.ContentPages.SurgicalProcedures.LensRemovalSurgery = {
+                mod = "NT: Eyes",
                 id = "lens_removal_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.lens_removal_surgery"), 
@@ -639,6 +653,7 @@ if NTEyes_enabled == true then
 
             -- Laser Eye Surgery
             NTGuide.ContentPages.SurgicalProcedures.LaserEyeSurgery = {
+                mod = "NT: Eyes",
                 id = "laser_eye_surgery",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.laser_eye_surgery"), 
@@ -648,6 +663,7 @@ if NTEyes_enabled == true then
 
             -- Eye Drop Application
             NTGuide.ContentPages.SurgicalProcedures.EyeDropApplication = {
+                mod = "NT: Eyes",
                 id = "eye_drop_application",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.eye_drop_application"), 
@@ -659,6 +675,7 @@ if NTEyes_enabled == true then
 
             -- Human Eye 
             NTGuide.ContentPages.Items.HumanEye = {
+                mod = "NT: Eyes",
                 id = "human_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.human_eye"), 
@@ -668,6 +685,7 @@ if NTEyes_enabled == true then
 
             -- Enhanced Eye 
             NTGuide.ContentPages.Items.EnhancedEye = {
+                mod = "NT: Eyes",
                 id = "enhanced_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.enhanced_eye"), 
@@ -677,6 +695,7 @@ if NTEyes_enabled == true then
 
             -- Cyber Eye  
             NTGuide.ContentPages.Items.CyberEye = {
+                mod = "NT: Eyes",
                 id = "cyber_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cyber_eye"), 
@@ -686,6 +705,7 @@ if NTEyes_enabled == true then
 
             -- Plastic Eye  
             NTGuide.ContentPages.Items.PlasticEye = {
+                mod = "NT: Eyes",
                 id = "plastic_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.plastic_eye"), 
@@ -695,6 +715,7 @@ if NTEyes_enabled == true then
 
             -- Husk Eye  
             NTGuide.ContentPages.Items.HuskEye = {
+                mod = "NT: Eyes",
                 id = "husk_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.husk_eye"), 
@@ -704,6 +725,7 @@ if NTEyes_enabled == true then
 
             -- Crawler Eye  
             NTGuide.ContentPages.Items.CrawlerEye = {
+                mod = "NT: Eyes",
                 id = "crawler_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.crawler_eye"), 
@@ -713,6 +735,7 @@ if NTEyes_enabled == true then
 
             -- Mudraptor Eye  
             NTGuide.ContentPages.Items.MudraptorEye = {
+                mod = "NT: Eyes",
                 id = "mudraptor_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.mudraptor_eye"), 
@@ -722,6 +745,7 @@ if NTEyes_enabled == true then
 
             -- Hammerhead Eye  
             NTGuide.ContentPages.Items.HammerheadEye = {
+                mod = "NT: Eyes",
                 id = "hammerhead_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.hammerhead_eye"), 
@@ -731,6 +755,7 @@ if NTEyes_enabled == true then
 
             -- Watcher Eye  
             NTGuide.ContentPages.Items.WatcherEye = {
+                mod = "NT: Eyes",
                 id = "watcher_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.watcher_eye"), 
@@ -740,6 +765,7 @@ if NTEyes_enabled == true then
 
             -- Latcher Eye 
             NTGuide.ContentPages.Items.LatcherEye = {
+                mod = "NT: Eyes",
                 id = "latcher_eye",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.latcher_eye"), 
@@ -751,6 +777,7 @@ if NTEyes_enabled == true then
             
             -- Medical Lens
             NTGuide.ContentPages.Items.MedicalLens = {
+                mod = "NT: Eyes",
                 id = "medical_lens",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.medical_lens"), 
@@ -760,6 +787,7 @@ if NTEyes_enabled == true then
 
             -- Electrical Lens
             NTGuide.ContentPages.Items.ElectricalLens = {
+                mod = "NT: Eyes",
                 id = "electrical_lens",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.electrical_lens"), 
@@ -769,6 +797,7 @@ if NTEyes_enabled == true then
 
             -- Night Vision Lens
             NTGuide.ContentPages.Items.NightvisionLens = {
+                mod = "NT: Eyes",
                 id = "night_vision_lens",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.night_vision_lens"), 
@@ -778,6 +807,7 @@ if NTEyes_enabled == true then
 
             -- Thermal Lens
             NTGuide.ContentPages.Items.ThermalLens = {
+                mod = "NT: Eyes",
                 id = "thermal_lens",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.thermal_lens"), 
@@ -789,6 +819,7 @@ if NTEyes_enabled == true then
 
             -- Eye Connector
             NTGuide.ContentPages.Items.EyeConnectorItem = {
+                mod = "NT: Eyes",
                 id = "eye_connector_item",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.eye_connector_item"), 
@@ -798,6 +829,7 @@ if NTEyes_enabled == true then
 
             -- Organic Eye Lens
             NTGuide.ContentPages.Items.OrganicEyeLens = {
+                mod = "NT: Eyes",
                 id = "organic_eye_lens",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.organic_eye_lens"), 
@@ -807,6 +839,7 @@ if NTEyes_enabled == true then
 
             -- Laser Surgery Tool
             NTGuide.ContentPages.Items.LaserSurgeryTool = {
+                mod = "NT: Eyes",
                 id = "laser_surgery_tool",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.laser_surgery_tool"), 
@@ -816,6 +849,7 @@ if NTEyes_enabled == true then
 
             -- Advanced Eyeball Extraction Device
             NTGuide.ContentPages.Items.TheSpoon = {
+                mod = "NT: Eyes",
                 id = "the_spoon",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.the_spoon"), 
@@ -824,6 +858,7 @@ if NTEyes_enabled == true then
 
             -- Eye Drops
             NTGuide.ContentPages.Items.EyeDropsItem = {
+                mod = "NT: Eyes",
                 id = "eye_drops_item",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.eye_drops_item"), 
@@ -835,6 +870,7 @@ if NTEyes_enabled == true then
 
             -- Corrective Glasses
             NTGuide.ContentPages.Items.CorrectiveGlasses = {
+                mod = "NT: Eyes",
                 id = "corrective_glasses",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.corrective_glasses"), 
@@ -844,6 +880,7 @@ if NTEyes_enabled == true then
 
             -- Night Vision Goggles
             NTGuide.ContentPages.Items.NightVisionGoggles = {
+                mod = "NT: Eyes",
                 id = "night_vision_goggles",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.night_vision_goggles"), 
@@ -853,46 +890,19 @@ if NTEyes_enabled == true then
 
             -- Eye Regeneration Jar
             NTGuide.ContentPages.Items.EyeRegenerationJar = {
+                mod = "NT: Eyes",
                 id = "eye_regeneration_jar",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.eye_regeneration_jar"), 
                 description = NTGuide.Localize("ntg.description.eye_regeneration_jar"),
                 effects = {NTGuide.Localize("ntg.effects.eye_regeneration_jar")},
             }
-
-            -- Put the scannable afflictions into the linking table, as before
-            -- Charybdis & Terror eyes exist in the code, but are not on the guide and/or implemented.
-            -- Eye Damage
-            table.insert(NTGuide.IdentifierToPage, {"dm_human", "human_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_cyber", "cyber_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_enhanced", "enhanced_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_plastic", "plastic_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_crawler", "crawler_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_mudraptor", "mudraptor_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_hammerhead", "hammerhead_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_watcher", "watcher_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_husk", "husk_eye_damage"})
-            table.insert(NTGuide.IdentifierToPage, {"dm_latcher", "latcher_eye_damage"})
-            -- Lenses
-            table.insert(NTGuide.IdentifierToPage, {"lt_medical", "medical_lens"})
-            table.insert(NTGuide.IdentifierToPage, {"lt_electrical", "electrical_lens"})
-            table.insert(NTGuide.IdentifierToPage, {"lt_night", "night_vision_lens"})
-            table.insert(NTGuide.IdentifierToPage, {"lt_thermal", "thermal_lens"})
-            -- Mechanical
-            table.insert(NTGuide.IdentifierToPage, {"mc_deadeyes", "dead_eyes"})
-            table.insert(NTGuide.IdentifierToPage, {"mc_deadeye", "dead_eye"}) 
-            table.insert(NTGuide.IdentifierToPage, {"mc_retinopathy", "retinopathy"}) -- 5+
-            table.insert(NTGuide.IdentifierToPage, {"mc_cataract", "cataract"}) -- 15+
-            -- Surgery
-            table.insert(NTGuide.IdentifierToPage, {"sr_removedeyes", "removed_eyes"})
-            table.insert(NTGuide.IdentifierToPage, {"sr_removedeye", "removed_eye"}) 
-end
 -- =========================================================================================================================================================================================================
         -- Neurotrauma: Infections Additions 
-if NTInfections_enabled == true then
         -- Information Pages
             -- How the new infections work
             NTGuide.ContentPages.Information.InfectionChanges = {
+                mod = "NT: Infections",
                 id = "information_infection_changes",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_infection_changes"), 
@@ -902,6 +912,7 @@ if NTInfections_enabled == true then
 
             -- Fighting off infections
             NTGuide.ContentPages.Information.FightingInfections = {
+                mod = "NT: Infections",
                 id = "information_fighting_infections",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_fighting_infections"), 
@@ -911,6 +922,7 @@ if NTInfections_enabled == true then
 
             -- Using Antibiotics
             NTGuide.ContentPages.Information.UsingAntibiotics = {
+                mod = "NT: Infections",
                 id = "information_using_antibiotics",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_using_antibiotics"), 
@@ -920,6 +932,7 @@ if NTInfections_enabled == true then
 
             -- Diagnosing Bacterial Infections
             NTGuide.ContentPages.Information.DiagnosingBacterialInfections = {
+                mod = "NT: Infections",
                 id = "information_diagnosing_bacteria",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_diagnosing_bacteria"), 
@@ -927,28 +940,30 @@ if NTInfections_enabled == true then
                 seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_bacteria")},
             }
 
-            if NTSP_enabled == false then
-                -- Communicable diseases (No NTSP)
-                NTGuide.ContentPages.Information.DiagnosingViralInfections = {
-                    id = "information_diagnosing_viruses",
-                    category = "information",
-                    title = NTGuide.Localize("ntg.title.information_diagnosing_viruses"), 
-                    description = NTGuide.Localize("ntg.description.information_diagnosing_viruses"),
-                    seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_viruses")},
-                }
-            else
+
                 -- Communicable diseases (NTSP)
                 NTGuide.ContentPages.Information.DiagnosingViralInfections = {
+                    mod = "NT: Infections",
                     id = "information_diagnosing_viruses",
                     category = "information",
                     title = NTGuide.Localize("ntg.title.information_diagnosing_viruses_ntsp"), 
                     description = NTGuide.Localize("ntg.description.information_diagnosing_viruses_ntsp"),
                     seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_viruses_ntsp")},
                 }
-            end 
+
+                -- -- Communicable diseases (No NTSP)
+                -- NTGuide.ContentPages.Information.DiagnosingViralInfections = {
+                --     id = "information_diagnosing_viruses",
+                --     category = "information",
+                --     title = NTGuide.Localize("ntg.title.information_diagnosing_viruses"), 
+                --     description = NTGuide.Localize("ntg.description.information_diagnosing_viruses"),
+                --     seealso = {NTGuide.Localize("ntg.seealso.information_diagnosing_viruses")},
+                -- }
+
 
             -- Vaccines
             NTGuide.ContentPages.Information.VaccinesInformation = {
+                mod = "NT: Infections",
                 id = "information_vaccines",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_vaccines"), 
@@ -961,6 +976,7 @@ if NTInfections_enabled == true then
         -- Bacterial Infections
             -- Streptococcal Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.StreptococcalInfection = {
+                mod = "NT: Infections",
                 id = "streptococcal_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.streptococcal_infection"), 
@@ -972,6 +988,7 @@ if NTInfections_enabled == true then
 
             -- Staphylococcal Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.StaphylococcalInfection = {
+                mod = "NT: Infections",
                 id = "staphylococcal_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.staphylococcal_infection"), 
@@ -983,6 +1000,7 @@ if NTInfections_enabled == true then
 
             -- MRSA Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.MRSAInfection = {
+                mod = "NT: Infections",
                 id = "mrsa_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.mrsa_infection"), 
@@ -995,6 +1013,7 @@ if NTInfections_enabled == true then
 
             -- Pseudomonas Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.PseudomonasInfection = {
+                mod = "NT: Infections",
                 id = "pseudomonas_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.pseudomonas_infection"), 
@@ -1006,6 +1025,7 @@ if NTInfections_enabled == true then
 
             -- Provobacter Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.ProvobacterInfection = {
+                mod = "NT: Infections",
                 id = "provobacter_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.provobacter_infection"), 
@@ -1017,6 +1037,7 @@ if NTInfections_enabled == true then
 
             -- Aeroganella Infection
             NTGuide.ContentPages.Afflictions_AnyBodypart.AeroganellaInfection = {
+                mod = "NT: Infections",
                 id = "aeroganella_infection",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.aeroganella_infection"), 
@@ -1029,6 +1050,7 @@ if NTInfections_enabled == true then
         -- Antibiotics
             -- Unasyn
             NTGuide.ContentPages.Items.Unasyn = {
+                mod = "NT: Infections",
                 id = "unasyn",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.unasyn"), 
@@ -1041,6 +1063,7 @@ if NTInfections_enabled == true then
 
             -- Augmentin
             NTGuide.ContentPages.Items.Augmentin = {
+                mod = "NT: Infections",
                 id = "augmentin",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.augmentin"), 
@@ -1053,6 +1076,7 @@ if NTInfections_enabled == true then
 
             -- Vancomycin
             NTGuide.ContentPages.Items.Vancomycin = {
+                mod = "NT: Infections",
                 id = "vancomycin",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.vancomycin"), 
@@ -1065,6 +1089,7 @@ if NTInfections_enabled == true then
 
             -- Gentamicin
             NTGuide.ContentPages.Items.Gentamicin = {
+                mod = "NT: Infections",
                 id = "gentamicin",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.gentamicin"), 
@@ -1077,6 +1102,7 @@ if NTInfections_enabled == true then
 
             -- Co-trimoxazole
             NTGuide.ContentPages.Items.Cotrimoxazole = {
+                mod = "NT: Infections",
                 id = "cotrimoxazole",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.cotrimoxazole"), 
@@ -1089,6 +1115,7 @@ if NTInfections_enabled == true then
 
             -- Primaxin
             NTGuide.ContentPages.Items.Primaxin = {
+                mod = "NT: Infections",
                 id = "primaxin",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.primaxin"), 
@@ -1101,6 +1128,7 @@ if NTInfections_enabled == true then
 
             -- Ceftazidime
             NTGuide.ContentPages.Items.Ceftazidime = {
+                mod = "NT: Infections",
                 id = "ceftazidime",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.ceftazidime"), 
@@ -1114,6 +1142,7 @@ if NTInfections_enabled == true then
         -- Tools 
             -- Sampler Tool
             NTGuide.ContentPages.Items.SamplerTool = {
+                mod = "NT: Infections",
                 id = "sampler_tool",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.sampler_tool"), 
@@ -1123,6 +1152,7 @@ if NTInfections_enabled == true then
 
             -- Culture Tube
             NTGuide.ContentPages.Items.CultureTube = {
+                mod = "NT: Infections",
                 id = "culture_tube",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.culture_tube"), 
@@ -1132,6 +1162,7 @@ if NTInfections_enabled == true then
 
             -- Viral Transport Medium
             NTGuide.ContentPages.Items.ViralTransportMedium = {
+                mod = "NT: Infections",
                 id = "viral_transport_medium",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.viral_transport_medium"), 
@@ -1141,6 +1172,7 @@ if NTInfections_enabled == true then
 
             -- Sample Analyzer
             NTGuide.ContentPages.Items.SampleAnalyzer = {
+                mod = "NT: Infections",
                 id = "sample_analyzer",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.sample_analyzer"), 
@@ -1151,6 +1183,7 @@ if NTInfections_enabled == true then
         -- Symptoms
             -- Purulent Drainage
             NTGuide.ContentPages.Afflictions_AnyBodypart.PurulentDrainage = {
+                mod = "NT: Infections",
                 id = "purulent_drainage",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.purulent_drainage"), 
@@ -1162,6 +1195,7 @@ if NTInfections_enabled == true then
 
             -- Abscess
             NTGuide.ContentPages.Afflictions_AnyBodypart.Abscess = {
+                mod = "NT: Infections",
                 id = "abscess",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.abscess"), 
@@ -1173,6 +1207,7 @@ if NTInfections_enabled == true then
 
             -- Inflammation [BASE OVERRIDE, ADDENDUM: NT Infections]
             NTGuide.ContentPages.Symptoms.Inflammation = {
+                mod = "NT: Infections",
                 id = "inflammation", 
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.inflammation_infc"), 
@@ -1184,6 +1219,7 @@ if NTInfections_enabled == true then
         -- Diseases
             -- Necrotizing Fasciitis
             NTGuide.ContentPages.Afflictions_AnyBodypart.NectrotizingFasciitis = {
+                mod = "NT: Infections",
                 id = "necrotizing_fasciitis",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.necrotizing_fasciitis"), 
@@ -1195,6 +1231,7 @@ if NTInfections_enabled == true then
 
             -- Pneumonia
             NTGuide.ContentPages.Afflictions_Lungs.Pneumonia = {
+                mod = "NT: Infections",
                 id = "pneumonia",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.pneumonia"), 
@@ -1207,6 +1244,7 @@ if NTInfections_enabled == true then
         -- Viral Infections
             -- Europan Cough
             NTGuide.ContentPages.Afflictions_HeadORBrain.EuropanCough = {
+                mod = "NT: Infections",
                 id = "europan_cough",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.europan_cough"), 
@@ -1219,6 +1257,7 @@ if NTInfections_enabled == true then
 
             -- Influenza
             NTGuide.ContentPages.Afflictions_HeadORBrain.Influenza = {
+                mod = "NT: Infections",
                 id = "influenza",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.influenza"), 
@@ -1231,6 +1270,7 @@ if NTInfections_enabled == true then
 
             -- Common Cold
             NTGuide.ContentPages.Afflictions_HeadORBrain.CommonCold = {
+                mod = "NT: Infections",
                 id = "common_cold",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.common_cold"), 
@@ -1244,6 +1284,7 @@ if NTInfections_enabled == true then
         -- Effects
             -- Methicillin-resistance risk
             NTGuide.ContentPages.Afflictions_Torso.MethicillinResistanceRisk = {
+                mod = "NT: Infections",
                 id = "methicillin_resistance_risk",
                 category = "afflictions",
                 title = NTGuide.Localize("ntg.title.methicillin_resistance_risk"), 
@@ -1256,6 +1297,7 @@ if NTInfections_enabled == true then
         -- Procedures
             -- Debridement
             NTGuide.ContentPages.SurgicalProcedures.Debridement = {
+                mod = "NT: Infections",
                 id = "debridement",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.debridement"), 
@@ -1266,6 +1308,7 @@ if NTInfections_enabled == true then
 
             -- Sample Collection
             NTGuide.ContentPages.SurgicalProcedures.SampleCollection = {
+                mod = "NT: Infections",
                 id = "sample_collection",
                 category = "procedures",
                 title = NTGuide.Localize("ntg.title.sample_collection"), 
@@ -1278,6 +1321,7 @@ if NTInfections_enabled == true then
         -- Other Items
             -- Vaccines (Items)
             NTGuide.ContentPages.Items.Vaccines = {
+                mod = "NT: Infections",
                 id = "vaccines",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.vaccines"), 
@@ -1287,6 +1331,7 @@ if NTInfections_enabled == true then
 
             -- Weaponized Bacteria
             NTGuide.ContentPages.Items.WeaponizedBacteria = {
+                mod = "NT: Infections",
                 id = "weaponized_bacteria",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.weaponized_bacteria"), 
@@ -1298,6 +1343,7 @@ if NTInfections_enabled == true then
 
             -- Remdesivir
             NTGuide.ContentPages.Items.Remdesivir = {
+                mod = "NT: Infections",
                 id = "remdesivir",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.remdesivir"), 
@@ -1309,6 +1355,7 @@ if NTInfections_enabled == true then
             
             -- Dextromethorphan
             NTGuide.ContentPages.Items.Dextromethorphan = {
+                mod = "NT: Infections",
                 id = "dextromethorphan",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.dextromethorphan"), 
@@ -1320,6 +1367,7 @@ if NTInfections_enabled == true then
             
             -- Zinc Supplements
             NTGuide.ContentPages.Items.ZincSupplements = {
+                mod = "NT: Infections",
                 id = "zinc_supplements",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.zinc_supplements"), 
@@ -1332,6 +1380,7 @@ if NTInfections_enabled == true then
 
             -- Hydrocortisone
             NTGuide.ContentPages.Items.Hydrocortisone = {
+                mod = "NT: Infections",
                 id = "hydrocortisone",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.hydrocortisone"), 
@@ -1340,13 +1389,14 @@ if NTInfections_enabled == true then
                 applicationfailed = {NTGuide.Localize("ntg.applicationfailed.hydrocortisone")},
                 effects = {NTGuide.Localize("ntg.effects.hydrocortisone")},
             }
-end
+
 --==================================================================================================================================================================================
         -- Neurotrauma: Grafting Additions
-if NTGrafting_enabled == true then
+
         -- Tools
             -- DNA Litigation Enhancer (Med50)
             NTGuide.ContentPages.Items.DNALitigationEnhancer = {
+                mod = "NT: Grafting",
                 id = "dna_litigation_enhancer",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.dna_litigation_enhancer"), 
@@ -1358,6 +1408,7 @@ if NTGrafting_enabled == true then
 
             -- DNA Splicer (Med50)
             NTGuide.ContentPages.Items.DNASplicer = {
+                mod = "NT: Grafting",
                 id = "dna_splicer",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.dna_splicer"), 
@@ -1369,6 +1420,7 @@ if NTGrafting_enabled == true then
 
             -- Alien Scalpel (Med30)
             NTGuide.ContentPages.Items.AlienScalpel = {
+                mod = "NT: Grafting",
                 id = "alien_scalpel",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.alien_scalpel"), 
@@ -1379,6 +1431,7 @@ if NTGrafting_enabled == true then
 
             -- Alien Incubator
             NTGuide.ContentPages.Items.AlienIncubator = {
+                mod = "NT: Grafting",
                 id = "alien_incubator",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.alien_incubator"), 
@@ -1388,6 +1441,7 @@ if NTGrafting_enabled == true then
 
             -- Stem Cells
             NTGuide.ContentPages.Items.StemCells = {
+                mod = "NT: Grafting",
                 id = "stem_cells",
                 category = "items",
                 title = NTGuide.Localize("ntg.title.stem_cells"), 
@@ -1398,6 +1452,7 @@ if NTGrafting_enabled == true then
         -- Procedures 
             -- Crawler Tail Grafting
             NTGuide.ContentPages.SurgicalProcedures.CrawlerTailGrafting = {
+                mod = "NT: Grafting",
                 id = "crawler_tail_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.crawler_tail_grafting"), 
@@ -1408,6 +1463,7 @@ if NTGrafting_enabled == true then
 
             -- Crawler Lungs Grafting
             NTGuide.ContentPages.SurgicalProcedures.CrawlerLungGrafting = {
+                mod = "NT: Grafting",
                 id = "crawler_lung_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.crawler_lung_grafting"), 
@@ -1416,9 +1472,18 @@ if NTGrafting_enabled == true then
                 seealso = {NTGuide.Localize("ntg.seealso.crawler_lung_grafting")},
             }
 
-            -- Fractal Guardian Eye Grafting // BASIC PAGE
-        if NTEyes_enabled == false then
+
+            -- -- Fractal Guardian Eye Grafting // NT EYES ENABLED
+            -- NTGuide.ContentPages.SurgicalProcedures.FractalEyeGrafting = {
+            --     id = "fractal_eye_grafting",
+            --     category = "grafting",
+            --     title = NTGuide.Localize("ntg.title.fractal_eye_grafting_nte"), 
+            --     description = NTGuide.Localize("ntg.description.fractal_eye_grafting_nte"),
+            -- }
+
+             -- Fractal Guardian Eye Grafting // NT EYES DISABLED
             NTGuide.ContentPages.SurgicalProcedures.FractalEyeGrafting = {
+                mod = "NT: Grafting",
                 id = "fractal_eye_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.fractal_eye_grafting"), 
@@ -1426,18 +1491,10 @@ if NTGrafting_enabled == true then
                 steps = {NTGuide.Localize("ntg.steps.fractal_eye_grafting")},
                 seealso = {NTGuide.Localize("ntg.seealso.fractal_eye_grafting")},
             }
-        else
-            -- Fractal Guardian Eye Grafting // NT EYES COMPAT PAGE
-            NTGuide.ContentPages.SurgicalProcedures.FractalEyeGrafting = {
-                id = "fractal_eye_grafting",
-                category = "grafting",
-                title = NTGuide.Localize("ntg.title.fractal_eye_grafting_nte"), 
-                description = NTGuide.Localize("ntg.description.fractal_eye_grafting_nte"),
-            }
-        end
 
             -- Husk Arm Grafting
             NTGuide.ContentPages.SurgicalProcedures.HuskArmGrafting = {
+                mod = "NT: Grafting",
                 id = "husk_arm_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.husk_arm_grafting"), 
@@ -1448,6 +1505,7 @@ if NTGrafting_enabled == true then
 
             -- Husk Heart Grafting
             NTGuide.ContentPages.SurgicalProcedures.HuskHeartGrafting = {
+                mod = "NT: Grafting",
                 id = "husk_heart_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.husk_heart_grafting"), 
@@ -1458,6 +1516,7 @@ if NTGrafting_enabled == true then
 
             -- Mantis Liver Grafting
             NTGuide.ContentPages.SurgicalProcedures.MantisLiverGrafting = {
+                mod = "NT: Grafting",
                 id = "mantis_liver_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.mantis_liver_grafting"), 
@@ -1468,6 +1527,7 @@ if NTGrafting_enabled == true then
 
             -- Mudraptor Lungs Grafting
             NTGuide.ContentPages.SurgicalProcedures.MudraptorLungsGrafting = {
+                mod = "NT: Grafting",
                 id = "mudraptor_lungs_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.mudraptor_lungs_grafting"), 
@@ -1478,6 +1538,7 @@ if NTGrafting_enabled == true then
 
             -- Mudraptor Head Grafting
             NTGuide.ContentPages.SurgicalProcedures.MudraptorHeadGrafting = {
+                mod = "NT: Grafting",
                 id = "mudraptor_head_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.mudraptor_head_grafting"), 
@@ -1488,6 +1549,7 @@ if NTGrafting_enabled == true then
 
             -- Broodmother Liver Grafting
             NTGuide.ContentPages.SurgicalProcedures.BroodmotherLiverGrafting = {
+                mod = "NT: Grafting",
                 id = "broodmother_liver_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.broodmother_liver_grafting"), 
@@ -1498,6 +1560,7 @@ if NTGrafting_enabled == true then
 
             -- Tiger Thresher Jaw Grafting
             NTGuide.ContentPages.SurgicalProcedures.TigerThresherJawGrafting = {
+                mod = "NT: Grafting",
                 id = "tthresher_jaw_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.tthresher_jaw_grafting"), 
@@ -1508,6 +1571,7 @@ if NTGrafting_enabled == true then
 
             -- Tiger Thresher Tail Grafting
             NTGuide.ContentPages.SurgicalProcedures.TigerThresherTailGrafting = {
+                mod = "NT: Grafting",
                 id = "tthresher_tail_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.tthresher_tail_grafting"), 
@@ -1518,6 +1582,7 @@ if NTGrafting_enabled == true then
 
             -- Bone Thresher Jaw Grafting
             NTGuide.ContentPages.SurgicalProcedures.BoneThresherJawGrafting = {
+                mod = "NT: Grafting",
                 id = "bthresher_tail_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.bthresher_tail_grafting"), 
@@ -1528,6 +1593,7 @@ if NTGrafting_enabled == true then
 
             -- Hammerhead Skin Grafting
             NTGuide.ContentPages.SurgicalProcedures.HammerheadSkinGrafting = {
+                mod = "NT: Grafting",
                 id = "hammerhead_skin_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.hammerhead_skin_grafting"), 
@@ -1538,6 +1604,7 @@ if NTGrafting_enabled == true then
 
             -- Hammerhead Limb Grafting
             NTGuide.ContentPages.SurgicalProcedures.HammerheadLimbGrafting = {
+                mod = "NT: Grafting",
                 id = "hammerhead_limb_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.hammerhead_limb_grafting"), 
@@ -1548,6 +1615,7 @@ if NTGrafting_enabled == true then
 
             -- Moloch Shell Grafting
             NTGuide.ContentPages.SurgicalProcedures.MolochShellGrafting = {
+                mod = "NT: Grafting",
                 id = "moloch_shell_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.moloch_shell_grafting"), 
@@ -1558,6 +1626,7 @@ if NTGrafting_enabled == true then
 
             -- Viperling Liver Grafting
             NTGuide.ContentPages.SurgicalProcedures.ViperlingLiverGrafting = {
+                mod = "NT: Grafting",
                 id = "viperling_liver_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.viperling_liver_grafting"), 
@@ -1566,9 +1635,18 @@ if NTGrafting_enabled == true then
                 seealso = {NTGuide.Localize("ntg.seealso.viperling_liver_grafting")},
             }
 
-        if NTEyes_enabled == false then
+
+            -- -- Watcher Eye Grafting // NT EYES ENABLED
+            -- NTGuide.ContentPages.SurgicalProcedures.WatcherEyeGrafting = {
+            --     id = "watcher_eye_grafting",
+            --     category = "grafting",
+            --     title = NTGuide.Localize("ntg.title.watcher_eye_grafting_nte"), 
+            --     description = NTGuide.Localize("ntg.description.watcher_eye_grafting_nte"),
+            -- }
+
             -- Watcher Eye Grafting // NT EYES DISABLED
             NTGuide.ContentPages.SurgicalProcedures.WatcherEyeGrafting = {
+                mod = "NT: Grafting",
                 id = "watcher_eye_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.watcher_eye_grafting"), 
@@ -1576,18 +1654,11 @@ if NTGrafting_enabled == true then
                 steps = {NTGuide.Localize("ntg.steps.watcher_eye_grafting")},
                 seealso = {NTGuide.Localize("ntg.seealso.watcher_eye_grafting")},
             }
-        else
-            -- Watcher Eye Grafting // NT EYES ENABLED
-            NTGuide.ContentPages.SurgicalProcedures.WatcherEyeGrafting = {
-                id = "watcher_eye_grafting",
-                category = "grafting",
-                title = NTGuide.Localize("ntg.title.watcher_eye_grafting_nte"), 
-                description = NTGuide.Localize("ntg.description.watcher_eye_grafting_nte"),
-            } 
-        end
+
 
             -- Charybdis Jaw Grafting
             NTGuide.ContentPages.SurgicalProcedures.CharybdisJawGrafting = {
+                mod = "NT: Grafting",
                 id = "charybdis_jaw_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.charybdis_jaw_grafting"), 
@@ -1598,6 +1669,7 @@ if NTGrafting_enabled == true then
 
             -- Latcher Heart Grafting
             NTGuide.ContentPages.SurgicalProcedures.LatcherHeartGrafting = {
+                mod = "NT: Grafting",
                 id = "latcher_heart_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.latcher_heart_grafting"), 
@@ -1608,6 +1680,7 @@ if NTGrafting_enabled == true then
 
             -- Latcher Tongue Grafting
             NTGuide.ContentPages.SurgicalProcedures.LatcherTongueGrafting = {
+                mod = "NT: Grafting",
                 id = "latcher_tongue_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.latcher_tongue_grafting"), 
@@ -1618,6 +1691,7 @@ if NTGrafting_enabled == true then
 
             -- Endworm Skin Graft
             NTGuide.ContentPages.SurgicalProcedures.EndwormSkinGrafting = {
+                mod = "NT: Grafting",
                 id = "endworm_skin_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.endworm_skin_grafting"), 
@@ -1628,6 +1702,7 @@ if NTGrafting_enabled == true then
 
             -- Orangeboy Tail Grafting
             NTGuide.ContentPages.SurgicalProcedures.OrangeboyTailGrafting = {
+                mod = "NT: Grafting",
                 id = "orangeboy_tail_grafting",
                 category = "grafting",
                 title = NTGuide.Localize("ntg.title.orangeboy_tail_grafting"), 
@@ -1640,6 +1715,7 @@ if NTGrafting_enabled == true then
 
             -- Obtaining Graft Transplants
             NTGuide.ContentPages.Information.ObtainingGraftingTransplants = {
+                mod = "NT: Grafting",
                 id = "information_obtaining_grafting_transplants",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_obtaining_grafting_transplants"), 
@@ -1649,6 +1725,7 @@ if NTGrafting_enabled == true then
 
             -- Repairing Cracked Moloch Shell
             NTGuide.ContentPages.Information.RepairingMolochShell = {
+                mod = "NT: Grafting",
                 id = "information_repairing_moloch_shell",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_repairing_moloch_shell"), 
@@ -1658,6 +1735,7 @@ if NTGrafting_enabled == true then
             
             -- Aiming Latcher Tongue
             NTGuide.ContentPages.Information.AimLatcherTongue = {
+                mod = "NT: Grafting",
                 id = "information_aim_latcher_tongue",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_aim_latcher_tongue"), 
@@ -1667,10 +1745,9 @@ if NTGrafting_enabled == true then
             
             -- Removing Grafting Limit
             NTGuide.ContentPages.Information.RemoveGraftingLimit = {
+                mod = "NT: Grafting",
                 id = "information_remove_grafting_limit",
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_remove_grafting_limit"), 
                 description = NTGuide.Localize("ntg.description.information_remove_grafting_limit"),
             }
-            
-end 

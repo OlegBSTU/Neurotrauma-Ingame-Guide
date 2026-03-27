@@ -3,6 +3,8 @@
 <!-- /*- General Stuff -*/ -->
 <!-- Buttons -->
 <ntg.button.back>Back to Previous Page</ntg.button.back>    
+<ntg.index.back>Back to Categories</ntg.index.back>
+<ntg.index.backmain>Back to Main Page</ntg.index.backmain>
 
 <!-- Search Page Categories -->
 <ntg.category.afflictions>Afflictions</ntg.category.afflictions>
@@ -26,6 +28,11 @@
 <ntg.section.treatments>Treatments</ntg.section.treatments>
 <ntg.section.steps>Steps</ntg.section.steps>
 <ntg.section.seealso>See Also</ntg.section.seealso>
+<ntg.section.gotoindex>Navigation</ntg.section.gotoindex>
+<ntg.section.navigation>Navigation</ntg.section.navigation>
+<ntg.section.categories>Categories</ntg.section.categories>
+<ntg.section.pages>Pages</ntg.section.pages>
+
 
 <!-- Affliction specific subheaders: Withdrawal -->
 <ntg.section.effects_withdrawal_ex1>Effects for Alcohol, Chemical and Opiate withdrawal</ntg.section.effects_withdrawal_ex1>
@@ -112,7 +119,8 @@
 <ntg.description.main_page>Main page for the Neurotrauma guide.
 \nThank you for installing my mod! I hope it helps you well. I'll actively be expanding it until all major NT addons have been integrated; though language localization is built-in I don't speak the major languages and thus cannot confirm whether translations would be great.
 \nIf you would want to help translate, there is a github page linked in the Mod's description; you can PR localization simply by translating the already existing localization files. 
-\nFuture updates should hopefully expand the information contained within, as for now I'm just importing the Trello. If you find something wrong or have suggestions, leave a comment!</ntg.description.main_page>
+\nFuture updates should hopefully expand the information contained within, as for now I'm just importing the Trello. If you find something wrong or have suggestions, leave a comment!
+</ntg.description.main_page>
 <ntg.features.main_page>
     Page-linking: You can browse between all pages that matter just by clicking. Want to know the causes of a symptom? Just click! |
     Health Scanner / Hematology Analyzer integration: Neurotrauma changed afflictions that show up after scanning a patient can be clicked on and will open their respective page. |
@@ -123,9 +131,18 @@
     Neurotrauma by Guns |
     NT Cybernetics Enhanced by Nebual |
     NT Eyes by POSTACI, BETA and bludcart |
-    NT Infections by guy
+    NT Infections by guy |
+    NT Grafting by Aegis_Myles
 </ntg.availableaddons.main_page>
+<ntg.gotoindex.main_page>
+    [category_index] Browse pages by Category
+</ntg.gotoindex.main_page>
 
+<!-- Auto Indexed Page: Categories -->
+<ntg.title.category_index>Categories</ntg.title.category_index>
+<ntg.description.category_index>Select a category to browse.</ntg.description.category_index>
+<!-- Auto Indexed Page: Items within Categories -->
+<ntg.description.category_page>Pages in this category.</ntg.description.category_page>
 
 <!-- /*- Symptom Pages -*/ -->
 <!-- Vomiting Blood -->

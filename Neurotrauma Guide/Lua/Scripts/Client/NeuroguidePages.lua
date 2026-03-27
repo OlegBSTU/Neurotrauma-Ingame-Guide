@@ -1,12 +1,11 @@
-LuaUserData.RegisterType("NTGuide.NTGuideLocalize")
--- AS FAR AS I GET IT!
--- This need not be here but shrug
--- Tell Lua where to find our Class containing the Localize function
-local CSMod = ModStore.GetCsStore("NTGuide.NTGuideLocalize")
-local CSide = CSMod.Get("Instance")
-
--- Put Localization function on speeddial
-NTGuide.Localize = CSide.Localize
+-- Newer Localization function to get text data as opposed to the older C# method
+-- Since the current system only has 1 language file active at once, we just need to pull that one instead of also checking the game language
+NTGuide.Localize = function(xmlTag)
+    if TextManager.ContainsTag(xmlTag) then
+        return TextManager.Get(xmlTag).Value
+    end
+    return xmlTag -- In case of a situation where there should be localization but isnt, print the actual point-of-origin for this issue
+end
 
 NTGuide.ContentPages = {
 
@@ -15,6 +14,7 @@ NTGuide.ContentPages = {
         id = "main_page", 
         title = NTGuide.Localize("ntg.title.main_page"), 
         description = NTGuide.Localize("ntg.description.main_page"),
+        gotoindex = {NTGuide.Localize("ntg.gotoindex.main_page")},
         features = {NTGuide.Localize("ntg.features.main_page")},
         availableaddons = {NTGuide.Localize("ntg.availableaddons.main_page")},
     },

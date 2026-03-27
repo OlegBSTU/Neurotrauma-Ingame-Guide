@@ -18,9 +18,9 @@ local function ScanForPage(page)
     if page.id then
         NTGuide.PagesByID[page.id] = page
 
-        -- We don't want the main page in the search bar, and we only really care about the title (this will be shown to players), ID (to navigate) and category (to sort pages with same types)
+        -- We don't want the main page in the search bar, and we only really care about the title (this will be shown to players), ID (to navigate), category (to sort pages with same types) and mod for sorting;
         if page.id ~= "main_page" and page.title then
-            table.insert(NTGuide.SearchablePages, {name = page.title, id = page.id, category = page.category or "" })
+            table.insert(NTGuide.SearchablePages, {name = page.title, id = page.id, category = page.category or "", mod = page.mod or ""})
         end
     end
 
@@ -44,26 +44,182 @@ local function IndexKnownPages(ContentPageTable)
     return NTGuide.SearchablePages
 end
 
--- Function to find a page if we kinow the ID
+-- Function to find a page if we know the ID
 local function GetPageByID(id)
     return NTGuide.PagesByID[id]
 end
 
+-- Now, we have everything indexed. Previously, we could only search for pages; as ThousandFields mentioned, this makes 'browsing' if you have nothing to do a lot harder.
+-- Instead, we want to add an 'index' page that firstly automatically gets all known 'categories' of pages, then lists all pages under that category depending on which one is selected.
+-- You could do this using the existing XML formatting, but that is messy and requires human effort. Instead, we make an amended 'page population' script to handle just the index pages.
+local function BuildCategoryIndexPage()
+    local categories = {}
+
+    -- Get all unique categories that we've already indexed
+    for _, page in ipairs(NTGuide.SearchablePages) do
+        if page.category ~= "" then
+            categories[page.category] = true
+        end
+    end
+
+    -- Convert them to a sorted list so order of acquisition doesnt matter
+    local sortedCategories = {}
+    for category, _ in pairs(categories) do
+        table.insert(sortedCategories, category)
+    end
+    table.sort(sortedCategories)
+
+    -- Create the category index page
+    NTGuide.PagesByID["category_index"] = {
+        id = "category_index",
+        category = "index",
+        title = NTGuide.Localize("ntg.title.category_index"),
+        description = NTGuide.Localize("ntg.description.category_index"),
+        navigation = {},
+        categories = {}
+    }
+
+    -- Back to main menu button
+    table.insert(
+        NTGuide.PagesByID["category_index"].navigation,
+        "[main_page] " .. NTGuide.Localize("ntg.index.backmain")
+    )
+
+    -- Add categories as clickable links
+    for _, category in ipairs(sortedCategories) do
+        local count = 0
+
+        -- Count pages in this category and render them alongside the category in the clickable text
+        for _, p in ipairs(NTGuide.SearchablePages) do
+            if p.category == category then count = count + 1 end
+        end
+
+        table.insert(
+            NTGuide.PagesByID["category_index"].categories, -- This is the subheader
+            "[" .. "category_" .. category .. "] " ..
+            NTGuide.Localize("ntg.category." .. category) .. -- This is the content of said subheader
+            " (" .. tostring(count) .. ")"
+        )
+    end
+end
+
+-- Next up, we automatically make the pages that the category script above may redirect to; containing all pages assigned to that cateogory
+-- For both of these functions, we don't need to worry that they'll show in the search results since all the indexing for that was already finished
+local function BuildPagesByCategory()
+    local categorized = {}
+
+    -- Group pages by their category
+    for _, page in ipairs(NTGuide.SearchablePages) do
+        if page.category ~= "" then
+            categorized[page.category] = categorized[page.category] or {}
+            table.insert(categorized[page.category], page)
+        end
+    end
+
+    -- Now we have each page sorted into categories, sort them alphabetically and add them to their respective category page
+    for category, pages in pairs(categorized) do
+        table.sort(pages, function(a, b)
+            return a.name:lower() < b.name:lower()
+        end)
+
+        -- Get the category we wanna yoink
+        local pageID = "category_" .. category
+        -- Auto create page data
+        NTGuide.PagesByID[pageID] = {
+            id = pageID,
+            category = "index",
+            title = NTGuide.Localize("ntg.category." .. category),
+            description = NTGuide.Localize("ntg.description.category_page"),
+            navigation = {}, -- Will hold the back inline button
+            pages = {}, -- Will hold the links
+        }
+
+        -- Back button at the top to return to the categories screen, noi matter the category
+        table.insert(NTGuide.PagesByID[pageID].navigation, "[category_index] " .. NTGuide.Localize("ntg.index.back"))
+
+        -- Add all pages in the currently iterated category
+        for _, page in ipairs(pages) do
+            local SpecificPageInfo = GetPageByID(page.id)
+            local PageNameToDisplay = page.name
+            -- Set the colour for mod names
+            local ModNameColour = "110, 154, 125, 255"
+
+            -- Then change mod name accordingl to make it stand out from the wall of text
+            -- Same idea as the Diagnostic tools really
+            if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
+                PageNameToDisplay = PageNameToDisplay .. " ‖color:" .. ModNameColour .. "‖(" .. SpecificPageInfo.mod .. ")‖color:end‖"
+            end
+
+            -- Put it in the shared table so PopulatePage to do something with it later
+            table.insert(
+                NTGuide.PagesByID[pageID].pages,
+                "[" .. page.id .. "] " .. PageNameToDisplay
+            )
+        end
+    end
+end
+
+-- Shamelessly ripping of JEI here
+-- Go over a search result, and if we use @ anywhere consider that the mod to filter for
+local function ParseSearch(text)
+    local modtags = {}
+    local searchtext = {}
+
+    for word in text:gmatch("%S+") do
+        if word:sub(1,1) == "@" then
+            table.insert(modtags, word:sub(2):lower())
+        else
+            table.insert(searchtext, word:lower())
+        end
+    end
+
+    return modtags, searchtext
+end
+
+
 -- Function to update the search results when the search bar gets used
+NTGuide.Menu.previousSearchText = NTGuide.Menu.previousSearchText or ""
+
 local function UpdateSearchResults()
-    -- Ensure we start with a blank slate
-    local previousSearchText = ""
     -- Determine what the actual search is
     local searchText = NTGuide.Menu.searchBox.Text:lower()
     -- If the current search is the same as the previous one, do nothing
-    if searchText == previousSearchText then return end
+    if searchText == NTGuide.Menu.previousSearchText then return end
+    local modtags, searchtext = ParseSearch(searchText)
     -- If the current search wás unique, make that the new 'previous' one
-    previousSearchText = searchText
+    NTGuide.Menu.previousSearchText = searchText
 
     -- Add what we're looking for to table to use later
     local filteredResults = {}
+
     for _, page in ipairs(NTGuide.IndexedContentPages) do
-        if page.name:lower():find(searchText) then
+        local name = page.name:lower()
+        -- Get the mod name; we remove 'NT:' from all of them since that's only used to look pretty in the search / index pages
+        -- Make lowercase so capitalization isnt a problem
+        local mod = page.mod:gsub("^NT:%s*", ""):lower()
+        -- Variable to check if our word following @ is a known mod
+        local matches = true
+
+        -- Check if the modtag we're seeing right now matches those of the ones defined in the content pages
+        for _, modtags in ipairs(modtags) do
+            if not mod:find(modtags) then
+                matches = false
+                break
+            end
+        end
+
+        -- So far, so good. Now we check if any of our pages have a name that contains whatever else is in the search bar
+        if matches then
+            for _, keyword in ipairs(searchtext) do
+                if not name:find(keyword) then
+                    matches = false
+                    break
+                end
+            end
+        end
+
+        -- If those checks were passed, we add this to the the results that match these criteria!
+        if matches then
             table.insert(filteredResults, page)
         end
     end
@@ -87,16 +243,40 @@ local function UpdateSearchResults()
 
     -- Subdivide search output into categories to reduce vomit of text when searching
     for result, page in ipairs(filteredResults) do
+        -- Do stuff with pages within the currently selected category only
         if page.category ~= currentCategory then
             currentCategory = page.category
             -- Same code as for the textblock_Subheaders
             local textblock_PageCategory = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.06), NTGmenuList.Content.RectTransform), "---  " .. NTGuide.Localize("ntg.category." .. currentCategory) .. "  ---", nil, GUI.GUIStyle.SubHeadingFont)
             textblock_PageCategory.TextAlignment = GUI.Alignment.Center
             textblock_PageCategory.CanBeFocused = false
+            -- Search subheaders will be the same colour as page subheaders
+            textblock_PageCategory.TextColor = Color(110, 154, 125, 255)
         end     
 
+        local SpecificPageInfo = GetPageByID(page.id)
+        local SearchResultToDisplay = page.name
+
+        -- Set the colour for mod names
+        local ModNameColour = "110, 154, 125, 255"
+        -- For some reason, the default colour of this text is different. A smart person would figure out why. I will instead just change the text colour.
+        local AmendedTextColour = "210, 200, 154, 255"
+
+        -- Then change mod name accordingly to make it stand out from the wall of text
+        if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
+            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ ‖color:" .. ModNameColour .. "‖(" .. SpecificPageInfo.mod .. ")‖color:end‖"
+        else
+            -- Change text colour if not
+            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+        end
+
     -- Add a button for each result, directing to the page
-        local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(1, 0.04), NTGmenuList.Content.RectTransform), page.name, GUI.Alignment.Center, "GUIButtonSmall", Color(255, 255, 255, 0))
+        local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(1, 0.04), NTGmenuList.Content.RectTransform), SearchResultToDisplay, GUI.Alignment.Center, "GUIButtonSmall")
+        -- Make the button itself invisible
+        button_SearchResult.Color = Color(0,0,0,0)
+        button_SearchResult.HoverColor = Color(50,50,50,255)
+        button_SearchResult.PressedColor = Color(0,0,0,0)
+
         button_SearchResult.OnClicked = function()
             -- Set the page we want to go to
             NTGuide.CurrentPageID = {page.id}
@@ -104,6 +284,7 @@ local function UpdateSearchResults()
             NTGuide.Menu.searchBox.Text = ""
             -- Re-build the UI
             NTGuide.PopulatePage(NTGmenuList, page.id)
+            
         end
     end
 end
@@ -122,11 +303,13 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
     NTGuide.Menu.ActiveTextBlocks = {} -- Empty the text blocks (we will give new ones)
 
     -- Change the title to the new page
-    NTGuide.Menu.titleBlock.Text = page.title
+    NTGuide.Menu.titleBlock.SetRichText(page.title)
 
     -- Change the description likewise
-    local textblock_PageDescription = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform),"\n" .. tostring(page.description), nil, nil, GUI.Alignment.Left, true)
+    local textblock_PageDescription = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform),"", nil, nil, GUI.Alignment.Left, true)
     -- Prevent hovering / clicking on text from showing that bleak background color change
+    local TextToDisplayDescription = "\n" .. page.description
+    textblock_PageDescription.SetRichText(TextToDisplayDescription)
     textblock_PageDescription.CanBeFocused = false
     textblock_PageDescription.Wrap = true
     textblock_PageDescription.CalculateHeightFromText()
@@ -134,7 +317,7 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
     -- Build the sections (that are not already made / not supposed to be shown) dynamically
     for section, value in pairs(page) do
         if type(value) == "table" and section ~= "id" and section ~= "title" and section ~= "description" and section ~= "category" then
-            
+
             -- Auto-generates subheaders based on localization data
             local textblock_PageSubheader = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.08), NTGmenuList.Content.RectTransform), "———  " .. NTGuide.Localize("ntg.section." .. section) .. ":  ———", nil, GUI.GUIStyle.SubHeadingFont)
             -- Make it look nice
@@ -160,7 +343,8 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
                                 -- Create a textblock that can wrap and hold text (since button text doesn't wrap easily)
                                 local textblock_LinkButtonHolder = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform), "", nil, nil, GUI.Alignment.TopLeft)
                                 -- Fetch the description we should 'overlay' on the button that sends us to another page
-                                textblock_LinkButtonHolder.Text = "• " .. LinkButtonDescription
+                                local TextToDisplayButton = "• " .. LinkButtonDescription
+                                textblock_LinkButtonHolder.SetRichText(TextToDisplayButton)
                                 textblock_LinkButtonHolder.Wrap = true
                                 -- Remove the background colour when hovering over a textblock. We cannot have CanBeFocused set to false (or HoverTextColor would break) so we just make it transparent
                                 textblock_LinkButtonHolder.HoverColor = Color(0,0,0,0)
@@ -265,6 +449,11 @@ local Indexed = "false"
 local function ConstructUI()
     if Indexed == "false" then
         NTGuide.IndexedContentPages = IndexKnownPages(NTGuide.ContentPages)
+
+        -- Build index pages
+        BuildCategoryIndexPage()
+        BuildPagesByCategory()
+
         Indexed = "true"
     end
     NTGuide.Menu.BasicList()
