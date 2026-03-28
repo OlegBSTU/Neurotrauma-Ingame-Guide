@@ -70,7 +70,7 @@ if SERVER and CSActive then
         contentPackages_fieldinfo = LuaUserData.GetType('Barotrauma.Networking.P2PServerPeer').BaseType.GetField("contentPackages", bit32.bor(BindingFlags.Instance, BindingFlags.NonPublic))
     end
 
-    function InfDescriptions.AddToPublicModlist()
+    function NTingameguide.AddToPublicModlist()
         HasMultiplayerSyncedContent_fieldinfo.SetValue(pkg, true)
         
         --Game.Server.ModSender.CompressMod(pkg)
@@ -89,7 +89,7 @@ if SERVER and CSActive then
         SteamManager.RefreshServerDetails(Game.Server)
     end
 
-    function InfDescriptions.RemoveFromPublicModlist()
+    function NTingameguide.RemoveFromPublicModlist()
 
         HasMultiplayerSyncedContent_fieldinfo.SetValue(pkg, false)
 
@@ -118,9 +118,9 @@ config.SaveConfig = function()
 
     if SERVER then
         if config:Get("Shared",false) and not pkg.HasMultiplayerSyncedContent then
-            InfDescriptions.AddToPublicModlist()
+            NTingameguide.AddToPublicModlist()
         elseif config:Get("Shared",false) == false and pkg.HasMultiplayerSyncedContent then
-            InfDescriptions.RemoveFromPublicModlist()
+            NTingameguide.RemoveFromPublicModlist()
         end
     end
 
