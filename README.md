@@ -13,6 +13,8 @@ A modern revamp of an older XML/Lua based in-game guide for the Neurotrauma Medi
 * [NT Surgery Plus by Guns](https://steamcommunity.com/sharedfiles/filedetails/?id=3478084070)
 * [NT Eyes by POSTACI, BETA and bludcart](https://steamcommunity.com/workshop/filedetails/?id=3294574390)
 * [NT Infections by guy](https://steamcommunity.com/sharedfiles/filedetails/?id=3286567141)
+* [NT Grafting by Aegis_Myles](steam://openurl/https://steamcommunity.com/sharedfiles/filedetails/?id=3534702008)
+* [NT Lobotomy by POSTACI](steam://openurl/https://steamcommunity.com/sharedfiles/filedetails/?id=3326291860)
 
 ## Links
 * [Discord Neurotrauma Fork Server)](https://discord.gg/4Yku7qPCYN)
