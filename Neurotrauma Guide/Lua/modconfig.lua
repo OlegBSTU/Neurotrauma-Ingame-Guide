@@ -68,6 +68,17 @@ local config = {
 				} 
 	},
 
+	{
+		-- Lobotomy
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = true,
+	 	workshopId = "3326291860",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonLobotomy.xml"
+				} 
+	},
+
 }
 
 return config

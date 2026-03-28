@@ -1,3 +1,174 @@
 <Infotexts language="English" nowhitespace="false">
-    
+
+<!-- Addon for NT: Lobotomy -->
+
+<ntg.section.lobopositiveeffects>Positive Lobotomy Effects</ntg.section.lobopositiveeffects>
+<ntg.section.lobonegativeeffects>Neutral / Negative Lobotomy Effects</ntg.section.lobonegativeeffects>
+
+<!-- Orbitoclast -->
+<ntg.title.orbitoclast>Orbitoclast</ntg.title.orbitoclast>
+<ntg.description.orbitoclast>Medical Skill Check: 60.
+\nA surgical instrument used for performing transorbital lobotomies. It is inserted through the eye socket to be 'expertly' spun around and turn part of the brain into mush.
+\nUsed for the quick and easy method of lobotomizing, though its results leave much to be desired.
+\nIt can be removed from the head by using Skin Retractors.
+</ntg.description.orbitoclast>
+<ntg.applicationsuccess.orbitoclast>
+    Readies the Orbitoclast in the eye socket to be hit with a hammer
+</ntg.applicationsuccess.orbitoclast>
+<ntg.applicationfailed.orbitoclast>
+    Readies the Orbitoclast in the eye socket to be hit with a hammer |
+    [bleeding] Bleeding (Between 1 and 20 strength) |
+    Eye damage (Between 1 and 20 strength) |
+    Extreme pain
+</ntg.applicationfailed.orbitoclast>
+<ntg.seealso.orbitoclast>
+    [surgical_hammer] Surgical Hammer |
+    [transorbital_lobotomy] Transorbital Lobotomy
+</ntg.seealso.orbitoclast>
+
+<!-- Surgical Hammer -->
+<ntg.title.surgical_hammer>Surgical Hammer</ntg.title.surgical_hammer>
+<ntg.description.surgical_hammer>Medical Skill Check: 60.
+\nA fancy hammer used for pushing the orbitoclast through the eye socket, allowing it to be 'expertly' spun around and turn part of the brain into mush.
+\nUsed for the quick and easy method of lobotomizing, though its results leave much to be desired. Requires the Orbitoclast to be placed before using.
+</ntg.description.surgical_hammer>
+<ntg.applicationsuccess.surgical_hammer>
+    Slams the Orbitoclast into the brain, performing a succesful lobotomy
+</ntg.applicationsuccess.surgical_hammer>
+<ntg.applicationfailed.surgical_hammer>
+    Slams the Orbitoclast into the brain, performing a failed lobotomy |
+    [bleeding] Bleeding (Between 1 and 10 strength) |
+    Eye damage (Between 1 and 20 strength) |
+    Extreme pain |
+</ntg.applicationfailed.surgical_hammer>
+<ntg.seealso.surgical_hammer>
+    [orbitoclast] Orbitoclast |
+    [transorbital_lobotomy] Transorbital Lobotomy
+</ntg.seealso.surgical_hammer>
+
+<!-- Nerve Generators / CRC -->
+<ntg.title.nerve_generators>Cerebral Regenerative Compound</ntg.title.nerve_generators>
+<ntg.description.nerve_generators>Medical Skill Check: 50.
+\nA compound used to regenerate dead brain tissue and restore brain function. It can be used to remove all lobotomy-related afflictions; good and bad.
+\nThis skill check can never be failed.
+</ntg.description.nerve_generators>
+<ntg.applicationsuccess.nerve_generators>
+    Removes all lobotomy-related afflictions
+</ntg.applicationsuccess.nerve_generators>
+<ntg.seealso.nerve_generators>
+    [cerebral_regeneration_procedure] Cerebral Regeneration Surgery 
+</ntg.seealso.nerve_generators>
+
+<!-- Transorbital Lobotomy -->
+<ntg.title.transorbital_lobotomy>Transorbital Lobotomy</ntg.title.transorbital_lobotomy>
+<ntg.description.transorbital_lobotomy>A method of lobotomizing that relies on an Orbitoclast and a Surgical Hammer to cause (hopefully positive) brain damage.
+\nSince this procedure is cheap and relatively 'simple', the chance to recieve negative effects is higher compared to an Ethanol lobotomy.
+\nA patient has a 15% chance to recieve a positive effect from this surgery.
+</ntg.description.transorbital_lobotomy>
+<ntg.steps.transorbital_lobotomy>
+    [orbitoclast] 1. Apply the Orbitoclast to the Head |
+    [surgical_hammer] 2. Apply the Surgical Hammer to the Head |
+    [analgesia] 3. Give patient Painkillers (optional)
+</ntg.steps.transorbital_lobotomy>
+<ntg.seealso.transorbital_lobotomy>
+    [ethanol_lobotomy] Ethanol Lobotomy |
+    [cerebral_regeneration_procedure] Cure lobotomies with Cerebral Regeneration Surgery |
+    [lobotomy_effects] List of possible Lobotomy effects (SPOILER WARNING)
+</ntg.seealso.transorbital_lobotomy>
+
+<!-- Ethanol Lobotomy -->
+<ntg.title.ethanol_lobotomy>Ethanol Lobotomy</ntg.title.ethanol_lobotomy>
+<ntg.description.ethanol_lobotomy>A method of lobotomizing that uses Ethanol to cause (hopefully positive) brain damage. 
+\nThis procedure is harder and more expensive than the other method, and thus has a higher chance to give positive effects.
+\nA patient has a 20% chance to recieve a positive effect from this surgery.
+</ntg.description.ethanol_lobotomy>
+<ntg.steps.ethanol_lobotomy>
+    [analgesia] 1a. Analgesia | 
+    [anesthesia] 1b. Anesthesia |
+    [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode to the Head |
+    [scalpel] 2b. Apply a Scalpel to the Head | 
+    [hemostat] 3. Apply a Hemostat | 
+    [skin_retractors] 4. Apply Skin Retractors | 
+    [surgical_drill] 5. Apply a Surgical Drill |
+    6. Apply Ethanol |
+    [sutures] 7. Apply a Suture |
+    8. Give patient Painkillers (optional)
+</ntg.steps.ethanol_lobotomy>
+<ntg.seealso.ethanol_lobotomy>
+    [transorbital_lobotomy] Transorbital Lobotomy |
+    [cerebral_regeneration_procedure] Cure lobotomies with Cerebral Regeneration Surgery |
+    [lobotomy_effects] List of possible Lobotomy effects (SPOILER WARNING)
+</ntg.seealso.ethanol_lobotomy>
+
+<!-- Cerebral Regeneration Surgery -->
+<ntg.title.cerebral_regeneration_procedure>Cerebral Regeneration Surgery</ntg.title.cerebral_regeneration_procedure>
+<ntg.description.cerebral_regeneration_procedure>A surgery to reverse the effects of a lobotomy on living patients.
+\n‖color:245,71,71,255‖Cerebral Regenerative Compound should not be applied to a normal, healthy brain under any circumstance.‖end‖</ntg.description.cerebral_regeneration_procedure>
+<ntg.steps.cerebral_regeneration_procedure>
+    [analgesia] 1a. Analgesia | 
+    [anesthesia] 1b. Anesthesia |
+    [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode to the Head |
+    [scalpel] 2b. Apply a Scalpel to the Head | 
+    [hemostat] 3. Apply a Hemostat | 
+    [skin_retractors] 4. Apply Skin Retractors | 
+    [surgical_drill] 5. Apply a Surgical Drill |
+    [nerve_generators] 6. Administer Cerebral Regenerative Compound (CRC) |
+    [sutures] 7. Apply a Suture |
+</ntg.steps.cerebral_regeneration_procedure>
+<ntg.seealso.cerebral_regeneration_procedure>
+    [transorbital_lobotomy] Transorbital Lobotomy |
+    [ethanol_lobotomy] Ethanol Lobotomy 
+</ntg.seealso.cerebral_regeneration_procedure>
+
+<!-- Lobotomy Effects -->
+<ntg.title.lobotomy_effects>Possible Lobotomy Effects</ntg.title.lobotomy_effects>
+<ntg.description.lobotomy_effects>This page will contain all of the possible negative and positive effects.
+There are 8 positive effects and 26 negative effects.
+\nContents of this page were written by the excellent Wormy.
+\nDo not read further if you do not want to be spoiled.
+</ntg.description.lobotomy_effects>
+<ntg.lobopositiveeffects.lobotomy_effects>
+    Congenital Analgesia: Patient exhibits immunity to Intense Pain. |
+    Desensitized: Patient is immune to Traumatic Shock. |
+    Genius: Patient's skills are effectively doubled (via bonus). |
+    Heightened Alcohol Tolerance: Patient gains incredibly high resistance towards acquiring the “drunk” affliction, but can still gain buffs such as psychosis resistance from drinking alcohol. |
+    Hyperkinetic Movement Disorder: Patient gains increased movement speed. |
+    Increased Cerebral Regeneration: Patient rapidly recovers from Neurotrauma. |
+    Psychological Potence: Patient becomes immune to Psychosis. |
+    Stun Resistance: Patient becomes incredibly resistant to the “stunned” status effect, but can still be knocked down by impact and attacks.
+</ntg.lobopositiveeffects.lobotomy_effects>
+<ntg.lobonegativeeffects.lobotomy_effects>
+    Abnormal Brain-Lung Crosstalk: Patient will go into Respiratory Arrest every couple of seconds. |
+    Abnormal Gait: Patient's movement speed is reduced, and limbs are stiffened - similar to large amounts of blunt-force trauma. |
+    Auditory Hallucinations: Patient periodically hears whispers and voices in their head. |
+    Severe Auditory Hallucinations: Patient periodically hears jarringly loud human screams from nearby. |
+    Deafness: All local sound effects are severely muffled to the patient. |
+    Fibromyalgia: Patient experiences sporadic Intense Pain throughout every limb. |
+    Gas Incontinence: Patient will produce audible fart sound effects at regular intervals. |
+    Heightened Opioid Resistance: Patient develops high resistance to and rapid recovery from Analgesia. Potentially prevents Opioid Withdrawal/Addiction afflictions. |
+    Hyperactivity: Locks the patient into sprinting by removing the ability to walk. Can still stop in place and walk backwards. |
+    Hypoactivity: Patient loses the ability to sprint. |
+    Intellectual Disability: Patient suffers a negative “bonus” to their skills. |
+    Mania: Patient's walk-cycle is replaced with the “Vigorous Walk”. |
+    Mutism: Patient is unable to give commands via command interface. Text chat and voice chat still (maybe?) work. |
+    Narcolepsy: Patient will fall Unconscious at random intervals |
+    Protensive Psychotic Disorder: Patient develops permanent Psychosis |
+    Psychopathy: Patient “swaps teams” and becomes marked as a hostile. |
+    Reduced Motor Skills: Reduces patient's walking speed, and changes animations to match being concussed/drunk. Running speed is unaffected, but animation is also changed. |
+    Severed Motor Connections: Patient is permanently stunned. |
+    Somatic Nerve Reversion: Patient's movement controls are inverted |
+    Tinnitus: Patient will continually hear a high-pitched ringing sound. |
+    Tourette's Syndrome: Patients will occasionally scream. |
+    Tunnel Vision: Removes much of the patient's field of view (akin to being inside of a diving suit) and activates a line-of-sight version of vision. |
+    Vertigo: Patient has permanent nausea. |
+    Virtual Earthquake Syndrome: The environment around the patient will appear to shake (similar to phantom-impacts caused by Psychosis). |
+    Vision Loss: Patient's vision is blurred. |
+    William's Syndrome: Patient's walk cycle changes to the “Jolly Walk”. |
+</ntg.lobonegativeeffects.lobotomy_effects>
+<ntg.seealso.lobotomy_effects>
+    [transorbital_lobotomy] Transorbital Lobotomy |
+    [ethanol_lobotomy] Ethanol Lobotomy |
+    [cerebral_regeneration_procedure] Cerebral Regeneration Surgery
+</ntg.seealso.lobotomy_effects>
+
 </Infotexts>

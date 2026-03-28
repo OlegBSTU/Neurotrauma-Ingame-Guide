@@ -782,7 +782,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.medical_lens"), 
                 description = NTGuide.Localize("ntg.description.medical_lens"),
-                seealso = {NTGuide.Localize("ntg.effects.medical_lens")},
+                seealso = {NTGuide.Localize("ntg.seealso.medical_lens")},
             }
 
             -- Electrical Lens
@@ -792,7 +792,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.electrical_lens"), 
                 description = NTGuide.Localize("ntg.description.electrical_lens"),
-                seealso = {NTGuide.Localize("ntg.effects.electrical_lens")},
+                seealso = {NTGuide.Localize("ntg.seealso.electrical_lens")},
             }
 
             -- Night Vision Lens
@@ -802,7 +802,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.night_vision_lens"), 
                 description = NTGuide.Localize("ntg.description.night_vision_lens"),
-                seealso = {NTGuide.Localize("ntg.effects.night_vision_lens")},
+                seealso = {NTGuide.Localize("ntg.seealso.night_vision_lens")},
             }
 
             -- Thermal Lens
@@ -812,7 +812,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.thermal_lens"), 
                 description = NTGuide.Localize("ntg.description.thermal_lens"),
-                seealso = {NTGuide.Localize("ntg.effects.thermal_lens")},
+                seealso = {NTGuide.Localize("ntg.seealso.thermal_lens")},
             }
 
         -- Surgery Items
@@ -824,7 +824,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.eye_connector_item"), 
                 description = NTGuide.Localize("ntg.description.eye_connector_item"),
-                seealso = {NTGuide.Localize("ntg.effects.eye_connector_item")},
+                seealso = {NTGuide.Localize("ntg.seealso.eye_connector_item")},
             }
 
             -- Organic Eye Lens
@@ -834,7 +834,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.organic_eye_lens"), 
                 description = NTGuide.Localize("ntg.description.organic_eye_lens"),
-                seealso = {NTGuide.Localize("ntg.effects.organic_eye_lens")},
+                seealso = {NTGuide.Localize("ntg.seealso.organic_eye_lens")},
             }
 
             -- Laser Surgery Tool
@@ -844,7 +844,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.laser_surgery_tool"), 
                 description = NTGuide.Localize("ntg.description.laser_surgery_tool"),
-                seealso = {NTGuide.Localize("ntg.effects.laser_surgery_tool")},
+                seealso = {NTGuide.Localize("ntg.seealso.laser_surgery_tool")},
             }
 
             -- Advanced Eyeball Extraction Device
@@ -863,7 +863,7 @@
                 category = "items",
                 title = NTGuide.Localize("ntg.title.eye_drops_item"), 
                 description = NTGuide.Localize("ntg.description.eye_drops_item"),
-                seealso = {NTGuide.Localize("ntg.effects.eye_drops_item")},
+                seealso = {NTGuide.Localize("ntg.seealso.eye_drops_item")},
             }
 
         -- Other Items
@@ -1750,4 +1750,89 @@
                 category = "information",
                 title = NTGuide.Localize("ntg.title.information_remove_grafting_limit"), 
                 description = NTGuide.Localize("ntg.description.information_remove_grafting_limit"),
+            }
+
+--===================================================================================================================================================================================================
+        -- Neurotrauma: Lobotomy Additions
+        -- Items
+            -- Orbitoclast (Med60)
+            NTGuide.ContentPages.Items.Orbitoclast = {
+                mod = "NT: Lobotomy",
+                id = "orbitoclast",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.orbitoclast"), 
+                description = NTGuide.Localize("ntg.description.orbitoclast"),
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.orbitoclast")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.orbitoclast")},
+                seealso = {NTGuide.Localize("ntg.seealso.orbitoclast")},
+            }
+
+            -- Surgical Hammer (Med60)
+            NTGuide.ContentPages.Items.SurgicalHammer = {
+                mod = "NT: Lobotomy",
+                id = "surgical_hammer",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.surgical_hammer"), 
+                description = NTGuide.Localize("ntg.description.surgical_hammer"),
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.surgical_hammer")},
+                applicationfailed = {NTGuide.Localize("ntg.applicationfailed.surgical_hammer")},
+                seealso = {NTGuide.Localize("ntg.seealso.surgical_hammer")},
+            }
+
+            -- Nerve Generators / Cerebral regenerative compound (Med50)
+            NTGuide.ContentPages.Items.NerveGenerators = {
+                mod = "NT: Lobotomy",
+                id = "nerve_generators",
+                category = "items",
+                title = NTGuide.Localize("ntg.title.nerve_generators"), 
+                description = NTGuide.Localize("ntg.description.nerve_generators"),
+                applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.nerve_generators")},
+                seealso = {NTGuide.Localize("ntg.seealso.nerve_generators")},
+            }
+
+        -- Procedures
+            -- Transorbital Lobotomy
+            NTGuide.ContentPages.SurgicalProcedures.TransorbitalLobotomy = {
+                mod = "NT: Lobotomy",
+                id = "transorbital_lobotomy",
+                category = "procedures",
+                title = NTGuide.Localize("ntg.title.transorbital_lobotomy"), 
+                description = NTGuide.Localize("ntg.description.transorbital_lobotomy"),
+                steps = {NTGuide.Localize("ntg.steps.transorbital_lobotomy")},
+                seealso = {NTGuide.Localize("ntg.seealso.transorbital_lobotomy")},
+            }
+
+            -- Ethanol Lobotomy
+            NTGuide.ContentPages.SurgicalProcedures.EthanolLobotomy = {
+                mod = "NT: Lobotomy",
+                id = "ethanol_lobotomy",
+                category = "procedures",
+                title = NTGuide.Localize("ntg.title.ethanol_lobotomy"), 
+                description = NTGuide.Localize("ntg.description.ethanol_lobotomy"),
+                steps = {NTGuide.Localize("ntg.steps.ethanol_lobotomy")},
+                seealso = {NTGuide.Localize("ntg.seealso.ethanol_lobotomy")},
+            }
+
+            -- Cerebral Regeneration Surgery
+            NTGuide.ContentPages.SurgicalProcedures.CerebralRegenerationSurgery = {
+                mod = "NT: Lobotomy",
+                id = "cerebral_regeneration_procedure",
+                category = "procedures",
+                title = NTGuide.Localize("ntg.title.cerebral_regeneration_procedure"), 
+                description = NTGuide.Localize("ntg.description.cerebral_regeneration_procedure"),
+                steps = {NTGuide.Localize("ntg.steps.cerebral_regeneration_procedure")},
+                seealso = {NTGuide.Localize("ntg.seealso.cerebral_regeneration_procedure")},
+            }
+        
+        -- Results
+            -- Lobotomy Effects
+            NTGuide.ContentPages.Information.LobotomyEffects = {
+                mod = "NT: Lobotomy",
+                id = "lobotomy_effects",
+                category = "information",
+                title = NTGuide.Localize("ntg.title.lobotomy_effects"), 
+                description = NTGuide.Localize("ntg.description.lobotomy_effects"),
+                lobopositiveeffects = {NTGuide.Localize("ntg.lobopositiveeffects.lobotomy_effects")},
+                lobonegativeeffects = {NTGuide.Localize("ntg.lobonegativeeffects.lobotomy_effects")},
+                seealso = {NTGuide.Localize("ntg.seealso.lobotomy_effects")},
             }

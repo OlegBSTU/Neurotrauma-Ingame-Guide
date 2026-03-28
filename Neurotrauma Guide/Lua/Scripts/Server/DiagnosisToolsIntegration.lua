@@ -180,7 +180,7 @@ Timer.Wait(function()
 		table.insert(NTGuide.IdentifierToPage, {"afzincsupplement", "zinc_supplements"})
 		table.insert(NTGuide.IdentifierToPage, {"afcorticosteroids", "hydrocortisone"})
 
-		-- NT Infections integration for Sampling Tool
+-- NT Infections integration for Sampling Tool
 		-- Bacteremia / Blood Infection
 		table.insert(NTGuide.IdentifierToPage, {"bloodinfectionlevel", "information_fighting_infections"})
 		-- Infections 
@@ -190,6 +190,46 @@ Timer.Wait(function()
 		table.insert(NTGuide.IdentifierToPage, {"bloodprovo", "provobacter_infection"})
 		table.insert(NTGuide.IdentifierToPage, {"bloodaero", "aeroganella_infection"})
 		table.insert(NTGuide.IdentifierToPage, {"bloodmrsa", "mrsa_infection"})
+
+-- NT Lobotomy integration for Health Scanner
+		-- Surgery
+		-- Positive Effects
+		table.insert(NTGuide.IdentifierToPage, {"lobo_genius", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_veryfast", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_notrauma", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_nopsychosis", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_nostun", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_nopain", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_noneurotrauma", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_nodrunk", "lobotomy_effects"})
+		-- Negative Effects
+		table.insert(NTGuide.IdentifierToPage, {"lobo_infinitepsychosis", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_mute", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_blurredvision", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_ungenius", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_alwaysdrunk", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_hearscreams", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_tinnitus", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_screenshake", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_deaf", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_blind", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_constantpain", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_paralysis", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_invertcontrols", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_nausea", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_alwaysvigorous", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_alwaysjolly", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_differentteam", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_veryslow", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_alwaysrun", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_alwayswalk", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_randomarrest", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_makescreams", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_fart", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_randomuncon", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_noanalgesia", "lobotomy_effects"})
+		table.insert(NTGuide.IdentifierToPage, {"lobo_hearvoices", "lobotomy_effects"})
+
 end, 2)
 --===========================================================================================================================================================
 

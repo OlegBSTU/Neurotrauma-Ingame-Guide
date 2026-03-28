@@ -162,7 +162,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 <ntg.susceptible.streptococcal_infection>
     [vancomycin] Vancomycin (95% Effective) |
     [augmentin] Augmentin (93.8% Effective) |
-    [unasyn] (Unasyn 90% Effective) |
+    [unasyn] Unasyn (90% Effective) |
     [primaxin] Primaxin (80% Effective) |
     [broad-spectrum] Broad-spectrum (75% Effective) |
     [cotrimoxazole] Co-trimoxazole (66.7% Effective) |
@@ -731,7 +731,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel 
+    [scalpel] 2b. Apply a Scalpel |
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [multipurpose_scalpel] 4a. Apply a Multipurpose Scalpel in the Surgical Incision mode |

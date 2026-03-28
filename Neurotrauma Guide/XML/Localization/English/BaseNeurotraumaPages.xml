@@ -24,6 +24,7 @@
 <ntg.section.sideeffects>Possible Side Effects</ntg.section.sideeffects>
 <ntg.section.applicationsuccess>Succesful Application</ntg.section.applicationsuccess>
 <ntg.section.applicationfailed>Failed Application</ntg.section.applicationfailed>
+<ntg.section.reduction>Reduced By</ntg.section.reduction>
 <ntg.section.firstaid>First Aid</ntg.section.firstaid>
 <ntg.section.treatments>Treatments</ntg.section.treatments>
 <ntg.section.steps>Steps</ntg.section.steps>
@@ -121,22 +122,23 @@
 \nIf you would want to help translate, there is a github page linked in the Mod's description; you can PR localization simply by translating the already existing localization files. 
 \nFuture updates should hopefully expand the information contained within, as for now I'm just importing the Trello. If you find something wrong or have suggestions, leave a comment!
 </ntg.description.main_page>
+<ntg.gotoindex.main_page>
+    [category_index] Browse pages by Category
+</ntg.gotoindex.main_page>
 <ntg.features.main_page>
     Page-linking: You can browse between all pages that matter just by clicking. Want to know the causes of a symptom? Just click! |
     Health Scanner / Hematology Analyzer integration: Neurotrauma changed afflictions that show up after scanning a patient can be clicked on and will open their respective page. |
     Search functionality: Built-in search functionality makes looking up things a breeze! |
-    Automatic Addon-integration: If there are guide pages for an addon, they will show up automatically if that addon is loaded and be hidden if its not.
+    Index: Want to just browse pages? You can click on the button above and check out the pages, sorted by their category.
 </ntg.features.main_page>
 <ntg.availableaddons.main_page>
     Neurotrauma by Guns |
     NT Cybernetics Enhanced by Nebual |
     NT Eyes by POSTACI, BETA and bludcart |
     NT Infections by guy |
-    NT Grafting by Aegis_Myles
+    NT Grafting by Aegis_Myles |
+    NT Lobotomy by Postaci
 </ntg.availableaddons.main_page>
-<ntg.gotoindex.main_page>
-    [category_index] Browse pages by Category
-</ntg.gotoindex.main_page>
 
 <!-- Auto Indexed Page: Categories -->
 <ntg.title.category_index>Categories</ntg.title.category_index>
@@ -2573,7 +2575,7 @@ Using an empty blood pack will multiply the patient's acidosis or alkalosis by 0
 </ntg.seealso.health_scanner>
 
 <!-- Hematology Analyzer -->
-<ntg.title.hematology_analyzer>Health Scanner</ntg.title.hematology_analyzer>
+<ntg.title.hematology_analyzer>Hematology Analyzer</ntg.title.hematology_analyzer>
 <ntg.description.hematology_analyzer>The hematology analyzer can also be used to check the blood type of your patient, to avoid Hemotransfusion Shock. Putting a donor card in the analyzer and then using it will print their blood type onto the donor card, and put it in their id card slot, allowing you to check their blood type later without the analyzer. 
 \nPutting a blood pack in the analyzer will give a readout of its type and any of the aforementioned ailments, if it has any.\n\nEither failing or passing the skill check will also give you a readout of all the blood-related ailments your patient has, such as Sepsis, Acidosis or Alkalosis.</ntg.description.hematology_analyzer>
 <ntg.applicationsuccess.hematology_analyzer>
