@@ -194,6 +194,17 @@ end
 
 -- Function to update the search results when the search bar gets used
 NTGuide.Menu.previousSearchText = NTGuide.Menu.previousSearchText or ""
+local lastFilteredResults = {}
+
+local function AreResultsEqual(resultsA, resultsB)
+    if #resultsA ~= #resultsB then return false end
+    for i = 1, #resultsA do
+        if resultsA[i].id ~= resultsB[i].id then
+            return false
+        end
+    end
+    return true
+end
 
 local function UpdateSearchResults()
     -- Determine what the actual search is
@@ -201,7 +212,7 @@ local function UpdateSearchResults()
     -- If the current search is the same as the previous one, do nothing
     if searchText == NTGuide.Menu.previousSearchText then return end
     local modtags, searchtext = ParseSearch(searchText)
-    -- If the current search wás unique, make that the new 'previous' one
+    -- If the current search was unique, make that the new 'previous' one
     NTGuide.Menu.previousSearchText = searchText
 
     -- Add what we're looking for to table to use later
@@ -209,13 +220,9 @@ local function UpdateSearchResults()
 
     for _, page in ipairs(NTGuide.IndexedContentPages) do
         local name = page.name:lower()
-        -- Get the mod name; we remove 'NT:' from all of them since that's only used to look pretty in the search / index pages
-        -- Make lowercase so capitalization isnt a problem
         local mod = page.mod:gsub("^NT:%s*", ""):lower()
-        -- Variable to check if our word following @ is a known mod
         local matches = true
 
-        -- Check if the modtag we're seeing right now matches those of the ones defined in the content pages
         for _, modtags in ipairs(modtags) do
             if not mod:find(modtags) then
                 matches = false
@@ -223,7 +230,6 @@ local function UpdateSearchResults()
             end
         end
 
-        -- So far, so good. Now we check if any of our pages have a name that contains whatever else is in the search bar
         if matches then
             for _, keyword in ipairs(searchtext) do
                 if not name:find(keyword) then
@@ -233,21 +239,32 @@ local function UpdateSearchResults()
             end
         end
 
-        -- If those checks were passed, we add this to the the results that match these criteria!
         if matches then
             table.insert(filteredResults, page)
         end
     end
 
+    -- Only rebuild if filteredResults actually changed
+    local simpleFiltered = {}
+    for i = 1, #filteredResults do
+        simpleFiltered[i] = {id = filteredResults[i].id}
+    end
+
+    if AreResultsEqual(simpleFiltered, lastFilteredResults) then
+        return
+    else
+        lastFilteredResults = simpleFiltered
+    end
+
     -- Clear everything before re-doing it
     NTGmenuList.Content:ClearChildren()
 
-    -- Throw an 'error' if the results yield nothin'
+    -- Throw an 'error' if the results yield nothing
     if #filteredResults == 0 then
         local textblock_NoSearchResults = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.08), NTGmenuList.Content.RectTransform), NTGuide.Localize("ntg.pagefounderror"))
         return
     end
-
+    
     -- Sort results alphabetically; first the category, then the names
     table.sort(filteredResults, function(a, b)
         if a.category ~= b.category then return a.category < b.category end
@@ -257,50 +274,71 @@ local function UpdateSearchResults()
     local currentCategory = ""
 
     -- Subdivide search output into categories to reduce vomit of text when searching
-    for result, page in ipairs(filteredResults) do
-        -- Do stuff with pages within the currently selected category only
+    local i = 1
+    while i <= #filteredResults do
+        local page = filteredResults[i]
+
+        -- Display a category header for easier readability
         if page.category ~= currentCategory then
             currentCategory = page.category
-            -- Same code as for the textblock_Subheaders
-            local textblock_PageCategory = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.06), NTGmenuList.Content.RectTransform), "---  " .. NTGuide.Localize("ntg.category." .. currentCategory) .. "  ---", nil, GUI.GUIStyle.SubHeadingFont)
+
+            local textblock_PageCategory = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.07), NTGmenuList.Content.RectTransform),"---  " .. NTGuide.Localize("ntg.category." .. currentCategory) .. "  ---", nil, GUI.GUIStyle.SubHeadingFont)
             textblock_PageCategory.TextAlignment = GUI.Alignment.Center
             textblock_PageCategory.CanBeFocused = false
-            -- Search subheaders will be the same colour as page subheaders
             textblock_PageCategory.TextColor = Color(110, 154, 125, 255)
-        end     
-
-        local SpecificPageInfo = GetPageByID(page.id)
-        local SearchResultToDisplay = page.name
-
-        -- For some reason, the default colour of this text is different. A smart person would figure out why. I will instead just change the text colour.
-        local AmendedTextColour = "210, 200, 154, 255"
-
-        -- Then change mod name accordingly to make it stand out from the wall of text
-        if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
-            local modName = SpecificPageInfo.mod
-            local modColour = ModColours[modName] or DefaultModColour
-
-            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
-        else
-            -- Change text colour if not
-            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
         end
 
-    -- Add a button for each result, directing to the page
-        local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(1, 0.04), NTGmenuList.Content.RectTransform), SearchResultToDisplay, GUI.Alignment.Center, "GUIButtonSmall")
-        -- Make the button itself invisible
-        button_SearchResult.Color = Color(0,0,0,0)
-        button_SearchResult.HoverColor = Color(50,50,50,255)
-        button_SearchResult.PressedColor = Color(0,0,0,0)
+        -- Create a row for up to 2 items within the same category
+        local row = GUI.LayoutGroup(GUI.RectTransform(Vector2(1, 0.05), NTGmenuList.Content.RectTransform),true,GUI.Anchor.TopLeft)
+        row.Stretch = true
 
-        button_SearchResult.OnClicked = function()
-            -- Set the page we want to go to
-            NTGuide.CurrentPageID = {page.id}
-            -- Wipe the searchbox so it doesn't try and show results again
-            NTGuide.Menu.searchBox.Text = ""
-            -- Re-build the UI
-            NTGuide.PopulatePage(NTGmenuList, page.id)
-            
+        -- Take that row and add our buttons
+        -- If we have only 1 button left to add, just leave it on its own
+        for j = 0, 1 do
+            local currentIndex = i + j
+            local currentPage = filteredResults[currentIndex]
+
+            -- Once we're done with our items, get the hell out of this loop and go over the items in the next category
+            if not currentPage or currentPage.category ~= currentCategory then
+                break
+            end
+
+            -- Actual button building + making them look nice!
+            local SpecificPageInfo = GetPageByID(currentPage.id)
+            local SearchResultToDisplay = currentPage.name
+            local AmendedTextColour = "210, 200, 154, 255"
+
+            -- If it has a mod-of-origin, display it
+            if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
+                local modName = SpecificPageInfo.mod
+                local modColour = ModColours[modName] or DefaultModColour
+
+                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ " .."‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
+            else
+                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+            end
+
+            local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(0.5, 1), row.RectTransform), SearchResultToDisplay, GUI.Alignment.CenterLeft, "GUIButtonSmall")
+
+            button_SearchResult.Color = Color(0,0,0,0)
+            button_SearchResult.HoverColor = Color(50,50,50,255)
+            button_SearchResult.PressedColor = Color(0,0,0,0)
+
+            -- Forgot buttons have built-in text blocks..
+            button_SearchResult.TextBlock.Wrap = true
+
+            button_SearchResult.OnClicked = function()
+                NTGuide.CurrentPageID = {currentPage.id}
+                NTGuide.Menu.searchBox.Text = ""
+                NTGuide.PopulatePage(NTGmenuList, currentPage.id)
+            end
+        end
+
+        -- Move index forward by however many buttons we've done and do it again!
+        if i + 1 <= #filteredResults and filteredResults[i + 1].category == currentCategory then
+            i = i + 2
+        else
+            i = i + 1
         end
     end
 end
