@@ -185,7 +185,7 @@
 <ntg.effects.tension_pneumothorax>
     [hyperventilation] Гипервентиляция |
     [chest_pain] Боль в груди |
-    [increased_heartrate] Тахикардия
+    [increased_heartrate] Ускоренное сердцебиение
 </ntg.effects.tension_pneumothorax>
 <ntg.treatments.tension_pneumothorax>
     [aat_kit] Набор для продвинутой работы с дыхательными путями
@@ -201,7 +201,7 @@
 <ntg.effects.hemopneumothorax>
     [hyperventilation] Гипервентиляция |
     [chest_pain] Боль в груди |
-    [increased_heartrate] Тахикардия
+    [increased_heartrate] Ускоренное сердцебиение
 </ntg.effects.hemopneumothorax>
 <ntg.treatments.hemopneumothorax>
     [aat_kit] Набор для продвинутой работы с дыхательными путями
@@ -219,7 +219,7 @@
     [hyperventilation] Гипервентиляция |
     [chest_pain] Боль в груди |
     [internal_bleeding] 100% внутреннее кровотечение |
-    [increased_heartrate] Тахикардия
+    [increased_heartrate] Ускоренное сердцебиение
 </ntg.effects.hemothorax>
 <ntg.treatments.hemothorax>
     [aat_kit] Набор для продвинутой работы с дыхательными путями

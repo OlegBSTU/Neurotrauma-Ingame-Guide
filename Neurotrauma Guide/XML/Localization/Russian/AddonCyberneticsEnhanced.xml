@@ -171,7 +171,7 @@
 </ntg.seealso.material_loss>
 
 <!-- FPGA Circuit -->
-<ntg.title.fpga_circuit>FPGA Схема</ntg.title.fpga_circuit>
+<ntg.title.fpga_circuit>Схема на базе ППВМ</ntg.title.fpga_circuit>
 <ntg.description.fpga_circuit>Проверка навыка Электрики: 40.
 \nИспользуется для ремонта Повреждённой Электроники на Киберконечностях. FPGA Схемы можно объединять вместе для восстановления состояния.
 </ntg.description.fpga_circuit>

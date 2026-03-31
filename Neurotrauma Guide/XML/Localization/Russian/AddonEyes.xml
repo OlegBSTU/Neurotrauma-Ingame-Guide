@@ -161,8 +161,8 @@
 </ntg.seealso.mudraptor_eye_damage>
 
 <!-- Hammerhead Eye Damage -->
-<ntg.title.hammerhead_eye_damage>Повреждение глаза молотоголового</ntg.title.hammerhead_eye_damage>
-<ntg.description.hammerhead_eye_damage>Повреждение, полученное глазом молотоголового. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.hammerhead_eye_damage>
+<ntg.title.hammerhead_eye_damage>Повреждение глаза молотоглава</ntg.title.hammerhead_eye_damage>
+<ntg.description.hammerhead_eye_damage>Повреждение, полученное глазом молотоглава. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.hammerhead_eye_damage>
 <ntg.causes.hammerhead_eye_damage>
     [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
     [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
@@ -181,7 +181,7 @@
     [eye_drop_application] Применение глазных капель
 </ntg.treatments.hammerhead_eye_damage>
 <ntg.seealso.hammerhead_eye_damage>
-    [hammerhead_eye] Глаз молотоголового (Предмет)
+    [hammerhead_eye] Глаз молотоглава (Предмет)
 </ntg.seealso.hammerhead_eye_damage>
 
 <!-- Watcher Eye Damage -->
@@ -209,8 +209,8 @@
 </ntg.seealso.watcher_eye_damage>
 
 <!-- Latcher Eye Damage -->
-<ntg.title.latcher_eye_damage>Повреждение глаза Блокиратора</ntg.title.latcher_eye_damage>
-<ntg.description.latcher_eye_damage>Урон, полученный глазом Блокиратора. Хотя он невосприимчив к давлению и недостатку кислорода, он всё ещё может быть повреждён.</ntg.description.latcher_eye_damage>
+<ntg.title.latcher_eye_damage>Повреждение глаза блокиратора</ntg.title.latcher_eye_damage>
+<ntg.description.latcher_eye_damage>Урон, полученный глазом блокиратора. Хотя он невосприимчив к давлению и недостатку кислорода, он всё ещё может быть повреждён.</ntg.description.latcher_eye_damage>
 <ntg.causes.latcher_eye_damage>
     [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
     [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
@@ -630,7 +630,7 @@
 </ntg.effects.mudraptor_eye>
 
 <!-- Hammerhead Eye -->
-<ntg.title.hammerhead_eye>Глаз молотоголового</ntg.title.hammerhead_eye>
+<ntg.title.hammerhead_eye>Глаз молотоглава</ntg.title.hammerhead_eye>
 <ntg.description.hammerhead_eye>Устойчивые к давлению и повреждениям глаза, извлечённые из Молотоголового; лучше подходят для условий с низкой освещённостью, хотя и с небольшой ценой.</ntg.description.hammerhead_eye>
 <ntg.effects.hammerhead_eye>
     Сниженные навыки |

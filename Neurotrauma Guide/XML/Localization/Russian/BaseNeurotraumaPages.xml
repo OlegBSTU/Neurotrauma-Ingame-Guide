@@ -1,8 +1,10 @@
-<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+<Infotexts language="Russian" nowhitespace="false" translatedname="Русский">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
 <!-- /*- General Stuff -*/ -->
 <!-- Buttons -->
 <ntg.button.back>Назад на предыдущую страницу</ntg.button.back>
+<ntg.index.back>Назад в Категории</ntg.index.back>
+<ntg.index.backmain>Назад на Главную страницу</ntg.index.backmain>
 
 <!-- Search Page Categories -->
 <ntg.category.afflictions>Аффликты</ntg.category.afflictions>
@@ -26,6 +28,10 @@
 <ntg.section.treatments>Лечение</ntg.section.treatments>
 <ntg.section.steps>Шаги</ntg.section.steps>
 <ntg.section.seealso>Смотрите также</ntg.section.seealso>
+<ntg.section.gotoindex>Навигация</ntg.section.gotoindex>
+<ntg.section.navigation>Навигация</ntg.section.navigation>
+<ntg.section.categories>Категории</ntg.section.categories>
+<ntg.section.pages>Страницы</ntg.section.pages>
 
 <!-- Affliction specific subheaders: Withdrawal -->
 <ntg.section.effects_withdrawal_ex1>Эффекты для Алкогольной, Химической и Опиатной ломки</ntg.section.effects_withdrawal_ex1>
@@ -113,6 +119,9 @@
 \nСпасибо за установку моего мода! Надеюсь, он вам хорошо поможет. Я буду активно расширять его, пока не интегрирую все основные дополнения NT; хотя локализация языка встроена, я не говорю на основных языках и поэтому не могу подтвердить, насколько хорошими будут переводы.
 \nЕсли вы хотите помочь с переводом, в описании мода есть ссылка на github; вы можете сделать PR локализации, просто переведя уже существующие файлы локализации.
 \nБудущие обновления, надеюсь, расширят содержащуюся информацию, а пока я просто импортирую Trello. Если вы найдете что-то неправильное или есть предложения, оставьте комментарий!</ntg.description.main_page>
+<ntg.gotoindex.main_page>
+    [category_index] Просмотр страниц по категориям
+</ntg.gotoindex.main_page>
 <ntg.features.main_page>
     Переход между страницами: Вы можете просматривать все важные страницы, просто нажимая на них. Хотите узнать причины симптома? Просто нажмите! |
     Интеграция сканера здоровья / гематологического анализатора: измененные Neurotrauma аффликты, которые появляются после сканирования пациента, можно нажать, и откроется соответствующая страница. |
@@ -126,6 +135,11 @@
     NT Infections от guy
 </ntg.availableaddons.main_page>
 
+<!-- Auto Indexed Page: Categories -->
+<ntg.title.category_index>Категории</ntg.title.category_index>
+<ntg.description.category_index>Выберите категорию для просмотра.</ntg.description.category_index>
+<!-- Auto Indexed Page: Items within Categories -->
+<ntg.description.category_page>Страницы в этой категории.</ntg.description.category_page>
 
 <!-- /*- Symptom Pages -*/ -->
 <!-- Vomiting Blood -->
@@ -198,8 +212,8 @@
 </ntg.treatments.nausea>
 
 <!-- Increased Heartrate -->
-<ntg.title.increased_heartrate>Increased Heartrate</ntg.title.increased_heartrate>
-<ntg.description.increased_heartrate>Increased heartrate это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов; если только пульс не нарастает постепенно, что означало бы, что у вас фибрилляция.</ntg.description.increased_heartrate>
+<ntg.title.increased_heartrate>Ускоренное сердцебиение</ntg.title.increased_heartrate>
+<ntg.description.increased_heartrate>Ускоренное сердцебиение это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов; если только пульс не нарастает постепенно, что означало бы, что у вас фибрилляция.</ntg.description.increased_heartrate>
 <ntg.causes.increased_heartrate>
     [acidosis] Ацидоз (от 20% или больше) |
     [sepsis] Сепсис (от 20% или больше) |
@@ -546,7 +560,7 @@
     [vomiting] Рвота (от 60% или больше) |
     [headache] Головная боль (от 50% или больше) |
     [confusion] Спутанность сознания (от 80% или больше) |
-    [increased_heartrate] Учащённое сердцебиение (от 75% или больше) |
+    [increased_heartrate] Ускоренное сердцебиение (от 75% или больше) |
     [seizure] Припадок (от 50% или больше) |
     [hypertension] Гипертензия
 </ntg.effects.alcoholwithdrawal>
@@ -764,7 +778,7 @@
 <ntg.effects.pneumothorax>
     [shortness_of_breath] Сбивчивое дыхание (от 40% или больше) |
     [hyperventilation] Гипервентиляция (от 15% или больше) |
-    [increased_heartrate] Учащённое сердцебиение (от 30% или больше) |
+    [increased_heartrate] Ускоренное сердцебиение (от 30% или больше) |
     [hypoxemia] Предотвращает снижение Гипоксемии по тяжести
 </ntg.effects.pneumothorax>
 <ntg.treatments.pneumothorax>
@@ -949,7 +963,7 @@
 
 <!-- Фибрилляция -->
 <ntg.title.mechanic_fibrillation>Фибрилляция</ntg.title.mechanic_fibrillation>
-<ntg.description.mechanic_fibrillation>Фибрилляция начинается с учащённого сердцебиения, которое медленно увеличивается. Как только Учащённое сердцебиение достигает 100%, жертва впадает в фибрилляцию, и начинаются симптомы.</ntg.description.mechanic_fibrillation>
+<ntg.description.mechanic_fibrillation>Фибрилляция начинается с ускоренного сердцебиения, которое медленно увеличивается. Как только Ускоренное сердцебиение достигает 100%, жертва впадает в фибрилляцию, и начинаются симптомы.</ntg.description.mechanic_fibrillation>
 <ntg.causes.mechanic_fibrillation>
     [aortic_rupture] Аортальное кровотечение |
     [acidosis] Ацидоз |
@@ -1527,7 +1541,7 @@
     [fractures] Rib Переломы (если более чем 10 урона было получено) |
     [pneumothorax] Пневмоторакс (если более чем 5 урона было получено) |
     [cardiac_tamponade] Сердечная тампонада (если более чем 5 урона было получено) |
-    [internal_bleeding] Internal Bleeding (если более чем 5 урона было получено; умножено пропорционально диапазону 0.2 - 0.5 от урона) |
+    [internal_bleeding] Внутреннее Кровотечение (если более чем 5 урона было получено; умножено пропорционально диапазону 0.2 - 0.5 от урона) |
     [traumatic_amputation] Травматическая Ампутация (если более чем 1 урона было получено на уже переломанной конечности) |
     [foreign_bodies] Инородные Тела (шанс появления 75%, пропорционально половине полученного урона) |
     [concussion] Контузия (если более чем 15 урона было получено, шанс появления 70%) |
@@ -1707,11 +1721,11 @@
 </ntg.treatments.foreign_bodies>
 
 <!-- Bleeding -->
-<ntg.title.bleeding>Bleeding</ntg.title.bleeding>
+<ntg.title.bleeding>Кровотечение</ntg.title.bleeding>
 <ntg.description.bleeding>Кровотечение будет вызывать у пациента кровопотерю, зависимо от силы и длительности кровотечения.</ntg.description.bleeding>
 <ntg.causes.bleeding>
-    [open_wounds] Lacerations or Bite Wounds |
-    Failing certain skill checks
+    [open_wounds] Рваные раны или Укусы |
+    Неуспешное применение некоторых предметов
 </ntg.causes.bleeding>
 <ntg.effects.bleeding>
     [arterial_bleeding] Артериальное кровотечение (от 80% или больше) |
@@ -1838,7 +1852,7 @@
     [hyperventilation] Гипервентиляция (от 15% или больше) |
     [gangrene] Гангрена (от 5% или больше) |
     [fever] Лихорадка (от 5% или больше) |
-    [increased_heartrate] Учащённое сердцебиение (от 20% или больше) |
+    [increased_heartrate] Ускоренное сердцебиение (от 20% или больше) |
     [confusion] Спутанность сознания (от 40% или больше) |
     [bone_damage] Повреждение костей (от 50% или больше — точка, с которой оно опережает естественную регенерацию)
 </ntg.effects.sepsis>
@@ -1886,7 +1900,7 @@
 <ntg.effects.blood_loss>
     [hypotension] Гипотензия (масштабируется в зависимости от количества Кровопотери) |
     [hypoxemia] Гипоксемия (от 40% или больше) |
-    [increased_heartrate] Учащённое сердцебиение (от 40% или больше) |
+    [increased_heartrate] Ускоренное сердцебиение (от 40% или больше) |
     [pale_skin] Бледность кожи (от 40% или больше) |
     [headache] Головная боль (от 50% или больше) |
     [weakness] Слабость (от 60% или больше)
@@ -1973,7 +1987,7 @@
 <ntg.effects.acidosis>
     [seizure] Припадок (от 60% или больше) |
     [coma] Кома (от 60% или больше) |
-    [increased_heartrate] Учащённое сердцебиение (от 20% или больше) |
+    [increased_heartrate] Ускоренное сердцебиение (от 20% или больше) |
     [mechanic_fibrillation] Фибрилляция |
     [confusion] Спутанность сознания (от 15% или больше) |
     [headache] Головная боль (от 20% или больше) |
@@ -2141,17 +2155,17 @@
 <!-- Адреналин -->
 <ntg.title.adrenaline>Адреналин</ntg.title.adrenaline>
 <ntg.description.adrenaline>Адреналин используется для лечения остановки сердца. Взамен за излечение этого состояния он повышает артериальное давление пациента на 30%.
-Помимо этих эффектов, он даёт пациенту анальгезию (но не более 4.5%), учащённое сердцебиение, гипервентиляцию, увеличивает урон в ближнем бою на 20%, уменьшает накопление фибрилляции вдвое и снижает эффективность замедляющих эффектов.</ntg.description.adrenaline>
+Помимо этих эффектов, он даёт пациенту анальгезию (но не более 4.5%), Ускоренное сердцебиение, гипервентиляцию, увеличивает урон в ближнем бою на 20%, уменьшает накопление фибрилляции вдвое и снижает эффективность замедляющих эффектов.</ntg.description.adrenaline>
 <ntg.seealso.adrenaline>
     [cardiac_arrest] Остановка сердца |
     [analgesia] Анальгезия |
-    [increased_heartrate] Учащённое сердцебиение |
+    [increased_heartrate] Ускоренное сердцебиение |
     [hyperventilation] Гипервентиляция |
     [mechanic_fibrillation] Фибрилляция
 </ntg.seealso.adrenaline>
 
 <!-- Alien Blood -->
-<ntg.title.alien_blood>Кровь пришельцев</ntg.title.alien_blood>
+<ntg.title.alien_blood>Инопланетная кровь</ntg.title.alien_blood>
 <ntg.description.alien_blood>Проверка навыка медицины: 40. \n\nИспользование крови пришельцев вместо обычной крови крайне опасно и должно применяться только в крайних ситуациях.</ntg.description.alien_blood>
 <ntg.applicationsuccess.alien_blood>
     [blood_loss] -20% Кровопотеря |
@@ -2837,7 +2851,7 @@
 </ntg.applicationfailed.nitroglycerin>
 
 <!-- Opium -->
-<ntg.title.opium>Опий</ntg.title.opium>
+<ntg.title.opium>Опиум</ntg.title.opium>
 <ntg.description.opium>Проверка навыка медицины: 30.
 \nСлабый опиат, используемый для вызова Анальгезии.</ntg.description.opium>
 <ntg.applicationsuccess.opium>
@@ -3082,7 +3096,7 @@
 </ntg.seealso.streptokinase>
 
 <!-- Surgery Table -->
-<ntg.title.surgery_table>Surgery Table</ntg.title.surgery_table>
+<ntg.title.surgery_table>Операционный стол</ntg.title.surgery_table>
 <ntg.description.surgery_table>Операционный стол — предмет, который можно купить на станции или создать, а затем разместить. Пациент не обязан находиться на столе, ему нужно только быть рядом с ним.
 \nОперационный стол обеспечивает искусственную вентиляцию всем, кто находится рядом со столом, и предотвращает травматический шок при условии, что пациент находится под анальгезией. Кроме того, стол будет снижать нехватку кислорода и предотвращать остановку дыхания и гиповентиляцию от увеличения ацидоза. Больничная койка имеет те же функции. Другие койки предотвращают травматический шок, но только для персонажа, лежащего на них, и не обеспечивают других эффектов операционного стола.
 \nСтол также имеет проводные контакты, которые можно использовать для вывода важной информации, такой как кровяное давление, ацидоз, пульс и частота дыхания.
@@ -3101,7 +3115,7 @@
 </ntg.seealso.surgery_table>
 
 <!-- Surgical Drill -->
-<ntg.title.surgical_drill>Surgical Drill</ntg.title.surgical_drill>
+<ntg.title.surgical_drill>Хирургическая дрель</ntg.title.surgical_drill>
 <ntg.description.surgical_drill>Проверка навыка медицины: 45.
 \nПятый шаг в остеосинтетической хирургии. Хирургическая дрель не будет работать без 100% оттянутой кожи.
 \nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.surgical_drill>
@@ -3117,7 +3131,7 @@
 </ntg.seealso.surgical_drill>
 
 <!-- Surgical Saw -->
-<ntg.title.surgical_saw>Surgical Saw</ntg.title.surgical_saw>
+<ntg.title.surgical_saw>Хирургическая пила</ntg.title.surgical_saw>
 <ntg.description.surgical_saw>Проверка навыка медицины: 45.
 \nПятый шаг в ампутационной хирургии. Хирургическая пила не будет работать без 100% оттянутой кожи.
 \nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.surgical_saw>
@@ -3134,7 +3148,7 @@
 </ntg.seealso.surgical_drill>
 
 <!-- Sutures -->
-<ntg.title.sutures>Sutures</ntg.title.sutures>
+<ntg.title.sutures>Медицинские швы</ntg.title.sutures>
 <ntg.description.sutures>Проверка навыка медицины: 30.
 \nФинальный шаг во всех хирургических процедурах. Также очень полезен для лечения большинства ран и кровотечений.</ntg.description.sutures>
 <ntg.applicationsuccess.sutures>
