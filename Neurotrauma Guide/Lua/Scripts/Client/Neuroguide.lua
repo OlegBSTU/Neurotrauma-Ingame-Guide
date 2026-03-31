@@ -8,6 +8,21 @@ NTGuide.CurrentPageID = {}
 NTGuide.SearchablePages = {}
 NTGuide.PagesByID = {}
 
+-- Set the colour for mod names
+local DefaultModColour = "110, 154, 125, 255"
+-- Give them a unique colour based on their workshop picture
+-- Sure love Infections, Pharmacy and Airways having the same green!
+local ModColours = {
+["NT: Airway Extension"] = "20, 60, 0, 255",
+["NT: Cybernetics Enhanced"] = "84, 84, 97, 255",
+["NT: Eyes"] = "215, 160, 0, 255",
+["NT: Grafting"] = "165, 22, 166, 255",
+["NT: Infections"] = "76, 112, 42, 255",
+["NT: Lobotomy"] = "0, 175, 175, 255",
+["NT: Surgery Plus"] = "97, 24, 33, 255",
+["NT: Thermal"] = "3, 99, 138, 255",
+}
+
 -- Function to find all content pages within a large table and can handle sub-tables.
 -- This way, we can have 'category' tables for easier sorting
 local function ScanForPage(page)
@@ -141,13 +156,13 @@ local function BuildPagesByCategory()
         for _, page in ipairs(pages) do
             local SpecificPageInfo = GetPageByID(page.id)
             local PageNameToDisplay = page.name
-            -- Set the colour for mod names
-            local ModNameColour = "110, 154, 125, 255"
 
             -- Then change mod name accordingl to make it stand out from the wall of text
             -- Same idea as the Diagnostic tools really
             if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
-                PageNameToDisplay = PageNameToDisplay .. " ‖color:" .. ModNameColour .. "‖(" .. SpecificPageInfo.mod .. ")‖color:end‖"
+                local modName = SpecificPageInfo.mod
+                local modColour = ModColours[modName] or DefaultModColour
+                PageNameToDisplay = PageNameToDisplay .. " ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
             end
 
             -- Put it in the shared table so PopulatePage to do something with it later
@@ -256,21 +271,6 @@ local function UpdateSearchResults()
 
         local SpecificPageInfo = GetPageByID(page.id)
         local SearchResultToDisplay = page.name
-
-        -- Set the colour for mod names
-        local DefaultModColour = "110, 154, 125, 255"
-        -- Give them a unique colour based on their workshop picture
-        -- Sure love Infections, Pharmacy and Airways having the same green!
-        local ModColours = {
-        ["NT: Airway Extension"] = "20, 60, 0, 255",
-        ["NT: Cybernetics Enhanced"] = "84, 84, 97, 255",
-        ["NT: Eyes"] = "215, 160, 0, 255",
-        ["NT: Grafting"] = "165, 22, 166, 255",
-        ["NT: Infections"] = "76, 112, 42, 255",
-        ["NT: Lobotomy"] = "0, 175, 175, 255",
-        ["NT: Surgery Plus"] = "97, 24, 33, 255",
-        ["NT: Thermal"] = "3, 99, 138, 255",
-        }
 
         -- For some reason, the default colour of this text is different. A smart person would figure out why. I will instead just change the text colour.
         local AmendedTextColour = "210, 200, 154, 255"
