@@ -258,13 +258,29 @@ local function UpdateSearchResults()
         local SearchResultToDisplay = page.name
 
         -- Set the colour for mod names
-        local ModNameColour = "110, 154, 125, 255"
+        local DefaultModColour = "110, 154, 125, 255"
+        -- Give them a unique colour based on their workshop picture
+        -- Sure love Infections, Pharmacy and Airways having the same green!
+        local ModColours = {
+        ["NT: Airway Extension"] = "20, 60, 0, 255",
+        ["NT: Cybernetics Enhanced"] = "84, 84, 97, 255",
+        ["NT: Eyes"] = "215, 160, 0, 255",
+        ["NT: Grafting"] = "165, 22, 166, 255",
+        ["NT: Infections"] = "76, 112, 42, 255",
+        ["NT: Lobotomy"] = "0, 175, 175, 255",
+        ["NT: Surgery Plus"] = "97, 24, 33, 255",
+        ["NT: Thermal"] = "3, 99, 138, 255",
+        }
+
         -- For some reason, the default colour of this text is different. A smart person would figure out why. I will instead just change the text colour.
         local AmendedTextColour = "210, 200, 154, 255"
 
         -- Then change mod name accordingly to make it stand out from the wall of text
         if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
-            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ ‖color:" .. ModNameColour .. "‖(" .. SpecificPageInfo.mod .. ")‖color:end‖"
+            local modName = SpecificPageInfo.mod
+            local modColour = ModColours[modName] or DefaultModColour
+
+            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
         else
             -- Change text colour if not
             SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
@@ -376,7 +392,8 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
                             end
                         else
                             -- If the XML Localization doesn't find an ID to link to, the text that we want to display is not part of a button
-                            local textblock_PlainText = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform), "• " .. trimmedString)
+                            local textblock_PlainText = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform),"")
+                            textblock_PlainText.SetRichText("• " .. trimmedString)
                             textblock_PlainText.Wrap = true
                             -- Prevents the clicking on textboxes that change the background. Ugly.
                             textblock_PlainText.CanBeFocused = false

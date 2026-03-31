@@ -120,7 +120,6 @@
 <ntg.description.main_page>Main page for the Neurotrauma guide.
 \nThank you for installing my mod! I hope it helps you well. I'll actively be expanding it until all major NT addons have been integrated; though language localization is built-in I don't speak the major languages and thus cannot confirm whether translations would be great.
 \nIf you would want to help translate, there is a github page linked in the Mod's description; you can PR localization simply by translating the already existing localization files. 
-\nFuture updates should hopefully expand the information contained within, as for now I'm just importing the Trello. If you find something wrong or have suggestions, leave a comment!
 </ntg.description.main_page>
 <ntg.gotoindex.main_page>
     [category_index] Browse pages by Category
@@ -132,12 +131,15 @@
     Index: Want to just browse pages? You can click on the button above and check out the pages, sorted by their category.
 </ntg.features.main_page>
 <ntg.availableaddons.main_page>
-    Neurotrauma by Guns |
-    NT Cybernetics Enhanced by Nebual |
-    NT Eyes by POSTACI, BETA and bludcart |
-    NT Infections by guy |
-    NT Grafting by Aegis_Myles |
-    NT Lobotomy by Postaci
+    ‖color:35,38,115,255‖Neurotrauma‖color:end‖ by Guns |
+    ‖color:84,84,97,255‖NT Cybernetics Enhanced‖color:end‖ by Nebual |
+    ‖color:97,24,33,255‖NT Surgery Plus‖color:end‖ by Guns |
+    ‖color:215,160,0,255‖NT Eyes‖color:end‖ by POSTACI, BETA and bludcart |
+    ‖color:76,112,42,255‖NT Infections‖color:end‖ by guy |
+    ‖color:165,22,166,255‖NT Grafting‖color:end‖ by Aegis_Myles |
+    ‖color:0,175,175,255‖NT Lobotomy‖color:end‖ by Postaci |
+    ‖color:3,99,138,255‖NT Thermal‖color:end‖ by BigEvilGreenBean |
+    ‖color:20,60,0,255‖NT Airway Extension‖color:end‖ by moncka.ddima
 </ntg.availableaddons.main_page>
 
 <!-- Auto Indexed Page: Categories -->
