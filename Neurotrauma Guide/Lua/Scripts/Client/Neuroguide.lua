@@ -419,8 +419,10 @@ NTGuide.Menu.BasicList = function()
     -- Menu-background put into the frame [L1 / Invisible]
     NTGuide.Menu.menu = GUI.Frame(GUI.RectTransform(Vector2(1 + 0.2 / GUI.xScale, 1 + 0.3), NTGuide.Menu.frame.RectTransform, GUI.Anchor.Center), nil)
     NTGuide.Menu.menu.Visible = false
+    NTGuide.Menu.menu.CanBeFocused = false
     -- Menu-background (Green) [L1 / Visible]
     local menuContent = GUI.Frame(GUI.RectTransform(Vector2(0.35, 0.6), NTGuide.Menu.menu.RectTransform, GUI.Anchor.Center))
+    local dragHandle = GUI.DragHandle(GUI.RectTransform(Vector2(1,1), menuContent.RectTransform, GUI.Anchor.Center), menuContent.RectTransform, nil)
     -- Main Layout [L2 / Invisible]
     local mainGuideLayout = GUI.LayoutGroup(GUI.RectTransform(Vector2(0.95, 0.95), menuContent.RectTransform, GUI.Anchor.Center, GUI.Pivot.Center), false)
     -- Cosmetic background [L2 / Visible]

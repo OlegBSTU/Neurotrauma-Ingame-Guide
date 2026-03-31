@@ -119,8 +119,7 @@
 <ntg.title.main_page>Main Page</ntg.title.main_page>
 <ntg.description.main_page>Main page for the Neurotrauma guide.
 \nThank you for installing my mod! I hope it helps you well. I'll actively be expanding it until all major NT addons have been integrated; though language localization is built-in I don't speak the major languages and thus cannot confirm whether translations would be great.
-\nIf you would want to help translate, there is a github page linked in the Mod's description; you can PR localization simply by translating the already existing localization files. 
-</ntg.description.main_page>
+\nIf you would want to help translate, there is a github page linked in the Mod's description; you can PR localization simply by translating the already existing localization files.</ntg.description.main_page>
 <ntg.gotoindex.main_page>
     [category_index] Browse pages by Category
 </ntg.gotoindex.main_page>
