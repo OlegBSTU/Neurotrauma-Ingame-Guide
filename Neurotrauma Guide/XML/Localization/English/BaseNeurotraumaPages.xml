@@ -79,9 +79,9 @@
 <ntg.section.treatments_openwounds_ex3>Treatments: Gunshot Wounds</ntg.section.treatments_openwounds_ex3>
 <!-- Bite Wounds -->
 <ntg.section.description_openwounds_ex4>Bite Wounds</ntg.section.description_openwounds_ex4>
-<ntg.section.causes_openwounds_ex4>Causes: Gunshot Wounds</ntg.section.causes_openwounds_ex4>
-<ntg.section.effects_openwounds_ex4>Effects: Gunshot Wounds</ntg.section.effects_openwounds_ex4>
-<ntg.section.treatments_openwounds_ex4>Treatments: Gunshot Wounds</ntg.section.treatments_openwounds_ex4>
+<ntg.section.causes_openwounds_ex4>Causes: Bite Wounds</ntg.section.causes_openwounds_ex4>
+<ntg.section.effects_openwounds_ex4>Effects: Bite Wounds</ntg.section.effects_openwounds_ex4>
+<ntg.section.treatments_openwounds_ex4>Treatments: Bite Wounds</ntg.section.treatments_openwounds_ex4>
 
 <!-- Affliction specific subheaders: Internal Wounds-->
 <!-- Blunt Force Trauma -->
@@ -260,7 +260,7 @@
 
 <!-- Blurred Vision -->
 <ntg.title.blurred_vision>Blurred Vision</ntg.title.blurred_vision>
-<ntg.description.blurred_vision>Blurred vision is a symptom, which means that it isn't fatal and doesn't cause any other afflictions. As the name suggests, this affliction will make your vision blurrier.</ntg.description.blurred_vision>
+<ntg.description.blurred_vision>Blurred vision is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.blurred_vision>
 <ntg.causes.blurred_vision>
     [hypotension] Hypotension (at 55% or less) | 
     [concussion] Concussion | 
@@ -297,7 +297,7 @@
 
 <!-- Weakness -->
 <ntg.title.weakness>Weakness</ntg.title.weakness>
-<ntg.description.weakness>Weakness is a symptom, which means that it isn't fatal and doesn't cause any other afflictions</ntg.description.weakness>
+<ntg.description.weakness>Weakness is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.weakness>
 <ntg.causes.weakness>
     [cardiac_tamponade] Cardiac Tamponade (at 30% or more) | 
     [blood_loss] Blood Loss (at 60% or more) | 
@@ -376,7 +376,7 @@
 
 <!-- Headache -->
 <ntg.title.headache>Headache</ntg.title.headache>
-<ntg.description.headache>Headache is a symptom, which means that it isn't fatal and doesn't cause any other afflictions. Headache will create a fuzzy overlay on the borders of your screen.</ntg.description.headache>
+<ntg.description.headache>Headache is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.headache>
 <ntg.causes.headache>
     [blood_loss] Blood Loss (at 50% or more) | 
     [acidosis] Acidosis (at 20% or more) | 
@@ -432,7 +432,7 @@ Spasms do this by spawning small invisible explosions on the limb that do no dam
 
 <!-- Abdominal Pain -->
 <ntg.title.abdominal_pain>Abdominal Pain</ntg.title.abdominal_pain>
-<ntg.description.abdominal_pain>Abdominal pain is not lethal, and will only halve your speed for 1 second every 3-6 seconds.</ntg.description.abdominal_pain>
+<ntg.description.abdominal_pain>Abdominal pain is a symptom, which means that it isn't fatal and don't cause any other afflictions.</ntg.description.abdominal_pain>
 <ntg.causes.abdominal_pain>
     [hemotransfusion_shock] Hemotransfusion Shock (Between 0 - 80%) | 
     [aortic_rupture] Aortic Rupture
@@ -451,7 +451,7 @@ Spasms do this by spawning small invisible explosions on the limb that do no dam
 
 <!-- Chest Pain -->
 <ntg.title.chest_pain>Chest Pain</ntg.title.chest_pain>
-<ntg.description.chest_pain>Chest pain is not lethal, and will only halve speed for 1 second every 3-6 seconds.</ntg.description.chest_pain>
+<ntg.description.chest_pain>Chest pain is a symptom, which means that it isn't fatal and don't cause any other afflictions.</ntg.description.chest_pain>
 <ntg.causes.chest_pain>
     [hemotransfusion_shock] Hemotransfusion Shock (Between 0 - 60%) | 
     [fractures] Fractures (Rib Fracture) | 
@@ -468,7 +468,7 @@ Spasms do this by spawning small invisible explosions on the limb that do no dam
 
 <!-- Intense Pain -->
 <ntg.title.intense_pain>Intense Pain</ntg.title.intense_pain>
-<ntg.description.intense_pain>Intense pain is not lethal, and only occurs when something has been dislocated, fractured or amputated. Intense pain will halve speed for 1 second every 3-6 seconds.</ntg.description.intense_pain>
+<ntg.description.intense_pain>Intense pain is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.intense_pain>
 <ntg.causes.intense_pain>
     [dislocations] Dislocations | 
     [fractures] Fractures | 
@@ -509,9 +509,9 @@ Spasms do this by spawning small invisible explosions on the limb that do no dam
 <ntg.causes.neurotrauma>
     [stroke] Stroke |
     [liver_damage] Liver Damage (at 80% or more, point at which it outpaces natural regeneration) |
-    [kidney_damage] Kidney Damage (at 100% or more, at which point at which it outpaces natural regeneration) |
-    [sepsis] Sepsis (at 25% or more, at which point at which it outpaces natural regeneration) |
-    [hypoxemia] Hypoxemia (at 10% or more, at which point at which it outpaces natural regeneration) |
+    [kidney_damage] Kidney Damage (at 100% or more, point at which it outpaces natural regeneration) |
+    [sepsis] Sepsis (at 25% or more, point at which it outpaces natural regeneration) |
+    [hypoxemia] Hypoxemia (at 10% or more, point at which it outpaces natural regeneration) |
     [tourniquet] Using a Tourniquet on the head |
     [methamphetamine] Methamphetamine |
     [hyperzine] Hyperzine |
@@ -1699,7 +1699,7 @@ All open wounds will cause Infected Wounds proportional to their severity, and m
 <ntg.treatments.infected_wounds>
     [antibiotic_ointment] Antibiotic Ointment | 
     [antibiotic_glue] Antibiotic Glue | 
-    [antibiotic_sprayer] Antibiotic Sprayer
+    [antibiotic_sprayer] Antiseptic Sprayer
 </ntg.treatments.infected_wounds>
 <ntg.firstaid.infected_wounds>
     [bandages] Applying Bandages | 
@@ -2272,7 +2272,7 @@ Alongside these effects, it gives the patient Analgesia (but wont give more than
 <ntg.seealso.arm_item>
     [gangrene] Gangrene |
     [traumatic_amputation] Traumatic Amputation |
-    [surgical_amputation] Surgical Amputation
+    [surgical_amputation] Surgical Amputation |
     [amputation_surgery] Amputation Surgery
 </ntg.seealso.arm_item>
 
