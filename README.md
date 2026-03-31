@@ -16,7 +16,7 @@ A modern revamp of an older XML/Lua based in-game guide for the Neurotrauma Medi
 * [NT Grafting by Aegis_Myles](https://steamcommunity.com/sharedfiles/filedetails/?id=3534702008)
 * [NT Lobotomy by POSTACI](https://steamcommunity.com/sharedfiles/filedetails/?id=3326291860)
 * [NT Airway Extension by moncka.ddima](https://steamcommunity.com/sharedfiles/filedetails/?id=3271808177)
-* [NT Thermal](https://steamcommunity.com/sharedfiles/filedetails/?id=3648890424)
+* [NT Thermal by BigEvilGreenBean](https://steamcommunity.com/sharedfiles/filedetails/?id=3648890424)
 
 ## Links
 * [Discord Neurotrauma Fork Server)](https://discord.gg/4Yku7qPCYN)
