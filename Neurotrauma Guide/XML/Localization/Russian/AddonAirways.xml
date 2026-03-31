@@ -1,0 +1,259 @@
+<Infotexts language="Russian" nowhitespace="false">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Additional pages for Airways -->
+<!-- KAT Medical my beloved -->
+
+<!-- Items -->
+<!-- OVERRIDE -->
+<!-- Needle -->
+<ntg.title.air_needle>Игла</ntg.title.air_needle>
+<ntg.description.air_needle>Устраняет пневмоторакс при использовании и превращает напряжённый пневмоторакс в обычный пневмоторакс.</ntg.description.air_needle>
+
+<!-- Drainage -->
+<ntg.title.air_drainage>Дренаж</ntg.title.air_drainage>
+<ntg.description.air_drainage>Превращает гемоторакс в гемопневмоторакс, а гемопневмоторакс в пневмоторакс.</ntg.description.air_drainage>
+
+<!-- END OF OVERRIDE -->
+
+<!-- Oral Suction Tube -->
+<ntg.title.oral_suction_tube>Оральная аспирационная трубка</ntg.title.oral_suction_tube>
+<ntg.description.oral_suction_tube>Проверка медицинского навыка: 50.
+\nИспользуется для отсасывания окклюзии из дыхательных путей. Не расходуется при использовании.</ntg.description.oral_suction_tube>
+<ntg.applicationsuccess.oral_suction_tube>
+    [occlusion] Устраняет окклюзии и предотвращает их повторное появление на 2 минуты
+</ntg.applicationsuccess.oral_suction_tube>
+<ntg.applicationfailed.oral_suction_tube>
+    [occlusion] Устраняет окклюзии и предотвращает их повторное появление на 2 минуты, но требует 10 секунд на применение.
+</ntg.applicationfailed.oral_suction_tube>
+
+<!-- Chest Seal -->
+<ntg.title.chest_seal>Вентилируемый грудной клапан</ntg.title.chest_seal>
+<ntg.description.chest_seal>Проверка медицинского навыка: 5.
+\nИспользуется для закрытия грудной клетки при проникающем ранении груди. Расходуется при использовании.</ntg.description.chest_seal>
+<ntg.applicationsuccess.chest_seal>
+    [deep_penetration_injury] Устраняет глубокие проникающие ранения |
+    [pneumothorax] Уменьшает силу пневмоторакса на 5
+</ntg.applicationsuccess.chest_seal>
+<ntg.applicationfailed.chest_seal>
+    [deep_penetration_injury] Устраняет глубокие проникающие ранения, но требует 10 секунд на применение. |
+    [pneumothorax] Уменьшает силу пневмоторакса на 5, но требует 10 секунд на применение.
+</ntg.applicationfailed.chest_seal>
+
+<!-- Accuvac -->
+<ntg.title.accuvac>Accuvac</ntg.title.accuvac>
+<ntg.description.accuvac>Проверка медицинского навыка: Нет.
+\nУстройство, которое можно использовать для быстрой очистки дыхательных путей от окклюзий и обструкций. Требует батареек для работы.</ntg.description.accuvac>
+<ntg.applicationsuccess.accuvac>
+    [occlusion] Устраняет окклюзии и предотвращает их повторное появление на 2 минуты |
+    [obstruction] Устраняет обструкции и предотвращает их повторное появление на 2 минуты
+</ntg.applicationsuccess.accuvac>
+
+<!-- Laryngeal Tube -->
+<ntg.title.laryngeal_tube>Ларингеальная трубка</ntg.title.laryngeal_tube>
+<ntg.description.laryngeal_tube>Проверка медицинского навыка: 25.
+\nТрубка, вставляемая в гортань для устранения обструкции. Расходуется при использовании.</ntg.description.laryngeal_tube>
+<ntg.applicationsuccess.laryngeal_tube>
+    [obstruction] Устраняет обструкции и предотвращает их повторное появление на 2 минуты 
+</ntg.applicationsuccess.laryngeal_tube>
+<ntg.applicationfailed.laryngeal_tube>
+    [obstruction] Вызывает обструкцию
+</ntg.applicationfailed.laryngeal_tube>
+
+<!-- Advanced Airway Treatment Kit -->
+<ntg.title.aat_kit>Набор для продвинутой работы с дыхательными путями</ntg.title.aat_kit>
+<ntg.description.aat_kit>Проверка медицинского навыка: 5.
+\nУниверсальное решение для пневмоторакса и связанных с ним травм. Теряет 25% состояния при использовании, поэтому расходуется после 4 применений — хотя может быть объединён с другими наборами AAT. Применяется на торс.</ntg.description.aat_kit>
+<ntg.applicationsuccess.aat_kit>
+    [tension_pneumothorax] Устраняет напряжённый пневмоторакс
+    [hemopneumothorax] Устраняет гемопневмоторакс
+    [hemothorax] Устраняет гемоторакс
+</ntg.applicationsuccess.aat_kit>
+<ntg.applicationfailed.aat_kit>
+    [tension_pneumothorax] Устраняет напряжённый пневмоторакс, но требует 10 секунд на применение |
+    [hemopneumothorax] Устраняет гемопневмоторакс, но требует 10 секунд на применение |
+    [hemothorax] Устраняет гемоторакс, но требует 10 секунд на применение
+</ntg.applicationfailed.aat_kit>
+
+<!-- Nasopharyngeal Airway -->
+<ntg.title.naso_airway>Назофарингеальный воздуховод</ntg.title.naso_airway>
+<ntg.description.naso_airway>Проверка медицинского навыка: 15.
+\nТрубка, вставляемая в нос для устранения обструкции. Расходуется при использовании.</ntg.description.naso_airway>
+<ntg.applicationsuccess.naso_airway>
+    [obstruction] Устраняет обструкции и предотвращает их повторное появление на 2 минуты 
+</ntg.applicationsuccess.naso_airway>
+<ntg.applicationfailed.naso_airway>
+    [obstruction] Вызывает обструкцию
+</ntg.applicationfailed.naso_airway>
+
+<!-- Cricothyrotomy Scalpel -->
+<ntg.title.cric_scalpel>Скальпель для коникотомии</ntg.title.cric_scalpel>
+<ntg.description.cric_scalpel>Проверка медицинского навыка: 90.
+\nЗащищённый скальпель №10, используемый для проведения коникотомии. Первый шаг в коникотомии, расходуется при использовании.</ntg.description.cric_scalpel>
+<ntg.applicationsuccess.cric_scalpel>
+    [cricothyrotomy] Делает надрез щитовидно-перстневидной связки, первый шаг в коникотомии
+</ntg.applicationsuccess.cric_scalpel>
+<ntg.applicationfailed.cric_scalpel>
+    [arterial_bleeding] Требует 10 секунд на применение и вызывает артериальное кровотечение
+</ntg.applicationfailed.cric_scalpel>
+<ntg.seealso.cric_scalpel>
+    [cricothyrotomy] Коникотомия
+</ntg.seealso.cric_scalpel>
+
+<!-- Tracheal Hook -->
+<ntg.title.tracheal_hook>Трахеальный крючок</ntg.title.tracheal_hook>
+<ntg.description.tracheal_hook>Проверка медицинского навыка: 90.
+\nТрахеальный крючок, используемый для проведения коникотомии. Второй шаг в коникотомии, расходуется при использовании.</ntg.description.tracheal_hook>
+<ntg.applicationsuccess.tracheal_hook>
+    [occlusion] Устраняет окклюзии и предотвращает их повторное появление на 2 минуты |
+    [obstruction] Устраняет обструкции и предотвращает их повторное появление на 2 минуты
+</ntg.applicationsuccess.tracheal_hook>
+<ntg.applicationfailed.tracheal_hook>
+    Ничего не делает.
+</ntg.applicationfailed.tracheal_hook>
+<ntg.seealso.tracheal_hook>
+    [cricothyrotomy] Коникотомия
+</ntg.seealso.tracheal_hook>
+
+<!-- Cric Tubing -->
+<ntg.title.cric_tube>Трубка для коникотомии</ntg.title.cric_tube>
+<ntg.description.cric_tube>Проверка медицинского навыка: 90.
+\nТрубка для коникотомии, позволяющая использовать амбушевую сумку. В настоящее время нет функционала, который фактически препятствовал бы её использованию, поэтому эта функция бесполезна.</ntg.description.cric_tube>
+<ntg.applicationsuccess.cric_tube>
+    [ambubag] Позволяет использовать амбушеву сумку на пациенте
+</ntg.applicationsuccess.cric_tube>
+<ntg.applicationfailed.cric_tube>
+    Ничего не делает.
+</ntg.applicationfailed.cric_tube>
+
+<!-- Afflictions -->
+<!-- Deep Penetration Injuries -->
+<ntg.title.deep_penetration_injury>Глубокое проникающее ранение</ntg.title.deep_penetration_injury>
+<ntg.description.deep_penetration_injury>Отверстие, проникающее в грудную клетку.</ntg.description.deep_penetration_injury>
+<ntg.causes.deep_penetration_injury>
+    [open_wounds] Огнестрельное ранение в торс
+</ntg.causes.deep_penetration_injury>
+<ntg.effects.deep_penetration_injury>
+    [pneumothorax] Вызывает пневмоторакс, если его ещё нет
+</ntg.effects.deep_penetration_injury>
+<ntg.treatments.deep_penetration_injury>
+    [chest_seal] Наложение грудного клапана
+</ntg.treatments.deep_penetration_injury>
+
+<!-- Occlusion -->
+<ntg.title.occlusion>Окклюзия</ntg.title.occlusion>
+<ntg.description.occlusion>Окклюзия горла.</ntg.description.occlusion>
+<ntg.causes.occlusion>
+    [unconsciousness] Потеря сознания
+</ntg.causes.occlusion>
+<ntg.effects.occlusion>
+    [respiratory_arrest] Респираторный арест
+</ntg.effects.occlusion>
+<ntg.treatments.occlusion>
+    [cricothyrotomy] Проведение коникотомии |
+    [accuvac] Использование Accuvac (предотвращает это состояние на 2 минуты) |
+    [oral_suction_tube] Оральная аспирационная трубка (предотвращает это состояние на 2 минуты)
+</ntg.treatments.occlusion>
+<ntg.seealso.occlusion>
+    [obstruction] Обструкция
+</ntg.seealso.occlusion>
+
+<!-- Obstruction -->
+<ntg.title.obstruction>Обструкция</ntg.title.obstruction>
+<ntg.description.obstruction>Обструкция горла.</ntg.description.obstruction>
+<ntg.causes.obstruction>
+    [unconsciousness] Потеря сознания
+</ntg.causes.obstruction>
+<ntg.effects.obstruction>
+    [respiratory_arrest] Респираторный арест
+</ntg.effects.obstruction>
+<ntg.treatments.obstruction>
+    [cricothyrotomy] Проведение коникотомии |
+    [laryngeal_tube] Использование ларингеальной трубки (предотвращает это состояние на 2 минуты) |
+    [accuvac] Использование Accuvac (предотвращает это состояние на 2 минуты) |
+    [naso_airway] Установка назофарингеального воздуховода (предотвращает это состояние на 2 минуты)
+</ntg.treatments.obstruction>
+<ntg.seealso.obstruction>
+    [occlusion] Окклюзия
+</ntg.seealso.obstruction>
+
+<!-- Tension Pneumothorax -->
+<ntg.title.tension_pneumothorax>Напряжённый пневмоторакс</ntg.title.tension_pneumothorax>
+<ntg.description.tension_pneumothorax>Заполнение плевральной полости воздухом.</ntg.description.tension_pneumothorax>
+<ntg.causes.tension_pneumothorax>
+    [pneumothorax] Пневмоторакс выше 25%
+</ntg.causes.tension_pneumothorax>
+<ntg.effects.tension_pneumothorax>
+    [hyperventilation] Гипервентиляция |
+    [chest_pain] Боль в груди |
+    [increased_heartrate] Тахикардия
+</ntg.effects.tension_pneumothorax>
+<ntg.treatments.tension_pneumothorax>
+    [aat_kit] Набор для продвинутой работы с дыхательными путями
+</ntg.treatments.tension_pneumothorax>
+
+<!-- Hemopneumothorax -->
+<ntg.title.hemopneumothorax>Гемопневмоторакс</ntg.title.hemopneumothorax>
+<ntg.description.hemopneumothorax>Активное заполнение плевральной полости кровью.</ntg.description.hemopneumothorax>
+<ntg.causes.hemopneumothorax>
+    [internal_bleeding] Внутреннее кровотечение выше 15%, а также |
+    [tension_pneumothorax] Напряжённый пневмоторакс на 100%
+</ntg.causes.hemopneumothorax>
+<ntg.effects.hemopneumothorax>
+    [hyperventilation] Гипервентиляция |
+    [chest_pain] Боль в груди |
+    [increased_heartrate] Тахикардия
+</ntg.effects.hemopneumothorax>
+<ntg.treatments.hemopneumothorax>
+    [aat_kit] Набор для продвинутой работы с дыхательными путями
+</ntg.treatments.hemopneumothorax>
+
+<!-- Hemothorax -->
+<ntg.title.hemothorax>Гемоторакс</ntg.title.hemothorax>
+<ntg.description.hemothorax>Плевральная полость полностью заполнена кровью.</ntg.description.hemothorax>
+<ntg.causes.hemothorax>
+    [blood_loss] Потеря крови выше 15%, а также |
+    [internal_bleeding] Внутреннее кровотечение выше 30%, а также |
+    [hemopneumothorax] Гемопневмоторакс на 100%
+</ntg.causes.hemothorax>
+<ntg.effects.hemothorax>
+    [hyperventilation] Гипервентиляция |
+    [chest_pain] Боль в груди |
+    [internal_bleeding] 100% внутреннее кровотечение |
+    [increased_heartrate] Тахикардия
+</ntg.effects.hemothorax>
+<ntg.treatments.hemothorax>
+    [aat_kit] Набор для продвинутой работы с дыхательными путями
+</ntg.treatments.hemothorax>
+
+<!-- Injuries -->
+<!-- Flail Chest -->
+<ntg.title.flail_chest>Колеблющаяся грудная клетка</ntg.title.flail_chest>
+<ntg.description.flail_chest>Парадоксальное движение грудной клетки из-за тяжёлой травмы торса. Указывает на переломы рёбер.</ntg.description.flail_chest>
+<ntg.causes.flail_chest>
+    [fractures] Переломы рёбер
+</ntg.causes.flail_chest>
+<ntg.effects.flail_chest>
+    [shortness_of_breath] Сбивчивое дыхание |
+    [chest_pain] Боль в груди 
+</ntg.effects.flail_chest>
+<ntg.treatments.flail_chest>
+    Лечение причин.
+</ntg.treatments.flail_chest>
+
+<!-- Procedures -->
+<ntg.title.cricothyrotomy>Коникотомия</ntg.title.cricothyrotomy>
+<ntg.description.cricothyrotomy>Проверка медицинского навыка: 90.
+\nПроцедура, которая может устранить окклюзии и обструкции.</ntg.description.cricothyrotomy>
+<ntg.steps.cricothyrotomy>
+    [analgesia] 1a. Анальгезия | 
+    [anesthesia] 1b. Анестезия |
+    [cric_scalpel] 2. Применить скальпель для коникотомии на голову |
+    [tracheal_hook] 3. Применить трахеальный крючок на голову |
+    [sutures] 4. Применить шов для удаления надреза коникотомии и трахеального крючка.
+</ntg.steps.cricothyrotomy>
+<ntg.seealso.cricothyrotomy>
+    [obstruction] Обструкция |
+    [occlusion] Окклюзия
+</ntg.seealso.cricothyrotomy>
+
+</Infotexts>

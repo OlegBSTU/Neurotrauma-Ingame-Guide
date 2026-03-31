@@ -1,0 +1,3333 @@
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- /*- General Stuff -*/ -->
+<!-- Buttons -->
+<ntg.button.back>Назад на предыдущую страницу</ntg.button.back>
+
+<!-- Search Page Categories -->
+<ntg.category.afflictions>Аффликты</ntg.category.afflictions>
+<ntg.category.items>Предметы</ntg.category.items>
+<ntg.category.mechanics>Механики</ntg.category.mechanics>
+<ntg.category.procedures>Процедуры</ntg.category.procedures>
+<ntg.category.information>Информация</ntg.category.information>
+
+<!-- Search Page Error -->
+<ntg.pagefounderror>Страниц не найдено!</ntg.pagefounderror>
+
+<!-- General Subheaders -->
+<ntg.section.description>Общая информация</ntg.section.description>
+<ntg.section.causes>Вызывается</ntg.section.causes>
+<ntg.section.effects>Эффекты</ntg.section.effects>
+<ntg.section.prevention>Профилактика</ntg.section.prevention>
+<ntg.section.sideeffects>Возможные побочные эффекты</ntg.section.sideeffects>
+<ntg.section.applicationsuccess>Успешное применение</ntg.section.applicationsuccess>
+<ntg.section.applicationfailed>Неуспешное применение</ntg.section.applicationfailed>
+<ntg.section.firstaid>Первая помощь</ntg.section.firstaid>
+<ntg.section.treatments>Лечение</ntg.section.treatments>
+<ntg.section.steps>Шаги</ntg.section.steps>
+<ntg.section.seealso>Смотрите также</ntg.section.seealso>
+
+<!-- Affliction specific subheaders: Withdrawal -->
+<ntg.section.effects_withdrawal_ex1>Эффекты для Алкогольной, Химической и Опиатной ломки</ntg.section.effects_withdrawal_ex1>
+<ntg.section.effects_withdrawal_ex2>Дополнительные эффекты для Алкогольной ломки</ntg.section.effects_withdrawal_ex2>
+
+<!-- Affliction specific subheaders: Traumatic Amputation -->
+<ntg.section.effects_traumatic_amputation_ex1>Эффекты: Все травматические ампутации</ntg.section.effects_traumatic_amputation_ex1>
+<ntg.section.effects_traumatic_amputation_ex2>Эффекты: Травматические ампутации рук</ntg.section.effects_traumatic_amputation_ex2>
+<ntg.section.effects_traumatic_amputation_ex3>Эффекты: Травматические ампутации ног</ntg.section.effects_traumatic_amputation_ex3>
+<ntg.section.effects_traumatic_amputation_ex4>Эффекты: Травматические ампутации головы</ntg.section.effects_traumatic_amputation_ex4>
+
+<!-- Affliction specific subheaders: Surgical Amputation -->
+<ntg.section.effects_surgical_amputation_ex1>Эффекты: Хирургические ампутации рук</ntg.section.effects_surgical_amputation_ex1>
+<ntg.section.effects_surgical_amputation_ex2>Эффекты: Хирургические ампутации ног</ntg.section.effects_surgical_amputation_ex2>
+<ntg.section.effects_surgical_amputation_ex3>Эффекты: Хирургические ампутации головы</ntg.section.effects_surgical_amputation_ex3>
+
+<!-- Affliction specific subheaders: Fractures -->
+<ntg.section.effects_fractures_ex1>Эффекты: Переломы ног</ntg.section.effects_fractures_ex1>
+<ntg.section.effects_fractures_ex2>Эффекты: Переломы рук</ntg.section.effects_fractures_ex2>
+<ntg.section.effects_fractures_ex3>Эффекты: Переломы черепа</ntg.section.effects_fractures_ex3>
+<ntg.section.effects_fractures_ex4>Эффекты: Переломы шеи</ntg.section.effects_fractures_ex4>
+<ntg.section.effects_fractures_ex5>Эффекты: Переломы рёбер</ntg.section.effects_fractures_ex5>
+
+<!-- Affliction specific subheaders: Dislocations -->
+<ntg.section.effects_dislocations_ex1>Эффекты: Вывихи ног</ntg.section.effects_dislocations_ex1>
+<ntg.section.effects_dislocations_ex2>Эффекты: Вывихи рук</ntg.section.effects_dislocations_ex2>
+
+<!-- Affliction specific subheaders: Open Wounds -->
+<!-- Lacerations -->
+<ntg.section.description_openwounds_ex1>Рваная рана</ntg.section.description_openwounds_ex1>
+<ntg.section.causes_openwounds_ex1>Причины: Рваная рана</ntg.section.causes_openwounds_ex1>
+<ntg.section.effects_openwounds_ex1>Эффекты: Рваная рана</ntg.section.effects_openwounds_ex1>
+<ntg.section.treatments_openwounds_ex1>Лечение: Рваная рана</ntg.section.treatments_openwounds_ex1>
+<!-- Deep Tissue Injury -->
+<ntg.section.description_openwounds_ex2>Deep Tissue Injury</ntg.section.description_openwounds_ex2>
+<ntg.section.causes_openwounds_ex2>Причины: Deep Tissue Injury</ntg.section.causes_openwounds_ex2>
+<ntg.section.effects_openwounds_ex2>Эффекты: Deep Tissue Injury</ntg.section.effects_openwounds_ex2>
+<ntg.section.treatments_openwounds_ex2>Лечение: Deep Tissue Injury</ntg.section.treatments_openwounds_ex2>
+<!-- Gunshot Wounds -->
+<ntg.section.description_openwounds_ex3>Огнестрельная рана</ntg.section.description_openwounds_ex3>
+<ntg.section.causes_openwounds_ex3>Причины: Огнестрельная рана</ntg.section.causes_openwounds_ex3>
+<ntg.section.effects_openwounds_ex3>Эффекты: Огнестрельная рана</ntg.section.effects_openwounds_ex3>
+<ntg.section.treatments_openwounds_ex3>Лечение: Огнестрельная рана</ntg.section.treatments_openwounds_ex3>
+<!-- Bite Wounds -->
+<ntg.section.description_openwounds_ex4>Укусы</ntg.section.description_openwounds_ex4>
+<ntg.section.causes_openwounds_ex4>Причины: Укусы</ntg.section.causes_openwounds_ex4>
+<ntg.section.effects_openwounds_ex4>Эффекты: Укусы</ntg.section.effects_openwounds_ex4>
+<ntg.section.treatments_openwounds_ex4>Лечение: Укусы</ntg.section.treatments_openwounds_ex4>
+
+<!-- Affliction specific subheaders: Internal Wounds-->
+<!-- Blunt Force Trauma -->
+<ntg.section.description_internalwounds_ex1>Сильный ушиб</ntg.section.description_internalwounds_ex1>
+<ntg.section.causes_internalwounds_ex1>Причины: Сильный ушиб</ntg.section.causes_internalwounds_ex1>
+<ntg.section.effects_internalwounds_ex1>Эффекты: Сильный ушиб</ntg.section.effects_internalwounds_ex1>
+<ntg.section.treatments_internalwounds_ex1>Лечение: Сильный ушиб</ntg.section.treatments_internalwounds_ex1>
+<!-- Internal Damage -->
+<ntg.section.description_internalwounds_ex2>Внутренняя травма</ntg.section.description_internalwounds_ex2>
+<ntg.section.causes_internalwounds_ex2>Причины: Внутренняя травма</ntg.section.causes_internalwounds_ex2>
+<ntg.section.effects_internalwounds_ex2>Эффекты: Внутренняя травма</ntg.section.effects_internalwounds_ex2>
+<ntg.section.treatments_internalwounds_ex2>Лечение: Внутренняя травма</ntg.section.treatments_internalwounds_ex2>
+
+<!-- Affliction specific subheaders: Immunity -->
+<ntg.section.reducedby_immunity>Уменьшается на</ntg.section.reducedby_immunity>
+
+<!-- Affliction specific subheaders: Traumatic Shock -->
+<ntg.section.prevention_traumaticshock>Профилактика</ntg.section.prevention_traumaticshock>
+
+<!-- Item specific subheaders: Multipurpose Scalpel -->
+<ntg.section.description_multipurposescalpel_ex1>Режим: Хирургический надрез</ntg.section.description_multipurposescalpel_ex1>
+<ntg.section.description_multipurposescalpel_ex2>Режим: Снять повязку или гипсовый слепок, зловредная практика</ntg.section.description_multipurposescalpel_ex2>
+<ntg.section.description_multipurposescalpel_ex3>Режим: Адаптивные пересадка и извлечение органов</ntg.section.description_multipurposescalpel_ex3>
+
+<!-- Item specific subheaders: Toxin Filter -->
+<ntg.section.treatments_toxinfilter_ex1>Отравление морбузином</ntg.section.treatments_toxinfilter_ex1>
+<ntg.section.treatments_toxinfilter_ex2>Отравление цианидом</ntg.section.treatments_toxinfilter_ex2>
+<ntg.section.treatments_toxinfilter_ex3>Отравление страданитом</ntg.section.treatments_toxinfilter_ex3>
+<ntg.section.treatments_toxinfilter_ex4>Отравление бредогеном</ntg.section.treatments_toxinfilter_ex4>
+
+<!-- Main Page -->
+<ntg.section.features>Особенности руководства</ntg.section.features>
+<ntg.section.availableaddons>Страницы руководства для</ntg.section.availableaddons>
+
+<ntg.title.main_page>Главная страница</ntg.title.main_page>
+<ntg.description.main_page>Главная страница руководства по Neurotrauma.
+\nСпасибо за установку моего мода! Надеюсь, он вам хорошо поможет. Я буду активно расширять его, пока не интегрирую все основные дополнения NT; хотя локализация языка встроена, я не говорю на основных языках и поэтому не могу подтвердить, насколько хорошими будут переводы.
+\nЕсли вы хотите помочь с переводом, в описании мода есть ссылка на github; вы можете сделать PR локализации, просто переведя уже существующие файлы локализации.
+\nБудущие обновления, надеюсь, расширят содержащуюся информацию, а пока я просто импортирую Trello. Если вы найдете что-то неправильное или есть предложения, оставьте комментарий!</ntg.description.main_page>
+<ntg.features.main_page>
+    Переход между страницами: Вы можете просматривать все важные страницы, просто нажимая на них. Хотите узнать причины симптома? Просто нажмите! |
+    Интеграция сканера здоровья / гематологического анализатора: измененные Neurotrauma аффликты, которые появляются после сканирования пациента, можно нажать, и откроется соответствующая страница. |
+    Функция поиска: встроенная функция поиска делает поиск информации проще простого! |
+    Автоматическая интеграция дополнений: если есть страницы руководства для дополнения, они появятся автоматически, если это дополнение загружено, и скроются, если нет.
+</ntg.features.main_page>
+<ntg.availableaddons.main_page>
+    Neurotrauma от Guns |
+    NT Cybernetics Enhanced от Nebual |
+    NT Eyes от POSTACI, BETA и bludcart |
+    NT Infections от guy
+</ntg.availableaddons.main_page>
+
+
+<!-- /*- Symptom Pages -*/ -->
+<!-- Vomiting Blood -->
+<ntg.title.vomiting_blood>Рвота с кровью</ntg.title.vomiting_blood>
+<ntg.description.vomiting_blood>Рвота с кровью это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.vomiting_blood>
+<ntg.causes.vomiting_blood>
+    [internal_bleeding] Внутреннее кровотечение (от 50% или больше) |
+    [liver_damage] Повреждение печени (при 100%) |
+    [anesthesia] Анестезия
+</ntg.causes.vomiting_blood>
+<ntg.treatments.vomiting_blood>
+    Лечение причины.
+</ntg.treatments.vomiting_blood>
+
+<!-- Pale Skin -->
+<ntg.title.pale_skin>Бледная кожа</ntg.title.pale_skin>
+<ntg.description.pale_skin>Бледная кожа это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.pale_skin>
+<ntg.causes.pale_skin>
+    [hypotension] Гипотензия (от 50% или больше) |
+    [blood_loss] Кровопотеря (от 40% или больше)
+</ntg.causes.pale_skin>
+<ntg.treatments.pale_skin>
+    Лечение причины.
+</ntg.treatments.pale_skin>
+
+<!-- Shortness Of Breath -->
+<ntg.title.shortness_of_breath>Сбивчивое дыхание</ntg.title.shortness_of_breath>
+<ntg.description.shortness_of_breath>Сбивчивое дыхание это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.shortness_of_breath>
+<ntg.causes.shortness_of_breath>
+    [heart_attack] Сердечный приступ |
+    [lung_damage] Повреждение лёгких (от 45% или больше) |
+    [pneumothorax] Пневмоторакс (от 40% или больше) |
+    [cardiac_tamponade] Сердечная тампонада (от 10% или больше) |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 - 70%) |
+    [hypoxemia] Гипоксемия (от 20% или больше) |
+    [heart_damage] Повреждение сердца (от 80% или больше)
+</ntg.causes.shortness_of_breath>
+<ntg.treatments.shortness_of_breath>
+    Лечение причины.
+</ntg.treatments.shortness_of_breath>
+
+<!-- Cough -->
+<ntg.title.cough>Кашель</ntg.title.cough>
+<ntg.description.cough>Кашель это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.cough>
+<ntg.causes.cough>
+    [lung_damage] Повреждение лёгких (от 50% или больше) |
+    [heart_damage] Повреждение сердца (от 50% или больше) |
+    [cardiac_tamponade] Сердечная тампонада (от 20% или больше)
+</ntg.causes.cough>
+<ntg.treatments.cough>
+    Лечение причины.
+</ntg.treatments.cough>
+
+<!-- Nausea -->
+<ntg.title.nausea>Тошнота</ntg.title.nausea>
+<ntg.description.nausea>Тошнота это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.nausea>
+<ntg.causes.nausea>
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0-90%) |
+    [withdrawal] Ломка (от 40% или больше) |
+    [radiation_sickness] Радиационное поражение (от 80% или больше) |
+    [kidney_damage] Повреждение почек (от 60% или больше) |
+    [concussion] Контузия |
+    Быть рядом с органами вне контейнера
+</ntg.causes.nausea>
+<ntg.effects.nausea>
+    Замедляет движение персонажа на 10%
+</ntg.effects.nausea>
+<ntg.treatments.nausea>
+    Лечение причины.
+</ntg.treatments.nausea>
+
+<!-- Increased Heartrate -->
+<ntg.title.increased_heartrate>Increased Heartrate</ntg.title.increased_heartrate>
+<ntg.description.increased_heartrate>Increased heartrate это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов; если только пульс не нарастает постепенно, что означало бы, что у вас фибрилляция.</ntg.description.increased_heartrate>
+<ntg.causes.increased_heartrate>
+    [acidosis] Ацидоз (от 20% или больше) |
+    [sepsis] Сепсис (от 20% или больше) |
+    [blood_loss] Кровопотеря (от 40% или больше) |
+    [pneumothorax] Пневмоторакс (от 30% или больше) |
+    [withdrawal] Ломка (Алкогольная ломка, от 75% или больше) |
+    [mechanic_fibrillation] Фибрилляция |
+    [adrenaline] Адреналин
+</ntg.causes.increased_heartrate>
+<ntg.treatments.increased_heartrate>
+    Лечение причины.
+</ntg.treatments.increased_heartrate>
+
+<!-- Confusion -->
+<ntg.title.confusion>Спутанность сознания</ntg.title.confusion>
+<ntg.description.confusion>Спутанность сознания это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.confusion>
+<ntg.causes.confusion>
+    [acidosis] Ацидоз (от 15% или больше) |
+    [sepsis] Сепсис (от 40% или больше) |
+    [hypotension] Гипотензия (от 30% или менее) |
+    [hypoxemia] Гипоксемия (от 50% или больше) |
+    [withdrawal] Ломка (Алкогольная ломка, от 80% или больше) |
+    [concussion] Контузия |
+    [anesthesia] Анестезия
+</ntg.causes.confusion>
+<ntg.treatments.confusion>
+    Лечение причины.
+</ntg.treatments.confusion>
+
+<!-- Lightheadedness -->
+<ntg.title.lightheadedness>Головокружение</ntg.title.lightheadedness>
+<ntg.description.lightheadedness>Головокружение это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.lightheadedness>
+<ntg.causes.lightheadedness>
+    [hypotension] Гипотензия (от 60% или менее)
+</ntg.causes.lightheadedness>
+<ntg.treatments.lightheadedness>
+    Лечение причины.
+</ntg.treatments.lightheadedness>
+
+<!-- Blurred Vision -->
+<ntg.title.blurred_vision>Размытое зрение</ntg.title.blurred_vision>
+<ntg.description.blurred_vision>Размытое зрение это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.blurred_vision>
+<ntg.causes.blurred_vision>
+    [hypotension] Гипотензия (от 55% или менее) |
+    [concussion] Контузия |
+    [anesthesia] Анестезия
+</ntg.causes.blurred_vision>
+<ntg.effects.blurred_vision>
+    Приводит к размытию зрения у персонажа
+</ntg.effects.blurred_vision>
+<ntg.treatments.blurred_vision>
+    Лечение причины.
+</ntg.treatments.blurred_vision>
+
+<!-- Leg Swelling -->
+<ntg.title.leg_swelling>Отёк ног</ntg.title.leg_swelling>
+<ntg.description.leg_swelling>Отёк ног это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.leg_swelling>
+<ntg.causes.leg_swelling>
+    [liver_damage] Повреждение печени (от 40% или больше) |
+    [kidney_damage] Повреждение почек (от 60% или больше) |
+    [heart_damage] Повреждение сердца (от 80% или больше)
+</ntg.causes.leg_swelling>
+<ntg.treatments.leg_swelling>
+    Лечение причины.
+</ntg.treatments.leg_swelling>
+
+<!-- Wheezing -->
+<ntg.title.wheezing>Свистящие хрипы</ntg.title.wheezing>
+<ntg.description.wheezing>Свистящие хрипы это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.wheezing>
+<ntg.causes.wheezing>
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0-90%)
+</ntg.causes.wheezing>
+<ntg.treatments.wheezing>
+    Лечение причины.
+</ntg.treatments.wheezing>
+
+<!-- Weakness -->
+<ntg.title.weakness>Слабость</ntg.title.weakness>
+<ntg.description.weakness>Слабость это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.weakness>
+<ntg.causes.weakness>
+    [cardiac_tamponade] Сердечная тампонада (от 30% или больше) |
+    [blood_loss] Кровопотеря (от 60% или больше) |
+    [acidosis] Ацидоз (от 35% или больше)
+</ntg.causes.weakness>
+<ntg.effects.weakness>
+    Понижает урон холодным оружием на 80%
+</ntg.effects.weakness>
+<ntg.treatments.weakness>
+    Лечение причины.
+</ntg.treatments.weakness>
+
+<!-- Fever -->
+<ntg.title.fever>Лихорадка</ntg.title.fever>
+<ntg.description.fever>Лихорадка это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.fever>
+<ntg.causes.fever>
+    [sepsis] Сепсис (5% или больше) |
+    [withdrawal] Ломка (Алкогольная ломка, от 90% или больше) |
+    [anesthesia] Анестезия
+</ntg.causes.fever>
+<ntg.treatments.fever>
+    Лечение причины.
+</ntg.treatments.fever>
+
+<!-- Sweating -->
+<ntg.title.sweating>Потеет</ntg.title.sweating>
+<ntg.description.sweating>Потеет это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.sweating>
+<ntg.causes.sweating>
+    [heart_attack] Сердечный приступ |
+    [withdrawal] Ломка (любого типа, от 30% или больше)
+</ntg.causes.sweating>
+<ntg.treatments.sweating>
+    Лечение причины.
+</ntg.treatments.sweating>
+
+<!-- Bloating -->
+<ntg.title.bloating>Вздутие</ntg.title.bloating>
+<ntg.description.bloating>Вздутие это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.bloating>
+<ntg.causes.bloating>
+    [liver_damage] Повреждение печени (от 50% или больше)
+</ntg.causes.bloating>
+<ntg.treatments.bloating>
+    Лечение причины.
+</ntg.treatments.bloating>
+
+<!-- Inflammation -->
+<ntg.title.inflammation>Воспаление</ntg.title.inflammation>
+<ntg.description.inflammation>Воспаление это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.inflammation>
+<ntg.causes.inflammation>
+    [infected_wounds] Зараженные раны (от 10% или больше) |
+    [foreign_bodies] Инородные тела (от 15% или больше)
+</ntg.causes.inflammation>
+<ntg.treatments.inflammation>
+    Лечение причины.
+</ntg.treatments.inflammation>
+
+<!-- Jaundice -->
+<ntg.title.jaundice>Желтуха</ntg.title.jaundice>
+<ntg.description.jaundice>Желтуха это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.jaundice>
+<ntg.causes.jaundice>
+    [liver_damage] Повреждение печени (от 80% или больше)
+</ntg.causes.jaundice>
+<ntg.treatments.jaundice>
+    Лечение причины.
+</ntg.treatments.jaundice>
+
+<!-- Abdominal Discomfort -->
+<ntg.title.abdominal_discomfort>Дискомфорт в животе</ntg.title.abdominal_discomfort>
+<ntg.description.abdominal_discomfort>Дискомфорт в животе это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.abdominal_discomfort>
+<ntg.causes.abdominal_discomfort>
+    [liver_damage] Повреждение печени (от 65% или больше)
+</ntg.causes.abdominal_discomfort>
+<ntg.treatments.abdominal_discomfort>
+    Лечение причины.
+</ntg.treatments.abdominal_discomfort>
+
+<!-- Headache -->
+<ntg.title.headache>Головная боль</ntg.title.headache>
+<ntg.description.headache>Головная боль это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.headache>
+<ntg.causes.headache>
+    [blood_loss] Кровопотеря (от 50% или больше) |
+    [acidosis] Ацидоз (от 20% или больше) |
+    [hypoxemia] Гипоксемия (от 40% или больше) |
+    [hypotension] Гипотензия (от 60% или менее) |
+    [stroke] Инсульт |
+    [withdrawal] Ломка (Алкогольная ломка, от 50% или больше) |
+    [fractures] Переломы (Перелом черепа) |
+    [concussion] Контузия
+</ntg.causes.headache>
+<ntg.effects.headache>
+    Экран персонажа будет нечётким
+</ntg.effects.headache>
+<ntg.treatments.headache>
+    Лечение причины |
+    [analgesia] Анальгезия (Болеутоляющее) |
+    [anesthesia] Анестезия (Болеутоляющее)
+</ntg.treatments.headache>
+
+<!-- Craving -->
+<ntg.title.craving>Ломка</ntg.title.craving>
+<ntg.description.craving>Ломка это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.craving>
+<ntg.causes.craving>
+    [withdrawal] Ломка (Любой вариант, от 20% или больше)
+</ntg.causes.craving>
+<ntg.treatments.craving>
+    Лечение причины
+</ntg.treatments.craving>
+
+<!-- Palpitations -->
+<ntg.title.palpitations>Тремор</ntg.title.palpitations>
+<ntg.description.palpitations>Тремор это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.palpitations>
+<ntg.causes.palpitations>
+    [alkalosis] Алкалоз (от 20% или больше)
+</ntg.causes.palpitations>
+<ntg.treatments.palpitations>
+    Лечение причины
+</ntg.treatments.palpitations>
+
+<!-- Spasms -->
+<ntg.title.spasms>Спазмы</ntg.title.spasms>
+<ntg.description.spasms>Спазмы это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов. Спазмы вызовут у пацианта подёргивания и произвольные движения, что затруднит удержание его на руках.
+Спазмы делают это при помощи небольших невидимых взрывов на конечности, которые не наносят ничего кроме отбрасывания.</ntg.description.spasms>
+<ntg.causes.spasms>
+    [seizure] Припадок
+</ntg.causes.spasms>
+<ntg.effects.spasms>
+    Персонаж будет падать на землю и произвольно дёргаться
+</ntg.effects.spasms>
+<ntg.treatments.spasms>
+    Лечение причины
+</ntg.treatments.spasms>
+
+<!-- Abdominal Pain -->
+<ntg.title.abdominal_pain>Боль в животе</ntg.title.abdominal_pain>
+<ntg.description.abdominal_pain>Боль в животе это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.abdominal_pain>
+<ntg.causes.abdominal_pain>
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 - 80%) |
+    [aortic_rupture] Аортальное кровотечение
+</ntg.causes.abdominal_pain>
+<ntg.effects.abdominal_pain>
+    Скорость персонажа будет снижена вдвое на 1 секунду каждые 3 до 6 секунд
+</ntg.effects.abdominal_pain>
+<ntg.treatments.abdominal_pain>
+    Лечение причины |
+    [analgesia] Анальгезия (Болеутоляющее) |
+    [anesthesia] Анестезия (Болеутоляющее)
+</ntg.treatments.abdominal_pain>
+<ntg.treatments.abdominal_pain>
+    Лечение причины
+</ntg.treatments.abdominal_pain>
+
+<!-- Chest Pain -->
+<ntg.title.chest_pain>Боль в груди</ntg.title.chest_pain>
+<ntg.description.chest_pain>Боль в груди это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.chest_pain>
+<ntg.causes.chest_pain>
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 - 60%) |
+    [fractures] Переломы (Перелом рёбер) |
+    [aortic_rupture] Аортальное кровотечение
+</ntg.causes.chest_pain>
+<ntg.effects.chest_pain>
+    Скорость персонажа будет снижена вдвое на 1 секунду каждые 3 до 6 секунд
+</ntg.effects.chest_pain>
+<ntg.treatments.chest_pain>
+    Лечение причины |
+    [analgesia] Анальгезия (Болеутоляющее) |
+    [anesthesia] Анестезия (Болеутоляющее)
+</ntg.treatments.chest_pain>
+
+<!-- Intense Pain -->
+<ntg.title.intense_pain>Сильная боль</ntg.title.intense_pain>
+<ntg.description.intense_pain>Сильная боль это симптом, что значит он не фатален и не вызывает каких-либо других аффликтов.</ntg.description.intense_pain>
+<ntg.causes.intense_pain>
+    [dislocations] Dislocations |
+    [fractures] Переломы |
+    [traumatic_amputation] Травматическая Ампутация
+</ntg.causes.intense_pain>
+<ntg.effects.intense_pain>
+    Скорость персонажа будет снижена вдвое на 1 секунду каждые 3 до 6 секунд
+</ntg.effects.intense_pain>
+<ntg.treatments.intense_pain>
+    Лечение причины |
+    Стабилизация вывиха бинтом, или перелома гипсовой повязкой |
+    [analgesia] Анальгезия (Болеутоляющее) |
+    [anesthesia] Анестезия (Болеутоляющее)
+</ntg.treatments.intense_pain>
+
+<!-- Vomiting -->
+<ntg.title.vomiting>Рвота</ntg.title.vomiting>
+<ntg.description.vomiting>Рвота обычно не причиняет вреда, а иногда может быть даже полезна, поскольку вызывает алкалоз.</ntg.description.vomiting>
+<ntg.causes.vomiting>
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 - 40%) |
+    [withdrawal] Ломка (Алкогольная ломка, 60% или больше) |
+    [drunk] Опьянение (от 100%) |
+    [kidney_damage] Повреждение почек (60% или больше) |
+    [raptor_bane_extract] Бич раптора
+</ntg.causes.vomiting>
+<ntg.effects.vomiting>
+    Скорость персонажа будет снижена на 20% |
+    [alkalosis] Алкалоз
+</ntg.effects.vomiting>
+
+<!-- /*- Affliction Pages -*/ -->
+<!-- Head/Brain -->
+<!-- Neurotrauma-->
+<ntg.title.neurotrauma>Нейротравма</ntg.title.neurotrauma>
+<ntg.description.neurotrauma>Нейротравма это одна из немногих вещей, который может наносить прямой урон вашему здоровью. Нейротравма крайне опасна и может накапливаться очень быстро, а при достижении 200% мгновенно убьет игрока.
+\nМозг заживает со скоростью 0.1% в секунду, если конфигурация не изменена и ничего не повреждает его. Кроме того, переломы черепа препятствуют естественной регенерации нейротравмы.
+\nСкорость нарастания или уменьшения нейротравмы зависит от силы аффликтов всех ее причин в совокупности.</ntg.description.neurotrauma>
+<ntg.causes.neurotrauma>
+    [stroke] Инсульт |
+    [liver_damage] Повреждение печени (от 80% или больше, точка, от которой оно опережает естественную регенерацию) |
+    [kidney_damage] Повреждение почек (от 100% или больше, точка, от которой оно опережает естественную регенерацию) |
+    [sepsis] Сепсис (от 25% или больше, точка, от которой оно опережает естественную регенерацию) |
+    [hypoxemia] Гипоксемия (от 10% или больше, точка, от которой оно опережает естественную регенерацию) |
+    [tourniquet] Использование жгута на голове |
+    [methamphetamine] Метамфетамин |
+    [hyperzine] Гиперцин |
+    [traumatic_shock] Травматический шок (equal to strength divided by 100 в секунду, 10% or more is the point at which it outpaces natural regeneration) |
+    [cyanide_poisoning] Cyanide Poisoning (от 70% или больше) |
+    [gunshot_wound] Has a chance to be inflicted after a gunshot wound to the head
+</ntg.causes.neurotrauma>
+<ntg.effects.neurotrauma>
+    Direct damage to vitality |
+    Instant death, if at 200% |
+    [respiratory_arrest] Остановка дыхания (от 100% или больше) |
+    [unconsciousness] Без сознания (от 100% или больше)
+</ntg.effects.neurotrauma>
+<ntg.treatments.neurotrauma>
+    Лечение причины |
+    [mannitol] Mannitol
+</ntg.treatments.neurotrauma>
+
+<!-- Stroke -->
+<ntg.title.stroke>Инсульт</ntg.title.stroke>
+<ntg.description.stroke>Инсульт необходимо лечить как можно быстрее, чтобы уменьшить повреждение мозга. Стрептокиназу НЕЛЬЗЯ использовать на пациентах с инсультом, так как она разжижает кровь, препятствуя свертыванию, что еще больше повреждает мозг.</ntg.description.stroke>
+<ntg.causes.stroke>
+    [hypertension] Гипертензия (от 150% или больше)
+</ntg.causes.stroke>
+<ntg.effects.stroke>
+    [neurotrauma] Нейротравма |
+    [seizure] Припадок |
+    [coma] Кома |
+    [headache] Головная боль
+</ntg.effects.stroke>
+<ntg.treatments.stroke>
+[open_close_surgery] Открыть / Закрыть операцию
+</ntg.treatments.stroke>
+
+<!-- Ломка -->
+<ntg.title.withdrawal>Ломка</ntg.title.withdrawal>
+<ntg.description.withdrawal>Ломка возникает, когда у персонажа есть зависимость, но он не принимал вещества для этой зависимости в последнее время.</ntg.description.withdrawal>
+<ntg.causes.withdrawal>
+Химикатная / Алкогольная / Наркотическая зависимость
+</ntg.causes.withdrawal>
+<ntg.effects.generalwithdrawal>
+    [craving] Тяга к веществам (от 20% или больше) |
+    [sweating] Потливость (от 30% или больше) |
+    Скорость передвижения на 10% медленнее (от 20% или больше) |
+    Скорость передвижения на 30% медленнее (от 40% или больше) |
+    Скорость передвижения на 50% медленнее (от 80% или больше) |
+    [nausea] Тошнота (от 40% или больше)
+</ntg.effects.generalwithdrawal>
+<ntg.effects.alcoholwithdrawal>
+    [fever] Лихорадка (от 90% или больше) |
+    [vomiting] Рвота (от 60% или больше) |
+    [headache] Головная боль (от 50% или больше) |
+    [confusion] Спутанность сознания (от 80% или больше) |
+    [increased_heartrate] Учащённое сердцебиение (от 75% или больше) |
+    [seizure] Припадок (от 50% или больше) |
+    [hypertension] Гипертензия
+</ntg.effects.alcoholwithdrawal>
+<ntg.treatments.withdrawal>
+    [haloperidol] Галоперидол (только для Алкогольной ломки) |
+    [naloxone] Налоксон (только для Опиатной ломки) |
+    [ambubag] Использование мешка Амбу, наполненного краской (только для Химической ломки) |
+    Введение большего количества вещества, от которого возникла зависимость |
+    Постельный режим
+</ntg.treatments.withdrawal>
+
+<!-- Opiate Overdose -->
+<ntg.title.opiate_overdose>Передозировка опиоидами</ntg.title.opiate_overdose>
+<ntg.description.opiate_overdose>Передозировка опиоидами редка и возникает только при злоупотреблении опиоидами. Однако при превышении порога в 50% она очень смертельна и требует экстренной помощи.</ntg.description.opiate_overdose>
+<ntg.causes.opiate_overdose>
+    Приём слишком большого количества следующих опиоидов: |
+    [opium] Опиум |
+    [morphine] Морфин |
+    [fentanyl] Фентанил |
+    [analgesic_tank] Анальгезирующий баллон
+</ntg.causes.opiate_overdose>
+<ntg.effects.opiate_overdose>
+    [respiratory_arrest] Остановка дыхания (от 60% или больше) |
+    [hypoventilation] Гиповентиляция (от 30% или больше) |
+    [seizure] Припадок |
+    [unconsciousness] Без сознания (от 60% или больше) |
+    Скорость передвижения на 50% медленнее (от 50% или больше)
+</ntg.effects.opiate_overdose>
+<ntg.treatments.opiate_overdose>
+    [naloxone] Налоксон
+</ntg.treatments.opiate_overdose>
+
+<!-- Seizure -->
+<ntg.title.seizure>Припадок</ntg.title.seizure>
+<ntg.description.seizure>Припадки будут вызывать падение в рагдолл при каждом срабатывании.</ntg.description.seizure>
+<ntg.causes.seizure>
+    [stroke] Инсульт |
+    [acidosis] Ацидоз |
+    [alkalosis] Алкалоз |
+    [withdrawal] Ломка (Алкогольная ломка, от 50% или больше) |
+    [opiate_overdose] Передозировка опиоидами (от 50% или больше) |
+    [anesthesia] Анестезия
+</ntg.causes.seizure>
+<ntg.effects.seizure>
+    [unconsciousness] Без сознания |
+    [spasms] Спазмы
+</ntg.effects.seizure>
+<ntg.treatments.seizure>
+    Лечение причины
+</ntg.treatments.seizure>
+
+<!-- Unconsciousness -->
+<ntg.title.unconsciousness>Без сознания</ntg.title.unconsciousness>
+<ntg.description.unconsciousness>Без сознания обычно означает, что случилось что-то очень серьезное, и пациенту потребуется лечение как можно скорее.
+\nБез сознания скрывает психические симптомы, а также функционирует как операционный стол для хирургии, что означает, что вы можете безопасно проводить операцию без стола или Анальгезии / Анестезии, пока ваш пациент без сознания.</ntg.description.unconsciousness>
+<ntg.causes.unconsciousness>
+    Имея менее 0 здоровья |
+    [hypoxemia] Гипоксемия (от 80% или больше) |
+    [neurotrauma] Нейротравма (от 100% или больше) |
+    [coma] Кома (от 15% или больше) |
+    [aortic_rupture] Аортальное кровотечение |
+    [seizure] Припадок |
+    [anesthesia] Анестезия |
+    [opiate_overdose] Передозировка опиоидами (от 60% или больше) |
+    [stasis_bag] Нахождение в стазис-мешке
+</ntg.causes.unconsciousness>
+<ntg.effects.unconsciousness>
+    Неспособность двигаться или говорить |
+    [oxygen_low] Нехватка кислорода (если вызвано недостатком здоровья) |
+    Позволяет использовать хирургические инструменты на персонаже |
+    [traumatic shock] Предотвращает Травматический шок от хирургии
+</ntg.effects.unconsciousness>
+<ntg.treatments.unconsciousness>
+Лечение причины
+</ntg.treatments.unconsciousness>
+
+<!-- Coma -->
+<ntg.title.coma>Кома</ntg.title.coma>
+<ntg.description.coma>Кома часто случается после удушья, и обычно не фатальна при надлежащей медицинской помощи. Рекомендуемый курс действий — надеть автопульс на пациента, если состояние достаточно серьезное.</ntg.description.coma>
+<ntg.causes.coma>
+    [stroke] Инсульт |
+    [cardiac_arrest] Остановка сердца |
+    [acidosis] Высокий уровень Ацидоза (от 60% или больше) |
+    [morbusine_poisoning] Отравление морбузином (от 20% или больше) |
+    [naloxone] Неуспешное применение Налоксона
+</ntg.causes.coma>
+<ntg.effects.coma>
+    [cardiac_arrest] Остановка сердца (от 40% или больше) |
+    [unconsciousness] Без сознания (от 15% или больше)
+</ntg.effects.coma>
+<ntg.treatments.coma>
+Лечение причины и время
+</ntg.treatments.coma>
+
+<!-- Spinal Cord Injury -->
+<ntg.title.spinal_cord_injury>Повреждение позвоночного столба</ntg.title.spinal_cord_injury>
+<ntg.description.spinal_cord_injury>Повреждения позвоночного столба лишат вас способности двигаться или говорить, что может косвенно привести к смерти. Повреждения позвоночного столба должны быть вылечены после лечения перелома шеи, иначе они просто вернутся.</ntg.description.spinal_cord_injury>
+<ntg.causes.spinal_cord_injury>
+    [fractures] Переломы (перелом шеи)
+</ntg.causes.spinal_cord_injury>
+<ntg.effects.spinal_cord_injury>
+    Неспособность двигаться или говорить |
+    [analgesia] Анальгезия
+</ntg.effects.spinal_cord_injury>
+<ntg.treatments.spinal_cord_injury>
+    Применить импланты позвоночного столба до наложения швов во время остеосинтетической операции |
+    [spinal_cord_implants] Импланты позвоночного столба |
+    [osteosynthesis_surgery] Остеосинтетическая операция
+</ntg.treatments.spinal_cord_injury>
+
+<!-- Concussion -->
+<ntg.title.concussion>Контузия</ntg.title.concussion>
+<ntg.description.concussion>Контузия вызывается сильным ударом по голове. Она периодически вызывает тошноту, размытое зрение, головные боли и спутанность сознания.
+Хотя и доставляет неудобства, контузии не смертельны. Поскольку они являются типом Повреждения (тип аффликта), их можно лечить любыми предметами, которые напрямую лечат повреждения.</ntg.description.concussion>
+<ntg.causes.concussion>
+    [internal_wounds] Внутренние раны |
+    [open_wounds] Повреждения глубоких тканей и Укусы (открытые раны)
+</ntg.causes.concussion>
+<ntg.effects.concussion>
+    [nausea] Тошнота |
+    [blurred_vision] Размытое зрение |
+    [headache] Головная боль |
+    [confusion] Спутанность сознания
+</ntg.effects.concussion>
+<ntg.prevention.concussion>
+    Ношение шлема
+</ntg.prevention.concussion>
+<ntg.treatments.concussion>
+    Постельный режим |
+    Экстракт Экстракт взрывного граната
+</ntg.treatments.concussion>
+
+<!-- Drunk -->
+<ntg.title.drunk>Опьянение</ntg.title.drunk>
+<ntg.description.drunk>Употребление алкоголя вызовет у персонажа опьянение, вызывая различные, в основном негативные эффекты, особенно при высокой силе.</ntg.description.drunk>
+<ntg.causes.drunk>
+    Этанол |
+    Ром |
+    Бутылка пива
+</ntg.causes.drunk>
+<ntg.effects.drunk>
+    Снижение скорости передвижения (от 20% или больше) |
+    Искажение экрана (от 20% или больше) |
+    [analgesia] Анальгезия (от 20% или больше, не дает более 5%) |
+    Алкогольная зависимость (от 20% или больше) |
+    [liver_damage] Повреждение печени (от 40% или больше)
+</ntg.effects.drunk>
+<ntg.treatments.drunk>
+Постельный режим
+</ntg.treatments.drunk>
+
+<!-- Lungs -->
+<!-- Остановка дыхания -->
+<ntg.title.respiratory_arrest>Остановка дыхания</ntg.title.respiratory_arrest>
+<ntg.description.respiratory_arrest>Остановка дыхания быстро вызовет Нехватку кислорода и удушит жертву, и должна быть устранена быстро.
+Нахождение рядом с операционным столом / больничной койкой или ношение АвтоПульса предотвратит негативные эффекты остановки дыхания.</ntg.description.respiratory_arrest>
+<ntg.causes.respiratory_arrest>
+    [lung_damage] Повреждение лёгких (от 100%) |
+    [traumatic_shock] Травматический шок (от 30% или больше) |
+    [neurotrauma] Нейротравма (от 100% или больше) |
+    [hypoxemia] Гипоксемия (от 70% или больше) |
+    [opiate_overdose] Передозировка опиоидами (от 60% или больше) |
+    [stasis_bag] Стазис-мешок |
+    [morbusine_poisoning] Отравление морбузином (от 50% или больше)
+</ntg.causes.respiratory_arrest>
+<ntg.effects.respiratory_arrest>
+    [oxygen_low] Нехватка кислорода |
+    [acidosis] Ацидоз
+</ntg.effects.respiratory_arrest>
+<ntg.treatments.respiratory_arrest>
+    Лечение причины |
+    [ambubag] Применение мешка Амбу с баллоном кислородита внутри |
+    Нахождение в сознании
+</ntg.treatments.respiratory_arrest>
+<ntg.firstaid.respiratory_arrest>
+    [surgery_table] Нахождение рядом с операционным столом |
+    [autopulse] Применение АвтоПульса
+</ntg.firstaid.respiratory_arrest>
+
+<!-- Повреждение лёгких -->
+<ntg.title.lung_damage>Повреждение лёгких</ntg.title.lung_damage>
+<ntg.description.lung_damage>Повреждение лёгких не смертельно, пока оно ниже 100%. Лёгкие заживают со скоростью 0.01% в секунду; предполагая, что конфигурация не изменена, ничто не повреждает их и они ниже 100% повреждения.</ntg.description.lung_damage>
+<ntg.causes.lung_damage>
+    [abx] Антибиотики широкого спектра |
+    [liquid_oxygenite] Жидкий кислородит |
+    [ambubag] Использование мешка Амбу, содержащего сварочное/зажигательное топливо или краску |
+    Курение |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 до 70%) |
+    [radiation_sickness] Радиационное поражение (от 28% или больше) |
+    [sepsis] Сепсис (от 3% или больше) |
+    [hypoxemia] Гипоксемия (от 4% или больше) |
+    [open_wounds] Сильный ушиб (открытая рана) |
+    [internal_wounds] Огнестрельные раны (внутренние раны)
+</ntg.causes.lung_damage>
+<ntg.effects.lung_damage>
+    [cough] Кашель (от 50% или больше) |
+    [shortness_of_breath] Сбивчивое дыхание (от 45% или больше) |
+    [respiratory_arrest] Остановка дыхания (от 100%)
+</ntg.effects.lung_damage>
+<ntg.treatments.lung_damage>
+    Время |
+    [thiamine] Тиамин |
+    [organ_transplant_surgery] Операция по пересадке органов
+</ntg.treatments.lung_damage>
+
+<!-- Пневмоторакс -->
+<ntg.title.pneumothorax>Пневмоторакс</ntg.title.pneumothorax>
+<ntg.description.pneumothorax>Пневмоторакс предотвратит снижение Гипоксемии. Хотя сам по себе не смертелен, Пневмоторакс может легко убить, если сочетается с аффликтами, вызывающими Гипоксемию.
+Негативные эффекты Пневмоторакса можно временно нейтрализовать с помощью Иглы</ntg.description.pneumothorax>
+<ntg.causes.pneumothorax>
+    [fractures] Переломы (переломы рёбер, если не забинтованы) |
+    Травма (огнестрельные ранения, взрывы, рваные раны, укусы, сильные ушибы) |
+    [needle] Применение Иглы
+</ntg.causes.pneumothorax>
+<ntg.effects.pneumothorax>
+    [shortness_of_breath] Сбивчивое дыхание (от 40% или больше) |
+    [hyperventilation] Гипервентиляция (от 15% или больше) |
+    [increased_heartrate] Учащённое сердцебиение (от 30% или больше) |
+    [hypoxemia] Предотвращает снижение Гипоксемии по тяжести
+</ntg.effects.pneumothorax>
+<ntg.treatments.pneumothorax>
+    [drainage] Использование дренажа во время операции после Ретракторов кожи
+</ntg.treatments.pneumothorax>
+<ntg.firstaid.pneumothorax>
+    [needle] Применение Иглы
+</ntg.firstaid.pneumothorax>
+
+<!-- Гипервентиляция -->
+<ntg.title.hyperventilation>Гипервентиляция</ntg.title.hyperventilation>
+<ntg.description.hyperventilation>Гипервентиляция обычно безвредна и обычно может быть проигнорирована. Гипервентиляция и Гиповентиляция взаимно уничтожают друг друга.</ntg.description.hyperventilation>
+<ntg.causes.hyperventilation>
+    [hypotension] Гипотензия (от 80% или менее) |
+    [hypoxemia] Гипоксемия (от 10% или больше) |
+    [pneumothorax] Пневмоторакс (от 15% или больше) |
+    [sepsis] Сепсис (от 15% или больше) |
+    [adrenaline] Адреналин
+</ntg.causes.hyperventilation>
+<ntg.effects.hyperventilation>
+    [alkalosis] Алкалоз
+</ntg.effects.hyperventilation>
+<ntg.treatments.hyperventilation>
+    Лечение причины |
+    [hypoventilation] Вызывать Гиповентиляцию
+</ntg.treatments.hyperventilation>
+
+<!-- Гиповентиляция -->
+<ntg.title.hypoventilation>Гиповентиляция</ntg.title.hypoventilation>
+<ntg.description.hypoventilation>Гиповентиляция обычно безвредна и обычно может быть проигнорирована. Гиповентиляция и Гипервентиляция взаимно уничтожают друг друга.</ntg.description.hypoventilation>
+<ntg.causes.hypoventilation>
+    [analgesia] Анальгезия (от 20% или больше) |
+    [anesthesia] Анестезия (от 40% или больше) |
+    [opiate_overdose] Передозировка опиоидами (от 30% или больше)
+</ntg.causes.hypoventilation>
+<ntg.effects.hypoventilation>
+    [acidosis] Ацидоз
+</ntg.effects.hypoventilation>
+<ntg.treatments.hypoventilation>
+    Лечение причины |
+    [hyperventilation] Вызывать Гипервентиляцию
+</ntg.treatments.hypoventilation>
+
+<!-- Oxygen Low -->
+<ntg.title.oxygen_low>Нехватка кислорода</ntg.title.oxygen_low>
+<ntg.description.oxygen_low>Нехватка кислорода означает недостаток кислорода в лёгких; Гипоксемия — недостаток кислорода в крови. Нехватка кислорода вызывает гипоксемию, что является наиболее распространённым способом получить Нейротравму.</ntg.description.oxygen_low>
+<ntg.causes.oxygen_low>
+    [respiratory_arrest] Остановка дыхания |
+    [unconsciousness] Без сознания (если вызвано здоровьем) |
+    Нахождение в воде или в помещении без источника кислорода |
+    Экстракт взрывного граната |
+    [body_bag] Нахождение в мешке для тела |
+    [morbusine_poisoning] Отравление морбузином (от 50% или больше)
+</ntg.causes.oxygen_low>
+<ntg.effects.oxygen_low>
+[hypoxemia] Гипоксемия
+</ntg.effects.oxygen_low>
+<ntg.treatments.oxygen_low>
+    [surgery_table] Нахождение рядом с операционным столом или больничной койкой |
+    СЛР |
+    [autopulse] Применение АвтоПульса |
+    Дыхание кислородом |
+    [ambubag] Применение мешка Амбу с баллонами кислорода / кислородита
+</ntg.treatments.oxygen_low>
+
+<!-- Heart -->
+<!-- Cardiac Arrest -->
+<ntg.title.cardiac_arrest>Остановка сердца</ntg.title.cardiac_arrest>
+<ntg.description.cardiac_arrest>Остановка сердца вызовет резкое падение кровяного давления и должна быть устранена быстро. Остановка сердца не заживает сама по себе, поэтому её всегда нужно лечить напрямую.</ntg.description.cardiac_arrest>
+<ntg.causes.cardiac_arrest>
+    [heart_damage] Повреждение сердца (от 100%) |
+    [traumatic_shock] Травматический шок (от 40% или больше) |
+    [coma] Кома (от 40% или больше) |
+    [hypoxemia] Гипоксемия (от 80% или больше) |
+    [irregular_heartbeat] Нерегулярное сердцебиение (от 20% или больше) |
+    [mechanic_fibrillation] Фибрилляция |
+    [manual_defibrillator] Ручной дефибриллятор |
+    [stasis_bag] Нахождение в стазис-мешке |
+    [morbusine_poisoning] Отравление морбузином (от 50% или больше)
+</ntg.causes.cardiac_arrest>
+<ntg.effects.cardiac_arrest>
+    [coma] Кома |
+    [acidosis] Ацидоз |
+    [hypotension] Гипотензия (минимальное кровяное давление) |
+    [hypoxemia] Гипоксемия
+</ntg.effects.cardiac_arrest>
+<ntg.treatments.cardiac_arrest>
+    Лечение причины |
+    СЛР |
+    [autopulse] АвтоПульс |
+    [adrenaline] Адреналин |
+    [manual_defibrillator] Ручной дефибриллятор |
+    [aed] Автоматический наружный дефибриллятор (АНД)
+</ntg.treatments.cardiac_arrest>
+
+<!-- Сердечная тампонада -->
+<ntg.title.cardiac_tamponade>Сердечная тампонада</ntg.title.cardiac_tamponade>
+<ntg.description.cardiac_tamponade>Сердечная тампонада распространена во время миссий, включающих бой вне подводной лодки, таких как заброшенные аванпосты или обломки. Любой, кто показывает симптомы, должен немедленно вернуться на подводную лодку для лечения.</ntg.description.cardiac_tamponade>
+<ntg.causes.cardiac_tamponade>
+[open_wounds] Получение открытых ран на торс
+</ntg.causes.cardiac_tamponade>
+<ntg.effects.cardiac_tamponade>
+    [hypotension] Гипотензия |
+    [weakness] Слабость (от 30% или больше) |
+    [cough] Кашель (от 20% или больше) |
+    [shortness_of_breath] Сбивчивое дыхание (от 10% или больше)
+</ntg.effects.cardiac_tamponade>
+<ntg.treatments.cardiac_tamponade>
+[open_close_surgery] Открыть / Закрыть операцию
+</ntg.treatments.cardiac_tamponade>
+<ntg.firstaid.cardiac_tamponade>
+    [saline] Физиологический раствор |
+    [ringers_solution] Раствор Рингера |
+    [adrenaline] Адреналин |
+    [deusizine] Деусицин |
+    [autopulse] АвтоПульс |
+СЛР
+</ntg.firstaid.cardiac_tamponade>
+
+<!-- Heart Attack -->
+<ntg.title.heart_attack>Сердечный приступ</ntg.title.heart_attack>
+<ntg.description.heart_attack>Сердечный приступ должен быть вылечен как можно скорее, чтобы снизить риск отказа сердца.</ntg.description.heart_attack>
+<ntg.causes.heart_attack>
+    [hypertension] Гипертензия (от 150% или больше) |
+    [antibiotic_glue] Неудача при проверке навыка Антибиотический Клей
+</ntg.causes.heart_attack>
+<ntg.effects.heart_attack>
+    [sweating] Потеет |
+    [shortness_of_breath] Сбивчивое дыхание |
+    [heart_damage] Повреждение сердца
+</ntg.effects.heart_attack>
+<ntg.treatments.heart_attack>
+    Лечение причины |
+    [streptokinase] Стрептокиназа
+</ntg.treatments.heart_attack>
+
+<!-- Повреждение сердца -->
+<ntg.title.heart_damage>Повреждение сердца</ntg.title.heart_damage>
+<ntg.description.heart_damage>Повреждение сердца не смертельно, пока оно ниже 100%. Сердце заживает со скоростью 0.01% в секунду; при условии, что конфигурация не изменена, ничто не повреждает его и оно ниже 100% повреждения.</ntg.description.heart_damage>
+<ntg.causes.heart_damage>
+    [heart_attack] Сердечный приступ |
+    [abx] Антибиотики широкого спектра |
+    [liquid_oxygenite] Жидкий Оксигенит |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 и 70%) |
+    [mannitol] Маннитол |
+    [radiation_sickness] Радиационное поражение (от 29% или больше) |
+    [sepsis] Сепсис (от 3% или больше) |
+    [hypoxemia] Гипоксемия (от 4% или больше) |
+    [internal_wounds] Тупая травма |
+    [open_wounds] Огнестрельные ранения |
+    [sufforin_poisoning] Отравление Суффорином (от 75% или больше)
+</ntg.causes.heart_damage>
+<ntg.effects.heart_damage>
+    [cough] Кашель (от 50% или больше) |
+    [shortness_of_breath] Сбивчивое дыхание (от 80% или больше) |
+    [leg_swelling] Отёк ног (от 80% или больше) |
+    [cardiac_arrest] Остановка сердца (от 100%)
+</ntg.effects.heart_damage>
+<ntg.treatments.heart_damage>
+    Время |
+    [thiamine] Тиамин |
+    [organ_transplant_surgery] Операция по пересадке органов
+</ntg.treatments.heart_damage>
+
+<!-- Нерегулярное сердцебиение -->
+<ntg.title.irregular_heartbeat>Нерегулярное сердцебиение</ntg.title.irregular_heartbeat>
+<ntg.description.irregular_heartbeat>Нерегулярное сердцебиение — это когда сердце бьётся не с нормальной частотой и может привести к Остановке сердца</ntg.description.irregular_heartbeat>
+<ntg.causes.irregular_heartbeat>
+    [mechanic_fibrillation] Фибрилляция
+</ntg.causes.irregular_heartbeat>
+<ntg.effects.irregular_heartbeat>
+    [cardiac_arrest] Остановка сердца (от 20% или больше) |
+    [hypotension] Гипотензия
+</ntg.effects.irregular_heartbeat>
+<ntg.treatments.irregular_heartbeat>
+    Лечение причины |
+    CPR |
+    [autopulse] АвтоПульс |
+    [manual_defibrillator] Ручной дефибриллятор |
+    [aed] Автоматический наружный дефибриллятор (АНД)
+</ntg.treatments.irregular_heartbeat>
+
+<!-- Фибрилляция -->
+<ntg.title.mechanic_fibrillation>Фибрилляция</ntg.title.mechanic_fibrillation>
+<ntg.description.mechanic_fibrillation>Фибрилляция начинается с учащённого сердцебиения, которое медленно увеличивается. Как только Учащённое сердцебиение достигает 100%, жертва впадает в фибрилляцию, и начинаются симптомы.</ntg.description.mechanic_fibrillation>
+<ntg.causes.mechanic_fibrillation>
+    [aortic_rupture] Аортальное кровотечение |
+    [acidosis] Ацидоз |
+    [hypotension] Гипотензия |
+    [hypoxemia] Гипоксемия |
+    [anesthesia] Анестезия
+</ntg.causes.mechanic_fibrillation>
+<ntg.effects.mechanic_fibrillation>
+    [cardiac_arrest] Остановка сердца (от 20% или больше) |
+    [hypotension] Гипотензия (от 100%)
+</ntg.effects.mechanic_fibrillation>
+<ntg.treatments.mechanic_fibrillation>
+    Лечение причины |
+    [adrenaline] Адреналин (замедляет фибрилляцию) |
+    [manual_defibrillator] Ручной дефибриллятор |
+    [aed] Автоматический наружный дефибриллятор (АНД)
+</ntg.treatments.mechanic_fibrillation>
+
+<!-- Туловище -->
+<!-- Аортальное кровотечение -->
+<ntg.title.aortic_rupture>Аортальное кровотечение</ntg.title.aortic_rupture>
+<ntg.description.aortic_rupture>Аортальные разрывы — одна из самых серьёзных травм, которые может получить человек. Пострадавшему требуется немедленная медицинская помощь, и он, скорее всего, потеряет значительную часть крови.</ntg.description.aortic_rupture>
+<ntg.causes.aortic_rupture>
+    [bleeding] Кровотечение (Туловище, 80% или больше) |
+    [foreign_bodies] Инородные тела (Туловище, 20% или больше)
+</ntg.causes.aortic_rupture>
+<ntg.effects.aortic_rupture>
+    [blood_loss] 4% Кровопотери в секунду |
+    [internal_bleeding] 8% Внутреннее кровотечение в секунду |
+    [unconsciousness] Без сознания |
+    [mechanic_fibrillation] Фибрилляция |
+    [abdominal_pain] Боль в животе |
+    [chest_pain] Боль в груди
+</ntg.effects.aortic_rupture>
+<ntg.treatments.aortic_rupture>
+    [aortic_rupture_surgery] Операция для Аортального кровотечения |
+    [open_close_surgery] Открытая / Закрытая операция
+</ntg.treatments.aortic_rupture>
+<ntg.firstaid.aortic_rupture>
+    [stasis_bag] Стазис-мешок
+</ntg.firstaid.aortic_rupture>
+
+<!-- Внутреннее кровотечение -->
+<ntg.title.internal_bleeding>Внутреннее кровотечение</ntg.title.internal_bleeding>
+<ntg.description.internal_bleeding>Внутреннее кровотечение быстро истощает кровь у пациента и в большинстве случаев является чрезвычайной ситуацией.</ntg.description.internal_bleeding>
+<ntg.causes.internal_bleeding>
+    [open_wounds] Открытые раны |
+    [liver_damage] Повреждение печени (от 100%) |
+    [aortic_rupture] Аортальное кровотечение
+</ntg.causes.internal_bleeding>
+<ntg.effects.internal_bleeding>
+    [blood_loss] Кровопотеря |
+    [vomiting_blood] Рвота с кровью (от 50% или больше)
+</ntg.effects.internal_bleeding>
+<ntg.treatments.internal_bleeding>
+    [gel_ice_pack] Гелевый пакет со льдом |
+    [open_close_surgery] Открытая / Закрытая операция |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.internal_bleeding>
+
+<!-- Радиационное поражение -->
+<ntg.title.radiation_sickness>Радиационное поражение</ntg.title.radiation_sickness>
+<ntg.description.radiation_sickness>Низкие уровни радиационного поражения легко поддаются лечению, но если радиационное поражение достигнет достаточно высокого уровня, оно быстро начнёт убивать органы.
+Лёгкие получают больше повреждений от радиации, чем другие органы. Радиационное поражение появляется на сканере здоровья при 25% и выше.</ntg.description.radiation_sickness>
+<ntg.causes.radiation_sickness>
+    [health_scanner] Сканер здоровья (0.5% в секунду человеку, которого сканируют, 0.3% в секунду человеку, который сканирует, 1% при использовании как лечение, как бинт) |
+    Радиотоксин |
+    Ядерные взрывы |
+    Нахождение рядом с Нестабильным стержнем из фульгурия
+</ntg.causes.radiation_sickness>
+<ntg.effects.radiation_sickness>
+    [liver_damage] Повреждение печени (от 29% или больше) |
+    [heart_damage] Повреждение сердца (от 29% или больше) |
+    [kidney_damage] Повреждение почек (от 33% или больше) |
+    [lung_damage] Повреждение лёгких (от 28% или больше) |
+    [bone_damage] Повреждение костей (от 31% или больше) |
+    [nausea] Тошнота (от 80% или больше) |
+    [seizure] Припадок (от 50% или больше)
+</ntg.effects.radiation_sickness>
+<ntg.treatments.radiation_sickness>
+    Антирад
+</ntg.treatments.radiation_sickness>
+
+<!-- Повреждение почек -->
+<ntg.title.kidney_damage>Повреждение почек</ntg.title.kidney_damage>
+<ntg.description.kidney_damage>Повреждение почек обычно не смертельно, так как даже при развитии почечной недостаточности оно убивает крайне медленно.
+\nПовреждение почек не заживает ниже 50% повреждения, если оно пересекло порог в 50%, так как одна из почек погибла. Почки заживают со скоростью 0.01% в секунду, если жива одна почка, и со скоростью 0.02% в секунду, если живы обе почки; при условии, что конфигурация не изменена.</ntg.description.kidney_damage>
+<ntg.causes.kidney_damage>
+    [abx] Антибиотики широкого спектра |
+    [liquid_oxygenite] Жидкий Оксигенит |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 и 70%) |
+    [mannitol] Маннитол |
+    [radiation_sickness] Радиационное поражение (от 33% или больше) |
+    [sepsis] Сепсис (от 6% или больше) |
+    [hypoxemia] Гипоксемия (от 8% или больше) |
+    [internal_wounds] Тупая травма |
+    [open_wounds] Огнестрельные ранения |
+    [sufforin_poisoning] Отравление Суффорином (от 75% или больше)
+</ntg.causes.kidney_damage>
+<ntg.effects.kidney_damage>
+    [leg_swelling] Отёк ног (от 60% или больше) |
+    [acidosis] Ацидоз (от 80% или больше) |
+    [hypertension] Гипертензия |
+    [bone_damage] Повреждение костей (от 72% или больше) |
+    [vomiting] Рвота (от 60% или больше) |
+    [neurotrauma] Нейротравма (нейтрализует регенерацию Нейротравмы при 100%) |
+    [nausea] Тошнота (от 60% или больше)
+</ntg.effects.kidney_damage>
+<ntg.treatments.kidney_damage>
+    Время |
+    [thiamine] Тиамин |
+    [organ_transplant_surgery] Операция по пересадке органов
+</ntg.treatments.kidney_damage>
+
+<!-- Повреждение печени -->
+<ntg.title.liver_damage>Повреждение печени</ntg.title.liver_damage>
+<ntg.description.liver_damage>Повреждение печени, при развитии печёночной недостаточности, смертельно и может вызвать массивную кровопотерю в виде Внутреннего кровотечения.
+\nПечень заживает со скоростью 0.01% в секунду; при условии, что конфигурация не изменена, ничто не повреждает её и она ниже 100% повреждения.</ntg.description.liver_damage>
+<ntg.causes.liver_damage>
+    [abx] Антибиотики широкого спектра |
+    [liquid_oxygenite] Жидкий Оксигенит |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0 и 70%) |
+    [radiation_sickness] Радиационное поражение (от 29% или больше) |
+    [sepsis] Сепсис (от 3% или больше) |
+    [hypoxemia] Гипоксемия (от 4% или больше) |
+    [drunk] Опьянение (свыше 40%) |
+    [sufforin_poisoning] Отравление Суффорином (от 75% или больше) |
+    [internal_wounds] Тупая травма |
+    [open_wounds] Огнестрельные ранения
+</ntg.causes.liver_damage>
+<ntg.effects.liver_damage>
+    [leg_swelling] Отёк ног (от 40% или больше) |
+    [internal_bleeding] Внутреннее кровотечение (от 100%) |
+    [vomiting_blood] Рвота с кровью (от 100%) |
+    [hypertension] Гипертензия |
+    [neurotrauma] Нейротравма (от 80% или больше) |
+    [abdominal_discomfort] Дискомфорт в животе (от 65% или больше) |
+    [jaundice] Желтуха (от 80% или больше) |
+    [bloating] Вздутие (от 50% или больше) |
+    Снижает скорость заживления кровотечения, кровотечение совсем не заживает при 100% Повреждении печени
+</ntg.effects.liver_damage>
+<ntg.treatments.liver_damage>
+    Время |
+    [thiamine] Тиамин |
+    [organ_transplant_surgery] Операция по пересадке органов
+</ntg.treatments.liver_damage>
+
+<!-- Отравление морбузином -->
+<ntg.title.morbusine_poisoning>Отравление морбузином</ntg.title.morbusine_poisoning>
+<ntg.description.morbusine_poisoning>Состояние, показывающее наличие смертельного яда; смертельно, если не лечить.</ntg.description.morbusine_poisoning>
+<ntg.causes.morbusine_poisoning>
+    Морбузин
+</ntg.causes.morbusine_poisoning>
+<ntg.effects.morbusine_poisoning>
+    Искажения экрана |
+    Снижение скорости передвижения |
+    Хроматическая аберрация |
+    [oxygen_low] Нехватка кислорода (между 10 и 40%) |
+    [respiratory_arrest] Остановка дыхания (от 40% или больше) |
+    [cardiac_arrest] Остановка сердца (от 60% или больше) |
+    Оглушение (различные пороги жизненной силы)
+</ntg.effects.morbusine_poisoning>
+<ntg.treatments.morbusine_poisoning>
+    Противоядие от морбузина |
+    [toxin_filter] Наличие Токсин-фильтра на операционном столе и лёжка на нём
+</ntg.treatments.morbusine_poisoning>
+<ntg.firstaid.morbusine_poisoning>
+    Стабилозин
+</ntg.firstaid.morbusine_poisoning>
+
+<!-- Отравление цианидом -->
+<ntg.title.cyanide_poisoning>Отравление цианидом</ntg.title.cyanide_poisoning>
+<ntg.description.cyanide_poisoning>Состояние, показывающее наличие смертельного яда; смертельно, если не лечить.</ntg.description.cyanide_poisoning>
+<ntg.causes.cyanide_poisoning>
+    Цианид
+</ntg.causes.cyanide_poisoning>
+<ntg.effects.cyanide_poisoning>
+    Искажения экрана |
+    Размытие экрана |
+    Кожа становится синей |
+    Снижение скорости передвижения |
+    Снижает Заражение хаском (от 10% или больше) |
+    [hypoxemia] Гипоксемия (от 10% или больше) |
+    Оглушение (различные пороги жизненной силы)
+</ntg.effects.cyanide_poisoning>
+<ntg.treatments.cyanide_poisoning>
+    Противоядие от цианида |
+    [toxin_filter] Наличие Токсин-фильтра на операционном столе и лёжка на нём
+</ntg.treatments.cyanide_poisoning>
+<ntg.firstaid.cyanide_poisoning>
+    Стабилозин
+</ntg.firstaid.cyanide_poisoning>
+
+<!-- Отравление суффорином -->
+<ntg.title.sufforin_poisoning>Отравление суффорином</ntg.title.sufforin_poisoning>
+<ntg.description.sufforin_poisoning>Состояние, показывающее наличие смертельного яда; смертельно, если не лечить.</ntg.description.sufforin_poisoning>
+<ntg.causes.sufforin_poisoning>
+    Суффорин
+</ntg.causes.sufforin_poisoning>
+<ntg.effects.sufforin_poisoning>
+    Искажения экрана |
+    Размытие экрана |
+    Снижает Заражение хаском (от 10% или больше) |
+    [liver_damage] Повреждение печени (от 75% или больше) |
+    [heart_damage] Повреждение сердца (от 75% или больше) |
+    [kidney_damage] Повреждение почек (от 75% или больше) |
+    [vanilla_organ_damage] Повреждение органа ванилла (от 75% или больше) |
+    Оглушение (75% или больше при жизненной силе ниже 90%)
+</ntg.effects.sufforin_poisoning>
+<ntg.treatments.sufforin_poisoning>
+    Противоядие от суффорина |
+    [toxin_filter] Наличие Токсин-фильтра на операционном столе и лёжка на нём
+</ntg.treatments.sufforin_poisoning>
+<ntg.firstaid.sufforin_poisoning>
+    Стабилозин
+</ntg.firstaid.sufforin_poisoning>
+
+<!-- Повреждение органа ванилла -->
+<ntg.title.vanilla_organ_damage>Повреждение органа ванилла</ntg.title.vanilla_organ_damage>
+<ntg.description.vanilla_organ_damage>Побочный эффект некоторых лекарств. Дополнительное повреждение органов вызывается неудачей при проверке медицинского навыка при использовании этих лекарств.
+\nВ Нейротравме это не считается формой Повреждения (Тип аффликта) и не может быть вылечено источниками, которые лечат повреждения.</ntg.description.vanilla_organ_damage>
+<ntg.causes.vanilla_organ_damage>
+    [alien_blood] Чужая кровь (+3.75 или 7.5%) |
+    [abx] Антибиотики широкого спектра (+20 или 12% за время действия антибиотиков) |
+    Хлоралгидрат (+2.5%) |
+    [liquid_oxygenite] Жидкий Оксигенит (+6 или 10%) |
+    [mannitol] Маннитол (+5 или 10%) |
+    [methamphetamine] Метамфетамин (+15 или 30%) |
+    [sufforin_poisoning] Отравление Суффорином (от 75% или больше) |
+    [internal_wounds] Тупая травма |
+    [open_wounds] Огнестрельные ранения
+</ntg.causes.vanilla_organ_damage>
+<ntg.effects.vanilla_organ_damage>
+    Прямой урон жизненной силе в зависимости от силы аффликта
+</ntg.effects.vanilla_organ_damage>
+<ntg.treatments.vanilla_organ_damage>
+    Время |
+    [thiamine] Тиамин |
+    [deusizine] Деусицин |
+    [organ_transplant_surgery] Операция по пересадке органов вылечит часть повреждения органа ванилла свежими органами
+</ntg.treatments.vanilla_organ_damage>
+
+<!-- Analgesia -->
+<ntg.title.analgesia>Анальгезия</ntg.title.analgesia>
+<ntg.description.analgesia>Первый шаг во всех хирургических процедурах. Анальгезия — это аффликт, предотвращающий травматический шок во время операции и облегчающий боль.</ntg.description.analgesia>
+<ntg.causes.analgesia>
+    [opium] Опиум |
+    [morphine] Морфин |
+    [fentanyl] Фентанил |
+    [analgesic_tank] Анальгезирующий баллон |
+    [adrenaline] Адреналин (не даёт больше 4.5%) |
+    [spinal_cord_injury] Повреждение спинного мозга |
+    [drunk] Опьянение (от 20% или больше, не даёт больше 4.5%) |
+    [anesthesia] Анестезия
+</ntg.causes.analgesia>
+<ntg.effects.analgesia>
+    [hypoventilation] Гиповентиляция (от 20% или больше) |
+    25% Сопротивление урону (от 20% или больше) |
+    25% Сопротивление оглушению (от 20% или больше) |
+    Убирает штраф к прицеливанию от повреждённых рук (от 20% или больше) |
+    [internal_damage] Предотвращает Переломы/Вывихи от вызывания Внутреннего повреждения |
+    [wrench] Снижает требование к медицинскому навыку для проверки Гаечным ключом |
+    Позволяет использовать хирургические инструменты на пациенте
+</ntg.effects.analgesia>
+<ntg.treatments.analgesia>
+    Время |
+    [naloxone] Налоксон
+</ntg.treatments.analgesia>
+
+<!-- Анестезия -->
+<ntg.title.anesthesia>Анестезия</ntg.title.anesthesia>
+<ntg.description.anesthesia>Анестезия — это аффликт, предотвращающий травматический шок во время операции, и в отличие от Анальгезии, не требует операционного стола для проведения безопасной операции.</ntg.description.anesthesia>
+<ntg.causes.anesthesia>
+    [propofol] Пропофол
+</ntg.causes.anesthesia>
+<ntg.effects.anesthesia>
+    [hypoventilation] Гиповентиляция (от 40% или больше) |
+    [unconsciousness] Без сознания (от 15% или больше) |
+    [analgesia] Анальгезия (не более 5%) |
+    50% медленнее скорость передвижения
+</ntg.effects.anesthesia>
+<ntg.sideeffects.anesthesia>
+    [hypotension] Гипотензия |
+    [confusion] Спутанность сознания |
+    [blurred_vision] Размытое зрение |
+    [fever] Лихорадка |
+    [mechanic_fibrillation] Фибрилляция |
+    [seizure] Припадок |
+    [vomiting_blood] Рвота с кровью |
+    Психоз
+</ntg.sideeffects.anesthesia>
+<ntg.treatments.anesthesia>
+    Время |
+    [anaparalyzant] Анапарализант
+</ntg.treatments.anesthesia>
+
+<!-- Конечности -->
+<!-- Артериальное кровотечение -->
+<ntg.title.arterial_bleeding>Артериальное кровотечение</ntg.title.arterial_bleeding>
+<ntg.description.arterial_bleeding>Артериальные разрывы чрезвычайно опасны и требуют экстренной помощи как можно скорее. Наложение Жгута на поражённую конечность может дать время для лечения, но этого не следует делать на голове.
+\nАртерии, которые могут разорваться, включают сонную артерию на голове, плечевые артерии рук и бедренные артерии ног. Разрыв артерии туловища — это Аортальное кровотечение.</ntg.description.arterial_bleeding>
+<ntg.causes.arterial_bleeding>
+    [bleeding] Кровотечение (от 80% или больше) |
+    [traumatic_amputation] Травматическая ампутация |
+    [foreign_bodies] Инородные тела (от 20% или больше) |
+    Шанс возникновения при переломе кости
+</ntg.causes.arterial_bleeding>
+<ntg.effects.arterial_bleeding>
+    [blood_loss] 1.5% Кровопотери в секунду (не вызывает более чем 99.5% кровопотери)
+</ntg.effects.arterial_bleeding>
+<ntg.treatments.arterial_bleeding>
+    [open_close_surgery] Открытая / Закрытая операция
+</ntg.treatments.arterial_bleeding>
+<ntg.firstaid.arterial_bleeding>
+    [tourniquet] Жгут (кроме Аортальных кровотечений)
+</ntg.firstaid.arterial_bleeding>
+
+<!-- Травматическая ампутация -->
+<ntg.title.traumatic_amputation>Травматическая ампутация</ntg.title.traumatic_amputation>
+<ntg.description.traumatic_amputation>Травматическая ампутация — это нехирургическая ампутация конечности. Травматическая ампутация действует точно так же, как Хирургическая ампутация, за исключением того, что при первой ампутации вы получите Артериальное кровотечение.
+\nКонечность должна быть сломана, чтобы стать травматически ампутированной.</ntg.description.traumatic_amputation>
+<ntg.causes.traumatic_amputation>
+    [internal_wounds] Тупая травма |
+    [open_wounds] Открытые раны
+</ntg.causes.traumatic_amputation>
+<ntg.effects.generaltraumatic_amputation>
+    [arterial_bleeding] Артериальное кровотечение |
+    [intense_pain] Сильная боль
+</ntg.effects.generaltraumatic_amputation>
+<ntg.effects.armtraumatic_amputation>
+    1 ампутация руки предотвращает использование двуручных предметов |
+    2 ампутации рук предотвращают взаимодействие с чем-либо
+</ntg.effects.armtraumatic_amputation>
+<ntg.effects.legtraumatic_amputation>
+        1 ампутация ноги снижает скорость вдвое |
+    2 ампутации ног переводят в состояние ragdoll и убирают способность говорить
+</ntg.effects.legtraumatic_amputation>
+<ntg.effects.headtraumatic_amputation>
+    Мгновенная смерть
+</ntg.effects.headtraumatic_amputation>
+<ntg.treatments.traumatic_amputation>
+    [amputation_surgery] Операция для ампутации (используйте конечности до швов для повторного присоединения)
+</ntg.treatments.traumatic_amputation>
+
+<!-- Хирургическая ампутация -->
+<ntg.title.surgical_amputation>Хирургическая ампутация</ntg.title.surgical_amputation>
+<ntg.description.surgical_amputation>Хирургическая ампутация — это ампутация конечности. Возможны ампутации рук, ног и головы. Голова не может быть повторно присоединена после ампутации. В отличие от травматических ампутаций, хирургические ампутации не вызывают Артериального кровотечения при первом получении.</ntg.description.surgical_amputation>
+<ntg.causes.surgical_amputation>
+    [amputation_surgery] Операция для ампутации
+</ntg.causes.surgical_amputation>
+<ntg.effects.armsurgical_amputation>
+    1 ампутация руки предотвращает использование двуручных предметов |
+    2 ампутации рук предотвращают взаимодействие с чем-либо
+</ntg.effects.armsurgical_amputation>
+<ntg.effects.legsurgical_amputation>
+    1 ампутация ноги снижает скорость вдвое |
+    2 ампутации ног переводят в состояние ragdoll и убирают способность говорить
+</ntg.effects.legsurgical_amputation>
+<ntg.effects.headsurgical_amputation>
+    Мгновенная смерть
+</ntg.effects.headsurgical_amputation>
+<ntg.treatments.surgical_amputation>
+    [amputation_surgery] Операция  для ампутации (используйте конечности до швов)
+</ntg.treatments.surgical_amputation>
+
+<!-- Гангрена -->
+<ntg.title.gangrene>Гангрена</ntg.title.gangrene>
+<ntg.description.gangrene>Гангрена — редкое явление, возникающее только из-за пренебрежения наложенным Жгутом, Эндоваскулярным баллоном или Сепсисом. Как только гангрена достигает 15%, она необратима и конечность должна быть ампутирована.</ntg.description.gangrene>
+<ntg.causes.gangrene>
+    [tourniquet] Оставление Жгута на слишком долгое время |
+    [endovascular_balloon] Оставление Эндоваскулярного баллона на слишком долгое время |
+    [sepsis] Сепсис (от 5% или больше)
+</ntg.causes.gangrene>
+<ntg.effects.gangrene>
+    [sepsis] Сепсис (от 15% или больше)
+</ntg.effects.gangrene>
+<ntg.treatments.gangrene>
+    [amputation_surgery] Операция для ампутации |
+    Время (если ниже 15%)
+</ntg.treatments.gangrene>
+
+<!-- Гипсовая повязка -->
+<ntg.title.plaster_cast>Гипсовая повязка</ntg.title.plaster_cast>
+<ntg.description.plaster_cast>Гипсовые повязки чрезвычайно важны для лечения Переломов конечностей. При условии, что конфигурация не изменена, получение перелома на конечности, уже покрытой гипсом, сломает гипс. Гипсовые повязки могут быть сняты Медицинскими ножницами.</ntg.description.plaster_cast>
+<ntg.causes.plaster_cast>
+    [gypsum] Нанесение Гипса на конечность, покрытую Бинтом
+</ntg.causes.plaster_cast>
+<ntg.effects.plaster_cast>
+    [fractures] Медленно лечит переломы конечностей на 0.33% в секунду |
+    Снижает скорость передвижения на 20% за каждую гипсовую повязку
+</ntg.effects.plaster_cast>
+<ntg.treatments.plaster_cast>
+    [trauma_shears] Медицинские ножницы
+</ntg.treatments.plaster_cast>
+
+<!-- Clamped Arteries -->
+<ntg.title.clamped_arteries>Сжатые артерии</ntg.title.clamped_arteries>
+<ntg.description.clamped_arteries>Сжатые артерии вызываются использованием Жгута на конечности (кроме головы) с Артериальным кровотечением или использованием гемостата.</ntg.description.clamped_arteries>
+<ntg.causes.clamped_arteries>
+    [tourniquet] Жгут
+</ntg.causes.clamped_arteries>
+<ntg.effects.clamped_arteries>
+    [arterial_bleeding] Предотвращает кровопотерю из-за артериального кровотечения |
+    [gangrene] Вызывает Гангрену через некоторый период времени
+</ntg.effects.clamped_arteries>
+<ntg.treatments.clamped_arteries>
+    [open_close_surgery] Открытая / Закрытая операция
+</ntg.treatments.clamped_arteries>
+
+<!-- Bones -->
+<!-- Bone death -->
+<ntg.title.bone_death>Распад костных тканей</ntg.title.bone_death>
+<ntg.description.bone_death>Распад костных тканей — хотя обычно и не смертельно — может убить, если у вас нет Имплантов остеосинтеза.</ntg.description.bone_death>
+<ntg.causes.bone_death>
+    [bone_damage] Повреждение костей (от 90% или больше)
+</ntg.causes.bone_death>
+<ntg.effects.bone_death>
+    [fractures] Переломы
+</ntg.effects.bone_death>
+<ntg.treatments.bone_death>
+    [osteosynthesis_surgery] Остеосинтетическая операция на каждой части тела
+</ntg.treatments.bone_death>
+
+<!-- Повреждение костей -->
+<ntg.title.bone_damage>Повреждение костей</ntg.title.bone_damage>
+<ntg.description.bone_damage>Повреждение костей не смертельно и обычно может игнорироваться, пока оно не перешло в Омертвение кости</ntg.description.bone_damage>
+<ntg.causes.bone_damage>
+    [kidney_damage] Повреждение почек (от 72% или больше) |
+    [radiation_sickness] Радиационное поражение (от 31% или больше) |
+    [sepsis] Сепсис (от 50% или больше) |
+    [hypoxemia] Гипоксемия (нейтрализует регенерацию при 100%)
+</ntg.causes.bone_damage>
+<ntg.effects.bone_damage>
+    [bone_death] Омертвение кости (от 90% или больше)
+</ntg.effects.bone_damage>
+<ntg.treatments.bone_damage>
+    Время |
+    [osteosynthesis_surgery] Операция остеосинтеза
+</ntg.treatments.bone_damage>
+
+<!-- Переломы -->
+<ntg.title.fractures>Переломы</ntg.title.fractures>
+<ntg.description.fractures>Переломы — распространённые травмы, которые большинство членов экипажа получают часто. Переломы не убивают и должны лечиться последними в чрезвычайной ситуации. Наличие сломанной конечности требуется для того, чтобы она стала Травматической ампутацией, за исключением головы.</ntg.description.fractures>
+<ntg.causes.fractures>
+    [internal_wounds] Внутренние раны |
+    [open_wounds] Открытые раны |
+    [bone_death] Омертвение кости |
+    [dislocations] Неудача при проверке навыка Гаечным ключом при лечении Вывихов
+</ntg.causes.fractures>
+<ntg.effects.legfractures>
+    1 перелом ноги снижает скорость передвижения вдвое |
+    2 перелома ног вынуждают лечь |
+    [intense_pain] Сильная боль |
+    [internal_damage] Внутренняя травма (если не перевязано/в гипсе/под седацией)
+</ntg.effects.legfractures>
+<ntg.effects.armfractures>
+    1 перелом руки предотвращает использование двуручных предметов |
+    2 перелома рук предотвращают взаимодействие с чем-либо |
+    [intense_pain] Сильная боль |
+    [internal_damage] Внутренняя травма (если не перевязано/в гипсе/под седацией)
+</ntg.effects.armfractures>
+<ntg.effects.skullfractures>
+    [neurotrauma] Предотвращает снижение Нейротравмы |
+    [headache] Головная боль
+</ntg.effects.skullfractures>
+<ntg.effects.neckfractures>
+    [spinal_cord_injury] Повреждение спинного мозга |
+    [internal_damage] Внутренняя травма (если не перевязано)
+</ntg.effects.neckfractures>
+<ntg.effects.ribfractures>
+    [pneumothorax] Пневмоторакс (если не перевязано) |
+    [chest_pain] Боль в груди
+</ntg.effects.ribfractures>
+<ntg.treatments.fractures>
+    [plaster_cast] Гипсовая повязка (только рука/нога) |
+    [osteosynthesis_surgery] Остеосинтетическая операция (все переломы)
+</ntg.treatments.fractures>
+<ntg.firstaid.fractures>
+    [bandages] Бинт (только рёбра)
+</ntg.firstaid.fractures>
+
+<!-- Вывихи -->
+<ntg.title.dislocations>Вывихи</ntg.title.dislocations>
+<ntg.description.dislocations>Вывихи — распространённые травмы, которые большинство членов экипажа получают часто. Вывихи не убивают и должны лечиться последними в чрезвычайной ситуации. Конечность может быть одновременно вывихнутой и сломанной.</ntg.description.dislocations>
+<ntg.causes.dislocations>
+    Травма (взрывы, тупая сила, внутреннее повреждение)
+</ntg.causes.dislocations>
+<ntg.effects.legdislocations>
+    1 вывих ноги снижает скорость вдвое |
+    2 вывиха ног вынуждают ползти |
+    [intense_pain] Сильная боль |
+    [internal_damage] Внутренняя травма, если не перевязано/под седацией
+</ntg.effects.legdislocations>
+<ntg.effects.armdislocations>
+    1 вывих руки предотвращает использование двуручных предметов |
+    2 вывиха рук предотвращают взаимодействие с чем-либо |
+    [intense_pain] Сильная боль |
+    [internal_damage] Внутренняя травма, если не перевязано/под седацией
+</ntg.effects.armdislocations>
+<ntg.treatments.dislocations>
+    [wrench] Наложение гаечного ключа (требует 60 медицины или только 30 с анальгезией)
+</ntg.treatments.dislocations>
+<ntg.firstaid.dislocations>
+    [bandages] Бинт |
+    [plastiseal] Эластичный бинт
+</ntg.firstaid.dislocations>
+
+<!-- Любая часть тела -->
+<!-- Ожоги -->
+<ntg.title.burns>Ожоги</ntg.title.burns>
+<ntg.description.burns>Ожоги первой степени — незначительны и обычно могут игнорироваться, но ожоги второй степени и выше требуют медицинского вмешательства, иначе пациент рискует заразиться инфекцией.
+\nОжоги между 1-20% силы — первой степени, 21-50% — второй степени, и 51% и выше — третьей степени. Сумма кислотных ожогов и обычных ожогов учитывается в степени.
+\nВажно отметить, что в отличие от других травматических аффликтов, которые напрямую влияют на жизненную силу, ожоги никогда не появятся на Сканере здоровья</ntg.description.burns>
+<ntg.causes.burns>
+    Горение
+</ntg.causes.burns>
+<ntg.effects.burns>
+    Прямой урон жизненной силе |
+    [bandages] Делает Бинт, наложенный на обожжённые конечности, грязным |
+    [infected_wounds] Заражённые раны (в зависимости от тяжести ожога)
+</ntg.effects.burns>
+<ntg.treatments.burns>
+    [bandages] Бинт (только на ожоги первой и второй степени) |
+    [plastiseal] Эластичный бинт (только на ожоги первой и второй степени) |
+    [open_close_surgery] Нанесение Эластичного бинта перед Швами во время Открытой / Закрытой операции |
+    [antibiotic_ointment] Антибиотическая мазь (только на ожоги первой и второй степени) |
+    [antibiotic_glue] Антибиотический клей (работает на ожоги любой степени) |
+    [combat_stimulant] Боевой стимулятор (работает на ожоги любой степени)
+</ntg.treatments.burns>
+
+<!-- Открытые раны -->
+<ntg.title.open_wounds>Открытые раны</ntg.title.open_wounds>
+<ntg.description.open_wounds>Повреждение (Тип аффликта), которое может получить человек, делится на две группы по своим свойствам: Открытые раны и Внутренние раны.
+Все открытые раны вызывают Заражённые раны пропорционально их тяжести и могут быть вылечены Швами. Они также обычно — хотя не всегда — вызываются источниками, которые также наносят Кровотечение.
+\nЕсли не указано иное, нижеперечисленные аффликты получаются на основе шанса. Это означает, что больше полученного урона приведёт к более высокому шансу их получения. Недуги получаются на конечности, на которую был нанесён урон, поэтому аффликты, неприменимые к конечности, не будут получены.
+</ntg.description.open_wounds>
+
+<!-- Рваные раны -->
+<ntg.description.open_wounds.lacerations>Рана, обычно возникающая при травмах с острыми предметами.</ntg.description.open_wounds.lacerations>
+<ntg.causes.open_wounds.lacerations>
+    Удар острым оружием, таким как нож |
+    Осыпание подводной лодки |
+    [tweezers] Использование Пинцета при удалении Инородных тел или Внутренних ран
+</ntg.causes.open_wounds.lacerations>
+<ntg.effects.open_wounds.lacerations>
+    Прямой урон жизненной силе пропорционально количеству полученного урона |
+    [infected_wounds] Заражённые раны со временем, в зависимости от тяжести |
+    [fractures] Переломы рук/ног (если было нанесено более 5 урона) |
+    [fractures] Переломы черепа (если было нанесено более 15 урона, 70% шанс возникновения) |
+    [fractures] Переломы рёбер (если было нанесено более 10 урона) |
+    [pneumothorax] Пневмоторакс (если было нанесено более 5 урона) |
+    [cardiac_tamponade] Сердечная тампонада (если было нанесено более 5 урона) |
+    [internal_bleeding] Внутреннее кровотечение (если было нанесено более 5 урона; случайный диапазон между 0.2 - 0.5 от полученного урона) |
+    [traumatic_amputation] Травматическая ампутация (если было нанесено более 1 урона на уже сломанную конечность)
+</ntg.effects.open_wounds.lacerations>
+<ntg.treatments.open_wounds.lacerations>
+    Время (если не более 50 силы) |
+    [bandaged] Перевязка (если не более 50 силы) |
+    [sutures] Медицинские швы |
+    Экстракт граната |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.open_wounds.lacerations>
+
+<!-- Deep Tissue Injury -->
+<ntg.description.open_wounds.deeptissueinjury>Рана, как правило, полученная в результате взрывов.</ntg.description.open_wounds.deeptissueinjury>
+<ntg.causes.open_wounds.deeptissueinjury>
+    Получить ранение при воздействии взрывчатых предметов, таких как осколочная граната.
+</ntg.causes.open_wounds.deeptissueinjury>
+<ntg.effects.open_wounds.deeptissueinjury>
+    Прямое понижение здоровья, пропорционально величине полученного ущерба. |
+    [infected_wounds] Заражение Раны через время, зависимо от силы |
+    [fractures] Переломы рук / ног (если более чем 1 урона было получено) |
+    [fractures] Skull fractures (если более чем 15 урона было получено, шанс появления 70%) |
+    [fractures] Neck fractures (если более чем 15 урона было получено) |
+    [fractures] Rib Переломы (если более чем 10 урона было получено) |
+    [pneumothorax] Пневмоторакс (если более чем 5 урона было получено) |
+    [cardiac_tamponade] Сердечная тампонада (если более чем 5 урона было получено) |
+    [internal_bleeding] Internal Bleeding (если более чем 5 урона было получено; умножено пропорционально диапазону 0.2 - 0.5 от урона) |
+    [traumatic_amputation] Травматическая Ампутация (если более чем 1 урона было получено на уже переломанной конечности) |
+    [foreign_bodies] Инородные Тела (шанс появления 75%, пропорционально половине полученного урона) |
+    [concussion] Контузия (если более чем 15 урона было получено, шанс появления 70%) |
+    [dislocations] Вывихи (если более чем 1 урона было получено, шанс появления 35%)
+</ntg.effects.open_wounds.deeptissueinjury>
+<ntg.treatments.open_wounds.deeptissueinjury>
+    Время (если менее 50 силы) |
+    [bandaged] Bandaging (если менее 50 силы) |
+    [sutures] Медицинские швы |
+    Экстракт взрывного граната |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.open_wounds.deeptissueinjury>
+
+<!-- Gunshot Wound -->
+<ntg.description.open_wounds.gunshotwound>Рана, обычно возникающая при травмах с огнестрельным оружием.</ntg.description.open_wounds.gunshotwound>
+<ntg.causes.open_wounds.gunshotwound>
+    Выстрел из огнестрельного оружия, такого как револьвер
+</ntg.causes.open_wounds.gunshotwound>
+<ntg.effects.open_wounds.gunshotwound>
+    Прямой урон жизненной силе пропорционально количеству полученного урона |
+    [infected_wounds] Заражённые раны со временем, в зависимости от тяжести |
+    [fractures] Переломы рук/ног (если было нанесено более 1 урона) |
+    [fractures] Переломы черепа (если было нанесено более 15 урона, как минимум 70% шанс возникновения) |
+    [fractures] Переломы рёбер (если было нанесено более 1 урона, не более 30% шанс возникновения) |
+    [lung_damage] Повреждение лёгких (если было нанесено более 1 урона, пропорционально полученному урону) |
+    [heart_damage] Повреждение сердца (если было нанесено более 1 урона, пропорционально полученному урону) |
+    [kidney_damage] Повреждение почек (если было нанесено более 2 урона, пропорционально полученному урону) |
+    [liver_damage] Повреждение печени (если было нанесено более 2 урона, пропорционально полученному урону) |
+    [vanilla_organ_damage] Повреждение органа ванилла (если было нанесено более 1 урона; пропорционально четверти полученного урона) |
+    [pneumothorax] Пневмоторакс (если было нанесено более 1 урона) |
+    [cardiac_tamponade] Сердечная тампонада (если было нанесено более 5 урона) |
+    [internal_bleeding] Внутреннее кровотечение (если было нанесено более 5 урона; пропорционально случайному диапазону между 0.2 - 0.6 от полученного урона) |
+    [traumatic_amputation] Травматическая ампутация (если было нанесено более 1 урона на уже сломанную конечность) |
+    [foreign_bodies] Инородные тела (до 30 силы пропорционально полученному урону при переломе кости, или с 75% шансом до 20 силы пропорционально четверти полученного урона) |
+    [neurotrauma] Нейротравма (если было нанесено более 5 урона; имеет 70% шанс возникновения пропорционально 0.1 - 0.4 от полученного урона)
+</ntg.effects.open_wounds.gunshotwound>
+<ntg.treatments.open_wounds.gunshotwound>
+    Время (если не более 50 силы) |
+    [bandaged] Перевязка (если не более 50 силы) |
+    [sutures] Медицинские швы |
+    Экстракт граната |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.open_wounds.gunshotwound>
+
+<!-- Укусы -->
+<ntg.description.open_wounds.bitewound>Рана, обычно возникающая при травмах с атаками существ.</ntg.description.open_wounds.bitewound>
+<ntg.causes.open_wounds.bitewound>
+    Удар существом, таким как Ползун |
+    Укус человеческого хаска яйцекладом (жалом)
+</ntg.causes.open_wounds.bitewound>
+<ntg.effects.open_wounds.bitewound>
+    Прямой урон жизненной силе пропорционально количеству полученного урона |
+    [infected_wounds] Заражённые раны со временем, в зависимости от тяжести |
+    [fractures] Переломы рук/ног (если было нанесено более 5 урона) |
+    [fractures] Переломы черепа (если было нанесено более 15 урона, 70% шанс возникновения) |
+    [fractures] Переломы рёбер (если было нанесено более 10 урона) |
+    [pneumothorax] Пневмоторакс (если было нанесено более 5 урона) |
+    [internal_bleeding] Внутреннее кровотечение (если было нанесено более 5 урона; пропорционально 0.2 - 0.5 от полученного урона) |
+    [traumatic_amputation] Травматическая ампутация (если было нанесено более 5 урона на уже сломанную конечность) |
+    [concussion] Сотрясение мозга (если было нанесено более 15 урона; имеет как минимум 70% шанс возникновения)
+</ntg.effects.open_wounds.bitewound>
+<ntg.treatments.open_wounds.bitewound>
+    Время (если не более 100 силы) |
+    [bandaged] Перевязка (если не более 100 силы) |
+    [sutures] Медицинские швы |
+    Экстракт граната |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.open_wounds.bitewound>
+
+<!-- Внутренние раны -->
+<ntg.title.internal_wounds>Внутренние раны</ntg.title.internal_wounds>
+<ntg.description.internal_wounds>Повреждение (Тип аффликта), которое может получить человек, делится на две группы по своим свойствам: Открытые раны и Внутренние раны. Все внутренние раны не вызывают Заражённых ран.
+\nЕсли не указано иное, нижеперечисленные аффликты получаются на основе шанса. Это означает, что больше полученного урона приведёт к более высокому шансу их получения. Недуги получаются на конечности, на которую был нанесён урон, поэтому аффликты, неприменимые к конечности, не будут получены.
+</ntg.description.internal_wounds>
+
+<!-- Тупая травма -->
+<ntg.description.internal_wounds.bft>Этот тип раны обычно не связан с кровотечением, но всё же может вызвать угрожающие жизни аффликты, если удар сильный. Не заживает естественным путём выше 100 силы.</ntg.description.internal_wounds.bft>
+<ntg.causes.internal_wounds.bft>
+    Падение |
+    Удар о твёрдый предмет |
+    Раздавливание подводной лодкой |
+    Удар тупым оружием, таким как лом
+</ntg.causes.internal_wounds.bft>
+<ntg.effects.internal_wounds.bft>
+    Прямой урон жизненной силе пропорционально полученному урону |
+    [dislocations] Вывихи (если было нанесено более 2 урона) |
+    [fractures] Переломы рук/ног (если было нанесено более 2 урона) |
+    [fractures] Переломы черепа (если было нанесено более 15 урона, 70% шанс возникновения) |
+    [fractures] Переломы шеи (если было нанесено более 15 урона) |
+    [fractures] Переломы рёбер |
+    [pneumothorax] Пневмоторакс |
+    [vanilla_organ_damage] Повреждение органа ванилла ИЛИ повреждение органов от Нейротравмы (Случайный диапазон между 0 и количеством полученного урона) |
+    [traumatic_amputation] Травматическая ампутация (если было нанесено более 15 урона и на конечности уже есть перелом) |
+    [concussion] Сотрясение мозга (если было нанесено более 15 урона, 70% шанс возникновения)
+</ntg.effects.internal_wounds.bft>
+<ntg.treatments.internal_wounds.bft>
+    Время (если не более 100 силы) |
+    [bandaged] Перевязка (если не более 100 силы) |
+    [gel_ice_pack] Гелевый пакет со льдом (если не более 100 силы) |
+    [open_close_surgery] Нанесение Пинцета перед Швами во время Открытой / Закрытой операции |
+    [combat_stimulant] Боевой стимулятор |
+    Экстракт граната
+</ntg.treatments.internal_wounds.bft>
+
+<!-- Внутренняя травма -->
+<ntg.description.internal_wounds.internaldamage>Нередкая рана, обычно вызываемая другими аффликтами и неудачными проверками навыков.</ntg.description.internal_wounds.internaldamage>
+<ntg.causes.internal_wounds.internaldamage>
+    [dislocations] Вывихи без бинта |
+    [fractures] Переломы без гипсовой повязки |
+    [tweezers] Неудача при проверке навыка для Пинцета |
+    [sutures] Неудача при проверке навыка для Швов |
+    [skin_retractors] Неудача при проверке навыка для Расширителей кожи |
+    [surgical_drill] Неудача при проверке навыка для Хирургической дрели |
+    [surgical_saw] Неудача при проверке навыка для Хирургической пилы |
+    [spinal_cord_implants] Неудача при проверке навыка для Имплантов спинного мозга |
+    [osteosynthesis_implants] Неудача при проверке навыка для Имплантов остеосинтеза
+</ntg.causes.internal_wounds.internaldamage>
+<ntg.effects.internal_wounds.internaldamage>
+    Прямой урон жизненной силе пропорционально полученному урону |
+    [dislocations] Вывихи |
+    [fractures] Переломы рук/ног (после получения как минимум 5 урона) |
+    [fractures] Переломы черепа (после получения как минимум 15 урона; имеет как минимум 70% шанс возникновения) |
+    [fractures] Переломы шеи (после получения как минимум 15 урона) |
+    [fractures] Переломы рёбер (после получения как минимум 5 урона) |
+    [pneumothorax] Пневмоторакс (после получения как минимум 5 урона) |
+    [vanilla_organ_damage] Повреждение органа ванилла ИЛИ повреждение органов от Нейротравмы (случайный диапазон между 0 и полученным уроном) |
+    [traumatic_amputation] Травматическая ампутация (после получения как минимум 10 урона на сломанную конечность) |
+    [concussion] Сотрясение мозга (после получения как минимум 15 урона; имеет как минимум 70% шанс возникновения)
+</ntg.effects.internal_wounds.internaldamage>
+<ntg.treatments.internal_wounds.internaldamage>
+    Время |
+    [open_close_surgery] Нанесение Пинцета перед Швами во время Открытой / Закрытой операции |
+    [combat_stimulant] Боевой стимулятор |
+    Экстракт граната
+</ntg.treatments.internal_wounds.internaldamage>
+
+<!-- Infected Wounds -->
+<ntg.title.infected_wounds>Зараженные раны</ntg.title.infected_wounds>
+<ntg.description.infected_wounds>Зараженные раны появляются из-за гноения необработанных ран; их нужно очищать, чтобы предотвратить Сепсис.</ntg.description.infected_wounds>
+<ntg.causes.infected_wounds>
+    [open_wounds] Открытые раны оставленные без лечения |
+    [burns] Ожоги |
+    Скорость инфицирования резко возрастёт если на конечности имеется грязная повязка
+</ntg.causes.infected_wounds>
+<ntg.effects.infected_wounds>
+    [sepsis] Сепсис (от 50% или больше) |
+    [inflammation] Воспаление (от 10% или больше) |
+    Пониженный иммунитет
+</ntg.effects.infected_wounds>
+<ntg.treatments.infected_wounds>
+    [antibiotic_ointment] Антибиотическая мазь |
+    [antibiotic_glue] Антибиотический клей |
+    [antibiotic_sprayer] Антисептический спрей
+</ntg.treatments.infected_wounds>
+<ntg.firstaid.infected_wounds>
+    [bandages] Применение Бинта |
+    [plastiseal] Применение Эластичного бинта
+</ntg.firstaid.infected_wounds>
+
+<!-- Foreign Bodies -->
+<ntg.title.foreign_bodies>Инородные тела</ntg.title.foreign_bodies>
+<ntg.description.foreign_bodies>Инородные тела часто встречаются после перестрелки или детонирования взрывчатки. Инородные тела должны быть удалены как можно быстрее, чтобы избежать Артериальное кровотечение или появления Сепсиса у пациента.
+\nКаждое использование пинцета удалит 3-10% инородных тел.\n\n Шанс того, что Инородные тела вызвут проблемы, соответствует силе и времени; чем дольше они находятся или чем выше сила аффликта, тем выше шанс.</ntg.description.foreign_bodies>
+<ntg.causes.foreign_bodies>
+    Взрывы |
+    Выстрелы (Если выстрел переламывает кость, он всегда вонзит Инородные тела)
+</ntg.causes.foreign_bodies>
+<ntg.effects.foreign_bodies>
+    [arterial_bleeding] Артериальное кровотечение (от 20% или больше) |
+    [aortic_rupture] Аортальное кровотечение (от 20% или больше, если на Торсе) |
+    [sepsis] Сепсис (от 20% или больше) |
+    [inflammation] Воспаление (от 15% или больше)
+</ntg.effects.foreign_bodies>
+<ntg.treatments.foreign_bodies>
+    [open_close_surgery] Применение пинцета до медицинских швов во время хирургической процедуры Вскрытия / Закрытия |
+    [tweezers] Применение пинцета непосредственно на ранении (вызывает Травматический шок!)
+</ntg.treatments.foreign_bodies>
+
+<!-- Bleeding -->
+<ntg.title.bleeding>Bleeding</ntg.title.bleeding>
+<ntg.description.bleeding>Кровотечение будет вызывать у пациента кровопотерю, зависимо от силы и длительности кровотечения.</ntg.description.bleeding>
+<ntg.causes.bleeding>
+    [open_wounds] Lacerations or Bite Wounds |
+    Failing certain skill checks
+</ntg.causes.bleeding>
+<ntg.effects.bleeding>
+    [arterial_bleeding] Артериальное кровотечение (от 80% или больше) |
+    [aortic_rupture] Аортальное кровотечение (от 80% или более, если на торсе) |
+    [blood_loss] Кровопотеря
+</ntg.effects.bleeding>
+<ntg.treatments.bleeding>
+    [antibiotic_glue] Антибиотический клей |
+    [bandages] Бинт |
+    [plastiseal] Эластичный бинт |
+    [sutures] Медицинские швы
+</ntg.treatments.bleeding>
+
+<!-- Ointmented -->
+<ntg.title.ointmented>Антибиотическая мазь</ntg.title.ointmented>
+<ntg.description.ointmented>Мазь может помочь предотвратить инфекцию у Раны, также она полезна для пациентов страдающими ожогами (которые могут быстро заражаться!).</ntg.description.ointmented>
+<ntg.causes.ointmented>
+    [antiseptic_sprayer] Антисептический спрей |
+    [antibiotic_ointment] Антибиотическая мазь
+</ntg.causes.ointmented>
+<ntg.effects.ointmented>
+    [infected_wounds] -1.5% Зараженные раны в секунду (если они ниже 60% силы)
+</ntg.effects.ointmented>
+
+<!-- Chilled -->
+<ntg.title.chilled>Охлаждено</ntg.title.chilled>
+<ntg.description.chilled>Аффликт наносимый при использовании гелевого хладоэлемента. Резко увеличивает естественную регенерацию травм тупым предметом, но ухудшит инфекцию при её наличии. Этот аффликт также увеличивает регенерацию Внутреннего кровотечения.</ntg.description.chilled>
+<ntg.causes.chilled>
+    [gel_ice_pack] Гелевый хладоэлемент
+</ntg.causes.chilled>
+<ntg.effects.chilled>
+    Замедляет персонажа на 5% за каждую охлажденную конечность |
+    [internal_wounds] Увеличивает естественную регенерацию Травмы тупым предметом |
+    [infected_wounds] Ускоряет ухудшение Зараженных ран |
+    [internal_bleeding] Снижает внутреннее кровотечение на 0.2% каждую секунду
+</ntg.effects.chilled>
+
+<!-- Bandaged -->
+<ntg.title.bandaged>Повязка</ntg.title.bandaged>
+<ntg.description.bandaged>Повязка это результат использования бинта / эластичного бинта. \n\nБинт это крайне универсальный предмет первой помощи и поэтому он рекомендуется чтобы их несколько штук носил весь экипаж, в случае экстренности.
+\nБинт будет медленно загрязняться со временем - однако этот процесс будет проходить быстрее, если рана будет кровоточить. Аффликт Повязка может быть снята Медицинскими ножницами или Ножом ныряльщика.</ntg.description.bandaged>
+<ntg.causes.bandaged>
+    [bandages] Бинт |
+    [plastiseal] Эластичный бинт
+</ntg.causes.bandaged>
+<ntg.effects.bandaged>
+    [dislocations] Предотвращает Внутренние травмы или Сильную боль от Вывихов |
+    [fractures] Предотвращает Внутренние травмы или Сильную боль от Переломов |
+    [fractures] Предотвращает Переломы рёбер от вызывания Пневмоторакса |
+    [dislocations] Убирает дебафф замедления от Вывихов |
+    Замедляет персонажа на 10% для каждой перевязанной конечности |
+    [open_wounds] Ускоряет естественную регенерацию открытых ран |
+    [burns] Ускоряет естественную регенерацию ожогов |
+    [infected_wounds] Предотвращает Заражение раны
+</ntg.effects.bandaged>
+<ntg.treatments.bandaged>
+    [diving_knife] Нож ныряльщика |
+    [trauma_shears] Медицинские ножницы
+</ntg.treatments.bandaged>
+
+<!-- Skin Ointmented -->
+<ntg.title.skin_ointmented>Регенеративная мазь</ntg.title.skin_ointmented>
+<ntg.description.skin_ointmented>Ускоряет естественное заживление Ожогов, Открытых ран и Тупых травм. В отличие от бинтов или обычной мази, Кожная мазь не имеет дополнительных эффектов.</ntg.description.skin_ointmented>
+<ntg.causes.skin_ointmented>
+    [regenerative_ointment] Регенеративная мазь
+</ntg.causes.skin_ointmented>
+<ntg.effects.skin_ointmented>
+    [burns] Уменьшает Ожоги на 0.12 в секунду |
+    [open_wounds] Уменьшает Открытые раны на 0.12 в секунду |
+    [internal_wounds] Уменьшает Тупые травмы на 0.12 в секунду
+</ntg.effects.skin_ointmented>
+
+<!-- Blood -->
+<!-- Hypoxermia -->
+<ntg.title.hypoxemia>Гипоксемия</ntg.title.hypoxemia>
+<ntg.description.hypoxemia>Гипоксемия это недостаточное содержание кислорода в крови. Гипоксемия может быстро нарастать и привести к критическому состоянию пациента, поэтому больному требуется немедленная медицинская помощь.
+Пневмоторакс препятствует снижению Гипоксемии, пропорционально своей силе.</ntg.description.hypoxemia>
+<ntg.causes.hypoxemia>
+    [cardiac_arrest] Остановка сердца |
+    [oxygen_low] Нехватка кислорода |
+    [blood_loss] Кровопотеря (от 40% или больше) |
+    [hypotension] Гипотензия (от 70% или менее) |
+    [cyanide_poisoning] Отравление цианидом (от 10% или больше)
+</ntg.causes.hypoxemia>
+<ntg.effects.hypoxemia>
+    [mechanic_fibrillation] Фибрилляция |
+    [liver_damage] Повреждение печени (от 4% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [heart_damage] Повреждение сердца (от 4% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [lung_damage] Повреждение лёгких (от 4% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [kidney_damage] Повреждение почек (от 8% или больше — точка, с которой оно опережает естественную регенерацию; меняется на 4%, если одна почка уже мертва) |
+    [hyperventilation] Гипервентиляция (от 10% или больше) |
+    [neurotrauma] Нейротравма (от 10% или больше — точка, с которой она опережает естественную регенерацию) |
+    [shortness_of_breath] Сбивчивое дыхание (от 20% или больше) |
+    [headache] Головная боль (от 40% или больше) |
+    [confusion] Спутанность сознания (от 50% или больше) |
+    [respiratory_arrest] Остановка дыхания (от 70% или больше) |
+    [cardiac_arrest] Остановка сердца (от 80% или больше) |
+    [unconsciousness] Потеря сознания (от 80% или больше) |
+    [bone_damage] Повреждение костей (при 100% предотвращает регенерацию повреждений костей)
+</ntg.effects.hypoxemia>
+<ntg.treatments.hypoxemia>
+    Лечение причины |
+    [liquid_oxygenite] Жидкий кислородит
+</ntg.treatments.hypoxemia>
+
+<!-- Сепсис -->
+<ntg.title.sepsis>Сепсис</ntg.title.sepsis>
+<ntg.description.sepsis>Сепсис это опасное состояние, вызванное запущенными Заражёнными ранами; его довольно легко заметить, так как (по умолчанию) только ещё одно заболевание в игре вызывает Лихорадку</ntg.description.sepsis>
+<ntg.causes.sepsis>
+    [azathioprine] Неудачная проверка навыка Азатиоприн |
+    [blood_packs] Пакеты крови от донора с Сепсисом |
+    [gangrene] Гангрена (от 15% или больше) |
+    [foreign_bodies] Инородные тела (от 20% или больше) |
+    [infected_wounds] Заражённые раны (от 50% или больше) |
+    [dialysys_filter] Фильтр для диализа (0.1% шанс в секунду при использовании) |
+    [toxin_filter] Фильтр любых ядов (0.1% шанс в секунду при использовании)
+</ntg.causes.sepsis>
+<ntg.effects.sepsis>
+    [liver_damage] Повреждение печени (от 3% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [heart_damage] Повреждение сердца (от 3% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [lung_damage] Повреждение лёгких (от 3% или больше — точка, с которой оно опережает естественную регенерацию) |
+    [kidney_damage] Повреждение почек (от 6% или больше — точка, с которой оно опережает естественную регенерацию; меняется на 3%, если одна почка уже мертва) |
+    [neurotrauma] Нейротравма (от 25% или больше — точка, с которой она опережает естественную регенерацию) |
+    [hyperventilation] Гипервентиляция (от 15% или больше) |
+    [gangrene] Гангрена (от 5% или больше) |
+    [fever] Лихорадка (от 5% или больше) |
+    [increased_heartrate] Учащённое сердцебиение (от 20% или больше) |
+    [confusion] Спутанность сознания (от 40% или больше) |
+    [bone_damage] Повреждение костей (от 50% или больше — точка, с которой оно опережает естественную регенерацию)
+</ntg.effects.sepsis>
+<ntg.treatments.sepsis>
+    [abx] Антибиотики широкого спектра действия
+</ntg.treatments.sepsis>
+
+<!-- Гемотрансфузионный шок -->
+<ntg.title.hemotransfusion_shock>Гемотрансфузионный шок</ntg.title.hemotransfusion_shock>
+<ntg.description.hemotransfusion_shock>Гемотрансфузионный шок — состояние, возникающее только при переливании несовместимой группы крови (например: переливание крови A+ человеку с группой O+).</ntg.description.hemotransfusion_shock>
+<ntg.causes.hemotransfusion_shock>
+    [blood_packs] Несовместимые пакеты крови (даёт 100% силы) |
+    [alien_blood] Чужеродная кровь (даёт 99% силы со временем)
+</ntg.causes.hemotransfusion_shock>
+<ntg.effects.hemotransfusion_shock>
+    [vomiting] Рвота (между 0-40%) |
+    [chest_pain] Боль в груди (между 0-60%) |
+    [blood_loss] Кровопотеря (между 0-70%) |
+    [liver_damage] Повреждение печени (между 0-70%) |
+    [heart_damage] Повреждение сердца (между 0-70%) |
+    [kidney_damage] Повреждение почек (между 0-70%) |
+    [lung_damage] Повреждение лёгких (между 0-70%) |
+    [shortness_of_breath] Одышка (между 0-70%) |
+    [abdominal_pain] Боль в животе (между 0-80%) |
+    [wheezing] Свистящие хрипы (между 0-90%)
+</ntg.effects.hemotransfusion_shock>
+<ntg.treatments.hemotransfusion_shock>
+    Время |
+    [streptokinase] Стрептокиназа
+</ntg.treatments.hemotransfusion_shock>
+
+<!-- Кровопотеря -->
+<ntg.title.blood_loss>Кровопотеря</ntg.title.blood_loss>
+<ntg.description.blood_loss>Хотя сильная Кровопотеря может требовать огромных ресурсов для лечения; при уровне 30% или ниже её обычно можно игнорировать.</ntg.description.blood_loss>
+<ntg.causes.blood_loss>
+    [internal_bleeding] Внутреннее кровотечение |
+    [empty_blood_pack] Использование пустого пакета крови |
+    [bleeding] Кровотечение |
+    [arterial_bleeding] Артериальное кровотечение (не даст более 99.5% Кровопотери) |
+    [aortic_rupture] Разрыв аорты |
+    [surgery_incision] Хирургический разрез (если нет зажатого кровотечения) |
+    [hematology_analyzer] Использование гематологического анализатора |
+    [hemotransfusion_shock] Гемотрансфузионный шок (между 0-70%)
+</ntg.causes.blood_loss>
+<ntg.effects.blood_loss>
+    [hypotension] Гипотензия (масштабируется в зависимости от количества Кровопотери) |
+    [hypoxemia] Гипоксемия (от 40% или больше) |
+    [increased_heartrate] Учащённое сердцебиение (от 40% или больше) |
+    [pale_skin] Бледность кожи (от 40% или больше) |
+    [headache] Головная боль (от 50% или больше) |
+    [weakness] Слабость (от 60% или больше)
+</ntg.effects.blood_loss>
+<ntg.treatments.blood_loss>
+    Время |
+    [blood_packs] Введение пакетов крови |
+    [deusizine] Деузизин |
+    [combat_stimulant] Боевой стимулятор
+</ntg.treatments.blood_loss>
+
+<!-- Гипотензия -->
+<ntg.title.hypotension>Гипотензия</ntg.title.hypotension>
+<ntg.description.hypotension>Гипотензия — это артериальное давление ниже нормальных показателей. Гипотензия смертельна при достаточно сильном развитии. Меньшие проценты соответствуют более низкому давлению.</ntg.description.hypotension>
+<ntg.causes.hypotension>
+    [blood_loss] Кровопотеря (масштабируется в зависимости от количества потерянной крови) |
+    [traumatic_shock] Травматический шок |
+    [anesthesia] Анестезия |
+    [irregular_heartbeat] Нерегулярное сердцебиение |
+    [sodium_nitroprusside] Нитропруссид натрия (снижает давление на 45%) |
+    [nitroglycerin] Нитроглицерин (снижает давление на 45%) |
+    [cardiac_arrest] Остановка сердца (устанавливает давление на минимум) |
+    [cardiac_tamponade] Сердечная тампонада (снижает давление вдвое)
+</ntg.causes.hypotension>
+<ntg.effects.hypotension>
+    [mechanic_fibrillation] Фибрилляция |
+    [confusion] Спутанность сознания (от 30% или менее) |
+    [pale_skin] Бледность кожи (от 50% или менее) |
+    [blurred_vision] Размытое зрение (от 55% или менее) |
+    [headache] Головная боль (от 60% или менее) |
+    [lightheadedness] Головокружение (от 60% или менее) |
+    [hypoxemia] Гипоксемия (от 70% или менее) |
+    [hyperventilation] Гипервентиляция (от 80% или менее)
+</ntg.effects.hypotension>
+<ntg.treatments.hypotension>
+    Лечение причины |
+    СЛР |
+    [blood_packs] Пакеты крови |
+    [saline] Физиологический раствор |
+    [ringers_solution] Раствор Рингера |
+    [autopulse] АвтоПульс |
+    [adrenaline] Адреналин |
+    [deusizine] Деузизин
+</ntg.treatments.hypotension>
+
+<!-- Hypertension -->
+<ntg.title.hypertension>Гипертензия</ntg.title.hypertension>
+<ntg.description.hypertension>Гипертензия — это артериальное давление выше нормальных показателей. Гипертензия может стать смертельной при давлении свыше 150%. Большие проценты соответствуют более высокому давлению.</ntg.description.hypertension>
+<ntg.causes.hypertension>
+    [kidney_damage] Повреждение почек |
+    [liver_damage] Повреждение печени |
+    [blood_packs] Пакеты крови |
+    [saline] Физиологический раствор |
+    [ringers_solution] Раствор Рингера |
+    [autopulse] АвтоПульс |
+    [adrenaline] Адреналин |
+    [deusizine] Деузизин |
+    [withdrawal] Абстиненция (Алкоголь) |
+    СЛР
+</ntg.causes.hypertension>
+<ntg.effects.hypertension>
+    [stroke] Инсульт (от 150% или больше) |
+    [kidney_damage] Повреждение почек (от 184% или больше — точка, с которой оно опережает естественную регенерацию; меняется на 152%, если одна почка уже мертва) |
+    [heart_attack] Сердечный приступ (от 150% или больше)
+</ntg.effects.hypertension>
+<ntg.treatments.hypertension>
+    Лечение причины |
+    [blood_loss] Вызывать Кровопотерю |
+    [sodium_nitroprusside] Нитропруссид натрия |
+    [nitroglycerin] Нитроглицерин
+</ntg.treatments.hypertension>
+
+<!-- Ацидоз -->
+<ntg.title.acidosis>Ацидоз</ntg.title.acidosis>
+<ntg.description.acidosis>Ацидоз обычно не требует внимания, при лёгкой и средней степени тяжести требуется минимальное вмешательство. Ацидоз и Алкалоз взаимно нейтрализуют друг друга.</ntg.description.acidosis>
+<ntg.causes.acidosis>
+    [hypoventilation] Гиповентиляция |
+    [respiratory_arrest] Остановка дыхания |
+    [cardiac_arrest] Остановка сердца |
+    [kidney_damage] Повреждение почек (от 80% или больше) |
+    [blood_packs] Пакеты крови, у донора которых был ацидоз (полученный ацидоз равен уровню ацидоза донора в момент забора, делённому на 5) |
+    [saline] Физиологический раствор
+</ntg.causes.acidosis>
+<ntg.effects.acidosis>
+    [seizure] Припадок (от 60% или больше) |
+    [coma] Кома (от 60% или больше) |
+    [increased_heartrate] Учащённое сердцебиение (от 20% или больше) |
+    [mechanic_fibrillation] Фибрилляция |
+    [confusion] Спутанность сознания (от 15% или больше) |
+    [headache] Головная боль (от 20% или больше) |
+    [weakness] Слабость (от 35% или больше)
+</ntg.effects.acidosis>
+<ntg.treatments.acidosis>
+    Лечение причины |
+    [alkalosis] Вызвать Алкалоз |
+    [blood_packs] Переливание нейтральных пакетов крови |
+    [dialysis_filter] Наличие фильтра для диализа на операционном столе и лежание на нём
+</ntg.treatments.acidosis>
+
+<!-- Алкалоз -->
+<ntg.title.alkalosis>Алкалоз</ntg.title.alkalosis>
+<ntg.description.alkalosis>Алкалоз обычно не требует внимания, при лёгкой и средней степени тяжести требуется минимальное вмешательство. Алкалоз и Ацидоз взаимно нейтрализуют друг друга.</ntg.description.alkalosis>
+<ntg.causes.alkalosis>
+    [hyperventilation] Гипервентиляция |
+    [vomiting] Рвота |
+    [blood_packs] Пакеты крови, у донора которых был алкалоз (полученный алкалоз равен уровню ацидоза донора в момент забора, делённому на 5)
+</ntg.causes.alkalosis>
+<ntg.effects.alkalosis>
+    [seizure] Припадок (от 60% или больше) |
+    [palpitations] Тремор (от 20% или больше)
+</ntg.effects.alkalosis>
+<ntg.treatments.alkalosis>
+    Лечение причины |
+    [acidosis] Вызвать Ацидоз (предпочтительно физиологическим раствором) |
+    [blood_packs] Переливание нейтральных пакетов крови |
+    [dialysis_filter] Наличие фильтра для диализа на операционном столе и лежание на нём
+</ntg.treatments.alkalosis>
+
+<!-- Immunity -->
+<ntg.title.immunity>Иммунитет</ntg.title.immunity>
+<ntg.description.immunity>Иммунитет помогает бороться с заражёнными ранами и ускоряет естественное заживление. Если ваш иммунитет 6% или ниже, вы можете использовать несовместимые группы крови без риска гемотрансфузионного шока.
+\nИммунитет должен быть ниже 10% для безопасной трансплантации органов, если у вас включено отторжение органов в настройках.</ntg.description.immunity>
+<ntg.reduction.immunity>
+    [azathioprine] Азатиоприн |
+    [infected_wounds] Активная борьба с инфекцией
+</ntg.reduction.immunity>
+<ntg.effects.immunity>
+    [burns] Помогает заживлению ожогов |
+    [open_wounds] Помогает заживлению открытых ран |
+    [internal_wounds] Помогает заживлению внутренних ран
+</ntg.effects.immunity>
+
+<!-- Organ Rejection -->
+<ntg.title.organ_rejection>Отторжение органа</ntg.title.organ_rejection>
+<ntg.description.organ_rejection>Эта механика отключена по умолчанию. Её можно включить в настройках мода, найденных в меню ESC при активированном моде.
+\nОтторжение органа может произойти, когда пациент получает пересадку органа при иммунитете выше 10%. При отторжении пересаженный орган немедленно получает 100% повреждения, становясь бесполезным.
+\nСнижение иммунитета в основном достигается с помощью азатиоприна.</ntg.description.organ_rejection>
+<ntg.causes.organ_rejection>
+    [immunity] Высокий иммунитет во время пересадки
+</ntg.causes.organ_rejection>
+<ntg.effects.organ_rejection>
+    Гибель органа
+</ntg.effects.organ_rejection>
+<ntg.treatments.organ_rejection>
+    [azathioprine] Азатиоприн (только профилактика)
+</ntg.treatments.organ_rejection>
+
+<!-- Surgery -->
+<!-- Травматический шок -->
+<ntg.title.traumatic_shock>Травматический шок</ntg.title.traumatic_shock>
+<ntg.description.traumatic_shock>Травматический шок может быстро стать смертельным, и если ваш пациент получит его в любой момент, это, скорее всего, непреднамеренно. Травматический шок уменьшается в 4 раза быстрее, если жертва находится под действием анестезии или имеет анальгезию рядом с операционным столом.
+\nЕсли у персонажа оттянута кожа и раунд заканчивается (например, при стыковке со станцией), персонаж получит 5 минут иммунитета к травматическому шоку в следующем раунде.</ntg.description.traumatic_shock>
+<ntg.causes.traumatic_shock>
+    [surgery_incision] Надрез без анальгезии |
+    [clamped_bleeding] Любые хирургические шаги после прижатия кровотечения без анестезии или стола |
+    [tweezers] Использование пинцета на огнестрельных ранах или повреждениях глубоких тканей (вызывает лёгкий шок при чрезмерном использовании)
+</ntg.causes.traumatic_shock>
+<ntg.effects.traumatic_shock>
+    [hypotension] Гипотензия (в большом количестве) |
+    [cardiac_arrest] Остановка сердца (от 40% или больше) |
+    [respiratory_arrest] Остановка дыхания (от 30% или больше) |
+    [neurotrauma] Нейротравма (равна силе, делённой на 100 в секунду, 10% или больше — точка, когда она превышает естественную регенерацию) |
+    Психоз (равен силе, делённой на 100 в секунду)
+</ntg.effects.traumatic_shock>
+<ntg.treatments.traumatic_shock>
+    [sutures] Немедленное завершение операции и ожидание |
+    [surgery_table] Нахождение рядом с операционным столом под седацией
+</ntg.treatments.traumatic_shock>
+<ntg.prevention.traumatic_shock>
+    [surgery_table] Используйте операционный стол |
+    [analgesia] Седация анальгезией (требуется операционный стол) |
+    [anesthesia] Седация анестезией
+</ntg.prevention.traumatic_shock>
+
+<!-- Surgery Incision -->
+<ntg.title.surgery_incision>Хирургический надрез</ntg.title.surgery_incision>
+<ntg.description.surgery_incision>Второй шаг всех хирургических процедур. Неприжатый надрез (без прижатого кровотечения) вызывает 0.7% кровопотери в секунду за каждый надрез, а хирургический надрез без анальгезии или другого метода седации (без сознания или анестезии) вызывает 2% травматического шока в секунду за каждый надрез.</ntg.description.surgery_incision>
+<ntg.causes.surgery_incision>
+    [scalpel] Применение скальпеля |
+    [multipurpose_scalpel] Применение многофункционального скальпеля в режиме «Хирургический надрез»
+</ntg.causes.surgery_incision>
+<ntg.effects.surgery_incision>
+    [blood_loss] Кровопотеря (если нет прижатого кровотечения) |
+    [traumatic_shock] Травматический шок без седации / не рядом с операционным столом
+</ntg.effects.surgery_incision>
+<ntg.treatments.surgery_incision>
+    [sutures] Используйте швы для досрочного завершения операции |
+    [hemostat] Используйте гемостат для продолжения операции
+</ntg.treatments.surgery_incision>
+
+<!-- Clamped Bleeding -->
+<ntg.title.clamped_bleeding>Прижатое кровотечение</ntg.title.clamped_bleeding>
+<ntg.description.clamped_bleeding>Третий шаг большинства хирургических процедур. Прижатое кровотечение предотвращает кровопотерю, вызванную хирургическим надрезом. Это состояние необходимо для следующего шага — расширителя.</ntg.description.clamped_bleeding>
+<ntg.causes.clamped_bleeding>
+    [hemostat] Применение гемостата
+</ntg.causes.clamped_bleeding>
+<ntg.effects.clamped_bleeding>
+    [blood_loss] Предотвращает кровопотерю от хирургического надреза
+</ntg.effects.clamped_bleeding>
+<ntg.treatments.clamped_bleeding>
+    [sutures] Используйте швы для досрочного завершения операции |
+    [skin_retractors] Используйте расширитель для продолжения операции
+</ntg.treatments.clamped_bleeding>
+
+<!-- Retracted Skin -->
+<ntg.title.retracted_skin>Оттянутая кожа</ntg.title.retracted_skin>
+<ntg.description.retracted_skin>Четвёртый шаг большинства хирургических процедур. Оттянутая кожа без операционного стола поблизости вызывает 2% травматического шока в секунду за каждый случай оттянутой кожи.
+Большинство хирургических процедур, таких как остеосинтетическая операция или трансплантация органов, ответвляются от этого шага.</ntg.description.retracted_skin>
+<ntg.causes.retracted_skin>
+    [skin_retractors] Применение расширителя
+</ntg.causes.retracted_skin>
+<ntg.effects.retracted_skin>
+    [traumatic_shock] Травматический шок без седации / не рядом с операционным столом
+</ntg.effects.retracted_skin>
+<ntg.treatments.retracted_skin>
+    [sutures] Используйте швы для досрочного завершения операции |
+    [surgical_drill] Используйте хирургическую дрель для продолжения остеосинтетической операции |
+    [multipurpose_scalpel] Используйте многофункциональный скальпель в режиме адаптивного извлечения органов для продолжения трансплантации органов |
+    [surgical_saw] Используйте хирургическую пилу для продолжения ампутации
+</ntg.treatments.retracted_skin>
+
+<!-- Drilled Bones -->
+<ntg.title.drilled_bones>Просверленные кости</ntg.title.drilled_bones>
+<ntg.description.drilled_bones>Пятый шаг остеосинтетической операции. Просверленные кости без операционного стола поблизости вызывают 1.5% травматического шока в секунду за каждый случай просверленных костей.</ntg.description.drilled_bones>
+<ntg.causes.drilled_bones>
+    [surgical_drill] Применение хирургической дрели
+</ntg.causes.drilled_bones>
+<ntg.effects.drilled_bones>
+    [traumatic_shock] Травматический шок без седации / не рядом с операционным столом
+</ntg.effects.drilled_bones>
+<ntg.treatments.drilled_bones>
+    [sutures] Используйте швы для досрочного завершения операции |
+    [osteosynthesis_implants] Используйте остеосинтетические импланты для продолжения остеосинтетической операции
+</ntg.treatments.drilled_bones>
+
+<!-- Sawed Bones -->
+<ntg.title.sawed_bones>Распиленные кости</ntg.title.sawed_bones>
+<ntg.description.sawed_bones>Пятый шаг операции ампутации. Распиленные кости без операционного стола поблизости вызывают 1.5% травматического шока в секунду за каждый случай распиленных костей.</ntg.description.sawed_bones>
+<ntg.causes.sawed_bones>
+    [surgical_saw] Применение хирургической пилы
+</ntg.causes.sawed_bones>
+<ntg.effects.sawed_bones>
+    [traumatic_shock] Травматический шок без седации / не рядом с операционным столом
+</ntg.effects.sawed_bones>
+<ntg.treatments.sawed_bones>
+    [sutures] Используйте швы для завершения операции ампутации |
+    [arm_item] Используйте отсечённую/бионическую руку для присоединения перед завершением операции ампутации швами |
+    [leg_item] Используйте отсечённую/бионическую ногу для присоединения перед завершением операции ампутации швами
+</ntg.treatments.sawed_bones>
+
+<!-- Item Pages -->
+<!-- Адреналин -->
+<ntg.title.adrenaline>Адреналин</ntg.title.adrenaline>
+<ntg.description.adrenaline>Адреналин используется для лечения остановки сердца. Взамен за излечение этого состояния он повышает артериальное давление пациента на 30%.
+Помимо этих эффектов, он даёт пациенту анальгезию (но не более 4.5%), учащённое сердцебиение, гипервентиляцию, увеличивает урон в ближнем бою на 20%, уменьшает накопление фибрилляции вдвое и снижает эффективность замедляющих эффектов.</ntg.description.adrenaline>
+<ntg.seealso.adrenaline>
+    [cardiac_arrest] Остановка сердца |
+    [analgesia] Анальгезия |
+    [increased_heartrate] Учащённое сердцебиение |
+    [hyperventilation] Гипервентиляция |
+    [mechanic_fibrillation] Фибрилляция
+</ntg.seealso.adrenaline>
+
+<!-- Alien Blood -->
+<ntg.title.alien_blood>Кровь пришельцев</ntg.title.alien_blood>
+<ntg.description.alien_blood>Проверка навыка медицины: 40. \n\nИспользование крови пришельцев вместо обычной крови крайне опасно и должно применяться только в крайних ситуациях.</ntg.description.alien_blood>
+<ntg.applicationsuccess.alien_blood>
+    [blood_loss] -20% Кровопотеря |
+    +60% Психоз |
+    [hemotransfusion_shock] +100% Гемотрансфузионный шок
+</ntg.applicationsuccess.alien_blood>
+<ntg.applicationfailed.alien_blood>
+    [blood_loss] -20% Кровопотеря |
+    +60% Психоз |
+    [hemotransfusion_shock] +100% Гемотрансфузионный шок
+</ntg.applicationfailed.alien_blood>
+
+<!-- Ambubag -->
+<ntg.title.ambubag>Мешок амбу</ntg.title.ambubag>
+<ntg.description.ambubag>Предмет, используемый для подачи дополнительного кислорода, если пациент недостаточно дышит или не дышит вовсе.
+\nИспользование мешка амбу с обычным кислородным баллоном внутри лечит 90% Нехватки кислорода и использует 2% кислорода в баллоне.
+\nИспользование мешка амбу с баллоном кислородита внутри лечит 90% Нехватки кислорода, излечивает Остановку дыхания и использует 2% кислорода в баллоне.\n\nИспользование мешка амбу с баллоном сварочного топлива внутри вызывает 110% Нехватки кислорода, вызывает 10% Повреждения лёгких и использует 5% сварочного топлива в баллоне.
+\nИспользование мешка амбу с баллоном инцендиума внутри вызывает 110% Нехватки кислорода, вызывает 20% Повреждения лёгких, вызывает 10% Ожогов и использует 5% инцендиума в баллоне.
+\nИспользование мешка амбу с краской внутри вызывает 50% Нехватки кислорода, вызывает 3% повреждения лёгких, вызывает 5% химической зависимости, лечит 20% химической ломки и использует 5% краски в банке.
+\nИспользование мешка амбу с Баллоном Анальгетиков даёт Анальгезию, Опиоидную зависимость, Опиоидную передозировку и Опиоидную ломку. Количество зависит от того, пьян ли пациент.</ntg.description.ambubag>
+<ntg.effects.ambubag>
+    [oxygen_low] Лечит Нехватку кислорода на 90% (Кислородный баллон / Баллон кислородита) или вызывает 110% Нехватки кислорода (Баллон сварочного топлива / Баллон инцендиума) |
+    [respiratory_arrest] Излечивает Остановку дыхания (Баллон кислородита) |
+    [lung_damage] Вызывает 10% Повреждения лёгких (Баллон сварочного топлива) или 20% Повреждения лёгких (Баллон инцендиума) |
+    [burns] Вызывает 10% Ожогов (Баллон инцендиума) |
+    [withdrawal] Лечит 20% Химическую ломку (Банка краски) |
+    [analgesia] Вызывает Анальгезию (Баллон анальгетиков)
+</ntg.effects.ambubag>
+
+<!-- Analgesic Tank -->
+<ntg.title.analgesic_tank>Анальгезирующий баллон</ntg.title.analgesic_tank>
+<ntg.description.analgesic_tank>Баллон с анальгетиками, который можно использовать на Операционном столе или с Амбубагом. Можно купить или изготовить, а также пополнить. Может иметь качество, увеличивающее максимальное состояние на 5% за уровень.
+\nПри использовании на Операционном столе даёт до 14% Анальгезии пациенту, лежащему на столе, и его состояние уменьшается на 0.7% в секунду.</ntg.description.analgesic_tank>
+<ntg.applicationsuccess.analgesic_tank>
+    [analgesia] +56% Анальгезии (106% если Опьянение) |
+    +40% Опиоидной зависимости |
+    [opiate_overdose] +30% Опиоидной передозировки (60% если Опьянение) |
+    -75% Опиоидной ломки
+</ntg.applicationsuccess.analgesic_tank>
+
+<!-- Anaparalyzant -->
+<ntg.title.anaparalyzant>Анапарализант</ntg.title.anaparalyzant>
+<ntg.description.anaparalyzant>Проверка навыка медицины: 64. \n\nНаряду с первоначальным использованием для обеспечения сопротивления параличу и лечения паралича, Анапарализант может использоваться для быстрого снижения Анестезии и гораздо быстрее разбудить пациента.</ntg.description.anaparalyzant>
+<ntg.applicationsuccess.anaparalyzant>
+    [anesthesia] Мгновенно излечивает Анестезию |
+    Излечивает Паралич |
+    +5% Психоза |
+    +800% Сопротивления параличу
+</ntg.applicationsuccess.anaparalyzant>
+<ntg.applicationfailed.anaparalyzant>
+    [anesthesia] -3%/с Анестезии |
+    +0.75%/с Психоза |
+    +6.5%/с Сопротивления параличу
+</ntg.applicationfailed.anaparalyzant>
+
+<!-- Antibiotic Glue -->
+<ntg.title.antibiotic_glue>Антибиотический клей</ntg.title.antibiotic_glue>
+<ntg.description.antibiotic_glue>Проверка навыка медицины: 55.
+\nКлей, используемый для быстрой запечатки кровоточащих ран и лечения Ожогов на одной конечности. Также лечит Заражённые раны.</ntg.description.antibiotic_glue>
+<ntg.applicationsuccess.antibiotic_glue>
+    [bleeding] -60% Кровотечения |
+    [burns] -15% Ожогов |
+    [infected_wounds] -100% Заражённых ран
+</ntg.applicationsuccess.antibiotic_glue>
+<ntg.applicationfailed.antibiotic_glue>
+    [bleeding] -40% Кровотечения |
+    [burns] -10% Ожогов |
+    [infected_wounds] -100% Заражённых ран |
+    [heart_attack] 50% шанс вызвать Сердечный приступ (при наличии Кровотечения)
+</ntg.applicationfailed.antibiotic_glue>
+
+<!-- Antibiotic Ointment -->
+<ntg.title.antibiotic_ointment>Антибиотическая мазь</ntg.title.antibiotic_ointment>
+<ntg.description.antibiotic_ointment>Проверка навыка медицины: 10.
+\nАнтибиотическая мазь это предмет, используемый для лечения Ожогов и Заражённых ран.</ntg.description.antibiotic_ointment>
+<ntg.applicationsuccess.antibiotic_ointment>
+    [infected_wounds] -60% Заражённых ран |
+    [ointmented] +100% Обработано мазью
+</ntg.applicationsuccess.antibiotic_ointment>
+
+<!-- Antiseptic -->
+<ntg.title.antiseptic>Антисептик</ntg.title.antiseptic>
+<ntg.description.antiseptic>Антисептик это предмет, единственное использование которого — загрузка в Антисептический спрей. За каждое распыление распылителя антисептика будет использовано 10% состояния антисептика.</ntg.description.antiseptic>
+<ntg.seealso.antiseptic>
+    [antiseptic_sprayer] Антисептический спрей
+</ntg.seealso.antiseptic>
+
+<!-- Antiseptic Sprayer -->
+<ntg.title.antiseptic_sprayer>Антисептический спрей</ntg.title.antiseptic_sprayer>
+<ntg.description.antiseptic_sprayer>Распылитель, который распыляет Антисептик на Заражённые раны. Использование распылителя антисептика с антисептиком внутри лечит 100% заражённых ран, даёт 5% Обработано мазью и использует 10% антисептика.</ntg.description.antiseptic_sprayer>
+<ntg.seealso.antiseptic_sprayer>
+    [antiseptic] Антисептик
+</ntg.seealso.antiseptic_sprayer>
+
+<!-- Arm Item -->
+<ntg.title.arm_item>Рука (Бионическая / Срезанная)</ntg.title.arm_item>
+<ntg.description.arm_item>Замена левой или правой руки, которую можно прикрепить к соответствующему хирургически ампутированному и подготовленному гнезду руки.
+\nОтсечённые руки требуют охлаждения, иначе они испортятся. Бионические руки синтетические и не требуют охлаждения, но в остальном биологически эквивалентны натуральным рукам.</ntg.description.arm_item>
+<ntg.seealso.arm_item>
+    [gangrene] Gangrene |
+    [traumatic_amputation] Травматическая Ампутация |
+    [surgical_amputation] Хирургическая ампутация |
+    [amputation_surgery] Процедура Ампутации
+</ntg.seealso.arm_item>
+
+<!-- AED -->
+<ntg.title.aed>Автоматизированный внешний дефибрилятор</ntg.title.aed>
+<ntg.description.aed>Предмет, используемый для коррекции сердцебиения пациента. При использовании на пациенте и заряженный батареями, Автоматизированный внешний дефибрилятор имеет шанс либо сбросить Фибрилляцию, либо излечить Остановку сердца.
+\nПри навыке медицины ниже 80, Ручной Дефибриллятор хуже во всех отношениях. При 100 навыке медицины, ручной дефибриллятор лучше во всех отношениях.</ntg.description.aed>
+<ntg.seealso.aed>
+    [manual_defibrillator] Ручной дефибриллятор |
+    [mechanic_fibrillation] Фибрилляция |
+    [cardiac_arrest] Остановка сердца
+</ntg.seealso.aed>
+
+<!-- Auto Pulse -->
+<ntg.title.autopulse>АвтоПульс</ntg.title.autopulse>
+<ntg.description.autopulse>Лучший друг медика. Чтобы использовать автопульс, просто наденьте его в слот водолазного костюма.
+\nПока надет и оснащён батареями, автопульс излечит Остановку сердца и немного вылечит Нехватку кислорода и Фибрилляцию, а также повысит ваше кровяное давление.
+Однако будьте осторожны, чтобы не злоупотреблять им, так как это повысит ваше кровяное давление до Гипертензии. Его можно принудительно снять, используя Гаечный ключ как лечение на торсе человека, который его носит, при условии, что человек не Без сознания.
+При этом он поместится в инвентарь пользователя гаечного ключа.</ntg.description.autopulse>
+<ntg.seealso.autopulse>
+    [cardiac_arrest] Остановка сердца |
+    [oxygen_low] Нехватка кислорода |
+    [mechanic_fibrillation] Фибрилляция |
+    [hypertension] Гипертензия |
+    [wrench] Гаечный ключ
+</ntg.seealso.autopulse>
+
+<!-- Azathioprine -->
+<ntg.title.azathioprine>Азатиоприн</ntg.title.azathioprine>
+<ntg.description.azathioprine>Проверка навыка медицины: 10
+\nАзатиоприн — иммунодепрессант, используемый во время Операции по Пересадке Органов, если отторжение органов включено в конфиге Нейротравмы. Он понизит Иммунитет со временем, делая безопасным помещение органа в тело, когда Иммунитет ниже 10%.</ntg.description.azathioprine>
+<ntg.applicationsuccess.azathioprine>
+    Понижает иммунитет со временем
+</ntg.applicationsuccess.azathioprine>
+<ntg.applicationfailed.azathioprine>
+    Понижает иммунитет со временем |
+    [sepsis] Вызывает Сепсис
+</ntg.applicationfailed.azathioprine>
+
+<!-- Bandages -->
+<ntg.title.bandages>Бинт</ntg.title.bandages>
+<ntg.description.bandages>Проверка навыка медицины: 10.
+\nБинты используются для покрытия ран, чтобы предотвратить Заражённые раны. Бинты также могут стабилизировать Вывихи, предотвращая внутренние повреждения, а также стабилизировать Переломы, чтобы предотвратить Внутренние Повреждения, Пневмоторакс и Нейротравму для переломов рёбер и черепа соответственно.</ntg.description.bandages>
+<ntg.applicationsuccess.bandages>
+    [bleeding] -24% Кровотечения |
+    [bandaged] +50% Перевязка
+</ntg.applicationsuccess.bandages>
+<ntg.applicationfailed.bandages>
+    [bleeding] -18% Кровотечения |
+    [bandaged] +36% Перевязка
+</ntg.applicationfailed.bandages>
+
+<!-- Blood Packs -->
+<ntg.title.blood_packs>Пакеты крови</ntg.title.blood_packs>
+<ntg.description.blood_packs>Пакеты крови получаются при использовании Пустого пакета крови на человеке с менее чем 31% Потери крови. Пакеты крови должны вводиться в соответствии с правильной группой крови, которая указана в описании предмета.
+\nЕсли человек, от которого взят пакет крови, страдал от Ацидоза, Алкалоза или Сепсиса, то эти аффликты будут сохранены в пакете крови (1/5 от силы аффликта донора). Помещение пакета крови в Гематологический анализатор покажет, есть ли в нем эти аффликты и их силу.
+\nКроме того, если у получателя есть ацидоз или алкалоз, введение нейтральной крови умножит его на 0.9, если только у него нет 0% потери крови.</ntg.description.blood_packs>
+<ntg.applicationsuccess.blood_packs>
+    [blood_loss] -30% Кровопотери |
+    +30% Кровяного давления
+</ntg.applicationsuccess.blood_packs>
+<ntg.applicationfailed.blood_packs>
+    [blood_loss] -30% Кровопотери |
+    +30% Кровяного давления |
+    [hemotransfusion_shock] +100% Гемотрансфузионного шока
+</ntg.applicationfailed.blood_packs>
+<ntg.seealso.blood_packs>
+    [alkalosis] Алкалоз |
+    [acidosis] Ацидоз |
+    [sepsis] Сепсис |
+    [hematology_analyzer] Гематологический анализатор
+</ntg.seealso.blood_packs>
+
+<!-- Blue Shark -->
+<ntg.title.blue_shark>Синяя акула</ntg.title.blue_shark>
+<ntg.description.blue_shark>Забавная маленькая синяя акула, которая может вылечить вашу ментальную нестабильность. Лечит 2% Психоза, если использовать в интерфейсе здоровья.</ntg.description.blue_shark>
+
+<!-- Body Bag -->
+<ntg.title.body_bag>Мешок для трупов</ntg.title.body_bag>
+<ntg.description.body_bag>Мешок для трупов это предмет, используемый для транспортировки тел гораздо быстрее, чем просто их тащить. Он помещается в слот для водолазного костюма и задушит живого человека, если его туда поместить.
+\nЕго можно принудительно снять, используя Гаечный ключ как лечение на торсе человека, который его носит, при условии, что человек не Без сознания. При этом мешок поместится в инвентарь пользователя гаечного ключа.</ntg.description.body_bag>
+<ntg.seealso.body_bag>
+    [wrench] Wrench |
+    [unconsciousness] Без сознания
+</ntg.seealso.body_bag>
+
+<!-- Brain Transplant // TODO NT SURGERY COMPAT -->
+<ntg.title.brain_transplant>Мозг</ntg.title.brain_transplant>
+<ntg.description.brain_transplant>Проверка навыка медицины: 100
+\nЖизненно важный орган. Сознание пациента и нейротравма напрямую связаны с ним. В отличие от других органов, мозг обычно не трансплантируется.
+\nМозг может быть удален или трансплантирован во время операции по пересадке органов, проводимой на голове. Удаление мозга вызывает немедленное Без сознания, Остановку сердца, Остановку дыхания, потерю контроля над персонажем (пациент перейдет в режим свободной камеры) и 100% нейротравму, а также непрерывное быстрое нарастание нейротравмы, все это будет продолжаться, пока орган удален.
+Состояние органа обратно пропорционально нейротравме, вплоть до 100%. Удаление мозга при 100% или более нейротравме не даст пересадку мозга, и пациент немедленно достигнет 200% нейротравмы, что убьет его.
+\nЕсли мозг трансплантировать обратно пациенту, он восстановит контроль над персонажем, но его Остановку сердца и Остановку дыхания все еще нужно будет лечить. Если мозг трансплантировать другому пациенту, донор получит контроль над этим пациентом.
+\nВ отличие от других органов, состояние мозга всегда быстро ухудшается, даже в холодильном контейнере, если только он не помещен в Банку для мозга. Если мозг или контейнер, в котором он находится, коснется земли, он будет уничтожен, если только он не находится в банке для мозга.</ntg.description.brain_transplant>
+<ntg.seealso.brain_transplant>
+    [organ_transplant_surgery] Операция по пересадке органов |
+    [neurotrauma] Нейротравма |
+    [unconsciousness] Без сознания |
+    [cardiac_arrest] Остановка сердца |
+    [respiratory_arrest] Остановка дыхания |
+    [organ_rejection] Отторжение органа |
+    [immunity] Иммунитет |
+    [refrigerated_container] Холодильный контейнер |
+    [refrigerated_crate] Холодильный ящик
+</ntg.seealso.brain_transplant>
+
+<!-- ABX -->
+<ntg.title.abx>Антибиотики широкого спектра</ntg.title.abx>
+<ntg.description.abx>Проверка навыка медицины: 25
+\nАнтибиотики широкого спектра это единственное лечение от Сепсиса. По-прежнему дают бафф сопротивления заражению хаском и со временем уменьшают существующее заражение хаском, как в ванильной версии.
+\nУспешное применение антибиотиков даст силу аффликта 50%, которая будет уменьшаться на 0.5% в секунду, что в сумме дает 100 секунд с одной дозой. 50% Антибиотиков широкого спектра будут лечить 0.95% Сепсиса в секунду в течение 100 секунд. Неудачное применение даст силу аффликта 30%. Она будет уменьшаться и лечить Сепсис с той же скоростью, что и при успешном применении. 30% Антибиотиков широкого спектра будут лечить 0.95% Сепсиса в секунду в течение 60 секунд.
+\nВ сумме органы получат 20% Повреждения органов ванилла, 17.5% Повреждения почек и Повреждения печени, и 10% Повреждения сердца и Повреждения легких при успешном применении и 12% Повреждения органов ванилла, 10.5% Повреждения почек и Повреждения печени, и 6% Повреждения сердца и Повреждения легких при неудачном применении</ntg.description.abx>
+<ntg.applicationsuccess.abx>
+    [vanilla_organ_damage] +0.2%/с Повреждения органа ванилла на 100сек |
+    [kidney_damage] +0.175%/с Повреждения почек на 100сек |
+    [liver_damage] +0.175%/с Повреждения печени на 100сек |
+    [heart_damage] +0.1%/с Повреждения сердца на 100сек |
+    [lung_damage] +0.1%/с Повреждения лёгких на 100сек |
+    [sepsis] -0.95%/с Сепсиса на 100сек
+</ntg.applicationsuccess.abx>
+<ntg.applicationfailed.abx>
+    [vanilla_organ_damage] +0.2%/с Повреждения органа ванилла на 60сек |
+    [kidney_damage] +0.175%/с Повреждения почек на 60сек |
+    [liver_damage] +0.175%/с Повреждения печени на 60сек |
+    [heart_damage] +0.1%/с Повреждения сердца на 60сек |
+    [lung_damage] +0.1%/с Повреждения лёгких на 60сек |
+    [sepsis] -0.95%/с Сепсиса на 60сек
+</ntg.applicationfailed.abx>
+
+<!-- Combat Stimulant -->
+<ntg.title.combat_stimulant>Боевой Стимулятор</ntg.title.combat_stimulant>
+<ntg.description.combat_stimulant>Medical Skill: 35
+\nБоевой Стимулятор это стимулятор, который также служит предметом первой помощи. Имеет те же эффекты, что и в ванильной версии, с дополнительными лечимыми аффликтами. Успешное применение даст 20% Химической зависимости и 75% Боевого Стимулятора; неудачное даст 40% Химической зависимости вместо этого.
+Также даст между 45% и 50% Сопротивления оглушению. Если между 1% и 10% Боевого Стимулятора, сила лечения уменьшается вдвое и Сопротивление оглушению будет между 45% и 0%.
+Следующие эффекты будут даны аффликтом Боевого Стимулятора, если между 11% и 100% силы:</ntg.description.combat_stimulant>
+<ntg.applicationsuccess.combat_stimulant>
+    [burns] -2%/с Ожогов |
+    [blood_loss] -2%/с Кровопотери |
+    [bleeding] -2%/с Кровотечения |
+    [internal_bleeding] -2%/с Внутреннего кровотечения |
+    [internal_wounds] -2%/с Внутренних ран |
+    [open_wounds] -2%/с Открытых ран |
+    [sutures] -2%/с Зашитых ран |
+    [concussion] -2%/с Контузии |
+    [withdrawal] -2%/с Химической ломки |
+</ntg.applicationsuccess.combat_stimulant>
+
+<!-- Deusizine -->
+<ntg.title.deusizine>Деусицин</ntg.title.deusizine>
+<ntg.description.deusizine>Проверка навыка медицины: 72
+\nОсобое лекарство, лечащее различные угрожающие жизни аффликты в течение 20 секунд и дающее умеренный бафф Решительности.</ntg.description.deusizine>
+<ntg.applicationsuccess.deusizine>
+    [internal_wounds] -20% Внутренних повреждений |
+    [blood_loss] -50% Кровопотери |
+    [bleeding] -50% Кровотечения |
+    [hypoxemia] -100% Гипоксемии |
+    [vanilla_organ_damage] -20% Повреждения органа ванилла |
+    +40% Кровяного давления |
+    +200% Решительности
+</ntg.applicationsuccess.deusizine>
+<ntg.applicationfailed.deusizine>
+    [internal_wounds] -10% Внутренних повреждений |
+    [blood_loss] -50% Кровопотери |
+    [bleeding] -50% Кровотечения |
+    [hypoxemia] -40% Гипоксемии |
+    [vanilla_organ_damage] -10% Повреждения органа ванилла |
+    +40% Кровяного давления |
+    +200% Решительности
+</ntg.applicationfailed.deusizine>
+
+<!-- Dialysis Filter -->
+<ntg.title.dialysis_filter>Фильтр для диализа</ntg.title.dialysis_filter>
+<ntg.description.dialysis_filter>Фильтр, который можно поместить в Операционный Стол, чтобы уменьшить у пациента Ацидоз или Алкалоз. Можно изготовить, но нельзя купить. Может иметь качество, увеличивающее максимальное состояние на 5% за уровень.
+\nЕсли пациент лежит на столе с установленным фильтром для диализа и имеет либо Ацидоз, либо Алкалоз, эти аффликты уменьшатся на 0,8/с, состояние фильтра ухудшится на 1/с, и существует вероятность 0,1% в секунду получить пациентом Сепсис.
+Состояние фильтра не упадет и нет шанса сепсиса, если у пациента нет ацидоза или алкалоза.</ntg.description.dialysis_filter>
+<ntg.seealso.dialysis_filter>
+    [surgery_table] Операционный стол |
+    [acidosis] Ацидоз |
+    [alkalosis] Алкалоз |
+    [sepsis] Сепсис
+</ntg.seealso.dialysis_filter>
+
+<!-- Diving Knife -->
+<ntg.title.diving_knife>Нож ныряльщика</ntg.title.diving_knife>
+<ntg.description.diving_knife>Проверка навыка медицины: 30
+\nВ дополнение к обычному использованию ножа, они могут использоваться для удаления Бинта.</ntg.description.diving_knife>
+<ntg.applicationsuccess.diving_knife>
+    [bandaged] Удаляет Бинт
+</ntg.applicationsuccess.diving_knife>
+<ntg.applicationfailed.diving_knife>
+    [bleeding] +15% Кровотечения |
+    [open_wounds] +10% Рваных ран
+</ntg.applicationfailed.diving_knife>
+
+<!-- Drainage -->
+<ntg.title.drainage>Дренаж</ntg.title.drainage>
+<ntg.description.drainage>Дренаж это одноразовый предмет, который лечит Пневмоторакс во время Открытой/Закрытой Хирургии. Если у пациента нет пневмоторакса, дренаж ничего не сделает и не будет израсходован.</ntg.description.drainage>
+<ntg.seealso.drainage>
+    [pneumothorax] Пневмоторакс
+</ntg.seealso.drainage>
+
+<!-- Empty Blood Pack -->
+<ntg.title.empty_blood_pack>Пустой пакет крови</ntg.title.empty_blood_pack>
+<ntg.description.empty_blood_pack>Проверка навыка медицины: 30\n\nПустые пакеты крови используются для получения Пакетов крови. Пустые пакеты крови могут использоваться только на людях с менее чем 31% Кровопотерей, иначе это ничего не делает.
+\nЕсли человек, на котором используется пустой пакет крови, страдает от Ацидоза, Алкалоза или Сепсиса, то эти аффликты также будут переданы тому, кому дана кровь (полученный аффликт будет равен уровню аффликта донора во время извлечения, делённому на 5).
+Использование пустого пакета крови умножит ацидоз или алкалоз пациента на 0.9.</ntg.description.empty_blood_pack>
+<ntg.applicationsuccess.empty_blood_pack>
+    [blood_loss] +30% Кровопотери
+</ntg.applicationsuccess.empty_blood_pack>
+<ntg.applicationfailed.empty_blood_pack>
+    [blood_loss] +40% Кровопотери
+</ntg.applicationfailed.empty_blood_pack>
+<ntg.seealso.empty_blood_pack>
+    [acidosis] Ацидоз |
+    [alkalosis] Алкалоз |
+    [sepsis] Сепсис
+</ntg.seealso.empty_blood_pack>
+
+<!-- Endovascular Balloon -->
+<ntg.title.endovascular_balloon>Эндоваскулярный баллон</ntg.title.endovascular_balloon>
+<ntg.description.endovascular_balloon>Третий шаг в Операции по Аортальному кровотечению. Баллон не будет работать без 100% Хирургического Разреза. Использование баллона заблокирует аорту, что предотвратит Кровопотерю, вызванную Аортальным кровотечением, и будет лечить обычное кровотечение, но также вызовет Гангрену.</ntg.description.endovascular_balloon>
+<ntg.seealso.endovascular_balloon>
+    [aortic_rupture_surgery] Операция для Аортального кровотечения |
+    [surgery_incision] Надрез |
+    [blood_loss] Кровопотеря |
+    [aortic_rupture] Аортальное кровотечение |
+    [gangrene] Gangrene
+</ntg.seealso.endovascular_balloon>
+
+<!-- Fentanyl -->
+<ntg.title.fentanyl>Фентанил</ntg.title.fentanyl>
+<ntg.description.fentanyl>Проверка навыка медицины: 72
+\nМощный опиат, используемый для вызова Анальгезии.
+\nЧтобы предотвратить эксплойты, фентанил нельзя выстрелить как снаряд, например, из шприцевого пистолета.</ntg.description.fentanyl>
+<ntg.applicationsuccess.fentanyl>
+    [analgesia] +75% Анальгезии (150% если Опьянение) |
+    +15% Опиоидной зависимости |
+    [opiate_overdose] +22.5% Опиоидной передозировки (37.5% если Опьянение) |
+    [withdrawal] -100% Опиоидной ломки
+</ntg.applicationsuccess.fentanyl>
+<ntg.applicationfailed.fentanyl>
+    [analgesia] +50% Анальгезии (100% если Опьянение) |
+    +40% Опиоидной зависимости |
+    [opiate_overdose] +30% Опиоидной передозировки (60% если Опьянение) |
+    [withdrawal] -100% Опиоидной ломки
+</ntg.applicationfailed.fentanyl>
+
+<!-- Gel Ice Pack -->
+
+<ntg.title.gel_ice_pack>Гелевый хладоэлемент</ntg.title.gel_ice_pack>
+<ntg.description.gel_ice_pack>Проверка навыка медицины: 40
+\nМногоразовый холодный компресс, используемый для ускорения заживления тупых травм и лечения внутреннего кровотечения. Использование уменьшает его состояние, как и нахождение вне холодильника, но состояние восстанавливается при охлаждении.
+\nДаже если состояние достигнет 0% от использования или нахождения вне холодильника, оно восстановится при охлаждении.</ntg.description.gel_ice_pack>
+<ntg.applicationsuccess.gel_ice_pack>
+    [chilled] +100% Охлаждение |
+    -35% Состояние гелевого хладоэлемента
+</ntg.applicationsuccess.gel_ice_pack>
+<ntg.applicationfailed.gel_ice_pack>
+    [chilled] +75% Охлаждение |
+    -35% Состояние гелевого хладоэлемента
+</ntg.applicationfailed.gel_ice_pack>
+
+<!-- Gypsum -->
+<ntg.title.gypsum>Гипс</ntg.title.gypsum>
+<ntg.description.gypsum>Проверка навыка медицины: 40
+\nМелкий порошок, который при использовании совместно с Перевязанным, обволакивает конечность в Гипсовую повязку для лечения Переломов. Гипс не сработает, если вы не использовали Бинт или Эластичный бинт заранее, и не подействует на переломы черепа, рёбер и шеи.
+\nЗа каждую наложенную гипсовую повязку игрок получает штраф к скорости передвижения 20%. Гипсовые повязки можно снять с помощью Медицинских ножниц.</ntg.description.gypsum>
+<ntg.applicationsuccess.gypsum>
+    [plaster_cast] Превращает бинт в Гипсовую повязку
+</ntg.applicationsuccess.gypsum>
+<ntg.applicationfailed.gypsum>
+    Удаляет Гипс и ничего не делает
+</ntg.applicationfailed.gypsum>
+<ntg.seealso.gypsum>
+    [bandaged] Перевязка |
+    [fractures] Переломы |
+    [trauma_shears] Травматические ножницы
+</ntg.seealso.gypsum>
+
+<!-- Haloperidol -->
+<ntg.title.haloperidol>Галоперидол</ntg.title.haloperidol>
+<ntg.description.haloperidol>Проверка навыка медицины: 37
+\nАнтипсихотический препарат, также полезный при лечении алкогольной ломки.</ntg.description.haloperidol>
+<ntg.applicationsuccess.haloperidol>
+    -100% Психоз |
+    -100% Галлюцинации |
+    [withdrawal] -100% Алкогольная ломка
+</ntg.applicationsuccess.haloperidol>
+<ntg.applicationfailed.haloperidol>
+    -25% Психоз |
+    -25% Галлюцинации |
+    [withdrawal] -25% Алкогольная ломка
+</ntg.applicationfailed.haloperidol>
+
+<!-- Health Scanner -->
+<ntg.title.health_scanner>Медицинский сканер</ntg.title.health_scanner>
+<ntg.description.health_scanner>Предмет, чрезвычайно важный для диагностики. При использовании и при наличии заряженных батарей вы получите данные о всех поражениях, видимых медицинскому сканеру, а пациент, которого вы сканируете, получит 0,5% Радиационное поражение в секунду, а вы (сканирующий) получите 0,3% в секунду.
+\nКроме того, можно сканировать себя и других, используя медицинский сканер в интерфейсе как лечение, как и с бинтом. Это даёт 1% радиационного поражения, а также позволяет сканировать отдельные конечности для поиска таких вещей, как Инородные тела.</ntg.description.health_scanner>
+<ntg.seealso.health_scanner>
+    [radiation_sickness] Радиационное поражение
+</ntg.seealso.health_scanner>
+
+<!-- Hematology Analyzer -->
+<ntg.title.hematology_analyzer>Гематологический анализатор</ntg.title.hematology_analyzer>
+<ntg.description.hematology_analyzer>Гематологический анализатор также можно использовать для проверки группы крови вашего пациента, чтобы избежать Гемотрансфузионного шока. Помещение донорской карты в анализатор и последующее использование напечатает группу крови на донорской карте и поместит её в слот для ID-карты, позволяя проверить группу крови позже без анализатора.
+\nПомещение пакета крови в анализатор даст данные о его типе и любых вышеупомянутых поражениях, если они есть.\n\nКак провал, так и успех проверки навыка также дадут данные о всех поражениях, связанных с кровью, которые есть у пациента, таких как Сепсис, Ацидоз или Алкалоз.</ntg.description.hematology_analyzer>
+<ntg.applicationsuccess.hematology_analyzer>
+    [blood_loss] +1% Кровопотеря
+</ntg.applicationsuccess.hematology_analyzer>
+<ntg.applicationfailed.hematology_analyzer>
+    [blood_loss] +3% Кровопотеря
+</ntg.applicationfailed.hematology_analyzer>
+<ntg.seealso.hematology_analyzer>
+    [sepsis] Сепсис |
+    [alkalosis] Алкалоз |
+    [acidosis] Ацидоз |
+    [hemotransfusion_shock] Гемотрансфузионный шок
+</ntg.seealso.hematology_analyzer>
+
+<!-- Hemostat -->
+<ntg.title.hemostat>Гемостатический зажим</ntg.title.hemostat>
+<ntg.description.hemostat>Третий шаг в большинстве хирургических процедур. Гемостат не сработает без 100% Хирургического надреза. Для использования не требуется медицинский навык. Успешное использование гемостата даст пациенту Остановленное кровотечение на конечности, на которой использовался инструмент.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить «Набор хирургических инструментов (набор)».</ntg.description.hemostat>
+<ntg.seealso.hemostat>
+    [surgery_incision] Хирургический надрез |
+    [clamped_bleeding] Остановленное кровотечение
+</ntg.seealso.hemostat>
+
+<!-- Hyperzine -->
+<ntg.title.hyperzine>Гиперцин</ntg.title.hyperzine>
+<ntg.description.hyperzine>Проверка навыка медицины: 50.
+\nМощный стимулятор. Гиперактивность и Решительность применяются мгновенно, в то время как другие эффекты применяются в течение 60 секунд.</ntg.description.hyperzine>
+<ntg.applicationsuccess.hyperzine>
+    [internal_damage] -12% Внутренняя травма |
+    +18% Химическая зависимость |
+    [neurotrauma] +18% Нейротравма |
+    +15% Психоз
+    +400% Гиперактивность |
+    +400% Решительность |
+    -54% Оглушение |
+    [withdrawal] -90% Химическая ломка
+</ntg.applicationsuccess.hyperzine>
+<ntg.applicationfailed.hyperzine>
+    [internal_damage] -16% Внутренняя травма |
+    +36% Химическая зависимость |
+    [neurotrauma] +36% Нейротравма |
+    +30% Психоз
+    +400% Гиперактивность |
+    +400% Решительность |
+    -27% Оглушение |
+    [withdrawal] -90% Химическая ломка
+</ntg.applicationfailed.hyperzine>
+
+<!-- Heart Transplant -->
+<ntg.title.heart_transplant>Трансплантация сердца</ntg.title.heart_transplant>
+<ntg.description.heart_transplant>Проверка навыка медицины: 40
+\nЖизненно важный орган. Поражения пациента, связанные с сердцем, напрямую связаны с ним.
+\nСердце может быть удалено или трансплантировано во время Хирургии трансплантации органов, выполняемой на торсе. Удаление сердца вызывает немедленную Остановку сердца, 100% Повреждение сердца и до 20% Повреждения органа ванилла, обратно пропорционально повреждению сердца до удаления.
+Состояние органа обратно пропорционально повреждению сердца до удаления. Пациент не может получить и будет немедленно избавлён от Сердечной тампонады и Сердечного приступа, пока их сердце удалено.
+\nЕсли сердце трансплантировано обратно пациенту, его Повреждение сердца и до 20% Повреждения органа ванилла, оба обратно пропорционально состоянию органа, будут вылечены, но их Остановка сердца не будет вылечена.
+Пациент может получить Отторжение органа, если они получат орган и их Иммунитет выше 10%, если механика включена в конфиге мода.
+\nСостояние сердца будет ухудшаться, если не поместить его в Охлаждаемый контейнер или Охлаждаемый ящик. При охлаждении орган медленно восстанавливает состояние, если оно выше 90%, в противном случае оно не изменится. Если орган или контейнер, в котором он находится, упадёт с большой высоты, он будет уничтожен.</ntg.description.heart_transplant>
+<ntg.seealso.heart_transplant>
+    [organ_transplant_surgery] Операция по пересадке органов |
+    [heart_damage] Повреждение сердца |
+    [cardiac_arrest] Остановка сердца |
+    [vanilla_organ_damage] Повреждение органа ванилла |
+    [cardiac_tamponade] Сердечная тампонада |
+    [heart_attack] Сердечный приступ |
+    [organ_rejection] Отторжение органа |
+    [immunity] Иммунитет |
+    [refrigerated_container] Охлаждаемый контейнер |
+    [refrigerated_crate] Охлаждаемый ящик
+</ntg.seealso.heart_transplant>
+
+<!-- Kidney Transplant -->
+<ntg.title.kidney_transplant>Трансплантация почек</ntg.title.kidney_transplant>
+<ntg.description.kidney_transplant>Проверка навыка медицины: 40.
+\nПара жизненно важных органов. Повреждение почек пациента напрямую связано с ними. В отличие от других органов, у пациентов две почки, которые повреждаются индивидуально. При 50% повреждении почек только одна почка отказала, в то время как другая будет функционировать. Пациент может быть здоров с только одной почкой. Само по себе 50% повреждение почек не вызовет летальной Гипертензии.
+\nПочки могут быть удалены или трансплантированы во время Хирургии трансплантации органов, выполняемой на торсе. Удаление почек удалит обе сразу, вызывая 100% Повреждение почек и до 20% Повреждения органа ванилла, обратно пропорционально повреждению почек до удаления. Состояние органов обратно пропорционально повреждению почек до удаления, до 50% для каждой почки. Таким образом, удаление почек при 25% повреждении почек даст одну почку с 100% и другую с 50%.
+\nЕсли почки трансплантированы обратно пациенту, до 50% Повреждения почек и до 10% Повреждения органа ванилла на почку, оба обратно пропорционально их состоянию, будут вылечены. Пациент может получить Отторжение органа, если они получат орган и их Иммунитет выше 10%, если механика включена в конфиге мода.
+\nСостояние почки будет ухудшаться, если не поместить её в Охлаждаемый контейнер или Охлаждаемый ящик. При охлаждении орган медленно восстанавливает состояние, если оно выше 90%, в противном случае оно не изменится. Если орган или контейнер, в котором он находится, уронен с большой высоты, он будет уничтожен.</ntg.description.kidney_transplant>
+<ntg.seealso.kidney_transplant>
+    [organ_transplant_surgery] Операция по пересадке органов |
+    [kidney_damage] Повреждение почек |
+    [hypertension] Гипертензия |
+    [vanilla_organ_damage] Повреждение органа ванилла |
+    [organ_rejection] Отторжение органа |
+    [immunity] Иммунитет |
+    [refrigerated_container] Охлаждаемый контейнер |
+    [refrigerated_crate] Охлаждаемый ящик
+</ntg.seealso.kidney_transplant>
+
+<!-- Leg Item -->
+<ntg.title.leg_item>Нога (бионическая / отсечённая)</ntg.title.leg_item>
+<ntg.description.leg_item>Заменяющая левая или правая нога, которую можно прикрепить к соответствующей хирургически ампутированной и подготовленной ножной ячейке.
+\nОтсечённые ноги требуют охлаждения, иначе испортятся. Бионические ноги синтетические и не требуют охлаждения, но в остальном биологически эквивалентны натуральным ногам.</ntg.description.leg_item>
+<ntg.seealso.leg_item>
+    [gangrene] Гангрена |
+    [traumatic_amputation] Травматическая ампутация |
+    [surgical_amputation] Хирургическая ампутация |
+    [amputation_surgery] Операция для ампутации
+</ntg.seealso.leg_item>
+
+<!-- Liver Transplant -->
+<ntg.title.liver_transplant>Трансплантация печени</ntg.title.liver_transplant>
+<ntg.description.liver_transplant>Проверка навыка медицины: 40\n\nЖизненно важный орган. Повреждение печени пациента напрямую связано с ним.
+\nПечень может быть удалена или трансплантирована во время Хирургии трансплантации органов, выполняемой на торсе. Удаление печени вызывает 100% Повреждение печени и до 20% Повреждения органа ванилла, обратно пропорционально повреждению печени до удаления. Состояние органа обратно пропорционально повреждению печени до удаления.
+\nЕсли печень трансплантирована обратно пациенту, его Повреждение печени и до 20% Повреждения органа ванилла, оба обратно пропорционально состоянию органа, будут вылечены. Пациент может получить Отторжение органа, если они получат орган и их Иммунитет выше 10%, если механика включена в конфиге мода.\n\nСостояние печени будет ухудшаться, если не поместить её в Охлаждаемый контейнер или Охлаждаемый ящик.
+При охлаждении орган медленно восстанавливает состояние, если оно выше 90%, в противном случае оно не изменится. Если орган или контейнер, в котором он находится, упадёт с большой высоты, он будет уничтожен.</ntg.description.liver_transplant>
+<ntg.seealso.liver_transplant>
+    [organ_transplant_surgery] Операция по пересадке органов |
+    [liver_damage] Повреждение печени |
+    [vanilla_organ_damage] Повреждение органа ванилла |
+    [organ_rejection] Отторжение органа |
+    [immunity] Иммунитет |
+    [refrigerated_container] Охлаждаемый контейнер |
+    [refrigerated_crate] Охлаждаемый ящик
+</ntg.seealso.liver_transplant>
+
+<!-- Liquid Oxygenite -->
+<ntg.title.liquid_oxygenite>Жидкий кислородит</ntg.title.liquid_oxygenite>
+<ntg.description.liquid_oxygenite>Проверка навыка медицины: 72.
+\nСжиженный инопланетный материал, используемый для ввода кислорода непосредственно в кровоток, лечащий Гипоксемию. При успешном применении пользователь функционально невосприимчив к Гипоксемии.
+\nВсе эффекты, перечисленные ниже, применяются в течение 30 секунд.</ntg.description.liquid_oxygenite>
+<ntg.applicationsuccess.liquid_oxygenite>
+    [hypoxemia] -3000% Гипоксемия |
+    [vanilla_organ_damage] +6% Повреждение органа ванилла |
+    [lung_damage] +6% Повреждение лёгких |
+    [liver_damage] +6% Повреждение печени |
+    [heart_damage] +6% Повреждение сердца |
+    [kidney_damage] +6% Повреждение почек
+</ntg.applicationsuccess.liquid_oxygenite>
+<ntg.applicationfailed.liquid_oxygenite>
+    [hypoxemia] -200% Гипоксемия |
+    [vanilla_organ_damage] +10% Повреждение органа ванилла |
+    [lung_damage] +10% Повреждение лёгких |
+    [liver_damage] +10% Повреждение печени |
+    [heart_damage] +10% Повреждение сердца |
+    [kidney_damage] +10% Повреждение почек
+</ntg.applicationfailed.liquid_oxygenite>
+
+<!-- Lung Transplant -->
+<ntg.title.lung_transplant>Трансплантация лёгких</ntg.title.lung_transplant>
+<ntg.description.lung_transplant>Проверка навыка медицины: 40.
+\nЖизненно важный орган. Поражения пациента, связанные с лёгкими, напрямую связаны с ним.
+\nЛёгкие могут быть удалены или трансплантированы во время Хирургии трансплантации органов, выполняемой на торсе. Удаление лёгких вызывает немедленную Остановку дыхания, 100% Повреждение лёгких и до 20% Повреждения органа ванилла, обратно пропорционально повреждению лёгких до удаления.
+Состояние органа обратно пропорционально повреждению лёгких до удаления. Пациент не может получить и будет немедленно избавлён от Пневмоторакса, и получит Недостаток кислорода даже если получает искусственную вентиляцию или носит Автопульс, пока их лёгкие удалены.
+\nЕсли лёгкие трансплантированы обратно пациенту, их Повреждение лёгких и до 20% Повреждения органа ванилла, оба обратно пропорционально состоянию органа, будут вылечены, но их Остановка дыхания не будет вылечена. Пациент может получить Отторжение органа, если они получат орган и их Иммунитет выше 10%, если механика включена в конфиге мода.
+\nСостояние лёгких будет ухудшаться, если не поместить их в Охлаждаемый контейнер или Охлаждаемый ящик. При охлаждении орган медленно восстанавливает состояние, если оно выше 90%, в противном случае оно не изменится. Если орган или контейнер, в котором он находится, упадёт с большой высоты, он будет уничтожен.</ntg.description.lung_transplant>
+<ntg.seealso.lung_transplant>
+    [organ_transplant_surgery] Операция по пересадке органов |
+    [lung_damage] Повреждение лёгких |
+    [respiratory_arrest] Остановка дыхания |
+    [vanilla_organ_damage] Повреждение органа ванилла |
+    [pneumothorax] Пневмоторакс |
+    [oxygen_low] Недостаток кислорода |
+    [autopulse] Автопульс |
+    [organ_rejection] Отторжение органа |
+    [immunity] Иммунитет |
+    [refrigerated_container] Охлаждаемый контейнер |
+    [refrigerated_crate] Охлаждаемый ящик
+</ntg.seealso.lung_transplant>
+
+<!-- Mannitol -->
+<ntg.title.mannitol>Маннитол</ntg.title.mannitol>
+<ntg.description.mannitol>Проверка навыка медицины: 60.
+\nМаннитол — лекарство, используемое для лечения Нейротравмы и уменьшения её роста вдвое. Взамен он вызывает различные повреждения органов. Для того чтобы маннитол лечил Нейротравму, кровяное давление должно быть больше 70% и Гипоксемия должна быть меньше 30%.
+\nЭффекты происходят в течение 10 секунд.</ntg.description.mannitol>
+<ntg.applicationsuccess.mannitol>
+    [neurotrauma] +50% Маннитол (Лечит до 100% Нейротравмы) |
+    [vanilla_organ_damage] +5% Повреждение органа ванилла |
+    [heart_damage] +10% Повреждение сердца |
+    [kidney_damage] +10% Повреждение почек
+</ntg.applicationsuccess.mannitol>
+<ntg.applicationfailed.mannitol>
+    [neurotrauma] Лечит до 100% |
+    [vanilla_organ_damage] +10% Повреждение органа ванилла |
+    [heart_damage] +20% Повреждение сердца|
+    [kidney_damage] +20% Повреждение почек
+</ntg.applicationfailed.mannitol>
+
+<!-- Manual Defibrillator -->
+<ntg.title.manual_defibrillator>Ручной дефибриллятор</ntg.title.manual_defibrillator>
+<ntg.description.manual_defibrillator>Предмет, используемый для коррекции сердцебиения пациента. При использовании на пациенте и при наличии заряженных батарей дефибриллятор имеет шанс либо сбросить Фибрилляцию, либо вызвать Остановку сердца, либо вылечить остановку сердца. Использование любого дефибриллятора на человеке оглушит его на одну секунду.
+\nПри медицинском навыке ниже 80 Автоматический внешний дефибриллятор (АВД) имеет лучшие шансы во всех отношениях. При 100 медицинском навыке ручной дефибриллятор превосходен. Ручной дефибриллятор становится абсолютно безопасным и гарантированно лечит остановку сердца и фибрилляцию.</ntg.description.manual_defibrillator>
+<ntg.seealso.manual_defibrillator>
+    [aed] Автоматический внешний дефибриллятор (АВД) |
+    [mechanic_fibrillation] Фибрилляция |
+    [cardiac_arrest] Остановка сердца
+</ntg.seealso.manual_defibrillator>
+
+<!-- Medical Stent -->
+<ntg.title.medical_stent>Медицинский стент</ntg.title.medical_stent>
+<ntg.description.medical_stent>Четвёртый шаг в хирургии Аортального кровотечения. Стент не сработает, если вы не использовали Эндоваскулярный баллон заранее. Использование медицинского стента вылечит Аортальное кровотечение, а также удалит эндоваскулярный баллон у пациента.</ntg.description.medical_stent>
+<ntg.seealso.medical_stent>
+    [endovascular_balloon] Эндоваскулярный баллон |
+    [aortic_rupture_surgery] Операция для Аортального кровотечения |
+    [aortic_rupture] Аортальное кровотечение
+</ntg.seealso.medical_stent>
+
+<!-- Methamphetamine -->
+<ntg.title.methamphetamine>Метамфетамин</ntg.title.methamphetamine>
+<ntg.description.methamphetamine>Проверка навыка медицины: 35.
+\nСтимулятор. Гиперактивность происходит мгновенно, в то время как другие эффекты происходят в течение 30 секунд.</ntg.description.methamphetamine>
+<ntg.applicationsuccess.methamphetamine>
+    +70% Гиперактивность |
+    [vanilla_organ_damage] +15% Повреждение органа ванилла |
+    [neurotrauma] +15% Нейротравма |
+    +15% Химическая зависимость |
+    +30% Психоз |
+    -22.5% Оглушение |
+    [withdrawal] -90% Химическая ломка
+</ntg.applicationsuccess.methamphetamine>
+<ntg.applicationfailed.methamphetamine>
+    +50% Гиперактивность |
+    [vanilla_organ_damage] +30% Повреждение органа ванилла |
+    [neurotrauma] +30% Нейротравма |
+    +30% Химическая зависимость |
+    +45% Психоз |
+    -22.5% Оглушение |
+    [withdrawal] -90% Химическая ломка
+</ntg.applicationfailed.methamphetamine>
+
+<!-- Morphine -->
+<ntg.title.morphine>Морфин</ntg.title.morphine>
+<ntg.description.morphine>Проверка навыка медицины: 30.
+\nУмеренно мощный опиат, используемый для вызова Анальгезии. Для предотвращения эксплойтов морфин нельзя выстрелить как снаряд, например из шприцевого пистолета.</ntg.description.morphine>
+<ntg.applicationsuccess.morphine>
+    [analgesia] +50% (100% если Опьянение) |
+    [opiate_overdose] +10% Опиатная передозировка (20% если Опьянение) |
+    +10% Опиатная зависимость |
+    [withdrawal] -30% Опиатная ломка
+</ntg.applicationsuccess.morphine>
+<ntg.applicationfailed.morphine>
+    [analgesia] +30% (60% если Опьянение) |
+    [opiate_overdose] +40% Опиатная передозировка |
+    +10% Опиатная зависимость |
+    [withdrawal] -30% Опиатная ломка
+</ntg.applicationfailed.morphine>
+
+<!-- Naloxone -->
+<ntg.title.naloxone>Налоксон</ntg.title.naloxone>
+<ntg.description.naloxone>Проверка навыка медицины: 39.
+\nНалоксон используется для лечения эффектов опиатов.</ntg.description.naloxone>
+<ntg.applicationsuccess.naloxone>
+    [withdrawal] -60% Опиатная ломка |
+    [opiate_overdose] -60% Опиатная передозировка |
+    [analgesia] -60% Анальгезия |
+    -60% Опиатная зависимость
+</ntg.applicationsuccess.naloxone>
+<ntg.applicationfailed.naloxone>
+    [withdrawal] -30% Опиатная ломка |
+    [opiate_overdose] -30% Опиатная передозировка |
+    [analgesia] -30% Анальгезия |
+    -60% Опиатная зависимость
+    [coma] +15% Кома (50% Шанс)
+</ntg.applicationfailed.naloxone>
+
+<!-- Needle -->
+<ntg.title.needle>Игла</ntg.title.needle>
+<ntg.description.needle>Проверка навыка медицины: 20.
+\nРасходуемая игла, которая уменьшает силу Пневмоторакса до 5%, но не лечит его. Если у пациента нет пневмоторакса, игла даст им пневмоторакс вместо этого.</ntg.description.needle>
+<ntg.applicationsuccess.needle>
+    [pneumothorax] Уменьшает до Пневмоторакс 5% и предотвращает ухудшение
+</ntg.applicationsuccess.needle>
+<ntg.applicationfailed.needle>
+    [vanilla_organ_damage] +10% Повреждение органа ванилла
+    [bleeding] +10% Кровотечение
+</ntg.applicationfailed.needle>
+
+<!-- Nitroglycerin -->
+<ntg.title.nitroglycerin>Нитроглицерин</ntg.title.nitroglycerin>
+<ntg.description.nitroglycerin>Проверка навыка медицины: 35.
+\nБанка, содержащая очень летучий вазодилататор, склонный к взрыву при ударе или воздействии тепла. Пока этот препарат активен, Фибрилляция, вызванная Гипотензией, будет уменьшена. Идентичный эффект и поражение Нитропруссиду натрия.</ntg.description.nitroglycerin>
+<ntg.applicationsuccess.nitroglycerin>
+    -45% Кровяное давление (400 секунд)
+</ntg.applicationsuccess.nitroglycerin>
+<ntg.applicationfailed.nitroglycerin>
+    -45% Кровяное давление (200 секунд)
+</ntg.applicationfailed.nitroglycerin>
+
+<!-- Opium -->
+<ntg.title.opium>Опий</ntg.title.opium>
+<ntg.description.opium>Проверка навыка медицины: 30.
+\nСлабый опиат, используемый для вызова Анальгезии.</ntg.description.opium>
+<ntg.applicationsuccess.opium>
+    [analgesia] +20% (40% если Опьянение) |
+    [opiate_overdose] +5% Опиатная передозировка (18.75% если Опьянение) |
+    +10% Опиатная зависимость |
+    [withdrawal] -15% Опиатная ломка
+</ntg.applicationsuccess.opium>
+<ntg.applicationfailed.opium>
+    [analgesia] +10% (20% если Опьянение) |
+    [opiate_overdose] +15% Опиатная передозировка (30% если Опьянение) |
+    +10% Опиатная зависимость |
+    [withdrawal] -15% Опиатная ломка
+</ntg.applicationfailed.opium>
+
+<!-- Multipurpose Scalpel -->
+<ntg.title.multipurpose_scalpel>Многофункциональный скальпель</ntg.title.multipurpose_scalpel>
+<ntg.description.multipurpose_scalpel>Многофункциональный скальпель объединяет функциональность обычного скальпеля, скальпелей для извлечения органов и травматических ножниц, а также предоставляет пользователю способ намеренно навредить пациенту.
+\nЭтот предмет можно изготовить в обычном фабрикаторе.
+\nРежим этого скальпеля меняется экипировкой предмета (как оружие или инструмент) и нажатием на доступные кнопки интерфейса, которые появляются.
+</ntg.description.multipurpose_scalpel>
+<ntg.description.multipurpose_scalpel_ex1>
+В этом режиме предмет ведёт себя идентично обычному Скальпелю.
+</ntg.description.multipurpose_scalpel_ex1>
+<ntg.description.multipurpose_scalpel_ex2>
+В этом режиме, пока у пациента есть бинт или гипс, предмет функционирует идентично Травматическим ножницам.
+\nЕсли это не так, то использование приведёт к тому, что пациент будет зарезан. В зависимости от места и хирургического статуса пациента, это может вызвать серьёзный урон.
+</ntg.description.multipurpose_scalpel_ex2>
+<ntg.description.multipurpose_scalpel_ex3>
+В этом режиме предмет получит возможность извлечь любой орган из пациента, и это необходимый предмет для Хирургии трансплантации органов. Извлекаемый орган зависит от того, на какой конечности есть Втянутая кожа, и на какой конечности используется многофункциональный скальпель:|
+[kidney_transplant] Применить к Левой руке, со втянутой кожей на Торсе | [liver_transplant] Применить к Торсу, со втянутой кожей на Торсе |
+[heart_transplant] Применить к Правой руке, со втянутой кожей на Торсе | [lung_transplant] Применить к Левой ноге, со втянутой кожей на Торсе |
+[brain_transplant] Применить к Голове, со втянутой кожей на Голове
+</ntg.description.multipurpose_scalpel_ex3>
+
+<!-- Osteosynthesis Implants -->
+<ntg.title.osteosynthesis_implants>Импланты остеосинтеза</ntg.title.osteosynthesis_implants>
+<ntg.description.osteosynthesis_implants>Проверка навыка медицины: 45.
+\nШестой шаг в хирургии остеосинтеза. Импланты не сработают без 100% Просверленных костей.
+</ntg.description.osteosynthesis_implants>
+<ntg.applicationsuccess.osteosynthesis_implants>
+    [fractures] Лечит все переломы на конечности, используя 25% состояния импланта
+</ntg.applicationsuccess.osteosynthesis_implants>
+<ntg.applicationfailed.osteosynthesis_implants>
+    [bleeding] +5% Кровотечение |
+    [internal_wounds] +5% Внутренняя травма
+</ntg.applicationfailed.osteosynthesis_implants>
+
+<!-- Plastiseal -->
+<ntg.title.plastiseal>Эластичный бинт</ntg.title.plastiseal>
+<ntg.description.plastiseal>Проверка навыка медицины: 22.
+\nУлучшенная версия Перевязанного, которая может более эффективно лечить раны.
+\nПрименение эластичного бинта также заменит любые грязные бинты на конечности, к которой применяется бинт. Эластичный бинт также можно использовать после Втянутой кожи для лечения ожогов третьей степени.</ntg.description.plastiseal>
+<ntg.applicationsuccess.plastiseal>
+    [bandaged] +100% Перевязка |
+    [bleeding] -48% Кровотечение |
+    [burns] -24% Ожоги
+</ntg.applicationsuccess.plastiseal>
+<ntg.applicationfailed.plastiseal>
+    [bandaged] +50% Перевязка |
+    [bleeding] -24% Кровотечение |
+    [burns] -12% Ожоги
+</ntg.applicationfailed.plastiseal>
+
+<!-- Propofol -->
+<ntg.title.propofol>Пропофол</ntg.title.propofol>
+<ntg.description.propofol>Пропофол больше нельзя создать.
+\nПрепарат, используемый для вызванного отсутствия сознания с целью предотвращения травматического шока.
+\nПри использовании пациент получит анестезию со скоростью 0,3% в секунду. При уровне анестезии 1-15% пациент получит 5% анальгезии. При анестезии выше 15% пациент потеряет сознание. При 100% анестезии действие пропофола прекратится.
+\nПрименение анапарализанта снизит анестезию до 0%, также удалив её эффект.</ntg.description.propofol>
+<ntg.sideeffects.propofol>
+    [hypotension] Гипотензия |
+    [confusion] Спутанность сознания |
+    [blurred_vision] Размытое зрение |
+    [fever] Лихорадка |
+    [mechanic_fibrillation] Фибрилляция |
+    [seizure] Припадок |
+    [vomiting_blood] Рвота с кровью |
+    Психоз
+</ntg.sideeffects.propofol>
+<ntg.seealso.propofol>
+    [anaparalyzant] Анапарализант |
+    [analgesia] Анальгезия |
+    [anesthesia] Анестезия |
+    [unconsciousness] Без сознания |
+    [traumatic_shock] Травматический шок
+</ntg.seealso.propofol>
+
+<!-- Raptor Bane Extract -->
+<ntg.title.raptor_bane_extract>Бич раптора</ntg.title.raptor_bane_extract>
+<ntg.description.raptor_bane_extract>Экстракт яда раптора используется для лечения ацидоза путём вызова рвоты у пациента для придания ему алкалоза.</ntg.description.raptor_bane_extract>
+<ntg.seealso.raptor_bane_extract>
+    [acidosis] Ацидоз |
+    [alkalosis] Алкалоз |
+    [vomiting] Рвота
+</ntg.seealso.raptor_bane_extract>
+
+<!-- Refrigerated Container -->
+<ntg.title.refrigerated_container>Холодильный контейнер</ntg.title.refrigerated_container>
+<ntg.description.refrigerated_container>Контейнер, имеющий много общих свойств с контейнером для хранения. Имеет 6 слотов и может содержать любой мелкий предмет. Однако его основное назначение — хранение трансплантатов органов (кроме трансплантата мозга), отсечённых конечностей и гелевых хладоэлементов. Это предотвратит естественную потерю состояния предметов. Органы будут медленно восстанавливать состояние, если оно выше 90%, конечности — выше 95%, а гелевые хладоэлементы — при любом состоянии.
+\nОрганы могут быть уничтожены, если их поместить в контейнер и уронить его с большой высоты.</ntg.description.refrigerated_container>
+<ntg.seealso.refrigerated_container>
+    [heart_transplant] Сердце |
+    [kidney_transplant] Почки |
+    [liver_transplant] Печень |
+    [lung_transplant] Лёгкие |
+    [arm_item] Рука (отсечённая) |
+    [leg_item] Нога (отсечённая) |
+    [gel_ice_pack] Гелевый хладоэлемент
+</ntg.seealso.refrigerated_container>
+
+<!-- Refrigerated Crate -->
+<ntg.title.refrigerated_crate>Холодильный ящик</ntg.title.refrigerated_crate>
+<ntg.description.refrigerated_crate>Контейнер, имеющий много общих свойств с водонепроницаемыми ящиками. Имеет 12 слотов и может содержать любой мелкий предмет. Однако его основное назначение — хранение трансплантатов органов (кроме трансплантата мозга), отсечённых конечностей и гелевых хладоэлементов. Это предотвратит естественную потерю состояния предметов. Органы будут медленно восстанавливать состояние, если оно выше 90%, конечности — выше 95%, а гелевые хладоэлементы — при любом состоянии.
+\nОрганы могут быть уничтожены, если их поместить в ящик и уронить его с большой высоты.</ntg.description.refrigerated_crate>
+<ntg.seealso.refrigerated_crate>
+    [heart_transplant] Сердце |
+    [kidney_transplant] Почки |
+    [liver_transplant] Печень |
+    [lung_transplant] Лёгкие |
+    [arm_item] Рука (отсечённая) |
+    [leg_item] Нога (отсечённая) |
+    [gel_ice_pack] Гелевый хладоэлемент
+</ntg.seealso.refrigerated_crate>
+
+<!-- Ringers Solution -->
+<ntg.title.ringers_solution>Раствор Рингера</ntg.title.ringers_solution>
+<ntg.description.ringers_solution>Проверка навыка медицины: 20\n\nИзотонический раствор, используемый для замены потерянной жидкости. Повышает кровяное давление без других эффектов.</ntg.description.ringers_solution>
+<ntg.applicationsuccess.ringers_solution>
+    +30% кровяного давления (200 секунд)
+</ntg.applicationsuccess.ringers_solution>
+<ntg.applicationfailed.ringers_solution>
+    +30% кровяного давления (120 секунд)
+</ntg.applicationfailed.ringers_solution>
+
+<!-- Saline -->
+<ntg.title.saline>Физраствор</ntg.title.saline>
+<ntg.description.saline>Проверка навыка медицины: 10.
+\nРаствор, используемый для замены потерянной жидкости или лечения алкалоза.</ntg.description.saline>
+<ntg.applicationsuccess.saline>
+    +30% кровяного давления (200 секунд) |
+    [acidosis] +0,07%/с ацидоза (200 секунд)
+</ntg.applicationsuccess.saline>
+<ntg.applicationfailed.saline>
+    +30% кровяного давления (120 секунд) |
+    [acidosis] +0,07%/с ацидоза (120 секунд)
+</ntg.applicationfailed.saline>
+
+<!-- Scalpel -->
+<ntg.title.scalpel>Скальпель</ntg.title.scalpel>
+<ntg.description.scalpel>Проверка навыка медицины: 30.
+\nВторой шаг во всех хирургических процедурах. Скальпель не будет работать без анальгезии или отсутствия сознания.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.scalpel>
+<ntg.applicationsuccess.scalpel>
+    [surgery_incision] Накладывает хирургический надрез и удаляет бинт/гипс
+</ntg.applicationsuccess.scalpel>
+<ntg.applicationfailed.scalpel>
+    [bleeding] +15% кровотечения |
+    [lacerations] +10% разрывов
+</ntg.applicationfailed.scalpel>
+<ntg.seealso.scalpel>
+    [analgesia] Анальгезия |
+    [unconsciousness] Без сознания
+</ntg.seealso.scalpel>
+
+<!-- Skin Retractors -->
+<ntg.title.skin_retractors>Расширитель</ntg.title.skin_retractors>
+<ntg.description.skin_retractors>Проверка навыка медицины: 30.
+\nЧетвёртый шаг в большинстве хирургических процедур. Расширители не будут работать без 100% зажатого кровотечения.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.skin_retractors>
+<ntg.applicationsuccess.skin_retractors>
+    [retracted_skin] Накладывает оттянутую кожу
+</ntg.applicationsuccess.skin_retractors>
+<ntg.applicationfailed.skin_retractors>
+    [internal_wounds] +10% внутреннего урона
+</ntg.applicationfailed.skin_retractors>
+
+<!-- Sodium Nitroprusside -->
+<ntg.title.sodium_nitroprusside>Нитропруссид натрия</ntg.title.sodium_nitroprusside>
+<ntg.description.sodium_nitroprusside>Проверка навыка медицины: 10.
+\nПрепарат для снижения кровяного давления. Пока действует этот препарат, фибрилляция, вызванная гипотензией, будет снижена. Идентичный эффект и аффликт нитроглицерину.</ntg.description.sodium_nitroprusside>
+<ntg.applicationsuccess.sodium_nitroprusside>
+    -45% кровяного давления (200 секунд)
+</ntg.applicationsuccess.sodium_nitroprusside>
+<ntg.applicationfailed.sodium_nitroprusside>
+    -45% кровяного давления (120 секунд)
+</ntg.applicationfailed.sodium_nitroprusside>
+
+<!-- Spinal Cord Implants -->
+<ntg.title.spinal_cord_implants>Импланты позвоночного столба</ntg.title.spinal_cord_implants>
+<ntg.description.spinal_cord_implants>Лечит повреждение спинного мозга.</ntg.description.spinal_cord_implants>
+<ntg.applicationsuccess.spinal_cord_implants>
+    [spinal_cord_injury] -100% повреждения спинного мозга (также лечите перелом!)
+</ntg.applicationsuccess.spinal_cord_implants>
+<ntg.applicationfailed.spinal_cord_implants>
+    [bleeding] +5% кровотечения |
+    [internal_wounds] +5% внутренних ран
+</ntg.applicationfailed.spinal_cord_implants>
+
+<!-- Stasis Bag -->
+<ntg.title.stasis_bag>Стазис-мешок</ntg.title.stasis_bag>
+<ntg.description.stasis_bag>Специальный мешок, который сохраняет тело в стазисе для транспортировки к надлежащему лечению, если травмы тяжёлые. Мешок стазиса надевается в слот водолазного костюма, и его ношение расходует его состояние со скоростью 0,25% в секунду, то есть мешок стазиса прослужит 400 секунд или примерно 6 с половиной минут.
+\nНошение мешка стазиса защитит носящего от давления до 7000 метров и позволит тащить его на полной скорости. Кроме того, инфекция оболочки носящего будет снижаться на 0,15/с, если она ниже 100%.
+\nПациенты в мешке стазиса не могут получить операцию и не смогут получить её в течение 3 секунд после извлечения из мешка. Однако они всё ещё могут получать предметы, такие как препараты.
+\nПациенты, извлечённые из мешка стазиса, получат остановку сердца, остановку дыхания и потерю сознания, и потребуется лечение этих аффликтов.
+\nСледующие аффликты останавливаются мешком стазиса:
+</ntg.description.stasis_bag>
+<ntg.effects.stasis_bag>
+    [cardiac_arrest] Остановка сердца |
+    [respiratory_arrest] Остановка дыхания |
+    [heart_attack] Сердечный приступ |
+    [neurotrauma] Нейротравма |
+    [kidney_damage] Повреждение почек |
+    [liver_damage] Повреждение печени |
+    [heart_damage] Повреждение сердца |
+    [lung_damage] Повреждение лёгких |
+    [bone_damage] Повреждение костей |
+    [sepsis] Сепсис |
+    [hypoxemia] Гипоксемия |
+    [hypotension] Гипотензия |
+    [hypertension] Гипертензия |
+    [internal_bleeding] Внутреннее кровотечение |
+    [stroke] Инсульт |
+    [seizure] Припадок |
+    [coma] Кома |
+    [infected_wounds] Заражённые раны |
+    [bleeding] Кровотечение
+</ntg.effects.stasis_bag>
+
+<!-- Стрептокиназа -->
+<ntg.title.streptokinase>Стрептокиназа</ntg.title.streptokinase>
+<ntg.description.streptokinase>Проверка навыка медицины: None.
+\nРазжижитель крови. Использование стрептокиназы предотвратит естественную регенерацию кровотечения и увеличит шанс получить инсульт, если у пациента кровяное давление выше 150%.</ntg.description.streptokinase>
+<ntg.effects.streptokinase>
+    [heart_attack] Полностью лечит сердечный приступ |
+    [hemotransfusion_shock] Полностью лечит гемотрансфузионный шок
+</ntg.effects.streptokinase>
+<ntg.seealso.streptokinase>
+    [stroke] Инсульт |
+    [hypertension] Гипертензия |
+    [bleeding] Кровотечение
+</ntg.seealso.streptokinase>
+
+<!-- Surgery Table -->
+<ntg.title.surgery_table>Surgery Table</ntg.title.surgery_table>
+<ntg.description.surgery_table>Операционный стол — предмет, который можно купить на станции или создать, а затем разместить. Пациент не обязан находиться на столе, ему нужно только быть рядом с ним.
+\nОперационный стол обеспечивает искусственную вентиляцию всем, кто находится рядом со столом, и предотвращает травматический шок при условии, что пациент находится под анальгезией. Кроме того, стол будет снижать нехватку кислорода и предотвращать остановку дыхания и гиповентиляцию от увеличения ацидоза. Больничная койка имеет те же функции. Другие койки предотвращают травматический шок, но только для персонажа, лежащего на них, и не обеспечивают других эффектов операционного стола.
+\nСтол также имеет проводные контакты, которые можно использовать для вывода важной информации, такой как кровяное давление, ацидоз, пульс и частота дыхания.
+\nСтол имеет слоты для трёх предметов: Баллон с анальгетиком, либо Фильтр для диализа, либо Фильтр любых токсинов и Холодильный ящик.
+\nБаллон и фильтры работают только для пациента, лежащего на столе, и предметы могут быть доступны только этому же пациенту.</ntg.description.surgery_table>
+<ntg.seealso.surgery_table>
+    [traumatic_shock] Травматический шок |
+    [analgesia] Анальгезия |
+    [oxygen_low] Нехватка кислорода |
+    [respiratory_arrest] Остановка дыхания |
+    [hypoventilation] Гиповентиляция |
+    [analgesic_tank] Баллон с анальгетиком |
+    [dialysis_filter] Диализный фильтр |
+    [toxin_filter] Токсиновый фильтр |
+    [refrigerated_crate] Охлаждаемый ящик
+</ntg.seealso.surgery_table>
+
+<!-- Surgical Drill -->
+<ntg.title.surgical_drill>Surgical Drill</ntg.title.surgical_drill>
+<ntg.description.surgical_drill>Проверка навыка медицины: 45.
+\nПятый шаг в остеосинтетической хирургии. Хирургическая дрель не будет работать без 100% оттянутой кожи.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.surgical_drill>
+<ntg.applicationsuccess.surgical_drill>
+    [drilled_bones] Накладывает просверленные кости
+</ntg.applicationsuccess.surgical_drill>
+<ntg.applicationfailed.surgical_drill>
+    [burns] +12% ожогов |
+    [internal_wounds] +10% внутреннего урона
+</ntg.applicationfailed.surgical_drill>
+<ntg.seealso.surgical_drill>
+    [osteosynthetic_surgery] Операция остеосинтеза
+</ntg.seealso.surgical_drill>
+
+<!-- Surgical Saw -->
+<ntg.title.surgical_saw>Surgical Saw</ntg.title.surgical_saw>
+<ntg.description.surgical_saw>Проверка навыка медицины: 45.
+\nПятый шаг в ампутационной хирургии. Хирургическая пила не будет работать без 100% оттянутой кожи.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.surgical_saw>
+<ntg.applicationsuccess.surgical_saw>
+    [sawed_bones] Накладывает распиленные кости на конечность
+</ntg.applicationsuccess.surgical_saw>
+<ntg.applicationfailed.surgical_saw>
+    [internal_wounds] +6% внутреннего урона |
+    [bleeding] +15% кровотечения |
+    [open_wounds] +4% разрывов
+</ntg.applicationfailed.surgical_saw>
+<ntg.seealso.surgical_drill>
+    [amputation_surgery] Операция для ампутации
+</ntg.seealso.surgical_drill>
+
+<!-- Sutures -->
+<ntg.title.sutures>Sutures</ntg.title.sutures>
+<ntg.description.sutures>Проверка навыка медицины: 30.
+\nФинальный шаг во всех хирургических процедурах. Также очень полезен для лечения большинства ран и кровотечений.</ntg.description.sutures>
+<ntg.applicationsuccess.sutures>
+    [open_wounds] -20% открытых ран |
+    [internal_wounds] -20% внутреннего урона |
+    [bleeding] -40% кровотечения |
+    Удаляет все аффликты, связанные с хирургией
+</ntg.applicationsuccess.sutures>
+<ntg.applicationfailed.sutures>
+    [internal_wounds] +6% внутреннего урона
+</ntg.applicationfailed.sutures>
+
+<!-- Thiamine -->
+<ntg.title.thiamine>Тиамин</ntg.title.thiamine>
+<ntg.description.thiamine>Проверка навыка медицины: 10.
+\nКонтейнер с таблетками витамина B1, используемый для помощи в заживлении органов. Не способен оживить мёртвые органы (т.е. при 100% повреждении органа). Успешное применение даст +50% тиамина, применяющего свои эффекты в течение 200 секунд; неудачное применение даст 30% тиамина, применяющегося в течение 120 секунд.</ntg.description.thiamine>
+<ntg.applicationsuccess.thiamine>
+    [lung_damage] -8% повреждения лёгких |
+    [heart_damage] -8% повреждения сердца |
+    [kidney_damage] -8% повреждения почек |
+    [liver_damage] -8% повреждения печени |
+    [vanilla_organ_damage] -8% повреждения органа ванилла
+</ntg.applicationsuccess.thiamine>
+<ntg.applicationfailed.thiamine>
+    [lung_damage] -4,8% повреждения лёгких |
+    [heart_damage] -4,8% повреждения сердца |
+    [kidney_damage] -4,8% повреждения почек |
+    [liver_damage] -4,8% повреждения печени |
+    [vanilla_organ_damage] -4,8% повреждения органа ванилла
+</ntg.applicationfailed.thiamine>
+
+<!-- Tourniquet -->
+<ntg.title.tourniquet>Tourniquet</ntg.title.tourniquet>
+<ntg.description.tourniquet>Проверка навыка медицины: 30.
+\nПредмет, используемый для ограничения кровотока для предотвращения потери крови от артериального кровотечения. Он не будет работать без артериального кровотечения. Жгуты автоматически снимаются после открытой/закрытой хирургии. Использование жгута на голове даст жертве 15% нейротравмы, 200% нехватки кислорода и не зажмёт сонную артериальное кровотечение.</ntg.description.tourniquet>
+<ntg.applicationsuccess.tourniquet>
+    [blood_loss] Предотвращает артериальную потерю крови |
+    [bleeding] Лечит обычное кровотечение
+</ntg.applicationsuccess.tourniquet>
+<ntg.applicationfailed.tourniquet>
+    [internal_wounds] +6% тупой травмы
+    Это также происходит, если применить к ране, у которой нет артериального кровотечения
+</ntg.applicationfailed.tourniquet>
+<ntg.seealso.tourniquet>
+    [gangrene] Гангрена |
+    [open_close_surgery] Операция для Открытия/Закрытия
+    [arterial_bleeding] Артериальное кровотечение
+</ntg.seealso.tourniquet>
+
+<!-- Toxin Filter -->
+<ntg.title.toxin_filter>Фильтр токсинов</ntg.title.toxin_filter>
+<ntg.description.toxin_filter>Фильтр, который можно поместить в операционный стол для лечения ядов пациента.
+\nТолько яды (тип аффликта), добавленные ваниллой, действительны для токсинового фильтра. Для пациента, лежащего на столе, фильтр снижает каждый яд с уникальной скоростью в зависимости от его силы. Несколько ядов могут фильтроваться одновременно. Для каждого фильтруемого яда состояние фильтра снижается на 0,8/с, и есть 0,1% шанс в секунду, что пациент получит сепсис.
+\nЭти эффекты не происходят, если пациент не отравлен.</ntg.description.toxin_filter>
+<ntg.treatments.toxin_filter.morbusine>
+    [morbusine_poisoning] -1,8%/с между 0% и 50% силы аффликта |
+    [morbusine_poisoning] -2,3%/с между 50% и 100% силы аффликта
+</ntg.treatments.toxin_filter.morbusine>
+<ntg.treatments.toxin_filter.cyanide>
+    [cyanide_poisoning] -2,8% между 0% и 30% силы аффликта |
+    [cyanide_poisoning] -5,5%/с между 30% и 100% силы аффликта
+</ntg.treatments.toxin_filter.cyanide>
+<ntg.treatments.toxin_filter.sufforin>
+    [sufforin_poisoning] -1%/с между 0% и 50% силы аффликта |
+    [sufforin_poisoning] -1,8%/с между 50% и 100% силы аффликта
+</ntg.treatments.toxin_filter.sufforin>
+<ntg.treatments.toxin_filter.deliriumine>
+    -1,6%/с между 0% и 50% силы аффликта |
+    -2,3%/с между 50% и 100% силы аффликта
+</ntg.treatments.toxin_filter.deliriumine>
+
+<!-- Trauma Shears -->
+<ntg.title.trauma_shears>Trauma Shears</ntg.title.trauma_shears>
+<ntg.description.trauma_shears>Проверка навыка медицины: 10.
+\nНожницы, используемые для удаления гипсовой повязки и бинтов.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.trauma_shears>
+<ntg.applicationsuccess.trauma_shears>
+    [plaster_cast] Удаляет гипс |
+    [bandaged] Удаляет бинт
+</ntg.applicationsuccess.trauma_shears>
+<ntg.applicationfailed.trauma_shears>
+    [bleeding] +15% кровотечения |
+    [open_wounds] +10% Lacerations
+</ntg.applicationfailed.trauma_shears>
+
+<!-- Tweezers -->
+<ntg.title.tweezers>Пинцет</ntg.title.tweezers>
+<ntg.description.tweezers>Проверка навыка медицины: 30.
+\nПинцет, используемый для удаления повреждённой ткани или пуль.
+\nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".
+\nЕго эффекты зависят от того, есть ли оттянутая кожа, огнестрельное ранение или глубокое повреждение тканей на конечности (случай хирургии) или ни одно из этих не применимо (случай без хирургии).
+\nПинцет может работать без оттянутой кожи, если конечность, которую вы обрабатываете пинцетом, имеет огнестрельные ранения или глубокие повреждения тканей, использование пинцета через огнестрельные ранения или глубокие повреждения тканей вызовет 5% травматического шока. Обратите внимание, что использование пинцета через огнестрельные ранения или глубокие повреждения тканей работает только на инородные тела, а не на тупую травму. Извлечение инородных тел пинцетом также имеет 5% шанс дать металлолом.
+\nИспользование пинцета в случаях, где он иначе ничего не сделал бы, заставит вас щипнуть пациента, вызывая небольшой урон, который хуже, если на голове.</ntg.description.tweezers>
+<ntg.effects.tweezers>
+    [bleeding] Небольшое кровотечение |
+    [open_wounds] Небольшие разрывы |
+    [traumatic_shock] +5% травматического шока (если через огнестрельное ранение / глубокие повреждения тканей) |
+    [foreign_bodies] -3% до -10% инородных тел
+</ntg.effects.tweezers>
+<ntg.applicationsuccess.tweezers>
+    [internal_wounds] -3% до -10% внутреннего урона (хирургия) |
+    [internal_wounds] -3% до -10% тупой травмы (хирургия) |
+    [foreign_bodies] -3% до -10% инородных тел (хирургия) |
+    [open_wounds] +5% разрывов
+</ntg.applicationsuccess.tweezers>
+<ntg.applicationfailed.tweezers>
+    [internal_wounds] +6% внутреннего урона (хирургия)
+</ntg.applicationfailed.tweezers>
+<ntg.seealso.tweezers>
+    [retracted_skin] Оттянутая кожа
+</ntg.seealso.tweezers>
+
+<!-- Wrench -->
+<ntg.title.wrench>Гаечный ключ</ntg.title.wrench>
+<ntg.description.wrench>Проверка навыка медицины: 60 (30 if the patient has Анальгезия).
+\nГаечный ключ используется для лечения вывихов. Чтобы использовать, перетащите его на вывихнутую конечность в интерфейсе здоровья и используйте как лечение, как вы бы использовали бинт. Если у конечности нет вывиха, гаечный ключ ничего не сделает.
+\nГаечный ключ также можно использовать для удаления автопульса или мешка для тела у человека, пока они не потеряли сознание, используя гаечный ключ на их торсе как лечение. Предмет будет помещён в инвентарь пользователя гаечного ключа.</ntg.description.wrench>
+<ntg.applicationsuccess.wrench>
+    [dislocations] Лечит вывихи
+</ntg.applicationsuccess.wrench>
+<ntg.applicationfailed.wrench>
+    [fractures] Вызывает переломы
+</ntg.applicationfailed.wrench>
+
+<!-- Surgical Procedures -->
+<!-- Open Close Surgery -->
+<ntg.title.open_close_surgery>Операция для Открытия/Закрытия</ntg.title.open_close_surgery>
+<ntg.description.open_close_surgery>Самый распространённый тип хирургии. Дополнительные шаги могут быть сделаны между ними, но должны быть сделаны до наложения швов.</ntg.description.open_close_surgery>
+<ntg.steps.open_close_surgery>
+    [analgesia] 1а. Анальгезия |
+    [anesthesia] 1б. Анестезия |
+    [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
+    [scalpel] 2б. Применить скальпель
+    [hemostat] 3. Гемостат |
+    [skin_retractors] 4. Расширитель |
+    [sutures] 5. Наложить шов для завершения
+</ntg.steps.open_close_surgery>
+
+<!-- Osteosynthesis Surgery -->
+<ntg.title.osteosynthesis_surgery>Операция остеосинтеза</ntg.title.osteosynthesis_surgery>
+<ntg.description.osteosynthesis_surgery>Операция для лечения костей, либо для распада костных тканей (в этом случае должна быть сделана на всех конечностях), либо для лечения переломов.</ntg.description.osteosynthesis_surgery>
+<ntg.steps.osteosynthesis_surgery>
+    [analgesia] 1а. Анальгезия |
+    [anesthesia] 1б. Анестезия |
+    [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
+    [scalpel] 2б. Применить скальпель
+    [hemostat] 3. Гемостат |
+    [skin_retractors] 4. Расширитель |
+    [surgical_drill] 5. Хирургическая дрель |
+    [osteosynthesis_implants] 6. Остеосинтетические импланты |
+    [sutures] 7. Наложить шов для завершения
+</ntg.steps.osteosynthesis_surgery>
+
+<!-- Aortic Rupture Surgery -->
+<ntg.title.aortic_rupture_surgery>Операция для Аортального кровотечения</ntg.title.aortic_rupture_surgery>
+<ntg.description.aortic_rupture_surgery>Хирургическая процедура для лечения аортального кровотечения</ntg.description.aortic_rupture_surgery>
+<ntg.steps.aortic_rupture_surgery>
+    [analgesia] 1а. Анальгезия |
+    [anesthesia] 1б. Анестезия |
+    [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
+    [scalpel] 2б. Применить скальпель
+    [endovascular_balloon] 3. Эндоваскулярный баллон |
+    [medical_stent] 4. Медицинский стент |
+    [sutures] 5. Наложить шов для завершения
+</ntg.steps.aortic_rupture_surgery>
+
+<!-- Amputation Surgery -->
+<ntg.title.amputation_surgery>Операция для ампутации</ntg.title.amputation_surgery>
+<ntg.description.amputation_surgery>Операция для удаления или повторного прикрепления конечности. Если конечности не были повторно прикреплены, это вызовет хирургическую ампутацию</ntg.description.amputation_surgery>
+<ntg.steps.amputation_surgery>
+    [analgesia] 1а. Анальгезия |
+    [anesthesia] 1б. Анестезия |
+    [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
+    [scalpel] 2б. Применить скальпель
+    [hemostat] 3. Гемостат |
+    [skin_retractors] 4. Расширитель |
+    [surgical_saw] 5. Хирургическая пила |
+    [arm_item] 6. Опционально: Прикрепить конечность (рука / нога, отсечённая / бионическая) |
+    [sutures] 7. Наложить шов для завершения
+</ntg.steps.amputation_surgery>
+
+<!-- Organ Transplant Surgery -->
+<ntg.title.organ_transplant_surgery>Операция по пересадке органов</ntg.title.organ_transplant_surgery>
+<ntg.description.organ_transplant_surgery>Процедура для замены органа.</ntg.description.organ_transplant_surgery>
+<ntg.steps.organ_transplant_surgery>
+    [analgesia] 1а. Анальгезия |
+    [anesthesia] 1б. Анестезия |
+    [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
+    [scalpel] 2б. Применить скальпель
+    [hemostat] 3. Гемостат |
+    [skin_retractors] 4. Расширитель |
+    [multipurpose_scalpel] 5. Многофункциональный скальпель (установленный в режим адаптивного извлечения органа и применённый к правой конечности согласно описанию) |
+    6. Либо новый орган (поменяется с тем, что сейчас в теле), либо снова многофункциональный скальпель (удаляет орган в теле без замены)
+    [sutures] 7. Наложить шов для завершения
+</ntg.steps.organ_transplant_surgery>
+</Infotexts>
