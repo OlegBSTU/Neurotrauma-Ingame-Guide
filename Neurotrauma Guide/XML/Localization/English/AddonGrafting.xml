@@ -582,14 +582,14 @@ NOTE: Putting in Alien Cells on their own with either no Stem Cells or a valid O
 </ntg.seealso.information_repairing_moloch_shell>
 
 <!-- Aiming Latcher Tongue -->
-<ntg.title.information_aim_latcher_tongue>Aiming Latcher Tongue</ntg.title.information_aim_latcher_tongue>
+<ntg.title.information_aim_latcher_tongue>Aiming the Latcher Tongue</ntg.title.information_aim_latcher_tongue>
 <ntg.description.information_aim_latcher_tongue>A latcher's tongue will always shoot directly forward from your mouth. This means to hit acreature who isn't submerged, they have to be your height to hit them. There are a few tips and tricks to help you aim the tongue on land, however:
 - If a creature if half your height, you can crouch to lower your head, allowing you to hit lower targets;
 - When you run your head aims down, meaning you shoot at a downward angle as well Crouching and walking backwards slightly raises your head, allowing you to shoot upwards;
 - If you are in the water, simply swimming in a way to make your face point your target will let you shoot in any given direction.
 </ntg.description.information_aim_latcher_tongue>
 <ntg.seealso.information_aim_latcher_tongue>
-    [latcher_tongue_grafting]
+    [latcher_tongue_grafting] Latcher Tongue Grafting
 </ntg.seealso.information_aim_latcher_tongue>
 
 <!-- Removing Grafting Limit -->

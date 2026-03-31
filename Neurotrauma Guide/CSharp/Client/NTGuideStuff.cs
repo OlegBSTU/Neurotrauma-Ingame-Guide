@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using MoonSharp.Interpreter;
 
-// Half of this is the clickable in-game chat text by Ydrec, the other half is spliced for Localization from the Analyze Items Mod. Credit where it is due.
+// Thanks to Ydrec
 
 namespace NTGuide 
 {

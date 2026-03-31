@@ -1,0 +1,258 @@
+<Infotexts language="English" nowhitespace="false">
+<!-- Additional pages for Airways -->
+<!-- KAT Medical my beloved -->
+
+<!-- Items -->
+<!-- OVERRIDE -->
+<!-- Needle -->
+<ntg.title.air_needle>Needle</ntg.title.air_needle>
+<ntg.description.air_needle>Removes Pneumothoraxes on use, and turns a Tension Pneumothorax into a normal Pneumothorax.</ntg.description.air_needle>
+
+<!-- Drainage -->
+<ntg.title.air_drainage>Drainage</ntg.title.air_drainage>
+<ntg.description.air_drainage>Turns a Hemothorax into a Hemopneumothorax, and a Hemopneumothorax into a Pneumothorax.</ntg.description.air_drainage>
+
+<!-- END OF OVERRIDE -->
+
+<!-- Oral Suction Tube -->
+<ntg.title.oral_suction_tube>Oral Suction Tube</ntg.title.oral_suction_tube>
+<ntg.description.oral_suction_tube>Medical Skill Check: 50.
+\nUsed to suck an occlusion out of an airway. Does not get consumed on use.</ntg.description.oral_suction_tube>
+<ntg.applicationsuccess.oral_suction_tube>
+    [occlusion] Removes Occlusions and prevents their return for 2 minutes
+</ntg.applicationsuccess.oral_suction_tube>
+<ntg.applicationfailed.oral_suction_tube>
+    [occlusion] Removes Occlusions and prevents their return for 2 minutes, but takes 10 seconds to apply.
+</ntg.applicationfailed.oral_suction_tube>
+
+<!-- Chest Seal -->
+<ntg.title.chest_seal>Vented Chest Seal</ntg.title.chest_seal>
+<ntg.description.chest_seal>Medical Skill Check: 5.
+\nUsed to cover the chest in the event of a sucking chest wound. Consumed on use.</ntg.description.chest_seal>
+<ntg.applicationsuccess.chest_seal>
+    [deep_penetration_injury] Removes Deep Penetration Injuries |
+    [pneumothorax] Reduces Pneumothorax strength by 5
+</ntg.applicationsuccess.chest_seal>
+<ntg.applicationfailed.chest_seal>
+    [deep_penetration_injury] Removes Deep Penetration Injuries, but takes 10 seconds to apply. |
+    [pneumothorax] Reduces Pneumothorax strength by 5, but takes 10 seconds to apply.
+</ntg.applicationfailed.chest_seal>
+
+<!-- Accuvac -->
+<ntg.title.accuvac>Accuvac</ntg.title.accuvac>
+<ntg.description.accuvac>Medical Skill Check: None.
+\nA machine that can be used to quickly clear the airway of both Occlusions and Obstructions. Requires batteries to be used.</ntg.description.accuvac>
+<ntg.applicationsuccess.accuvac>
+    [occlusion] Removes Occlusions and prevents their return for 2 minutes |
+    [obstruction] Removes Obstructions and prevents their return for 2 minutes
+</ntg.applicationsuccess.accuvac>
+
+<!-- Laryngeal Tube -->
+<ntg.title.laryngeal_tube>Laryngeal Tube</ntg.title.laryngeal_tube>
+<ntg.description.laryngeal_tube>Medical Skill Check: 25.
+\nA tube inserted in the larynx of an individual to clear an obstruction. Consumed on use.</ntg.description.laryngeal_tube>
+<ntg.applicationsuccess.laryngeal_tube>
+    [obstruction] Removes Obstructions and prevents their return for 2 minutes 
+</ntg.applicationsuccess.laryngeal_tube>
+<ntg.applicationfailed.laryngeal_tube>
+    [obstruction] Causes an Obstruction
+</ntg.applicationfailed.laryngeal_tube>
+
+<!-- Advanced Airway Treatment Kit -->
+<ntg.title.aat_kit>Advanced Airway Treatment Kit</ntg.title.aat_kit>
+<ntg.description.aat_kit>Medical Skill Check: 5.
+\nAn all-in-one solution to pneumothoraces and its sister injuries. Loses 25% of its condition on use, therefor gets consumed after 4 uses - though it can be combined with other AAT kits. Used on the Torso.</ntg.description.aat_kit>
+<ntg.applicationsuccess.aat_kit>
+    [tension_pneumothorax] Removes Tension Pneumothorax
+    [hemopneumothorax] Removes Hemopneumothorax
+    [hemothorax] Removes Hemothorax
+</ntg.applicationsuccess.aat_kit>
+<ntg.applicationfailed.aat_kit>
+    [tension_pneumothorax] Removes Tension Pneumothorax, but takes 10 seconds to apply |
+    [hemopneumothorax] Removes Hemopneumothorax, but takes 10 seconds to apply |
+    [hemothorax] Removes Hemothorax, but takes 10 seconds to apply
+</ntg.applicationfailed.aat_kit>
+
+<!-- Nasopharyngeal Airway -->
+<ntg.title.naso_airway>Nasopharyngeal Airway</ntg.title.naso_airway>
+<ntg.description.naso_airway>Medical Skill Check: 15.
+\nA tube inserted into the nose of an individual to clear an obstruction. Consumed on use.</ntg.description.naso_airway>
+<ntg.applicationsuccess.naso_airway>
+    [obstruction] Removes Obstructions and prevents their return for 2 minutes 
+</ntg.applicationsuccess.naso_airway>
+<ntg.applicationfailed.naso_airway>
+    [obstruction] Causes an Obstruction
+</ntg.applicationfailed.naso_airway>
+
+<!-- Cricothyrotomy Scalpel -->
+<ntg.title.cric_scalpel>Cricothyrotomy Scalpel</ntg.title.cric_scalpel>
+<ntg.description.cric_scalpel>Medical Skill Check: 90.
+\nA protected #10 scalpel used for preforming a cricothyrotomy. First step in a Cricothyrotomy, consumed on use.</ntg.description.cric_scalpel>
+<ntg.applicationsuccess.cric_scalpel>
+    [cricothyrotomy] Makes a Cirothyroid Incision, the first step in a Cricothyrotomy
+</ntg.applicationsuccess.cric_scalpel>
+<ntg.applicationfailed.cric_scalpel>
+    [arterial_bleeding] Takes 10 seconds to apply, and causes an Arterial Bleed
+</ntg.applicationfailed.cric_scalpel>
+<ntg.seealso.cric_scalpel>
+    [cricothyrotomy] Cricothyrotomy
+</ntg.seealso.cric_scalpel>
+
+<!-- Tracheal Hook -->
+<ntg.title.tracheal_hook>Tracheal Hook</ntg.title.tracheal_hook>
+<ntg.description.tracheal_hook>Medical Skill Check: 90.
+\nA Tracheal Hook used for preforming a cricothyrotomy. Second step in a Cricothyrotomy, consumed on use.</ntg.description.tracheal_hook>
+<ntg.applicationsuccess.tracheal_hook>
+    [occlusion] Removes Occlusions and prevents their return for 2 minutes |
+    [obstruction] Removes Obstructions and prevents their return for 2 minutes
+</ntg.applicationsuccess.tracheal_hook>
+<ntg.applicationfailed.tracheal_hook>
+    Does nothing.
+</ntg.applicationfailed.tracheal_hook>
+<ntg.seealso.tracheal_hook>
+    [cricothyrotomy] Cricothyrotomy
+</ntg.seealso.tracheal_hook>
+
+<!-- Cric Tubing -->
+<ntg.title.cric_tube>Cric Tubing</ntg.title.cric_tube>
+<ntg.description.cric_tube>Medical Skill Check: 90.
+\nA cricothyrotomy tube that allows the use of an Ambubag. Currently, there is no functionality that actually prevents it from being used so this feature is useless.</ntg.description.cric_tube>
+<ntg.applicationsuccess.cric_tube>
+    [ambubag] Allows the use of an Ambubag on the patient
+</ntg.applicationsuccess.cric_tube>
+<ntg.applicationfailed.cric_tube>
+    Does nothing.
+</ntg.applicationfailed.cric_tube>
+
+<!-- Afflictions -->
+<!-- Deep Penetration Injuries -->
+<ntg.title.deep_penetration_injury>Deep Penetration Injury</ntg.title.deep_penetration_injury>
+<ntg.description.deep_penetration_injury>A hole penetrating the chest.</ntg.description.deep_penetration_injury>
+<ntg.causes.deep_penetration_injury>
+    [open_wounds] A Gunshot Wound to the Torso
+</ntg.causes.deep_penetration_injury>
+<ntg.effects.deep_penetration_injury>
+    [pneumothorax] Causes a Pneumothorax if one is not already present
+</ntg.effects.deep_penetration_injury>
+<ntg.treatments.deep_penetration_injury>
+    [chest_seal] Applying a Chestseal
+</ntg.treatments.deep_penetration_injury>
+
+<!-- Occlusion -->
+<ntg.title.occlusion>Occlusion</ntg.title.occlusion>
+<ntg.description.occlusion>Occlusion of the throat.</ntg.description.occlusion>
+<ntg.causes.occlusion>
+    [unconsciousness] Unconsciousness
+</ntg.causes.occlusion>
+<ntg.effects.occlusion>
+    [respiratory_arrest] Respiratory Arrest
+</ntg.effects.occlusion>
+<ntg.treatments.occlusion>
+    [cricothyrotomy] Performing a Cricothyrotomy |
+    [accuvac] Using an Accuvac (prevents this affliction for 2 minutes) |
+    [oral_suction_tube] Oral Suction Tube (prevents this affliction for 2 minutes)
+</ntg.treatments.occlusion>
+<ntg.seealso.occlusion>
+    [obstruction] Obstruction
+</ntg.seealso.occlusion>
+
+<!-- Obstruction -->
+<ntg.title.obstruction>Obstruction</ntg.title.obstruction>
+<ntg.description.obstruction>Obstruction of the throat.</ntg.description.obstruction>
+<ntg.causes.obstruction>
+    [unconsciousness] Unconsciousness
+</ntg.causes.obstruction>
+<ntg.effects.obstruction>
+    [respiratory_arrest] Respiratory Arrest
+</ntg.effects.obstruction>
+<ntg.treatments.obstruction>
+    [cricothyrotomy] Performing a Cricothyrotomy |
+    [laryngeal_tube] Using a Laryngeal Tube (prevents this affliction for 2 minutes) |
+    [accuvac] Using an Accuvac (prevents this affliction for 2 minutes) |
+    [naso_airway] Placing a Nasopharyngeal Airway (prevents this affliction for 2 minutes)
+</ntg.treatments.obstruction>
+<ntg.seealso.obstruction>
+    [occlusion] Occlusion
+</ntg.seealso.obstruction>
+
+<!-- Tension Pneumothorax -->
+<ntg.title.tension_pneumothorax>Tension Pneumothorax</ntg.title.tension_pneumothorax>
+<ntg.description.tension_pneumothorax>The filling of the pleural space with air.</ntg.description.tension_pneumothorax>
+<ntg.causes.tension_pneumothorax>
+    [pneumothorax] Pneumothorax above 25%
+</ntg.causes.tension_pneumothorax>
+<ntg.effects.tension_pneumothorax>
+    [hyperventilation] Hyperventilation |
+    [chest_pain] Chest Pain |
+    [increased_heartrate] Tachycardia
+</ntg.effects.tension_pneumothorax>
+<ntg.treatments.tension_pneumothorax>
+    [aat_kit] Advanced Airway Treatment Kit
+</ntg.treatments.tension_pneumothorax>
+
+<!-- Hemopneumothorax -->
+<ntg.title.hemopneumothorax>Hemopneumothorax</ntg.title.hemopneumothorax>
+<ntg.description.hemopneumothorax>The active filling of the pleural space with blood.</ntg.description.hemopneumothorax>
+<ntg.causes.hemopneumothorax>
+    [internal_bleeding] Internal Bleeding above 15% as well as |
+    [tension_pneumothorax] Tension Pneumothorax at 100%
+</ntg.causes.hemopneumothorax>
+<ntg.effects.hemopneumothorax>
+    [hyperventilation] Hyperventilation |
+    [chest_pain] Chest Pain |
+    [increased_heartrate] Tachycardia
+</ntg.effects.hemopneumothorax>
+<ntg.treatments.hemopneumothorax>
+    [aat_kit] Advanced Airway Treatment Kit
+</ntg.treatments.hemopneumothorax>
+
+<!-- Hemothorax -->
+<ntg.title.hemothorax>Hemothorax</ntg.title.hemothorax>
+<ntg.description.hemothorax>The pleural space is completely filled with blood.</ntg.description.hemothorax>
+<ntg.causes.hemothorax>
+    [blood_loss] Blood Loss above 15% as well as |
+    [internal_bleeding] Internal Bleeding above 30% as well as |
+    [hemopneumothorax] Hemopneumothorax at 100%
+</ntg.causes.hemothorax>
+<ntg.effects.hemothorax>
+    [hyperventilation] Hyperventilation |
+    [chest_pain] Chest Pain |
+    [internal_bleeding] 100% Internal Bleeding |
+    [increased_heartrate] Tachycardia
+</ntg.effects.hemothorax>
+<ntg.treatments.hemothorax>
+    [aat_kit] Advanced Airway Treatment Kit
+</ntg.treatments.hemothorax>
+
+<!-- Injuries -->
+<!-- Flail Chest -->
+<ntg.title.flail_chest>Flail Chest</ntg.title.flail_chest>
+<ntg.description.flail_chest>Paradoxical chest movement due to severe trauma to the torso. Indicative of fractured ribs.</ntg.description.flail_chest>
+<ntg.causes.flail_chest>
+    [fractures] Fractured Ribs
+</ntg.causes.flail_chest>
+<ntg.effects.flail_chest>
+    [shortness_of_breath] Shortness of Breath |
+    [chest_pain] Chest Pain 
+</ntg.effects.flail_chest>
+<ntg.treatments.flail_chest>
+    Treating the causes.
+</ntg.treatments.flail_chest>
+
+<!-- Procedures -->
+<ntg.title.cricothyrotomy>Cricothyrotomy</ntg.title.cricothyrotomy>
+<ntg.description.cricothyrotomy>Medical Skill Check: 90.
+\nA procedure that can remove occlusions and obstructions.</ntg.description.cricothyrotomy>
+<ntg.steps.cricothyrotomy>
+    [analgesia] 1a. Analgesia | 
+    [anesthesia] 1b. Anesthesia |
+    [cric_scalpel] 2. Apply a Cricothyrotomy Scalpel to the Head |
+    [tracheal_hook] 3. Apply a Tracheal Hook to the Head |
+    [sutures] 4. Apply a Suture to remove the Cricothyrotomy Incision and the Tracheal Hook.
+</ntg.steps.cricothyrotomy>
+<ntg.seealso.cricothyrotomy>
+    [obstruction] Obstruction |
+    [occlusion] Occlusion
+</ntg.seealso.cricothyrotomy>
+
+</Infotexts>

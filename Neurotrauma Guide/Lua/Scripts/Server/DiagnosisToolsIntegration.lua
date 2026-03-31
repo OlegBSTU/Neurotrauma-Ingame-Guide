@@ -10,6 +10,8 @@ NTGuide.IdentifierToPage = {
     {"coma", "coma"},
     {"concussion", "concussion"},
     {"drunk", "drunk"},
+	{"brainremoved", "organ_transplant_surgery"},
+	{"brainswap", "organ_transplant_surgery"},
 
     -- Lungs
     {"respiratoryarrest", "respiratory_arrest"},
@@ -18,6 +20,8 @@ NTGuide.IdentifierToPage = {
     {"hyperventilation", "hyperventilation"},
     {"hypoventilation", "hypoventilation"},
     {"oxygenlow", "oxygen_low"},
+	{"lungremoved", "organ_transplant_surgery"},
+	{"lungswap", "organ_transplant_surgery"},
 
     -- Heart
     {"cardiacarrest", "cardiac_arrest"},
@@ -26,6 +30,8 @@ NTGuide.IdentifierToPage = {
     {"heartdamage", "heart_damage"},
     {"tachycardia", "irregular_heartbeat"},
     {"fibrillation", "mechanic_fibrillation"},
+	{"heartremoved", "organ_transplant_surgery"},
+	{"heartswap", "organ_transplant_surgery"},
 
     -- Torso
     {"t_arterialcut", "aortic_rupture"},
@@ -39,6 +45,10 @@ NTGuide.IdentifierToPage = {
     {"organdamage", "vanilla_organ_damage"},
     {"analgesia", "analgesia"},
     {"anesthesia", "anesthesia"},
+	{"kidneyremoved", "organ_transplant_surgery"},
+	{"kidneyswap", "organ_transplant_surgery"},
+	{"liverremoved", "organ_transplant_surgery"},
+	{"liverswap", "organ_transplant_surgery"},
 
     -- Extremities
     {"ll_arterialcut", "arterial_bleeding"},
@@ -130,15 +140,25 @@ NTGuide.IdentifierToPage = {
 
 -- todo: mod checker
 
+-- Airways: Done
+-- Cybernetics: Done
+-- Eyes: Done
+-- Grafting: Done
+-- Infections: Done
+-- Lobotomy: Done
+-- SurgeryPlus: Done
+-- Thermal: Done
+-- Neurotrauma: Done
+
 Timer.Wait(function()
--- NT Cybernetics Enhanced integration into Translation Table
+-- NT Cybernetics Enhanced integration for Health Scanner
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberliver", "cyberliver"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberlung", "cyberlung"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberheart", "cyberbrain_implant"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberbrain", "cyberheart"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberkidney", "cyberkidney"})
 
--- NT Eyes integration into Translation Table
+-- NT Eyes integration for Health Scanner
 		-- Charybdis & Terror eyes exist in the code, but are not on the guide and/or implemented.
 		-- Eye Damage
 		table.insert(NTGuide.IdentifierToPage, {"dm_human", "human_eye_damage"})
@@ -229,6 +249,74 @@ Timer.Wait(function()
 		table.insert(NTGuide.IdentifierToPage, {"lobo_randomuncon", "lobotomy_effects"})
 		table.insert(NTGuide.IdentifierToPage, {"lobo_noanalgesia", "lobotomy_effects"})
 		table.insert(NTGuide.IdentifierToPage, {"lobo_hearvoices", "lobotomy_effects"})
+
+-- NT Thermal integration for Health Scanner
+		table.insert(NTGuide.IdentifierToPage, {"chilblains", "chilblains"})
+		table.insert(NTGuide.IdentifierToPage, {"aafn_overdose", "aafn_od"})
+		table.insert(NTGuide.IdentifierToPage, {"reperfusion_injury", "reperfusion_injury"})
+		table.insert(NTGuide.IdentifierToPage, {"cell_death", "cell_death"})
+		table.insert(NTGuide.IdentifierToPage, {"pulmonary_edema", "pulmonary_edema"})
+		table.insert(NTGuide.IdentifierToPage, {"pulmonary_embolism", "pulmonary_embolism"})
+		table.insert(NTGuide.IdentifierToPage, {"frozen_vessels", "frozen_blood_vessels"})
+		table.insert(NTGuide.IdentifierToPage, {"bloodclot", "blood_clots"})
+		table.insert(NTGuide.IdentifierToPage, {"heat_cramp", "heat_cramp"})
+		table.insert(NTGuide.IdentifierToPage, {"thermal_shock", "thermal_shock"})
+		table.insert(NTGuide.IdentifierToPage, {"wet", "wet"})
+		table.insert(NTGuide.IdentifierToPage, {"heat_stroke", "heat_stronk"})
+		table.insert(NTGuide.IdentifierToPage, {"warmth", "warmth"})
+		table.insert(NTGuide.IdentifierToPage, {"aafn", "aafn"})
+
+-- NT Airways Extension integration for Health Scanner
+		table.insert(NTGuide.IdentifierToPage, {"tpptx", "tension_pneumothorax"})
+		table.insert(NTGuide.IdentifierToPage, {"hpptx", "hemopneumothorax"})
+		table.insert(NTGuide.IdentifierToPage, {"htx", "hemothorax"})
+		table.insert(NTGuide.IdentifierToPage, {"DPI", "deep_penetration_injury"})
+		table.insert(NTGuide.IdentifierToPage, {"occlusion", "occlusion"})
+		table.insert(NTGuide.IdentifierToPage, {"obstruction", "obstruction"})
+		table.insert(NTGuide.IdentifierToPage, {"cricIncs", "cric_scalpel"})
+		table.insert(NTGuide.IdentifierToPage, {"TrachHookIn", "tracheal_hook"})
+		table.insert(NTGuide.IdentifierToPage, {"CricToobIn", "cric_tube"})
+
+-- NT Grafting integration for Health Scanner
+		-- table.insert(NTGuide.IdentifierToPage, {"crossspeciesrejection", "placeholder"})
+		table.insert(NTGuide.IdentifierToPage, {"graftingcureoverdose", "dna_litigation_enhancer"})
+		table.insert(NTGuide.IdentifierToPage, {"graftingcureoverdosekiller", "dna_litigation_enhancer"})
+		-- table.insert(NTGuide.IdentifierToPage, {"hybriddna", "placeholder"})
+		table.insert(NTGuide.IdentifierToPage, {"alienDNARemoval", "dna_splicer"})
+		-- table.insert(NTGuide.IdentifierToPage, {"blindAegis", "placeholder"})
+		-- table.insert(NTGuide.IdentifierToPage, {"blindAegis2", "placeholder"})
+		-- table.insert(NTGuide.IdentifierToPage, {"blindAegis3", "placeholder"})
+		-- table.insert(NTGuide.IdentifierToPage, {"physicaltherapistAffliction", "placeholder"})
+		-- Grafts
+		table.insert(NTGuide.IdentifierToPage, {"crawlerTailAegis", "crawler_tail_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"crawlerLungsAffliction", "crawler_lung_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"fractalGuardianEyesAffliction", "fractal_eye_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"huskArmAffliction", "husk_arm_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"huskHeartAffliction", "husk_heart_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"mantisLiverAffliction", "mantis_liver_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"mudraptorLungsAffliction", "mudraptor_lungs_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"mudraptorHeadAffliction", "mudraptor_head_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"broodmotherLiverAffliction", "broodmother_liver_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"tigerThresherJawAffliction", "tthresher_jaw_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"tigerThresherTailAffliction", "tthresher_tail_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"boneThresherJawAffliction", "bthresher_tail_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"hammerheadTorsoAffliction", "hammerhead_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"hammerheadLimbsAffliction", "hammerhead_limb_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"molochHeadAffliction", "moloch_shell_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"viperlingLiverAffliction", "viperling_liver_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"watcherEyesAffliction", "watcher_eye_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"charybdisJawAffliction", "charybdis_jaw_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"latcherHeartAffliction", "latcher_heart_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"latcherTongueAffliction", "latcher_tongue_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"endwormTorsoAffliction", "endworm_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"endwormRArmAffliction", "endworm_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"endwormLArmAffliction", "endworm_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"endwormLLegAffliction", "endworm_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"endwormRLegAffliction", "endworm_skin_grafting"})
+		table.insert(NTGuide.IdentifierToPage, {"orangeboyTailAffliction", "orangeboy_tail_grafting"})
+
+-- NT Surgery Plus integration for Health Scanner
+		table.insert(NTGuide.IdentifierToPage, {"artificialbrain", "artificial_brain"})
 
 end, 2)
 --===========================================================================================================================================================

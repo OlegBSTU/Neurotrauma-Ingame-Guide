@@ -1,10 +1,21 @@
--- Newer Localization function to get text data as opposed to the older C# method
--- Since the current system only has 1 language file active at once, we just need to pull that one instead of also checking the game language
+
+-- This is retarded
+-- There's a small delay between the automatic loading of our language file and the first localization grab
+-- This means that it will just grab the non-localized information first and then the game loads english
+-- Since we just return the original xml tag that builds that part of the page (which always starts with ntg) we just have it re-initialize all the ntg tags once more
+-- If it happens twice tough shit thats probably a typo
 NTGuide.Localize = function(xmlTag)
-    if TextManager.ContainsTag(xmlTag) then
-        return TextManager.Get(xmlTag).Value
+    local value = xmlTag
+    -- Do another loop and fix up all ntg strings
+    while string.match(value, "^ntg") do
+        local newValue = TextManager.Get(value).Value
+        -- If its the same after looping this is a fuckup, break the loop so it doesn't go insane
+        if newValue == value then
+            break
+        end
+        value = newValue
     end
-    return xmlTag -- In case of a situation where there should be localization but isnt, print the actual point-of-origin for this issue
+    return value
 end
 
 NTGuide.ContentPages = {
@@ -1030,7 +1041,6 @@ NTGuide.ContentPages = {
             description = NTGuide.Localize("ntg.description.azathioprine"), 
             applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.azathioprine")},
             applicationfailed = {NTGuide.Localize("ntg.applicationfailed.azathioprine")},
-            seealso = {NTGuide.Localize("ntg.seealso.azathioprine")},  
         },
         Bandages = {
             id = "bandages", 
@@ -1084,7 +1094,6 @@ NTGuide.ContentPages = {
             title = NTGuide.Localize("ntg.title.combat_stimulant"), 
             description = NTGuide.Localize("ntg.description.combat_stimulant"), 
             applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.combat_stimulant")},
-            applicationfailed = {NTGuide.Localize("ntg.applicationfailed.combat_stimulant")},  
         },
         Deusizine = {
             id = "deusizine", 
@@ -1441,6 +1450,7 @@ NTGuide.ContentPages = {
             id = "surgical_drill", 
             category = "items",
             title = NTGuide.Localize("ntg.title.surgical_drill"), 
+            description = NTGuide.Localize("ntg.description.surgical_drill"), 
             applicationsuccess = {NTGuide.Localize("ntg.applicationsuccess.surgical_drill")},
             applicationfailed = {NTGuide.Localize("ntg.applicationfailed.surgical_drill")},
             seealso = {NTGuide.Localize("ntg.seealso.surgical_drill")},   

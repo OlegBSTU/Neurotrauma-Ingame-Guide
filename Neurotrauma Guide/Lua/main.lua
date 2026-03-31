@@ -1,5 +1,8 @@
 NTingameguide = {}
 
+-- Ydrec if you're reading this I'm sorry for violating your beautiful code but if I don't comment what things do my sleep deprived ass is gonna forget what the hell is happening
+
+-- Initialise the rawconfig file; we dont need a path to find it since it's in the same folder
 local rawconfig = require("rawconfig")
 
 local config = {
@@ -23,21 +26,30 @@ local config = {
     },
 }
 
-
+-- Add and load our config from the get-go
 config = rawconfig.addConfig(config)
 config:LoadConfig()
 
+-- Declare 'pkg' as a variable that other functions can use as a reference point, since;
 local pkg
 
+-- We can set pkg to be NTIG!
+-- For every enabled package, do:
+-- tbh i didnt even know you could do this i thought it was ' for index, value in ipairs(table) do' etc.
 for package in ContentPackageManager.EnabledPackages.All do
-    local path = string.gsub(tostring(package.Dir),"\\","/")
-    if path == NTGuide.Path then
+    -- Get the path of the package we're looking at right now
+    local path = tostring(package.Dir)
+    -- Hey! We know this path, that's ours :33
+    if path == NTGuide.Path or string.gsub(path,"\\","/") == NTGuide.Path then
+        -- Set pkg to be the NTIG content package
         pkg = package
+        -- Stop this loop; why check other packages when we have what we want?
         break
     end
 end
 
-
+-- Not even gonna pretend I know what this does :barodev:
+-- I THINK it allows access to modlists and enables/disables force-downloading our selected 'pkg'
 if SERVER and CSActive then
 
     LuaUserData.RegisterType("System.Collections.Immutable.ImmutableArray`1[[Barotrauma.ContentPackage,DedicatedServer]]")
@@ -128,9 +140,18 @@ config.SaveConfig = function()
 end
 
 if SERVER then return end
+
+--======================================================================================================================================================================================================
+
+-- All of this next stuff is gonna be CLIENTSIDE baby!
+-- This is where we have the GUI code (somewhere right now its fucked) since the server doesnt need it
+-- The server side code (currently just the diagnostic tool overrides) is loaded in the autorun file
+
+-- Get the modconfig file; just like before, same folder yada yada
 local modconfig = require("modconfig")
 local TextFile = LuaUserData.CreateStatic("Barotrauma.TextFile", true)
 
+-- Will hold all the textfiles we wanna do things with later
 local FileList = {}
 
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.GameSettings"], "currentConfig")
@@ -146,108 +167,150 @@ LuaUserData.RegisterType("System.Collections.Immutable.ImmutableList`1+Builder[[
 
 LuaUserData.RegisterType("System.Collections.Concurrent.ConcurrentDictionary`2[[Barotrauma.LanguageIdentifier,Barotrauma],[System.Collections.Immutable.ImmutableList`1[[Barotrauma.TextPack,Barotrauma]],System.Collections.Immutable]]")
 
-
+-- Used by ONLY the EnablesTextFileS function
+-- Returns a boolean
 function EnableTextFile(file, workshopId)
     local targetPackage
     local targetFile
 
+    -- If this gets no ID to work with, we default to pkg; i.e. we're looking at NTIG
     if workshopId == nil then
         targetPackage = pkg
     else
+        -- For every package do:
         for package in ContentPackageManager.AllPackages do
+            -- If that package is the same as our passed workshopID, set targetPackage to that package
             if tostring(package.UgcId) == workshopId then
                 targetPackage = package
-                break
+                break -- Again, no need to continue the loop if we're done
             end
         end
     end
 
+    -- If a workshop ID is given and we've iterated every package installed and we STILL have no target then something is wrong;
+    -- Most likely the mod just isnt installed (or we've fucked the ID in the config)
     if targetPackage == nil then
         print("Could not find package to enable with workshop id ", workshopId)
-        return false
+        return false -- Don't do the code after this and output false
     end
 
+    -- We have a workshop mod and we're checking their files, but we cannot actually find what we're looking for. Not good!
+    -- Most likely a typo in the file name if this happens
     if File.Exists(targetPackage.Dir .. "/" .. file) == false then
         print("Could not find file " .. file .. " in " .. targetPackage.name)
-        return false
+        return false -- Same as before
     end
+
+    -- If we've found the file, turn it into a TextFile so it can be used by the game!
     targetFile = TextFile(targetPackage, ContentPath.FromRaw(targetPackage, targetPackage.Dir .. "/" .. file))
 
+    -- If that somehow fucks up, just return false again for safety
     if targetFile == nil then
         print("Could not find file " .. file .. " in " .. targetPackage.name)
         return false
     end
 
+    -- EVERYTHING GOOD SO FAR? Look at the file and put it into a table so we know all the text files we've automatically enabled.
+    -- This means we can just unload/reload those later if we need to
     targetFile.LoadFile()
     table.insert(FileList, targetFile)
 
     --print("Enabled " .. targetFile.Path.Value .. " in package ", targetPackage.name)
     --print(targetFile.ContentPackage.Name)
 
+    -- Finally, return true so EnableTextFileS can keep going
     return true
 end
 
+-- Should text files be enabled?
 function EnableTextFiles(files, language)
+    -- This is being done for all supported languages
+    -- If no language is passed, default to the client's selected language
     if not language then language = ClientLanguage end
+    -- For each localization file we have in the modconfig, do:
     for file in files do
+        -- Remove ModDir from the directory in ModConfig
         file = StripModDir(file)
+        -- Take that directory given, swap "%Language%" with the language currently passed
+        -- i.e. if we had "German" as client language we'd turn XML/Localization/%Language%/BaseNeurotraumaPages.xml into XML/Localization/German/BaseNeurotraumaPages.xml
         file = string.gsub(file, "%%Language%%", language)
+
+        -- Now we have a directory where that file SHOULD be. Send it over to the function above and see if that is TRUE or FALSE.
         if not EnableTextFile(file) then
-            return false
+            return false -- If false, then return false.
         end
     end
+
+    -- My brother this is the TRUEST shit I've ever heard
     return true
 end
 
+-- Déjà vú
+-- Let's disable a text package; we need the workshopID and the language name, i.e. "German"
 function DisableTextPackage(workshopId, language)
     local targetPackage
+    -- Get the language file name by just adding .xml to the end; i.e. "German.xml" found 
     local languageTrimmed = string.sub(language, 2) .. ".xml"
+    -- Same as before; attempt to find the content package that holds our given workshopID
     for package in ContentPackageManager.EnabledPackages.All do
         if tostring(package.UgcId) == workshopId then
             targetPackage = package
-            break
+            break -- Stop loop once happy
         end
     end
 
+    -- If targetPackage was kept empty since we failed above, throw an error;
+    -- Could happen if you uninstalled a mod while we're relying on it
     if targetPackage == nil then
         print("Could not find package to disable with workshop id ", workshopId)
-        return
+        return -- Stop the DisableTextPackage function 
     end
 
+    -- If we're still here, then targetPackage holds something. 
+    -- Look over its content and do;
     for file in targetPackage.Files do
+        -- Safety check!
+        -- Are we looking at a TextFile object that ends with "language.xml" (like that German.xml we said before!)?
+        -- If so, unload it (which will prevent it from showing up in-game)
         if LuaUserData.IsTargetType(file, "Barotrauma.TextFile") and string.endsWith(file.Path.Value, languageTrimmed) then
             file.UnloadFile()
             --print("Disabled " .. file.Path.Value .. " in package ", workshopId)
-            break
+            break -- We're done here, stop looking over files
         end
     end
 end
 
+-- We check if the list of supported language in the relevant table for the mod we care about has the language that's currently active
 function ClientHasSupportedLanguage(supportedlanguages)
     local value = false
     for language in supportedlanguages do
         if language == ClientLanguage then
             value = true
-            break
+            break -- If we have the client's language supported, set value to true and stop going over the supported languages
         end
     end
-    return value
+    return value -- Returns default (false) if the earlier check didn't do anything or true if it did
 end
 
+-- We check if a specific mod is enabled via their workshopID
+-- This is used to only load relevant data; it's a waste of resources to load Cybernetics text data if cybernetics isn't enabled, for example
 function IsModEnabled(workshopId)
     local value = false
+    -- If no ID is given or it's nothing, return false and stop this function
     if workshopId == nil or workshopId == "" then
         return false
     end
+    -- If we have an ID, check if it's within the EnabledPackages table.
     for package in ContentPackageManager.EnabledPackages.All do
         if tostring(package.UgcId) == workshopId then
-            value = true
+            value = true -- If so, return true and leave
             break
         end
     end
-    return value
+    return value -- Otherwise, return the default of false
 end
 
+-- Pretty self explanatory I hope (even for me!)
 function IsFirstHigherPriority(a, b)
     if a.loadpriority > b.loadpriority then
         return true
@@ -256,6 +319,7 @@ function IsFirstHigherPriority(a, b)
     end
 end
 
+-- Instead of using an ID to check if a content package is enabled, use their name instead
 function GetPackageByName(name)
     for package in ContentPackageManager.EnabledPackages.All do
         if package.Name == name then
@@ -266,6 +330,7 @@ function GetPackageByName(name)
     return nil
 end
 
+-- Use an ID to get a content package from the enabled ones
 function GetPackageById(id)
     for package in ContentPackageManager.EnabledPackages.All do
         if tostring(package.UgcId) == id then
@@ -274,21 +339,27 @@ function GetPackageById(id)
     end
 end
 
+-- Load the actual thing
 function LoadPatches()
+    -- Determine load order
     table.sort(modconfig, IsFirstHigherPriority)
 
+    -- For every entry in the Modconfigs file do:
     for _, patch in pairs(modconfig) do
         local files = {}
         local modname = ""
 
+        -- Do we even want to load the text?
+        -- Either because the mod is enabled or because we're overriding the check
         if patch.IgnoreTargetModState or IsModEnabled(patch.workshopId) then
+            -- Like before, go over all the supported languages and throw them at EnableTextFileS
             for language in patch.supportedlanguages do
                 --DisableTextPackage(patch.workshopId, language)
                 -- modname = GetPackageById(patch.workshopId).name
 
                 if not EnableTextFiles(patch.files, language) then
-                    print("Errors enabling NTID files")
-                    break
+                    print("Errors enabling NTIG files")
+                    break -- Stop what we're doing once we find nothing for this language
                 end
             end
         end
@@ -298,6 +369,7 @@ function LoadPatches()
     --ContentPackageManager.EnabledPackages.SortContent()
     --if FileList[1] then FileList[1].Sort() end
 
+    -- Continue below if we actually have something to load (as dictated by EnableTextFileS)
     if FileList[1] then
         local textpacks = TextManager.TextPacks[GameSettings.CurrentConfig.Language].ToBuilder()
         local firstindex = 0
@@ -334,7 +406,7 @@ function LoadPatches()
     end
 end
 
-
+-- Used to get the mod directory based on the path given in the Modconfig
 function StripModDir(filepath)
     local div = string.find(filepath, "%%[/\\]" )
     if div == nil then
@@ -404,13 +476,36 @@ function EnableNTGuide()
     modconfig = {}
     modconfig = dofile(NTGuide.Path .. "/Lua/modconfig.lua")
     LoadPatches()
-    -- Hacky integration of NTID code. Doesn't do dependecies yet
+
+    -- Hacky integration of NTID code.
+    -- It works :barodev:
+    -- You'll always reload lua before going into a server / singleplayer; you generally remove mods on the main menu. Therefor, this should work
     if CLIENT then
         dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePages.lua") -- Content pages
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePagesAddons.lua") -- Addon Content pages
+       -- dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePagesAddons.lua") -- Addon Content pages
+
+        local modsToLoad = {
+            ["3324062208"] = "Cybernetics.lua",
+            ["3478084070"] = "SurgeryPlus.lua",
+            ["3294574390"] = "Eyes.lua",
+            ["3286567141"] = "Infections.lua",
+            ["3534702008"] = "Grafting.lua",
+            ["3326291860"] = "Lobotomy.lua",
+            ["3648890424"] = "Thermal.lua",
+            ["3271808177"] = "Airways.lua",
+        }
+
+        for workshopId, scriptName in pairs(modsToLoad) do
+            if IsModEnabled(workshopId) then
+                dofile(NTGuide.Path .. "/Lua/Scripts/Client/Addons/" .. scriptName)
+            end
+        end
+
         dofile(NTGuide.Path .. "/Lua/Scripts/Client/Neuroguide.lua") -- Construction code
         dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguideChatLink.lua") -- Clientside code to interface with chat linking
     end
+
+    NTGuide.CreateGuideButton()
 end
 
 function DisableNTGuide()
@@ -420,6 +515,7 @@ function DisableNTGuide()
     end
 
     UnloadPatches()
+    NTGuide.RemoveGuideButton()
     --ReloadModsLocalization()
 end
 
@@ -432,6 +528,11 @@ Game.AddCommand("reloadNTGuide", "Reloads NT Guide pages.", function()
     ReloadNTGuide()
     print("NTGuide reloaded.")
 end, GetValidArguments)
+
+if not pkg then
+    print("NT Guide couldn't find its own folder to load texts, report to mod author")
+    return
+end
 
 ContentPackageManager.EnabledPackages.regular.Remove(pkg)
 ContentPackageManager.EnabledPackages.regular.Insert(0, pkg)

@@ -4,7 +4,7 @@ local config = {
 	{
 		-- Neurotrauma Continued
 		supportedlanguages = {"English"}, -- which languages patch supports for this specific mod {"English","German","Russian"} etc
-		IgnoreTargetModState = true, -- doesnt check for target mod being enabled. Still respects supported languages.
+		IgnoreTargetModState = false, -- doesnt check for target mod being enabled. Still respects supported languages.
 		workshopId = "3190189044", -- id of the mod being patched and which language files we disable, "" means nothing gets disabled
 		loadpriority = 0, -- patches with higher priotiry would override ones with lower when enabled. works similiar to game modlist
 		files = {	-- path to language files we want to use instead of originals, %Language% is automatically replaced with client language
@@ -16,7 +16,7 @@ local config = {
 	{
 		-- Cybernetics
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3324062208",
 	 	loadpriority = 0,
 	 	files = {
@@ -27,7 +27,7 @@ local config = {
 	{
 		-- Surgery Plus
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3478084070",
 	 	loadpriority = 0,
 	 	files = {
@@ -38,7 +38,7 @@ local config = {
 	{
 		-- Eyes
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3294574390",
 	 	loadpriority = 0,
 	 	files = {
@@ -49,7 +49,7 @@ local config = {
 	{
 		-- Infections
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3286567141",
 	 	loadpriority = 0,
 	 	files = {
@@ -60,7 +60,7 @@ local config = {
 	{
 		-- Grafting
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3534702008",
 	 	loadpriority = 0,
 	 	files = {
@@ -71,7 +71,7 @@ local config = {
 	{
 		-- Lobotomy
 	 	supportedlanguages = {"English"},
-		IgnoreTargetModState = true,
+		IgnoreTargetModState = false,
 	 	workshopId = "3326291860",
 	 	loadpriority = 0,
 	 	files = {
@@ -79,6 +79,27 @@ local config = {
 				} 
 	},
 
+	{
+	-- Thermal
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = false,
+	 	workshopId = "3648890424",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonThermal.xml"
+				}
+	},
+
+	{
+	-- Airways
+	 	supportedlanguages = {"English"},
+		IgnoreTargetModState = false,
+	 	workshopId = "3271808177",
+	 	loadpriority = 0,
+	 	files = {
+				"%ModDir%/XML/Localization/%Language%/AddonAirways.xml"
+				}
+	},
 }
 
 return config

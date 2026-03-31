@@ -463,14 +463,18 @@ ConstructUI()
 
 -- Make the button appear
 -- Shamelessly ripped from EvilFactory's examples
-local function ToggleGuideButton()
-    local button = GUI.Button(GUI.RectTransform(Vector2(0.05, 0.05), NTGuide.Menu.frame.RectTransform, GUI.Anchor.TopRight), "Guide", GUI.Alignment.Center, "GUIButtonSmall")
-    button.OnClicked = function()
+function NTGuide.CreateGuideButton()
+    NTGuide.Button = GUI.Button(GUI.RectTransform(Vector2(0.05, 0.05), NTGuide.Menu.frame.RectTransform, GUI.Anchor.TopRight), "Guide", GUI.Alignment.Center, "GUIButtonSmall")
+    NTGuide.Button.OnClicked = function()
         NTGuide.Menu.menu.Visible = not NTGuide.Menu.menu.Visible
     end
 end
 
-ToggleGuideButton()
+function NTGuide.RemoveGuideButton()
+    if NTGuide.Button then
+        NTGuide.Button.Visible = false
+    end
+end
 
 -- Hooks to allow updates
 Hook.Patch("Barotrauma.SubEditorScreen", "AddToGUIUpdateList", function()

@@ -150,7 +150,9 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 - Vaccines do not work immediately and must require some time before becoming fully effective.
 - Most of the vaccines in this mod are completely fictional
 </ntg.description.information_vaccines>
-<ntg.seealso.information_vaccines></ntg.seealso.information_vaccines>
+<ntg.seealso.information_vaccines>
+    [vaccines] Vaccines (Item)
+</ntg.seealso.information_vaccines>
 
 <!-- Bacterial Infections -->
 
@@ -656,7 +658,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 <ntg.title.influenza>Influenza</ntg.title.influenza>
 <ntg.description.influenza>A virus from earth, influenza infections can range from mild or moderate. These infections are more common than Europan cough but less common than the Common cold.</ntg.description.influenza>
 <ntg.susceptible.influenza>
-    [zinc_supplement] Zinc supplement (20% Effective)
+    [zinc_supplements] Zinc supplement (20% Effective)
 </ntg.susceptible.influenza>
 <ntg.effects.influenza>
     [cough] Cough (above 15%) |
@@ -666,7 +668,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 </ntg.effects.influenza>
 <ntg.treatments.influenza>
     [dextromethorphan] Dextromethorphan |
-    [zinc_supplement] Zinc supplement |
+    [zinc_supplements] Zinc supplement |
     [analgesia] Analgesia
 </ntg.treatments.influenza>
 <ntg.seealso.influenza>
@@ -678,7 +680,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 <ntg.title.common_cold>Common Cold</ntg.title.common_cold>
 <ntg.description.common_cold>A virus from earth, cold infections are usually mild. These infections are more common than Influenza and Europan cough.</ntg.description.common_cold>
 <ntg.susceptible.common_cold>
-    [zinc_supplement] Zinc supplement (25% Effective)
+    [zinc_supplements] Zinc supplement (25% Effective)
 </ntg.susceptible.common_cold>
 <ntg.causes.common_cold></ntg.causes.common_cold>
 <ntg.effects.common_cold>
@@ -688,7 +690,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 </ntg.effects.common_cold>
 <ntg.treatments.common_cold>
     [dextromethorphan] Dextromethorphan |
-    [zinc_supplement] Zinc supplement |
+    [zinc_supplements] Zinc supplement |
     [analgesia] Analgesia
 </ntg.treatments.common_cold>
 <ntg.seealso.common_cold>
@@ -735,7 +737,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [multipurpose_scalpel] 4a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 4b. Apply a Scalpel
+    [scalpel] 4b. Apply a Scalpel |
     [necrotizing_fasciitis] 5. Repeat step 4 until the Necrotizing Fasciitis is gone.
     [sutures] 6. Apply sutures to end the surgery
 </ntg.steps.debridement>
@@ -752,14 +754,14 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
     PUS SAMPLE: |
     1a. Apply a Sampler Tool to a Purulent Drainage |
     1b. Apply a Sampler Tool to an Abscess |
-    TISSUE SAMPLE:
+    TISSUE SAMPLE: |
     [analgesia] 1a. Analgesia |
     [anesthesia] 1b. Anesthesia |
     [scalpel] 2. Scalpel |
     [hemostat] 3. Hemostat |
     [skin_retractors] 4. Skin Retractors |
     [sampler_tool] 5. Sampler tool |
-    BLOOD SAMPLE:
+    BLOOD SAMPLE: |
     [sampler_tool] Apply a Sampler Tool on any limb
 </ntg.stepsbacterial.sample_collection>
 <ntg.stepsviral.sample_collection>
@@ -831,23 +833,23 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 </ntg.effects.dextromethorphan>
 
 <!-- Zinc Supplements -->
-<ntg.title.zinc_supplement>Zinc supplement</ntg.title.zinc_supplement>
-<ntg.description.zinc_supplement>Medical skill check: 20
-\nA zinc supplement useful for viral infections. Acts as a medication for viral infections by reducing slowdown and chance to spread. Acts as treatment for Influenza and Common cold.</ntg.description.zinc_supplement>
-<ntg.effectiveness.zinc_supplement>
+<ntg.title.zinc_supplements>Zinc supplement</ntg.title.zinc_supplements>
+<ntg.description.zinc_supplements>Medical skill check: 20
+\nA zinc supplement useful for viral infections. Acts as a medication for viral infections by reducing slowdown and chance to spread. Acts as treatment for Influenza and Common cold.</ntg.description.zinc_supplements>
+<ntg.effectiveness.zinc_supplements>
     [common_cold] Common Cold (25% Effective) |
     [influenza] Influenza (20% Effective)
-</ntg.effectiveness.zinc_supplement>
-<ntg.applicationsuccess.zinc_supplement>
+</ntg.effectiveness.zinc_supplements>
+<ntg.applicationsuccess.zinc_supplements>
     70% Zinc supplement (takes 10 seconds to apply)
-</ntg.applicationsuccess.zinc_supplement>
-<ntg.applicationfailed.zinc_supplement>
+</ntg.applicationsuccess.zinc_supplements>
+<ntg.applicationfailed.zinc_supplements>
     50% Zinc supplement (takes 10 seconds to apply)
-</ntg.applicationfailed.zinc_supplement>
-<ntg.effects.zinc_supplement>
+</ntg.applicationfailed.zinc_supplements>
+<ntg.effects.zinc_supplements>
     [nausea] Nausea (above 80%) |
     [vomiting] Vomiting (above 90%)
-</ntg.effects.zinc_supplement>
+</ntg.effects.zinc_supplements>
 
 <!-- Hydrocortisone -->
 <ntg.title.corticosteroids>Corticosteroids</ntg.title.corticosteroids>

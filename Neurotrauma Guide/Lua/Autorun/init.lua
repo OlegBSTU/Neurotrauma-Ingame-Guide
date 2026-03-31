@@ -12,7 +12,6 @@ Timer.Wait(function() if NTC ~= nil then NTC.RegisterExpansion(NTGuide) end end,
 --In case neurotrauma doesnt actually register NTC or NT on CLIENTs for MP, gonna bruteforce
 NTworkshopIds = {
     "3190189044",
-    "2776270649"
 }
 
 function IsNTEnabled()

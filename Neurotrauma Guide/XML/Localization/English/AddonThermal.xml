@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Infotexts language="English" nowhitespace="false">
+<!-- Chud stuff for my temperature stuff -->
+<!-- symptoms -->
+<!-- Hypothermia -->
+
+<!-- COLLLLDD!!!! -->
+<ntg.title.cold>Cold</ntg.title.cold>
+<ntg.description.cold>Cold is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.cold>
+<ntg.causes.cold>
+    [hypothermia] Hypothermia (Greater than 0%)
+</ntg.causes.cold>
+
+<!-- SHIVERRRRRR!!! -->
+<ntg.title.shivers>Shivers</ntg.title.shivers>
+<ntg.description.shivers>Shivers is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.shivers>
+<ntg.causes.shivers>
+    [hypothermia] Hypothermia (Greater than 0%) as well as |
+    [temperature] Temperature (Torso is less than 29°C and greater than 27°C and Hypothermic) 
+</ntg.causes.shivers>
+
+<!-- NUMMBBB!!!! -->
+<ntg.title.numb>Numb</ntg.title.numb>
+<ntg.description.numb>Numb is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.numb>
+<ntg.causes.numb>
+    [hypothermia] Hypothermia (Greater than 0%) as well as |
+    [temperature] Temperature (Torso is less than 27°C) 
+</ntg.causes.numb>
+
+<!-- NOSEEEEEE!!!!! -->
+<ntg.title.runny_nose>Runny Nose</ntg.title.runny_nose>
+<ntg.description.runny_nose>Runny Nose is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.runny_nose>
+<ntg.causes.runny_nose>
+    [hypothermia] Hypothermia (Greater than 0%) as well as |
+    [temperature] Temperature (Head less than 35°C and greater than 18°C and hypothermic) 
+</ntg.causes.runny_nose>
+
+<!-- PINS AND NEEEDDLELLEELELL!!!SSSSS!@@ -->
+<ntg.title.pins_and_needles>Pins and Needles</ntg.title.pins_and_needles>
+<ntg.description.pins_and_needles>Pins and Needles is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.pins_and_needles>
+<ntg.causes.pins_and_needles>
+    [d1_frostbite] 1st Degree Frostbite (Any limb greater than 0%) |
+    [d2_frostbite] 2nd Degree Frostbite (Any limb greater than 0%) 
+</ntg.causes.pins_and_needles>
+<ntg.seealso.pins_and_needles>
+    [temperature] Temperature (Affliction) 
+</ntg.seealso.pins_and_needles>
+
+<!-- Fortnite -->
+<ntg.title.arm_swelling>Arm Swelling</ntg.title.arm_swelling>
+<ntg.description.arm_swelling>Arm Swelling is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.arm_swelling>
+<ntg.causes.arm_swelling>
+    [blood_clots] Blood Clots (Greater than 16%) 
+</ntg.causes.arm_swelling>
+
+<!-- Hyperthermia -->
+<!-- Tyler the Creator -->
+<ntg.title.hot>Hot</ntg.title.hot>
+<ntg.description.hot>Hot is a symptom, which means that it isn't fatal and doesn't cause any other afflictions.</ntg.description.hot>
+<ntg.causes.hot>
+    [hyperthermia] Hyperthermia (Greater than 0% and temperature requirements below) |
+    [temperature] Temperature (Torso greater than 38°C and hyperthermic) 
+</ntg.causes.hot>
+
+<!-- Afflictions -->
+<!-- HEADD!!!! -->
+<!-- Teddy P -->
+<ntg.title.aafn_od>A.A.F.N Overdose</ntg.title.aafn_od>
+<ntg.description.aafn_od>A.A.F.N overdose is almost always fatal as the nanites have become overwhelming and all organs are now being attacked. Your best option might just be ending the patients misery.</ntg.description.aafn_od>
+<ntg.causes.aafn_od>
+    [aafn] A.A.F.N (At 80% or higher) 
+</ntg.causes.aafn_od>
+<ntg.effects.aafn_od>
+    [neurotrauma] Neurotrauma (+10% each tick) |
+    [lung_damage] Lung Damage (+10% each tick) |
+    [heart_damage] Heart Damage (+10% each tick) |
+    [liver_damage] Liver Damage (+10% each tick) |
+    [kidney_damage] Kidney Damage (+10% each tick) |
+    [seizure] Seizure (+20% each tick) 
+</ntg.effects.aafn_od>
+<ntg.treatments.aafn_od>
+    Hopes and Prayers. |
+    A gun, preferably a big enough shotgun shell to take the head clean off.
+</ntg.treatments.aafn_od>
+
+<!-- Crimson Desert -->
+<ntg.title.heat_stronk>Heat Stroke</ntg.title.heat_stronk>
+<ntg.description.heat_stronk>Heat stroke is a serious and life threatening condition, caused by extreme heat. If left untouched the patient will have devastating effects. Only becomes visible without a health scanner past 50%.</ntg.description.heat_stronk>
+<ntg.causes.heat_stronk>
+    [temperature] Temperature (Torso at 43.8°C or higher) 
+</ntg.causes.heat_stronk>
+<ntg.effects.heat_stronk>
+    [seizure] Seizure |
+    [blurred_vision] Blurred Vision |
+    [confusion] Confusion |
+    [heart_attack] Heart Attack (At 50% or higher) |
+    [neurotrauma] Neurotrauma (+0.2% each tick when Heat Stroke is 75% or higher) 
+</ntg.effects.heat_stronk>
+<ntg.treatments.heat_stronk>
+    [temperature] Stabilizing the patients temperature below extreme hyperthermia. 
+</ntg.treatments.heat_stronk>
+
+<!-- Moist Critikal -->
+<ntg.title.thermal_shock>Thermal Shock</ntg.title.thermal_shock>
+<ntg.description.thermal_shock>Thermal shock is caused by the sudden change in temperature in a patient. Example being, entering a room full of fire after skinny dipping in the sub zero water. Thermal shock is extremely lethal, and will cause death if not monitored during the process. It should be noted that thermal shock is quite rare.</ntg.description.thermal_shock>
+<ntg.causes.thermal_shock>
+    Sudden temperature shifts. (To be exact, going from hypothermic to hyperthermic or vice versa within a single NT interval) 
+</ntg.causes.thermal_shock>
+<ntg.effects.thermal_shock>
+    [seizure] Seizure |
+    [stroke] Stroke |
+    [neurotrauma] Neurotrauma (+ .1% each tick) 
+</ntg.effects.thermal_shock>
+<ntg.treatments.thermal_shock>
+    Stabilizing the patients temperature and monitoring closely. 
+</ntg.treatments.thermal_shock>
+
+<!-- LUNGS!! -->
+<!-- Water of desolation -->
+<ntg.title.pulmonary_edema>Pulmonary Edema</ntg.title.pulmonary_edema>
+<ntg.description.pulmonary_edema>Pulmonary Edema is caused by long periods of extreme cold and swimming in tandem. Whilst not a urgent condition, it can potentially stop a patient from breathing if left unnoticed, thankfully it’s extremely easy to treat. Can be worsened by sepsis, high blood pressure and heart damage.</ntg.description.pulmonary_edema>
+<ntg.causes.pulmonary_edema>
+    Swimming in extreme cold. |
+    [heart_damage] Heart Damage (At 80% or higher) 
+</ntg.causes.pulmonary_edema>
+<ntg.effects.pulmonary_edema>
+    [shortness_of_breath] Shortness of Breath |
+    [wheezing] Wheezing (At 25% or higher) |
+    [vomiting_blood] Vomiting Blood (At 75% or higher) |
+    [respiratory_arrest] Respiratory Arrest (At 75% or higher) 
+</ntg.effects.pulmonary_edema>
+<ntg.treatments.pulmonary_edema>
+    [furosemide] Furosemide |
+    [drainage] Drainage (Same procedure as pneumothorax surgery) |
+    Theoretically you can remove the lung, however removing it past 50% will cause Internal Bleeding. 
+</ntg.treatments.pulmonary_edema>
+
+<!-- Dreams for the ps4/ps5 -->
+<ntg.title.pulmonary_embolism>Pulmonary Embolism</ntg.title.pulmonary_embolism>
+<ntg.description.pulmonary_embolism>Pulmonary Embolism is caused by a large portion of a blood clot breaking off of a larger body and entering the lungs, where it gets trapped and prevents the body from breathing. This should be considered a medical emergency.</ntg.description.pulmonary_embolism>
+<ntg.causes.pulmonary_embolism>
+    [blood_clots] Blood Clots (At 16% or higher, scales with severity) 
+</ntg.causes.pulmonary_embolism>
+<ntg.effects.pulmonary_embolism>
+    [shortness_of_breath] Shortness of Breath (At 10% or higher) |
+    [chest_pain] Chest Pain (At 25% or higher) |
+    [respiratory_arrest] Respiratory Arrest (At 75% or higher) 
+</ntg.effects.pulmonary_embolism>
+<ntg.treatments.pulmonary_embolism>
+    [alteplase] Alteplase |
+    [streptokinase] Streptokinase (Similar to Alteplase, however it has a lesser effect) |
+    Theoretically you can remove the lung, however removing it past 50% will cause Internal Bleeding. 
+</ntg.treatments.pulmonary_embolism>
+
+
+<!-- TORSO!!!! -->
+<!-- My Manifesto  -->
+<ntg.title.hypothermia>Hypothermia</ntg.title.hypothermia>
+<ntg.description.hypothermia>Hypothermia is caused by the torso's temperature reaching 35°C or lower. However, the lower the temperature the more extreme the hypothermia, as this continues the effects become more severe.\nNOTE: Having Husk Symbiosis will make you immune to hypothermia.</ntg.description.hypothermia>
+<ntg.causes.hypothermia>
+    [temperature] Temperature (Torso lower than 35°C) 
+</ntg.causes.hypothermia>
+<ntg.effects.hypothermia>
+    [hypertension] Hypertension (Scales with severity) |
+    [pulmonary_edema] Pulmonary Edema (At 18°C or lower) |
+    [pale_skin] Pale Skin (At 18°C or lower) |
+    [respiratory_arrest] Respiratory Arrest (At 17.5°C or lower) |
+    [immunity] Lowered Immunity (At 17.5°C or lower) |
+    [analgesia] Analgesia (At 17.5°C or lower) |
+    [unconsciousness] Unconsciousness (At 17.5°C or lower) |
+    [frozen_blood_vessels] Frozen Blood Vessels (At 1°C or lower) |
+    [coma] Coma (At 1°C or lower) 
+</ntg.effects.hypothermia>
+<ntg.treatments.hypothermia>
+    Stabilizing temperature. 
+</ntg.treatments.hypothermia>
+
+<!-- Felony -->
+<ntg.title.hyperthermia>Hyperthermia</ntg.title.hyperthermia>
+<ntg.description.hyperthermia>Hyperthermia is caused by the torso's temperature getting higher than 38°C. However the higher the temperature the more extreme the hyperthermia, as this continues the effects become more and more severe.\nNOTE: Having Husk Symbiosis will multiply all heat by a factor of two.</ntg.description.hyperthermia>
+<ntg.causes.hyperthermia>
+    [temperature] Temperature (Torso higher than 38°C) 
+</ntg.causes.hyperthermia>
+<ntg.effects.hyperthermia>
+    [hypotension] Hypotension |
+    [headache] Headache (At 41.8°C or higher) |
+    [sweating] Sweating (At 43.8°C or higher) |
+    [heat_stronk] Heat Stroke (At 43.8°C or higher) |
+    [husk_infection] Kills Husk Infection (At 43.8°C or higher) |
+    [neurotrauma] Neurotrauma (At 50°C or higher) |
+    [lung_damage] Lung Damage (At 50°C or higher) |
+    [heart_damage] Heart Damage (At 50°C or higher) |
+    [kidney_damage] Kidney Damage (At 50°C or higher) |
+    [liver_damage] Liver Damage (At 50°C or higher) 
+</ntg.effects.hyperthermia>
+<ntg.treatments.hyperthermia>
+    Stabilizing temperature. |
+    Can be minimized by wearing burn resistance clothing. 
+</ntg.treatments.hyperthermia>
+
+<!-- Ydrec type beat -->
+<ntg.title.frozen_blood_vessels>Frozen Blood Vessels</ntg.title.frozen_blood_vessels>
+<ntg.description.frozen_blood_vessels>Frozen Blood Vessels are caused by the torso's temperature reaching 1°C or lower. Once this point has been reached, the torso will slowly start to freeze, causing irreversible damage when thawed. However, due to a brand new and highly experimental medicine called A.A.F.N (Automated Anti Freeze Nanites), this can be thankfully reversed. However this process is not easy and takes lot's of monitoring.</ntg.description.frozen_blood_vessels>
+<ntg.causes.frozen_blood_vessels>
+    [temperature] Temperature (Torso lower than 1°C) 
+</ntg.causes.frozen_blood_vessels>
+<ntg.effects.frozen_blood_vessels>
+    [cell_death] Cell Death (If left to thaw without using A.A.F.N (Automated Anti-Freeze Nanites)) 
+</ntg.effects.frozen_blood_vessels>
+<ntg.treatments.frozen_blood_vessels>
+    [aafn] Thawing with A.A.F.N cures Frozen Blood Vessels and doesn't cause Cell Death. |
+    [aafn] Thawing without A.A.F.N cures Frozen Blood Vessels and causes Cell Death. 
+</ntg.treatments.frozen_blood_vessels>
+
+<!-- Molecular death of the cell -->
+<ntg.title.cell_death>Cell Death</ntg.title.cell_death>
+<ntg.description.cell_death>Cell death is caused by the improper thawing of Frozen Blood Vessels. As a result, the body will rapidly die, organs fail and tissue faults. Incurable past 5%, once the threshold is passed it’s the most ethical thing to put the patient out of their misery.</ntg.description.cell_death>
+<ntg.causes.cell_death>
+    [frozen_blood_vessels] Frozen Blood Vessels (If improperly thawed) 
+</ntg.causes.cell_death>
+<ntg.effects.cell_death>
+    [internal_bleeding] Internal Bleeding |
+    [confusion] Confusion (If less than 5%) |
+    [neurotrauma] Neurotrauma (Past 5%) |
+    [lung_damage] Lung Damage (Past 5%) |
+    [heart_damage] Heart Damage (Past 5%) |
+    [kidney_damage] Kidney Damage (Past 5%) |
+    [liver_damage] Liver Damage (Past 5%) 
+</ntg.effects.cell_death>
+<ntg.treatments.cell_death>
+    Time and monitoring when below 5%. |
+    A new playthrough past 5%. 
+</ntg.treatments.cell_death>
+
+<!-- When the suit is slightly hot -->
+<ntg.title.heated_diving_suit>Heated Diving Suit</ntg.title.heated_diving_suit>
+<ntg.description.heated_diving_suit>Heated Diving Suit is caused by equipping a diving suit with either (a internal heater with battery, external heater with battery or having Diving Suit Compatibility Mode on.). Is used to prevent freezing when exiting a submarine and into the sub zero waters. Has little effect when used in a dry area.</ntg.description.heated_diving_suit>
+<ntg.causes.heated_diving_suit>
+    A internal heater with battery, external heater with battery or having Diving Suit Compatibility Mode on.
+</ntg.causes.heated_diving_suit>
+<ntg.effects.heated_diving_suit>
+    [temperature] Temperature (Heats up the player according to the surroundings and current temperature) 
+</ntg.effects.heated_diving_suit>
+<ntg.treatments.heated_diving_suit>
+    Remove your suit. 
+</ntg.treatments.heated_diving_suit>
+<ntg.seealso.cold>
+    [esh] E.S.H (External Suit Heater) (Item) 
+</ntg.seealso.cold>
+
+<!-- Boiling Water IV -->
+<ntg.title.elevated_core_temp>Elevated Core Temperature</ntg.title.elevated_core_temp>
+<ntg.description.elevated_core_temp>Elevated Core Temperature is used to increase the internal Temperature of a patient, this is a much more efficient manner of stabilizing a patient, rather than using Warmth. However it should be used sparingly, as it has side effects.</ntg.description.elevated_core_temp>
+<ntg.causes.elevated_core_temp>
+    [warm_iv_fluids] Warm I.V Fluids (On use) 
+</ntg.causes.elevated_core_temp>
+<ntg.effects.elevated_core_temp>
+    [temperature] Temperature (Raises temperature of all limbs corresponding to the current amount) |
+    [hypertension] Hypertension (Past 30%) |
+    [lightheadedness] Lightheadedness (Past 30%) |
+    [confusion] Confusion (Past 40%) |
+    [seizure] Seizure (Past 40%) |
+    [vanilla_organ_damage] Vanilla Organ Damage (Past 40%) 
+</ntg.effects.elevated_core_temp>
+<ntg.treatments.elevated_core_temp>
+    [chilled] Chilled (Only mitigates it) |
+    Time. 
+</ntg.treatments.elevated_core_temp>
+
+
+<!-- Limbs -->
+<!-- Crispy  -->
+<ntg.title.frostnip>Frostnip</ntg.title.frostnip>
+<ntg.description.frostnip>Frostnip is caused by the any of the patients limbs reaching 29°C or lower. Whilst it can be typically ignored, if left on it’s own, it can compound into further stages of frostbite and even death. Can only occur on a non cyber limb.</ntg.description.frostnip>
+<ntg.causes.frostnip>
+    [temperature] Temperature (Any limb lower than 29°C) 
+</ntg.causes.frostnip>
+<ntg.effects.frostnip>
+    [d1_frostbite] 1st Degree Frostbite (After reaching 100% and being below 27°C) 
+</ntg.effects.frostnip>
+<ntg.treatments.frostnip>
+    Stabilizing temperature 
+</ntg.treatments.frostnip>
+
+<!-- d1 hater -->
+<ntg.title.d1_frostbite>1st Degree Frostbite</ntg.title.d1_frostbite>
+<ntg.description.d1_frostbite>1st degree frostbite is caused by the any of the patients limbs reaching 27°C or lower and having Frostnip before hand. Whilst it can be typically ignored, if left on it’s own, it can compound into further stages of frostbite and even death. Can only occur on a non cyber limb.</ntg.description.d1_frostbite>
+<ntg.causes.d1_frostbite>
+    [temperature] Temperature (Any limb lower than 27°C and having Frostnip) |
+    [frostnip] Frostnip (Having Frostnip and being below 27°C) 
+</ntg.causes.d1_frostbite>
+<ntg.effects.d1_frostbite>
+    Slows speed |
+    [pins_and_needles] Pins and Needles |
+    [reperfusion_injury] Reperfusion Injury (If heated too quickly) |
+    [d2_frostbite] 2nd Degree Frostbite (When reaching 100% and being lower than 18°C) |
+    [frostnip] Frostnip (When thawed) 
+</ntg.effects.d1_frostbite>
+<ntg.treatments.d1_frostbite>
+    Stabilizing temperature 
+</ntg.treatments.d1_frostbite>
+
+<!-- d2 hater -->
+<ntg.title.d2_frostbite>2nd Degree Frostbite</ntg.title.d2_frostbite>
+<ntg.description.d2_frostbite>2nd Degree Frostbite is caused by the any of the patients limbs reaching 18°C or lower and having 1st Degree Frostbite before hand. Should not be ignored, as the next stage is 3rd Degree Frostbite, which is permanent after 40%. Can only occur on a non cyber limb.</ntg.description.d2_frostbite>
+<ntg.causes.d2_frostbite>
+    [temperature] Temperature (Any limb lower than 18°C and having 1st Degree Frostbite) |
+    [d1_frostbite] 1st Degree Frostbite (Having 1st Degree Frostbite and being below 18°C) 
+</ntg.causes.d2_frostbite>
+<ntg.effects.d2_frostbite>
+    Slows speed |
+    [pins_and_needles] Pins and Needles |
+    [reperfusion_injury] Reperfusion Injury (If heated too quickly) |
+    [d3_frostbite] 3rd Degree Frostbite (When reaching 100% and being lower than or equal to 1°C) |
+    [d1_frostbite] 1st Degree Frostbite (When thawed) |
+    [chilblains] Chilblains (When thawed) |
+    [inflammation] Inflammation (When thawed) |
+    [intense_pain] Intense Pain (When thawed) |
+    [blood_clots] Blood Clots 
+</ntg.effects.d2_frostbite>
+<ntg.treatments.d2_frostbite>
+    Stabilizing temperature 
+</ntg.treatments.d2_frostbite>
+
+<!-- d3 cooked -->
+<ntg.title.d3_frostbite>3rd Degree Frostbite</ntg.title.d3_frostbite>
+<ntg.description.d3_frostbite>3rd degree frostbite is caused by the any of the patients limbs reaching 1°C or lower and having 2nd Degree Frostbite before hand. Cannot be ignored under any circumstances, if left on it’s own, will lead to amputation and death. However, any limb affected by 3rd degree frostbite will only need to be amputated past 40%, otherwise slowly thaw. Can only occur on a non cyber limb, and non amputated limb.</ntg.description.d3_frostbite>
+<ntg.causes.d3_frostbite>
+    [temperature] Temperature (Any limb lower than 1°C and having 2nd Degree Frostbite) |
+    [d2_frostbite] 2nd Degree Frostbite (Having 2nd Degree Frostbite and being below 1°C) 
+</ntg.causes.d3_frostbite>
+<ntg.effects.d3_frostbite>
+    Slows speed |
+    [reperfusion_injury] Reperfusion Injury (If heated too quickly) |
+    [d2_frostbite] 2nd Degree Frostbite (When thawed) |
+    [chilblains] Chilblains (When thawed) |
+    [inflammation] Inflammation (When thawed) |
+    [intense_pain] Intense Pain (When thawed) |
+    [blood_clots] Blood Clots |
+    [gangrene] Gangrene (Past 40%) 
+</ntg.effects.d3_frostbite>
+<ntg.treatments.d3_frostbite>
+    Stabilizing temperature |
+    [amputation_surgery] Amputation Surgery (If past 40%) 
+</ntg.treatments.d3_frostbite>
+
+<!-- chilly blister -->
+<ntg.title.chilblains>Chiblains</ntg.title.chilblains>
+<ntg.description.chilblains>Chilblains are caused by any limb with 3rd Degree Frostbite or 2nd Degree Frostbite thawing. Whilst not especially fatal, can prove to cause infections if left on it’s own.</ntg.description.chilblains>
+<ntg.causes.chilblains>
+    [d3_frostbite] 3rd Degree Frostbite (On thaw) |
+    [d2_frostbite] 2nd Degree Frostbite (On thaw) 
+</ntg.causes.chilblains>
+<ntg.effects.chilblains>
+    [infected_wounds] Infected Wounds 
+</ntg.effects.chilblains>
+<ntg.treatments.chilblains>
+    Any of the following: |
+    [bandaged] Bandaged |
+    [skin_ointmented] Skin Ointmented 
+</ntg.treatments.chilblains>
+
+<!-- kanye east -->
+<ntg.title.reperfusion_injury>Reperfusion Injury</ntg.title.reperfusion_injury>
+<ntg.description.reperfusion_injury>Reperfusion injuries are caused by the improper heating of a frostbitten limb. If the percent of 1st or 2nd or 3rd degree frostbite is too high for it’s respective temperature, a reperfusion injury will occur. Whilst not directly fatal, will cause internal damage in high values.</ntg.description.reperfusion_injury>
+<ntg.causes.reperfusion_injury>
+    [d1_frostbite] 1st Degree Frostbite (If at too high of a temperature) |
+    [d2_frostbite] 2nd Degree Frostbite (If at too high of a temperature) |
+    [d3_frostbite] 3rd Degree Frostbite (If at too high of a temperature) 
+</ntg.causes.reperfusion_injury>
+<ntg.effects.reperfusion_injury>
+    [internal_wounds] Internal Wounds |
+    [bone_damage] Bone Damage 
+</ntg.effects.reperfusion_injury>
+<ntg.treatments.reperfusion_injury>
+    Time 
+</ntg.treatments.reperfusion_injury>
+
+<!-- Freedom Units -->
+<ntg.title.heat_cramp>Heat Cramp</ntg.title.heat_cramp>
+<ntg.description.heat_cramp>Heat cramp is caused by any limb being at 41.8°C. Heat cramp is more of a annoyance than anything else, as you can’t die to it or get severely hurt. However, if extreme, can prevent patients from walking  or moving.</ntg.description.heat_cramp>
+<ntg.causes.heat_cramp>
+    [temperature] Temperature (At 41.8°C or higher) 
+</ntg.causes.heat_cramp>
+<ntg.effects.heat_cramp>
+    [spasms] Spasms 
+</ntg.effects.heat_cramp>
+<ntg.treatments.heat_cramp>
+    [saline] Saline (Not a cure, but helps to prevent cramping) |
+    Stabilizing temperature 
+</ntg.treatments.heat_cramp>
+
+<!-- Any -->
+<!-- Dripping wet  -->
+<ntg.title.wet>Wet</ntg.title.wet>
+<ntg.description.wet>Getting wet is quite simple, stand in water without a diving suit. Acts as a multiplier for cold temperature, meaning it's best to wipe it off with a towel. Can also dirty bandages.</ntg.description.wet>
+<ntg.causes.wet>
+    Standing in water without a suit. |
+</ntg.causes.wet>
+<ntg.effects.wet>
+    Multiplier for cold temperature. |
+    Dirties bandages. |
+    [temperature] Temperature (Slightly decreases temperature) 
+</ntg.effects.wet>
+<ntg.treatments.wet>
+    [towel] Towel |
+    Time 
+</ntg.treatments.wet>
+
+<!-- Warmth -->
+<ntg.title.warmth>Warmth</ntg.title.warmth>
+<ntg.description.warmth>Warmth is the affliction given by Heat Pads and Warm Rag. Used to increase the Temperature of a patient externally, less effective than Elevated Core Temperature.</ntg.description.warmth>
+<ntg.causes.warmth>
+    [heat_pads] Heat Pads |
+    [warm_rag] Warm Rag 
+</ntg.causes.warmth>
+<ntg.effects.warmth>
+    [temperature] Temperature (Increases externally) |
+    [internal_bleeding] Internal Bleeding (Multiples by a tiny amount) 
+</ntg.effects.warmth>
+<ntg.treatments.warmth>
+    Time
+</ntg.treatments.warmth>
+
+<!-- Chilled -->
+<ntg.title.chilled>Chilled</ntg.title.chilled>
+<ntg.description.chilled>Chilled is the affliction given by the gel ice pack when used. Greatly increases natural regeneration of blunt force trauma and decreases temperature.</ntg.description.chilled>
+<ntg.causes.chilled>
+    [gel_ice_pack] Gel Ice Pack
+</ntg.causes.chilled>
+<ntg.effects.chilled>
+    Slows character by 5% per chilled limb | 
+    [internal_wounds] Increases natural healing of Blunt Force Trauma | 
+    [infected_wounds] Makes Infected Wounds worsen faster | 
+    [internal_bleeding] Decreases Internal Bleeding by 0.2% every second |
+    [temperature] Temperature (Causes it to decrease to around the hypothermic level)
+</ntg.effects.chilled>
+<ntg.treatments.chilled>
+    Time
+</ntg.treatments.chilled>
+
+<!-- Temperature -->
+<ntg.title.temperature>Temperature</ntg.title.temperature>
+<ntg.description.temperature>Temperature is the most important affliction in all of NT Thermal, as it dictates all of the afflictions added by this mod. Temperature can only be seen via the Thermometer. Temperature can be lowered by Water and raised by Fire. The body will attempt to stabilize it’s temperature over time, however in many cases external help may be required. Having low blood pressure will make passive generation of heat slower, same with using a torniquet.</ntg.description.temperature>
+<ntg.causes.temperature>
+    Being a molecularly active human. |
+    Water (Being in it) |
+    Fire (Being around or in it) |
+    [stasis_bag] Stasis Bag (Causes you to get colder) |
+    [blood_loss] Blood Loss (Causes you to get colder) |
+    [sepsis] Sepsis (Causes you to get warmer)
+</ntg.causes.temperature>
+<ntg.effects.temperature>
+    Lowered Fps (lol) |
+    [hypothermia] Hypothermia (Torso being below 35°C) |
+    [hyperthermia] Hyperthermia (Torso being above 38°C)
+</ntg.effects.temperature>
+<ntg.treatments.temperature>
+    Time |
+    Water |
+    Fire |
+    [heat_pads] Heat Pads |
+    [warm_rag] Warm Rag |
+    [warm_iv_fluids] Warm I.V Fluids |
+    [gel_ice_pack] Gel Ice Pack
+</ntg.treatments.temperature>
+
+<!-- Blood -->
+<!-- Clot in my blood  -->
+<ntg.title.blood_clots>Blood Clots</ntg.title.blood_clots>
+<ntg.description.blood_clots>Blood clots are a serious affliction formed by the severity of frostbite. In small amounts, it can be safely broken down by the body. In larger quantities, the body will struggle and undergo many negative effects. Is compounded by high blood pressure and Alkalosis. Weakened by acidosis.</ntg.description.blood_clots>
+<ntg.causes.blood_clots>
+    [d2_frostbite] 2nd Degree Frostbite |
+    [d3_frostbite] 3rd Degree Frostbite 
+</ntg.causes.blood_clots>
+<ntg.effects.blood_clots>
+    [hypertension] Hypertension |
+    [pulmonary_embolism] Pulmonary Embolism |
+    [leg_swelling] Leg Swelling (If formed in the leg) |
+    [arm_swelling] Arm Swelling (If formed in the arm) 
+</ntg.effects.blood_clots>
+<ntg.treatments.blood_clots>
+    [alteplase] Alteplase (This is the primary way to dissolve them) |
+    [streptokinase] Streptokinase (Similar to Alteplase, however it has a lesser effect) |
+    Time
+</ntg.treatments.blood_clots>
+
+<!-- Those pesky robots  -->
+<ntg.title.aafn>A.A.F.N</ntg.title.aafn>
+<ntg.description.aafn>A.A.F.N is the only treatment for frozen blood vessels. As the medicine uses highly experimental nanites to identify and break down ice crystals whilst keeping tissue intact. However this medicine often causes many side effects.</ntg.description.aafn>
+<ntg.causes.aafn>
+    [aafn_item] A.A.F.N (On use) 
+</ntg.causes.aafn>
+<ntg.effects.aafn>
+    [drunk] Rapid Combustion (If drunk) |
+    [heart_damage] Heart Damage |
+    [bloating] Bloating |
+    [internal_bleeding] Internal Bleeding (At 25% or greater) |
+    [vomiting_blood] Vomiting Blood (At 25% or greater) |
+    [aafn_od] A.A.F.N Overdose (At 80% or greater)
+</ntg.effects.aafn>
+<ntg.treatments.aafn>
+    Time
+</ntg.treatments.aafn>
+
+<!-- Heart med  -->
+<ntg.title.thrombolytic>Thrombolytic</ntg.title.thrombolytic>
+<ntg.description.thrombolytic>A thrombolytic agent used to break down Blood Clots and lower blood pressure. One of the few ways to save a patient from near certain doom. However thrombolytic’s have their down sides.</ntg.description.thrombolytic>
+<ntg.causes.thrombolytic>
+    [alteplase] Alteplase (On use) 
+</ntg.causes.thrombolytic>
+<ntg.effects.thrombolytic>
+    [blood_clots] Blood Clots (Decrease) |
+    [hypotension] Hypotension |
+    [kidney_damage] Kidney Damage
+</ntg.effects.thrombolytic>
+<ntg.treatments.thrombolytic>
+    Time
+</ntg.treatments.thrombolytic>
+
+<!-- Goblin  -->
+<ntg.title.furosemide>Furosemide</ntg.title.furosemide>
+<ntg.description.furosemide>A diuretic agent used to break down aid in dissolving pulmonary edema and lower blood pressure. However diuretic's have their down sides.</ntg.description.furosemide>
+<ntg.causes.furosemide>
+    [furosemide_item] Furosemide (On use) 
+</ntg.causes.furosemide>
+<ntg.effects.furosemide>
+    [hypotension] Hypotension |
+    [headache] Headache |
+    [bloating] Bloating
+</ntg.effects.furosemide>
+<ntg.treatments.furosemide>
+    Time
+</ntg.treatments.furosemide>
+
+<!-- blahhhh information  -->
+<ntg.title.temp_systems>Temperature Systems</ntg.title.temp_systems>
+<ntg.description.temp_systems>NT Thermal makes water and fire interact with the temperature of the submarines hulls. Meaning it's important to understand how this truly works, as this can come off as frustrating if you don't know. Lets start with fire, in vanilla neurotrauma, fire acts like a radius of damage with no understanding of it's surroundings. Heat is static, meaning it never spreads across rooms. However this is no longer the case in Thermal, as it now accounts for heat transfer.
+\n1. When a fire breaks out, immediately close all connected doors to prevent the spread of heat, as letting it escape will increase chances of hyperthermia among crew members.
+\n2. Equip burn resistance clothing, as this greatly reduces your chance of hyperthermia, however your still not immune.
+\n3. Swiftly put out the fire, and immediately treat all crew members affected by the heat. Even if they haven't passed out yet, theres a good chance they still can.
+\n4. Evacuate the room until the temperature drops, this should take around 5 seconds, as heat is ambient.
+\nThis should work for most scenarios, however it's worth noting that water can cool down hot rooms, meaning the temperature will drop faster, however it will never drop lower than room temperature.
+</ntg.description.temp_systems>
+
+<ntg.title.app_temp>Practical Applications of Temperature</ntg.title.app_temp>
+<ntg.description.app_temp>NT Thermal provides clear struggles for the entire crew to deal with, however it also makes life much easier in a few ways.
+\n1. Out of analgesia? No worries, lower your patients temperature to 17.5°C, as this will apply the analgesia effect. At first this might sound radical, but it's an efficent way to save on the pain killers, since as long as you maintain their temperature at that level they'll live. Just make sure to keep a close eye, as they will stop breathing.
+\n2. Husk can now be obliterated with heat! Simply heat your patient to 43.8°C, this will kill the husk instantly (essentially), saving your precious supply of antidotes. However it should be noted that this is extremely dangerous, and should be minimized for the sake of your patients organs.
+\n3. Control your patients blood pressure with the power of temperature! Low blood pressure? Controlled swim in the ballast, hypothermia raises blood pressure. Yikes, high blood pressure? Warm up the patient, hyperthermia lowers blood pressure.
+\n4. No stasis bag? Don't worry! Freezing your patient (0°C) acts as a psuedo stasis bag, except they still suffer from all the consequences of being frozen.
+\nHopefully this small list fills you with grand ideas, stay safe!
+</ntg.description.app_temp>
+
+<ntg.title.aafn_procedure>A.A.F.N Procedure</ntg.title.aafn_procedure>
+<ntg.description.aafn_procedure>A.A.F.N needs to be inserted via a special surgery in order to maximize it's use.
+</ntg.description.aafn_procedure>
+<ntg.steps.aafn_procedure>
+[analgesia] 1a. Analgesia | 
+[anesthesia] 1b. Anesthesia |
+[multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
+[scalpel] 2b. Apply a Scalpel |
+[hemostat] 3. Hemostat | 
+[aafn_item] 4. Apply A.A.F.N |
+[sutures] 5. Sutures 
+</ntg.steps.aafn_procedure>
+
+<!-- Items -->
+<ntg.title.handheld_thermometer>Handheld Thermometer</ntg.title.handheld_thermometer>
+<ntg.description.handheld_thermometer>Medical skill check: 0.
+\nA handheld method of getting a patients inner body Temperature. Requires a battery to work. On readout it prints three things:
+\n1. The patients name and used limb
+\n2. Limb temp and thermic range.
+\n3. Average temp and average thermic range.
+</ntg.description.handheld_thermometer>
+
+<ntg.title.towel>Towel</ntg.title.towel>
+<ntg.description.towel>Medical skill check: 20.
+\nA reusable method of wiping a patient dry. Useful for stabilizing a patients temperature who went swimming in sub zero water.
+</ntg.description.towel>
+<ntg.applicationsuccess.towel>
+[wet] Wet (- 100%)
+</ntg.applicationsuccess.towel>
+<ntg.applicationfailed.towel>
+[wet] Wet (- 75%)
+</ntg.applicationfailed.towel>
+
+<ntg.title.heat_pads>Heat Pads</ntg.title.heat_pads>
+<ntg.description.heat_pads>Medical skill check: 10.
+\nA one time use pad, which barely heats up any tissue on use. Uses a chemical reaction to warm up, meaning it can be stored in a non warm environment. Also good for making fine tweaks to a patients temperature.
+</ntg.description.heat_pads>
+<ntg.applicationsuccess.heat_pads>
+[warmth] Warmth (+ 15%)
+</ntg.applicationsuccess.heat_pads>
+<ntg.applicationfailed.heat_pads>
+[warmth] Warmth (+ 5%)
+</ntg.applicationfailed.heat_pads>
+
+<ntg.title.warm_rag>Warm Rag</ntg.title.warm_rag>
+<ntg.description.warm_rag>Medical skill check: 20.
+\nA reusable rag, which greatly heats up any tissue on use. Uses stored heat to warm up, meaning it must be stored in a warm environment such as Heating Crate or Heating Container. Great for warming up a patient.
+</ntg.description.warm_rag>
+<ntg.applicationsuccess.warm_rag>
+[warmth] Warmth (+ 100%) |
+- 25% Condition
+</ntg.applicationsuccess.warm_rag>
+<ntg.applicationfailed.warm_rag>
+[warmth] Warmth (+ 75%) |
+- 25% Condition
+</ntg.applicationfailed.warm_rag>
+
+<ntg.title.warm_iv_fluids>Warm I.V Fluids</ntg.title.warm_iv_fluids>
+<ntg.description.warm_iv_fluids>Medical skill check: 40
+\nA one time use bag of Warm I.V Fluids, which greatly heats up the internal temperature of a patient on use. Uses stored heat to warm up, meaning it must be stored in a warm environment such as Heating Crate or  Heating Container. Great for warming up a patient.
+</ntg.description.warm_iv_fluids>
+<ntg.applicationsuccess.warm_iv_fluids>
+    [elevated_core_temp] Elevated Core Temperature (+ 30%)
+</ntg.applicationsuccess.warm_iv_fluids>
+<ntg.applicationfailed.warm_iv_fluids>
+    [elevated_core_temp] Elevated Core Temperature (+ 5%)
+</ntg.applicationfailed.warm_iv_fluids>
+
+<ntg.title.alteplase>Alteplase</ntg.title.alteplase>
+<ntg.description.alteplase>Medical skill check: 40.
+\nA one time use thrombolytic agent useful for breaking down blood clots and lowering blood pressure.
+</ntg.description.alteplase>
+<ntg.applicationsuccess.alteplase>
+[thrombolytic] Thrombolytic (+ 50%)
+</ntg.applicationsuccess.alteplase>
+<ntg.applicationfailed.alteplase>
+[thrombolytic] Thrombolytic (+ 10%) |
+[bleeding] Bleeding (+ 5%)
+</ntg.applicationfailed.alteplase>
+
+<ntg.title.furosemide_item>Furosemide</ntg.title.furosemide_item>
+<ntg.description.furosemide_item>Medical skill check: 45.
+\nA one time use diuretic agent useful for breaking down pulmonary edema and lowering blood pressure.
+</ntg.description.furosemide_item>
+<ntg.applicationsuccess.furosemide_item>
+[furosemide] Furosemide (+ 50%)
+</ntg.applicationsuccess.furosemide_item>
+<ntg.applicationfailed.furosemide_item>
+[furosemide] Furosemide (+ 15%)
+</ntg.applicationfailed.furosemide_item>
+
+<ntg.title.aafn_item>A.A.F.N (Automated Anti-Freeze Nanites)</ntg.title.aafn_item>
+<ntg.description.aafn_item>Medical skill check: 60.
+\nA.A.F.N is a highly experimental yet needed nanite based medicine to treat Frozen Blood Vessels. DO NOT PAIR WITH ALCHOLOL!</ntg.description.aafn_item>
+<ntg.applicationsuccess.aafn_item>
+[aafn] A.A.F.N (+ 25% if done via a A.A.F.N Procedure) |
+[aafn] A.A.F.N (+ 10%)
+</ntg.applicationsuccess.aafn_item>
+<ntg.applicationfailed.aafn_item>
+[aafn] A.A.F.N (+ 10%) |
+[open_wounds] Open Wounds (+ 10%) |
+[bleeding] Bleeding (+ 5%)
+</ntg.applicationfailed.aafn_item>
+<ntg.seealso.aafn_item>
+[aafn_procedure] A.A.F.N Procedure
+</ntg.seealso.aafn_item>
+
+<ntg.title.heating_crate>Heating Crate</ntg.title.heating_crate>
+<ntg.description.heating_crate>Used to store/heat up Warm I.V Fluids and Warm Rags.
+</ntg.description.heating_crate>
+<ntg.seealso.heating_crate>
+[warm_iv_fluids] Warm I.V Fluids |
+[warm_rag] Warm Rag
+</ntg.seealso.heating_crate>
+
+<ntg.title.heating_container>Heating Container</ntg.title.heating_container>
+<ntg.description.heating_container>Used to store/heat up Warm I.V Fluids and Warm Rags.
+</ntg.description.heating_container>
+<ntg.seealso.heating_container>
+[warm_iv_fluids] Warm I.V Fluids |
+[warm_rag] Warm Rag
+</ntg.seealso.heating_container>
+
+<ntg.title.esh>E.S.H (External Suit Heater)</ntg.title.esh>
+<ntg.description.esh>Used to heat up a suit that lacks an internal heater. Will only heat up  a worn suit!</ntg.description.esh>
+
+</Infotexts>

@@ -22,7 +22,7 @@
 <ntg.section.effects>Effects</ntg.section.effects>
 <ntg.section.prevention>Prevention</ntg.section.prevention>
 <ntg.section.sideeffects>Possible Side Effects</ntg.section.sideeffects>
-<ntg.section.applicationsuccess>Succesful Application</ntg.section.applicationsuccess>
+<ntg.section.applicationsuccess>Successful Application</ntg.section.applicationsuccess>
 <ntg.section.applicationfailed>Failed Application</ntg.section.applicationfailed>
 <ntg.section.reduction>Reduced By</ntg.section.reduction>
 <ntg.section.firstaid>First Aid</ntg.section.firstaid>
@@ -498,6 +498,9 @@ Spasms do this by spawning small invisible explosions on the limb that do no dam
     The character will be slowed down by 20% | 
     [alkalosis] Alkalosis
 </ntg.effects.vomiting>
+<ntg.treatments.vomiting>
+    Treating the causes
+</ntg.treatments.vomiting>
 
 <!-- /*- Affliction Pages -*/ -->
 <!-- Head/Brain -->
@@ -1285,6 +1288,9 @@ Lungs will take more damage from radiation than other organs. Radiation sickness
 <ntg.firstaid.arterial_bleeding>
     [tourniquet] Tourniquet (except for Aortic Ruptures)
 </ntg.firstaid.arterial_bleeding>
+<ntg.seealso.arterial_bleeding>
+    [aortic_rupture] Aortic Rupture
+</ntg.seealso.arterial_bleeding>
 
 <!-- Traumatic Amputation -->
 <ntg.title.traumatic_amputation>Traumatic Amputation</ntg.title.traumatic_amputation>
@@ -1795,7 +1801,7 @@ All open wounds will cause Infected Wounds proportional to their severity, and m
 <ntg.title.skin_ointmented>Skin Ointmented</ntg.title.skin_ointmented>
 <ntg.description.skin_ointmented>Improves natural healing rate of Burns, Open Wounds, and Blunt Force Trauma. Unlike being Bandaged or Ointmented, Skin Ointment has no additional effect.</ntg.description.skin_ointmented>
 <ntg.causes.skin_ointmented>
-    [regenerative_ointment] Regenerative Ointment
+    Regenerative Ointment (not yet craftable!)
 </ntg.causes.skin_ointmented>
 <ntg.effects.skin_ointmented>
     [burns] Decreases Burns by 0.12 per second | 
@@ -2272,7 +2278,7 @@ Alongside these effects, it gives the patient Analgesia (but wont give more than
 <ntg.seealso.arm_item>
     [gangrene] Gangrene |
     [traumatic_amputation] Traumatic Amputation |
-    [surgical_amputation] Surgical Amputation
+    [surgical_amputation] Surgical Amputation |
     [amputation_surgery] Amputation Surgery
 </ntg.seealso.arm_item>
 
@@ -2305,10 +2311,10 @@ Doing so will place it in the inventory of the wrench user.</ntg.description.aut
 <ntg.description.azathioprine>Medical Skill Check: 10
 \nAzathioprine is an immunosuppressant medication used during Organ Transplant Surgery if organ rejection is enabled in Neurotrauma's config. It will lower Immunity over time, making it safe to place an organ into the body when Immunity is below 10%.</ntg.description.azathioprine>
 <ntg.applicationsuccess.azathioprine>
-    Lowers immunity over time
+    [immunity] Lowers immunity over time
 </ntg.applicationsuccess.azathioprine>
 <ntg.applicationfailed.azathioprine>
-    Lowers immunity over time | 
+    [immunity] Lowers immunity over time | 
     [sepsis] Causes Sepsis
 </ntg.applicationfailed.azathioprine>
 
@@ -2324,6 +2330,9 @@ Doing so will place it in the inventory of the wrench user.</ntg.description.aut
     [bleeding] -18% Bleeding | 
     [bandaged] +36% Bandaged
 </ntg.applicationfailed.bandages>
+<ntg.seealso.bandages>
+    [plastiseal] Plastiseal
+</ntg.seealso.bandages>
 
 <!-- Blood Packs -->
 <ntg.title.blood_packs>Blood Packs</ntg.title.blood_packs>
@@ -2608,7 +2617,7 @@ Using an empty blood pack will multiply the patient's acidosis or alkalosis by 0
     [internal_damage] -12% Internal Damage |
     +18% Chemical Addiction |
     [neurotrauma] +18% Neurotrauma |
-    +15% Psychosis 
+    +15% Psychosis |
     +400% Haste | 
     +400% Vigor | 
     -54% Stun |
@@ -2618,7 +2627,7 @@ Using an empty blood pack will multiply the patient's acidosis or alkalosis by 0
     [internal_damage] -16% Internal Damage |
     +36% Chemical Addiction |
     [neurotrauma] +36% Neurotrauma |
-    +30% Psychosis 
+    +30% Psychosis |
     +400% Haste | 
     +400% Vigor | 
     -27% Stun |
@@ -2748,7 +2757,7 @@ The condition of the organ is inversely proportional to lung damage before remov
     [kidney_damage] +10% Kidney Damage
 </ntg.applicationsuccess.mannitol>
 <ntg.applicationfailed.mannitol>
-    [neurotrauma] Treats up to 100% | 
+    [neurotrauma] +30% Mannitol (Treats up to 60% Neurotrauma) | 
     [vanilla_organ_damage] +10% Vanilla Organ Damage | 
     [heart_damage] +20% Heart Damage| 
     [kidney_damage] +20% Kidney Damage
@@ -2801,13 +2810,13 @@ The condition of the organ is inversely proportional to lung damage before remov
 <ntg.description.morphine>Medical skill check: 30.
 \nA moderately powerful opiate used to induce Analgesia. To prevent exploits, morphine cannot be shot as a projectile, such as out of a syringe gun.</ntg.description.morphine>
 <ntg.applicationsuccess.morphine>
-    [analgesia] +50% (100% if Drunk) | 
+    [analgesia] +50% Analgesia (100% if Drunk) | 
     [opiate_overdose] +10% Opiate Overdose (20% if Drunk) | 
     +10% Opiate Addiction | 
     [withdrawal] -30% Opiate Withdrawal
 </ntg.applicationsuccess.morphine>
 <ntg.applicationfailed.morphine>
-    [analgesia] +30% (60% if Drunk) | 
+    [analgesia] +30% Analgesia (60% if Drunk) | 
     [opiate_overdose] +40% Opiate Overdose | 
     +10% Opiate Addiction | 
     [withdrawal] -30% Opiate Withdrawal
@@ -2827,7 +2836,7 @@ The condition of the organ is inversely proportional to lung damage before remov
     [withdrawal] -30% Opiate Withdrawal | 
     [opiate_overdose] -30% Opiate Overdose | 
     [analgesia] -30% Analgesia | 
-    -60% Opiate Addiction
+    -60% Opiate Addiction |
     [coma] +15% Coma (50% Chance)
 </ntg.applicationfailed.naloxone>
 
@@ -2839,7 +2848,7 @@ The condition of the organ is inversely proportional to lung damage before remov
     [pneumothorax] Reduces to Pneumothorax 5% and prevents worsening
 </ntg.applicationsuccess.needle>
 <ntg.applicationfailed.needle>
-    [vanilla_organ_damage] +10% Vanilla Organ Damage
+    [vanilla_organ_damage] +10% Vanilla Organ Damage |
     [bleeding] +10% Bleeding
 </ntg.applicationfailed.needle>
 
@@ -2859,13 +2868,13 @@ The condition of the organ is inversely proportional to lung damage before remov
 <ntg.description.opium>Medical skill check: 30.
 \nA weak opiate used to induce Analgesia.</ntg.description.opium>
 <ntg.applicationsuccess.opium>
-    [analgesia] +20% (40% if Drunk) | 
+    [analgesia] +20% Analgesia (40% if Drunk) | 
     [opiate_overdose] +5% Opiate Overdose (18.75% if Drunk) | 
     +10% Opiate Addiction | 
     [withdrawal] -15% Opiate Withdrawal
 </ntg.applicationsuccess.opium>
 <ntg.applicationfailed.opium>
-    [analgesia] +10% (20% if Drunk) | 
+    [analgesia] +10% Analgesia (20% if Drunk) | 
     [opiate_overdose] +15% Opiate Overdose (30% if Drunk) | 
     +10% Opiate Addiction | 
     [withdrawal] -15% Opiate Withdrawal
@@ -2919,6 +2928,9 @@ In this mode, the item will have the ability to extract any organ from a patient
     [bleeding] -24% Bleeding |
     [burns] -12% Burns
 </ntg.applicationfailed.plastiseal>
+<ntg.seealso.plastiseal>
+    [bandages] Bandage
+</ntg.seealso.plastiseal>
 
 <!-- Propofol -->
 <ntg.title.propofol>Propofol</ntg.title.propofol>
@@ -3043,6 +3055,9 @@ In this mode, the item will have the ability to extract any organ from a patient
 <ntg.applicationfailed.sodium_nitroprusside>
     -45% Blood Pressure (120 seconds)
 </ntg.applicationfailed.sodium_nitroprusside>
+<ntg.seealso.sodium_nitroprusside>
+    [nitroglycerin] Nitroglycerin
+</ntg.seealso.sodium_nitroprusside>
 
 <!-- Spinal Cord Implants -->
 <ntg.title.spinal_cord_implants>Spinal Cord Implants</ntg.title.spinal_cord_implants>
@@ -3131,7 +3146,7 @@ In this mode, the item will have the ability to extract any organ from a patient
     [internal_wounds] +10% Internal Damage
 </ntg.applicationfailed.surgical_drill>
 <ntg.seealso.surgical_drill>
-    [osteosynthetic_surgery] Osteosynthetic Surgery
+    [osteosynthesis_surgery] Osteosynthetic Surgery
 </ntg.seealso.surgical_drill>
 
 <!-- Surgical Saw -->
@@ -3147,9 +3162,9 @@ In this mode, the item will have the ability to extract any organ from a patient
     [bleeding] +15% Bleeding |
     [open_wounds] +4% Lacerations
 </ntg.applicationfailed.surgical_saw>
-<ntg.seealso.surgical_drill>
+<ntg.seealso.surgical_saw>
     [amputation_surgery] Amputation Surgery
-</ntg.seealso.surgical_drill>
+</ntg.seealso.surgical_saw>
 
 <!-- Sutures -->
 <ntg.title.sutures>Sutures</ntg.title.sutures>
@@ -3285,7 +3300,7 @@ In this mode, the item will have the ability to extract any organ from a patient
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel 
+    [scalpel] 2b. Apply a Scalpel |
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [sutures] 5. Suture to finish
@@ -3298,7 +3313,7 @@ In this mode, the item will have the ability to extract any organ from a patient
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel
+    [scalpel] 2b. Apply a Scalpel |
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [surgical_drill] 5. Surgical Drill | 
@@ -3313,7 +3328,7 @@ In this mode, the item will have the ability to extract any organ from a patient
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel
+    [scalpel] 2b. Apply a Scalpel |
     [endovascular_balloon] 3. Endovascular Balloon | 
     [medical_stent] 4. Medical Stent | 
     [sutures] 5. Suture to finish
@@ -3326,7 +3341,7 @@ In this mode, the item will have the ability to extract any organ from a patient
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel 
+    [scalpel] 2b. Apply a Scalpel |
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [surgical_saw] 5. Surgical Saw | 
@@ -3341,11 +3356,11 @@ In this mode, the item will have the ability to extract any organ from a patient
     [analgesia] 1a. Analgesia | 
     [anesthesia] 1b. Anesthesia |
     [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
-    [scalpel] 2b. Apply a Scalpel 
+    [scalpel] 2b. Apply a Scalpel |
     [hemostat] 3. Hemostat | 
     [skin_retractors] 4. Skin Retractors | 
     [multipurpose_scalpel] 5. Multipurpose Scalpel (set to Adaptive Organ Extraction mode and applied to the right limb as per the description) | 
-    6. Either a new organ (will swap with the one currently in the body) or the Multipurpose Scalpel again (removes the organ in the body without swapping)
+    6. Either a new organ (will swap with the one currently in the body) or the Multipurpose Scalpel again (removes the organ in the body without swapping) |
     [sutures] 7. Suture to finish
 </ntg.steps.organ_transplant_surgery>
 </Infotexts>
