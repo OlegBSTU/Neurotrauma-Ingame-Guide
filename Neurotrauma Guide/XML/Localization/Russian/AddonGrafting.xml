@@ -590,7 +590,8 @@
 - Если вы в воде, просто плывите так, чтобы ваше лицо указывало на цель, и вы сможете стрелять в любом направлении.
 </ntg.description.information_aim_latcher_tongue>
 <ntg.seealso.information_aim_latcher_tongue>
-    [latcher_tongue_grafting]
+    <!-- TODO LOCALIZATION -->
+    [latcher_tongue_grafting] Latcher Tongue Grafting
 </ntg.seealso.information_aim_latcher_tongue>
 
 <!-- Removing Grafting Limit -->
