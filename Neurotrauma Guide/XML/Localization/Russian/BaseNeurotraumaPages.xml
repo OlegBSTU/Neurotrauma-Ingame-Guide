@@ -129,10 +129,16 @@
     Автоматическая интеграция дополнений: если есть страницы руководства для дополнения, они появятся автоматически, если это дополнение загружено, и скроются, если нет.
 </ntg.features.main_page>
 <ntg.availableaddons.main_page>
-    Neurotrauma от Guns |
-    NT Cybernetics Enhanced от Nebual |
-    NT Eyes от POSTACI, BETA и bludcart |
-    NT Infections от guy
+    <!-- TODO LOCALIZATION -->
+    ‖color:35,38,115,255‖Neurotrauma‖color:end‖ от Guns |
+    ‖color:84,84,97,255‖NT Cybernetics Enhanced‖color:end‖ от Nebual |
+    ‖color:97,24,33,255‖NT Surgery Plus‖color:end‖ by Guns |
+    ‖color:215,160,0,255‖NT Eyes‖color:end‖ от POSTACI, BETA и bludcart |
+    ‖color:76,112,42,255‖NT Infections‖color:end‖ от guy
+    ‖color:165,22,166,255‖NT Grafting‖color:end‖ by Aegis_Myles |
+    ‖color:0,175,175,255‖NT Lobotomy‖color:end‖ by Postaci |
+    ‖color:3,99,138,255‖NT Thermal‖color:end‖ by BigEvilGreenBean |
+    ‖color:20,60,0,255‖NT Airway Extension‖color:end‖ by moncka.ddima
 </ntg.availableaddons.main_page>
 
 <!-- Auto Indexed Page: Categories -->
@@ -493,6 +499,10 @@
     Скорость персонажа будет снижена на 20% |
     [alkalosis] Алкалоз
 </ntg.effects.vomiting>
+<!-- TODO LOCALIZATION -->
+<ntg.treatments.vomiting>
+    Treating the causes
+</ntg.treatments.vomiting>
 
 <!-- /*- Affliction Pages -*/ -->
 <!-- Head/Brain -->
@@ -2300,10 +2310,10 @@
 <ntg.description.azathioprine>Проверка навыка медицины: 10
 \nАзатиоприн — иммунодепрессант, используемый во время Операции по Пересадке Органов, если отторжение органов включено в конфиге Нейротравмы. Он понизит Иммунитет со временем, делая безопасным помещение органа в тело, когда Иммунитет ниже 10%.</ntg.description.azathioprine>
 <ntg.applicationsuccess.azathioprine>
-    Понижает иммунитет со временем
+    [immunity] Понижает иммунитет со временем
 </ntg.applicationsuccess.azathioprine>
 <ntg.applicationfailed.azathioprine>
-    Понижает иммунитет со временем |
+    [immunity] Понижает иммунитет со временем |
     [sepsis] Вызывает Сепсис
 </ntg.applicationfailed.azathioprine>
 
@@ -2319,6 +2329,10 @@
     [bleeding] -18% Кровотечения |
     [bandaged] +36% Перевязка
 </ntg.applicationfailed.bandages>
+<!-- TODO LOCALIZATION -->
+<ntg.seealso.bandages>
+    [plastiseal] Plastiseal
+</ntg.seealso.bandages>
 
 <!-- Blood Packs -->
 <ntg.title.blood_packs>Пакеты крови</ntg.title.blood_packs>
@@ -2604,7 +2618,7 @@
     [internal_damage] -12% Внутренняя травма |
     +18% Химическая зависимость |
     [neurotrauma] +18% Нейротравма |
-    +15% Психоз
+    +15% Психоз |
     +400% Гиперактивность |
     +400% Решительность |
     -54% Оглушение |
@@ -2614,7 +2628,7 @@
     [internal_damage] -16% Внутренняя травма |
     +36% Химическая зависимость |
     [neurotrauma] +36% Нейротравма |
-    +30% Психоз
+    +30% Психоз |
     +400% Гиперактивность |
     +400% Решительность |
     -27% Оглушение |
@@ -2744,7 +2758,8 @@
     [kidney_damage] +10% Повреждение почек
 </ntg.applicationsuccess.mannitol>
 <ntg.applicationfailed.mannitol>
-    [neurotrauma] Лечит до 100% |
+    <!-- TODO LOCALIZATION -->
+    [neurotrauma] +30% Маннитол (Лечит до 60% Нейротравмы) |
     [vanilla_organ_damage] +10% Повреждение органа ванилла |
     [heart_damage] +20% Повреждение сердца|
     [kidney_damage] +20% Повреждение почек
@@ -2823,7 +2838,7 @@
     [withdrawal] -30% Опиатная ломка |
     [opiate_overdose] -30% Опиатная передозировка |
     [analgesia] -30% Анальгезия |
-    -60% Опиатная зависимость
+    -60% Опиатная зависимость |
     [coma] +15% Кома (50% Шанс)
 </ntg.applicationfailed.naloxone>
 
@@ -3039,6 +3054,10 @@
 <ntg.applicationfailed.sodium_nitroprusside>
     -45% кровяного давления (120 секунд)
 </ntg.applicationfailed.sodium_nitroprusside>
+<!-- TODO LOCALIZATION -->
+<ntg.seealso.sodium_nitroprusside>
+    [nitroglycerin] Nitroglycerin
+</ntg.seealso.sodium_nitroprusside>
 
 <!-- Spinal Cord Implants -->
 <ntg.title.spinal_cord_implants>Импланты позвоночного столба</ntg.title.spinal_cord_implants>
@@ -3127,7 +3146,7 @@
     [internal_wounds] +10% внутреннего урона
 </ntg.applicationfailed.surgical_drill>
 <ntg.seealso.surgical_drill>
-    [osteosynthetic_surgery] Операция остеосинтеза
+    [osteosynthesis_surgery] Операция остеосинтеза
 </ntg.seealso.surgical_drill>
 
 <!-- Surgical Saw -->
@@ -3281,7 +3300,7 @@
     [analgesia] 1а. Анальгезия |
     [anesthesia] 1б. Анестезия |
     [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
-    [scalpel] 2б. Применить скальпель
+    [scalpel] 2б. Применить скальпель |
     [hemostat] 3. Гемостат |
     [skin_retractors] 4. Расширитель |
     [sutures] 5. Наложить шов для завершения
@@ -3294,7 +3313,7 @@
     [analgesia] 1а. Анальгезия |
     [anesthesia] 1б. Анестезия |
     [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
-    [scalpel] 2б. Применить скальпель
+    [scalpel] 2б. Применить скальпель |
     [hemostat] 3. Гемостат |
     [skin_retractors] 4. Расширитель |
     [surgical_drill] 5. Хирургическая дрель |
@@ -3309,7 +3328,7 @@
     [analgesia] 1а. Анальгезия |
     [anesthesia] 1б. Анестезия |
     [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
-    [scalpel] 2б. Применить скальпель
+    [scalpel] 2б. Применить скальпель |
     [endovascular_balloon] 3. Эндоваскулярный баллон |
     [medical_stent] 4. Медицинский стент |
     [sutures] 5. Наложить шов для завершения
@@ -3322,7 +3341,7 @@
     [analgesia] 1а. Анальгезия |
     [anesthesia] 1б. Анестезия |
     [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
-    [scalpel] 2б. Применить скальпель
+    [scalpel] 2б. Применить скальпель |
     [hemostat] 3. Гемостат |
     [skin_retractors] 4. Расширитель |
     [surgical_saw] 5. Хирургическая пила |
@@ -3337,11 +3356,11 @@
     [analgesia] 1а. Анальгезия |
     [anesthesia] 1б. Анестезия |
     [multipurpose_scalpel] 2а. Применить многофункциональный скальпель в режиме хирургического надреза |
-    [scalpel] 2б. Применить скальпель
+    [scalpel] 2б. Применить скальпель |
     [hemostat] 3. Гемостат |
     [skin_retractors] 4. Расширитель |
     [multipurpose_scalpel] 5. Многофункциональный скальпель (установленный в режим адаптивного извлечения органа и применённый к правой конечности согласно описанию) |
-    6. Либо новый орган (поменяется с тем, что сейчас в теле), либо снова многофункциональный скальпель (удаляет орган в теле без замены)
+    6. Либо новый орган (поменяется с тем, что сейчас в теле), либо снова многофункциональный скальпель (удаляет орган в теле без замены) |
     [sutures] 7. Наложить шов для завершения
 </ntg.steps.organ_transplant_surgery>
 </Infotexts>
