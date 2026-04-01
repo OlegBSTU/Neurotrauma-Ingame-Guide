@@ -481,8 +481,11 @@ function EnableNTGuide()
     -- It works :barodev:
     -- You'll always reload lua before going into a server / singleplayer; you generally remove mods on the main menu. Therefor, this should work
     if CLIENT then
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePages.lua") -- Content pages
-       -- dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePagesAddons.lua") -- Addon Content pages
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_Helperfunctions.lua")
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_SettingsPageContent.lua") -- Content for the Settings Menu
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_SettingsPageConstruction.lua") -- Scripts for the settings menu
+
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/ContentPages/Neurotrauma.lua") -- Base Neurotrauma Content Pages
 
         local modsToLoad = {
             ["3324062208"] = "Cybernetics.lua",
@@ -497,12 +500,12 @@ function EnableNTGuide()
 
         for workshopId, scriptName in pairs(modsToLoad) do
             if IsModEnabled(workshopId) then
-                dofile(NTGuide.Path .. "/Lua/Scripts/Client/Addons/" .. scriptName)
+                dofile(NTGuide.Path .. "/Lua/Scripts/Client/ContentPages/Addons/" .. scriptName) -- Content Pages for each addon
             end
         end
 
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/Neuroguide.lua") -- Construction code
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguideChatLink.lua") -- Clientside code to interface with chat linking
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_PageConstruction.lua") -- Construction code
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_Chatlink.lua") -- Clientside code to interface with chat linking
     end
 
     NTGuide.CreateGuideButton()
