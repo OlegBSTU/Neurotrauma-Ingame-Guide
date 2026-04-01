@@ -738,7 +738,7 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
     [skin_retractors] 4. Skin Retractors | 
     [multipurpose_scalpel] 4a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
     [scalpel] 4b. Apply a Scalpel |
-    [necrotizing_fasciitis] 5. Repeat step 4 until the Necrotizing Fasciitis is gone.
+    [necrotizing_fasciitis] 5. Repeat step 4 until the Necrotizing Fasciitis is gone. |
     [sutures] 6. Apply sutures to end the surgery
 </ntg.steps.debridement>
 <ntg.seealso.debridement>
