@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Infotexts language="Russian" nowhitespace="false">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Chud stuff for my temperature stuff -->
+<!-- symptoms -->
+<!-- Hypothermia -->
+
+<!-- COLLLLDD!!!! -->
+<ntg.title.cold>Холод</ntg.title.cold>
+<ntg.description.cold>Холод — это симптом, то есть он не смертелен и не вызывает других заболеваний.</ntg.description.cold>
+<ntg.causes.cold>
+    [hypothermia] Гипотермия (Более 0%)
+</ntg.causes.cold>
+
+<!-- SHIVERRRRRR!!! -->
+<ntg.title.shivers>Дрожь</ntg.title.shivers>
+<ntg.description.shivers>Дрожь — это симптом, то есть она не смертельна и не вызывает других заболеваний.</ntg.description.shivers>
+<ntg.causes.shivers>
+    [hypothermia] Гипотермия (Более 0%), а также |
+    [temperature] Температура (Туловище менее 29°C и более 27°C при гипотермии) 
+</ntg.causes.shivers>
+
+<!-- NUMMBBB!!!! -->
+<ntg.title.numb>Онемение</ntg.title.numb>
+<ntg.description.numb>Онемение — это симптом, то есть оно не смертельно и не вызывает других заболеваний.</ntg.description.numb>
+<ntg.causes.numb>
+    [hypothermia] Гипотермия (Более 0%), а также |
+    [temperature] Температура (Туловище менее 27°C) 
+</ntg.causes.numb>
+
+<!-- NOSEEEEEE!!!!! -->
+<ntg.title.runny_nose>Насморк</ntg.title.runny_nose>
+<ntg.description.runny_nose>Насморк — это симптом, то есть он не смертелен и не вызывает других заболеваний.</ntg.description.runny_nose>
+<ntg.causes.runny_nose>
+    [hypothermia] Гипотермия (Более 0%), а также |
+    [temperature] Температура (Голова менее 35°C и более 18°C при гипотермии) 
+</ntg.causes.runny_nose>
+
+<!-- PINS AND NEEEDDLELLEELELL!!!SSSSS!@@ -->
+<ntg.title.pins_and_needles>Покалывание</ntg.title.pins_and_needles>
+<ntg.description.pins_and_needles>Покалывание — это симптом, то есть оно не смертельно и не вызывает других заболеваний.</ntg.description.pins_and_needles>
+<ntg.causes.pins_and_needles>
+    [d1_frostbite] Обморожение 1-й степени (Любая конечность более 0%) |
+    [d2_frostbite] Обморожение 2-й степени (Любая конечность более 0%) 
+</ntg.causes.pins_and_needles>
+<ntg.seealso.pins_and_needles>
+    [temperature] Температура (Заболевание) 
+</ntg.seealso.pins_and_needles>
+
+<!-- Fortnite -->
+<ntg.title.arm_swelling>Отёк руки</ntg.title.arm_swelling>
+<ntg.description.arm_swelling>Отёк руки — это симптом, то есть он не смертелен и не вызывает других заболеваний.</ntg.description.arm_swelling>
+<ntg.causes.arm_swelling>
+    [blood_clots] Тромбы (Более 16%) 
+</ntg.causes.arm_swelling>
+
+<!-- Hyperthermia -->
+<!-- Tyler the Creator -->
+<ntg.title.hot>Жар</ntg.title.hot>
+<ntg.description.hot>Жар — это симптом, то есть он не смертелен и не вызывает других заболеваний.</ntg.description.hot>
+<ntg.causes.hot>
+    [hyperthermia] Гипертермия (Более 0% и требования к температуре ниже) |
+    [temperature] Температура (Туловище более 38°C при гипертермии) 
+</ntg.causes.hot>
+
+<!-- Afflictions -->
+<!-- HEADD!!!! -->
+<!-- Teddy P -->
+<ntg.title.aafn_od>Передозировка А.А.Ф.Н</ntg.title.aafn_od>
+<ntg.description.aafn_od>Передозировка А.А.Ф.Н почти всегда смертельна, так как наниты стали неуправляемыми и атакуют все органы. Ваш лучший вариант — просто положить конец страданиям пациента.</ntg.description.aafn_od>
+<ntg.causes.aafn_od>
+    [aafn] А.А.Ф.Н (80% или выше) 
+</ntg.causes.aafn_od>
+<ntg.effects.aafn_od>
+    [neurotrauma] Нейротравма (+10% каждый тик) |
+    [lung_damage] Повреждение лёгких (+10% каждый тик) |
+    [heart_damage] Повреждение сердца (+10% каждый тик) |
+    [liver_damage] Повреждение печени (+10% каждый тик) |
+    [kidney_damage] Повреждение почек (+10% каждый тик) |
+    [seizure] Припадок (+20% каждый тик) 
+</ntg.effects.aafn_od>
+<ntg.treatments.aafn_od>
+    Надежды и молитвы. |
+    Ружьё, желательно достаточно крупный дробовой патрон, чтобы снести голову с плеч.
+</ntg.treatments.aafn_od>
+
+<!-- Crimson Desert -->
+<ntg.title.heat_stronk>Тепловой удар</ntg.title.heat_stronk>
+<ntg.description.heat_stronk>Тепловой удар — серьёзное и опасное для жизни состояние, вызванное экстремальной жарой. Если оставить без внимания, у пациента появятся разрушительные последствия. Становится видимым без сканера здоровья только при 50%.</ntg.description.heat_stronk>
+<ntg.causes.heat_stronk>
+    [temperature] Температура (Туловище 43.8°C или выше) 
+</ntg.causes.heat_stronk>
+<ntg.effects.heat_stronk>
+    [seizure] Припадок |
+    [blurred_vision] Размытое зрение |
+    [confusion] Спутанность сознания |
+    [heart_attack] Сердечный приступ (При 50% или выше) |
+    [neurotrauma] Нейротравма (+0.2% каждый тик при Тепловом ударе 75% или выше) 
+</ntg.effects.heat_stronk>
+<ntg.treatments.heat_stronk>
+    [temperature] Стабилизация температуры пациента ниже экстремальной гипертермии. 
+</ntg.treatments.heat_stronk>
+
+<!-- Moist Critikal -->
+<ntg.title.thermal_shock>Термический шок</ntg.title.thermal_shock>
+<ntg.description.thermal_shock>Термический шок вызывается резким изменением температуры у пациента. Например, вход в комнату, полную огня, после купания в ледяной воде. Термический шок крайне смертоносен и приведёт к смерти, если не следить за процессом. Стоит отметить, что термический шок довольно редок.</ntg.description.thermal_shock>
+<ntg.causes.thermal_shock>
+    Резкие перепады температуры. (Точнее, переход от гипотермии к гипертермии или наоборот в течение одного интервала НТ) 
+</ntg.causes.thermal_shock>
+<ntg.effects.thermal_shock>
+    [seizure] Припадок |
+    [stroke] Инсульт |
+    [neurotrauma] Нейротравма (+0.1% каждый тик) 
+</ntg.effects.thermal_shock>
+<ntg.treatments.thermal_shock>
+    Стабилизация температуры пациента и тщательное наблюдение. 
+</ntg.treatments.thermal_shock>
+
+<!-- LUNGS!! -->
+<!-- Water of desolation -->
+<ntg.title.pulmonary_edema>Лёгочный отёк</ntg.title.pulmonary_edema>
+<ntg.description.pulmonary_edema>Лёгочный отёк вызывается длительным пребыванием в экстремальном холоде в сочетании с плаванием. Хотя это не срочное состояние, оно может привести к остановке дыхания у пациента, если не заметить вовремя, к счастью, его очень легко лечить. Может усугубляться сепсисом, высоким давлением и повреждением сердца.</ntg.description.pulmonary_edema>
+<ntg.causes.pulmonary_edema>
+    Плавание в экстремальном холоде. |
+    [heart_damage] Повреждение сердца (При 80% или выше) 
+</ntg.causes.pulmonary_edema>
+<ntg.effects.pulmonary_edema>
+    [shortness_of_breath] Сбивчивое дыхание |
+    [wheezing] Хрипы (При 25% или выше) |
+    [vomiting_blood] Рвота кровью (При 75% или выше) |
+    [respiratory_arrest] Остановка дыхания (При 75% или выше) 
+</ntg.effects.pulmonary_edema>
+<ntg.treatments.pulmonary_edema>
+    [furosemide] Фуросемид |
+    [drainage] Дренаж (Та же процедура, что и при хирургии пневмоторакса) |
+    Теоретически можно удалить лёгкое, однако удаление его при 50% вызовет внутреннее кровотечение. 
+</ntg.treatments.pulmonary_edema>
+
+<!-- Dreams for the ps4/ps5 -->
+<ntg.title.pulmonary_embolism>Лёгочная эмболия</ntg.title.pulmonary_embolism>
+<ntg.description.pulmonary_embolism>Лёгочная эмболия вызывается отделением большой части тромба от более крупного тела и попаданием его в лёгкие, где он застревает и мешает организму дышать. Это следует считать медицинской чрезвычайной ситуацией.</ntg.description.pulmonary_embolism>
+<ntg.causes.pulmonary_embolism>
+    [blood_clots] Тромбы (При 16% или выше, масштабируется с тяжестью) 
+</ntg.causes.pulmonary_embolism>
+<ntg.effects.pulmonary_embolism>
+    [shortness_of_breath] Сбивчивое дыхание (При 10% или выше) |
+    [chest_pain] Боль в груди (При 25% или выше) |
+    [respiratory_arrest] Остановка дыхания (При 75% или выше) 
+</ntg.effects.pulmonary_embolism>
+<ntg.treatments.pulmonary_embolism>
+    [alteplase] Альтеплаза |
+    [streptokinase] Стрептокиназа (Похожа на Альтеплазу, но имеет меньший эффект) |
+    Теоретически можно удалить лёгкое, однако удаление его при 50% вызовет внутреннее кровотечение. 
+</ntg.treatments.pulmonary_embolism>
+
+
+<!-- TORSO!!!! -->
+<!-- My Manifesto  -->
+<ntg.title.hypothermia>Гипотермия</ntg.title.hypothermia>
+<ntg.description.hypothermia>Гипотермия вызывается снижением температуры туловища до 35°C или ниже. Однако чем ниже температура, тем сильнее гипотермия, по мере её развития эффекты становятся всё более серьёзными.\nПРИМЕЧАНИЕ: Наличие Гусиного симбиоза сделает вас невосприимчивым к гипотермии.</ntg.description.hypothermia>
+<ntg.causes.hypothermia>
+    [temperature] Температура (Туловище ниже 35°C) 
+</ntg.causes.hypothermia>
+<ntg.effects.hypothermia>
+    [hypertension] Гипертензия (Масштабируется с тяжестью) |
+    [pulmonary_edema] Лёгочный отёк (При 18°C или ниже) |
+    [pale_skin] Бледная кожа (При 18°C или ниже) |
+    [respiratory_arrest] Остановка дыхания (При 17.5°C или ниже) |
+    [immunity] Сниженный иммунитет (При 17.5°C или ниже) |
+    [analgesia] Анальгезия (При 17.5°C или ниже) |
+    [unconsciousness] Потеря сознания (При 17.5°C или ниже) |
+    [frozen_blood_vessels] Замороженные кровеносные сосуды (При 1°C или ниже) |
+    [coma] Кома (При 1°C или ниже) 
+</ntg.effects.hypothermia>
+<ntg.treatments.hypothermia>
+    Стабилизация температуры. 
+</ntg.treatments.hypothermia>
+
+<!-- Felony -->
+<ntg.title.hyperthermia>Гипертермия</ntg.title.hyperthermia>
+<ntg.description.hyperthermia>Гипертермия вызывается повышением температуры туловища выше 38°C. Однако чем выше температура, тем сильнее гипертермия, по мере её развития эффекты становятся всё более серьёзными.\nПРИМЕЧАНИЕ: Наличие Гусиного симбиоза умножит всё тепло в два раза.</ntg.description.hyperthermia>
+<ntg.causes.hyperthermia>
+    [temperature] Температура (Туловище выше 38°C) 
+</ntg.causes.hyperthermia>
+<ntg.effects.hyperthermia>
+    [hypotension] Гипотензия |
+    [headache] Головная боль (При 41.8°C или выше) |
+    [sweating] Потеет (При 43.8°C или выше) |
+    [heat_stronk] Тепловой удар (При 43.8°C или выше) |
+    [husk_infection] Убивает Гусиную инфекцию (При 43.8°C или выше) |
+    [neurotrauma] Нейротравма (При 50°C или выше) |
+    [lung_damage] Повреждение лёгких (При 50°C или выше) |
+    [heart_damage] Повреждение сердца (При 50°C или выше) |
+    [kidney_damage] Повреждение почек (При 50°C или выше) |
+    [liver_damage] Повреждение печени (При 50°C или выше) 
+</ntg.effects.hyperthermia>
+<ntg.treatments.hyperthermia>
+    Стабилизация температуры. |
+    Может быть снижена ношением одежды с защитой от ожогов. 
+</ntg.treatments.hyperthermia>
+
+<!-- Ydrec type beat -->
+<ntg.title.frozen_blood_vessels>Замороженные кровеносные сосуды</ntg.title.frozen_blood_vessels>
+<ntg.description.frozen_blood_vessels>Замороженные кровеносные сосуды вызываются снижением температуры туловища до 1°C или ниже. Как только достигнута эта точка, туловище начнёт медленно замерзать, вызывая необратимые повреждения при оттаивании. Однако благодаря совершенно новому и высокоэкспериментальному препарату под названием А.А.Ф.Н (Автоматические Антифризные Наниты), это можно, к счастью, обратить. Однако этот процесс нелёгкий и требует постоянного наблюдения.</ntg.description.frozen_blood_vessels>
+<ntg.causes.frozen_blood_vessels>
+    [temperature] Температура (Туловище ниже 1°C) 
+</ntg.causes.frozen_blood_vessels>
+<ntg.effects.frozen_blood_vessels>
+    [cell_death] Гибель клеток (Если оставить оттаивать без использования А.А.Ф.Н (Автоматических Антифризных Нанитов)) 
+</ntg.effects.frozen_blood_vessels>
+<ntg.treatments.frozen_blood_vessels>
+    [aafn] Оттаивание с А.А.Ф.Н излечивает Замороженные кровеносные сосуды и не вызывает Гибель клеток. |
+    [aafn] Оттаивание без А.А.Ф.Н излечивает Замороженные кровеносные сосуды и вызывает Гибель клеток. 
+</ntg.treatments.frozen_blood_vessels>
+
+<!-- Molecular death of the cell -->
+<ntg.title.cell_death>Гибель клеток</ntg.title.cell_death>
+<ntg.description.cell_death>Гибель клеток вызывается неправильным оттаиванием Замороженных кровеносных сосудов. В результате организм быстро умирает, органы отказывают и ткани разрушаются. Неизлечима при 5%, как только порог преодолён, самое этичное — положить конец страданиям пациента.</ntg.description.cell_death>
+<ntg.causes.cell_death>
+    [frozen_blood_vessels] Замороженные кровеносные сосуды (При неправильном оттаивании) 
+</ntg.causes.cell_death>
+<ntg.effects.cell_death>
+    [internal_bleeding] Внутреннее кровотечение |
+    [confusion] Спутанность сознания (Если менее 5%) |
+    [neurotrauma] Нейротравма (При 5% и выше) |
+    [lung_damage] Повреждение лёгких (При 5% и выше) |
+    [heart_damage] Повреждение сердца (При 5% и выше) |
+    [kidney_damage] Повреждение почек (При 5% и выше) |
+    [liver_damage] Повреждение печени (При 5% и выше) 
+</ntg.effects.cell_death>
+<ntg.treatments.cell_death>
+    Время и наблюдение при уровне ниже 5%. |
+    Новая игра при 5% и выше. 
+</ntg.treatments.cell_death>
+
+<!-- When the suit is slightly hot -->
+<ntg.title.heated_diving_suit>Обогреваемый водолазный костюм</ntg.title.heated_diving_suit>
+<ntg.description.heated_diving_suit>Обогреваемый водолазный костюм вызывается экипировкой водолазного костюма с внутренним обогревателем с батареей, внешним обогревателем с батареей или включенным режимом совместимости водолазного костюма. Используется для предотвращения замерзания при выходе из подводной лодки в ледяную воду. Имеет небольшой эффект при использовании в сухом помещении.</ntg.description.heated_diving_suit>
+<ntg.causes.heated_diving_suit>
+    Внутренний обогреватель с батареей, внешний обогреватель с батареей или включенный режим совместимости водолазного костюма.
+</ntg.causes.heated_diving_suit>
+<ntg.effects.heated_diving_suit>
+    [temperature] Температура (Согревает игрока в соответствии с окружением и текущей температурой) 
+</ntg.effects.heated_diving_suit>
+<ntg.treatments.heated_diving_suit>
+    Снимите костюм. 
+</ntg.treatments.heated_diving_suit>
+<ntg.seealso.cold>
+    [esh] В.Н.К (Внешний Нагреватель Костюма) (Предмет) 
+</ntg.seealso.cold>
+
+<!-- Boiling Water IV -->
+<ntg.title.elevated_core_temp>Повышенная температура тела</ntg.title.elevated_core_temp>
+<ntg.description.elevated_core_temp>Повышенная температура тела используется для увеличения внутренней температуры пациента, это гораздо более эффективный способ стабилизации пациента, чем использование Тепла. Однако его следует применять умеренно, так как имеются побочные эффекты.</ntg.description.elevated_core_temp>
+<ntg.causes.elevated_core_temp>
+    [warm_iv_fluids] Тёплый внутривенный раствор (При использовании) 
+</ntg.causes.elevated_core_temp>
+<ntg.effects.elevated_core_temp>
+    [temperature] Температура (Повышает температуру всех конечностей в соответствии с текущим количеством) |
+    [hypertension] Гипертония (После 30%) |
+    [lightheadedness] Головокружение (После 30%) |
+    [confusion] Замешательство (После 40%) |
+    [seizure] Судороги (После 40%) |
+    [vanilla_organ_damage] Стандартное повреждение органов (После 40%) 
+</ntg.effects.elevated_core_temp>
+<ntg.treatments.elevated_core_temp>
+    [chilled] Охлаждение (Только смягчает симптомы) |
+    Время. 
+</ntg.treatments.elevated_core_temp>
+
+
+<!-- Limbs -->
+<!-- Crispy  -->
+<ntg.title.frostnip>Предобморожение</ntg.title.frostnip>
+<ntg.description.frostnip>Предобморожение вызывается, когда любая конечность пациента достигает 29°C или ниже. Хотя это обычно можно игнорировать, если оставить без внимания, может перерасти в более тяжёлые стадии обморожения и даже смерть. Может возникать только на не кибернетической конечности.</ntg.description.frostnip>
+<ntg.causes.frostnip>
+    [temperature] Температура (Любая конечность ниже 29°C) 
+</ntg.causes.frostnip>
+<ntg.effects.frostnip>
+    [d1_frostbite] Обморожение 1-й степени (После достижения 100% и температуры ниже 27°C) 
+</ntg.effects.frostnip>
+<ntg.treatments.frostnip>
+    Стабилизация температуры 
+</ntg.treatments.frostnip>
+
+<!-- d1 hater -->
+<ntg.title.d1_frostbite>Обморожение 1-й степени</ntg.title.d1_frostbite>
+<ntg.description.d1_frostbite>Обморожение 1-й степени вызывается, когда любая конечность пациента достигает 27°C или ниже и при этом ранее было предобморожение. Хотя это обычно можно игнорировать, если оставить без внимания, может перерасти в более тяжёлые стадии обморожения и даже смерть. Может возникать только на не кибернетической конечности.</ntg.description.d1_frostbite>
+<ntg.causes.d1_frostbite>
+    [temperature] Температура (Любая конечность ниже 27°C и наличие предобморожения) |
+    [frostnip] Предобморожение (Наличие предобморожения и температура ниже 27°C) 
+</ntg.causes.d1_frostbite>
+<ntg.effects.d1_frostbite>
+    Замедление скорости |
+    [pins_and_needles] Покалывание и онемение |
+    [reperfusion_injury] Реперфузионное повреждение (При слишком быстром нагреве) |
+    [d2_frostbite] Обморожение 2-й степени (При достижении 100% и температуре ниже 18°C) |
+    [frostnip] Предобморожение (При оттаивании) 
+</ntg.effects.d1_frostbite>
+<ntg.treatments.d1_frostbite>
+    Стабилизация температуры 
+</ntg.treatments.d1_frostbite>
+
+<!-- d2 hater -->
+<ntg.title.d2_frostbite>Обморожение 2-й степени</ntg.title.d2_frostbite>
+<ntg.description.d2_frostbite>Обморожение 2-й степени вызывается, когда любая конечность пациента достигает 18°C или ниже и при этом ранее было обморожение 1-й степени. Не следует игнорировать, так как следующая стадия — обморожение 3-й степени, которое становится необратимым после 40%. Может возникать только на не кибернетической конечности.</ntg.description.d2_frostbite>
+<ntg.causes.d2_frostbite>
+    [temperature] Температура (Любая конечность ниже 18°C и наличие обморожения 1-й степени) |
+    [d1_frostbite] Обморожение 1-й степени (Наличие обморожения 1-й степени и температура ниже 18°C) 
+</ntg.causes.d2_frostbite>
+<ntg.effects.d2_frostbite>
+    Замедление скорости |
+    [pins_and_needles] Покалывание и онемение |
+    [reperfusion_injury] Реперфузионное повреждение (При слишком быстром нагреве) |
+    [d3_frostbite] Обморожение 3-й степени (При достижении 100% и температуре ниже или равной 1°C) |
+    [d1_frostbite] Обморожение 1-й степени (При оттаивании) |
+    [chilblains] Простуда (При оттаивании) |
+    [inflammation] Воспаление (При оттаивании) |
+    [intense_pain] Сильная боль (При оттаивании) |
+    [blood_clots] Тромбы 
+</ntg.effects.d2_frostbite>
+<ntg.treatments.d2_frostbite>
+    Стабилизация температуры 
+</ntg.treatments.d2_frostbite>
+
+<!-- d3 cooked -->
+<ntg.title.d3_frostbite>Обморожение 3-й степени</ntg.title.d3_frostbite>
+<ntg.description.d3_frostbite>Обморожение 3-й степени вызывается, когда любая конечность пациента достигает 1°C или ниже и при этом ранее было обморожение 2-й степени. Нельзя игнорировать ни при каких обстоятельствах, при отсутствии лечения приведёт к ампутации и смерти. Однако любая конечность, поражённая обморожением 3-й степени, требует ампутации только после 40%, в противном случае оттаивает медленно. Может возникать только на не кибернетической и не ампутированной конечности.</ntg.description.d3_frostbite>
+<ntg.causes.d3_frostbite>
+    [temperature] Температура (Любая конечность ниже 1°C и наличие обморожения 2-й степени) |
+    [d2_frostbite] Обморожение 2-й степени (Наличие обморожения 2-й степени и температура ниже 1°C) 
+</ntg.causes.d3_frostbite>
+<ntg.effects.d3_frostbite>
+    Замедление скорости |
+    [reperfusion_injury] Реперфузионное повреждение (При слишком быстром нагреве) |
+    [d2_frostbite] Обморожение 2-й степени (При оттаивании) |
+    [chilblains] Простуда (При оттаивании) |
+    [inflammation] Воспаление (При оттаивании) |
+    [intense_pain] Сильная боль (При оттаивании) |
+    [blood_clots] Тромбы |
+    [gangrene] Гангрена (После 40%) 
+</ntg.effects.d3_frostbite>
+<ntg.treatments.d3_frostbite>
+    Стабилизация температуры |
+    [amputation_surgery] Ампутация (Если более 40%) 
+</ntg.treatments.d3_frostbite>
+
+<!-- chilly blister -->!!!
+<ntg.title.chilblains>Простуда</ntg.title.chilblains>
+<ntg.description.chilblains>Простуда вызывается оттаиванием любой конечности с обморожением 3-й или 2-й степени. Хотя не особенно опасна, может привести к инфекциям при отсутствии лечения.</ntg.description.chilblains>
+<ntg.causes.chilblains>
+    [d3_frostbite] Обморожение 3-й степени (При оттаивании) |
+    [d2_frostbite] Обморожение 2-й степени (При оттаивании) 
+</ntg.causes.chilblains>
+<ntg.effects.chilblains>
+    [infected_wounds] Инфицированные раны 
+</ntg.effects.chilblains>
+<ntg.treatments.chilblains>
+    Любое из следующего: |
+    [bandaged] Перевязано |
+    [skin_ointmented] Обработано мазью 
+</ntg.treatments.chilblains>
+
+<!-- kanye east -->
+<ntg.title.reperfusion_injury>Реперфузионное повреждение</ntg.title.reperfusion_injury>
+<ntg.description.reperfusion_injury>Реперфузионные повреждения вызываются неправильным нагревом обмороженной конечности. Если процент обморожения 1-й, 2-й или 3-й степени слишком высок для соответствующей температуры, возникает реперфузионное повреждение. Хотя не является прямо смертельным, при высоких значениях вызывает внутренние повреждения.</ntg.description.reperfusion_injury>
+<ntg.causes.reperfusion_injury>
+    [d1_frostbite] Обморожение 1-й степени (При слишком высокой температуре) |
+    [d2_frostbite] Обморожение 2-й степени (При слишком высокой температуре) |
+    [d3_frostbite] Обморожение 3-й степени (При слишком высокой температуре) 
+</ntg.causes.reperfusion_injury>
+<ntg.effects.reperfusion_injury>
+    [internal_wounds] Внутренние раны |
+    [bone_damage] Повреждение костей 
+</ntg.effects.reperfusion_injury>
+<ntg.treatments.reperfusion_injury>
+    Время 
+</ntg.treatments.reperfusion_injury>
+
+<!-- Freedom Units -->
+<ntg.title.heat_cramp>Тепловой спазм</ntg.title.heat_cramp>
+<ntg.description.heat_cramp>Тепловой спазм вызывается, когда любая конечность достигает 41.8°C. Тепловой спазм скорее раздражает, чем опасен, так как от него нельзя умереть или сильно пострадать. Однако при крайних случаях может помешать пациенту ходить или двигаться.</ntg.description.heat_cramp>
+<ntg.causes.heat_cramp>
+    [temperature] Температура (При 41.8°C или выше) 
+</ntg.causes.heat_cramp>
+<ntg.effects.heat_cramp>
+    [spasms] Судороги 
+</ntg.effects.heat_cramp>
+<ntg.treatments.heat_cramp>
+    [saline] Физиологический раствор (Не лечит, но помогает предотвратить спазмы) |
+    Стабилизация температуры 
+</ntg.treatments.heat_cramp>
+
+<!-- Any -->
+<!-- Dripping wet  -->
+<ntg.title.wet>Мокрый</ntg.title.wet>
+<ntg.description.wet>Намокнуть довольно просто — стоять в воде без водолазного костюма. Действует как множитель холода, поэтому лучше вытереться полотенцем. Также может загрязнять бинты.</ntg.description.wet>
+<ntg.causes.wet>
+    Стояние в воде без костюма. |
+</ntg.causes.wet>
+<ntg.effects.wet>
+    Множитель холода. |
+    Загрязняет бинты. |
+    [temperature] Температура (Незначительно понижает температуру) 
+</ntg.effects.wet>
+<ntg.treatments.wet>
+    [towel] Полотенце |
+    Время 
+</ntg.treatments.wet>
+
+<!-- Warmth -->
+<ntg.title.warmth>Тепло</ntg.title.warmth>
+<ntg.description.warmth>Тепло — это аффликт, вызываемый грелками и тёплой тряпкой. Используется для внешнего повышения температуры пациента, менее эффективно, чем Повышенная температура тела.</ntg.description.warmth>
+<ntg.causes.warmth>
+    [heat_pads] Грелки |
+    [warm_rag] Тёплая тряпка 
+</ntg.causes.warmth>
+<ntg.effects.warmth>
+    [temperature] Температура (Повышается внешне) |
+    [internal_bleeding] Внутреннее кровотечение (Умножается на небольшое количество) 
+</ntg.effects.warmth>
+<ntg.treatments.warmth>
+    Время
+</ntg.treatments.warmth>
+
+<!-- Chilled -->
+<ntg.title.chilled>Охлаждение</ntg.title.chilled>
+<ntg.description.chilled>Охлаждение — это аффликт, вызываемый гелевым пакетом со льдом при использовании. Значительно увеличивает естественную регенерацию тупых травм и понижает температуру.</ntg.description.chilled>
+<ntg.causes.chilled>
+    [gel_ice_pack] Гелевый хладоэлемент
+</ntg.causes.chilled>
+<ntg.effects.chilled>
+    Замедляет персонажа на 5% за каждую охлаждённую конечность | 
+    [internal_wounds] Увеличивает естественное заживление тупых травм | 
+    [infected_wounds] Ускоряет ухудшение инфицированных ран | 
+    [internal_bleeding] Уменьшает внутреннее кровотечение на 0.2% каждую секунду |
+    [temperature] Температура (Вызывает её понижение до уровня гипотермии)
+</ntg.effects.chilled>
+<ntg.treatments.chilled>
+    Время
+</ntg.treatments.chilled>
+
+<!-- Temperature -->
+<ntg.title.temperature>Температура</ntg.title.temperature>
+<ntg.description.temperature>Температура — это самый важный аффликт во всём NT Thermal, так как он определяет все аффликты, добавленные этим модом. Температура видна только через термометр. Температура может понижаться водой и повышаться огнём. Организм будет пытаться стабилизировать свою температуру со временем, однако во многих случаях может потребоваться внешняя помощь. Низкое кровяное давление замедлит пассивную генерацию тепла, то же самое с использованием жгута.</ntg.description.temperature>
+<ntg.causes.temperature>
+    Быть молекулярно активным человеком. |
+    Вода (Пребывание в ней) |
+    Огонь (Пребывание рядом или в нём) |
+    [stasis_bag] Мешок стазиса (Вызывает охлаждение) |
+    [blood_loss] Потеря крови (Вызывает охлаждение) |
+    [sepsis] Сепсис (Вызывает повышение температуры)
+</ntg.causes.temperature>
+<ntg.effects.temperature>
+    Снижение FPS (лол) |
+    [hypothermia] Гипотермия (Туловище ниже 35°C) |
+    [hyperthermia] Гипертермия (Туловище выше 38°C)
+</ntg.effects.temperature>
+<ntg.treatments.temperature>
+    Время |
+    Вода |
+    Огонь |
+    [heat_pads] Грелки |
+    [warm_rag] Тёплая тряпка |
+    [warm_iv_fluids] Тёплый внутривенный раствор |
+    [gel_ice_pack] Гелевый хладоэлемент
+</ntg.treatments.temperature>
+
+<!-- Blood -->
+<!-- Clot in my blood  -->
+<ntg.title.blood_clots>Тромбы</ntg.title.blood_clots>
+<ntg.description.blood_clots>Тромбы — серьёзное заболевание, возникающее при тяжёлой степени обморожения. В небольших количествах организм может безопасно расщепить их самостоятельно. При больших количествах организм будет испытывать трудности и множество негативных эффектов. Усугубляется высоким кровяным давлением и алкалозом. Ослабляется ацидозом.</ntg.description.blood_clots>
+<ntg.causes.blood_clots>
+    [d2_frostbite] Обморожение 2-й степени |
+    [d3_frostbite] Обморожение 3-й степени 
+</ntg.causes.blood_clots>
+<ntg.effects.blood_clots>
+    [hypertension] Гипертензия |
+    [pulmonary_embolism] Тромбоэмболия лёгочной артерии |
+    [leg_swelling] Отёк ноги (если образовался в ноге) |
+    [arm_swelling] Отёк руки (если образовался в руке) 
+</ntg.effects.blood_clots>
+<ntg.treatments.blood_clots>
+    [alteplase] Алтеплаза (основной способ растворения) |
+    [streptokinase] Стрептокиназа (аналогична Алтеплазе, но с меньшим эффектом) |
+    Время
+</ntg.treatments.blood_clots>
+
+<!-- Those pesky robots  -->
+<ntg.title.aafn>А.А.Ф.Н</ntg.title.aafn>
+<ntg.description.aafn>А.А.Ф.Н — единственное лечение замороженных кровеносных сосудов. Препарат использует высокоэкспериментальные наниты для распознавания и разрушения кристаллов льда, сохраняя при этом ткани. Однако это лекарство часто вызывает множество побочных эффектов.</ntg.description.aafn>
+<ntg.causes.aafn>
+    [aafn_item] А.А.Ф.Н (при использовании) 
+</ntg.causes.aafn>
+<ntg.effects.aafn>
+    [drunk] Мгновенное возгорание (если выпито) |
+    [heart_damage] Повреждение сердца |
+    [bloating] Вздутие |
+    [internal_bleeding] Внутреннее кровотечение (при 25% или выше) |
+    [vomiting_blood] Рвота с кровью (при 25% или выше) |
+    [aafn_od] Передозировка А.А.Ф.Н (при 80% или выше)
+</ntg.effects.aafn>
+<ntg.treatments.aafn>
+    Время
+</ntg.treatments.aafn>
+
+<!-- Heart med  -->
+<ntg.title.thrombolytic>Тромболитик</ntg.title.thrombolytic>
+<ntg.description.thrombolytic>Тромболитический агент, используемый для разрушения тромбов и снижения кровяного давления. Один из немногих способов спасти пациента от почти неминуемой гибели. Однако у тромболитиков есть свои недостатки.</ntg.description.thrombolytic>
+<ntg.causes.thrombolytic>
+    [alteplase] Алтеплаза (при использовании) 
+</ntg.causes.thrombolytic>
+<ntg.effects.thrombolytic>
+    [blood_clots] Тромбы (уменьшение) |
+    [hypotension] Гипотензия |
+    [kidney_damage] Повреждение почек
+</ntg.effects.thrombolytic>
+<ntg.treatments.thrombolytic>
+    Время
+</ntg.treatments.thrombolytic>
+
+<!-- Goblin  -->
+<ntg.title.furosemide>Фуросемид</ntg.title.furosemide>
+<ntg.description.furosemide>Мочегонное средство, используемое для помощи в рассасывании отёка лёгких и снижения кровяного давления. Однако у мочегонных есть свои недостатки.</ntg.description.furosemide>
+<ntg.causes.furosemide>
+    [furosemide_item] Фуросемид (при использовании) 
+</ntg.causes.furosemide>
+<ntg.effects.furosemide>
+    [hypotension] Гипотензия |
+    [headache] Головная боль |
+    [bloating] Вздутие
+</ntg.effects.furosemide>
+<ntg.treatments.furosemide>
+    Время
+</ntg.treatments.furosemide>
+
+<!-- blahhhh information  -->
+<ntg.title.temp_systems>Системы температуры</ntg.title.temp_systems>
+<ntg.description.temp_systems>NT Thermal позволяет воде и огню взаимодействовать с температурой корпуса подводной лодки. Поэтому важно понимать, как это работает, иначе это может показаться раздражающим. Начнём с огня: в ванильной Neurotrauma огонь действует как радиус урона без понимания окружения. Тепло статично, то есть не распространяется между помещениями. Однако в Thermal это больше не так — теперь учитывается передача тепла.
+\n1. При возгорании немедленно закройте все соединённые двери, чтобы предотвратить распространение тепла, так как его утечка повысит риск гипертермии у членов экипажа.
+\n2. Наденьте одежду с защитой от ожогов, так как это значительно снижает риск гипертермии, однако полной защиты не даёт.
+\n3. Быстро потушите пожар и немедленно окажите помощь всем пострадавшим от жары. Даже если они ещё не потеряли сознание, есть большой шанс, что они могут.
+\n4. Эвакуируйтесь из помещения, пока температура не снизится — это займёт около 5 секунд, так как тепло окружающее.
+\nЭто должно работать в большинстве случаев, однако стоит отметить, что вода может охлаждать горячие помещения, то есть температура снизится быстрее, но никогда не опустится ниже комнатной температуры.
+</ntg.description.temp_systems>
+
+<ntg.title.app_temp>Практическое применение температуры</ntg.title.app_temp>
+<ntg.description.app_temp>NT Thermal создаёт явные трудности для всего экипажа, однако в некоторых случаях сильно облегчает жизнь.
+\n1. Закончились обезболивающие? Не беда — снизьте температуру пациента до 17.5°C, это вызовет эффект анальгезии. На первый взгляд это звучит радикально, но это эффективный способ сэкономить обезболивающие, так как при поддержании температуры на этом уровне они выживут. Просто следите внимательно, так как они перестанут дышать.
+\n2. Хаска теперь можно уничтожить жаром! Просто нагрейте пациента до 43.8°C — это мгновенно (по сути) убьёт хаска, экономя драгоценные запасы противоядий. Однако стоит отметить, что это крайне опасно и должно применяться минимально ради органов пациента.
+\n3. Контролируйте кровяное давление пациента с помощью температуры! Низкое давление? Контролируемое плавание в балласте — гипотермия повышает давление. Ой, высокое давление? Согрейте пациента — гипертермия снижает давление.
+\n4. Нет стазис-мешка? Не волнуйтесь! Заморозка пациента (0°C) действует как псевдо-стазис, за исключением того, что они всё ещё испытывают все последствия заморозки.
+\nНадеюсь, этот небольшой список наполнит вас великими идеями, берегите себя!
+</ntg.description.app_temp>
+
+<ntg.title.aafn_procedure>Процедура А.А.Ф.Н</ntg.title.aafn_procedure>
+<ntg.description.aafn_procedure>А.А.Ф.Н необходимо вводить через специальную операцию для максимальной эффективности.
+</ntg.description.aafn_procedure>
+<ntg.steps.aafn_procedure>
+[analgesia] 1a. Анальгезия | 
+[anesthesia] 1b. Анестезия |
+[multipurpose_scalpel] 2a. Применить многофункциональный скальпель в режиме хирургического разреза |
+[scalpel] 2b. Применить скальпель |
+[hemostat] 3. Зажим | 
+[aafn_item] 4. Применить А.А.Ф.Н |
+[sutures] 5. Швы 
+</ntg.steps.aafn_procedure>
+
+<!-- Items -->
+<ntg.title.handheld_thermometer>Ручной термометр</ntg.title.handheld_thermometer>
+<ntg.description.handheld_thermometer>Медицинская проверка навыков: 0.
+\nПортативный способ измерения внутренней температуры тела пациента. Требует батарею для работы. При измерении выводит три показания:
+\n1. Имя пациента и использованную конечность
+\n2. Температура конечности и термический диапазон.
+\n3. Средняя температура и средний термический диапазон.
+</ntg.description.handheld_thermometer>
+
+<ntg.title.towel>Полотенце</ntg.title.towel>
+<ntg.description.towel>Медицинская проверка навыков: 20.
+\nМногоразовый способ вытирания пациента досуха. Полезно для стабилизации температуры пациента, плававшего в ледяной воде.
+</ntg.description.towel>
+<ntg.applicationsuccess.towel>
+[wet] Мокрый (- 100%)
+</ntg.applicationsuccess.towel>
+<ntg.applicationfailed.towel>
+[wet] Мокрый (- 75%)
+</ntg.applicationfailed.towel>
+
+<ntg.title.heat_pads>Грелки</ntg.title.heat_pads>
+<ntg.description.heat_pads>Медицинская проверка навыков: 10.
+\nОдноразовая грелка, которая слегка нагревает ткани при использовании. Использует химическую реакцию для нагрева, поэтому может храниться в неотапливаемом помещении. Также хороша для тонкой корректировки температуры пациента.
+</ntg.description.heat_pads>
+<ntg.applicationsuccess.heat_pads>
+[warmth] Тепло (+ 15%)
+</ntg.applicationsuccess.heat_pads>
+<ntg.applicationfailed.heat_pads>
+[warmth] Тепло (+ 5%)
+</ntg.applicationfailed.heat_pads>
+
+<ntg.title.warm_rag>Тёплая тряпка</ntg.title.warm_rag>
+<ntg.description.warm_rag>Медицинская проверка навыков: 20.
+\nМногоразовая тряпка, которая сильно нагревает ткани при использовании. Использует накопленное тепло, поэтому должна храниться в тёплом месте, например в нагревательном ящике или нагревательном контейнере. Отлично подходит для согрева пациента.
+</ntg.description.warm_rag>
+<ntg.applicationsuccess.warm_rag>
+[warmth] Тепло (+ 100%) |
+- 25% Состояние
+</ntg.applicationsuccess.warm_rag>
+<ntg.applicationfailed.warm_rag>
+[warmth] Тепло (+ 75%) |
+- 25% Состояние
+</ntg.applicationfailed.warm_rag>
+
+<ntg.title.warm_iv_fluids>Тёплые в/в растворы</ntg.title.warm_iv_fluids>
+<ntg.description.warm_iv_fluids>Медицинская проверка навыков: 40
+\nОдноразовый пакет с тёплыми в/в растворами, который сильно повышает внутреннюю температуру пациента при использовании. Использует накопленное тепло, поэтому должен храниться в тёплом месте, например в нагревательном ящике или нагревательном контейнере. Отлично подходит для согрева пациента.
+</ntg.description.warm_iv_fluids>
+<ntg.applicationsuccess.warm_iv_fluids>
+    [elevated_core_temp] Повышенная температура ядра (+ 30%)
+</ntg.applicationsuccess.warm_iv_fluids>
+<ntg.applicationfailed.warm_iv_fluids>
+    [elevated_core_temp] Повышенная температура ядра (+ 5%)
+</ntg.applicationfailed.warm_iv_fluids>
+
+<ntg.title.alteplase>Алтеплаза</ntg.title.alteplase>
+<ntg.description.alteplase>Медицинская проверка навыков: 40.
+\nОдноразовый тромболитический агент, полезный для разрушения тромбов и снижения кровяного давления.
+</ntg.description.alteplase>
+<ntg.applicationsuccess.alteplase>
+[thrombolytic] Тромболитик (+ 50%)
+</ntg.applicationsuccess.alteplase>
+<ntg.applicationfailed.alteplase>
+[thrombolytic] Тромболитик (+ 10%) |
+[bleeding] Кровотечение (+ 5%)
+</ntg.applicationfailed.alteplase>
+
+<ntg.title.furosemide_item>Фуросемид</ntg.title.furosemide_item>
+<ntg.description.furosemide_item>Медицинская проверка навыков: 45.
+\nОдноразовый мочегонный агент, полезный для рассасывания отёка лёгких и снижения кровяного давления.
+</ntg.description.furosemide_item>
+<ntg.applicationsuccess.furosemide_item>
+[furosemide] Фуросемид (+ 50%)
+</ntg.applicationsuccess.furosemide_item>
+<ntg.applicationfailed.furosemide_item>
+[furosemide] Фуросемид (+ 15%)
+</ntg.applicationfailed.furosemide_item>
+
+<ntg.title.aafn_item>А.А.Ф.Н (Автоматические Антифризные Наниты)</ntg.title.aafn_item>
+<ntg.description.aafn_item>Медицинская проверка навыков: 60.
+\nА.А.Ф.Н — высокоэкспериментальное, но необходимое нанитное лекарство для лечения замороженных кровеносных сосудов. НЕ СОЧЕТАЙТЕ С АЛКОГОЛЕМ!</ntg.description.aafn_item>
+<ntg.applicationsuccess.aafn_item>
+[aafn] А.А.Ф.Н (+ 25% при проведении Процедуры А.А.Ф.Н) |
+[aafn] А.А.Ф.Н (+ 10%)
+</ntg.applicationsuccess.aafn_item>
+<ntg.applicationfailed.aafn_item>
+[aafn] А.А.Ф.Н (+ 10%) |
+[open_wounds] Открытые раны (+ 10%) |
+[bleeding] Кровотечение (+ 5%)
+</ntg.applicationfailed.aafn_item>
+<ntg.seealso.aafn_item>
+[aafn_procedure] Процедура А.А.Ф.Н
+</ntg.seealso.aafn_item>
+
+<ntg.title.heating_crate>Нагревательный ящик</ntg.title.heating_crate>
+<ntg.description.heating_crate>Используется для хранения/нагрева тёплых в/в растворов и тёплых тряпок.
+</ntg.description.heating_crate>
+<ntg.seealso.heating_crate>
+[warm_iv_fluids] Тёплые в/в растворы |
+[warm_rag] Тёплая тряпка
+</ntg.seealso.heating_crate>
+
+<ntg.title.heating_container>Нагревательный контейнер</ntg.title.heating_container>
+<ntg.description.heating_container>Используется для хранения/нагрева тёплых в/в растворов и тёплых тряпок.
+</ntg.description.heating_container>
+<ntg.seealso.heating_container>
+[warm_iv_fluids] Тёплые в/в растворы |
+[warm_rag] Тёплая тряпка
+</ntg.seealso.heating_container>
+
+<ntg.title.esh>В.Н.К (Внешний Нагреватель Костюма)</ntg.title.esh>
+<ntg.description.esh>Используется для нагрева костюма без встроенного обогрева. Нагревает только надетый костюм!</ntg.description.esh>
+
+</Infotexts>

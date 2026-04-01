@@ -1,0 +1,867 @@
+<Infotexts language="Russian" nowhitespace="false">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+
+<!-- Addon for NT: Infections -->
+<ntg.section.susceptible>Уязвим К</ntg.section.susceptible>
+<ntg.section.requirements>Требования</ntg.section.requirements>
+<ntg.section.effectiveness>Эффективен Против</ntg.section.effectiveness>
+<ntg.section.possiblecauses>Возможные Причины</ntg.section.possiblecauses>
+<ntg.section.stepsbacterial>Шаги (Бактериальный Образец)</ntg.section.stepsbacterial>
+<ntg.section.stepsviral>Шаги (Вирусный Образец)</ntg.section.stepsviral>
+
+<!-- Information Pages -->
+<!-- General information useful to know. Unique search category --> 
+
+<!-- How do the new infections work? // Also contains OTHER CHANGES from the Trello. -->
+<ntg.title.information_infection_changes>Как Работают Новые Инфекции</ntg.title.information_infection_changes>
+<ntg.description.information_infection_changes>Базовые Инфекции Нейротравмы:
+В базовой Нейротравме инфекции развиваются из ран, которые специфичны для конечностей. После определенного момента, инфицированные раны любой части тела приводят к сепсису, который тривиально лечится широкого спектра антибиотиками. NT Infections изменяет это, добавляя несколько новых инфекций и изменяя то, как прогрессируют инфекции.
+\nНовые Инфекции:
+NT Infections начинается так же. Когда рана не дезинфицирована или не перевязана, она может стать инфицированной. Инфицированные раны имеют шанс развиться в полноценную инфекцию конечности. Инфекция будет накапливаться и иметь шанс попасть в кровоток, вызывая кровяную инфекцию. Достаточно тяжелые инфекции могут затем вызвать сепсис.
+\nЕсть несколько признаков/симптомов того, что конечность инфицирована:
+    - Наличие Воспаления
+    - Наличие Абсцессов
+    - Наличие Гнойных Выделений
+Инфекции конечностей могут варьироваться от умеренных до тяжелых и также могут вызывать другие заболевания.
+\nНекоторые дополнительные изменения, не охваченные в этом руководстве, включают:
+    - Лучевая болезнь, компрометирующая иммунитет после определенного момента
+    - Сепсис будет понижать кровяное давление
+    - Существующие заболевания могут иметь или не иметь новые симптомы
+    - Набор сепсиса уменьшен вдвое, если иммунитет ниже 85%
+</ntg.description.information_infection_changes>
+<ntg.seealso.information_infection_changes>
+    [inflammation] Воспаление |
+    [abscess] Абсцесс |
+    [purulent_drainage] Гнойное Выделение |
+    [sepsis] Сепсис |
+    [immunity] Иммунитет |
+    [broad_spectrum_antibiotics] Антибиотики Широкого Спектра |
+    [information_fighting_infections] Борьба с Инфекциями |
+</ntg.seealso.information_infection_changes>
+
+<!-- Fighting off infections -->
+<ntg.title.information_fighting_infections>Борьба с Инфекциями</ntg.title.information_fighting_infections>
+<ntg.description.information_fighting_infections>Ваша единственная защита против инфекций - это ваша иммунная система. Если иммунитет вашего персонажа скомпрометирован, вы, скорее всего, умрете от любой инфекции.
+\nИнфекции Конечностей:
+Защита вашего тела начинается с конечности. Когда конечность инфицирована, накапливается иммунный ответ. Скорость, с которой увеличивается иммунный ответ, зависит от показателя Иммунитета вашего персонажа. Требуется уровень иммунитета выше 50% для борьбы с инфекциями.
+\nПреодоление инфекции требует, чтобы иммунный ответ превосходил скорость инфекции. Когда иммунный ответ достаточно высок, инфекция начнет замедляться и в конечном итоге пройдет. Инфекции конечностей варьируются от умеренных до тяжелых. Некоторые случаи могут не требовать антибиотиков, но большинство потребует.
+\nКровяные Инфекции:
+Если инфекция конечности достигает точки, где она попадает в кровь, ваше тело будет иметь системный ответ на инфекцию с аналогичной системой, упомянутой выше, хотя с большим риском развития сепсиса или других заболеваний, и это не специфично для конечности.
+\nКровяные инфекции могут быть вызваны несколькими штаммами, хотя некоторые штаммы могут вносить больший вклад в бактериемию, чем другие. Используйте Инструмент-Сэмплер без образца, чтобы увидеть, какие штаммы находятся в крови. Обычно разные штаммы будут конкурировать друг с другом за ресурсы, заставляя ранее доминирующий штамм вносить меньший вклад в кровяную инфекцию.
+</ntg.description.information_fighting_infections>
+<ntg.seealso.information_fighting_infections>
+    [immunity] Иммунитет | 
+    [sepsis] Сепсис |
+    [sampler_tool] Инструмент-Сэмплер
+</ntg.seealso.information_fighting_infections>
+
+<!-- Using Antibiotics -->
+<ntg.title.information_using_antibiotics>Использование Антибиотиков</ntg.title.information_using_antibiotics>
+<ntg.description.information_using_antibiotics>Антибиотики - это основной способ лечения бактериальных инфекций. Некоторые инфекции лучше реагируют на определенные антибиотики. Все антибиотики вызывают повреждение почек и повреждение печени, и определенные антибиотики вызывают больше повреждений органов, чем другие. Введение антибиотиков без достаточного медицинского навыка вызовет дальнейшее повреждение органов.
+\nОговорки:
+Важно отметить, что антибиотики работают преимущественно с иммунной системой, что означает, что они не борются с инфекциями сами по себе, а скорее замедляют инфекцию, чтобы дать иммунной системе более легкое время для борьбы с ней. Комбинирование разных антибиотиков даст больший эффект, но с убывающей отдачей.
+\nАнтибиотики:
+Есть 7 различных антибиотиков (не включая антибиотики широкого спектра), каждый со своими сильными сторонами. Обратитесь к их страницам для получения дополнительной информации. Каждая страница инфекции также будет ссылаться на соответствующие антибиотики; их проценты относятся к тому, насколько антибиотик замедляет определенный бактериальный штамм
+</ntg.description.information_using_antibiotics>
+<ntg.seealso.information_using_antibiotics>
+    [unasyn] Уназин |
+    [augmentin] Аугментин |
+    [vancomycin] Ванкомицин |
+    [gentamicin] Гентамицин |
+    [cotrimoxazole] Ко-тримоксазол |
+    [primaxin] Примаксин |
+    [ceftazidime] Цефтазидим
+</ntg.seealso.information_using_antibiotics>
+
+<!-- Diagnosing Bacterial Infections -->
+<ntg.title.information_diagnosing_bacteria>Диагностика Бактериальных Инфекций</ntg.title.information_diagnosing_bacteria>
+<ntg.description.information_diagnosing_bacteria>Способы диагностики бактериальных инфекций варьируются в зависимости от типа инфекции;
+\nКровяные Инфекции:
+Кровяные инфекции можно диагностировать, используя Инструмент-Сэмплер в любом месте интерфейса здоровья; просто, правда?
+Использование Гематологического Анализатора вместо этого покажет наличие бактерий в крови, но не сможет идентифицировать штаммы.
+\nИнфекции Конечностей:
+Для диагностики конечности вам понадобится Культуральная Пробирка. Вставьте Культуральную Пробирку в Инструмент-Сэмплер и используйте ее в интерфейсе здоровья, чтобы взять образец. Порядок, в котором он будет пытаться взять образец, следующий:
+    - Если у конечности есть Гнойное Выделение или Абсцесс, он возьмет образец гноя;
+    - Если у конечности нет образца гноя, но есть Ретрагированная Кожа, он возьмет тканевый образец;
+    - Если нет гноя или тканевого образца, он возьмет кровяной образец (что в свою очередь возьмет случайную кровяную инфекцию).
+\nОбразец будет помещен в ваш инвентарь или на пол, если ваш инвентарь полон.
+\nПоместите этот неизвестный образец в Анализатор Образцов для анализа - только убедитесь, что машина подключена к сети и имеет питание. Он вернет образец, который скажет вам, какой это патоген; если ничего не возвращено, образец дал отрицательный результат на инфекцию.
+</ntg.description.information_diagnosing_bacteria>
+<ntg.seealso.information_diagnosing_bacteria>
+    [sampler_tool] Инструмент-Сэмплер |
+    [hematology_analyzer] Гематологический Анализатор |
+    [sample_analyzer] Анализатор Образцов |
+    [culture_tube] Культуральная Пробирка |
+    [purulent_drainage] Гнойное Выделение |
+    [abscess] Абсцесс |
+    [retracted_skin] Ретрагированная Кожа |
+    [information_diagnosing_viruses] Заразные Заболевания
+</ntg.seealso.information_diagnosing_bacteria>
+
+
+<!-- Communicable Diseases (viral infections) // IF NT SURGERY DISABLED -->
+<ntg.title.information_diagnosing_viruses>Заразные Заболевания</ntg.title.information_diagnosing_viruses>
+<ntg.description.information_diagnosing_viruses>Помимо бактериальных инфекций, можно развить вирусные инфекции, которые распространяются другими людьми.
+\nПередача:
+Эти инфекции часто передаются по воздуху, распространяясь при близком контакте между людьми. Профилактические меры включают социальное дистанцирование и ношение Водолазного Снаряжения. Водолазное Снаряжение должно носиться как инфицированными, так и здоровыми людьми.
+\nПроцесс:
+Вирусные инфекции работают по аналогичной системе с бактериальными инфекциями, с накоплением вирусных антител в ответ на инфекцию. Как только уровень антител накапливается достаточно высоко, уровень вируса пойдет вниз, хотя и очень медленно.
+\nЛечение:
+Лечение вирусных инфекций отличается от бактериальных тем, что оно работает эффективно только при использовании как можно раньше. Используя лечение рано, продолжительность инфекции будет сокращена, а тяжесть уменьшена. Также есть различные лекарства, которые облегчат симптомы вирусных инфекций. Однако они не лечат инфекцию напрямую.
+\nДиагностика:
+Диагностика вирусных инфекций требует Инструмент-Сэмплер и Вирусный Транспортный Медиум. Соберите образец в любом месте интерфейса здоровья и используйте его в Анализаторе Образцов, как и бактериальную инфекцию.
+</ntg.description.information_diagnosing_viruses>
+<ntg.seealso.information_diagnosing_viruses>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+    [sampler_tool] Инструмент-Сэмплер |
+    [viral_transport_medium] Вирусный Транспортный Медиум |
+    [sample_analyzer] Анализатор Образцов |
+</ntg.seealso.information_diagnosing_viruses>
+
+<!-- Communicable Diseases (viral infections) // IF NT SURGERY ENABLED -->
+<ntg.title.information_diagnosing_viruses_ntsp>Заразные Заболевания</ntg.title.information_diagnosing_viruses_ntsp>
+<ntg.description.information_diagnosing_viruses_ntsp>Помимо бактериальных инфекций, можно развить вирусные инфекции, которые распространяются другими людьми.
+\nПередача:
+Эти инфекции часто передаются по воздуху, распространяясь при близком контакте между людьми. Профилактические меры включают социальное дистанцирование и ношение Хирургической Маски. Водолазное снаряжение также работает. Маски должны носиться как инфицированными, так и здоровыми людьми.
+\nПроцесс:
+Вирусные инфекции работают по аналогичной системе с бактериальными инфекциями, с накоплением вирусных антител в ответ на инфекцию. Как только уровень антител накапливается достаточно высоко, уровень вируса пойдет вниз, хотя и очень медленно.
+\nЛечение:
+Лечение вирусных инфекций отличается от бактериальных тем, что оно работает эффективно только при использовании как можно раньше. Используя лечение рано, продолжительность инфекции будет сокращена, а тяжесть уменьшена. Также есть различные лекарства, которые облегчат симптомы вирусных инфекций. Однако они не лечат инфекцию напрямую.
+\nДиагностика:
+Диагностика вирусных инфекций требует Инструмент-Сэмплер и Вирусный Транспортный Медиум. Соберите образец в любом месте интерфейса здоровья и используйте его в Анализаторе Образцов, как и бактериальную инфекцию.
+</ntg.description.information_diagnosing_viruses_ntsp>
+<ntg.seealso.information_diagnosing_viruses_ntsp>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+    [sampler_tool] Инструмент-Сэмплер |
+    [viral_transport_medium] Вирусный Транспортный Медиум |
+    [sample_analyzer] Анализатор Образцов |
+    [surgical_mask] Хирургическая Маска
+</ntg.seealso.information_diagnosing_viruses_ntsp>
+
+<!-- Vaccines (Information) -->
+<ntg.title.information_vaccines>Информация о Вакцинах</ntg.title.information_vaccines>
+<ntg.description.information_vaccines>Полезный инструмент для упреждающей борьбы с инфекцией. Вакцины дают вашему телу огромное преимущество на этапе защиты.
+\nБактериальные Вакцины:
+Для бактериальных вакцин вы можете создать их, используя 3 подтвержденных образца, анапарализант и физиологический раствор, чтобы сделать 2 вакцины.
+\nВирусные Вакцины:
+Для вирусных вакцин образец, тонизирующая жидкость и физиологический раствор создадут 2.
+\nВажные Соображения:
+- Вакцины не делают пациентов полностью невосприимчивыми к инфекции, а вместо этого обеспечивают бонус для борьбы с ней. Вакцины не работают, если иммунитет скомпрометирован.
+- Вакцины теряют эффективность со временем, уменьшая свои эффекты в борьбе с инфекцией. Рассмотрите возможность поддержания вакцинации в актуальном состоянии.
+- Вакцины не работают немедленно и требуют некоторого времени, прежде чем стать полностью эффективными.
+- Большинство вакцин в этом моде полностью вымышлены
+</ntg.description.information_vaccines>
+<ntg.seealso.information_vaccines></ntg.seealso.information_vaccines>
+
+<!-- Bacterial Infections -->
+
+<!-- Streptococcal Infection -->
+<ntg.title.streptococcal_infection>Стрептококковая Инфекция</ntg.title.streptococcal_infection>
+<ntg.description.streptococcal_infection>Вызвана грамположительными бактериями рода стрептококк. Эти микробы были впервые привезены земными колонизаторами во время колонизации Европы. Стрептококковые инфекции довольно распространены (4 из 17 случаев).
+\nГной обычно имеет желтоватый цвет.
+</ntg.description.streptococcal_infection>
+<ntg.susceptible.streptococcal_infection>
+    [vancomycin] Ванкомицин (95% Эффективен) |
+    [augmentin] Аугментин (93.8% Эффективен) |
+    [unasyn] Уназин (90% Эффективен) |
+    [primaxin] Примаксин (80% Эффективен) |
+    [broad-spectrum] Широкого Спектра (75% Эффективен) |
+    [cotrimoxazole] Ко-тримоксазол (66.7% Эффективен) |
+    [ceftazidime] Цефтазидим (20% Эффективен)
+</ntg.susceptible.streptococcal_infection>
+<ntg.effects.streptococcal_infection>
+    Кровяная Инфекция (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное Выделение (выше 25% с раной) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% Кровяной Инфекции)
+</ntg.effects.streptococcal_infection>
+<ntg.seealso.streptococcal_infection>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+</ntg.seealso.streptococcal_infection>
+
+<!-- Staphylococcal Infection -->
+<ntg.title.staphylococcal_infection>Стафилококковая Инфекция</ntg.title.staphylococcal_infection>
+<ntg.description.staphylococcal_infection>Вызвана грамположительными бактериями, стафилококком ауреус. Изначально привезенными на Европу земными колонизаторами, эти инфекции являются самыми распространенными при травмах (6 из 17 случаев).
+\nГной обычно имеет желтоватый цвет.
+</ntg.description.staphylococcal_infection>
+<ntg.susceptible.staphylococcal_infection>
+    [vancomycin] Ванкомицин (98% Эффективен) |
+    [augmentin] Аугментин (90% Эффективен) |
+    [cotrimoxazole] Ко-тримоксазол (80% Эффективен) |
+    [unasyn] Уназин (75% Эффективен) |
+    [primaxin] Примаксин (75% Эффективен) |
+    [gentamicin] Гентамицин (10% Эффективен)
+</ntg.susceptible.staphylococcal_infection>
+<ntg.effects.staphylococcal_infection>
+    Кровяная Инфекция (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное Выделение (выше 25% с раной) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% Кровяной Инфекции)
+</ntg.effects.staphylococcal_infection>
+<ntg.seealso.staphylococcal_infection>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+</ntg.seealso.staphylococcal_infection>
+
+<!-- MRSA Infection -->
+<ntg.title.mrsa_infection>Инфекция MRSA</ntg.title.mrsa_infection>
+<ntg.description.mrsa_infection>Штамм стафилококка ауреуса, который приобрел устойчивость ко многим антибиотикам из-за обширного использования антибиотиков. Он невосприимчив ко многим антибиотикам типа пенициллина.
+\nГной обычно имеет желтоватый цвет.
+</ntg.description.mrsa_infection>
+<ntg.requirements.mrsa_infection>
+    [staphylococcal_infection] (Начальная Инфекция) |
+    [methicillin_resistance_risk] Риск Метициллин-Устойчивости (выше 0%)
+</ntg.requirements.mrsa_infection>
+<ntg.susceptible.mrsa_infection>
+    [vancomycin] Ванкомицин (98% Эффективен) |
+    [cotrimoxazole] Ко-тримоксазол (80% Эффективен) |
+    [gentamicin] Гентамицин (10% Эффективен)
+</ntg.susceptible.mrsa_infection>
+<ntg.effects.mrsa_infection>
+    Кровяная Инфекция (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное Выделение (выше 25% с раной) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% Кровяной Инфекции)
+</ntg.effects.mrsa_infection>
+<ntg.seealso.mrsa_infection>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+</ntg.seealso.mrsa_infection>
+
+<!-- Pseudomonas Infection -->
+<ntg.title.pseudomonas_infection>Псевдомонадная Инфекция</ntg.title.pseudomonas_infection>
+<ntg.description.pseudomonas_infection>Вызвана грамотрицательными бактериями рода псевдомонада. Эти микробы естественно устойчивы ко многим различным антибиотикам, что затрудняет лечение. Псевдомонадные инфекции редки (1 из 17 случаев).
+\nГной обычно имеет зеленый цвет.
+</ntg.description.pseudomonas_infection>
+<ntg.susceptible.pseudomonas_infection>
+    [gentamicin] Гентамицин (95% Эффективен) |
+    [ceftazidime] Цефтазидим (87.5% Эффективен) |
+    [primaxin] Примаксин (80% Эффективен)
+</ntg.susceptible.pseudomonas_infection>
+<ntg.effects.pseudomonas_infection>
+    Кровяная Инфекция (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное Выделение (выше 25% с раной) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% Кровяной Инфекции)
+</ntg.effects.pseudomonas_infection>
+<ntg.seealso.pseudomonas_infection>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+</ntg.seealso.pseudomonas_infection>
+
+<!-- Provobacter Infection -->
+<ntg.title.provobacter_infection>Провобактериальная Инфекция</ntg.title.provobacter_infection>
+<ntg.description.provobacter_infection>Вызвана грамотрицательными бактериями рода провобактер. Эти микробы родом из европанского биосферы и могут быть найдены практически где угодно в море. Провобактериальные инфекции довольно распространены (4 из 17 случаев).
+\nГной обычно имеет желтоватый цвет.
+</ntg.description.provobacter_infection>
+<ntg.susceptible.provobacter_infection>
+    [gentamicin] Гентамицин (95% Эффективен) |
+    [ceftazidime] Цефтазидим (80% Эффективен) |
+    [primaxin] Примаксин (66.7% Эффективен) |
+    [augmentin] Аугментин (60% Эффективен) |
+    [unasyn] Уназин (40% Эффективен) 
+</ntg.susceptible.provobacter_infection>
+<ntg.effects.provobacter_infection>
+    Кровяная Инфекция (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное Выделение (выше 25% с раной) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% Кровяной Инфекции)
+</ntg.effects.provobacter_infection>
+<ntg.seealso.provobacter_infection>
+    [information_diagnosing_bacteria] Диагностика Бактериальных Инфекций |
+</ntg.seealso.provobacter_infection>
+
+<!-- Aeroganella Infection -->
+<ntg.title.aeroganella_infection>Инфекция Аэроганеллой</ntg.title.aeroganella_infection>
+<ntg.description.aeroganella_infection>Вызвана грам-отрицательными бактериями рода аэроганелла. Они являются эндемиками европанского биосфера. Инфекции аэроганеллой относительно редки (2 случая из 17).
+\nГной обычно имеет зеленоватый оттенок.
+</ntg.description.aeroganella_infection>
+<ntg.susceptible.aeroganella_infection>
+    [gentamicin] Гентамицин (эффективность 95%) |
+    [ceftazidime] Цефтазидим (эффективность 75%) |
+    [cotrimoxazole] Ко-тримоксазол (эффективность 60%) |
+    [vancomycin] Ванкомицин (эффективность 50%) |
+    [primaxin] Примаксин (эффективность 50%) |
+    [augmentin] Аугментин (эффективность 25%) |
+    [unasyn] Унасин (эффективность 20%)
+</ntg.susceptible.aeroganella_infection>
+<ntg.effects.aeroganella_infection>
+    Заражение крови (выше 50%) |
+    [inflammation] Воспаление (выше 0%) |
+    [purulent_drainage] Гнойное истечение (выше 25% при наличии раны) |
+    [abscess] Абсцесс (выше 25% без раны) |
+    [pneumonia] Пневмония (выше 0% заражения крови)
+</ntg.effects.aeroganella_infection>
+<ntg.seealso.aeroganella_infection>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+</ntg.seealso.aeroganella_infection>
+
+<!-- Antibiotics -->
+
+<!-- Unasyn -->
+<ntg.title.unasyn>Унасин</ntg.title.unasyn>
+<ntg.description.unasyn>Проверка медицинского навыка: 30
+\nАнтибиотик комбинированного действия фиксированной дозировки на основе аминопенициллина — сочетание ампициллина и ингибитора бета-лактамазы сульбактама. Использование сульбактама делает его эффективным против стафилококковой инфекции и других бактерий, продуцирующих бета-лактамазу.
+</ntg.description.unasyn>
+<ntg.effectiveness.unasyn>
+    [streptococcal_infection] Стрептококковая инфекция (эффективность 90%) |
+    [staphylococcal_infection] Стафилококковая инфекция (эффективность 75%) |
+    [provobacter_infection] Инфекция провобактерией (эффективность 40%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 20%)
+</ntg.effectiveness.unasyn>
+<ntg.applicationsuccess.unasyn>
+    50% Унасин (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 12.5% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 10% Повреждение печени (в течение 250 секунд) |
+    [methicillin_resistance_risk] 20% Риск резистентности к метициллину (применение занимает 10 секунд, длится 2000 секунд)
+</ntg.applicationsuccess.unasyn>
+<ntg.applicationfailed.unasyn>
+    [liver_damage] 5% Повреждение печени |
+    [methicillin_resistance_risk] 30% Риск резистентности к метициллину (применение занимает 10 секунд, длится 3000 секунд)
+</ntg.applicationfailed.unasyn>
+<ntg.seealso.unasyn>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.unasyn>
+
+<!-- Augmentin -->
+<ntg.title.augmentin>Аугментин</ntg.title.augmentin>
+<ntg.description.augmentin>Проверка медицинского навыка: 30
+\nПрепарат комбинированного действия на основе аминопенициллина — сочетание амоксициллина и клавулановой кислоты. Использование клавулановой кислоты в качестве ингибитора бета-лактамазы делает его эффективным против большинства бактерий, продуцирующих бета-лактамазу.
+</ntg.description.augmentin>
+<ntg.effectiveness.augmentin>
+[streptococcal_infection] Стрептококковая инфекция (эффективность 93.8%) |
+[staphylococcal_infection] Стафилококковая инфекция (эффективность 90%) |
+[provobacter_infection] Инфекция провобактерией (эффективность 60%) |
+[aeroganella_infection] Инфекция аэроганеллой (эффективность 25%)
+</ntg.effectiveness.augmentin>
+<ntg.applicationsuccess.augmentin>
+50% Аугментин (применение занимает 10 секунд, длится 250 секунд) |
+[kidney_damage] 15% Повреждение почек (в течение 250 секунд) |
+[liver_damage] 10% Повреждение печени (в течение 250 секунд) |
+[methicillin_resistance_risk] 20% Риск резистентности к метициллину (применение занимает 10 секунд, длится 2000 секунд)
+</ntg.applicationsuccess.augmentin>
+<ntg.applicationfailed.augmentin>
+[liver_damage] 5% Повреждение печени (применение занимает 10 секунд) |
+[methicillin_resistance_risk] 30% Риск резистентности к метициллину (применение занимает 10 секунд, длится 3000 секунд)
+</ntg.applicationfailed.augmentin>
+<ntg.seealso.augmentin>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.augmentin>
+
+<!-- Vancomycin -->
+<ntg.title.vancomycin>Ванкомицин</ntg.title.vancomycin>
+<ntg.description.vancomycin>Проверка медицинского навыка: 50
+\nГликопептидный антибиотик, очень эффективный против большинства грам-положительных бактерий. Является наиболее распространенным препаратом первой линии против инфекции MRSA.
+</ntg.description.vancomycin>
+<ntg.effectiveness.vancomycin>
+    [staphylococcal_infection] Стафилококковая инфекция (эффективность 98%) |
+    [mrsa_infection] Инфекция MRSA (эффективность 98%) |
+    [streptococcal_infection] Стрептококковая инфекция (эффективность 95%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 50%)
+</ntg.effectiveness.vancomycin>
+<ntg.applicationsuccess.vancomycin>
+    50% Ванкомицин (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 20% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 5% Повреждение печени (в течение 250 секунд)
+</ntg.applicationsuccess.vancomycin>
+<ntg.applicationfailed.vancomycin>
+    [kidney_damage] 5% Повреждение почек (применение занимает 10 секунд)
+</ntg.applicationfailed.vancomycin>
+<ntg.seealso.vancomycin>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.vancomycin>
+
+<!-- Gentamicin -->
+<ntg.title.gentamicin>Гентамицин</ntg.title.gentamicin>
+<ntg.description.gentamicin>Проверка медицинского навыка: 50
+\nАминогликозидный антибиотик, очень эффективный против грам-отрицательных бактерий. Его эффективность против многих штаммов грам-отрицательных бактерий компенсируется высокой нефротоксичностью.
+</ntg.description.gentamicin>
+<ntg.effectiveness.gentamicin>
+    [pseudomonas_infection] Инфекция псевдомонадой (эффективность 95%) |
+    [provobacter_infection] Инфекция провобактерией (эффективность 95%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 95%) |
+    [staphylococcal_infection] Стафилококковая инфекция (эффективность 10%) |
+    [mrsa_infection] Инфекция MRSA (эффективность 10%)
+</ntg.effectiveness.gentamicin>
+<ntg.applicationsuccess.gentamicin>
+    50% Гентамицин (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 25% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 5% Повреждение печени (в течение 250 секунд)
+</ntg.applicationsuccess.gentamicin>
+<ntg.applicationfailed.gentamicin>
+    [kidney_damage] 5% Повреждение почек (применение занимает 10 секунд)
+</ntg.applicationfailed.gentamicin>
+<ntg.seealso.gentamicin>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.gentamicin>
+
+<!-- Co-trimoxazole -->
+<ntg.title.cotrimoxazole>Ко-тримоксазол</ntg.title.cotrimoxazole>
+<ntg.description.cotrimoxazole>Проверка медицинского навыка: 40
+\nПрепарат комбинированного действия фиксированной дозировки — сочетание триметоприма и сульфаметоксазола. Эти препараты синергично действуют, ингибируя дигидроптероатсинтетазу и восстановление дигидрофолиевой кислоты у бактерий.
+</ntg.description.cotrimoxazole>
+<ntg.effectiveness.cotrimoxazole>
+    [staphylococcal_infection] Стафилококковая инфекция (эффективность 80%) |
+    [mrsa_infection] Инфекция MRSA (эффективность 80%) |
+    [streptococcal_infection] Стрептококковая инфекция (эффективность 66.7%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 60%)
+</ntg.effectiveness.cotrimoxazole>
+<ntg.applicationsuccess.cotrimoxazole>
+    50% Ко-тримоксазол (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 17.5% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 10% Повреждение печени (в течение 250 секунд)
+</ntg.applicationsuccess.cotrimoxazole>
+<ntg.applicationfailed.cotrimoxazole>
+    [kidney_damage] 5% Повреждение почек (применение занимает 10 секунд)
+</ntg.applicationfailed.cotrimoxazole>
+<ntg.seealso.cotrimoxazole>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.cotrimoxazole>
+
+<!-- Primaxin -->
+<ntg.title.primaxin>Примаксин</ntg.title.primaxin>
+<ntg.description.primaxin>Проверка медицинского навыка: 50
+\nАнтибиотик комбинированного действия класса карбапенемов — сочетание имипенема и цилестатина. Использование цилестатина в качестве ингибитора дегидропептидазы повышает эффективность имипенема, предотвращая его разрушение в организме.
+</ntg.description.primaxin>
+<ntg.effectiveness.primaxin>
+    [pseudomonas_infection] Инфекция псевдомонадой (эффективность 80%) |
+    [streptococcal_infection] Стрептококковая инфекция (эффективность 80%) |
+    [staphylococcal_infection] Стафилококковая инфекция (эффективность 75%) |
+    [provobacter_infection] Инфекция провобактерией (эффективность 66.7%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 50%)
+</ntg.effectiveness.primaxin>
+<ntg.applicationsuccess.primaxin>
+    50% Примаксин (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 17.5% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 12.5% Повреждение печени (в течение 250 секунд) |
+    [methicillin_resistance_risk] 20% Риск резистентности к метициллину (применение занимает 10 секунд, длится 2000 секунд)
+</ntg.applicationsuccess.primaxin>
+<ntg.applicationfailed.primaxin>
+    [liver_damage] 5% Повреждение печени (применение занимает 10 секунд) |
+    [methicillin_resistance_risk] 30% Риск резистентности к метициллину (применение занимает 10 секунд, длится 3000 секунд)
+</ntg.applicationfailed.primaxin>
+<ntg.seealso.primaxin>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.primaxin>
+
+<!-- Ceftazidime -->
+<ntg.title.ceftazidime>Цефтазидим</ntg.title.ceftazidime>
+<ntg.description.ceftazidime>Проверка медицинского навыка: 30
+\nАнтибиотик третьего поколения цефалоспоринов. В отличие от многих препаратов первого поколения, он в основном эффективен против большинства штаммов грам-отрицательных бактерий.
+</ntg.description.ceftazidime>
+<ntg.effectiveness.ceftazidime>
+    [pseudomonas_infection] Инфекция псевдомонадой (эффективность 87.5%) |
+    [provobacter_infection] Инфекция провобактерией (эффективность 80%) |
+    [aeroganella_infection] Инфекция аэроганеллой (эффективность 75%) |
+    [streptococcal_infection] Стрептококковая инфекция (эффективность 20%)
+</ntg.effectiveness.ceftazidime>
+<ntg.applicationsuccess.ceftazidime>
+    50% Цефтазидим (применение занимает 10 секунд, длится 250 секунд) |
+    [kidney_damage] 15% Повреждение почек (в течение 250 секунд) |
+    [liver_damage] 7.5% Повреждение печени (в течение 250 секунд)
+</ntg.applicationsuccess.ceftazidime>
+<ntg.applicationfailed.ceftazidime>
+    [kidney_damage] 5% Повреждение почек (применение занимает 10 секунд)
+</ntg.applicationfailed.ceftazidime>
+<ntg.seealso.ceftazidime>
+    [information_using_antibiotics] Использование антибиотиков
+</ntg.seealso.ceftazidime>
+
+<!-- Tools -->
+
+<!-- Sampler Tool -->
+<ntg.title.sampler_tool>Инструмент для забора проб</ntg.title.sampler_tool>
+<ntg.description.sampler_tool>Используется для сбора образцов с подозрением на инфекцию и анализа крови на наличие патогенов. Важен для диагностики инфекций.
+\nДля сбора бактериальных образцов требуется культуральная пробирка, для сбора вирусных образцов — транспортная среда для вирусов. Инструмент попытается поместить образец в ваш инвентарь или на землю, если инвентарь полон.
+\nИспользование инструмента без образца даст показания бактерий в крови и может быть использовано для диагностики патогена, вызывающего пневмонию.
+</ntg.description.sampler_tool>
+<ntg.seealso.sampler_tool>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+    [culture_tube] Культуральная пробирка |
+    [viral_transport_medium] Транспортная среда для вирусов |
+    [pneumonia] Пневмония
+</ntg.seealso.sampler_tool>
+
+<!-- Culture Tube -->
+<ntg.title.culture_tube>Культуральная пробирка</ntg.title.culture_tube>
+<ntg.description.culture_tube>Среда для сбора образцов бактерий. Используется в инструменте для забора проб.
+\nПосле сбора образца с помощью инструмента для забора проб поместите неизвестный образец в анализатор образцов для получения подтвержденного образца.
+\nПодтвержденные образцы могут быть использованы для создания предметов, таких как вакцины или бактериологическое оружие. Вы можете дублировать образцы с помощью чистой культуральной пробирки и подтвержденного образца. Также вы можете создать чистую пробирку с бактериологическим оружием для получения соответствующего образца.
+</ntg.description.culture_tube>
+<ntg.seealso.culture_tube>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+    [sampler_tool] Инструмент для забора проб |
+    [sample_analyzer] Анализатор образцов |
+    [vaccines] Вакцины |
+    [weaponized_bacteria] Бактериологическое оружие
+</ntg.seealso.culture_tube>
+
+<!-- Viral Transport Medium -->
+<ntg.title.viral_transport_medium>Транспортная среда для вирусов</ntg.title.viral_transport_medium>
+<ntg.description.viral_transport_medium>Среда для сбора образцов вирусов. Используется в инструменте для забора проб.
+\nПоместите в анализатор образцов для анализа. Может быть использована для создания вирусных вакцин.
+</ntg.description.viral_transport_medium>
+<ntg.seealso.viral_transport_medium>
+    [information_diagnosing_viruses] Инфекционные заболевания |
+    [sampler_tool] Инструмент для забора проб |
+    [sample_analyzer] Анализатор образцов |
+    [vaccines] Вакцины 
+</ntg.seealso.viral_transport_medium>
+
+<!-- Sample Analyzer -->
+<ntg.title.sample_analyzer>Анализатор образцов</ntg.title.sample_analyzer>
+<ntg.description.sample_analyzer>Машина для идентификации типа патогена в образцах. Принимает только бактериальные или вирусные образцы для анализа (из культуральных пробирок или транспортной среды для вирусов).
+\nМашине требуется подключение к электросети и питание для работы.
+</ntg.description.sample_analyzer>
+<ntg.seealso.sample_analyzer>
+    [information_diagnosing_viruses] Инфекционные заболевания |
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций
+</ntg.seealso.sample_analyzer>
+
+<!-- Symptoms -->
+
+<!-- Purulent Drainage -->
+<ntg.title.purulent_drainage>Гнойное истечение</ntg.title.purulent_drainage>
+<ntg.description.purulent_drainage>Из раны выделяется гной — явный признак инфекции. Большинство инфекций проявляются желтым гноем, но при инфекции псевдомонадой и инфекции аэроганеллой гной будет зеленым. Для сбора образца гноя можно использовать инструмент для забора проб с культуральной пробиркой.
+\nАбсцесс будет дренироваться при наличии раны на конечности, что приведет к истечению.
+\nГнойное истечение может иметь повышенный шанс появления в зависимости от уровня инфекции.
+</ntg.description.purulent_drainage>
+<ntg.requirements.purulent_drainage>
+    Уровень инфекции конечности не менее 25% |
+    На конечности есть рана, ожог или шов
+</ntg.requirements.purulent_drainage>
+<ntg.possiblecauses.purulent_drainage>
+    [pseudomonas_infection] Инфекция псевдомонадой |
+    [streptococcal_infection] Стрептококковая инфекция |
+    [staphylococcal_infection] Стафилококковая инфекция |
+    [provobacter_infection] Инфекция провобактерией |
+    [mrsa_infection] Инфекция MRSA |
+    [aeroganella_infection] Инфекция аэроганеллой
+</ntg.possiblecauses.purulent_drainage>
+<ntg.seealso.purulent_drainage>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+    [sampler_tool] Инструмент для забора проб |
+    [sample_analyzer] Анализатор образцов |
+    [open_wounds] Открытые раны |
+    [sutures] Швы 
+</ntg.seealso.purulent_drainage>
+
+<!-- Abscess -->
+<ntg.title.abscess>Абсцесс</ntg.title.abscess>
+<ntg.description.abscess>Под кожей скапливается гной — явный признак инфекции. Они могут лопнуть при травме и начать истекать. Для сбора образца гноя можно использовать инструмент для забора проб с культуральной пробиркой. Это приведет к разрыву абсцесса и вызовет гнойное истечение с 2% лакерациями.
+\nАбсцесс может иметь повышенный шанс появления в зависимости от уровня инфекции.</ntg.description.abscess>
+<ntg.requirements.abscess>
+    Уровень инфекции конечности не менее 25% |
+    На конечности нет ран, ожогов или швов
+</ntg.requirements.abscess>
+<ntg.possiblecauses.abscess>
+    [pseudomonas_infection] Инфекция псевдомонадой |
+    [streptococcal_infection] Стрептококковая инфекция |
+    [staphylococcal_infection] Стафилококковая инфекция |
+    [provobacter_infection] Инфекция провобактерией |
+    [mrsa_infection] Инфекция MRSA |
+    [aeroganella_infection] Инфекция аэроганеллой
+</ntg.possiblecauses.abscess>
+<ntg.seealso.abscess>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+    [sampler_tool] Инструмент для забора проб |
+    [sample_analyzer] Анализатор образцов |
+    [open_wounds] Открытые раны |
+    [sutures] Швы 
+</ntg.seealso.abscess>
+
+<!-- Inflammation [BASE OVERRIDE, ADDENDUM: NT Infections] -->
+<ntg.title.inflammation_infc>Воспаление</ntg.title.inflammation_infc>
+<ntg.description.inflammation_infc>Содержимое этой страницы было изменено модом NT: Infections.
+\nКожа покраснела. Обычный признак инфекции, но также может указывать на инородные тела. Полезный способ определения прогресса инфекции.
+</ntg.description.inflammation_infc>
+<ntg.causes.inflammation_infc>
+    [foreign_bodies] Инородные тела (при 15% или более) |
+    Инфекция с уровнем не менее 0% (хотя не проявится до превышения 20%)
+</ntg.causes.inflammation_infc>
+<ntg.treatments.inflammation_infc>
+    Лечение причин.
+</ntg.treatments.inflammation_infc>
+
+<!-- Diseases -->
+
+<!-- Necrotizing Fasciitis -->
+<ntg.title.necrotizing_fasciitis>Некротизирующий фасциит</ntg.title.necrotizing_fasciitis>
+<ntg.description.necrotizing_fasciitis>Редкая и опасная инфекция фасциальной оболочки.
+\nНекротизирующий фасциит может иметь повышенный шанс появления в зависимости от уровня инфекции и иммунитета.
+</ntg.description.necrotizing_fasciitis>
+<ntg.requirements.necrotizing_fasciitis>
+    Уровень инфекции конечности выше 0% |
+    [immunity] Иммунитет ниже 100%
+</ntg.requirements.necrotizing_fasciitis>
+<ntg.effects.necrotizing_fasciitis>
+    -1 к Здоровью за каждый 1% этого аффликта.
+</ntg.effects.necrotizing_fasciitis>
+<ntg.treatments.necrotizing_fasciitis>
+    [debridement] Дебридмент |
+    [amputation_surgery] Ампутация
+</ntg.treatments.necrotizing_fasciitis>
+
+<!-- Pneumonia -->
+<ntg.title.pneumonia>Пневмония</ntg.title.pneumonia>
+<ntg.description.pneumonia>Воспаление легких, вызванное различными заболеваниями. 
+\nПневмония может иметь повышенный шанс появления в зависимости от уровня инфекции и иммунитета.
+</ntg.description.pneumonia>
+<ntg.requirements.pneumonia>
+    Уровень заражения крови выше 0% |
+    Уровень вирусной инфекции выше 0%
+</ntg.requirements.pneumonia>
+<ntg.effects.pneumonia>
+    [cough] Кашель (выше 5%) |
+    [shortness_of_breath] Сбивчивое дыхание (выше 10%) |
+    [chest_pain] Боль в груди (выше 40%) |
+    [respiratory_arrest] Остановка дыхания (выше 80%)
+</ntg.effects.pneumonia>
+<ntg.treatments.pneumonia>
+    Лечение основной бактериальной инфекции |
+    Лечение основной вирусной инфекции
+</ntg.treatments.pneumonia>
+
+<!-- Viral Infections -->
+
+<!-- Europan Cough -->
+<ntg.title.europan_cough>Европейский кашель</ntg.title.europan_cough>
+<ntg.description.europan_cough>Вызывается семейством вирусов Iovipneumoviridae, инфекции могут быть от лёгких до тяжёлых. Эти инфекции встречаются реже, чем Грипп и Простуда.</ntg.description.europan_cough>
+<ntg.susceptible.europan_cough>
+    [remdesivir] Ремдесивир (90% эффективность)
+</ntg.susceptible.europan_cough>
+<ntg.effects.europan_cough>
+    [cough] Кашель (выше 10%) |
+    [fever] Лихорадка (выше 30%) |
+    [weakness] Слабость (выше 50%) |
+    [shortness_of_breath] Сбивчивое дыхание (выше 60%) |
+    [nausea] Тошнота (выше 70%) |
+    [wheezing] Хрипы (выше 70%) |
+    [headache] Головная боль (выше 75%) |
+    [chest_pain] Боль в груди (выше 90%) |
+    [pneumonia] Пневмония (выше 0%)
+</ntg.effects.europan_cough>
+<ntg.treatments.europan_cough>
+    [dextromethorphan] Декстрометорфан |
+    [zinc_supplements] Цинковые добавки |
+    [analgesia] Обезболивание
+</ntg.treatments.europan_cough>
+<ntg.seealso.europan_cough>
+    [influenza] Грипп |
+    [common_cold] Простуда
+</ntg.seealso.europan_cough>
+
+<!-- Influenza -->
+<ntg.title.influenza>Грипп</ntg.title.influenza>
+<ntg.description.influenza>Вирус с Земли, инфекции гриппа могут быть от лёгких до умеренных. Эти инфекции встречаются чаще, чем Европейский кашель, но реже, чем Простуда.</ntg.description.influenza>
+<ntg.susceptible.influenza>
+    [zinc_supplement] Цинковая добавка (20% эффективность)
+</ntg.susceptible.influenza>
+<ntg.effects.influenza>
+    [cough] Кашель (выше 15%) |
+    [fever] Лихорадка (выше 30%) |
+    [nausea] Тошнота (выше 50%) |
+    [headache] Головная боль (выше 80%)
+</ntg.effects.influenza>
+<ntg.treatments.influenza>
+    [dextromethorphan] Декстрометорфан |
+    [zinc_supplement] Цинковая добавка |
+    [analgesia] Обезболивание
+</ntg.treatments.influenza>
+<ntg.seealso.influenza>
+    [europan_cough] Европейский кашель |
+    [common_cold] Простуда
+</ntg.seealso.influenza>
+
+<!-- Common Cold -->
+<ntg.title.common_cold>Простуда</ntg.title.common_cold>
+<ntg.description.common_cold>Вирус с Земли, простудные инфекции обычно лёгкие. Эти инфекции встречаются чаще, чем Грипп и Европейский кашель.</ntg.description.common_cold>
+<ntg.susceptible.common_cold>
+    [zinc_supplement] Цинковая добавка (25% эффективность)
+</ntg.susceptible.common_cold>
+<ntg.causes.common_cold></ntg.causes.common_cold>
+<ntg.effects.common_cold>
+    [cough] Кашель (выше 10%) |
+    [headache] Головная боль (выше 60%) |
+    [fever] Лихорадка (выше 80%)
+</ntg.effects.common_cold>
+<ntg.treatments.common_cold>
+    [dextromethorphan] Декстрометорфан |
+    [zinc_supplement] Цинковая добавка |
+    [analgesia] Обезболивание
+</ntg.treatments.common_cold>
+<ntg.seealso.common_cold>
+    [europan_cough] Европейский кашель |
+    [influenza] Грипп
+</ntg.seealso.common_cold>
+
+<!-- Effects -->
+
+<!-- Methicillin-resistance Risk -->
+<ntg.title.methicillin_resistance_risk>Риск метициллин-резистентности</ntg.title.methicillin_resistance_risk>
+<ntg.description.methicillin_resistance_risk>Потенциальный риск развития у пациента метициллин-резистентных штаммов стафилококковой инфекции. Чем выше риск, тем вероятнее развитие инфекции MRSA. Медленно снижается со временем.</ntg.description.methicillin_resistance_risk>
+<ntg.causes.methicillin_resistance_risk>
+    [unasyn] Унасин |
+    [augmentin] Аугментин |
+    [primaxin] Примаксин
+</ntg.causes.methicillin_resistance_risk>
+<ntg.effects.methicillin_resistance_risk>
+    [mrsa_infection] Инфекция MRSA (выше 0%)
+</ntg.effects.methicillin_resistance_risk>
+<ntg.treatments.methicillin_resistance_risk>
+    Время
+</ntg.treatments.methicillin_resistance_risk>
+
+<!-- Procedures -->
+
+<!-- Debridement -->
+<ntg.title.debridement>Дебридмент</ntg.title.debridement>
+<ntg.description.debridement>Проверка медицинского навыка: 50.
+\nОперация для лечения некротизирующего фасциита.
+\nУспешное выполнение шага 5 вызовет:
+- 8% Порезы;
+- -5% Некротизирующий фасциит
+\nНеудача на этом шаге вызовет:
+- 10% Порезы;
+- 5% Кровотечение;
+- -5% Некротизирующий фасциит
+</ntg.description.debridement>
+<ntg.steps.debridement>
+    [analgesia] 1a. Обезболивание | 
+    [anesthesia] 1b. Анестезия |
+    [multipurpose_scalpel] 2a. Применить многоцелевой скальпель в режиме хирургического разреза |
+    [scalpel] 2b. Применить скальпель |
+    [hemostat] 3. Гемостат | 
+    [skin_retractors] 4. Расширитель | 
+    [multipurpose_scalpel] 4a. Применить многоцелевой скальпель в режиме хирургического разреза |
+    [scalpel] 4b. Применить скальпель
+    [necrotizing_fasciitis] 5. Повторять шаг 4, пока некротизирующий фасциит не исчезнет.
+    [sutures] 6. Применить швы для завершения операции
+</ntg.steps.debridement>
+<ntg.seealso.debridement>
+    [necrotizing_fasciitis] Некротизирующий фасциит |
+    [bleeding] Кровотечение |
+    [open_wounds] Порезы
+</ntg.seealso.debridement>
+
+<!-- Sample Collection -->
+<ntg.title.sample_collection>Сбор образцов</ntg.title.sample_collection>
+<ntg.description.sample_collection>Процедура сбора образцов. Бактериальные образцы перечислены в порядке приоритета.</ntg.description.sample_collection>
+<ntg.stepsbacterial.sample_collection>
+    ОБРАЗЕЦ ГНОЯ: |
+    1a. Применить инструмент для взятия образцов к гнойному дренажу |
+    1b. Применить инструмент для взятия образцов к абсцессу |
+    ОБРАЗЕЦ ТКАНИ:
+    [analgesia] 1a. Обезболивание |
+    [anesthesia] 1b. Анестезия |
+    [scalpel] 2. Скальпель |
+    [hemostat] 3. Гемостат |
+    [skin_retractors] 4. Расширитель |
+    [sampler_tool] 5. Инструмент для взятия образцов |
+    ОБРАЗЕЦ КРОВИ:
+    [sampler_tool] Применить инструмент для взятия образцов на любой конечности
+</ntg.stepsbacterial.sample_collection>
+<ntg.stepsviral.sample_collection>
+    [sampler_tool] Применить инструмент для взятия образцов на любой конечности
+</ntg.stepsviral.sample_collection>
+<ntg.seealso.sample_collection>
+    [information_diagnosing_bacteria] Диагностика бактериальных инфекций |
+    [information_diagnosing_viruses] Инфекционные заболевания |
+</ntg.seealso.sample_collection>
+
+<!-- Other Items -->
+
+<!-- Vaccines (Item) -->
+<ntg.title.vaccines>Вакцины</ntg.title.vaccines>
+<ntg.description.vaccines>Проверка медицинского навыка: Нет.
+\nВакцина против определённого патогена и штамма. Вакцины против стафилококка действуют как на стафилококковую инфекцию, так и на инфекцию MRSA. Действует путём снижения тяжести инфекции до 50%.
+\nПри применении вакцина даёт:
+102.5% вакцина (500 секунд, длится ~5.7 часов)</ntg.description.vaccines>
+<ntg.seealso.vaccines>
+    [staphylococcal_infection] Стафилококковая инфекция |
+    [mrsa_infection] Инфекция MRSA |
+    [information_vaccines] Информация о вакцинах
+</ntg.seealso.vaccines>
+
+<!-- Weaponized Bacteria -->
+<ntg.title.weaponized_bacteria>Бактериологическое оружие</ntg.title.weaponized_bacteria>
+<ntg.description.weaponized_bacteria>Проверка медицинского навыка: 20.
+\nИспользуется для злонамеренного вызова кровяной инфекции у персонажа. Может быть введено взмахом, через интерфейс здоровья или из шприцевого пистолета. Также может быть скрафчено с культивирующей пробиркой для создания соответствующего образца.
+</ntg.description.weaponized_bacteria>
+<ntg.applicationsuccess.weaponized_bacteria>
+    10% Тяжесть кровяной инфекции
+</ntg.applicationsuccess.weaponized_bacteria>
+<ntg.applicationfailed.weaponized_bacteria>
+    8% Тяжесть кровяной инфекции
+</ntg.applicationfailed.weaponized_bacteria>
+<ntg.seealso.weaponized_bacteria>
+    [culture_tube] Культивирующая пробирка
+</ntg.seealso.weaponized_bacteria>
+
+<!-- Remdesivir -->
+<ntg.title.remdesivir>Ремдесивир</ntg.title.remdesivir>
+<ntg.description.remdesivir>Проверка медицинского навыка: 40
+\nПротивовирусный препарат, используемый для лечения европейского кашля.
+</ntg.description.remdesivir>
+<ntg.effectiveness.remdesivir>
+    [europan_cough] Европейский кашель (90% эффективность)
+</ntg.effectiveness.remdesivir>
+<ntg.applicationsuccess.remdesivir>
+    60% Ремдесивир (применяется 10 секунд, длится 300 секунд) |
+    [liver_damage] 15% Повреждение печени (в течение 300 секунд)
+</ntg.applicationsuccess.remdesivir>
+<ntg.applicationfailed.remdesivir>
+    [liver_damage] 5% Повреждение печени (применяется 10 секунд)
+</ntg.applicationfailed.remdesivir>
+
+<!-- Dextromethorphan -->
+<ntg.title.dextromethorphan>Декстрометорфан</ntg.title.dextromethorphan>
+<ntg.description.dextromethorphan>Проверка медицинского навыка: 10
+\nПротивокашлевое средство, используемое для подавления кашля. Действует как лекарство для вирусных инфекций, снижая симптомы, замедление и шанс распространения.</ntg.description.dextromethorphan>
+<ntg.applicationsuccess.dextromethorphan>
+    8% Декстрометорфан (применяется 10 секунд, 80% всего)
+</ntg.applicationsuccess.dextromеторфан>
+<ntg.applicationfailed.dextromethorphan>
+    6% Декстрометорфан (применяется 10 секунд, 60% всего)
+</ntg.applicationfailed.dextрометорфан>
+<ntg.effects.dextromethorphan>
+    [nausea] Тошнота (выше 80%) |
+    Психоз (выше 90%)
+</ntg.effects.dextromethorphan>
+
+<!-- Zinc Supplements -->
+<ntg.title.zinc_supplement>Цинковая добавка</ntg.title.zinc_supplement>
+<ntg.description.zinc_supplement>Проверка медицинского навыка: 20
+\nЦинковая добавка, полезная при вирусных инфекциях. Действует как лекарство для вирусных инфекций, снижая замедление и шанс распространения. Действует как лечение от Гриппа и Простуды.</ntg.description.zinc_supplement>
+<ntg.effectiveness.zinc_supplement>
+    [common_cold] Простуда (25% эффективность) |
+    [influenza] Грипп (20% эффективность)
+</ntg.effectiveness.zinc_supplement>
+<ntg.applicationsuccess.zinc_supplement>
+    70% Цинковая добавка (применяется 10 секунд)
+</ntg.applicationsuccess.zinc_supplement>
+<ntg.applicationfailed.zinc_supplement>
+    50% Цинковая добавка (применяется 10 секунд)
+</ntg.applicationfailed.zinc_supplement>
+<ntg.effects.zinc_supplement>
+    [nausea] Тошнота (выше 80%) |
+    [vomiting] Рвота (выше 90%)
+</ntg.effects.zinc_supplement>
+
+<!-- Hydrocortisone -->
+<ntg.title.corticosteroids>Кортикостероиды</ntg.title.corticosteroids>
+<ntg.description.corticosteroids>Проверка медицинского навыка: 30
+\nКортикостероид, используемый для подавления иммунной системы. Может использоваться для снижения развития сепсиса. Остерегайтесь его иммуносупрессивных эффектов.</ntg.description.corticosteroids>
+<ntg.applicationsuccess.corticosteroids>
+    60% Кортикостероиды (применяется 10 секунд)
+</ntg.applicationsuccess.corticosteroids>
+<ntg.applicationfailed.corticosteroids>
+    40% Кортикостероиды (применяется 10 секунд)
+</ntg.applicationfailed.corticosteroids>
+<ntg.effects.corticosteroids>
+    [immunity] Снижает иммунитет (до 80%)
+</ntg.effects.corticosteroids>
+
+</Infotexts>

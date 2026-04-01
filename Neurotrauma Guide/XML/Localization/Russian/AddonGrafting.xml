@@ -1,0 +1,603 @@
+<Infotexts language="Russian" nowhitespace="false">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Neurotrauma Grafting Addon -->
+<ntg.category.grafting>Grafting Procedures</ntg.category.grafting>
+
+<!-- Tools -->
+
+<!-- DNA Litigation Enhancer -->
+<ntg.title.dna_litigation_enhancer>Усилитель ДНК-Совместимости</ntg.title.dna_litigation_enhancer>
+<ntg.description.dna_litigation_enhancer>Проверка Медицинского Навыка: 50.
+\nУсилитель ДНК-Совместимости — один из нескольких инструментов для пересадки, разработанных на Европе для продвижения науки, и считается наиболее важным.
+Его может изготовить только медик с разблокированным древом Пересадки — 4 штуки требуют Кусок Фульгурия и 2 Стабилозина, а также Медицинский Навык 40. Они используются до и во время процесса пересадки для облегчения трансплантации и позволяют человеческой ДНК слиться с инопланетной ДНК.
+Их нужно использовать, пока пациент испытывает отторжение от межвидовой пересадки; но будьте осторожны, так как слишком большая доза за раз будет смертельна для пациента — вызовет тяжёлые повреждения органов!
+\nПересадка человеку без использования Усилителя ДНК-Совместимости перед прикреплением инопланетного трансплантата возможна. Однако этот метод вызывает меньшее облегчение для органа и создаёт большее отторжение. 
+Орган также вызывает сепсис в организме, так как он не должен там находиться и не был поддержан медикаментами.
+\nКроме того, некоторые трансплантаты имеют скрытую функциональность. Как один из примеров, человек с лёгкими грязекопа
+может испытывать отказ лёгких при воздействии экстракта яда грязекопа, точно так же, как и обычный грязекоп.
+</ntg.description.dna_litigation_enhancer>
+<ntg.applicationsuccess.dna_litigation_enhancer>
+    [cross_species_rejection] -25% Межвидовое Отторжение |
+    +70% Усилитель ДНК-Совместимости (при успешном применении с медицинским навыком выше 50) |
+    +75% Усилитель ДНК-Совместимости (при успешном применении с медицинским навыком ниже 50) 
+</ntg.applicationsuccess.dna_litigation_enhancer>
+<ntg.applicationfailed.dna_litigation_enhancer>
+    [cross_species_rejection] -25% Межвидовое Отторжение |
+    +85% Усилитель ДНК-Совместимости
+</ntg.applicationfailed.dna_litigation_enhancer>
+<ntg.effects.dna_litigation_enhancer>
+    Накладывает Передозировку Усилителя ДНК-Совместимости при уровне выше 90%, вызывая тяжёлые повреждения Лёгких / Почек / Печени / Сердца, способные уничтожить орган за секунды. |
+    Жизненная сила пропорциональна силе аффликта при уровне выше 80%
+</ntg.effects.dna_litigation_enhancer>
+
+<!-- DNA Splicer -->
+<ntg.title.dna_splicer>ДНК-Сшиватель</ntg.title.dna_splicer>
+<ntg.description.dna_splicer>Проверка Медицинского Навыка: 50.
+\nДНК-Сшиватель — один из нескольких инструментов для пересадки, разработанных на Европе для продвижения науки, и используется для отделения ДНК, слишком интегрированной в человеческого хозяина; являясь единственным способом удаления связанных с кожей пересадок, таких как челюсть, торс или глаза.
+Он может быть изготовлен с использованием Широкого Спектра Антибиотиков и Стабилозина, и должен быть введён в нужную конечность для удаления аффликта, который она содержит. Он удалит и уничтожит только пересадку, то есть не вернёт никаких ресурсов, вложенных в данную пересадку.
+\nАффликт ДНК-Разложение уменьшается на 1% и удаляет 5% Пересадки в секунду. То есть, пересадка на 100% требует как минимум 20% ДНК-Разложения для удаления.
+</ntg.description.dna_splicer>
+<ntg.applicationsuccess.dna_splicer>
+    +66% ДНК-Разложение (Если на Коже Молотоголового) |
+    +33% ДНК-Разложение (Если на Коже Конечного Червя) |
+    +100% ДНК-Разложение 
+</ntg.applicationsuccess.dna_splicer>
+<ntg.applicationfailed.dna_splicer>
+    +33% ДНК-Разложение (Если на Коже Молотоголового) |
+    +16.5% ДНК-Разложение (Если на Коже Конечного Червя) |
+    +50% ДНК-Разложение 
+</ntg.applicationfailed.dna_splicer>
+<ntg.effects.dna_splicer>
+    Удаляет 5% пересадки в секунду пока активно
+</ntg.effects.dna_splicer>
+
+<!-- Alien Scalpel -->
+<ntg.title.alien_scalpel>Инопланетный Скальпель</ntg.title.alien_scalpel>
+<ntg.description.alien_scalpel>Проверка Медицинского Навыка: 50.
+\nИнструмент для удаления придатков, с которыми обычный скальпель не справится. К ним относятся Хвосты Ползунов, Руки Оболочек, Хвосты Тигровых Молотов, Конечности Молотоголовых, Языки Цеплят и Хвосты Оранжевых Малышей.
+\nДля использования просто примените анальгезию / анестезию и используйте Кожные Ретракторы на торсе; затем примените Инопланетный Скальпель и Швы для завершения операции.
+\nВернёт пересадку после удаления.
+</ntg.description.alien_scalpel>
+<ntg.applicationsuccess.alien_scalpel>
+    Удалит текущую пришитую конечность.
+</ntg.applicationsuccess.alien_scalpel>
+<ntg.applicationfailed.alien_scalpel>
+    [bleeding] +15% Кровотечение
+</ntg.applicationfailed.alien_scalpel>
+
+<!-- Alien Incubator -->
+<ntg.title.alien_incubator>Инопланетный Инкубатор</ntg.title.alien_incubator>
+<ntg.description.alien_incubator>Продвинутая, размещаемая машина, которая используется для предоставления инопланетным клеткам шанса захватить человеческий орган; вызывая искусственное развитие инопланетного органа.
+\nОн может быть изготовлен только медиком с разблокированным древом Пересадки; требуется FPGA-Схема, Усилитель ДНК-Совместимости, Пластик, Сталь и Инопланетная Батарея. Должен быть подключён к питанию.
+\nДублирование Инопланетных Клеток:
+Просто поместите Инопланетные Клетки, которые вы хотите продублировать, в один из двух слотов, и Стволовые Клетки в другой. Через 2 минуты клетки продублируют себя.
+ПРИМЕЧАНИЕ: Помещение только Стволовых Клеток ничего не даст, и вместо этого просто удалит стволовые клетки по завершении обработки.
+\nЗаражение Органов:
+Как и раньше, мы помещаем орган, который хотим превратить в инопланетный вариант, в один слот, и соответствующие Инопланетные Клетки в другой.
+ПРИМЕЧАНИЕ: Помещение только органа без каких-либо Инопланетных Клеток удалит орган по завершении работы машины.
+ПРИМЕЧАНИЕ: Помещение неверной комбинации органа / Инопланетных Клеток удалит орган и оставит только клетки.
+ПРИМЕЧАНИЕ: Помещение Инопланетных Клеток самих по себе без Стволовых Клеток или действительного Органа для связывания ничего не даст после 120 секунд.
+\nСледующие комбинации действительны и не приведут к потере органа:
+\nТрансплантация Сердца:
+- Клетки Цепля
+- Клетки Оболочки
+\nТрансплантация Печени:
+- Клетки Богомола
+- Клетки Гадюки
+- Клетки Матки
+\nТрансплантация Лёгких:
+- Несмотря на существование 'Лёгких Ползуна' и 'Лёгких Грязераптора', их нельзя изготовить.
+\nТрансплантация Почек:
+- Нет почечных вариантов инопланетных органов, поэтому изготовить нечего.
+</ntg.description.alien_incubator>
+<ntg.seealso.alien_incubator>
+    [stem_cells] Стволовые Клетки
+</ntg.seealso.alien_incubator>
+
+<!-- Stem Cells -->
+<ntg.title.stem_cells>Стволовые Клетки</ntg.title.stem_cells>
+<ntg.description.stem_cells>Изготавливаются с использованием пакетов крови, пластика и немного экстракта граната для питательных веществ, они могут быть развиты в Инопланетном Инкубаторе в любой вид инопланетных клеток.
+\nДолжны храниться в охлаждаемом ящике или контейнере.
+</ntg.description.stem_cells>
+<ntg.seealso.stem_cells>
+    [alien_incubator] Инопланетный Инкубатор |
+    [refrigerated_crate] Охлаждаемый Ящик |
+    [refrigerated_container] Охлаждаемый Контейнер
+</ntg.seealso.stem_cells>
+
+<!-- Surgical Procedures -->
+<!-- Crawler Tail Grafting -->
+<ntg.title.crawler_tail_grafting>Пересадка Хвоста Ползуна</ntg.title.crawler_tail_grafting>
+<ntg.description.crawler_tail_grafting>Хвост ползуна может быть пришит к торсу для увеличения скорости, с которой человек может плавать.
+\nЕго можно найти на мёртвых ползунах и удалить с помощью Инопланетного Скальпеля.
+\nСледует выполнять рядом с Операционным Столом.
+</ntg.description.crawler_tail_grafting>
+<ntg.steps.crawler_tail_grafting>
+    [analgesia] 1a. Примените Анальгезию |
+    [anesthesia] 1b. Примените Анестезию |
+    [skin_retractors] 2. Примените Кожные Ретракторы к Торсу |
+    [dna_litigation_enhancer] 3. Примените Усилитель ДНК-Совместимости |
+    4. Примените Хвост Ползуна |
+    [sutures] 5. Примените Швы |
+    [dna_litigation_enhancer] 6. Следите за пациентом и обеспечьте, чтобы его Межвидовое Отторжение оставалось как можно ниже, не вызывая при этом передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.crawler_tail_grafting>
+<ntg.seealso.crawler_tail_grafting>
+    [alien_scalpel] Может быть удалён с помощью Инопланетного Скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.crawler_tail_grafting>
+
+<!-- Crawler Lungs Grafting -->
+<ntg.title.crawler_lung_grafting>Пересадка Лёгких Ползуна</ntg.title.crawler_lung_grafting>
+<ntg.description.crawler_lung_grafting>Лёгкие ползуна могут быть пришиты к торсу для небольшого увеличения ёмкости лёгких человека.
+\nСледует выполнять рядом с Операционным Столом.
+</ntg.description.crawler_lung_grafting>
+<ntg.steps.crawler_lung_grafting>
+    [analgesia] 1a. Примените Анальгезию |
+    [anesthesia] 1b. Примените Анестезию |
+    [skin_retractors] 2. Примените Кожные Ретракторы к Торсу |
+    [dna_litigation_enhancer] 3. Примените Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Примените Многоцелевой Скальпель в режиме Адаптивного Извлечения Органов и удалите лёгкие |
+    5. Примените Лёгкие Ползуна |
+    [sutures] 6. Примените Швы |
+    [dna_litigation_enhancer] 7. Следите за пациентом и обеспечьте, чтобы его Межвидовое Отторжение оставалось как можно ниже, не вызывая при этом передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.crawler_lung_grafting>
+<ntg.seealso.crawler_lung_grafting>
+    [organ_transplant_surgery] Может быть удалён с помощью Хирургии Трансплантации Органов |
+    [surgery_table] Операционный Стол
+</ntg.seealso.crawler_lung_grafting>
+
+<!-- Fractal Guardian Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.fractal_eye_grafting>Пересадка Глаза Фрактального Стража</ntg.title.fractal_eye_grafting>
+<ntg.description.fractal_eye_grafting>Глаз фрактального стража может быть пришит к голове, чтобы позволить человеку видеть живых существ сквозь стены, а также видеть сквозь психоз. 
+\nОднако эта экспериментальная пересадка делает человека уязвимым к слепоте от ЭМИ.
+\nСледует выполнять рядом с Операционным Столом.
+</ntg.description.fractal_eye_grafting>
+<ntg.steps.fractal_eye_grafting>
+    [analgesia] 1a. Примените Анальгезию |
+    [anesthesia] 1b. Примените Анестезию |
+    [skin_retractors] 2. Примените Кожные Ретракторы к Голове |
+    [dna_litigation_enhancer] 3. Примените Усилитель ДНК-Совместимости |
+    4. Примените Образец Фрактального Стража к глазам.
+    [sutures] 5. Примените Швы |
+    [dna_litigation_enhancer] 6. Следите за пациентом и обеспечьте, чтобы его Межвидовое Отторжение оставалось как можно ниже, не вызывая при этом передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.fractal_eye_grafting>
+<ntg.seealso.fractal_eye_grafting>
+    [dna_splicer] Может быть удалён с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол
+</ntg.seealso.fractal_eye_grafting>
+
+<!-- Fractal Guardian Eye Grafting // ENABLED NT: EYES -->
+<ntg.title.fractal_eye_grafting_nte>Пересадка Глаза Фрактального Стража (Несовместимость с модом)</ntg.title.fractal_eye_grafting_nte>
+<ntg.description.fractal_eye_grafting_nte>Эта процедура пересадки несовместима с модом NT: Eyes.</ntg.description.fractal_eye_grafting_nte>
+
+<!-- Husk Arm Grafting -->
+<ntg.title.husk_arm_grafting>Пересадка Руки Оболочки</ntg.title.husk_arm_grafting>
+<ntg.description.husk_arm_grafting>Рука оболочки может быть пришита к торсу человека. Это даёт ему смертоносный придаток, который может жестоко рассекать враждебных существ.
+\nСледует выполнять рядом с Операционным Столом.
+</ntg.description.husk_arm_grafting>
+<ntg.steps.husk_arm_grafting>
+    1. Убедитесь, что пациент имеет высококачественные гены оболочки
+    [analgesia] 2a. Примените Анальгезию |
+    [anesthesia] 2b. Примените Анестезию |
+    [skin_retractors] 3. Примените Кожные Ретракторы к Торсу |
+    [dna_litigation_enhancer] 4. Примените Усилитель ДНК-Совместимости |
+    5. Примените Руку Оболочки |
+    [sutures] 6. Примените Швы |
+    [dna_litigation_enhancer] 7. Следите за пациентом и обеспечьте, чтобы его Межвидовое Отторжение оставалось как можно ниже, не вызывая при этом передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.husk_arm_grafting>
+<ntg.seealso.husk_arm_grafting>
+    [alien_scalpel] Может быть удалён с помощью Инопланетного Скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.husk_arm_grafting>
+
+<!-- Husk Heart Grafting -->
+<ntg.title.husk_heart_grafting>Пересадка Сердца Хаска</ntg.title.husk_heart_grafting>
+<ntg.description.husk_heart_grafting>Сердце хаска может быть привито в торс человека. Этот симбиотический орган поддерживает жизнь носителя, позволяя ему стоять и использовать обе руки даже при сломанных руках и ногах.
+\nПроводится возле Операционного Стола.
+</ntg.description.husk_heart_grafting>
+<ntg.steps.husk_heart_grafting>
+    1. Убедитесь, что у пациента высококачественные гены хаска
+    [analgesia] 2a. Применить Анальгезию |
+    [anesthesia] 2b. Применить Анестезию |
+    [skin_retractors] 3. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 4. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 5. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить сердце |
+    6. Применить Сердце Хаска |
+    [sutures] 7. Применить Швы |
+    [dna_litigation_enhancer] 8. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.husk_heart_grafting>
+<ntg.seealso.husk_heart_grafting>
+    [organ_transplant_surgery] Может быть удалено с помощью Операции по Трансплантации Органов |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Изготавливается в Инопланетном инкубаторе 
+</ntg.seealso.husk_heart_grafting>
+
+<!-- Mantis Liver Grafting -->
+<ntg.title.mantis_liver_grafting>Пересадка Печени Мантиса</ntg.title.mantis_liver_grafting>
+<ntg.description.mantis_liver_grafting>Печени мантиса могут быть привиты в торс человека. Эти печени производят большое количество парализующих веществ. В то время как мантис использует их для парализа врагов, человек может использовать их для быстрого выздоровления от паралича. Однако их кровь наполняется парализантами, и даже простое брызгание может вызвать паралич любого находящегося рядом существа.
+\nЭта операция сделает так, что пакеты крови, взятые у пациента, будут способны вызывать паралич.
+\nПроводится возле Операционного Стола.
+</ntg.description.mantis_liver_grafting>
+<ntg.steps.mantis_liver_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить печень |
+    5. Применить Печень Мантиса |
+    [sutures] 6. Применить Швы |
+    [dna_litigation_enhancer] 7. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.mantis_liver_grafting>
+<ntg.seealso.mantis_liver_grafting>
+    [organ_transplant_surgery] Может быть удалено с помощью Операции по Трансплантации Органов |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Изготавливается в Инопланетном инкубаторе 
+</ntg.seealso.mantis_liver_grafting>
+
+<!-- Mudraptor Lungs Grafting -->
+<ntg.title.mudraptor_lungs_grafting>Пересадка Лёгких Грязераптора</ntg.title.mudraptor_lungs_grafting>
+<ntg.description.mudraptor_lungs_grafting>Лёгкие грязераптора значительно больше человеческих и могут быть привиты в торс человека. Они обеспечивают заметно большую ёмкость лёгких.
+\nПроводится возле Операционного Стола.
+</ntg.description.mudraptor_lungs_grafting>
+<ntg.steps.mudraptor_lungs_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить лёгкие |
+    5. Применить Лёгкие Грязераптора |
+    [sutures] 6. Применить Швы |
+    [dna_litigation_enhancer] 7. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.mudraptor_lungs_grafting>
+<ntg.seealso.mudraptor_lungs_grafting>
+    [organ_transplant_surgery] Может быть удалено с помощью Операции по Трансплантации Органов |
+    [surgery_table] Операционный Стол
+</ntg.seealso.mudraptor_lungs_grafting>
+
+<!-- Mudraptor Head Grafting -->
+<ntg.title.mudraptor_head_grafting>Пересадка Головы Грязераптора</ntg.title.madraptor_head_grafting>
+<ntg.description.mudraptor_head_grafting>Голова грязераптора — прочный панцирь, который может быть применён к черепу человека. Это помогает защитить голову человека, однако прививка к голове человека очень опасна и вызывает небольшие проблемы с мозгом, снижая способность человека выполнять задачи.
+\nПроводится возле Операционного Стола.
+</ntg.description.mudraptor_head_grafting>
+<ntg.steps.mudraptor_head_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Голове |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Грязераптора |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.mudraptor_head_grafting>
+<ntg.seealso.mudraptor_head_grafting>
+    [dna_splicer] Может быть удалено с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки могут быть размножены в Инопланетном инкубаторе 
+</ntg.seealso.mudraptor_head_grafting>
+
+<!-- Broodmother Liver Grafting -->
+<ntg.title.broodmother_liver_grafting>Пересадка Печени Матки Ползунов</ntg.title.broodmother_liver_grafting>
+<ntg.description.broodmother_liver_grafting>Печень матки краулеров может быть привита в торс человека. Матка краулеров значительно более кислотная, чем её дети, и её печень не исключение. У человека это делает кровь невероятно кислотной. Человек становится более устойчивым к кислотным ожогам. У людей с этой печенью отмечалось развитие защитных способностей, позволяющих выплёскивать кровь, чтобы обжигать находящихся рядом существ.
+\nЭта операция сделает так, что пакеты крови, взятые у пациента, будут способны вызывать кислотные ожоги.
+\nПроводится возле Операционного Стола.
+</ntg.description.broodmother_liver_grafting>
+<ntg.steps.broodmother_liver_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить печень |
+    5. Применить Печень Матки Ползунов |
+    [sutures] 6. Применить Швы |
+    [dna_litigation_enhancer] 7. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.broodmother_liver_grafting>
+<ntg.seealso.broodmother_liver_grafting>
+    [organ_transplant_surgery] Может быть удалено с помощью Операции по Трансплантации Органов |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Изготавливается в Инопланетном инкубаторе 
+</ntg.seealso.broodmother_liver_grafting>
+
+<!-- Tiger Thresher Jaw Grafting -->
+<ntg.title.tthresher_jaw_grafting>Пересадка Челюсти Тигровой акулы</ntg.title.tthresher_jaw_grafting>
+<ntg.description.tthresher_jaw_grafting>Челюсть тигровой акулы может быть привита к голове пациента. Эта челюсть мощная и позволяет человеку иметь укус достаточно сильный, чтобы защищаться от бронированных существ.
+\nПроводится возле Операционного Стола.
+</ntg.description.tthresher_jaw_grafting>
+<ntg.steps.tthresher_jaw_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Голове |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Тигровой акулы |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.tthresher_jaw_grafting>
+<ntg.seealso.broodmother_liver_grafting>
+    [dna_splicer] Может быть удалено с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки могут быть размножены в Инопланетном инкубаторе 
+</ntg.seealso.broodmother_liver_grafting>
+
+<!-- Tiger Thresher Tail Grafting -->
+<ntg.title.tthresher_tail_grafting>Пересадка Хвоста Тигровой акулы</ntg.title.tthresher_tail_grafting>
+<ntg.description.tthresher_tail_grafting>Хвост тигровой акулы может быть привит к торсу пациента. Этот сильный хвост может значительно увеличить скорость, с которой обычный человек может плавать.
+\nПроводится возле Операционного Стола.
+</ntg.description.tthresher_tail_grafting>
+<ntg.steps.tthresher_tail_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Хвост Тигровой акулы |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.tthresher_tail_grafting>
+<ntg.seealso.tthresher_tail_grafting>
+    [alien_scalpel] Может быть удалено с помощью Инопланетного скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.tthresher_tail_grafting>
+
+<!-- Bone Thresher Jaw Grafting -->
+<ntg.title.bthresher_tail_grafting>Пересадка Челюсти Костяной акулы</ntg.title.bthresher_tail_grafting>
+<ntg.description.bthresher_tail_grafting>Челюсть костяной акулы может быть привита к голове пациента. Подобно тигровому трешеру, эта челюсть даёт человеку мощный укус, однако она даже сильнее, чем челюсть тигровой акулы.
+\nПроводится возле Операционного Стола.
+</ntg.description.bthresher_tail_grafting>
+<ntg.steps.bthresher_tail_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Голове |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Костяной акулы |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.bthresher_tail_grafting>
+<ntg.seealso.bthresher_tail_grafting>
+    [dna_splicer] Может быть удалено с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки могут быть размножены в Инопланетном инкубаторе 
+</ntg.seealso.bthresher_tail_grafting>
+
+<!-- Hammerhead Skin Grafting -->
+<ntg.title.hammerhead_skin_grafting>Пересадка Кожи Молотоглава</ntg.title.hammerhead_skin_grafting>
+<ntg.description.hammerhead_skin_grafting>Кожа молотоглава может быть привита к торсу. У молотоглава загрубевшая голова, позволяющая ему таранить подводные лодки, не получая повреждений. Человек может применить это к своему торсу для аналогичного эффекта, однако она сопротивляется всем проколам, как враждебным, так и дружественным.
+\nПациент будет получать на 33% меньше силы аффликтов от применяемых к нему лекарств.
+\nПроводится возле Операционного Стола.
+</ntg.description.hammerhead_skin_grafting>
+<ntg.steps.hammerhead_skin_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Молотоглава |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.hammerhead_skin_grafting>
+<ntg.seealso.hammerhead_skin_grafting>
+    [dna_splicer] Может быть удалено с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки могут быть размножены в Инопланетном инкубаторе 
+</ntg.seealso.hammerhead_skin_grafting>
+
+<!-- Hammerhead Limb Grafting -->
+<ntg.title.hammerhead_limb_grafting>Пересадка Конечностей Молотоглава</ntg.title.hammerhead_limb_grafting>
+<ntg.description.hammerhead_limb_grafting>Конечности молотоглава могут быть привиты к торсу. Молотоголовый использует конечности для плавания, а также для стабилизации в воде. Человек может применить это к своему торсу, чтобы лучше противостоять течениям.
+\nПроводится возле Операционного Стола.
+</ntg.description.hammerhead_limb_grafting>
+<ntg.steps.hammerhead_limb_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Конечности Молотоглава |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.hammerhead_limb_grafting>
+<ntg.seealso.hammerhead_limb_grafting>
+    [alien_scalpel] Может быть удалено с помощью Инопланетного скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.hammerhead_limb_grafting>
+
+<!-- Moloch Shell Grafting -->
+<ntg.title.moloch_shell_grafting>Пересадка Панциря Молоха</ntg.title.moloch_shell_grafting>
+<ntg.description.moloch_shell_grafting>Панцирь молоха может быть привит на голову человека. У молоха очень прочный внешний панцирь, защищающий его мягкое тело. Человек может развить прочный панцирь на своей голове аналогичным образом. Однако, подобно молоху, треснувший панцирь предвещает его гибель.
+\nПроводится возле Операционного Стола.
+</ntg.description.moloch_shell_grafting>
+<ntg.steps.moloch_shell_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Молоха |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.moloch_shell_grafting>
+<ntg.seealso.moloch_shell_grafting>
+    [dna_splicer] Может быть удалено с помощью ДНК-Сшивателя |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки могут быть размножены в Инопланетном инкубаторе 
+</ntg.seealso.moloch_shell_grafting>
+
+<!-- Viperling Liver Grafting -->
+<ntg.title.viperling_liver_grafting>Пересадка Печени Ядостая</ntg.title.viperling_liver_grafting>
+<ntg.description.viperling_liver_grafting>Печень ядостая может быть привита в торс человека. Вайперлинги способны вырабатывать морбузин, который прилипает к кончикам их шипов. Печень ядостая внутри человека способна особенно хорошо фильтровать это, делая человека невосприимчивым к отравлению морбузином.
+\nПроводится возле Операционного Стола.
+</ntg.description.viperling_liver_grafting>
+<ntg.steps.viperling_liver_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель к Торсу |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить печень |
+    5. Применить Печень Ядостая |
+    [sutures] 6. Применить Швы |
+    [dna_litigation_enhancer] 7. Наблюдать за пациентом и следить, чтобы Отторжение Межвидовой Трансплантации оставалось на минимальном уровне, не допуская передозировки Усилителем ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.viperling_liver_grafting>
+<ntg.seealso.viperling_liver_grafting>
+    [organ_transplant_surgery] Может быть удалено с помощью Операции по Трансплантации Органов |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Изготавливается в Инопланетном инкубаторе 
+</ntg.seealso.viperling_liver_grafting>
+
+<!-- Watcher Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.watcher_eye_grafting>Пересадка Глаза Наблюдателя</ntg.title.watcher_eye_grafting>
+<ntg.description.watcher_eye_grafting>Глаза наблюдателя можно пришить на голову человека. Наблюдатели — существа, обычно пассивные, но вызывающие психоз у своей жертвы и ускоряющие хищников своей жертвы. Человек может контролировать часть этой силы, вызывая психоз и замедление у одной цели, на которую он смотрит.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.watcher_eye_grafting>
+<ntg.steps.watcher_eye_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Голову |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Глаза Наблюдателя на Голову. |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.watcher_eye_grafting>
+<ntg.seealso.watcher_eye_grafting>
+    [dna_splicer] Можно удалить с помощью ДНК-Сплайсера |
+    [surgery_table] Операционный Стол
+</ntg.seealso.watcher_eye_grafting>
+
+<!-- Watcher Eye Grafting // DISABLED NT: EYES -->
+<ntg.title.watcher_eye_grafting_nte>Пересадка Глаза Наблюдателя (Несовместимость с модом)</ntg.title.watcher_eye_grafting_nte>
+<ntg.description.watcher_eye_grafting_nte>Эта процедура пересадки несовместима с модом NT: Eyes.</ntg.description.watcher_eye_grafting_nte>
+
+<!-- Charybdis Jaw Grafting -->
+<ntg.title.charybdis_jaw_grafting>Пересадка Челюсти Харибды</ntg.title.charybdis_jaw_grafting>
+<ntg.description.charybdis_jaw_grafting>Мощная челюсть Харибды может быть пришита на голову человека. Сила челюсти Харибды не имеет равных. Применение её на человеке даёт разрушительную атаку, однако психологические эффекты от этого ещё не изучены.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.charybdis_jaw_grafting>
+<ntg.steps.charybdis_jaw_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Торс |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Харибды |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.charybdis_jaw_grafting>
+<ntg.seealso.charybdis_jaw_grafting>
+    [dna_splicer] Можно удалить с помощью ДНК-Сплайсера |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки можно размножить в Инопланетном инкубаторе 
+</ntg.seealso.charybdis_jaw_grafting>
+
+<!-- Latcher Heart Grafting -->
+<ntg.title.latcher_heart_grafting>Пересадка Сердца Блокиратора</ntg.title.latcher_heart_grafting>
+<ntg.description.latcher_heart_grafting>Сердце ловца можно пересадить в торс человека. Ловец использует эффективную тактику вымотки и бегства, чтобы измотать добычу, пока она не упадёт глубоко в его территорию. Когда их сердце помещается в человека, человек становится гораздо быстрее, но более хрупким, требуя от человека использования похожих тактик.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.latcher_heart_grafting>
+<ntg.steps.latcher_heart_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Торс |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    [multipurpose_scalpel] 4. Применить Многофункциональный Скальпель в режиме Адаптивного Извлечения Органов и удалить печень |
+    5. Применить Сердце Блокиратора |
+    [sutures] 6. Применить Швы |
+    [dna_litigation_enhancer] 7. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.latcher_heart_grafting>
+<ntg.seealso.latcher_heart_grafting>
+    [organ_transplant_surgery] Можно удалить с помощью Хирургии Пересадки Органов |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Создаётся в Инопланетном инкубаторе 
+</ntg.seealso.latcher_heart_grafting>
+
+<!-- Latcher Tongue Grafting -->
+<ntg.title.latcher_tongue_grafting>Пересадка Языка Блокиратора</ntg.title.latcher_tongue_grafting>
+<ntg.description.latcher_tongue_grafting>Язык ловца можно пришить в рот пациента. Ловец использует свой язык, чтобы хватать добычу и тащить её вниз в бездну, как мы видим, он хватает подводные лодки, пока они не раздавятся. У человека он слишком мал, чтобы тащить подводные лодки, однако он может тащить добычу схожего с ним размера.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.latcher_tongue_grafting>
+<ntg.steps.latcher_tongue_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Голову |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Язык Блокиратора на Голову. |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.latcher_tongue_grafting>
+<ntg.seealso.latcher_tongue_grafting>
+    [alien_scalpel] Можно удалить с помощью Инопланетного скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.latcher_tongue_grafting>
+
+<!-- Endworm Skin Graft -->
+<ntg.title.endworm_skin_grafting>Пересадка Кожи Конечного Червя</ntg.title.endworm_skin_grafting>
+<ntg.description.endworm_skin_grafting>Кожа конечного червя может быть пришита на торс человека. Кожа конечного червя почти непробиваема. Когда она помещается на торс человека, она захватывает все конечности, кроме головы. Эта кожа делает человека почти неуязвимым — как для друзей, так и для врагов.
+\nПациент будет получать на 33% меньше силы эффекта от применяемых к нему лекарств.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.endworm_skin_grafting>
+<ntg.steps.endworm_skin_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Торс |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Клетки Конечного Червя |
+    [sutures] 5. Применить Швы |
+    6. Дать Коже Конечного Червя распространиться по всем конечностям, кроме Головы |
+    [dna_litigation_enhancer] 7. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.endworm_skin_grafting>
+<ntg.seealso.endworm_skin_grafting>
+    [dna_splicer] Можно удалить с помощью ДНК-Сплайсера |
+    [surgery_table] Операционный Стол |
+    [alien_incubator] Клетки можно размножить в Инопланетном инкубаторе 
+</ntg.seealso.endworm_skin_grafting>
+
+<!-- Orangeboy Tail Grafting -->
+<ntg.title.orangeboy_tail_grafting>Пересадка Хвоста Оранжевого Мальчика</ntg.title.orangeboy_tail_grafting>
+<ntg.description.orangeboy_tail_grafting>Хвост оранжевого мальчика можно пришить на торс человека. Этот хвост слишком мал, чтобы быть полезным в каком-либо качестве, и хитиновая оболочка часто линяет.
+\nПроцедуру следует проводить рядом с Операционным Столом.
+</ntg.description.orangeboy_tail_grafting>
+<ntg.steps.orangeboy_tail_grafting>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить Расширитель на Торс |
+    [dna_litigation_enhancer] 3. Применить Усилитель ДНК-Совместимости |
+    4. Применить Хвост Оранжевого Мальчика на Торс. |
+    [sutures] 5. Применить Швы |
+    [dna_litigation_enhancer] 6. Следить за пациентом и следить, чтобы их Межвидовое Отторжение оставалось как можно ниже, не вызывая передозировки Усилителя ДНК-Совместимости (вызывается при уровне выше 90%)
+</ntg.steps.orangeboy_tail_grafting>
+<ntg.seealso.orangeboy_tail_grafting>
+    [alien_scalpel] Можно удалить с помощью Инопланетного скальпеля |
+    [surgery_table] Операционный Стол
+</ntg.seealso.orangeboy_tail_grafting>
+
+<!-- General Information -->
+
+<!-- Obtaining Graft Transplants -->
+<ntg.title.information_obtaining_grafting_transplants>Получение Трансплантатов Пришивания</ntg.title.information_obtaining_grafting_transplants>
+<ntg.description.information_obtaining_grafting_transplants>Большинство трансплантатов для пришивания можно найти на трупах существ, от которых они происходят. Однако они будут разлагаться со временем, и поэтому должны быть собраны и охлаждены сразу после обнаружения. Это могут быть конечности, органы или иногда непосредственно образцы кожи.
+\nНекоторые трансплантаты для пришивания можно получить только путём позволения кожным клеткам захватить человеческий орган, так как органы существ слишком велики для человека. Примером этого может служить необходимость создания сердца ловца — а не просто его нахождение.
+\nБольшинство органов используют слияние клеток как альтернативный метод получения. Например, хотя сердце хаски можно найти на теле химеры, человеческое сердце можно слить с клетками хаски, чтобы создать то же самое сердце.
+\nКлетки и трансплантаты будут разлагаться, но не будут повреждены огнём, взрывчаткой и будут разлагаться гораздо медленнее, чем обычный человеческий орган. Чужеродные трансплантаты также будут заживать в охлаждённом контейнере при гораздо меньшей прочности, чем человеческий орган. Это делает получение трансплантатов для пришивания более снисходительным и возможным для учёного.
+\nВАЖНОЕ ПРИМЕЧАНИЕ: Если вы используете Barotraumatic, Vanilla Creatures Expanded или любой другой мод, который переопределяет базовых существ, предметы NT: Grafting не будут выпадать. Убедитесь, что NT: Grafting находится выше этих модов в вашем списке модов.</ntg.description.information_obtaining_grafting_transplants>
+<ntg.seealso.information_obtaining_grafting_transplants>
+    [alien_incubator] Клетки можно размножать, а органы — трансмутировать в Инопланетном инкубаторе
+</ntg.seealso.information_obtaining_grafting_transplants>
+
+<!-- Repairing Cracked Moloch Shell -->
+<ntg.title.information_repairing_moloch_shell>Ремонт Треснувшей Панциря Молоха</ntg.title.information_repairing_moloch_shell>
+<ntg.description.information_repairing_moloch_shell>Если панцирь молоха треснул, его можно починить либо оттянув кожу на голове, добавив ещё один кусок клеток кожи молоха и зашив её обратно, либо применив ДНК-Сплайсер на голову, удалив трещину и сам панцирь.
+\nВ любом случае, действие должно произойти быстро, иначе человек умрёт.</ntg.description.information_repairing_moloch_shell>
+<ntg.seealso.information_repairing_moloch_shell>
+    [moloch_shell_grafting] Пересадка Панциря Молоха |
+    [dna_splicer] ДНК-Сплайсер 
+</ntg.seealso.information_repairing_moloch_shell>
+
+<!-- Aiming Latcher Tongue -->
+<ntg.title.information_aim_latcher_tongue>Наведение Языка Блокиратора</ntg.title.information_aim_latcher_tongue>
+<ntg.description.information_aim_latcher_tongue>Язык ловца всегда стреляет прямо вперёд изо рта. Это означает, что чтобы попасть в существо, которое не погружено в воду, оно должно быть вашего роста. Однако есть несколько советов и хитростей, чтобы помочь вам наводить язык на суше:
+- Если существо вдвое ниже вашего роста, вы можете присесть, чтобы опустить голову, позволяя вам попасть в более низкие цели;
+- Когда вы бежите, ваша голова наклоняется вниз, что означает, что вы стреляете под углом вниз; Приседание и медленное движение назад немного поднимает вашу голову, позволяя вам стрелять вверх;
+- Если вы в воде, просто плывите так, чтобы ваше лицо указывало на цель, и вы сможете стрелять в любом направлении.
+</ntg.description.information_aim_latcher_tongue>
+<ntg.seealso.information_aim_latcher_tongue>
+    [latcher_tongue_grafting]
+</ntg.seealso.information_aim_latcher_tongue>
+
+<!-- Removing Grafting Limit -->
+<ntg.title.information_remove_grafting_limit>Снятие Ограничения Пришивания</ntg.title.information_remove_grafting_limit>
+<ntg.description.information_remove_grafting_limit>Для снятия ограничения пришивания требуются права на консольные команды.
+\nЧтобы дать себе неограниченное количество пришиваний, нажмите F3, чтобы открыть консоль, и введите «givetalent hackeddna», чтобы получить талант, который уберёт ограничение пришивания.
+Аналогично, чтобы дать неограниченное количество пришиваний кому-то другому, нажмите F3, чтобы открыть консоль, и введите «givetalenthackeddna [имя персонажа]», чтобы дать этому персонажу талант.
+\nВАЖНОЕ ПРИМЕЧАНИЕ: Это нельзя отменить.</ntg.description.information_remove_grafting_limit>
+
+</Infotexts>

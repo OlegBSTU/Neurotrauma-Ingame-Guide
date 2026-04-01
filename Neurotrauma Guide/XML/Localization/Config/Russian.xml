@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<infotexts language="Russian" nowhitespace="false" translatedname="English">
+	<Override>
+		<rawconfig.enforcedtooltip>Этот параметр принудительно установлен сервером</rawconfig.enforcedtooltip>
+		<rawconfig.notenforcedtooltip>Этот параметр не принудительно установлен сервером</rawconfig.notenforcedtooltip>
+		<ntguide.modname>Руководство Neurotrauma</ntguide.modname>
+		<ntguide.cfg.enabled>Включить внутриигровое руководство</ntguide.cfg.enabled>
+		<ntguide.cfg.enableddescription>Включает весь функционал руководства.</ntguide.cfg.enableddescription>
+		<ntguide.cfg.shared>Поделиться модом с клиентами</ntguide.cfg.shared>
+		<ntguide.cfg.shareddescription>Если включено, мод будет отображаться в списке модов сервера и будет загружен клиентами при подключении. (Для работы этой функции должно быть включено серверное/хостовое CSharp Scripting)</ntguide.cfg.shareddescription>
+	</Override>
+</infotexts>

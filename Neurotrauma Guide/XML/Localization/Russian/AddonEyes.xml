@@ -1,0 +1,766 @@
+<Infotexts language="Russian" nowhitespace="false">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Neurotrauma Eyes Addon -->
+<!-- Damage Afflictions -->
+<!-- Human Eye Damage -->
+<ntg.title.human_eye_damage>Повреждение человеческого глаза</ntg.title.human_eye_damage>
+<ntg.description.human_eye_damage>Повреждение, полученное человеческим глазом. Все начинают с этими!</ntg.description.human_eye_damage>
+<ntg.causes.human_eye_damage>
+    [hypoxemia] Гипоксемия (Текущая сила умножается на 0.05 в секунду) |
+    [stroke] Инсульт (Текущая сила умножается на 0.1 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.4 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.1 в секунду) |
+    Нахождение в воде под давлением без защиты (3% за тик) |
+    Физическое повреждение
+</ntg.causes.human_eye_damage>
+<ntg.effects.human_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.human_eye_damage>
+<ntg.treatments.human_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.human_eye_damage>
+<ntg.seealso.human_eye_damage>
+    [human_eye] Человеческий глаз (Предмет)
+</ntg.seealso.human_eye_damage>
+
+<!-- Enhanced Eye Damage -->
+<ntg.title.enhanced_eye_damage>Повреждение улучшенного глаза</ntg.title.enhanced_eye_damage>
+<ntg.description.enhanced_eye_damage>Повреждение, полученное улучшенным человеческим глазом.</ntg.description.enhanced_eye_damage>
+<ntg.causes.enhanced_eye_damage>
+    [hypoxemia] Гипоксемия (Текущая сила умножается на 0.004 в секунду) |
+    [stroke] Инсульт (Текущая сила умножается на 0.08 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.3 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.82 в секунду) |
+    Нахождение в воде под давлением без защиты (2.5% за тик) |
+    Физическое повреждение
+</ntg.causes.enhanced_eye_damage>
+<ntg.effects.enhanced_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.enhanced_eye_damage>
+<ntg.treatments.enhanced_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.enhanced_eye_damage>
+<ntg.seealso.enhanced_eye_damage>
+    [enhanced_eye] Улучшенный глаз (Предмет)
+</ntg.seealso.enhanced_eye_damage>
+
+<!-- Cyber Eye Damage -->
+<ntg.title.cyber_eye_damage>Повреждение киберглаза</ntg.title.cyber_eye_damage>
+<ntg.description.cyber_eye_damage>Повреждение, полученное киберглазом. Они невосприимчивы к давлению и не получают повреждений от аффликтов тела; однако это также означает, что они не регенерируют, как биологический глаз.</ntg.description.cyber_eye_damage>
+<ntg.causes.cyber_eye_damage>
+    Физическое повреждение
+</ntg.causes.cyber_eye_damage>
+<ntg.effects.cyber_eye_damage>
+    Ухудшение зрения пропорционально полученному повреждению
+</ntg.effects.cyber_eye_damage>
+<ntg.treatments.cyber_eye_damage>
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [cyber_eye_repair_surgery] Хирургический ремонт киберглаза
+</ntg.treatments.cyber_eye_damage>
+<ntg.seealso.cyber_eye_damage>
+    [cyber_eye] Киберглаз (Предмет)
+</ntg.seealso.cyber_eye_damage>
+
+<!-- Plastic Eye Damage -->
+<ntg.title.plastic_eye_damage>Повреждение пластикового глаза</ntg.title.plastic_eye_damage>
+<ntg.description.plastic_eye_damage>Дешёвый и ужасный брат киберглаза.
+\nПовреждение, полученное пластиковым глазом. Они невосприимчивы к давлению и не получают повреждений от аффликтов тела; однако это также означает, что они не регенерируют, как биологический глаз.</ntg.description.plastic_eye_damage>
+<ntg.causes.plastic_eye_damage>
+    Физическое повреждение
+</ntg.causes.plastic_eye_damage>
+<ntg.effects.plastic_eye_damage>
+    Ухудшение зрения пропорционально полученному повреждению
+</ntg.effects.plastic_eye_damage>
+<ntg.treatments.plastic_eye_damage>
+    [eye_removal_surgery] Хирургическое удаление глаза
+</ntg.treatments.plastic_eye_damage>
+<ntg.seealso.plastic_eye_damage>
+    [plastic_eye] Пластиковый глаз (Предмет)
+</ntg.seealso.plastic_eye_damage>
+
+<!-- Husk Eye Damage -->
+<ntg.title.husk_eye_damage>Повреждение глаза хаска</ntg.title.husk_eye_damage>
+<ntg.description.husk_eye_damage>Повреждение, полученное глазом хаска. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён. Регенерирует немного быстрее.</ntg.description.husk_eye_damage>
+<ntg.causes.husk_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.husk_eye_damage>
+<ntg.effects.husk_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.husk_eye_damage>
+<ntg.treatments.husk_eye_damage>
+    Пассивная регенерация (-0.2 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.husk_eye_damage>
+<ntg.seealso.husk_eye_damage>
+    [husk_eye] Глаз хаска (Предмет)
+</ntg.seealso.husk_eye_damage>
+
+<!-- Crawler Eye Damage -->
+<ntg.title.crawler_eye_damage>Повреждение глаза ползуна</ntg.title.crawler_eye_damage>
+<ntg.description.crawler_eye_damage>Повреждение, полученное глазом ползуна. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.crawler_eye_damage>
+<ntg.causes.crawler_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.crawler_eye_damage>
+<ntg.effects.crawler_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.crawler_eye_damage>
+<ntg.treatments.crawler_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.crawler_eye_damage>
+<ntg.seealso.crawler_eye_damage>
+    [crawler_eye] Глаз ползуна (Предмет)
+</ntg.seealso.crawler_eye_damage>
+
+<!-- Mudraptor Eye Damage -->
+<ntg.title.mudraptor_eye_damage>Повреждение глаза грязеклюва</ntg.title.mudraptor_eye_damage>
+<ntg.description.mudraptor_eye_damage>Повреждение, полученное глазом грязеклюва. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.mudraptor_eye_damage>
+<ntg.causes.mudraptor_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.mudraptor_eye_damage>
+<ntg.effects.mudraptor_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.mudraptor_eye_damage>
+<ntg.treatments.mudraptor_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.mudraptor_eye_damage>
+<ntg.seealso.mudraptor_eye_damage>
+    [mudraptor_eye] Глаз грязеклюва (Предмет)
+</ntg.seealso.mudraptor_eye_damage>
+
+<!-- Hammerhead Eye Damage -->
+<ntg.title.hammerhead_eye_damage>Повреждение глаза молотоглава</ntg.title.hammerhead_eye_damage>
+<ntg.description.hammerhead_eye_damage>Повреждение, полученное глазом молотоглава. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.hammerhead_eye_damage>
+<ntg.causes.hammerhead_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.hammerhead_eye_damage>
+<ntg.effects.hammerhead_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.hammerhead_eye_damage>
+<ntg.treatments.hammerhead_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.hammerhead_eye_damage>
+<ntg.seealso.hammerhead_eye_damage>
+    [hammerhead_eye] Глаз молотоглава (Предмет)
+</ntg.seealso.hammerhead_eye_damage>
+
+<!-- Watcher Eye Damage -->
+<ntg.title.watcher_eye_damage>Повреждение глаза наблюдателя</ntg.title.watcher_eye_damage>
+<ntg.description.watcher_eye_damage>Повреждение, полученное глазом наблюдателя. Хотя он невосприимчив к давлению и нехватке кислорода, он всё ещё может быть повреждён.</ntg.description.watcher_eye_damage>
+<ntg.causes.watcher_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.watcher_eye_damage>
+<ntg.effects.watcher_eye_damage>
+    [cataract] Может вызвать катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получили слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получил слишком много повреждений)
+</ntg.effects.watcher_eye_damage>
+<ntg.treatments.watcher_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Хирургическое удаление глаза |
+    [laser_eye_surgery] Лазерная хирургия глаза |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.watcher_eye_damage>
+<ntg.seealso.watcher_eye_damage>
+    [watcher_eye] Глаз наблюдателя (Предмет)
+</ntg.seealso.watcher_eye_damage>
+
+<!-- Latcher Eye Damage -->
+<ntg.title.latcher_eye_damage>Повреждение глаза блокиратора</ntg.title.latcher_eye_damage>
+<ntg.description.latcher_eye_damage>Урон, полученный глазом блокиратора. Хотя он невосприимчив к давлению и недостатку кислорода, он всё ещё может быть повреждён.</ntg.description.latcher_eye_damage>
+<ntg.causes.latcher_eye_damage>
+    [stroke] Инсульт (Текущая сила умножается на 0.03 в секунду) |
+    [sepsis] Сепсис (Текущая сила умножается на 0.03 в секунду) |
+    [retinopathy] Ретинопатия (Текущая сила умножается на 0.25 в секунду) |
+    Физическое повреждение
+</ntg.causes.latcher_eye_damage>
+<ntg.effects.latcher_eye_damage>
+    [cataract] Может вызвать Катаракту (если повреждение глаза превышает 60%) |
+    [dead_eyes] Мёртвые глаза (Если оба глаза получат слишком много повреждений) |
+    [dead_eye] Мёртвый глаз (Если только один глаз получит слишком много повреждений)
+</ntg.effects.latcher_eye_damage>
+<ntg.treatments.latcher_eye_damage>
+    Пассивная регенерация (-0.1 повреждения за тик) |
+    [eye_removal_surgery] Операция по удалению глаза |
+    [laser_eye_surgery] Лазерная операция на глазу |
+    [eye_drop_application] Применение глазных капель
+</ntg.treatments.latcher_eye_damage>
+<ntg.seealso.latcher_eye_damage>
+    [latcher_eye] Глаз Блокиратора (Предмет)
+</ntg.seealso.latcher_eye_damage>
+
+<!-- Mechanic Afflictions -->
+<!-- Dead Eyes -->
+<ntg.title.dead_eyes>Мёртвые глаза</ntg.title.dead_eyes>
+<ntg.description.dead_eyes>Результат получения слишком большого урона обоим глазам. На этом этапе глаза нельзя спасти и они не будут регенерировать.</ntg.description.dead_eyes>
+<ntg.causes.dead_eyes>
+    Повреждение глаза, независимо от типа глаза (если только они не механические)
+</ntg.causes.dead_eyes>
+<ntg.effects.dead_eyes>
+    Полная слепота
+</ntg.effects.dead_eyes>
+<ntg.treatments.dead_eyes>
+    [eye_removal_surgery] Операция по удалению глаза
+</ntg.treatments.dead_eyes>
+
+<!-- Dead Eye -->
+<ntg.title.dead_eye>Мёртвый глаз</ntg.title.dead_eye>
+<ntg.description.dead_eye>Результат получения слишком большого урона одному глазу. На этом этапе глаз нельзя спасти и он не будет регенерировать.</ntg.description.dead_eye>
+<ntg.causes.dead_eye>
+    Повреждение глаза, независимо от типа глаза (если только они не синтетические)
+</ntg.causes.dead_eye>
+<ntg.effects.dead_eye>
+    Частичная слепота |
+    [retinopathy] Может вызвать Ретинопатию в оставшемся глазу
+</ntg.effects.dead_eye>
+<ntg.treatments.dead_eye>
+    [eye_removal_surgery] Операция по удалению глаза
+</ntg.treatments.dead_eye>
+
+<!-- Retinopathy -->
+<!-- 5+ -->
+<ntg.title.retinopathy>Ретинопатия</ntg.title.retinopathy>
+<ntg.description.retinopathy>Аутоиммунная ретинопатия, или повреждение сетчатки, может быть вызвано наличием одного мёртвого глаза, если иммунитет выше 10%. Другой глаз (если биологический!) будет быстро получать повреждения из-за избыточной реакции организма.
+\nНе будет виден на Медицинском Сканере, пока сила не превысит 5%; хотя симптомы появятся раньше.
+\nВозможность этого можно отключить в конфиге.
+</ntg.description.retinopathy>
+<ntg.causes.retinopathy>
+    [dead_eye] Наличие мёртвого глаза
+</ntg.causes.retinopathy>
+<ntg.effects.retinopathy>
+    Большое количество повреждений глаза, независимо от типа глаза (если только они не небиологические!)
+</ntg.effects.retinopathy>
+<ntg.treatments.retinopathy>
+    [eye_removal_surgery] Операция по удалению глаза для удаления мёртвого глаза |
+    [azathioprine] Азатиоприн (или другое подобное лекарство), снижающий иммунитет
+</ntg.treatments.retinopathy>
+<ntg.seealso.retinopathy>
+    [immunity] Иммунитет
+</ntg.seealso.retinopathy>
+
+<!-- Cataract -->
+<!-- 15+ -->
+<ntg.title.cataract>Катаракта</ntg.title.cataract>
+<ntg.description.cataract>Катаракта, или помутнение хрусталика глаза, является результатом высокого уровня повреждения глаза, хотя и недостаточного для полного уничтожения глаза. Может произойти только в биологических глазах.
+\nНе будет видна на Медицинском Сканере, пока сила не превысит 15%; хотя симптомы появятся раньше.
+</ntg.description.cataract>
+<ntg.causes.cataract>
+    Повреждение глаза, независимо от типа глаза (если только не синтетические)
+</ntg.causes.cataract>
+<ntg.effects.cataract>
+    [blurred_vision] Размытое зрение
+</ntg.effects.cataract>
+<ntg.treatments.cataract>
+    [cataract_surgery] Операция по удалению катаракты
+</ntg.treatments.cataract>
+
+<!-- Vision Sickness -->
+<ntg.title.vision_sickness>Зрительная болезнь</ntg.title.vision_sickness>
+<ntg.description.vision_sickness>Зрительная болезнь возникает после получения новых глаз, так как организму (и вашему разуму!) нужно адаптироваться к ним.</ntg.description.vision_sickness>
+<ntg.causes.vision_sickness>
+    [eye_transplant_surgery] Операция по пересадке глаза
+</ntg.causes.vision_sickness>
+<ntg.effects.vision_sickness>
+    [blurred_vision] Размытое зрение |
+    [headache] Головная боль |
+    [confusion] Замешательство
+</ntg.effects.vision_sickness>
+<ntg.treatments.vision_sickness>
+    Время
+</ntg.treatments.vision_sickness>
+
+<!-- Mismatch -->
+<ntg.title.mismatch>Несоответствие</ntg.title.mismatch>
+<ntg.description.mismatch>Несоответствие возникает, если имплантированы два разных типа глаз; мозг испытывает трудности с обработкой и будет иметь проблемы с другими задачами из-за этого.</ntg.description.mismatch>
+<ntg.causes.mismatch>
+    Наличие разных глаз (Например, Человеческий глаз и Кибер-глаз одновременно)
+</ntg.causes.mismatch>
+<ntg.effects.mismatch>
+    [headache] Головная боль |
+    Снижение навыков
+</ntg.effects.mismatch>
+<ntg.treatments.mismatch>
+    [corrective_glasses] Корректирующие очки нейтрализуют симптомы
+</ntg.treatments.mismatch>
+
+<!-- Surgery Afflictions -->
+<!-- Removed Eyes -->
+<ntg.title.removed_eyes>Удалённые глаза</ntg.title.removed_eyes>
+<ntg.description.removed_eyes>Либо результат хирургического удаления глаз, либо уничтожение синтетических глаз.</ntg.description.removed_eyes>
+<ntg.causes.removed_eyes>
+    [eye_removal_surgery] Операция по удалению глаза |
+    Слишком большое повреждение синтетического глаза
+</ntg.causes.removed_eyes>
+<ntg.effects.removed_eyes>
+    Полная слепота
+</ntg.effects.removed_eyes>
+<ntg.treatments.removed_eyes>
+    [eye_transplant_surgery] Операция по пересадке глаза
+</ntg.treatments.removed_eyes>
+
+<!-- Removed Eye -->
+<ntg.title.removed_eye>Удалённый глаз</ntg.title.removed_eye>
+<ntg.description.removed_eye>Либо результат хирургического удаления глаза, либо уничтожение синтетического глаза.</ntg.description.removed_eye>
+<ntg.causes.removed_eye>
+    [eye_removal_surgery] Операция по удалению глаза |
+    Слишком большое повреждение синтетического глаза
+</ntg.causes.removed_eye>
+<ntg.effects.removed_eye>
+    Частичная слепота
+</ntg.effects.removed_eye>
+<ntg.treatments.removed_eye>
+    [eye_transplant_surgery] Операция по пересадке глаза
+</ntg.treatments.removed_eye>
+
+<!-- Held Eyelids -->
+<ntg.title.held_eyelids>Удерживаемые веки</ntg.title.held_eyelids>
+<ntg.description.held_eyelids>Второй шаг всех операций на глазу, когда веки принудительно открыты для надлежащего доступа к глазу.</ntg.description.held_eyelids>
+<ntg.causes.held_eyelids>
+    [skin_retractors] Использование кожных ретракторов на голове (Требуется Медицинский навык: 25. При провале вызовет от 0% до 7% Кровотечения и от 0% до 3% Повреждения глаза)
+</ntg.causes.held_eyelids>
+<ntg.effects.held_eyelids>
+    [skin_retractors] Повторное применение кожных ретракторов
+</ntg.effects.held_eyelids>
+<ntg.seealso.held_eyelids>
+    [bleeding] Кровотечение
+</ntg.seealso.held_eyelids>
+
+<!-- Popped Eyes -->
+<ntg.title.popped_eyes>Выпученные глаза</ntg.title.popped_eyes>
+<ntg.description.popped_eyes>Третий шаг Операции по удалению глаза или Операции по применению линзы. Глаза выпучены для обеспечения лучшего доступа, хотя ценой видимости пациента.</ntg.description.popped_eyes>
+<ntg.causes.popped_eyes>
+    [tweezers] Использование пинцета на голове после кожных ретракторов (Требуется Медицинский навык: 30. При провале вызовет от 0% до 10% Кровотечения и от 0% до 5% Повреждения глаза)
+</ntg.causes.popped_eyes>
+<ntg.effects.popped_eyes>
+    Размытое зрение и потеря навыков, масштабируется с силой аффликта |
+    [traumatic_shock] Травматический шок, если не рядом с Операционным столом
+</ntg.effects.popped_eyes>
+<ntg.seealso.popped_eyes>
+    [held_eyelids] Удерживаемые веки |
+    [surgery_table] Операционный стол |
+    [eye_removal_surgery] Операция по удалению глаза |
+    [lens_application_surgery] Операция по применению линзы |
+    [bleeding] Кровотечение
+</ntg.seealso.popped_eyes>
+
+<!-- Eye Connector -->
+<ntg.title.eye_connector>Глазной коннектор</ntg.title.eye_connector>
+<ntg.description.eye_connector>Третий шаг Операции по пересадке глаза. Специализированные глазные коннекторы применяются к глазнице в подготовке к новому глазу.</ntg.description.eye_connector>
+<ntg.causes.eye_connector>
+    [eye_connector_item] Использование Глазного коннектора на голове после кожных ретракторов
+</ntg.causes.eye_connector>
+<ntg.seealso.eye_connector>
+    [eye_transplant_surgery] Операция по пересадке глаза
+</ntg.seealso.eye_connector>
+
+<!-- Cornea Incision -->
+<ntg.title.cornea_incision>Разрез роговицы</ntg.title.cornea_incision>
+<ntg.description.cornea_incision>Третий шаг Операции по удалению катаракты; способен зажить самостоятельно, если оставить. Делается разрез в роговицу, позволяющий заменить линзу внутри биологического глаза.</ntg.description.cornea_incision>
+<ntg.causes.cornea_incision>
+    [scalpel] Использование скальпеля на голове после кожных ретракторов |
+    [multipurpose_scalpel] Использование Многофункционального скальпеля в режиме Хирургического разреза на голове после кожных ретракторов (Требуется Медицинский навык: 45. При провале вызовет от 0% до 25% Кровотечения и от 0% до 15% Повреждения глаза)
+</ntg.causes.cornea_incision>
+<ntg.effects.cornea_incision>
+    Размытое зрение и потеря навыков, масштабируется с силой аффликта |
+    [traumatic_shock] Травматический шок, если сделано без седации
+</ntg.effects.cornea_incision>
+<ntg.seealso.cornea_incision>
+    [cataract_surgery] Операция по удалению катаракты |
+    [organic_eye_lens] Органическая глазная линза |
+    [analgesia] Анальгезия
+</ntg.seealso.cornea_incision>
+
+<!-- Emulsification -->
+<ntg.title.emulsification>Эмульсификация</ntg.title.emulsification>
+<ntg.description.emulsification>Четвёртый шаг Операции по удалению катаракты. Никогда не заживает самостоятельно, требует применения новой линзы. Оригинальная мутная линза разбивается на куски и высасывается из глаза для замены на новую.</ntg.description.emulsification>
+<ntg.causes.emulsification>
+    [needle] Использование иглы на голове после Разреза роговицы (Требуется Медицинский навык: 50. При провале вызовет от 0% до 7% Повреждения глаза)
+</ntg.causes.emulsification>
+<ntg.effects.emulsification>
+    Размытое зрение и потеря навыков, масштабируется с силой аффликта |
+    [traumatic_shock] Травматический шок, если не рядом с Операционным столом
+</ntg.effects.emulsification>
+<ntg.seealso.emulsification>
+    [cataract_surgery] Операция по удалению катаракты |
+    [cornea_incision] Разрез роговицы |
+    [surgery_table] Операционный стол
+</ntg.seealso.emulsification>
+
+<!-- Eye Drops -->
+<ntg.title.eye_drops>Глазные капли</ntg.title.eye_drops>
+<ntg.description.eye_drops>Результат применения специализированных глазных капель к глазам, усиливающих естественную регенерацию.</ntg.description.eye_drops>
+<ntg.causes.eye_drops>
+    [eye_drop_application] Применение глазных капель
+</ntg.causes.eye_drops>
+<ntg.effects.eye_drops>
+    Увеличивает скорость естественного заживления глаза в 4 раза на время действия аффликта (хотя только на биологических глазах!)
+</ntg.effects.eye_drops>
+
+<!-- Laser Surgery -->
+<ntg.title.laser_surgery>Лазерная операция</ntg.title.laser_surgery>
+<ntg.description.laser_surgery>Результат применения навыка с помощью Инструмента для лазерной операции, сверхзаряжающего естественную регенерацию глаз.</ntg.description.laser_surgery>
+<ntg.causes.laser_surgery>
+    [laser_eye_surgery] Лазерная операция на глазу
+</ntg.causes.laser_surgery>
+<ntg.effects.laser_surgery>
+    Увеличивает скорость естественного заживления глаза в 16 раз на время действия аффликта (хотя только на биологических глазах!)
+</ntg.effects.laser_surgery>
+
+<!-- Eye Surgeries -->
+<!-- Eye Removal Surgery -->
+<ntg.title.eye_removal_surgery>Операция по удалению глаза</ntg.title.eye_removal_surgery>
+<ntg.description.eye_removal_surgery>Проверка медицинского навыка: 45.
+\nОперация по удалению одного или обоих глаз — живых, мёртвых или синтетических — для их замены, предотвращения дополнительного урона или для использования в Банке регенерации глаз. Если глаз(а) всё ещё жив(ы), он(и) будет(ут) помещён(ы) в инвентарь того, кто проводит операцию; в случае если инвентарь полон, он(и) будет(ут) брошен(ы) на землю!
+\nСледует проводить рядом с Операционным столом.</ntg.description.eye_removal_surgery>
+<ntg.steps.eye_removal_surgery>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить кожные ретракторы для нанесения Удерживаемых век |
+    [tweezers] 3. Применить пинцет для нанесения Выпученных глаз |
+    [multipurpose_scalpel] 4a. Применить Многофункциональный скальпель в режиме Хирургического разреза |
+    [scalpel] 4b. Применить скальпель
+</ntg.steps.eye_removal_surgery>
+<ntg.seealso.eye_removal_surgery>
+    [dead_eye] Мёртвый глаз |
+    [dead_eyes] Мёртвые глаза |
+    [eye_transplant_surgery] Операция по пересадке глаза |
+    [popped_eyes] Выпученные глаза |
+    [held_eyelids] Удерживаемые веки |
+</ntg.seealso.eye_removal_surgery>
+
+<!-- Eye Transplant Surgery -->
+<ntg.title.eye_transplant_surgery>Операция по пересадке глаза</ntg.title.eye_transplant_surgery>
+<ntg.description.eye_transplant_surgery>Проверка медицинского навыка: 45.
+\nОперация по дарованию пациенту нового глаза. Работает только если в глазнице ещё нет глаза — живого, мёртвого или синтетического. Удалите их сначала!
+</ntg.description.eye_transplant_surgery>
+<ntg.steps.eye_transplant_surgery>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить кожные ретракторы для нанесения Удерживаемых век |
+    [eye_connector_item] 3. Применить Глазной коннектор |
+    4. Вставить глаз по вашему выбору
+</ntg.steps.eye_transplant_surgery>
+<ntg.seealso.eye_transplant_surgery>
+    [held_eyelids] Удерживаемые веки |
+    [eye_removal_surgery] Операция по удалению глаза
+</ntg.seealso.eye_transplant_surgery>
+
+<!-- Cataract Surgery -->
+<ntg.title.cataract_surgery>Операция по удалению катаракты</ntg.title.cataract_surgery>
+<ntg.description.cataract_surgery>Проверка медицинского навыка: 50.
+\nОперация по удалению катаракты; убедитесь, что у вас готова Органическая глазная линза!</ntg.description.cataract_surgery>
+<ntg.steps.cataract_surgery>
+    [analgesia] 1a. Применить Анальгезию |
+    [anesthesia] 1b. Применить Анестезию |
+    [skin_retractors] 2. Применить кожные ретракторы для нанесения Удерживаемых век |
+    [multipurpose_scalpel] 3a. Применить Многофункциональный скальпель в режиме Хирургического разреза для нанесения Разреза роговицы |
+    [scalpel] 3b. Применить скальпель для нанесения Разреза роговицы |
+    [needle] 4. Применить иглу для нанесения Эмульсификации |
+    [organic_eye_lens] 5. Применить Органическую глазную линзу для удаления катаракты
+</ntg.steps.cataract_surgery>
+<ntg.seealso.cataract_surgery>
+    [held_eyelids] Удерживаемые веки |
+    [cornea_incision] Разрез роговицы |
+    [emulsification] Эмульсификация |
+    [eye_removal_surgery] Операция по удалению глаза
+</ntg.seealso.cataract_surgery>
+
+<!-- Cyber Eye Repair Surgery -->
+<ntg.title.cyber_eye_repair_surgery>Ремонт кибернетического глаза</ntg.title.cyber_eye_repair_surgery>
+<ntg.description.cyber_eye_repair_surgery>Проверка медицинского навыка: 30.
+\nОперация по ремонту кибернетических глаз.
+</ntg.description.cyber_eye_repair_surgery>
+<ntg.steps.cyber_eye_repair_surgery>
+    [analgesia] 1a. Применить обезболивающее |
+    [anesthesia] 1b. Применить анестезию |
+    [skin_retractors] 2. Применить расширитель, чтобы зафиксировать веки |
+    [tweezers] 3. Применить пинцет, чтобы вытащить глаза |
+    4. Применить FPGA-схему (восстанавливает 20% повреждений за применение)
+</ntg.steps.cyber_eye_repair_surgery>
+
+<!-- Lens Application Surgery -->
+<ntg.title.lens_application_surgery>Операция по установке линзы</ntg.title.lens_application_surgery>
+<ntg.description.lens_application_surgery>Проверка медицинского навыка: 30.
+\nОперация по установке специализированной линзы в глаз, способный её удерживать, открывающая совершенно новый взгляд на мир.
+</ntg.description.lens_application_surgery>
+<ntg.steps.lens_application_surgery>
+    [analgesia] 1a. Применить обезболивающее |
+    [anesthesia] 1b. Применить анестезию |
+    [skin_retractors] 2. Применить расширитель, чтобы зафиксировать веки |
+    [tweezers] 3. Применить пинцет, чтобы вытащить глаза |
+    4. Применить линзу на выбор
+</ntg.steps.lens_application_surgery>
+<ntg.seealso.lens_application_surgery>
+    [medical_lens] Медицинская линза |
+    [electrical_lens] Электрическая линза |
+    [night_vision_lens] Линза ночного видения |
+    [thermal_lens] Тепловизионная линза |
+    [enhanced_eye] Улучшенный глаз |
+    [cyber_eye] Кибернетический глаз
+</ntg.seealso.lens_application_surgery>
+
+<!-- Lens Removal Surgery -->
+<ntg.title.lens_removal_surgery>Операция по удалению линзы</ntg.title.lens_removal_surgery>
+<ntg.description.lens_removal_surgery>Проверка медицинского навыка: 40.
+\nОперация по удалению специализированной линзы из глаза. Можно также просто удалить весь глаз.</ntg.description.lens_removal_surgery>
+<ntg.steps.lens_removal_surgery>
+    [analgesia] 1a. Применить обезболивающее |
+    [anesthesia] 1b. Применить анестезию |
+    [skin_retractors] 2. Применить расширитель, чтобы зафиксировать веки |
+    [tweezers] 3. Применить пинцет, чтобы вытащить глаза |
+    4. Применить отвёртку
+</ntg.steps.lens_removal_surgery>
+
+<!-- Laser Eye Surgery -->
+<ntg.title.laser_eye_surgery>Лазерная коррекция зрения</ntg.title.laser_eye_surgery>
+<ntg.description.laser_eye_surgery>Проверка медицинского навыка: 80.
+\nПродвинутая операция для усиления естественного заживления глаз. Работает только на биологических глазах.</ntg.description.laser_eye_surgery>
+<ntg.steps.laser_eye_surgery>
+    [analgesia] 1a. Применить обезболивающее |
+    [anesthesia] 1b. Применить анестезию |
+    [skin_retractors] 2. Применить расширитель, чтобы зафиксировать веки |
+    [laser_surgery_tool] 3. Применить лазерный хирургический инструмент
+</ntg.steps.laser_eye_surgery>
+
+<!-- Eye Drop Application-->
+<ntg.title.eye_drop_application>Применение глазных капель</ntg.title.eye_drop_application>
+<ntg.description.eye_drop_application>Процедура для усиления естественного заживления глаз. Работает только на биологических глазах.</ntg.description.eye_drop_application>
+<ntg.steps.eye_drop_application>
+    [eye_drops_item] 1. Применить глазные капли
+</ntg.steps.eye_drop_application>
+
+<!-- Eye Types -->
+<!-- Human Eye -->
+<ntg.title.human_eye>Человеческий глаз</ntg.title.human_eye>
+<ntg.description.human_eye>Обычный человеческий глаз — у всех их пара. Наверное.</ntg.description.human_eye>
+<ntg.effects.human_eye>
+    Позволяет видеть
+</ntg.effects.human_eye>
+
+<!-- Enhanced Eye -->
+<ntg.title.enhanced_eye>Улучшенный глаз</ntg.title.enhanced_eye>
+<ntg.description.enhanced_eye>Обычный человеческий глаз, улучшенный электрическими схемами и пластиком.</ntg.description.enhanced_eye>
+<ntg.effects.enhanced_eye>
+    Позволяет видеть |
+    [lens_application_surgery] Позволяет установить кибернетические линзы при помощи Операции по установке линзы |
+    Лучшая сопротивляемость повреждениям
+</ntg.effects.enhanced_eye>
+
+<!-- Cyber Eye -->
+<ntg.title.cyber_eye>Кибернетический глаз</ntg.title.cyber_eye>
+<ntg.description.cyber_eye>Дорогие синтетические глаза. Не могут быть повреждены телесными аффликтами, не могут заживать естественным путём. Устойчивы к водяному давлению и не требуют холодильника.</ntg.description.cyber_eye>
+<ntg.effects.cyber_eye>
+    Позволяет видеть лучше |
+    [lens_application_surgery] Позволяет установить кибернетические линзы при помощи Операции по установке линзы |
+    [cyber_repair_surgery] Должен ремонтироваться при помощи Операции по ремонту кибернетического глаза |
+    Высокая сопротивляемость повреждениям
+</ntg.effects.cyber_eye>
+
+<!-- Plastic Eye -->
+<ntg.title.plastic_eye>Пластиковый глаз</ntg.title.plastic_eye>
+<ntg.description.plastic_eye>Псевдоглаза для тех, кто слишком беден, чтобы позволить себе настоящие; хотя они устойчивы к водяному давлению и не требуют холодильника. Правда, расплавятся при контакте с огнём. Не заживают естественным путём и не повреждаются телесными аффликтами; невозможно отремонтировать!</ntg.description.plastic_eye>
+<ntg.effects.plastic_eye>
+    Пластиковое зрение (накладывает уникальный фильтр на экран)
+</ntg.effects.plastic_eye>
+
+<!-- Husk Eye -->
+<ntg.title.husk_eye>Глаз хаска</ntg.title.husk_eye>
+<ntg.description.husk_eye>Устойчивые к давлению глаза, извлечённые из Хаска; искажают зрение — но по крайней мере не заразят вас!</ntg.description.husk_eye>
+<ntg.effects.husk_eye>
+    Искажённое и размытое зрение
+</ntg.effects.husk_eye>
+
+<!-- Crawler Eye -->
+<ntg.title.crawler_eye>Глаз ползуна</ntg.title.crawler_eye>
+<ntg.description.crawler_eye>Устойчивые к давлению глаза, извлечённые из Ползуна; лучше подходят для условий с низкой освещённостью, хотя и с небольшой ценой.</ntg.description.crawler_eye>
+<ntg.effects.crawler_eye>
+    Сниженные навыки |
+    Лучшее зрение в темноте
+</ntg.effects.crawler_eye>
+
+<!-- Mudraptor Eye -->
+<ntg.title.mudraptor_eye>Глаз грязехвата</ntg.title.mudraptor_eye>
+<ntg.description.mudraptor_eye>Устойчивые к давлению глаза, извлечённые из Грязехвата; лучше подходят для условий с низкой освещённостью, хотя и с небольшой ценой. Выглядят как сама Европа.</ntg.description.mudraptor_eye>
+<ntg.effects.mudraptor_eye>
+    Сниженные навыки |
+    Лучшее зрение в темноте
+</ntg.effects.mudraptor_eye>
+
+<!-- Hammerhead Eye -->
+<ntg.title.hammerhead_eye>Глаз молотоглава</ntg.title.hammerhead_eye>
+<ntg.description.hammerhead_eye>Устойчивые к давлению и повреждениям глаза, извлечённые из Молотоголового; лучше подходят для условий с низкой освещённостью, хотя и с небольшой ценой.</ntg.description.hammerhead_eye>
+<ntg.effects.hammerhead_eye>
+    Сниженные навыки |
+    Лучшее зрение в темноте |
+    Лучшая сопротивляемость повреждениям
+</ntg.effects.hammerhead_eye>
+
+<!-- Watcher Eye -->
+<ntg.title.watcher_eye>Глаз наблюдателя</ntg.title.watcher_eye>
+<ntg.description.watcher_eye>Устойчивые к давлению глаза, извлечённые из Наблюдателя; лучше подходят для условий с низкой освещённостью, а их превосходное зрение повышает вашу склонность к выполнению задач. Однако может вызвать борьбу разума у вас и вашей команды.</ntg.description.watcher_eye>
+<ntg.effects.watcher_eye>
+    Повышенные навыки (на 25% больше) |
+    Лучшее зрение в темноте |
+    Может вызвать психоз
+</ntg.effects.watcher_eye>
+
+<!-- Latcher Eye -->
+<ntg.title.latcher_eye>Глаз зацепщика</ntg.title.latcher_eye>
+<ntg.description.latcher_eye>Устойчивые к давлению глаза, извлечённые из Зацепщика; лучше подходят для условий с низкой освещённостью и позволяют «чувствовать» живые существа сквозь стены.</ntg.description.latcher_eye>
+<ntg.effects.latcher_eye>
+    Лучшее зрение в темноте |
+    Лучшая сопротивляемость повреждениям |
+    Видеть живые существа сквозь стены, смутно 
+</ntg.effects.latcher_eye>
+
+<!-- Lens Types -->
+<!-- Medical Lens -->
+<ntg.title.medical_lens>Медицинская линза</ntg.title.medical_lens>
+<ntg.description.medical_lens>Продвинутая кибернетическая линза, используемая во время Операции по установке линзы для улучшения Улучшенных / Кибернетических глаз.
+\nДаёт 10 очков к медицинскому навыку и включает функцию сканера здоровья при установке:
+\n- Нажмите F, чтобы просканировать выбранную конечность в интерфейсе здоровья;
+\n- Нажмите F вне интерфейса здоровья, чтобы включить/выключить дальнобойную версию, позволяющую видеть аффликты на расстоянии.
+</ntg.description.medical_lens>
+<ntg.seealso.medical_lens>
+    [lens_application_surgery] Операция по установке линзы |
+    [cyber_eye] Кибернетический глаз |
+    [enhanced_eye] Улучшенный глаз
+</ntg.seealso.medical_lens>
+
+<!-- Electrical Lens -->
+<ntg.title.electrical_lens>Электрическая линза</ntg.title.electrical_lens>
+<ntg.description.electrical_lens>Продвинутая кибернетическая линза, используемая во время Операции по установке линзы для улучшения Улучшенных / Кибернетических глаз.
+\nДаёт 15 очков к электротехническому навыку и включает электрическое зрение. Нажмите F, чтобы включить/выключить.
+</ntg.description.electrical_lens>
+<ntg.seealso.electrical_lens>
+    [lens_application_surgery] Операция по установке линзы |
+    [cyber_eye] Кибернетический глаз |
+    [enhanced_eye] Улучшенный глаз
+</ntg.seealso.electrical_lens>
+
+<!-- Night Vision Lens -->
+<ntg.title.night_vision_lens>Линза ночного видения</ntg.title.night_vision_lens>
+<ntg.description.night_vision_lens>Продвинутая кибернетическая линза, используемая во время Операции по установке линзы для улучшения Улучшенных / Кибернетических глаз.
+\nВключает ночное видение. Нажмите F, чтобы включить/выключить.
+</ntg.description.night_vision_lens>
+<ntg.seealso.night_vision_lens>
+    [lens_application_surgery] Операция по установке линзы |
+    [cyber_eye] Кибернетический глаз |
+    [enhanced_eye] Улучшенный глаз
+</ntg.seealso.night_vision_lens>
+
+<!-- Thermal Lens -->
+<ntg.title.thermal_lens>Тепловизионная линза</ntg.title.thermal_lens>
+<ntg.description.thermal_lens>Продвинутая кибернетическая линза, используемая во время Операции по установке линзы для улучшения Улучшенных / Кибернетических глаз.
+\nДаёт 15 очков к навыку обращения с оружием и включает тепловизионное зрение. Нажмите F, чтобы включить/выключить.
+</ntg.description.thermal_lens>
+<ntg.seealso.thermal_lens>
+    [lens_application_surgery] Операция по установке линзы |
+    [cyber_eye] Кибернетический глаз |
+    [enhanced_eye] Улучшенный глаз
+</ntg.seealso.thermal_lens>
+
+<!-- Surgery Items -->
+<!-- Eye Connector -->
+<ntg.title.eye_connector_item>Соединитель для глаз (предмет)</ntg.title.eye_connector_item>
+<ntg.description.eye_connector_item>Используется в Операции по трансплантации глаза. Каждое применение может быть использовано для трансплантации 1 глаза, вмещает 4 применения.</ntg.description.eye_connector_item>
+<ntg.seealso.eye_connector_item>
+    [eye_transplant_surgery] Операция по трансплантации глаза
+</ntg.seealso.eye_connector_item>
+
+<!-- Organic Eye Lens -->
+<ntg.title.organic_eye_lens>Линза для органического глаза</ntg.title.organic_eye_lens>
+<ntg.description.organic_eye_lens>Заменяющая линза для использования в Операции по удалению катаракты.</ntg.description.organic_eye_lens>
+<ntg.seealso.organic_eye_lens>
+    [cataract_surgery] Операция по удалению катаракты
+</ntg.seealso.organic_eye_lens>
+
+<!-- Laser Surgery Tool -->
+<ntg.title.laser_surgery_tool>Лазерный хирургический инструмент</ntg.title.laser_surgery_tool>
+<ntg.description.laser_surgery_tool>Проверка медицинского навыка: 80.
+\nПродвинутый ручной хирургический инструмент для усиления процесса заживления. Вызовет серьёзное повреждение глаза при неправильном применении и потребляет много энергии.</ntg.description.laser_surgery_tool>
+<ntg.seealso.laser_surgery_tool>
+    [laser_eye_surgery] Лазерная коррекция зрения
+</ntg.seealso.laser_surgery_tool>
+
+<!-- Advanced Eyeball Extraction Device -->
+<ntg.title.the_spoon>Продвинутое устройство для извлечения глазного яблока</ntg.title.the_spoon>
+<ntg.description.the_spoon>Высокотехнологичный инструмент для извлечения глазного яблока из мёртвых существ; хотя это может повредить их.
+\nЕсли вы пытаетесь скрафтить это, в фабрикаторе оно называется «Ложка».
+</ntg.description.the_spoon>
+
+<!-- Eye Drops -->
+<ntg.title.eye_drops_item>Глазные капли</ntg.title.eye_drops_item>
+<ntg.description.eye_drops_item>Проверка медицинского навыка: Нет.
+\nИспользуются для ускорения заживления глаз при нанесении на глаза. Не работает на синтетических глазах.
+</ntg.description.eye_drops_item>
+<ntg.seealso.eye_drops_item>
+    [eye_drop_application] Применение глазных капель
+</ntg.seealso.eye_drops_item>
+
+<!-- Other Items -->
+<!-- Corrective Glasses-->
+<ntg.title.corrective_glasses>Корректирующие очки</ntg.title.corrective_glasses>
+<ntg.description.corrective_glasses>Комплект корректирующих очков, помогающих компенсировать недостатки повреждения глаз, катаракты или несовпадающих глаз. Они не лечат аффликт, только нейтрализуют эффекты.</ntg.description.corrective_glasses>
+<ntg.effects.corrective_glasses>
+    [blurred_vision] Предотвращает эффекты размытого зрения |
+    [mismatch] Предотвращает эффекты несовпадения
+</ntg.effects.corrective_glasses>
+
+<!-- Night Vision Goggles -->
+<ntg.title.night_vision_goggles>Очки ночного видения</ntg.title.night_vision_goggles>
+<ntg.description.night_vision_goggles>Комплект очков с питанием от батареи, улучшающих зрение в темноте.</ntg.description.night_vision_goggles>
+<ntg.effects.night_vision_goggles>
+    Позволяют видеть в темноте
+</ntg.effects.night_vision_goggles>
+
+<!-- Eye Regeneration Jar -->
+<ntg.title.eye_regeneration_jar>Банка для регенерации глаз</ntg.title.eye_regeneration_jar>
+<ntg.description.eye_regeneration_jar>Банка, наполненная специальной жидкостью, помогающей регенерировать биологические глаза. Не работает на синтетических глазах. Можно поставить и вмещает два глаза.</ntg.description.eye_regeneration_jar>
+<ntg.effects.eye_regeneration_jar>
+    Медленно исцеляет хранящийся глаз (или глаза) со временем
+</ntg.effects.eye_regeneration_jar>
+</Infotexts>

@@ -1,0 +1,144 @@
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+<!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Additional pages + overrides for Surgery Plus -->
+<!-- See the main XML file for formatting -->
+
+<!-- Surgical Infection -->
+<ntg.title.surgical_infection>Хирургическая инфекция</ntg.title.surgical_infection>
+<ntg.description.surgical_infection>Хирургическая инфекция — это механика, которая вызывает сепсис в зависимости от того, насколько стерильна среда пациента во время операции.
+\nСледующие факторы увеличивают стерильность:
+- Пациент носит хирургическое покрывало (+100 базовой стерильности);
+- Находящиеся рядом персонажи, которые носят хирургическую маску и одежду хирурга (зависит от расстояния до пациента);
+- Наличие навыка хирургии (стерильность рассчитывается по формуле: 10 + навык хирургии / 5);
+- Наличие мази на разрезе от операции (+50 стерильности) от антибиотической мази / антисептика.
+\nСледующие факторы увеличивают стерильность:
+- Пациент не носит хирургическое покрывало (стерильность устанавливается на минимум)
+- Находящиеся рядом персонажи, которые не носят хирургическую маску и одежду хирурга (зависит от расстояния до пациента).
+</ntg.description.surgical_infection>
+<ntg.effects.surgical_infection>
+    [sepsis] Сепсис, если пациента оперируют в нестерильных условиях (10% шанс каждые 2 секунды при минимальной стерильности)
+</ntg.effects.surgical_infection>
+<ntg.seealso.surgical_infection>
+    [surgery_incision] Разрез от операции |
+    [surgical_drapes] Хирургическая простыня |
+    [surgical_mask] Хирургическая маска |
+    [surgeon_clothes] Одежда хирурга |
+    [ointmented] Мазь (состояние)
+</ntg.seealso.surgical_infection>
+
+<!-- Surgical Drapes -->
+<ntg.title.surgical_drapes>Хирургическая простыня</ntg.title.surgical_drapes>
+<ntg.description.surgical_drapes>Хирургическая простыня — это предмет одежды, используемый для увеличения стерильности носителя и, таким образом, снижения риска хирургической инфекции.</ntg.description.surgical_drapes>
+<ntg.effects.surgical_drapes>
+    +100 базовой стерильности |
+    [traumatic_shock] -50% получения травматического шока во время ношения
+</ntg.effects.surgical_drapes>
+<ntg.seealso.surgical_drapes>
+    [surgical_mask] Хирургическая маска |
+    [surgeon_clothes] Одежда хирурга |
+    [surgical_infection] Хирургическая инфекция
+</ntg.seealso.surgical_drapes>
+
+<!-- Surgical Mask -->
+<ntg.title.surgical_mask>Хирургическая маска</ntg.title.surgical_mask>
+<ntg.description.surgical_mask>Хирургическая маска это носимый предмет, который увеличивает стерильность при ношении, снижая риск хирургической инфекции.</ntg.description.surgical_mask>
+<ntg.effects.surgical_mask>
+    [open_wounds] -10% рваных ран во время ношения |
+    [bleeding] -20% кровотечения во время ношения
+</ntg.effects.surgical_mask>
+<ntg.seealso.surgical_mask>
+    [surgical_drapes] Хирургическая простыня |
+    [surgeon_clothes] Одежда хирурга |
+    [surgical_infection] Хирургическая инфекция
+</ntg.seealso.surgical_mask>
+
+<!-- Surgeon Clothes -->
+<ntg.title.surgeon_clothes>Хирургический костюм</ntg.title.surgeon_clothes>
+<ntg.description.surgeon_clothes>Хирургический костюм это носимый предмет, который увеличивает стерильность при ношении, снижая риск хирургической инфекции.</ntg.description.surgeon_clothes>
+<ntg.effects.surgeon_clothes>
+    [internal_wounds] -10% тупой травмы во время ношения |
+    [open_wounds] -10% рваных ран во время ношения |
+    [open_wounds] -10% укусов во время ношения
+</ntg.effects.surgeon_clothes>
+<ntg.seealso.surgeon_clothes>
+    [surgical_drapes] Хирургическая простыня |
+    [surgical_mask] Хирургическая маска |
+    [surgical_infection] Хирургическая инфекция
+</ntg.seealso.surgeon_clothes>
+
+<!-- Mannitol Plus -->
+<ntg.title.mannitol_plus>Маннитол Плюс</ntg.title.mannitol_plus>
+<ntg.description.mannitol_plus>Маннитол Плюс — это предмет таланта, то есть он требует крафта через талант. Класс Хирурга имеет доступ к этому таланту.
+\nПосле введения он лечит 30% нейротравмы в течение 10 секунд; даже если пациент нестабилен (кровяное давление не в пределах нормы) и накладывает состояние Маннитол без нанесения повреждений органам.
+</ntg.description.mannitol_plus>
+<ntg.effects.mannitol_plus>
+    [neurotrauma] Лечит 30% нейротравмы за 10 секунд
+</ntg.effects.mannitol_plus>
+<ntg.seealso.mannitol_plus>
+    [mannitol] Маннитол
+</ntg.seealso.mannitol_plus>
+
+<!-- Experimental Treatment -->
+<ntg.section.positiveeffects>Возможные положительные эффекты</ntg.section.positiveeffects>
+<ntg.section.negativeeffects>Возможные отрицательные эффекты</ntg.section.negativeeffects>
+
+<ntg.title.experimental_treatment>Экспериментальное лечение</ntg.title.experimental_treatment>
+<ntg.description.experimental_treatment>Экспериментальное лечение — это предмет таланта, то есть он требует крафта через талант. Класс Хирурга имеет доступ к этому таланту.
+\nОн может случайным образом давать эффекты; как положительные, так и отрицательные (хотя, как правило, дает больше положительных, чем отрицательных). Теоретически, если вам достаточно повезет, вы можете получить бесконечное количество эффектов от этого предмета; представьте, что вы подбрасываете монету и останавливаетесь только при выпадении решки. Каждый раз, когда выпадает орел, вы получаете дополнительный эффект от этого предмета.
+</ntg.description.experimental_treatment>
+<ntg.positiveeffects.experimental_treatment>
+    Бодрость (случайно, от 200% до 400% силы) |
+    Гиперактивность (случайно, от 200% до 400% силы) |
+    Сопротивление психозу (случайно, от 200% до 400% силы) |
+    Сопротивление заражению хаском (случайно, от 200% до 400% силы) |
+    Сопротивление параличу (случайно, от 300% до 600% силы) |
+    [analgesia] Анальгезия (случайно, от 20% до 100% силы) |
+    [anesthesia] Анестезия (случайно, от 1% до 100% силы) |
+    [ointmented] Мазь (случайно, от 20% до 100% силы) |
+    [combat_stimulant] Боевой стимулятор (случайно, от 30% до 100% силы) |
+    Стабилизация давления (случайно, от 30% до 100% силы) |
+    «Полное исцеление», лечит от 20% до 100% внутренних / открытых ран, повреждений органов из ванильной версии, нейротравмы, кровопотери и полностью излечивает сепсис
+</ntg.positiveeffects.experimental_treatment>
+<ntg.negativeeffects.experimental_treatment>
+    [open_wounds] Открытые раны (от 5% до 20%) |
+    [internal_wounds] Внутренние раны (от 5% до 20%) |
+    [bleeding] Кровотечение (от 30% до 80%) |
+    Оглушение (от 2 до 15 секунд)
+</ntg.negativeeffects.experimental_treatment>
+<ntg.seealso.experimental_treatment>
+    [vanilla_organ_damage] Повреждения органов из ванильной версии |
+    [neurotrauma] Нейротравма |
+    [blood_loss] Кровопотеря |
+    [sepsis] Сепсис
+</ntg.seealso.experimental_treatment>
+
+<!-- Triage Card -->
+<ntg.title.triage_card>Карта сортировки</ntg.title.triage_card>
+<ntg.description.triage_card>Карты сортировки используются для маркировки пациентов в зависимости от тяжести травм. Существует два типа карт сортировки: ручные и автоматические. Ручная карта сортировки работает следующим образом:
+\n- Прикрепление карты сортировки к ногам пометит ее как зеленую, что означает, что пациент получил минимальные травмы и, скорее всего, выживет.
+\n- Прикрепление карты сортировки к рукам пометит ее как желтую, что означает, что пациент ранен и, скорее всего, умрет, если лечение будет отложено на длительный период времени.
+\n- Прикрепление карты сортировки к торсу пометит ее как красную, что означает, что пациент получил критические травмы и нуждается в немедленной помощи.
+\n- Прикрепление карты сортировки к голове пометит ее как черную, что означает, что пациент либо мертв, либо находится в состоянии, близком к смерти.
+\n Автоматические карты сортировки оценивают состояние здоровья жертвы на основе их заболеваний и жизненной силы, и дают оценку зеленой, желтой, красной или черной.
+</ntg.description.triage_card>
+
+<!-- Brain Jar -->
+<ntg.title.brain_jar>Банка для мозга</ntg.title.brain_jar>
+<ntg.description.brain_jar>Банка для мозга — это предмет таланта, доступный для Хирурга.
+\nВ отличие от охлаждаемых контейнеров, которые могут только замедлить разложение мозга, но не полностью остановить его, банка для мозга может не только хранить мозг бесконечно долго, но и медленно восстанавливать его со скоростью 1% каждые 10 секунд.
+</ntg.description.brain_jar>
+
+<!-- Artificial Brain -->
+<ntg.title.artificial_brain>Искусственный мозг</ntg.title.artificial_brain>
+<ntg.description.artificial_brain>Заменяет мозг пациента при использовании после его удаления. Защищает от получения нейротравмы из-за отсутствия мозга. Больше ничего не делает.</ntg.description.artificial_brain>
+
+<!-- Medical Misconduct -->
+<ntg.title.medical_misconduct>"Врачебные ошибки"</ntg.title.medical_misconduct>
+<ntg.description.medical_misconduct>Книга навыков, которая дает навык хирургии и/или медицины при прочтении.
+\nПри включенном навыке хирургии в конфиге:
+- +8 к навыку хирургии
+- +2 к навыку медицины
+\nПри отключенном навыке хирургии в конфиге:
+- +8 к навыку медицины
+</ntg.description.medical_misconduct>
+</Infotexts>
