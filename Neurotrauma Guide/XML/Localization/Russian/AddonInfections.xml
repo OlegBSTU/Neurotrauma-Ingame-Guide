@@ -1692,10 +1692,10 @@ For viral vaccines, a sample, tonic liquid, and saline will craft 2.
 \nПротивокашлевое средство, используемое для подавления кашля. Действует как лекарство для вирусных инфекций, снижая симптомы, замедление и шанс распространения.</ntg.description.dextromethorphan>
 <ntg.applicationsuccess.dextromethorphan>
     8% Декстрометорфан (применяется 10 секунд, 80% всего)
-</ntg.applicationsuccess.dextromеторфан>
+</ntg.applicationsuccess.dextromethorphan>
 <ntg.applicationfailed.dextromethorphan>
     6% Декстрометорфан (применяется 10 секунд, 60% всего)
-</ntg.applicationfailed.dextрометорфан>
+</ntg.applicationfailed.dextromethorphan>
 <ntg.effects.dextromethorphan>
     [nausea] Тошнота (выше 80%) |
     Психоз (выше 90%)
