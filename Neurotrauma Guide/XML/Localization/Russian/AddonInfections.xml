@@ -22,7 +22,874 @@ NT Infections начинается так же. Когда рана не дез�
     - Наличие Воспаления
     - Наличие Абсцессов
     - Наличие Гнойных Выделений
-Инфекции конечностей могут варьироваться от умеренных до тяжелых и также могут вызывать другие заболевания.
+Инфекции конечностей могут варьироваться от умеренных до тяжелых и также могут вызывать другие заболевания.<Infotexts language="English" nowhitespace="false">
+
+<!-- Addon for NT: Infections -->
+<ntg.section.susceptible>Susceptible To</ntg.section.susceptible>
+<ntg.section.requirements>Prerequisites</ntg.section.requirements>
+<ntg.section.effectiveness>Effective Against</ntg.section.effectiveness>
+<ntg.section.possiblecauses>Potentially Caused By</ntg.section.possiblecauses>
+<ntg.section.stepsbacterial>Steps (Bacterial Sample)</ntg.section.stepsbacterial>
+<ntg.section.stepsviral>Steps (Viral Sample)</ntg.section.stepsviral>
+
+<!-- Information Pages -->
+<!-- General information useful to know. Unique search category --> 
+
+<!-- How do the new infections work? // Also contains OTHER CHANGES from the Trello. -->
+<ntg.title.information_infection_changes>How the New Infections Work</ntg.title.information_infection_changes>
+<ntg.description.information_infection_changes>Base Neurotrauma Infections:
+In base Neurotrauma, infections develop from wounds, which are limb specific. After a certain point, Infected WoundsAny bodypart lead to Sepsis, which Broad-spectrum Antibiotics trivially cures. NT Infections changes this by adding several new infections and changing how infections progress.
+\nNew Infections:
+NT Infections starts the same way. When a wound is not disinfected or bandaged, it can become infected. Infected wounds have a chance of developing into a proper limb infection. The infection will build up and have a chance to enter the bloodstream, causing a blood infection. Severe enough infections may then cause sepsis.
+\nThere are several signs/symptoms that a limb is infected:
+    - Presence of Inflammation
+    - Presence of Abscesses
+    - Presence of Purulent Drainage(s)
+Limb infections may vary from moderate to severe and may also cause other diseases.
+\nSome additional changes not covered in this guide include:
+    - Radiation sickness compromising immunity after a certain point
+    - Sepsis will lower blood pressure
+    - Existing afflictions may or may not have new symptoms
+    - Sepsis gain halved if Immunityis below 85%
+</ntg.description.information_infection_changes>
+<ntg.seealso.information_infection_changes>
+    [inflammation] Inflammation |
+    [abscess] Abscess |
+    [purulent_drainage] Purulent Drainage |
+    [sepsis] Sepsis |
+    [immunity] Immunity |
+    [broad_spectrum_antibiotics] Broad-Spectrum Antibiotics |
+    [information_fighting_infections] Fighting Off Infections |
+</ntg.seealso.information_infection_changes>
+
+<!-- Fighting off infections -->
+<ntg.title.information_fighting_infections>Fighting Off Infections</ntg.title.information_fighting_infections>
+<ntg.description.information_fighting_infections>Your only defense against infections is your immune system. If your character's immunity is compromised, you will most likely die to any infection.
+\nLimb Infections:
+Your body's defense starts at the limb. When a limb is infected, an immune response builds up. The speed at which the immune response increases depends on your character's Immunity stat. An immunity level of greater than 50% is required to fight off infections.
+\nBeating an infection requires that the immune response surpasses the speed of the infection. When the immune response is high enough, the infection will begin to slow down and eventually clear up. Limb infections vary from moderate to severe. Some cases may not require antibiotics, but most will.
+\nBlood Infections:
+If a limb infection reaches a point where it enters the blood, your body will have a systemic response to the infection with a similar system mentioned above, albeit with more risk of developing Sepsis or other diseases, and is not limb specific.
+\nBlood infections may be caused by multiple strains, though some strains may contribute more to bacteremia than others. Use a Sampler Tool with no sample to see which strains are in the blood. Typically, different strains will compete with each other for resources, causing a previously dominant strain to contribute less to the blood infection.
+</ntg.description.information_fighting_infections>
+<ntg.seealso.information_fighting_infections>
+    [immunity] Immunity | 
+    [sepsis] Sepsis |
+    [sampler_tool] Sampler Tool
+</ntg.seealso.information_fighting_infections>
+
+<!-- Using Antibiotics -->
+<ntg.title.information_using_antibiotics>Using Antibiotics</ntg.title.information_using_antibiotics>
+<ntg.description.information_using_antibiotics>Antibiotics are the primary way of treating bacterial infections. Certain infections will respond better to specific antibiotics. All antibiotics will cause Kidney Damage and Liver Damage, and certain antibiotics cause more organ damage than others. Giving antibiotics without enough medical skill will cause further organ damage.
+\nCaveats:
+It is important to note that antibiotics work primarily with the immune system, which means that they do not fight infections themselves, but rather slow down the infection to give the immune system an easier time dealing with it. Stacking different antibiotics will provide greater effect but with diminishing returns.
+\nAntibiotics:
+There are 7 different antibiotics (not including broad-spectrum antibiotics), each with their own strengths. Refer to their pages for more information. Each infection page will also link to their respective antibiotics; their percentages refer to how much an antibiotic slows down a certain bacterial strain
+</ntg.description.information_using_antibiotics>
+<ntg.seealso.information_using_antibiotics>
+    [unasyn] Unasyn |
+    [augmentin] Augmentin |
+    [vancomycin] Vancomycin |
+    [gentamicin] Gentamicin |
+    [cotrimoxazole] Co-trimoxazole |
+    [primaxin] Primaxin |
+    [ceftazidime] Ceftazidime
+</ntg.seealso.information_using_antibiotics>
+
+<!-- Diagnosing Bacterial Infections -->
+<ntg.title.information_diagnosing_bacteria>Diagnosing Bacterial Infections</ntg.title.information_diagnosing_bacteria>
+<ntg.description.information_diagnosing_bacteria>The ways to diagnose bacterial infections vary depending on what kind of infection it is;
+\nBlood Infections:
+Blood infections can be diagnosed by using a Sampler Tool anywhere in the health interface; easy, right?
+Using a Hematology Analyzer instead will show bacterial presence in blood, but will not be able to identify the strains.
+\nLimb Infections:
+To make a limb diagnosis, you will need a Culture Tube. Insert the Culture Tube into a Sampler Tool and use it in the health interface to grab a sample. The order at which it will attempt to take a sample is as follows:
+    - If the limb has a Purulent Drainage or Abscess, it will grab a pus sample;
+    - If the limb does not have a pus sample but it has Retracted Skin, it will grab a tissue sample;
+    - If there is no pus or tissue sample, it will grab a blood sample (which in turn will grab a random blood infection).
+\nThe Sample will be placed into your inventory or on the floor if your inventory is full.
+\nPlace this unknown sample inside of a Sample Analyzer to analyze it - though make sure the machine is plugged in and has power. It will return a sample that tells you which pathogen it is; if nothing is returned, the sample tested negative for an infection.
+</ntg.description.information_diagnosing_bacteria>
+<ntg.seealso.information_diagnosing_bacteria>
+    [sampler_tool] Sampler Tool |
+    [hematology_analyzer] Hematology Analyzer |
+    [sample_analyzer] Sample Analyzer |
+    [culture_tube] Culture Tube |
+    [purulent_drainage] Purulent Drainage |
+    [abscess] Abscess |
+    [retracted_skin] Retracted Skin |
+    [information_diagnosing_viruses] Communicable Diseases
+</ntg.seealso.information_diagnosing_bacteria>
+
+
+<!-- Communicable Diseases (viral infections) // IF NT SURGERY DISABLED -->
+<ntg.title.information_diagnosing_viruses>Communicable Diseases</ntg.title.information_diagnosing_viruses>
+<ntg.description.information_diagnosing_viruses>Aside from bacterial infections, one can develop viral infections that are spread by other people.
+\nTransmission:
+These infections are often airborne, spreading by close proximity between people. Preventative measures include social distancing and wearing Diving gear. Diving Gear should be worn by both infected and healthy individuals.
+\nProcess:
+Viral infections work on a similar system to bacterial infections, with viral antibodies building up in response to an infection. Once the antibody level builds up high enough, the viral level will go down, albeit very slowly.
+\nTreatment:
+Treatment for viral infections differs from bacterial ones in that they only work effectively when used as early as possible. By using treatment early, the duration of an infection will be shortened and severity reduced. There are also different medications that will alleviate symptoms of viral infections. However, they do not directly treat the infection.
+\nDiagnosing:
+Diagnosing viral infections requires a Sampler Tool and Viral Transport Medium. Collect a sample anywhere on the health interface and use it in a Sample Analyzer, just like a bacterial infection.
+</ntg.description.information_diagnosing_viruses>
+<ntg.seealso.information_diagnosing_viruses>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [sampler_tool] Sampler Tool |
+    [viral_transport_medium] Viral Transport Medium |
+    [sample_analyzer] Sample Analyzer |
+</ntg.seealso.information_diagnosing_viruses>
+
+<!-- Communicable Diseases (viral infections) // IF NT SURGERY ENABLED -->
+<ntg.title.information_diagnosing_viruses_ntsp>Communicable Diseases</ntg.title.information_diagnosing_viruses_ntsp>
+<ntg.description.information_diagnosing_viruses_ntsp>Aside from bacterial infections, one can develop viral infections that are spread by other people.
+\nTransmission:
+These infections are often airborne, spreading by close proximity between people. Preventative measures include social distancing and wearing a Surgical Mask. Diving gear will also work. Masks should be worn by both infected and healthy individuals.
+\nProcess:
+Viral infections work on a similar system to bacterial infections, with viral antibodies building up in response to an infection. Once the antibody level builds up high enough, the viral level will go down, albeit very slowly.
+\nTreatment:
+Treatment for viral infections differs from bacterial ones in that they only work effectively when used as early as possible. By using treatment early, the duration of an infection will be shortened and severity reduced. There are also different medications that will alleviate symptoms of viral infections. However, they do not directly treat the infection.
+\nDiagnosing:
+Diagnosing viral infections requires a Sampler Tool and Viral Transport Medium. Collect a sample anywhere on the health interface and use it in a Sample Analyzer, just like a bacterial infection.
+</ntg.description.information_diagnosing_viruses_ntsp>
+<ntg.seealso.information_diagnosing_viruses_ntsp>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [sampler_tool] Sampler Tool |
+    [viral_transport_medium] Viral Transport Medium |
+    [sample_analyzer] Sample Analyzer |
+    [surgical_mask] Surgical Mask
+</ntg.seealso.information_diagnosing_viruses_ntsp>
+
+<!-- Vaccines (Information) -->
+<ntg.title.information_vaccines>Vaccine Information</ntg.title.information_vaccines>
+<ntg.description.information_vaccines>A useful tool to preemptively fight off an infection. Vaccines give your body a massive advantage during the defense stage.
+\nBacterial Vaccines:
+For bacterial vaccines, you can craft it by using 3 confirmed samples, anaparalyzant, and saline to make 2 vaccines.
+\nViral Vaccines:
+For viral vaccines, a sample, tonic liquid, and saline will craft 2.
+\nImportant Considerations:
+- Vaccines do not render patients completely immune to an infection, but instead provide a bonus for fighting against it. Vaccines do not work if immunity is compromised.
+- Vaccines will lose efficacy over time, diminishing its effects on fighting against an infection. Consider keeping vaccinations up to date.
+- Vaccines do not work immediately and must require some time before becoming fully effective.
+- Most of the vaccines in this mod are completely fictional
+</ntg.description.information_vaccines>
+<ntg.seealso.information_vaccines>
+    [vaccines] Vaccines (Item)
+</ntg.seealso.information_vaccines>
+
+<!-- Bacterial Infections -->
+
+<!-- Streptococcal Infection -->
+<ntg.title.streptococcal_infection>Streptococcal Infection</ntg.title.streptococcal_infection>
+<ntg.description.streptococcal_infection>Caused by gram-positive bacteria from the genus streptococcus. These germs were first brought over by Earthling colonizers during the colonization of Europa. Streptococcal infections are quite common (4 in 17 cases).
+\nPus is usually yellowish in presentation.
+</ntg.description.streptococcal_infection>
+<ntg.susceptible.streptococcal_infection>
+    [vancomycin] Vancomycin (95% Effective) |
+    [augmentin] Augmentin (93.8% Effective) |
+    [unasyn] Unasyn (90% Effective) |
+    [primaxin] Primaxin (80% Effective) |
+    [broad-spectrum] Broad-spectrum (75% Effective) |
+    [cotrimoxazole] Co-trimoxazole (66.7% Effective) |
+    [ceftazidime] Ceftazidime (20% Effective)
+</ntg.susceptible.streptococcal_infection>
+<ntg.effects.streptococcal_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.streptococcal_infection>
+<ntg.seealso.streptococcal_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.streptococcal_infection>
+
+<!-- Staphylococcal Infection -->
+<ntg.title.staphylococcal_infection>Staphylococcal Infection</ntg.title.staphylococcal_infection>
+<ntg.description.staphylococcal_infection>Caused by the gram-positive bacteria, staphylococcus aureus. Originally brought to Europa by earthling colonizers, these infections are the most common when dealing with injuries (6 in 17 cases).
+\nPus is usually yellowish in presentation.
+</ntg.description.staphylococcal_infection>
+<ntg.susceptible.staphylococcal_infection>
+    [vancomycin] Vancomycin (98% Effective) |
+    [augmentin] Augmentin (90% Effective) |
+    [cotrimoxazole] Co-trimoxazole (80% Effective) |
+    [unasyn] Unasyn (75% Effective) |
+    [primaxin] Primaxin (75% Effective) |
+    [gentamicin] Gentamicin (10% Effective)
+</ntg.susceptible.staphylococcal_infection>
+<ntg.effects.staphylococcal_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.staphylococcal_infection>
+<ntg.seealso.staphylococcal_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.staphylococcal_infection>
+
+<!-- MRSA Infection -->
+<ntg.title.mrsa_infection>MRSA Infection</ntg.title.mrsa_infection>
+<ntg.description.mrsa_infection>A strain of staphylococcus aureus that has gained resistance to many antibiotics due to extensive antibiotic usage. It is impervious to many penicillin-type antibiotics.
+\nPus is usually yellowish in presentation.
+</ntg.description.mrsa_infection>
+<ntg.requirements.mrsa_infection>
+    [staphylococcal_infection] (Initial Infection) |
+    [methicillin_resistance_risk] Methicillin-resistance risk (above 0%)
+</ntg.requirements.mrsa_infection>
+<ntg.susceptible.mrsa_infection>
+    [vancomycin] Vancomycin (98% Effective) |
+    [cotrimoxazole] Co-trimoxazole (80% Effective) |
+    [gentamicin] Gentamicin (10% Effective)
+</ntg.susceptible.mrsa_infection>
+<ntg.effects.mrsa_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.mrsa_infection>
+<ntg.seealso.mrsa_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.mrsa_infection>
+
+<!-- Pseudomonas Infection -->
+<ntg.title.pseudomonas_infection>Pseudomonas Infection</ntg.title.pseudomonas_infection>
+<ntg.description.pseudomonas_infection>Caused by gram-negative bacteria from the genus pseudomonas. These germs are naturally resistant to many different antibiotics, making it difficult to treat. Pseudomonas infections are rare (1 in 17 cases).
+\nPus is usually green in presentation.
+</ntg.description.pseudomonas_infection>
+<ntg.susceptible.pseudomonas_infection>
+    [gentamicin] Gentamicin (95% Effective) |
+    [ceftazidime] Ceftazidime (87.5% Effective) |
+    [primaxin] Primaxin (80% Effective)
+</ntg.susceptible.pseudomonas_infection>
+<ntg.effects.pseudomonas_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.pseudomonas_infection>
+<ntg.seealso.pseudomonas_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.pseudomonas_infection>
+
+<!-- Provobacter Infection -->
+<ntg.title.provobacter_infection>Provobacter Infection</ntg.title.provobacter_infection>
+<ntg.description.provobacter_infection>Caused by gram-negative bacteria from the genus provobacter. These germs are native to the Europan biosphere and can be found just about anywhere in the sea. Provobacter infections are quite common (4 in 17 cases).
+\nPus is usually yellowish in presentation.
+</ntg.description.provobacter_infection>
+<ntg.susceptible.provobacter_infection>
+    [gentamicin] Gentamicin (95% Effective) |
+    [ceftazidime] Ceftazidime (80% Effective) |
+    [primaxin] Primaxin (66.7% Effective) |
+    [augmentin] Augmentin (60% Effective) |
+    [unasyn] Unasyn (40% Effective) 
+</ntg.susceptible.provobacter_infection>
+<ntg.effects.provobacter_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.provobacter_infection>
+<ntg.seealso.provobacter_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.provobacter_infection>
+
+<!-- Aeroganella Infection -->
+<ntg.title.aeroganella_infection>Aeroganella Infection</ntg.title.aeroganella_infection>
+<ntg.description.aeroganella_infection>Caused by gram-negative bacteria from the genus aeroganella. They are native to the Europan biosphere. Aeroganella infections are fairly uncommon (2 in 17 cases).
+\nPus is usually greenish in presentation.
+</ntg.description.aeroganella_infection>
+<ntg.susceptible.aeroganella_infection>
+    [gentamicin] Gentamicin (95% Effective) |
+    [ceftazidime] Ceftazidime (75% Effective) |
+    [cotrimoxazole] Co-trimoxazole (60% Effective) |
+    [vancomycin] Vancomycin (50% Effective) |
+    [primaxin] Primaxin (50% Effective) |
+    [augmentin] Augmentin (25% Effective) |
+    [unasyn] Unasyn (20% Effective)
+</ntg.susceptible.aeroganella_infection>
+<ntg.effects.aeroganella_infection>
+    Blood Infection (above 50%) |
+    [inflammation] Inflammation (above 0%) |
+    [purulent_drainage] Purulent Drainage (above 25% with a wound) |
+    [abscess] Abscess (above 25% without a wound) |
+    [pneumonia] Pneumonia (above 0% Blood Infection)
+</ntg.effects.aeroganella_infection>
+<ntg.seealso.aeroganella_infection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+</ntg.seealso.aeroganella_infection>
+
+<!-- Antibiotics -->
+
+<!-- Unasyn -->
+<ntg.title.unasyn>Unasyn</ntg.title.unasyn>
+<ntg.description.unasyn>Medical skill check: 30
+\nA fixed-dose, aminopenicillin combination antibiotic of ampicillin and beta-lactamase inhibitor sulbactam. The use of sulbactam allows it to be effective against Staphylococcal Infection and other beta-lactamase producing bacteria.
+</ntg.description.unasyn>
+<ntg.effectiveness.unasyn>
+    [streptococcal_infection] Streptococcal Infection (90% Effective) |
+    [staphylococcal_infection] Staphylococcal Infection (75% Effective) |
+    [provobacter_infection] Provobacter Infection (40% Effective) |
+    [aeroganella_infection] Aeroganella Infection (20% Effective)
+</ntg.effectiveness.unasyn>
+<ntg.applicationsuccess.unasyn>
+    50% Unasyn (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 12.5% Kidney Damage (over 250 seconds) |
+    [liver_damage] 10% Liver Damage (over 250 seconds) |
+    [methicillin_resistance_risk] 20% Methicillin-resistance risk (takes 10 seconds to apply, lasts 2000 seconds)
+</ntg.applicationsuccess.unasyn>
+<ntg.applicationfailed.unasyn>
+    [liver_damage] 5% Liver Damage |
+    [methicillin_resistance_risk] 30% Methicillin-resistance risk (takes 10 seconds to apply, lasts 3000 seconds)
+</ntg.applicationfailed.unasyn>
+<ntg.seealso.unasyn>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.unasyn>
+
+<!-- Augmentin -->
+<ntg.title.augmentin>Augmentin</ntg.title.augmentin>
+<ntg.description.augmentin>Medical skill check: 30
+\nAn aminopenicillin combination drug of amoxicillin and clavulanic acid. Its use of clavulanic acid as a beta-lactamase inhibitor allows it to be effective against most beta-lactamase producing bacteria.
+</ntg.description.augmentin>
+<ntg.effectiveness.augmentin>
+[streptococcal_infection] Streptococcal Infection (93.8% Effective) |
+[staphylococcal_infection] Staphylococcal Infection (90% Effective) |
+[provobacter_infection] Provobacter Infection (60% Effective) |
+[aeroganella_infection] Aeroganella Infection (25% Effective)
+</ntg.effectiveness.augmentin>
+<ntg.applicationsuccess.augmentin>
+50% Augmentin (takes 10 seconds to apply, lasts 250 seconds) |
+[kidney_damage] 15% Kidney Damage (over 250 seconds) |
+[liver_damage] 10% Liver Damage (over 250 seconds) |
+[methicillin_resistance_risk] 20% Methicillin-resistance risk (takes 10 seconds to apply, lasts 2000 seconds)
+</ntg.applicationsuccess.augmentin>
+<ntg.applicationfailed.augmentin>
+[liver_damage] 5% Liver Damage (takes 10 seconds to apply) |
+[methicillin_resistance_risk] 30% Methicillin-resistance risk (takes 10 seconds to apply, lasts 3000 seconds)
+</ntg.applicationfailed.augmentin>
+<ntg.seealso.augmentin>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.augmentin>
+
+<!-- Vancomycin -->
+<ntg.title.vancomycin>Vancomycin</ntg.title.vancomycin>
+<ntg.description.vancomycin>Medical skill check: 50
+\nA glycopeptide antibiotic that is very effective against most gram-positive bacteria. It is the most common front line defense against MRSA Infection.
+</ntg.description.vancomycin>
+<ntg.effectiveness.vancomycin>
+    [staphylococcal_infection] Staphylococcal Infection (98% Effective) |
+    [mrsa_infection] MRSA Infection (98% Effective) |
+    [streptococcal_infection] Streptococcal Infection (95% Effective) |
+    [aeroganella_infection] Aeroganella Infection (50% Effective)
+</ntg.effectiveness.vancomycin>
+<ntg.applicationsuccess.vancomycin>
+    50% Vancomycin (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 20% Kidney Damage (over 250 seconds) |
+    [liver_damage] 5% Liver Damage (over 250 seconds)
+</ntg.applicationsuccess.vancomycin>
+<ntg.applicationfailed.vancomycin>
+    [kidney_damage] 5% Kidney Damage (takes 10 seconds to apply)
+</ntg.applicationfailed.vancomycin>
+<ntg.seealso.vancomycin>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.vancomycin>
+
+<!-- Gentamicin -->
+<ntg.title.gentamicin>Gentamicin</ntg.title.gentamicin>
+<ntg.description.gentamicin>Medical skill check: 50
+\nAn aminoglycoside antibiotic that is very effective against gram-negative bacteria. Its efficacy against many gram-negative strains is offset by its high kidney toxicity.
+</ntg.description.gentamicin>
+<ntg.effectiveness.gentamicin>
+    [pseudomonas_infection] Pseudomonas Infection (95% Effective) |
+    [provobacter_infection] Provobacter Infection (95% Effective) |
+    [aeroganella_infection] Aeroganella Infection (95% Effective) |
+    [staphylococcal_infection] Staphylococcal Infection (10% Effective) |
+    [mrsa_infection] MRSA Infection (10% Effective)
+</ntg.effectiveness.gentamicin>
+<ntg.applicationsuccess.gentamicin>
+    50% Gentamicin (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 25% Kidney Damage (over 250 seconds) |
+    [liver_damage] 5% Liver Damage (over 250 seconds)
+</ntg.applicationsuccess.gentamicin>
+<ntg.applicationfailed.gentamicin>
+    [kidney_damage] 5% Kidney Damage (takes 10 seconds to apply)
+</ntg.applicationfailed.gentamicin>
+<ntg.seealso.gentamicin>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.gentamicin>
+
+<!-- Co-trimoxazole -->
+<ntg.title.cotrimoxazole>Co-trimoxazole</ntg.title.cotrimoxazole>
+<ntg.description.cotrimoxazole>Medical skill check: 40
+\nA fixed-dose, combination drug of trimethoprim and sulfamethoxazole. These drugs synergize by inhibiting dihydropteroate synthase and a bacteria's reduction of dihydrofolic acid.
+</ntg.description.cotrimoxazole>
+<ntg.effectiveness.cotrimoxazole>
+    [staphylococcal_infection] Staphylococcal Infection (80% Effective) |
+    [mrsa_infection] MRSA Infection (80% Effective) |
+    [streptococcal_infection] Streptococcal Infection (66.7% Effective) |
+    [aeroganella_infection] Aeroganella Infection (60% Effective)
+</ntg.effectiveness.cotrimoxazole>
+<ntg.applicationsuccess.cotrimoxazole>
+    50% Co-trimoxazole (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 17.5% Kidney Damage (over 250 seconds) |
+    [liver_damage] 10% Liver Damage (over 250 seconds)
+</ntg.applicationsuccess.cotrimoxazole>
+<ntg.applicationfailed.cotrimoxazole>
+    [kidney_damage] 5% Kidney Damage (takes 10 seconds to apply)
+</ntg.applicationfailed.cotrimoxazole>
+<ntg.seealso.cotrimoxazole>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.cotrimoxazole>
+
+<!-- Primaxin -->
+<ntg.title.primaxin>Primaxin</ntg.title.primaxin>
+<ntg.description.primaxin>Medical skill check: 50
+\nA carbapenem class combination antibiotic of imipenem and cilastatin. The use of cilastatin as a dehydropeptidase inhibitor allows imipenem to be more effective by preventing its degradation in the body.
+</ntg.description.primaxin>
+<ntg.effectiveness.primaxin>
+    [pseudomonas_infection] Pseudomonas Infection (80% Effective) |
+    [streptococcal_infection] Streptococcal Infection (80% Effective) |
+    [staphylococcal_infection] Staphylococcal Infection (75% Effective) |
+    [provobacter_infection] Provobacter Infection (66.7% Effective) |
+    [aeroganella_infection] Aeroganella Infection (50% Effective)
+</ntg.effectiveness.primaxin>
+<ntg.applicationsuccess.primaxin>
+    50% Primaxin (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 17.5% Kidney Damage (over 250 seconds) |
+    [liver_damage] 12.5% Liver Damage (over 250 seconds) |
+    [methicillin_resistance_risk] 20% Methicillin-resistance risk (takes 10 seconds to apply, lasts 2000 seconds)
+</ntg.applicationsuccess.primaxin>
+<ntg.applicationfailed.primaxin>
+    [liver_damage] 5% Liver Damage (takes 10 seconds to apply) |
+    [methicillin_resistance_risk] 30% Methicillin-resistance risk (takes 10 seconds to apply, lasts 3000 seconds)
+</ntg.applicationfailed.primaxin>
+<ntg.seealso.primaxin>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.primaxin>
+
+<!-- Ceftazidime -->
+<ntg.title.ceftazidime>Ceftazidime</ntg.title.ceftazidime>
+<ntg.description.ceftazidime>Medical skill check: 30
+\nA third-generation cephalosporin antibiotic. Unlike many of its first-generation twins, it is primarily useful against most gram-negative bacterial strains.
+</ntg.description.ceftazidime>
+<ntg.effectiveness.ceftazidime>
+    [pseudomonas_infection] Pseudomonas Infection (87.5% Effective) |
+    [provobacter_infection] Provobacter Infection (80% Effective) |
+    [aeroganella_infection] Aeroganella Infection (75% Effective) |
+    [streptococcal_infection] Streptococcal Infection (20% Effective)
+</ntg.effectiveness.ceftazidime>
+<ntg.applicationsuccess.ceftazidime>
+    50% Ceftazidime (takes 10 seconds to apply, lasts 250 seconds) |
+    [kidney_damage] 15% Kidney Damage (over 250 seconds) |
+    [liver_damage] 7.5% Liver Damage (over 250 seconds)
+</ntg.applicationsuccess.ceftazidime>
+<ntg.applicationfailed.ceftazidime>
+    [kidney_damage] 5% Kidney Damage (takes 10 seconds to apply)
+</ntg.applicationfailed.ceftazidime>
+<ntg.seealso.ceftazidime>
+    [information_using_antibiotics] Using Antibiotics
+</ntg.seealso.ceftazidime>
+
+<!-- Tools -->
+
+<!-- Sampler Tool -->
+<ntg.title.sampler_tool>Sampler Tool</ntg.title.sampler_tool>
+<ntg.description.sampler_tool>Used for collecting suspected infected samples and blood work relating to pathogens. It is important for diagnosing infections.
+\nIt requires a Culture Tube for collecting bacterial samples or a Viral Transport Medium for collecting viral samples. It will attempt to place the sample in your inventory or on the ground if your inventory is full.
+\nUsing the tool without a sample will give a reading of bacteria in the blood, and can be used to diagnose what pathogen is responsible for Pneumonia.
+</ntg.description.sampler_tool>
+<ntg.seealso.sampler_tool>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [culture_tube] Culture Tube |
+    [viral_transport_medium] Viral Transport Medium |
+    [pneumonia] Pneumonia
+</ntg.seealso.sampler_tool>
+
+<!-- Culture Tube -->
+<ntg.title.culture_tube>Culture Tube</ntg.title.culture_tube>
+<ntg.description.culture_tube>A sample medium for collecting bacteria. Used in a Sampler Tool.
+\nAfter collecting a sample using the Sampler Tool, place the unknown sample inside a Sample Analyzer to get a confirmed sample.
+\nConfirmed samples can be used to craft items like Vaccines or Weaponized Bacteria. You can duplicate samples with a clean culture tube and a confirmed sample. Alternatively, you can craft a clean tube with Weaponized Bacteria to get the respective sample.
+</ntg.description.culture_tube>
+<ntg.seealso.culture_tube>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [sampler_tool] Sampler Tool |
+    [sample_analyzer] Sample Analyzer |
+    [vaccines] Vaccines |
+    [weaponized_bacteria] Weaponized Bacteria
+</ntg.seealso.culture_tube>
+
+<!-- Viral Transport Medium -->
+<ntg.title.viral_transport_medium>Viral Transport Medium</ntg.title.viral_transport_medium>
+<ntg.description.viral_transport_medium>A sample medium for collecting viruses. Used in a Sampler Tool.
+\nPlace inside of a Sample Analyzer to be analyzed. Can be used to craft viral Vaccines.
+</ntg.description.viral_transport_medium>
+<ntg.seealso.viral_transport_medium>
+    [information_diagnosing_viruses] Communicable Diseases |
+    [sampler_tool] Sampler Tool |
+    [sample_analyzer] Sample Analyzer |
+    [vaccines] Vaccines 
+</ntg.seealso.viral_transport_medium>
+
+<!-- Sample Analyzer -->
+<ntg.title.sample_analyzer>Sample Analyzer</ntg.title.sample_analyzer>
+<ntg.description.sample_analyzer>A machine used to identify the pathogen type of samples. Will only accept bacterial or viral samples to be analyzed (from Culture Tubes or a Viral Transport Medium).
+\nThe machine will need to be plugged in and powered to function.
+</ntg.description.sample_analyzer>
+<ntg.seealso.sample_analyzer>
+    [information_diagnosing_viruses] Communicable Diseases |
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections
+</ntg.seealso.sample_analyzer>
+
+<!-- Symptoms -->
+
+<!-- Purulent Drainage -->
+<ntg.title.purulent_drainage>Purulent Drainage</ntg.title.purulent_drainage>
+<ntg.description.purulent_drainage>The wound is leaking pus, an obvious sign of an infection. Most infections will show up as yellow, but Pseudomonas Infection and Aeroganella Infection will have green pus. A Sampler Tool with a Culture Tube can be used to collect a pus sample.
+\nAn Abscess will drain when there is a wound on the limb, leading to drainage.
+\nPurulent drainage may have an increased chance of appearing depending on infection level.
+</ntg.description.purulent_drainage>
+<ntg.requirements.purulent_drainage>
+    Limb has an infection of at least 25% progress |
+    Limb has a wound, burn or suture
+</ntg.requirements.purulent_drainage>
+<ntg.possiblecauses.purulent_drainage>
+    [pseudomonas_infection] Pseudomonas Infection |
+    [streptococcal_infection] Streptococcal Infection |
+    [staphylococcal_infection] Staphylococcal Infection |
+    [provobacter_infection] Provobacter Infection |
+    [mrsa_infection] MRSA Infection |
+    [aeroganella_infection] Aeroganella Infection
+</ntg.possiblecauses.purulent_drainage>
+<ntg.seealso.purulent_drainage>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [sampler_tool] Sampler Tool |
+    [sample_analyzer] Sample Analyzer |
+    [open_wounds] Open Wounds |
+    [sutures] Sutures 
+</ntg.seealso.purulent_drainage>
+
+<!-- Abscess -->
+<ntg.title.abscess>Abscess</ntg.title.abscess>
+<ntg.description.abscess>Pus is accumulating under the skin, an obvious sign of an infection. They may pop when disturbed by an injury and drain. A Sampler Tool with a Culture Tube can be used to collect a pus sample. This will burst the abscess and cause a Purulent Drainage with 2% lacerations.
+\nAn abscess may have an increased chance of appearing depending on infection level.</ntg.description.abscess>
+<ntg.requirements.abscess>
+    Limb has an infection of at least 25% progress |
+    Limb has no wounds, burns or sutures
+</ntg.requirements.abscess>
+<ntg.possiblecauses.abscess>
+    [pseudomonas_infection] Pseudomonas Infection |
+    [streptococcal_infection] Streptococcal Infection |
+    [staphylococcal_infection] Staphylococcal Infection |
+    [provobacter_infection] Provobacter Infection |
+    [mrsa_infection] MRSA Infection |
+    [aeroganella_infection] Aeroganella Infection
+</ntg.possiblecauses.abscess>
+<ntg.seealso.abscess>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [sampler_tool] Sampler Tool |
+    [sample_analyzer] Sample Analyzer |
+    [open_wounds] Open Wounds |
+    [sutures] Sutures 
+</ntg.seealso.abscess>
+
+<!-- Inflammation [BASE OVERRIDE, ADDENDUM: NT Infections] -->
+<ntg.title.inflammation_infc>Inflammation</ntg.title.inflammation_infc>
+<ntg.description.inflammation_infc>Contents of this page have been changed by NT: Infections.
+\nThe skin presents with redness. A usual sign of infection, but could also indicate Foreign Bodies. A useful way of determining an infection's progress.
+</ntg.description.inflammation_infc>
+<ntg.causes.inflammation_infc>
+    [foreign_bodies] Foreign Bodies (at 15% or more) |
+    Infection with at least 0% progress (though will not show up until above 20%)
+</ntg.causes.inflammation_infc>
+<ntg.treatments.inflammation_infc>
+    Treating the causes.
+</ntg.treatments.inflammation_infc>
+
+<!-- Diseases -->
+
+<!-- Necrotizing Fasciitis -->
+<ntg.title.necrotizing_fasciitis>Necrotizing Fasciitis</ntg.title.necrotizing_fasciitis>
+<ntg.description.necrotizing_fasciitis>A rare and dangerous infection of the fascial lining.
+\nNecrotizing Fasciitis may have an increased chance of appearing depending on infection level and immunity level.
+</ntg.description.necrotizing_fasciitis>
+<ntg.requirements.necrotizing_fasciitis>
+    Limb infection level greater than 0% |
+    [immunity] Immunity below 100%
+</ntg.requirements.necrotizing_fasciitis>
+<ntg.effects.necrotizing_fasciitis>
+    -1 Vitality for every 1% of this affliction.
+</ntg.effects.necrotizing_fasciitis>
+<ntg.treatments.necrotizing_fasciitis>
+    [debridement] Debridement |
+    [amputation_surgery] Amputation Surgery
+</ntg.treatments.necrotizing_fasciitis>
+
+<!-- Pneumonia -->
+<ntg.title.pneumonia>Pneumonia</ntg.title.pneumonia>
+<ntg.description.pneumonia>Inflammation of the lung caused by various diseases. 
+\nPneumonia may have an increased chance of appearing depending on infection level and immunity level.
+</ntg.description.pneumonia>
+<ntg.requirements.pneumonia>
+    Blood Infection level is greater than 0% |
+    Viral Infection level is greater than 0%
+</ntg.requirements.pneumonia>
+<ntg.effects.pneumonia>
+    [cough] Cough (above 5%) |
+    [shortness_of_breath] Shortness of Breath (above 10%) |
+    [chest_pain] Chest Pain (above 40%) |
+    [respiratory_arrest] Respiratory Arrest (above 80%)
+</ntg.effects.pneumonia>
+<ntg.treatments.pneumonia>
+    Treat the underlying bacterial infection(s) |
+    Treat the underlying viral infection(s)
+</ntg.treatments.pneumonia>
+
+<!-- Viral Infections -->
+
+<!-- Europan Cough -->
+<ntg.title.europan_cough>Europan Cough</ntg.title.europan_cough>
+<ntg.description.europan_cough>Caused by the Iovipneumoviridae family of viruses, infections can range from mild to severe. These infections are not as common as Influenza and Common Cold.</ntg.description.europan_cough>
+<ntg.susceptible.europan_cough>
+    [remdesivir] Remdesivir (90% Effective)
+</ntg.susceptible.europan_cough>
+<ntg.effects.europan_cough>
+    [cough] Cough (above 10%) |
+    [fever] Fever (above 30%) |
+    [weakness] Weakness (above 50%) |
+    [shortness_of_breath] Shortness of Breath (above 60%) |
+    [nausea] Nausea (above 70%) |
+    [wheezing] Wheezing (above 70%) |
+    [headache] Headache (above 75%) |
+    [chest_pain] Chest Pain (above 90%) |
+    [pneumonia] Pneumonia (above 0%)
+</ntg.effects.europan_cough>
+<ntg.treatments.europan_cough>
+    [dextromethorphan] Dextromethorphan |
+    [zinc_supplements] Zinc Supplements |
+    [analgesia] Analgesia
+</ntg.treatments.europan_cough>
+<ntg.seealso.europan_cough>
+    [influenza] Influenza |
+    [common_cold] Common Cold
+</ntg.seealso.europan_cough>
+
+<!-- Influenza -->
+<ntg.title.influenza>Influenza</ntg.title.influenza>
+<ntg.description.influenza>A virus from earth, influenza infections can range from mild or moderate. These infections are more common than Europan cough but less common than the Common cold.</ntg.description.influenza>
+<ntg.susceptible.influenza>
+    [zinc_supplements] Zinc supplement (20% Effective)
+</ntg.susceptible.influenza>
+<ntg.effects.influenza>
+    [cough] Cough (above 15%) |
+    [fever] Fever (above 30%) |
+    [nausea] Nausea (above 50%) |
+    [headache] Headache (above 80%)
+</ntg.effects.influenza>
+<ntg.treatments.influenza>
+    [dextromethorphan] Dextromethorphan |
+    [zinc_supplements] Zinc supplement |
+    [analgesia] Analgesia
+</ntg.treatments.influenza>
+<ntg.seealso.influenza>
+    [europan_cough] Europan Cough |
+    [common_cold] Common Cold
+</ntg.seealso.influenza>
+
+<!-- Common Cold -->
+<ntg.title.common_cold>Common Cold</ntg.title.common_cold>
+<ntg.description.common_cold>A virus from earth, cold infections are usually mild. These infections are more common than Influenza and Europan cough.</ntg.description.common_cold>
+<ntg.susceptible.common_cold>
+    [zinc_supplements] Zinc supplement (25% Effective)
+</ntg.susceptible.common_cold>
+<ntg.causes.common_cold></ntg.causes.common_cold>
+<ntg.effects.common_cold>
+    [cough] Cough (above 10%) |
+    [headache] Headache (above 60%) |
+    [fever] Fever (above 80%)
+</ntg.effects.common_cold>
+<ntg.treatments.common_cold>
+    [dextromethorphan] Dextromethorphan |
+    [zinc_supplements] Zinc supplement |
+    [analgesia] Analgesia
+</ntg.treatments.common_cold>
+<ntg.seealso.common_cold>
+    [europan_cough] Europan Cough |
+    [influenza] Influenza
+</ntg.seealso.common_cold>
+
+<!-- Effects -->
+
+<!-- Methicillin-resistance Risk -->
+<ntg.title.methicillin_resistance_risk>Methicillin-resistance risk</ntg.title.methicillin_resistance_risk>
+<ntg.description.methicillin_resistance_risk>The potential risk that a patient can develop methicillin-resistant strains of Staphylococcal Infection. The higher the risk, the more likely it can develop into MRSA Infection. Slowly degrades over time.</ntg.description.methicillin_resistance_risk>
+<ntg.causes.methicillin_resistance_risk>
+    [unasyn] Unasyn |
+    [augmentin] Augmentin |
+    [primaxin] Primaxin
+</ntg.causes.methicillin_resistance_risk>
+<ntg.effects.methicillin_resistance_risk>
+    [mrsa_infection] MRSA Infection (above 0%)
+</ntg.effects.methicillin_resistance_risk>
+<ntg.treatments.methicillin_resistance_risk>
+    Time
+</ntg.treatments.methicillin_resistance_risk>
+
+<!-- Procedures -->
+
+<!-- Debridement -->
+<ntg.title.debridement>Debridement</ntg.title.debridement>
+<ntg.description.debridement>Medical Skill Check: 50.
+\nSurgery to treat Necrotizing Fasciitis.
+\nSuccesfully doing step 5 will cause:
+- 8% Lacerations;
+- -5% Necrotizing Fasciitis
+\nFailing that step will cause:
+- 10% Lacerations;
+- 5% Bleeding;
+- -5% Necrotizing Fasciitis
+</ntg.description.debridement>
+<ntg.steps.debridement>
+    [analgesia] 1a. Analgesia | 
+    [anesthesia] 1b. Anesthesia |
+    [multipurpose_scalpel] 2a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
+    [scalpel] 2b. Apply a Scalpel |
+    [hemostat] 3. Hemostat | 
+    [skin_retractors] 4. Skin Retractors | 
+    [multipurpose_scalpel] 4a. Apply a Multipurpose Scalpel in the Surgical Incision mode |
+    [scalpel] 4b. Apply a Scalpel |
+    [necrotizing_fasciitis] 5. Repeat step 4 until the Necrotizing Fasciitis is gone.
+    [sutures] 6. Apply sutures to end the surgery
+</ntg.steps.debridement>
+<ntg.seealso.debridement>
+    [necrotizing_fasciitis] Necrotizing Fasciitis |
+    [bleeding] Bleeding |
+    [open_wounds] Lacerations
+</ntg.seealso.debridement>
+
+<!-- Sample Collection -->
+<ntg.title.sample_collection>Sample Collection</ntg.title.sample_collection>
+<ntg.description.sample_collection>The procedure to collect samples. Bacterial samples are listed in order of precedence.</ntg.description.sample_collection>
+<ntg.stepsbacterial.sample_collection>
+    PUS SAMPLE: |
+    1a. Apply a Sampler Tool to a Purulent Drainage |
+    1b. Apply a Sampler Tool to an Abscess |
+    TISSUE SAMPLE: |
+    [analgesia] 1a. Analgesia |
+    [anesthesia] 1b. Anesthesia |
+    [scalpel] 2. Scalpel |
+    [hemostat] 3. Hemostat |
+    [skin_retractors] 4. Skin Retractors |
+    [sampler_tool] 5. Sampler tool |
+    BLOOD SAMPLE: |
+    [sampler_tool] Apply a Sampler Tool on any limb
+</ntg.stepsbacterial.sample_collection>
+<ntg.stepsviral.sample_collection>
+    [sampler_tool] Apply a Sampler Tool on any limb
+</ntg.stepsviral.sample_collection>
+<ntg.seealso.sample_collection>
+    [information_diagnosing_bacteria] Diagnosing Bacterial Infections |
+    [information_diagnosing_viruses] Communicable Diseases |
+</ntg.seealso.sample_collection>
+
+<!-- Other Items -->
+
+<!-- Vaccines (Item) -->
+<ntg.title.vaccines>Vaccines</ntg.title.vaccines>
+<ntg.description.vaccines>Medical Skill Check: None.
+\nA vaccine against a certain pathogen and strain. Staph vaccines work for both Staphylococcal Infection and MRSA Infection. Works by decreasing the severity of an infection by up to 50%.
+\nOn application, a vaccine gives:
+102.5% vaccine (500 seconds, lasts ~5.7 hours)</ntg.description.vaccines>
+<ntg.seealso.vaccines>
+    [staphylococcal_infection] Staphylococcal Infection |
+    [mrsa_infection] MRSA Infection |
+    [information_vaccines] Vaccine Information
+</ntg.seealso.vaccines>
+
+<!-- Weaponized Bacteria -->
+<ntg.title.weaponized_bacteria>Weaponized Bacteria</ntg.title.weaponized_bacteria>
+<ntg.description.weaponized_bacteria>Medical Skill Check: 20.
+\nUsed maliciously to cause a blood infection in a character. Can be injected by swinging, health interface, or from a syringe gun. Can also be crafted with Culture Tube to make a respective sample.
+</ntg.description.weaponized_bacteria>
+<ntg.applicationsuccess.weaponized_bacteria>
+    10% Blood Infection Severity
+</ntg.applicationsuccess.weaponized_bacteria>
+<ntg.applicationfailed.weaponized_bacteria>
+    8% Blood Infection Severity
+</ntg.applicationfailed.weaponized_bacteria>
+<ntg.seealso.weaponized_bacteria>
+    [culture_tube] Culture Tube
+</ntg.seealso.weaponized_bacteria>
+
+<!-- Remdesivir -->
+<ntg.title.remdesivir>Remdesivir</ntg.title.remdesivir>
+<ntg.description.remdesivir>Medical skill check: 40
+\nAn antiviral drug used to treat Europan cough.
+</ntg.description.remdesivir>
+<ntg.effectiveness.remdesivir>
+    [europan_cough] Europan cough (90% Effective)
+</ntg.effectiveness.remdesivir>
+<ntg.applicationsuccess.remdesivir>
+    60% Remdesivir (takes 10 seconds to apply, lasts 300 seconds) |
+    [liver_damage] 15% Liver Damage (over 300 seconds)
+</ntg.applicationsuccess.remdesivir>
+<ntg.applicationfailed.remdesivir>
+    [liver_damage] 5% Liver Damage (takes 10 seconds to apply)
+</ntg.applicationfailed.remdesivir>
+
+<!-- Dextromethorphan -->
+<ntg.title.dextromethorphan>Dextromethorphan</ntg.title.dextromethorphan>
+<ntg.description.dextromethorphan>Medical skill check: 10
+\nAn antitussive used to suppress a cough. Acts as a medication for viral infections by reducing symptoms, slowdown, and chance to spread.</ntg.description.dextromethorphan>
+<ntg.applicationsuccess.dextromethorphan>
+    8% Dextromethorphan (takes 10 seconds to apply, 80% total)
+</ntg.applicationsuccess.dextromethorphan>
+<ntg.applicationfailed.dextromethorphan>
+    6% Dextromethorphan (takes 10 seconds to apply, 60% total)
+</ntg.applicationfailed.dextromethorphan>
+<ntg.effects.dextromethorphan>
+    [nausea] Nausea (above 80%) |
+    Psychosis (above 90%)
+</ntg.effects.dextromethorphan>
+
+<!-- Zinc Supplements -->
+<ntg.title.zinc_supplements>Zinc supplement</ntg.title.zinc_supplements>
+<ntg.description.zinc_supplements>Medical skill check: 20
+\nA zinc supplement useful for viral infections. Acts as a medication for viral infections by reducing slowdown and chance to spread. Acts as treatment for Influenza and Common cold.</ntg.description.zinc_supplements>
+<ntg.effectiveness.zinc_supplements>
+    [common_cold] Common Cold (25% Effective) |
+    [influenza] Influenza (20% Effective)
+</ntg.effectiveness.zinc_supplements>
+<ntg.applicationsuccess.zinc_supplements>
+    70% Zinc supplement (takes 10 seconds to apply)
+</ntg.applicationsuccess.zinc_supplements>
+<ntg.applicationfailed.zinc_supplements>
+    50% Zinc supplement (takes 10 seconds to apply)
+</ntg.applicationfailed.zinc_supplements>
+<ntg.effects.zinc_supplements>
+    [nausea] Nausea (above 80%) |
+    [vomiting] Vomiting (above 90%)
+</ntg.effects.zinc_supplements>
+
+<!-- Hydrocortisone -->
+<ntg.title.corticosteroids>Corticosteroids</ntg.title.corticosteroids>
+<ntg.description.corticosteroids>Medical skill check: 30
+\nA corticosteroid used to suppress the immune system. Can be used to reduce sepsis gain. Beware its immunosuppressive effects.</ntg.description.corticosteroids>
+<ntg.applicationsuccess.corticosteroids>
+    60% Corticosteroids (takes 10 seconds to apply)
+</ntg.applicationsuccess.corticosteroids>
+<ntg.applicationfailed.corticosteroids>
+    40% Corticosteroids (takes 10 seconds to apply)
+</ntg.applicationfailed.corticosteroids>
+<ntg.effects.corticosteroids>
+    [immunity] Lowers Immunity (down to 80%)
+</ntg.effects.corticosteroids>
+
+</Infotexts>
 \nНекоторые дополнительные изменения, не охваченные в этом руководстве, включают:
     - Лучевая болезнь, компрометирующая иммунитет после определенного момента
     - Сепсис будет понижать кровяное давление
@@ -151,7 +1018,10 @@ NT Infections начинается так же. Когда рана не дез�
 - Вакцины не работают немедленно и требуют некоторого времени, прежде чем стать полностью эффективными.
 - Большинство вакцин в этом моде полностью вымышлены
 </ntg.description.information_vaccines>
-<ntg.seealso.information_vaccines></ntg.seealso.information_vaccines>
+<!-- TODO LOCALIZATION -->
+<ntg.seealso.information_vaccines>
+    [vaccines] Vaccines (Item)
+</ntg.seealso.information_vaccines>
 
 <!-- Bacterial Infections -->
 
@@ -736,8 +1606,8 @@ NT Infections начинается так же. Когда рана не дез�
     [hemostat] 3. Гемостат | 
     [skin_retractors] 4. Расширитель | 
     [multipurpose_scalpel] 4a. Применить многоцелевой скальпель в режиме хирургического разреза |
-    [scalpel] 4b. Применить скальпель
-    [necrotizing_fasciitis] 5. Повторять шаг 4, пока некротизирующий фасциит не исчезнет.
+    [scalpel] 4b. Применить скальпель |
+    [necrotizing_fasciitis] 5. Повторять шаг 4, пока некротизирующий фасциит не исчезнет. |
     [sutures] 6. Применить швы для завершения операции
 </ntg.steps.debridement>
 <ntg.seealso.debridement>
@@ -753,14 +1623,14 @@ NT Infections начинается так же. Когда рана не дез�
     ОБРАЗЕЦ ГНОЯ: |
     1a. Применить инструмент для взятия образцов к гнойному дренажу |
     1b. Применить инструмент для взятия образцов к абсцессу |
-    ОБРАЗЕЦ ТКАНИ:
+    ОБРАЗЕЦ ТКАНИ: |
     [analgesia] 1a. Обезболивание |
     [anesthesia] 1b. Анестезия |
     [scalpel] 2. Скальпель |
     [hemostat] 3. Гемостат |
     [skin_retractors] 4. Расширитель |
     [sampler_tool] 5. Инструмент для взятия образцов |
-    ОБРАЗЕЦ КРОВИ:
+    ОБРАЗЕЦ КРОВИ: |
     [sampler_tool] Применить инструмент для взятия образцов на любой конечности
 </ntg.stepsbacterial.sample_collection>
 <ntg.stepsviral.sample_collection>
