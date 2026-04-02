@@ -1,8 +1,7 @@
 <Infotexts language="Russian" nowhitespace="false">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
 <!-- Neurotrauma Grafting Addon -->
- <!-- TODO LOCALIZATION -->
-<ntg.category.grafting>Grafting Procedures</ntg.category.grafting>
+<ntg.category.grafting>Процедуры пересадки</ntg.category.grafting>
 
 <!-- Tools -->
 
@@ -591,8 +590,7 @@
 - Если вы в воде, просто плывите так, чтобы ваше лицо указывало на цель, и вы сможете стрелять в любом направлении.
 </ntg.description.information_aim_latcher_tongue>
 <ntg.seealso.information_aim_latcher_tongue>
-    <!-- TODO LOCALIZATION -->
-    [latcher_tongue_grafting] Latcher Tongue Grafting
+    [latcher_tongue_grafting] Пересадка языка блокиратора
 </ntg.seealso.information_aim_latcher_tongue>
 
 <!-- Removing Grafting Limit -->
