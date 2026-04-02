@@ -489,3 +489,24 @@ NTGuide.ContentPages.Items.Corticosteroids = {
     applicationfailed = {NTGuide.Localize("ntg.applicationfailed.corticosteroids")},
     effects = {NTGuide.Localize("ntg.effects.corticosteroids")},
 }
+
+-- Infections Settings
+local ModSettings = {
+	NTG_Settings_NTInfections = { 
+        type = "category",
+        name = "Addon Settings: Infections"
+    },
+
+	NTG_ModColour_NTInfections = { 
+		type = "string",
+		name = "Mod-of-Origin Colour for NT Infections",
+		default = {"76", "112", "42"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

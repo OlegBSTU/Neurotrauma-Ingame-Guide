@@ -16,8 +16,6 @@ NTGuide.ModColours = {
 ["NT: Thermal"] = "3, 99, 138, 255",
 }
 
-
-
 function NTGuide.ScanForPage(page)
     -- All pages SHOULD be part of the NTGuide.ContentPages table. If something else somehow ends up here, skip it
     if type(page) ~= "table" then return end
@@ -178,15 +176,24 @@ function NTGuide.BuildPagesByCategory()
             local SpecificPageInfo = NTGuide.GetPageByID(page.id)
             local PageNameToDisplay = page.name
 
-            -- Then change mod name accordingl to make it stand out from the wall of text
-            -- Same idea as the Diagnostic tools really
             if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
                 local modName = SpecificPageInfo.mod
-                local modColour = NTGuide.ModColours[modName] or NTGuide.DefaultModColour
+                local modColour = NTGuide.DefaultModColour
+                local useColours = NTGuide.GetSetting("NTG_DoColouredModOrigin")
+
+                if useColours then
+                    local modColourSetting = "NTG_ModColour_" .. modName:gsub("[^%w]", "")
+                    local modColourTable = NTGuide.GetSetting(modColourSetting)
+                    if modColourTable and #modColourTable > 0 then
+                        modColour = table.concat(modColourTable, ",")
+                    end
+                else
+                    modColour = NTGuide.ModColours[modName] or NTGuide.DefaultModColour
+                end
+
                 PageNameToDisplay = PageNameToDisplay .. " ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
             end
 
-            -- Put it in the shared table so PopulatePage to do something with it later
             table.insert(
                 NTGuide.PagesByID[pageID].pages,
                 "[" .. page.id .. "] " .. PageNameToDisplay
@@ -209,4 +216,40 @@ function NTGuide.RemoveGuideButton()
     if NTGuide.Button then
         NTGuide.Button.Visible = false
     end
+end
+
+-- Get the value of one of the clientside settings in-guide
+function NTGuide.GetSetting(key)
+    local entry = NTGuideSettings.ConfigData[key]
+    if not entry then return nil end
+
+    if entry.value ~= nil then
+        return entry.value
+    else
+        return entry.default
+    end
+end
+
+function NTGuide.SwitchToLastPage()
+    -- Remove settings_page from history if it somehow got there
+    while #NTGuide.Menu.PageHistory > 0 and NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory] == "settings_page" do
+        table.remove(NTGuide.Menu.PageHistory, #NTGuide.Menu.PageHistory)
+    end
+
+    -- Only push current page if it’s not already the last in history and not settings_page
+    local lastInHistory = NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory]
+    if NTGuide.CurrentPageID[1] ~= lastInHistory and NTGuide.CurrentPageID[1] ~= "settings_page" then
+        table.insert(NTGuide.Menu.PageHistory, NTGuide.CurrentPageID[1])
+    end
+
+    -- Pop the last page from history if available
+    local nextPageID
+    if #NTGuide.Menu.PageHistory > 0 then
+        nextPageID = table.remove(NTGuide.Menu.PageHistory, #NTGuide.Menu.PageHistory)
+    else
+        nextPageID = "main_page"
+    end
+
+    NTGuide.CurrentPageID = {nextPageID}
+    NTGuide.PopulatePage(NTGmenuList, nextPageID)
 end

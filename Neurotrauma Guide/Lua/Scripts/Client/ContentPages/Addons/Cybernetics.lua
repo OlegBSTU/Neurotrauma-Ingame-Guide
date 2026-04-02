@@ -173,3 +173,24 @@ NTGuide.ContentPages.Items.CyberLiver = {
     applicationfailed = {NTGuide.Localize("ntg.applicationfailed.cyberliver")},
     seealso = {NTGuide.Localize("ntg.seealso.cyberliver")},
 }
+
+-- Cybernetics Settings
+local ModSettings = {
+	NTG_Settings_NTCyberneticsEnhanced = { 
+        type = "category",
+        name = "Addon Settings: Cybernetics Enhanced"
+    },
+
+	NTG_ModColour_NTCyberneticsEnhanced = { 
+		type = "string",
+		name = "Mod-of-Origin Colour for NT Cybernetics Enhanced",
+		default = {"84", "84", "97"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

@@ -145,6 +145,9 @@
     ‖color:20,60,0,255‖NT Airway Extension‖color:end‖ by moncka.ddima
 </ntg.availableaddons.main_page>
 
+<!-- Settings page name -->
+<ntg.title.settings_page>Guide Settings</ntg.title.settings_page>
+
 <!-- Auto Indexed Page: Categories -->
 <ntg.title.category_index>Categories</ntg.title.category_index>
 <ntg.description.category_index>Select a category to browse.</ntg.description.category_index>

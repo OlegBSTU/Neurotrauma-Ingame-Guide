@@ -32,8 +32,7 @@ NTGuide.ContentPages = {
 
     SettingsPage = {
         id = "settings_page", 
-        title = "SettingsPlaceholder",
-        description = "Configure your mod settings here.",
+        title = NTGuide.Localize("ntg.title.settings_page"), 
         settings = true
     },
 

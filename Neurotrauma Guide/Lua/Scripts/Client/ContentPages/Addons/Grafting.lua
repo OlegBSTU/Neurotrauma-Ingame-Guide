@@ -358,3 +358,24 @@ NTGuide.ContentPages.Information.RemoveGraftingLimit = {
     title = NTGuide.Localize("ntg.title.information_remove_grafting_limit"), 
     description = NTGuide.Localize("ntg.description.information_remove_grafting_limit"),
 }
+
+-- Grafting Settings
+local ModSettings = {
+	NTG_Settings_NTGrafting = { 
+        type = "category",
+        name = "Addon Settings: Grafting"
+    },
+
+	NTG_ModColour_NTGrafting = { 
+		type = "string",
+		name = "Mod-of-Origin Colour for NT Grafting",
+		default = {"165", "22", "166"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

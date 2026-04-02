@@ -294,7 +294,7 @@ end
 
 -- We check if a specific mod is enabled via their workshopID
 -- This is used to only load relevant data; it's a waste of resources to load Cybernetics text data if cybernetics isn't enabled, for example
-function IsModEnabled(workshopId)
+function NTGuide.IsModEnabled(workshopId)
     local value = false
     -- If no ID is given or it's nothing, return false and stop this function
     if workshopId == nil or workshopId == "" then
@@ -351,7 +351,7 @@ function LoadPatches()
 
         -- Do we even want to load the text?
         -- Either because the mod is enabled or because we're overriding the check
-        if patch.IgnoreTargetModState or IsModEnabled(patch.workshopId) then
+        if patch.IgnoreTargetModState or NTGuide.IsModEnabled(patch.workshopId) then
             -- Like before, go over all the supported languages and throw them at EnableTextFileS
             for language in patch.supportedlanguages do
                 --DisableTextPackage(patch.workshopId, language)
@@ -499,7 +499,7 @@ function EnableNTGuide()
         }
 
         for workshopId, scriptName in pairs(modsToLoad) do
-            if IsModEnabled(workshopId) then
+            if NTGuide.IsModEnabled(workshopId) then
                 dofile(NTGuide.Path .. "/Lua/Scripts/Client/ContentPages/Addons/" .. scriptName) -- Content Pages for each addon
             end
         end

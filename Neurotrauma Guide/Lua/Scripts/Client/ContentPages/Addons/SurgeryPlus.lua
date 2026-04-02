@@ -92,3 +92,24 @@ NTGuide.ContentPages.Items.MedicalMisconduct = {
     title = NTGuide.Localize("ntg.title.medical_misconduct"), 
     description = NTGuide.Localize("ntg.description.medical_misconduct"), 
 }
+
+-- Surgery Plus Settings
+local ModSettings = {
+	NTG_Settings_NTSurgeryPlus = { 
+        type = "category",
+        name = "Addon Settings: Surgery Plus"
+    },
+
+	NTG_ModColour_NTSurgeryPlus = { 
+		type = "string",
+		name = "Mod-of-Origin Colour for Surgery Plus",
+		default = {"97", "24", "33"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

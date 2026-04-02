@@ -9,17 +9,26 @@ NTGuide.SearchablePages = {}
 NTGuide.PagesByID = {}
 
 -- Function to update the search results when the search bar gets used
+NTGuide.Menu.lastFilteredResults = NTGuide.Menu.lastFilteredResults or {}
+
 local function UpdateSearchResults()
     NTGuide.Menu.previousSearchText = NTGuide.Menu.previousSearchText or ""
-    local lastFilteredResults = {}
 
     -- Determine what the actual search is
     local searchText = NTGuide.Menu.searchBox.Text:lower()
-    -- If the current search is the same as the previous one, do nothing
+
+   -- If the search bar is empty, go back to the last page in history
+     if searchText == "" then
+        NTGuide.Menu.previousSearchText = ""
+        NTGuide.SwitchToLastPage()
+        return
+    end
+    -- If no change, do nothing
     if searchText == NTGuide.Menu.previousSearchText then return end
-    local modtags, searchtext = NTGuide.ParseSearch(searchText)
-    -- If the current search was unique, make that the new 'previous' one
+    -- If change, adjust accordingly
     NTGuide.Menu.previousSearchText = searchText
+
+    local modtags, searchtext = NTGuide.ParseSearch(searchText)
 
     -- Add what we're looking for to table to use later
     local filteredResults = {}
@@ -55,10 +64,10 @@ local function UpdateSearchResults()
         simpleFiltered[i] = {id = filteredResults[i].id}
     end
 
-    if NTGuide.AreResultsEqual(simpleFiltered, lastFilteredResults) then
+    if NTGuide.AreResultsEqual(simpleFiltered, NTGuide.Menu.lastFilteredResults) then
         return
     else
-        lastFilteredResults = simpleFiltered
+        NTGuide.Menu.lastFilteredResults = simpleFiltered
     end
 
     -- Clear everything before re-doing it
@@ -111,16 +120,32 @@ local function UpdateSearchResults()
             -- Actual button building + making them look nice!
             local SpecificPageInfo = NTGuide.GetPageByID(currentPage.id)
             local SearchResultToDisplay = currentPage.name
-            local AmendedTextColour = "210, 200, 154, 255"
+            local AmendedTextColour = "210,200,154,255"
 
-            -- If it has a mod-of-origin, display it
-            if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
+            -- Get the basic string, tack onto this if settings require it so
+            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+
+            -- Show mod-of-origin if enabled
+            local showMod = NTGuide.GetSetting("NTG_DoModOrigin")
+            local useColours = NTGuide.GetSetting("NTG_DoColouredModOrigin")
+
+            if showMod and SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
                 local modName = SpecificPageInfo.mod
-                local modColour = NTGuide.ModColours[modName] or NTGuide.DefaultModColour
+                local modColour = NTGuide.DefaultModColour
 
-                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ " .."‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
-            else
-                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+                -- If colored mods are enabled, get the user's custom color setting
+                if useColours then
+                    -- Remove what we don't need so we get our setting to use
+                    local modColourSetting = "NTG_ModColour_" .. modName:gsub("[^%w]", "")
+                    local modColourTable = NTGuide.GetSetting(modColourSetting)
+                    -- Pull R,G,B from the table
+                    if modColourTable and #modColourTable > 0 then
+                        modColour = table.concat(modColourTable, ",")
+                    end
+                end
+
+                -- Add that colour to display
+                SearchResultToDisplay = SearchResultToDisplay .. " ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
             end
 
             local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(0.5, 1), row.RectTransform), SearchResultToDisplay, GUI.Alignment.CenterLeft, "GUIButtonSmall")
@@ -191,7 +216,7 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
             -- Make it look nice
             textblock_PageSubheader.TextAlignment = GUI.Alignment.Center
             textblock_PageSubheader.CanBeFocused = false
-            textblock_PageSubheader.TextColor = Color(110, 154, 125, 255)
+            textblock_PageSubheader.TextColor = Color(110,154,125,255)
 
             -- OK hear me out
             -- First, take the localized string from the XML file then use [brackets] to determine *where* we must link to, be sure to clean up the string so we don't fumble because of an extra space or whatever
@@ -216,8 +241,9 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
                                 textblock_LinkButtonHolder.Wrap = true
                                 -- Remove the background colour when hovering over a textblock. We cannot have CanBeFocused set to false (or HoverTextColor would break) so we just make it transparent
                                 textblock_LinkButtonHolder.HoverColor = Color(0,0,0,0)
-                                -- Make the text show up a light blue to indicate it can be clicked
-                                textblock_LinkButtonHolder.HoverTextColor = Color(119, 212, 190,255)
+                                -- Make the text have a unique colour + change when hovered, to make sure people see it can be clicked on
+                                textblock_LinkButtonHolder.TextColor = Color(226,208,116,255)
+                                textblock_LinkButtonHolder.HoverTextColor = Color(119,212,190,255)
                                 -- Put the textblocks into a table to force-update their height (or text will bleed across one another)
                                 table.insert(NTGuide.Menu.ActiveTextBlocks, textblock_LinkButtonHolder)
 
@@ -298,8 +324,18 @@ NTGuide.Menu.BasicList = function()
     NTGmenuList = GUI.ListBox(GUI.RectTransform(Vector2(1, 0.88), innerGuideLayout.RectTransform, GUI.Anchor.TopCenter))
     NTGmenuList.RectTransform.AbsoluteOffset = Point(0, 10)
 
+    local buttonRow = GUI.LayoutGroup(GUI.RectTransform(Vector2(1, 0.1), innerGuideLayout.RectTransform), true)
+    buttonRow.RelativeSpacing = 0.4
+
+    -- Main Page Button
+    local mainpageButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("main menu"))
+    mainpageButton.OnClicked = function()
+        NTGuide.CurrentPageID = {"main_page"}
+        NTGuide.PopulatePage(NTGmenuList, "main_page")
+    end
+
     -- Back button at the bottom of the page
-    local backButton = GUI.Button(GUI.RectTransform(Vector2(1, 0.05), innerGuideLayout.RectTransform, GUI.Anchor.BottomCenter), NTGuide.Localize("ntg.button.back"))
+    local backButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("ntg.button.back"))
     backButton.OnClicked = function()
         -- Is there somewhere to go back to?
         -- If so, remove that page from history and return to it
@@ -320,29 +356,24 @@ NTGuide.Menu.BasicList = function()
     ToggleSettingsButtonStyle.ToolTip = NTGuide.Localize("ntg.button.tooltip.togglesettings")
     local SettingsPageActive = false
 
+    -- Open the settings menu if its closed, close it if it's open.
+    -- Also ensure that you get sent back to the page your were just on when toggling it
     ToggleSettingsButton.OnClicked = function()
-        if not SettingsPageActive then
-            local LastInHistory = NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory]
+        local currentPage = NTGuide.CurrentPageID[1]
 
-            if NTGuide.CurrentPageID[1] ~= LastInHistory then
-                table.insert(NTGuide.Menu.PageHistory, NTGuide.CurrentPageID[1])
+        if currentPage == "settings_page" then
+            -- If already on settings, go back to last page
+            NTGuide.SwitchToLastPage()
+        else
+            -- Push current page to history only if it's not already last
+            local lastInHistory = NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory]
+            if currentPage ~= lastInHistory then
+                table.insert(NTGuide.Menu.PageHistory, currentPage)
             end
 
+            -- Now, open settings!
             NTGuide.CurrentPageID = {"settings_page"}
             NTGuide.PopulatePage(NTGmenuList, "settings_page")
-            SettingsPageActive = true
-        else
-            if #NTGuide.Menu.PageHistory > 0 then
-                local lastPageID = NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory]
-                NTGuide.CurrentPageID = {lastPageID}
-                NTGuide.PopulatePage(NTGmenuList, lastPageID)
-                 table.remove(NTGuide.Menu.PageHistory, #NTGuide.Menu.PageHistory)
-            else
-                NTGuide.CurrentPageID = {"main_page"}
-                NTGuide.PopulatePage(NTGmenuList, "main_page")
-            end
-
-            SettingsPageActive = false
         end
     end
 
@@ -354,20 +385,18 @@ NTGuide.Menu.BasicList = function()
 
     CloseGuideButton.OnClicked = function()
         NTGuide.Menu.menu.Visible = false
-        -- Debug print to see if settings configs are working properly
-        print("DEBUG: Current NTGuideSettings Config States:")
-        for key, entry in pairs(NTGuideSettings.ConfigData) do
-            if entry.type == "float" or entry.type == "bool" then
-                local value = entry.value
-                if value == nil then value = entry.default end
-                print(key .. " (" .. entry.name .. "): " .. tostring(value))
-            end
-        end
-
     end
 
     -- If the searchbar changes, re-do all the search bar code
-    NTGuide.Menu.searchBox.OnTextChangedDelegate = UpdateSearchResults
+    NTGuide.Menu.searchBox.OnTextChangedDelegate = function()
+        -- Ensure the settings page properly 'toggles'
+        if SettingsPageActive then
+            SettingsPageActive = false
+        end
+
+        UpdateSearchResults()
+    end
+
     -- On first initialization, open the main page
     NTGuide.PopulatePage(NTGmenuList, "main_page")
     return NTGmenuList
