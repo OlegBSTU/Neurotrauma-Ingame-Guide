@@ -684,8 +684,7 @@
 <!-- Night Vision Lens -->
 <ntg.title.night_vision_lens>Линза ночного видения</ntg.title.night_vision_lens>
 <ntg.description.night_vision_lens>Продвинутая кибернетическая линза, используемая во время Операции по установке линзы для улучшения Улучшенных / Кибернетических глаз.
-<!-- TODO LOCALIZATION -->
-\nEnables Night Vision. Cannot be turned off.
+\nВключает ночное видение. Отключить нельзя.
 </ntg.description.night_vision_lens>
 <ntg.seealso.night_vision_lens>
     [lens_application_surgery] Операция по установке линзы |
