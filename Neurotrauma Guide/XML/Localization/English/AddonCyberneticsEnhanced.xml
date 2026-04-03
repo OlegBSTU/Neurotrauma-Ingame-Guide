@@ -2,6 +2,10 @@
 <!-- Additional pages + overrides for Cybernetics -->
 <!-- See the main XML file for formatting -->
 
+<!-- Settings -->
+<ntg.categoryname.cybernetics>Addon Settings: Cybernetics Enhanced</ntg.categoryname.cybernetics>
+<ntg.settingname.modcolourcybernetics>Mod-of-Origin Colour for NT Cybernetics Enhanced</ntg.settingname.modcolourcybernetics>
+
 <!-- As of the addons, I remembered you can just give the XML file new lines and this is transferred in-game. 1 new line is a new paragraph, 2 new lines is a 'gap' between text. -->
 
 <!-- Cybernetic Arm -->

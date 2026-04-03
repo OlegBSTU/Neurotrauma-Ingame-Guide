@@ -12,21 +12,21 @@ NTGuideSettings.ConfigData = {
 
 	-- General Settings
     NTG_Customization = { 
-        name = "Guide Customization", 
+        NTGuide.Localize("ntg.categoryname.customization"),
         type = "category" ,
     },
 
 	NTG_DoColouredModOrigin = {
-		name = "Coloured Mod Origin",
+		name = NTGuide.Localize("ntg.settingname.docolouredmodorigin"),
 		default = true,
 		type = "bool",
-		description = "Should the Mod-of-Origin affix have a unique colour based on the mod?",
+		description = NTGuide.Localize("ntg.settingdescription.docolouredmodorigin"),
 	},
 
 	NTG_DoModOrigin = {
-		name = "Mod Origin",
+		name = NTGuide.Localize("ntg.settingname.domodorigin"),
 		default = true,
 		type = "bool",
-		description = "Should the Mod-of-Origin be displayed?",
+		description = NTGuide.Localize("ntg.settingdescription.domodorigin"),
 	},
 }

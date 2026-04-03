@@ -328,7 +328,7 @@ NTGuide.Menu.BasicList = function()
     buttonRow.RelativeSpacing = 0.4
 
     -- Main Page Button
-    local mainpageButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("main menu"))
+    local mainpageButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("ntg.button.mainpage"))
     mainpageButton.OnClicked = function()
         NTGuide.CurrentPageID = {"main_page"}
         NTGuide.PopulatePage(NTGmenuList, "main_page")

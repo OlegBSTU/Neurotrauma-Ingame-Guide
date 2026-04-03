@@ -86,12 +86,12 @@ NTGuide.ContentPages.Information.LobotomyEffects = {
 local ModSettings = {
 	NTG_Settings_NTLobotomy = { 
         type = "category",
-        name = "Addon Settings: Lobotomy"
+        name =  NTGuide.Localize("ntg.categoryname.lobotomy"),
     },
 
 	NTG_ModColour_NTLobotomy = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for NT Lobotomy",
+		name =  NTGuide.Localize("ntg.settingname.modcolourlobotomy"),
 		default = {"0", "175", "175"},
 		style = "R,G,B",
 		boxsize = 0.05,

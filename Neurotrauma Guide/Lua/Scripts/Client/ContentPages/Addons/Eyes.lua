@@ -628,12 +628,12 @@ NTGuide.ContentPages.Items.EyeRegenerationJar = {
 local ModSettings = {
 	NTG_Settings_NTEyes = { 
         type = "category",
-        name = "Addon Settings: Eyes"
+        name =  NTGuide.Localize("ntg.categoryname.eyes"),
     },
 
 	NTG_ModColour_NTEyes = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for NT Eyes",
+		name = NTGuide.Localize("ntg.settingname.modcoloureyes"),
 		default = {"215", "160", "0"},
 		style = "R,G,B",
 		boxsize = 0.05,

@@ -494,12 +494,12 @@ NTGuide.ContentPages.Items.Corticosteroids = {
 local ModSettings = {
 	NTG_Settings_NTInfections = { 
         type = "category",
-        name = "Addon Settings: Infections"
+        name = NTGuide.Localize("ntg.categoryname.infections"),
     },
 
 	NTG_ModColour_NTInfections = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for NT Infections",
+		name = NTGuide.Localize("ntg.settingname.modcolourinfections"),
 		default = {"76", "112", "42"},
 		style = "R,G,B",
 		boxsize = 0.05,

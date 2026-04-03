@@ -178,12 +178,12 @@ NTGuide.ContentPages.Items.CyberLiver = {
 local ModSettings = {
 	NTG_Settings_NTCyberneticsEnhanced = { 
         type = "category",
-        name = "Addon Settings: Cybernetics Enhanced"
+        name = NTGuide.Localize("ntg.categoryname.cybernetics"),
     },
 
 	NTG_ModColour_NTCyberneticsEnhanced = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for NT Cybernetics Enhanced",
+		name = NTGuide.Localize("ntg.settingname.modcolourcybernetics"),
 		default = {"84", "84", "97"},
 		style = "R,G,B",
 		boxsize = 0.05,

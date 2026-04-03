@@ -484,12 +484,12 @@
 local ModSettings = {
 	NTG_Settings_NTThermal = { 
         type = "category",
-        name = "Addon Settings: Thermal"
+        name = NTGuide.Localize("ntg.categoryname.thermal")
     },
 
 	NTG_ModColour_NTThermal = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for NT Thermal",
+		name = NTGuide.Localize("ntg.settingname.modcolourthermal"),
 		default = {"3", "99", "138"},
 		style = "R,G,B",
 		boxsize = 0.05,

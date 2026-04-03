@@ -201,12 +201,12 @@ NTGuide.ContentPages.SurgicalProcedures.Cricothyrotomy = {
 local ModSettings ={
 	NTG_Settings_NTAirwayExtension = { 
         type = "category",
-        name = "Addon Settings: Airway"
+        name = NTGuide.Localize("ntg.categoryname.airways")
     },
 	
 	NTG_ModColour_NTAirwayExtension = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for Airway Extension",
+		name = NTGuide.Localize("ntg.settingname.modcolourairways"),
 		default = {"20", "60", "0"},
 		style = "R,G,B",
 		boxsize = 0.05,

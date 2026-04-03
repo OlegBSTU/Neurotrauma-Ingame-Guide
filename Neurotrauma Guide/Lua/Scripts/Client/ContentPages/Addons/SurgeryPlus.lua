@@ -97,12 +97,12 @@ NTGuide.ContentPages.Items.MedicalMisconduct = {
 local ModSettings = {
 	NTG_Settings_NTSurgeryPlus = { 
         type = "category",
-        name = "Addon Settings: Surgery Plus"
+        NTGuide.Localize("ntg.category.surgeryplus"),
     },
 
 	NTG_ModColour_NTSurgeryPlus = { 
 		type = "string",
-		name = "Mod-of-Origin Colour for Surgery Plus",
+		NTGuide.Localize("ntg.settingname.modcoloursurgeryplus"),
 		default = {"97", "24", "33"},
 		style = "R,G,B",
 		boxsize = 0.05,

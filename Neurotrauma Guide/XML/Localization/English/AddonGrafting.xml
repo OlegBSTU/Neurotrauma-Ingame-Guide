@@ -1,5 +1,9 @@
 <Infotexts language="English" nowhitespace="false">
 <!-- Neurotrauma Grafting Addon -->
+<!-- Settings -->
+<ntg.categoryname.grafting>Addon Settings: Grafting</ntg.categoryname.grafting>
+<ntg.settingname.modcolourgrafting>Mod-of-Origin Colour for NT Grafting</ntg.settingname.modcolourgrafting>
+
 <ntg.category.grafting>Grafting Procedures</ntg.category.grafting>
 
 <!-- Tools -->

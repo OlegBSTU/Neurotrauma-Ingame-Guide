@@ -1,23 +1,4 @@
 
--- This is retarded
--- There's a small delay between the automatic loading of our language file and the first localization grab
--- This means that it will just grab the non-localized information first and then the game loads english
--- Since we just return the original xml tag that builds that part of the page (which always starts with ntg) we just have it re-initialize all the ntg tags once more
--- If it happens twice tough shit thats probably a typo
-NTGuide.Localize = function(xmlTag)
-    local value = xmlTag
-    -- Do another loop and fix up all ntg strings
-    while string.match(value, "^ntg") do
-        local newValue = TextManager.Get(value).Value
-        -- If its the same after looping this is a fuckup, break the loop so it doesn't go insane
-        if newValue == value then
-            break
-        end
-        value = newValue
-    end
-    return value
-end
-
 NTGuide.ContentPages = {
 
     -- Just a starter page

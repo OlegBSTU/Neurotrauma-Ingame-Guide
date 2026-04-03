@@ -1,4 +1,7 @@
 <Infotexts language="English" nowhitespace="false">
+<!-- Settings -->
+<ntg.categoryname.infections>Addon Settings: Infections</ntg.categoryname.infections>
+<ntg.settingname.modcolourinfections>Mod-of-Origin Colour for NT Infections</ntg.settingname.modcolourinfections>
 
 <!-- Addon for NT: Infections -->
 <ntg.section.susceptible>Susceptible To</ntg.section.susceptible>
