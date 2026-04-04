@@ -19,7 +19,7 @@ A modern revamp of an older XML/Lua based in-game guide for the Neurotrauma Medi
 * [NT Thermal by BigEvilGreenBean](https://steamcommunity.com/sharedfiles/filedetails/?id=3648890424)
 
 ## Links
-* [Discord Neurotrauma Fork Server)](https://discord.gg/4Yku7qPCYN)
+* [Discord Neurotrauma Fork Server](https://discord.gg/4Yku7qPCYN)
 
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3689560523)
 
@@ -31,4 +31,5 @@ By all means, do so! All language gets automatically updated based on the Locali
 
 ## Aknowledgements
 * Ydrec, for helping with C# / Lua code in the chat linker;
-* The Analyze Item mod for Barotrauma, for their C# Localization code
+* Heelge / Guns, for Localization;
+* EvilFactory, for pointing out a few issues;
