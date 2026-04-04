@@ -1,5 +1,10 @@
 <Infotexts language="English" nowhitespace="false">
 <!-- Neurotrauma Eyes Addon -->
+
+<!-- Settings -->
+<ntg.categoryname.eyes>Addon Settings: Eyes</ntg.categoryname.eyes>
+<ntg.settingname.modcoloureyes>Mod-of-Origin Colour for NT Eyes</ntg.settingname.modcoloureyes>
+
 <!-- Damage Afflictions -->
 <!-- Human Eye Damage -->
 <ntg.title.human_eye_damage>Human Eye Damage</ntg.title.human_eye_damage>

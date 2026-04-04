@@ -623,3 +623,24 @@ NTGuide.ContentPages.Items.EyeRegenerationJar = {
     description = NTGuide.Localize("ntg.description.eye_regeneration_jar"),
     effects = {NTGuide.Localize("ntg.effects.eye_regeneration_jar")},
 }
+
+-- Eyes Settings
+local ModSettings = {
+	NTG_Settings_NTEyes = { 
+        type = "category",
+        name =  NTGuide.Localize("ntg.categoryname.eyes"),
+    },
+
+	NTG_ModColour_NTEyes = { 
+		type = "string",
+		name = NTGuide.Localize("ntg.settingname.modcoloureyes"),
+		default = {"215", "160", "0"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

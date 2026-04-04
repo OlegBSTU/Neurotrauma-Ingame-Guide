@@ -2,6 +2,10 @@
 <!-- Additional pages + overrides for Surgery Plus -->
 <!-- See the main XML file for formatting -->
 
+<!-- Settings -->
+<ntg.categoryname.surgeryplus>Addon Settings: Surgery Plus</ntg.categoryname.surgeryplus>
+<ntg.settingname.modcoloursurgeryplus>Mod-of-Origin Colour for NT Surgery Plus</ntg.settingname.modcoloursurgeryplus>
+
 <!-- Surgical Infection -->
 <ntg.title.surgical_infection>Surgical Infection</ntg.title.surgical_infection>
 <ntg.description.surgical_infection>Surgical Infection is a mechanic that causes Sepsis based on how sterile the patient's environment is during surgery.

@@ -1,8 +1,23 @@
 <Infotexts language="English" nowhitespace="false">
 
 <!-- /*- General Stuff -*/ -->
-<!-- Buttons -->
-<ntg.button.back>Back to Previous Page</ntg.button.back>    
+<!-- General UI Buttons -->
+<ntg.button.back>Go back a Page</ntg.button.back>
+<ntg.button.mainpage>Go to Main Page</ntg.button.mainpage>
+<ntg.button.tooltip.togglesettings>Toggle the Settings Page</ntg.button.tooltip.togglesettings>
+<ntg.button.tooltip.closeguide>Close the Guide</ntg.button.tooltip.closeguide>
+
+
+<!-- Settings -->
+<ntg.categoryname.customization>Guide Customization</ntg.categoryname.customization>
+
+<ntg.settingname.docolouredmodorigin>Coloured Mod-of-Origin</ntg.settingname.docolouredmodorigin>
+<ntg.settingdescription.docolouredmodorigin>Should the Mod-of-Origin affix have a unique colour based on the mod?</ntg.settingdescription.docolouredmodorigin>
+
+<ntg.settingname.domodorigin>Mod-of-Origin</ntg.settingname.domodorigin>
+<ntg.settingdescription.domodorigin>Should the Mod-of-Origin be displayed?</ntg.settingdescription.domodorigin>
+
+<!-- Unique Page Buttons -->
 <ntg.index.back>Back to Categories</ntg.index.back>
 <ntg.index.backmain>Back to Main Page</ntg.index.backmain>
 
@@ -140,6 +155,9 @@
     ‖color:3,99,138,255‖NT Thermal‖color:end‖ by BigEvilGreenBean |
     ‖color:20,60,0,255‖NT Airway Extension‖color:end‖ by moncka.ddima
 </ntg.availableaddons.main_page>
+
+<!-- Settings page name -->
+<ntg.title.settings_page>Guide Settings</ntg.title.settings_page>
 
 <!-- Auto Indexed Page: Categories -->
 <ntg.title.category_index>Categories</ntg.title.category_index>
@@ -3209,12 +3227,12 @@ In this mode, the item will have the ability to extract any organ from a patient
     [bleeding] Treats regular bleeding
 </ntg.applicationsuccess.tourniquet>
 <ntg.applicationfailed.tourniquet>
-    [internal_wounds] +6% Blunt Force Trauma
+    [internal_wounds] +6% Blunt Force Trauma |
     This also happens if applied to a wound that has no Arterial Bleeding
 </ntg.applicationfailed.tourniquet>
 <ntg.seealso.tourniquet>
     [gangrene] Gangrene |
-    [open_close_surgery] Open / Close Surgery
+    [open_close_surgery] Open / Close Surgery |
     [arterial_bleeding] Arterial Bleeding
 </ntg.seealso.tourniquet>
 

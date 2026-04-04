@@ -81,3 +81,24 @@ NTGuide.ContentPages.Information.LobotomyEffects = {
     lobonegativeeffects = {NTGuide.Localize("ntg.lobonegativeeffects.lobotomy_effects")},
     seealso = {NTGuide.Localize("ntg.seealso.lobotomy_effects")},
 }
+
+-- Lobotomy Settings
+local ModSettings = {
+	NTG_Settings_NTLobotomy = { 
+        type = "category",
+        name =  NTGuide.Localize("ntg.categoryname.lobotomy"),
+    },
+
+	NTG_ModColour_NTLobotomy = { 
+		type = "string",
+		name =  NTGuide.Localize("ntg.settingname.modcolourlobotomy"),
+		default = {"0", "175", "175"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

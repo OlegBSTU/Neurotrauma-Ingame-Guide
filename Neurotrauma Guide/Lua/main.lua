@@ -294,7 +294,7 @@ end
 
 -- We check if a specific mod is enabled via their workshopID
 -- This is used to only load relevant data; it's a waste of resources to load Cybernetics text data if cybernetics isn't enabled, for example
-function IsModEnabled(workshopId)
+function NTGuide.IsModEnabled(workshopId)
     local value = false
     -- If no ID is given or it's nothing, return false and stop this function
     if workshopId == nil or workshopId == "" then
@@ -351,7 +351,7 @@ function LoadPatches()
 
         -- Do we even want to load the text?
         -- Either because the mod is enabled or because we're overriding the check
-        if patch.IgnoreTargetModState or IsModEnabled(patch.workshopId) then
+        if patch.IgnoreTargetModState or NTGuide.IsModEnabled(patch.workshopId) then
             -- Like before, go over all the supported languages and throw them at EnableTextFileS
             for language in patch.supportedlanguages do
                 --DisableTextPackage(patch.workshopId, language)
@@ -481,8 +481,11 @@ function EnableNTGuide()
     -- It works :barodev:
     -- You'll always reload lua before going into a server / singleplayer; you generally remove mods on the main menu. Therefor, this should work
     if CLIENT then
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePages.lua") -- Content pages
-       -- dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguidePagesAddons.lua") -- Addon Content pages
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_Helperfunctions.lua")
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_SettingsPageContent.lua") -- Content for the Settings Menu
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_SettingsPageConstruction.lua") -- Scripts for the settings menu
+
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/ContentPages/Neurotrauma.lua") -- Base Neurotrauma Content Pages
 
         local modsToLoad = {
             ["3324062208"] = "Cybernetics.lua",
@@ -496,13 +499,13 @@ function EnableNTGuide()
         }
 
         for workshopId, scriptName in pairs(modsToLoad) do
-            if IsModEnabled(workshopId) then
-                dofile(NTGuide.Path .. "/Lua/Scripts/Client/Addons/" .. scriptName)
+            if NTGuide.IsModEnabled(workshopId) then
+                dofile(NTGuide.Path .. "/Lua/Scripts/Client/ContentPages/Addons/" .. scriptName) -- Content Pages for each addon
             end
         end
 
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/Neuroguide.lua") -- Construction code
-        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NeuroguideChatLink.lua") -- Clientside code to interface with chat linking
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_PageConstruction.lua") -- Construction code
+        dofile(NTGuide.Path .. "/Lua/Scripts/Client/NTG_Chatlink.lua") -- Clientside code to interface with chat linking
     end
 
     NTGuide.CreateGuideButton()

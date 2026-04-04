@@ -154,8 +154,8 @@ Timer.Wait(function()
 -- NT Cybernetics Enhanced integration for Health Scanner
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberliver", "cyberliver"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberlung", "cyberlung"})
-		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberheart", "cyberbrain_implant"})
-		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberbrain", "cyberheart"})
+		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberheart", "cyberheart"})
+		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberbrain", "cyberbrain_implant"})
 		table.insert(NTGuide.IdentifierToPage, {"ntc_cyberkidney", "cyberkidney"})
 
 -- NT Eyes integration for Health Scanner

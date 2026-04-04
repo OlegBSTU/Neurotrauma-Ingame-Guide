@@ -2,6 +2,10 @@
 <!-- Additional pages for Airways -->
 <!-- KAT Medical my beloved -->
 
+<!-- Settings -->
+<ntg.categoryname.airways>Addon Settings: Airways</ntg.categoryname.airways>
+<ntg.settingname.modcolourairways>Mod-of-Origin Colour for NT Airways</ntg.settingname.modcolourairways>
+
 <!-- Items -->
 <!-- OVERRIDE -->
 <!-- Needle -->

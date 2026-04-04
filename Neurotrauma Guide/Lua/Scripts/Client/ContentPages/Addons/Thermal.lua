@@ -479,3 +479,24 @@
         title = NTGuide.Localize("ntg.title.esh"), 
         description = NTGuide.Localize("ntg.description.esh"),
     }
+
+-- Thermal Settings
+local ModSettings = {
+	NTG_Settings_NTThermal = { 
+        type = "category",
+        name = NTGuide.Localize("ntg.categoryname.thermal")
+    },
+
+	NTG_ModColour_NTThermal = { 
+		type = "string",
+		name = NTGuide.Localize("ntg.settingname.modcolourthermal"),
+		default = {"3", "99", "138"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

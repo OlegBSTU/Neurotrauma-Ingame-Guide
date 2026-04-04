@@ -1,5 +1,9 @@
 <Infotexts language="English" nowhitespace="false">
 
+<!-- Settings -->
+<ntg.categoryname.lobotomy>Addon Settings: Lobotomy</ntg.categoryname.lobotomy>
+<ntg.settingname.modcolourlobotomy>Mod-of-Origin Colour for NT Lobotomy</ntg.settingname.modcolourlobotomy>
+
 <!-- Addon for NT: Lobotomy -->
 
 <ntg.section.lobopositiveeffects>Positive Lobotomy Effects</ntg.section.lobopositiveeffects>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Infotexts language="English" nowhitespace="false">
+<!-- Settings -->
+<ntg.categoryname.thermal>Addon Settings: Thermal</ntg.categoryname.thermal>
+<ntg.settingname.modcolourthermal>Mod-of-Origin Colour for NT Thermal</ntg.settingname.modcolourthermal>
+
 <!-- Chud stuff for my temperature stuff -->
 <!-- symptoms -->
 <!-- Hypothermia -->

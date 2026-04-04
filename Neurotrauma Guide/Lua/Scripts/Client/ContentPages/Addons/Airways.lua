@@ -197,3 +197,23 @@ NTGuide.ContentPages.SurgicalProcedures.Cricothyrotomy = {
     seealso = {NTGuide.Localize("ntg.seealso.cricothyrotomy")}, 
 }
 
+-- Airways Settings
+local ModSettings ={
+	NTG_Settings_NTAirwayExtension = { 
+        type = "category",
+        name = NTGuide.Localize("ntg.categoryname.airways")
+    },
+	
+	NTG_ModColour_NTAirwayExtension = { 
+		type = "string",
+		name = NTGuide.Localize("ntg.settingname.modcolourairways"),
+		default = {"20", "60", "0"},
+		style = "R,G,B",
+		boxsize = 0.05,
+        isColour = true,
+	},
+}
+
+for key, entry in pairs(ModSettings) do
+    NTGuideSettings.ConfigData[key] = entry
+end

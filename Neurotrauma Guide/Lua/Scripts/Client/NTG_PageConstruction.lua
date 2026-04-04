@@ -8,216 +8,30 @@ NTGuide.CurrentPageID = {}
 NTGuide.SearchablePages = {}
 NTGuide.PagesByID = {}
 
--- Set the colour for mod names
-local DefaultModColour = "110, 154, 125, 255"
--- Give them a unique colour based on their workshop picture
--- Sure love Infections, Pharmacy and Airways having the same green!
-local ModColours = {
-["NT: Airway Extension"] = "20, 60, 0, 255",
-["NT: Cybernetics Enhanced"] = "84, 84, 97, 255",
-["NT: Eyes"] = "215, 160, 0, 255",
-["NT: Grafting"] = "165, 22, 166, 255",
-["NT: Infections"] = "76, 112, 42, 255",
-["NT: Lobotomy"] = "0, 175, 175, 255",
-["NT: Surgery Plus"] = "97, 24, 33, 255",
-["NT: Thermal"] = "3, 99, 138, 255",
-}
-
--- Function to find all content pages within a large table and can handle sub-tables.
--- This way, we can have 'category' tables for easier sorting
-local function ScanForPage(page)
-    -- All pages SHOULD be part of the NTGuide.ContentPages table. If something else somehow ends up here, skip it
-    if type(page) ~= "table" then return end
-
-    -- All content pages must have an ID; therefor, if we find an ID then this must be a content page we want to index
-    if page.id then
-        NTGuide.PagesByID[page.id] = page
-
-        -- We don't want the main page in the search bar, and we only really care about the title (this will be shown to players), ID (to navigate), category (to sort pages with same types) and mod for sorting;
-        if page.id ~= "main_page" and page.title then
-            table.insert(NTGuide.SearchablePages, {name = page.title, id = page.id, category = page.category or "", mod = page.mod or ""})
-        end
-    end
-
-    -- For each table in the larger ContentPagesTable, run the scan functionality above
-    for _, v in pairs(page) do
-        if type(v) == "table" then ScanForPage(v) end
-    end
-end
-
--- Sort these tables so we don't have to go over a gorbillion pages every time we try and search something
-local function IndexKnownPages(ContentPageTable)
-    -- Get ALL pages within the NTGuide.ContentPages table and index them for fast access
-    ScanForPage(ContentPageTable)
-
-    -- Sort them alphabetically so order of input into the table doesn't matter + it looks better
-    table.sort(NTGuide.SearchablePages, function(a, b) 
-        return a.name:lower() < b.name:lower() 
-    end)
-
-    -- Give this indexed table back for use later
-    return NTGuide.SearchablePages
-end
-
--- Function to find a page if we know the ID
-local function GetPageByID(id)
-    return NTGuide.PagesByID[id]
-end
-
--- Now, we have everything indexed. Previously, we could only search for pages; as ThousandFields mentioned, this makes 'browsing' if you have nothing to do a lot harder.
--- Instead, we want to add an 'index' page that firstly automatically gets all known 'categories' of pages, then lists all pages under that category depending on which one is selected.
--- You could do this using the existing XML formatting, but that is messy and requires human effort. Instead, we make an amended 'page population' script to handle just the index pages.
-local function BuildCategoryIndexPage()
-    local categories = {}
-
-    -- Get all unique categories that we've already indexed
-    for _, page in ipairs(NTGuide.SearchablePages) do
-        if page.category ~= "" then
-            categories[page.category] = true
-        end
-    end
-
-    -- Convert them to a sorted list so order of acquisition doesnt matter
-    local sortedCategories = {}
-    for category, _ in pairs(categories) do
-        table.insert(sortedCategories, category)
-    end
-    table.sort(sortedCategories)
-
-    -- Create the category index page
-    NTGuide.PagesByID["category_index"] = {
-        id = "category_index",
-        category = "index",
-        title = NTGuide.Localize("ntg.title.category_index"),
-        description = NTGuide.Localize("ntg.description.category_index"),
-        navigation = {},
-        categories = {}
-    }
-
-    -- Back to main menu button
-    table.insert(
-        NTGuide.PagesByID["category_index"].navigation,
-        "[main_page] " .. NTGuide.Localize("ntg.index.backmain")
-    )
-
-    -- Add categories as clickable links
-    for _, category in ipairs(sortedCategories) do
-        local count = 0
-
-        -- Count pages in this category and render them alongside the category in the clickable text
-        for _, p in ipairs(NTGuide.SearchablePages) do
-            if p.category == category then count = count + 1 end
-        end
-
-        table.insert(
-            NTGuide.PagesByID["category_index"].categories, -- This is the subheader
-            "[" .. "category_" .. category .. "] " ..
-            NTGuide.Localize("ntg.category." .. category) .. -- This is the content of said subheader
-            " (" .. tostring(count) .. ")"
-        )
-    end
-end
-
--- Next up, we automatically make the pages that the category script above may redirect to; containing all pages assigned to that cateogory
--- For both of these functions, we don't need to worry that they'll show in the search results since all the indexing for that was already finished
-local function BuildPagesByCategory()
-    local categorized = {}
-
-    -- Group pages by their category
-    for _, page in ipairs(NTGuide.SearchablePages) do
-        if page.category ~= "" then
-            categorized[page.category] = categorized[page.category] or {}
-            table.insert(categorized[page.category], page)
-        end
-    end
-
-    -- Now we have each page sorted into categories, sort them alphabetically and add them to their respective category page
-    for category, pages in pairs(categorized) do
-        table.sort(pages, function(a, b)
-            return a.name:lower() < b.name:lower()
-        end)
-
-        -- Get the category we wanna yoink
-        local pageID = "category_" .. category
-        -- Auto create page data
-        NTGuide.PagesByID[pageID] = {
-            id = pageID,
-            category = "index",
-            title = NTGuide.Localize("ntg.category." .. category),
-            description = NTGuide.Localize("ntg.description.category_page"),
-            navigation = {}, -- Will hold the back inline button
-            pages = {}, -- Will hold the links
-        }
-
-        -- Back button at the top to return to the categories screen, noi matter the category
-        table.insert(NTGuide.PagesByID[pageID].navigation, "[category_index] " .. NTGuide.Localize("ntg.index.back"))
-
-        -- Add all pages in the currently iterated category
-        for _, page in ipairs(pages) do
-            local SpecificPageInfo = GetPageByID(page.id)
-            local PageNameToDisplay = page.name
-
-            -- Then change mod name accordingl to make it stand out from the wall of text
-            -- Same idea as the Diagnostic tools really
-            if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
-                local modName = SpecificPageInfo.mod
-                local modColour = ModColours[modName] or DefaultModColour
-                PageNameToDisplay = PageNameToDisplay .. " ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
-            end
-
-            -- Put it in the shared table so PopulatePage to do something with it later
-            table.insert(
-                NTGuide.PagesByID[pageID].pages,
-                "[" .. page.id .. "] " .. PageNameToDisplay
-            )
-        end
-    end
-end
-
--- Shamelessly ripping of JEI here
--- Go over a search result, and if we use @ anywhere consider that the mod to filter for
-local function ParseSearch(text)
-    local modtags = {}
-    local searchtext = {}
-
-    for word in text:gmatch("%S+") do
-        if word:sub(1,1) == "@" then
-            table.insert(modtags, word:sub(2):lower())
-        else
-            table.insert(searchtext, word:lower())
-        end
-    end
-
-    return modtags, searchtext
-end
-
-
 -- Function to update the search results when the search bar gets used
-NTGuide.Menu.previousSearchText = NTGuide.Menu.previousSearchText or ""
-local lastFilteredResults = {}
-
-local function AreResultsEqual(resultsA, resultsB)
-    if #resultsA ~= #resultsB then return false end
-    for i = 1, #resultsA do
-        if resultsA[i].id ~= resultsB[i].id then
-            return false
-        end
-    end
-    return true
-end
+NTGuide.Menu.lastFilteredResults = NTGuide.Menu.lastFilteredResults or {}
 
 local function UpdateSearchResults()
+    NTGuide.Menu.previousSearchText = NTGuide.Menu.previousSearchText or ""
+
     -- Determine what the actual search is
     local searchText = NTGuide.Menu.searchBox.Text:lower()
-    -- If the current search is the same as the previous one, do nothing
+
+   -- If the search bar is empty, go back to the last page in history
+     if searchText == "" then
+        NTGuide.Menu.previousSearchText = ""
+        NTGuide.SwitchToLastPage()
+        return
+    end
+    -- If no change, do nothing
     if searchText == NTGuide.Menu.previousSearchText then return end
-    local modtags, searchtext = ParseSearch(searchText)
-    -- If the current search was unique, make that the new 'previous' one
+    -- If change, adjust accordingly
     NTGuide.Menu.previousSearchText = searchText
+
+    local modtags, searchtext = NTGuide.ParseSearch(searchText)
 
     -- Add what we're looking for to table to use later
     local filteredResults = {}
-
     for _, page in ipairs(NTGuide.IndexedContentPages) do
         local name = page.name:lower()
         local mod = page.mod:gsub("^NT:%s*", ""):lower()
@@ -250,10 +64,10 @@ local function UpdateSearchResults()
         simpleFiltered[i] = {id = filteredResults[i].id}
     end
 
-    if AreResultsEqual(simpleFiltered, lastFilteredResults) then
+    if NTGuide.AreResultsEqual(simpleFiltered, NTGuide.Menu.lastFilteredResults) then
         return
     else
-        lastFilteredResults = simpleFiltered
+        NTGuide.Menu.lastFilteredResults = simpleFiltered
     end
 
     -- Clear everything before re-doing it
@@ -304,18 +118,34 @@ local function UpdateSearchResults()
             end
 
             -- Actual button building + making them look nice!
-            local SpecificPageInfo = GetPageByID(currentPage.id)
+            local SpecificPageInfo = NTGuide.GetPageByID(currentPage.id)
             local SearchResultToDisplay = currentPage.name
-            local AmendedTextColour = "210, 200, 154, 255"
+            local AmendedTextColour = "210,200,154,255"
 
-            -- If it has a mod-of-origin, display it
-            if SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
+            -- Get the basic string, tack onto this if settings require it so
+            SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+
+            -- Show mod-of-origin if enabled
+            local showMod = NTGuide.GetSetting("NTG_DoModOrigin")
+            local useColours = NTGuide.GetSetting("NTG_DoColouredModOrigin")
+
+            if showMod and SpecificPageInfo and SpecificPageInfo.mod and SpecificPageInfo.mod ~= "" then
                 local modName = SpecificPageInfo.mod
-                local modColour = ModColours[modName] or DefaultModColour
+                local modColour = NTGuide.DefaultModColour
 
-                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖ " .."‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
-            else
-                SearchResultToDisplay = "‖color:" .. AmendedTextColour .. "‖" .. SearchResultToDisplay .. "‖color:end‖"
+                -- If colored mods are enabled, get the user's custom color setting
+                if useColours then
+                    -- Remove what we don't need so we get our setting to use
+                    local modColourSetting = "NTG_ModColour_" .. modName:gsub("[^%w]", "")
+                    local modColourTable = NTGuide.GetSetting(modColourSetting)
+                    -- Pull R,G,B from the table
+                    if modColourTable and #modColourTable > 0 then
+                        modColour = table.concat(modColourTable, ",")
+                    end
+                end
+
+                -- Add that colour to display
+                SearchResultToDisplay = SearchResultToDisplay .. " ‖color:" .. modColour .. "‖(" .. modName .. ")‖color:end‖"
             end
 
             local button_SearchResult = GUI.Button(GUI.RectTransform(Vector2(0.5, 1), row.RectTransform), SearchResultToDisplay, GUI.Alignment.CenterLeft, "GUIButtonSmall")
@@ -349,8 +179,17 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
     NTGuide.Menu.ActiveTextBlocks = {}
 
     -- Get the page we're supposed to build + prevent faulty ID from causing issues
-    local page = GetPageByID(pageID)
+    local page = NTGuide.GetPageByID(pageID)
     if not page then return end
+
+    -- If we're trying to use the settings page, run the settings building script instead of trying to constructing the page normally
+    if page.settings then
+        NTGmenuList.Content:ClearChildren()
+        NTGuide.Menu.titleBlock.SetRichText(page.title)
+
+        NTGuide.BuildSettingsPage(NTGmenuList)
+        return
+    end
 
     -- KILL!! the currently created page
     NTGmenuList.Content:ClearChildren()
@@ -377,7 +216,7 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
             -- Make it look nice
             textblock_PageSubheader.TextAlignment = GUI.Alignment.Center
             textblock_PageSubheader.CanBeFocused = false
-            textblock_PageSubheader.TextColor = Color(110, 154, 125, 255)
+            textblock_PageSubheader.TextColor = Color(110,154,125,255)
 
             -- OK hear me out
             -- First, take the localized string from the XML file then use [brackets] to determine *where* we must link to, be sure to clean up the string so we don't fumble because of an extra space or whatever
@@ -392,7 +231,7 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
                         local id, LinkButtonDescription = trimmedString:match("^%[(.-)%]%s*(.-)%s*$")
                         
                         if id and LinkButtonDescription then
-                            if GetPageByID(id) then
+                            if NTGuide.GetPageByID(id) then
                                 -- Whatever. Go my buttons.
                                 -- Create a textblock that can wrap and hold text (since button text doesn't wrap easily)
                                 local textblock_LinkButtonHolder = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0), NTGmenuList.Content.RectTransform), "", nil, nil, GUI.Alignment.TopLeft)
@@ -402,8 +241,9 @@ function NTGuide.PopulatePage(NTGmenuList, pageID)
                                 textblock_LinkButtonHolder.Wrap = true
                                 -- Remove the background colour when hovering over a textblock. We cannot have CanBeFocused set to false (or HoverTextColor would break) so we just make it transparent
                                 textblock_LinkButtonHolder.HoverColor = Color(0,0,0,0)
-                                -- Make the text show up a light blue to indicate it can be clicked
-                                textblock_LinkButtonHolder.HoverTextColor = Color(119, 212, 190,255)
+                                -- Make the text have a unique colour + change when hovered, to make sure people see it can be clicked on
+                                textblock_LinkButtonHolder.TextColor = Color(226,208,116,255)
+                                textblock_LinkButtonHolder.HoverTextColor = Color(119,212,190,255)
                                 -- Put the textblocks into a table to force-update their height (or text will bleed across one another)
                                 table.insert(NTGuide.Menu.ActiveTextBlocks, textblock_LinkButtonHolder)
 
@@ -454,30 +294,48 @@ NTGuide.Menu.BasicList = function()
     -- Screen-wide frame [L0 / Invisible]
     NTGuide.Menu.frame = GUI.Frame(GUI.RectTransform(Vector2(1, 1)), nil)
     NTGuide.Menu.frame.CanBeFocused = false
+
     -- Menu-background put into the frame [L1 / Invisible]
     NTGuide.Menu.menu = GUI.Frame(GUI.RectTransform(Vector2(1 + 0.2 / GUI.xScale, 1 + 0.3), NTGuide.Menu.frame.RectTransform, GUI.Anchor.Center), nil)
     NTGuide.Menu.menu.Visible = false
     NTGuide.Menu.menu.CanBeFocused = false
+
     -- Menu-background (Green) [L1 / Visible]
     local menuContent = GUI.Frame(GUI.RectTransform(Vector2(0.35, 0.6), NTGuide.Menu.menu.RectTransform, GUI.Anchor.Center))
     local dragHandle = GUI.DragHandle(GUI.RectTransform(Vector2(1,1), menuContent.RectTransform, GUI.Anchor.Center), menuContent.RectTransform, nil)
+
     -- Main Layout [L2 / Invisible]
     local mainGuideLayout = GUI.LayoutGroup(GUI.RectTransform(Vector2(0.95, 0.95), menuContent.RectTransform, GUI.Anchor.Center, GUI.Pivot.Center), false)
+
     -- Cosmetic background [L2 / Visible]
     local guideBackground = GUI.Frame(GUI.RectTransform(Vector2(1, 0.99), mainGuideLayout.RectTransform, GUI.Anchor.Center), "InnerFrame")
+
     -- Layout to handle text stuff [L3 / Invisible]
     local innerGuideLayout = GUI.LayoutGroup(GUI.RectTransform(Vector2(0.95, 0.95), guideBackground.RectTransform, GUI.Anchor.TopCenter), false)
+
     -- Title at the top of the page
     NTGuide.Menu.titleBlock = GUI.TextBlock(GUI.RectTransform(Vector2(1, 0.07), innerGuideLayout.RectTransform), " ", nil, GUI.GUIStyle.LargeFont)
     NTGuide.Menu.titleBlock.TextAlignment = GUI.Alignment.Center
+
     -- Search box, below title
     NTGuide.Menu.searchBox = GUI.TextBox(GUI.RectTransform(Vector2(1, 0.04), innerGuideLayout.RectTransform, GUI.Anchor.TopCenter), "")
+
     -- menuList, handling all the sections of the page; headers, description, buttons etc.
     NTGmenuList = GUI.ListBox(GUI.RectTransform(Vector2(1, 0.88), innerGuideLayout.RectTransform, GUI.Anchor.TopCenter))
     NTGmenuList.RectTransform.AbsoluteOffset = Point(0, 10)
 
+    local buttonRow = GUI.LayoutGroup(GUI.RectTransform(Vector2(1, 0.1), innerGuideLayout.RectTransform), true)
+    buttonRow.RelativeSpacing = 0.4
+
+    -- Main Page Button
+    local mainpageButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("ntg.button.mainpage"))
+    mainpageButton.OnClicked = function()
+        NTGuide.CurrentPageID = {"main_page"}
+        NTGuide.PopulatePage(NTGmenuList, "main_page")
+    end
+
     -- Back button at the bottom of the page
-    local backButton = GUI.Button(GUI.RectTransform(Vector2(1, 0.05), innerGuideLayout.RectTransform, GUI.Anchor.BottomCenter), NTGuide.Localize("ntg.button.back"))
+    local backButton = GUI.Button(GUI.RectTransform(Vector2(0.3, 0.05), buttonRow.RectTransform), NTGuide.Localize("ntg.button.back"))
     backButton.OnClicked = function()
         -- Is there somewhere to go back to?
         -- If so, remove that page from history and return to it
@@ -492,8 +350,53 @@ NTGuide.Menu.BasicList = function()
         end
     end
 
+    -- "Open settings" button. Cogwheel UI style akin to the basegame
+    local ToggleSettingsButton = GUI.Button(GUI.RectTransform(Vector2(0.05, 0.5), NTGuide.Menu.titleBlock.RectTransform, GUI.Anchor.CenterLeft), GUI.Alignment.Center, nil, Color(0,0,0,0))
+    local ToggleSettingsButtonStyle = GUI.Image(GUI.RectTransform(Vector2(1, 1), ToggleSettingsButton.RectTransform), "GUIButtonSettings")
+    ToggleSettingsButtonStyle.ToolTip = NTGuide.Localize("ntg.button.tooltip.togglesettings")
+    local SettingsPageActive = false
+
+    -- Open the settings menu if its closed, close it if it's open.
+    -- Also ensure that you get sent back to the page your were just on when toggling it
+    ToggleSettingsButton.OnClicked = function()
+        local currentPage = NTGuide.CurrentPageID[1]
+
+        if currentPage == "settings_page" then
+            -- If already on settings, go back to last page
+            NTGuide.SwitchToLastPage()
+        else
+            -- Push current page to history only if it's not already last
+            local lastInHistory = NTGuide.Menu.PageHistory[#NTGuide.Menu.PageHistory]
+            if currentPage ~= lastInHistory then
+                table.insert(NTGuide.Menu.PageHistory, currentPage)
+            end
+
+            -- Now, open settings!
+            NTGuide.CurrentPageID = {"settings_page"}
+            NTGuide.PopulatePage(NTGmenuList, "settings_page")
+        end
+    end
+
+    -- "Close Guide" button. Just a cross like you would see on most programs
+    local CloseGuideButton = GUI.Button(GUI.RectTransform(Vector2(0.05, 0.5), NTGuide.Menu.titleBlock.RectTransform, GUI.Anchor.CenterRight), GUI.Alignment.Center, nil, Color(0,0,0,0))
+    local CloseGuideButtonStyle = GUI.Image(GUI.RectTransform(Vector2(1, 1), CloseGuideButton.RectTransform), "GUICancelButton")
+    CloseGuideButtonStyle.Color = Color(180,50,50,255)
+    CloseGuideButtonStyle.ToolTip = NTGuide.Localize("ntg.button.tooltip.closeguide")
+
+    CloseGuideButton.OnClicked = function()
+        NTGuide.Menu.menu.Visible = false
+    end
+
     -- If the searchbar changes, re-do all the search bar code
-    NTGuide.Menu.searchBox.OnTextChangedDelegate = UpdateSearchResults
+    NTGuide.Menu.searchBox.OnTextChangedDelegate = function()
+        -- Ensure the settings page properly 'toggles'
+        if SettingsPageActive then
+            SettingsPageActive = false
+        end
+
+        UpdateSearchResults()
+    end
+
     -- On first initialization, open the main page
     NTGuide.PopulatePage(NTGmenuList, "main_page")
     return NTGmenuList
@@ -503,35 +406,20 @@ end
 -- This HAS to be able to be done better :wilted_flower:
 local Indexed = "false"
 
-local function ConstructUI()
+function NTGuide.ConstructUI()
     if Indexed == "false" then
-        NTGuide.IndexedContentPages = IndexKnownPages(NTGuide.ContentPages)
+        NTGuide.IndexedContentPages = NTGuide.IndexKnownPages(NTGuide.ContentPages)
 
         -- Build index pages
-        BuildCategoryIndexPage()
-        BuildPagesByCategory()
+        NTGuide.BuildCategoryIndexPage()
+        NTGuide.BuildPagesByCategory()
 
         Indexed = "true"
     end
     NTGuide.Menu.BasicList()
 end
 
-ConstructUI()
-
--- Make the button appear
--- Shamelessly ripped from EvilFactory's examples
-function NTGuide.CreateGuideButton()
-    NTGuide.Button = GUI.Button(GUI.RectTransform(Vector2(0.05, 0.05), NTGuide.Menu.frame.RectTransform, GUI.Anchor.TopRight), "Guide", GUI.Alignment.Center, "GUIButtonSmall")
-    NTGuide.Button.OnClicked = function()
-        NTGuide.Menu.menu.Visible = not NTGuide.Menu.menu.Visible
-    end
-end
-
-function NTGuide.RemoveGuideButton()
-    if NTGuide.Button then
-        NTGuide.Button.Visible = false
-    end
-end
+NTGuide.ConstructUI()
 
 -- Hooks to allow updates
 Hook.Patch("Barotrauma.SubEditorScreen", "AddToGUIUpdateList", function()
