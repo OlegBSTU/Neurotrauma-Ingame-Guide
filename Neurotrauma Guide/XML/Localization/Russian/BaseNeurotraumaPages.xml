@@ -24,7 +24,6 @@
 <ntg.section.sideeffects>Возможные побочные эффекты</ntg.section.sideeffects>
 <ntg.section.applicationsuccess>Успешное применение</ntg.section.applicationsuccess>
 <ntg.section.applicationfailed>Неуспешное применение</ntg.section.applicationfailed>
-<ntg.section.reduction>Понижается</ntg.section.reduction>
 <ntg.section.firstaid>Первая помощь</ntg.section.firstaid>
 <ntg.section.treatments>Лечение</ntg.section.treatments>
 <ntg.section.steps>Шаги</ntg.section.steps>
@@ -33,7 +32,6 @@
 <ntg.section.navigation>Навигация</ntg.section.navigation>
 <ntg.section.categories>Категории</ntg.section.categories>
 <ntg.section.pages>Страницы</ntg.section.pages>
-
 
 <!-- Affliction specific subheaders: Withdrawal -->
 <ntg.section.effects_withdrawal_ex1>Эффекты для Алкогольной, Химической и Опиатной ломки</ntg.section.effects_withdrawal_ex1>
@@ -119,7 +117,8 @@
 <ntg.title.main_page>Главная страница</ntg.title.main_page>
 <ntg.description.main_page>Главная страница руководства по Neurotrauma.
 \nСпасибо за установку моего мода! Надеюсь, он вам хорошо поможет. Я буду активно расширять его, пока не интегрирую все основные дополнения NT; хотя локализация языка встроена, я не говорю на основных языках и поэтому не могу подтвердить, насколько хорошими будут переводы.
-\nЕсли вы хотите помочь с переводом, в описании мода есть ссылка на github; вы можете сделать PR локализации, просто переведя уже существующие файлы локализации.</ntg.description.main_page>
+\nЕсли вы хотите помочь с переводом, в описании мода есть ссылка на github; вы можете сделать PR локализации, просто переведя уже существующие файлы локализации.
+\nБудущие обновления, надеюсь, расширят содержащуюся информацию, а пока я просто импортирую Trello. Если вы найдете что-то неправильное или есть предложения, оставьте комментарий!</ntg.description.main_page>
 <ntg.gotoindex.main_page>
     [category_index] Просмотр страниц по категориям
 </ntg.gotoindex.main_page>
@@ -130,6 +129,7 @@
     Автоматическая интеграция дополнений: если есть страницы руководства для дополнения, они появятся автоматически, если это дополнение загружено, и скроются, если нет.
 </ntg.features.main_page>
 <ntg.availableaddons.main_page>
+    <!-- TODO LOCALIZATION -->
     ‖color:35,38,115,255‖Neurotrauma‖color:end‖ от Guns |
     ‖color:84,84,97,255‖NT Cybernetics Enhanced‖color:end‖ от Nebual |
     ‖color:97,24,33,255‖NT Surgery Plus‖color:end‖ от Guns |
@@ -499,8 +499,9 @@
     Скорость персонажа будет снижена на 20% |
     [alkalosis] Алкалоз
 </ntg.effects.vomiting>
+<!-- TODO LOCALIZATION -->
 <ntg.treatments.vomiting>
-    Лечение причины
+    Treating the causes
 </ntg.treatments.vomiting>
 
 <!-- /*- Affliction Pages -*/ -->
@@ -1087,7 +1088,7 @@
     [organ_transplant_surgery] Операция по пересадке органов
 </ntg.treatments.kidney_damage>
 
-<!-- Liver damage -->
+<!-- Повреждение печени -->
 <ntg.title.liver_damage>Повреждение печени</ntg.title.liver_damage>
 <ntg.description.liver_damage>Повреждение печени, при развитии печёночной недостаточности, смертельно и может вызвать массивную кровопотерю в виде Внутреннего кровотечения.
 \nПечень заживает со скоростью 0.01% в секунду; при условии, что конфигурация не изменена, ничто не повреждает её и она ниже 100% повреждения.</ntg.description.liver_damage>
@@ -1120,7 +1121,7 @@
     [organ_transplant_surgery] Операция по пересадке органов
 </ntg.treatments.liver_damage>
 
-<!-- Morbusine Poisoning -->
+<!-- Отравление морбузином -->
 <ntg.title.morbusine_poisoning>Отравление морбузином</ntg.title.morbusine_poisoning>
 <ntg.description.morbusine_poisoning>Состояние, показывающее наличие смертельного яда; смертельно, если не лечить.</ntg.description.morbusine_poisoning>
 <ntg.causes.morbusine_poisoning>
@@ -1242,7 +1243,7 @@
     [naloxone] Налоксон
 </ntg.treatments.analgesia>
 
-<!-- Anesthesia -->
+<!-- Анестезия -->
 <ntg.title.anesthesia>Анестезия</ntg.title.anesthesia>
 <ntg.description.anesthesia>Анестезия — это аффликт, предотвращающий травматический шок во время операции, и в отличие от Анальгезии, не требует операционного стола для проведения безопасной операции.</ntg.description.anesthesia>
 <ntg.causes.anesthesia>
@@ -1269,8 +1270,8 @@
     [anaparalyzant] Анапарализант
 </ntg.treatments.anesthesia>
 
-<!-- Extremities -->
-<!-- Arterial Bleeding -->
+<!-- Конечности -->
+<!-- Артериальное кровотечение -->
 <ntg.title.arterial_bleeding>Артериальное кровотечение</ntg.title.arterial_bleeding>
 <ntg.description.arterial_bleeding>Артериальные разрывы чрезвычайно опасны и требуют экстренной помощи как можно скорее. Наложение Жгута на поражённую конечность может дать время для лечения, но этого не следует делать на голове.
 \nАртерии, которые могут разорваться, включают сонную артерию на голове, плечевые артерии рук и бедренные артерии ног. Разрыв артерии туловища — это Аортальное кровотечение.</ntg.description.arterial_bleeding>
@@ -1289,9 +1290,6 @@
 <ntg.firstaid.arterial_bleeding>
     [tourniquet] Жгут (кроме Аортальных кровотечений)
 </ntg.firstaid.arterial_bleeding>
-<ntg.seealso.arterial_bleeding>
-    [aortic_rupture] Aortic Rupture
-</ntg.seealso.arterial_bleeding>
 
 <!-- Травматическая ампутация -->
 <ntg.title.traumatic_amputation>Травматическая ампутация</ntg.title.traumatic_amputation>
@@ -1399,7 +1397,7 @@
     [osteosynthesis_surgery] Остеосинтетическая операция на каждой части тела
 </ntg.treatments.bone_death>
 
-<!-- Bone damage -->
+<!-- Повреждение костей -->
 <ntg.title.bone_damage>Повреждение костей</ntg.title.bone_damage>
 <ntg.description.bone_damage>Повреждение костей не смертельно и обычно может игнорироваться, пока оно не перешло в Омертвение кости</ntg.description.bone_damage>
 <ntg.causes.bone_damage>
@@ -2331,8 +2329,9 @@
     [bleeding] -18% Кровотечения |
     [bandaged] +36% Перевязка
 </ntg.applicationfailed.bandages>
+<!-- TODO LOCALIZATION -->
 <ntg.seealso.bandages>
-    [plastiseal] Эластичный бинт
+    [plastiseal] Plastiseal
 </ntg.seealso.bandages>
 
 <!-- Blood Packs -->
@@ -2531,6 +2530,7 @@
 </ntg.applicationfailed.fentanyl>
 
 <!-- Gel Ice Pack -->
+
 <ntg.title.gel_ice_pack>Гелевый хладоэлемент</ntg.title.gel_ice_pack>
 <ntg.description.gel_ice_pack>Проверка навыка медицины: 40
 \nМногоразовый холодный компресс, используемый для ускорения заживления тупых травм и лечения внутреннего кровотечения. Использование уменьшает его состояние, как и нахождение вне холодильника, но состояние восстанавливается при охлаждении.
@@ -2758,6 +2758,7 @@
     [kidney_damage] +10% Повреждение почек
 </ntg.applicationsuccess.mannitol>
 <ntg.applicationfailed.mannitol>
+    <!-- TODO LOCALIZATION -->
     [neurotrauma] +30% Маннитол (Лечит до 60% Нейротравмы) |
     [vanilla_organ_damage] +10% Повреждение органа ванилла |
     [heart_damage] +20% Повреждение сердца|
@@ -2929,9 +2930,6 @@
     [bleeding] -24% Кровотечение |
     [burns] -12% Ожоги
 </ntg.applicationfailed.plastiseal>
-<ntg.seealso.plastiseal>
-    [bandages] Bandage
-</ntg.seealso.plastiseal>
 
 <!-- Propofol -->
 <ntg.title.propofol>Пропофол</ntg.title.propofol>
@@ -3027,7 +3025,7 @@
 </ntg.applicationsuccess.scalpel>
 <ntg.applicationfailed.scalpel>
     [bleeding] +15% кровотечения |
-    [lacerations] +10% рваных ран
+    [lacerations] +10% разрывов
 </ntg.applicationfailed.scalpel>
 <ntg.seealso.scalpel>
     [analgesia] Анальгезия |
@@ -3056,8 +3054,9 @@
 <ntg.applicationfailed.sodium_nitroprusside>
     -45% кровяного давления (120 секунд)
 </ntg.applicationfailed.sodium_nitroprusside>
+<!-- TODO LOCALIZATION -->
 <ntg.seealso.sodium_nitroprusside>
-    [nitroglycerin] Нитроглицерин
+    [nitroglycerin] Nitroglycerin
 </ntg.seealso.sodium_nitroprusside>
 
 <!-- Spinal Cord Implants -->
@@ -3161,7 +3160,7 @@
 <ntg.applicationfailed.surgical_saw>
     [internal_wounds] +6% внутреннего урона |
     [bleeding] +15% кровотечения |
-    [open_wounds] +4% рваных ран
+    [open_wounds] +4% разрывов
 </ntg.applicationfailed.surgical_saw>
 <ntg.seealso.surgical_drill>
     [amputation_surgery] Операция для ампутации
@@ -3201,7 +3200,7 @@
 </ntg.applicationfailed.thiamine>
 
 <!-- Tourniquet -->
-<ntg.title.tourniquet>Жгут</ntg.title.tourniquet>
+<ntg.title.tourniquet>Tourniquet</ntg.title.tourniquet>
 <ntg.description.tourniquet>Проверка навыка медицины: 30.
 \nПредмет, используемый для ограничения кровотока для предотвращения потери крови от артериального кровотечения. Он не будет работать без артериального кровотечения. Жгуты автоматически снимаются после открытой/закрытой хирургии. Использование жгута на голове даст жертве 15% нейротравмы, 200% нехватки кислорода и не зажмёт сонную артериальное кровотечение.</ntg.description.tourniquet>
 <ntg.applicationsuccess.tourniquet>
@@ -3241,7 +3240,7 @@
 </ntg.treatments.toxin_filter.deliriumine>
 
 <!-- Trauma Shears -->
-<ntg.title.trauma_shears>Медицинские ножницы</ntg.title.trauma_shears>
+<ntg.title.trauma_shears>Trauma Shears</ntg.title.trauma_shears>
 <ntg.description.trauma_shears>Проверка навыка медицины: 10.
 \nНожницы, используемые для удаления гипсовой повязки и бинтов.
 \nЭтот предмет нельзя изготовить напрямую. Чтобы получить его из фабрикатора, игрок должен изготовить "Ящик для хирургических инструментов (набор)".</ntg.description.trauma_shears>
@@ -3251,7 +3250,7 @@
 </ntg.applicationsuccess.trauma_shears>
 <ntg.applicationfailed.trauma_shears>
     [bleeding] +15% кровотечения |
-    [open_wounds] +10% рваных ран
+    [open_wounds] +10% Lacerations
 </ntg.applicationfailed.trauma_shears>
 
 <!-- Tweezers -->
@@ -3272,7 +3271,7 @@
     [internal_wounds] -3% до -10% внутреннего урона (хирургия) |
     [internal_wounds] -3% до -10% тупой травмы (хирургия) |
     [foreign_bodies] -3% до -10% инородных тел (хирургия) |
-    [open_wounds] +5% рваных ран
+    [open_wounds] +5% разрывов
 </ntg.applicationsuccess.tweezers>
 <ntg.applicationfailed.tweezers>
     [internal_wounds] +6% внутреннего урона (хирургия)
@@ -3295,7 +3294,7 @@
 
 <!-- Surgical Procedures -->
 <!-- Open Close Surgery -->
-<ntg.title.open_close_surgery>Операция по вскрытию/зашиванию</ntg.title.open_close_surgery>
+<ntg.title.open_close_surgery>Операция для Открытия/Закрытия</ntg.title.open_close_surgery>
 <ntg.description.open_close_surgery>Самый распространённый тип хирургии. Дополнительные шаги могут быть сделаны между ними, но должны быть сделаны до наложения швов.</ntg.description.open_close_surgery>
 <ntg.steps.open_close_surgery>
     [analgesia] 1а. Анальгезия |
@@ -3323,7 +3322,7 @@
 </ntg.steps.osteosynthesis_surgery>
 
 <!-- Aortic Rupture Surgery -->
-<ntg.title.aortic_rupture_surgery>Операция аортального кровотечения</ntg.title.aortic_rupture_surgery>
+<ntg.title.aortic_rupture_surgery>Операция для Аортального кровотечения</ntg.title.aortic_rupture_surgery>
 <ntg.description.aortic_rupture_surgery>Хирургическая процедура для лечения аортального кровотечения</ntg.description.aortic_rupture_surgery>
 <ntg.steps.aortic_rupture_surgery>
     [analgesia] 1а. Анальгезия |
@@ -3336,7 +3335,7 @@
 </ntg.steps.aortic_rupture_surgery>
 
 <!-- Amputation Surgery -->
-<ntg.title.amputation_surgery>Операция по ампутации</ntg.title.amputation_surgery>
+<ntg.title.amputation_surgery>Операция для ампутации</ntg.title.amputation_surgery>
 <ntg.description.amputation_surgery>Операция для удаления или повторного прикрепления конечности. Если конечности не были повторно прикреплены, это вызовет хирургическую ампутацию</ntg.description.amputation_surgery>
 <ntg.steps.amputation_surgery>
     [analgesia] 1а. Анальгезия |
