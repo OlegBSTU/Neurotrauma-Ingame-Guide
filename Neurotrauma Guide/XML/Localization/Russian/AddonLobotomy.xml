@@ -1,5 +1,10 @@
 <Infotexts language="Russian" nowhitespace="false">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+
+<!-- Settings -->
+<ntg.categoryname.lobotomy>Настройки аддона: Lobotomy</ntg.categoryname.lobotomy>
+<ntg.settingname.modcolourlobotomy>Цвет Мода-Источника для NT Lobotomy</ntg.settingname.modcolourlobotomy>
+
 <!-- Addon for NT: Lobotomy -->
 
 <ntg.section.lobopositiveeffects>Положительные эффекты лоботомии</ntg.section.lobopositiveeffects>

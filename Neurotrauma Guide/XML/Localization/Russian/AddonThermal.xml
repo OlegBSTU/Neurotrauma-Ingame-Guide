@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Infotexts language="Russian" nowhitespace="false">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Settings -->
+<ntg.categoryname.thermal>Настройки аддона: Thermal</ntg.categoryname.thermal>
+<ntg.settingname.modcolourthermal>Цвет Мода-Источника для NT Thermal</ntg.settingname.modcolourthermal>
+
 <!-- Chud stuff for my temperature stuff -->
 <!-- symptoms -->
 <!-- Hypothermia -->

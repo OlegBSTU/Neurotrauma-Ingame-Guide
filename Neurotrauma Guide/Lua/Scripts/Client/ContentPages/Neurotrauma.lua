@@ -961,7 +961,7 @@ NTGuide.ContentPages = {
             category = "items",
             title = NTGuide.Localize("ntg.title.ambubag"), 
             description = NTGuide.Localize("ntg.description.ambubag"), 
-            effects = {NTGuide.Localize("ntg.effects.sawed_bones")}, 
+            effects = {NTGuide.Localize("ntg.effects.ambubag")}, 
         },
         AnalgesicTank = {
             id = "analgesic_tank", 

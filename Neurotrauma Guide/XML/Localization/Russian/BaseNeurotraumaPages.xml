@@ -1,8 +1,23 @@
 <Infotexts language="Russian" nowhitespace="false" translatedname="Русский">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
 <!-- /*- General Stuff -*/ -->
-<!-- Buttons -->
+<!-- General UI Buttons -->
 <ntg.button.back>Назад на предыдущую страницу</ntg.button.back>
+<ntg.button.mainpage>Перейти на главную страницу</ntg.button.mainpage>
+<ntg.button.tooltip.togglesettings>Переключить на страницу настроек</ntg.button.tooltip.togglesettings>
+<ntg.button.tooltip.closeguide>Закрыть руководство</ntg.button.tooltip.closeguide>
+
+
+<!-- Settings -->
+<ntg.categoryname.customization>Настройка руководства</ntg.categoryname.customization>
+
+<ntg.settingname.docolouredmodorigin>Крашенный Мод-Источник</ntg.settingname.docolouredmodorigin>
+<ntg.settingdescription.docolouredmodorigin>Должно ли приложение Мод-Источника иметь уникальный цвет, зависимый от мода?</ntg.settingdescription.docolouredmodorigin>
+
+<ntg.settingname.domodorigin>Модовый-Источник</ntg.settingname.domodorigin>
+<ntg.settingdescription.domodorigin>Должен ли отображаться Мод-Источник?</ntg.settingdescription.domodorigin>
+
+<!-- Unique Page Buttons -->
 <ntg.index.back>Назад в Категории</ntg.index.back>
 <ntg.index.backmain>Назад на Главную страницу</ntg.index.backmain>
 
@@ -140,6 +155,9 @@
     ‖color:3,99,138,255‖NT Thermal‖color:end‖ от BigEvilGreenBean |
     ‖color:20,60,0,255‖NT Airway Extension‖color:end‖ от moncka.ddima
 </ntg.availableaddons.main_page>
+
+<!-- Settings page name -->
+<ntg.title.settings_page>Настройки руководства</ntg.title.settings_page>
 
 <!-- Auto Indexed Page: Categories -->
 <ntg.title.category_index>Категории</ntg.title.category_index>
@@ -2195,14 +2213,14 @@
 <ntg.description.ambubag>Предмет, используемый для подачи дополнительного кислорода, если пациент недостаточно дышит или не дышит вовсе.
 \nИспользование мешка амбу с обычным кислородным баллоном внутри лечит 90% Нехватки кислорода и использует 2% кислорода в баллоне.
 \nИспользование мешка амбу с баллоном кислородита внутри лечит 90% Нехватки кислорода, излечивает Остановку дыхания и использует 2% кислорода в баллоне.\n\nИспользование мешка амбу с баллоном сварочного топлива внутри вызывает 110% Нехватки кислорода, вызывает 10% Повреждения лёгких и использует 5% сварочного топлива в баллоне.
-\nИспользование мешка амбу с баллоном инцендиума внутри вызывает 110% Нехватки кислорода, вызывает 20% Повреждения лёгких, вызывает 10% Ожогов и использует 5% инцендиума в баллоне.
+\nИспользование мешка амбу с баллоном воспламенита внутри вызывает 110% Нехватки кислорода, вызывает 20% Повреждения лёгких, вызывает 10% Ожогов и использует 5% воспламенита в баллоне.
 \nИспользование мешка амбу с краской внутри вызывает 50% Нехватки кислорода, вызывает 3% повреждения лёгких, вызывает 5% химической зависимости, лечит 20% химической ломки и использует 5% краски в банке.
 \nИспользование мешка амбу с Баллоном Анальгетиков даёт Анальгезию, Опиоидную зависимость, Опиоидную передозировку и Опиоидную ломку. Количество зависит от того, пьян ли пациент.</ntg.description.ambubag>
 <ntg.effects.ambubag>
-    [oxygen_low] Лечит Нехватку кислорода на 90% (Кислородный баллон / Баллон кислородита) или вызывает 110% Нехватки кислорода (Баллон сварочного топлива / Баллон инцендиума) |
+    [oxygen_low] Лечит Нехватку кислорода на 90% (Кислородный баллон / Баллон кислородита) или вызывает 110% Нехватки кислорода (Баллон сварочного топлива / Баллон воспламенита) |
     [respiratory_arrest] Излечивает Остановку дыхания (Баллон кислородита) |
-    [lung_damage] Вызывает 10% Повреждения лёгких (Баллон сварочного топлива) или 20% Повреждения лёгких (Баллон инцендиума) |
-    [burns] Вызывает 10% Ожогов (Баллон инцендиума) |
+    [lung_damage] Вызывает 10% Повреждения лёгких (Баллон сварочного топлива) или 20% Повреждения лёгких (Баллон воспламенита) |
+    [burns] Вызывает 10% Ожогов (Баллон воспламенита) |
     [withdrawal] Лечит 20% Химическую ломку (Банка краски) |
     [analgesia] Вызывает Анальгезию (Баллон анальгетиков)
 </ntg.effects.ambubag>
