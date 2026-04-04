@@ -97,12 +97,12 @@ NTGuide.ContentPages.Items.MedicalMisconduct = {
 local ModSettings = {
 	NTG_Settings_NTSurgeryPlus = { 
         type = "category",
-        NTGuide.Localize("ntg.category.surgeryplus"),
+        name = NTGuide.Localize("ntg.categoryname.surgeryplus"),
     },
 
 	NTG_ModColour_NTSurgeryPlus = { 
 		type = "string",
-		NTGuide.Localize("ntg.settingname.modcoloursurgeryplus"),
+		name = NTGuide.Localize("ntg.settingname.modcoloursurgeryplus"),
 		default = {"97", "24", "33"},
 		style = "R,G,B",
 		boxsize = 0.05,

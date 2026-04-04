@@ -61,6 +61,7 @@ function NTGuide.BuildSettingsPage(MenuList)
 
         -- STRING
         elseif entry.type == "string" then
+            if entry.name == nil then return end
             local style = ""
             local exampleColour = Color(210,200,154,255)
 
@@ -71,7 +72,6 @@ function NTGuide.BuildSettingsPage(MenuList)
             local rect = GUI.RectTransform(Vector2(1, 0.05), list.Content.RectTransform)
             local textBlock = GUI.TextBlock(rect, entry.name .. style, exampleColour, nil, GUI.Alignment.Center, true)
             textBlock.CanBeFocused = false
-
             if entry.description then
                 textBlock.ToolTip = entry.description
             end
