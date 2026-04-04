@@ -1,5 +1,9 @@
 <Infotexts language="Russian" nowhitespace="false">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
+<!-- Settings -->
+<ntg.categoryname.infections>Настройки аддона: Infections</ntg.categoryname.infections>
+<ntg.settingname.modcolourinfections>Цвет Мода-Источника для NT Infections</ntg.settingname.modcolourinfections>
+
 <!-- Addon for NT: Infections -->
 <ntg.section.susceptible>Уязвим к</ntg.section.susceptible>
 <ntg.section.requirements>Требования</ntg.section.requirements>

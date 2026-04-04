@@ -3,6 +3,10 @@
 <!-- Additional pages + overrides for Surgery Plus -->
 <!-- See the main XML file for formatting -->
 
+<!-- Settings -->
+<ntg.categoryname.surgeryplus>Настройки аддона: Surgery Plus</ntg.categoryname.surgeryplus>
+<ntg.settingname.modcoloursurgeryplus>Цвет Мода-Источника для NT Surgery Plus</ntg.settingname.modcoloursurgeryplus>
+
 <!-- Surgical Infection -->
 <ntg.title.surgical_infection>Хирургическая инфекция</ntg.title.surgical_infection>
 <ntg.description.surgical_infection>Хирургическая инфекция — это механика, которая вызывает сепсис в зависимости от того, насколько стерильна среда пациента во время операции.

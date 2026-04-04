@@ -1,6 +1,11 @@
 <Infotexts language="Russian" nowhitespace="false">
 <!-- Translated by guns / Heelge with use of Kimi2.5 Instant AI -->
 <!-- Neurotrauma Eyes Addon -->
+
+<!-- Settings -->
+<ntg.categoryname.eyes>Настройки аддона: Eyes</ntg.categoryname.eyes>
+<ntg.settingname.modcoloureyes>Цвет Мода-Источника для NT Eyes</ntg.settingname.modcoloureyes>
+
 <!-- Damage Afflictions -->
 <!-- Human Eye Damage -->
 <ntg.title.human_eye_damage>Повреждение человеческого глаза</ntg.title.human_eye_damage>

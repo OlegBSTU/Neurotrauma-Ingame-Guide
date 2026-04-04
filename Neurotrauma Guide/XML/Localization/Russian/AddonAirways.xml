@@ -3,6 +3,10 @@
 <!-- Additional pages for Airways -->
 <!-- KAT Medical my beloved -->
 
+<!-- Settings -->
+<ntg.categoryname.airways>Настройки аддона: Airways</ntg.categoryname.airways>
+<ntg.settingname.modcolourairways>Цвет Мода-Источника для NT Airways</ntg.settingname.modcolourairways>
+
 <!-- Items -->
 <!-- OVERRIDE -->
 <!-- Needle -->
